@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "blocks": [
+    {
+      "id": "general",
+      "title": "General information, not medical advice",
+      "body": "[PLACEHOLDER - needs expert review] MamaBabyBites shares general information about food and feeding. It is not medical advice and does not replace your doctor, midwife, health visitor, dietitian or lactation consultant. Every mum and baby is different.",
+      "reviewStatus": "placeholder",
+      "reviewer": "legal"
+    },
+    {
+      "id": "worried",
+      "title": "If you're worried",
+      "body": "[PLACEHOLDER - needs expert review] If you are worried about your baby's health or your own, please contact your doctor or healthcare provider. In an emergency, call your local emergency number.",
+      "reviewStatus": "placeholder",
+      "reviewer": "paediatrician"
+    },
+    {
+      "id": "content-review",
+      "title": "About our content",
+      "body": "[PLACEHOLDER - needs expert review] Recipes and feeding guidance in this version are early drafts and are being reviewed by qualified professionals. Look for the \"draft\" label on content that has not been reviewed yet.",
+      "reviewStatus": "placeholder",
+      "reviewer": "legal"
+    }
+  ]
+}

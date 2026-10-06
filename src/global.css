@@ -1,0 +1,62 @@
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/preflight.css' layer(base);
+@import 'tailwindcss/utilities.css';
+@import 'nativewind/theme';
+
+/*
+ * Semantic colour tokens. Keep in sync with src/theme/colors.ts, which native
+ * props (tab bar, status bar, notification tint) read directly.
+ * Light and dark both define every token so the values stay as live variables.
+ */
+:root {
+  --app-canvas: #fbf7f2;
+  --app-surface: #ffffff;
+  --app-surface-muted: #f3ece3;
+  --app-ink: #2b2724;
+  --app-ink-muted: #645b53;
+  --app-primary: #4f6e55;
+  --app-on-primary: #ffffff;
+  --app-accent: #f2c9a8;
+  --app-on-accent: #3b2a1f;
+  --app-border: #e4dbd0;
+  --app-caution-bg: #fcefd9;
+  --app-caution-ink: #6b4a12;
+  --app-danger-bg: #fbe4e1;
+  --app-danger-ink: #9b2c2c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --app-canvas: #1c1a18;
+    --app-surface: #282522;
+    --app-surface-muted: #332f2b;
+    --app-ink: #f4efe9;
+    --app-ink-muted: #bdb4aa;
+    --app-primary: #a7c7ab;
+    --app-on-primary: #1c1a18;
+    --app-accent: #6b4a35;
+    --app-on-accent: #fbe9da;
+    --app-border: #3d3833;
+    --app-caution-bg: #3d3220;
+    --app-caution-ink: #f2d29b;
+    --app-danger-bg: #3e2523;
+    --app-danger-ink: #f4a9a9;
+  }
+}
+
+@theme inline {
+  --color-canvas: var(--app-canvas);
+  --color-surface: var(--app-surface);
+  --color-surface-muted: var(--app-surface-muted);
+  --color-ink: var(--app-ink);
+  --color-ink-muted: var(--app-ink-muted);
+  --color-primary: var(--app-primary);
+  --color-on-primary: var(--app-on-primary);
+  --color-accent: var(--app-accent);
+  --color-on-accent: var(--app-on-accent);
+  --color-border: var(--app-border);
+  --color-caution-bg: var(--app-caution-bg);
+  --color-caution-ink: var(--app-caution-ink);
+  --color-danger-bg: var(--app-danger-bg);
+  --color-danger-ink: var(--app-danger-ink);
+}
