@@ -21,11 +21,11 @@ export function Chip({ label, selected = false, onPress, className }: ChipProps)
       hitSlop={4}
       className={cn(
         'min-h-12 items-center justify-center rounded-full border-2 px-5 py-2 active:opacity-80',
-        selected ? 'border-primary bg-primary' : 'border-border bg-surface',
+        selected ? 'border-primary bg-primary' : 'border-transparent bg-surface',
         className,
       )}
     >
-      <AppText variant="label" className={selected ? 'text-on-primary' : 'text-ink'}>
+      <AppText variant="label" color={selected ? 'on-primary' : 'ink'}>
         {label}
       </AppText>
     </Pressable>

@@ -1,14 +1,14 @@
 import { View } from 'react-native';
 
-import { AppText } from './app-text';
+import { AppText, type TextColor } from './app-text';
 import { cn } from './cn';
 
 type Tone = 'info' | 'caution' | 'urgent';
 
-const toneClasses: Record<Tone, { box: string; text: string }> = {
-  info: { box: 'bg-surface-muted', text: 'text-ink' },
-  caution: { box: 'bg-caution-bg', text: 'text-caution-ink' },
-  urgent: { box: 'bg-danger-bg', text: 'text-danger-ink' },
+const toneClasses: Record<Tone, { box: string; text: TextColor }> = {
+  info: { box: 'bg-surface-muted', text: 'ink' },
+  caution: { box: 'bg-caution-bg', text: 'caution' },
+  urgent: { box: 'bg-danger-bg', text: 'danger' },
 };
 
 export type NoticeProps = {
@@ -28,11 +28,11 @@ export function Notice({ title, body, tone = 'info', className }: NoticeProps) {
       className={cn('gap-1 rounded-2xl p-4', t.box, className)}
     >
       {title ? (
-        <AppText variant="label" className={t.text}>
+        <AppText variant="label" color={t.text}>
           {title}
         </AppText>
       ) : null}
-      <AppText variant="body" className={cn('text-base', t.text)}>
+      <AppText variant="body" color={t.text} className="text-base">
         {body}
       </AppText>
     </View>

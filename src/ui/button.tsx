@@ -1,20 +1,20 @@
 import { Pressable, type PressableProps } from 'react-native';
 
-import { AppText } from './app-text';
+import { AppText, type TextColor } from './app-text';
 import { cn } from './cn';
 
 type Variant = 'primary' | 'secondary' | 'quiet';
 
 const containerClasses: Record<Variant, string> = {
   primary: 'bg-primary',
-  secondary: 'bg-surface border-2 border-primary',
+  secondary: 'bg-surface-muted',
   quiet: 'bg-transparent',
 };
 
-const labelClasses: Record<Variant, string> = {
-  primary: 'text-on-primary',
-  secondary: 'text-primary',
-  quiet: 'text-primary underline',
+const labelColors: Record<Variant, TextColor> = {
+  primary: 'on-primary',
+  secondary: 'primary',
+  quiet: 'primary',
 };
 
 export type ButtonProps = Omit<PressableProps, 'children'> & {
@@ -33,14 +33,18 @@ export function Button({ label, variant = 'primary', disabled, className, ...res
       disabled={disabled}
       hitSlop={8}
       className={cn(
-        'min-h-14 items-center justify-center rounded-2xl px-6 py-3 active:opacity-80',
+        'min-h-14 items-center justify-center rounded-full px-6 py-3 active:opacity-80',
         containerClasses[variant],
         disabled && 'opacity-50',
         className,
       )}
       {...rest}
     >
-      <AppText variant="label" className={cn('text-center text-lg', labelClasses[variant])}>
+      <AppText
+        variant="label"
+        color={labelColors[variant]}
+        className={cn('text-center text-lg', variant === 'quiet' && 'underline')}
+      >
         {label}
       </AppText>
     </Pressable>

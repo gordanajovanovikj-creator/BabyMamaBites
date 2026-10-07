@@ -9,16 +9,16 @@
  * Light and dark both define every token so the values stay as live variables.
  */
 :root {
-  --app-canvas: #fbf7f2;
+  --app-canvas: #fff7f5;
   --app-surface: #ffffff;
-  --app-surface-muted: #f3ece3;
-  --app-ink: #2b2724;
-  --app-ink-muted: #645b53;
-  --app-primary: #4f6e55;
+  --app-surface-muted: #fdebef;
+  --app-ink: #2a1e24;
+  --app-ink-muted: #6e5a64;
+  --app-primary: #c2255c;
   --app-on-primary: #ffffff;
-  --app-accent: #f2c9a8;
-  --app-on-accent: #3b2a1f;
-  --app-border: #e4dbd0;
+  --app-accent: #eee7fc;
+  --app-on-accent: #3e2b6e;
+  --app-border: #f3dfe5;
   --app-caution-bg: #fcefd9;
   --app-caution-ink: #6b4a12;
   --app-danger-bg: #fbe4e1;
@@ -27,16 +27,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --app-canvas: #1c1a18;
-    --app-surface: #282522;
-    --app-surface-muted: #332f2b;
-    --app-ink: #f4efe9;
-    --app-ink-muted: #bdb4aa;
-    --app-primary: #a7c7ab;
-    --app-on-primary: #1c1a18;
-    --app-accent: #6b4a35;
-    --app-on-accent: #fbe9da;
-    --app-border: #3d3833;
+    --app-canvas: #16111a;
+    --app-surface: #231b27;
+    --app-surface-muted: #2f2433;
+    --app-ink: #f9eef2;
+    --app-ink-muted: #c7b4be;
+    --app-primary: #ff8fb3;
+    --app-on-primary: #2b0b18;
+    --app-accent: #382c57;
+    --app-on-accent: #eee7fc;
+    --app-border: #3a2d3d;
     --app-caution-bg: #3d3220;
     --app-caution-ink: #f2d29b;
     --app-danger-bg: #3e2523;

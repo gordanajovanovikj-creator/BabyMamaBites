@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "reviewStatus": "placeholder",
+  "reviewer": "paediatrician",
+  "note": "[PLACEHOLDER - needs expert review] Thresholds that decide which stage of the app a family sees and when corrected age is used for babies born early.",
+  "stageStartMonths": {
+    "solids": 6,
+    "toddler": 12
+  },
+  "correctedAge": {
+    "minDaysEarly": 21,
+    "useUntilMonths": 24
+  }
+}

@@ -18,7 +18,7 @@
     "android": {
       "package": "com.mamababybites.app",
       "adaptiveIcon": {
-        "backgroundColor": "#FBF7F2",
+        "backgroundColor": "#FFF7F5",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -34,8 +34,10 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#FBF7F2",
-          "dark": { "backgroundColor": "#1C1A18" },
+          "backgroundColor": "#FFF7F5",
+          "dark": {
+            "backgroundColor": "#16111A"
+          },
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
@@ -44,9 +46,10 @@
       [
         "expo-notifications",
         {
-          "color": "#4F6E55"
+          "color": "#C2255C"
         }
-      ]
+      ],
+      "@react-native-community/datetimepicker"
     ],
     "experiments": {
       "typedRoutes": true,

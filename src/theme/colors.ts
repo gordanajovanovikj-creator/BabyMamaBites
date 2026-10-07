@@ -1,23 +1,24 @@
 /**
  * Raw colour values for places that cannot take a className (native tab bar,
- * status bar, notification tint). Keep in sync with src/global.css.
+ * status bar, date picker, notification tint). Keep in sync with src/global.css.
+ * Palette: warm blush and rose with a soft lavender accent.
  */
 export const colors = {
   light: {
-    canvas: '#FBF7F2',
+    canvas: '#FFF7F5',
     surface: '#FFFFFF',
-    ink: '#2B2724',
-    inkMuted: '#645B53',
-    primary: '#4F6E55',
-    border: '#E4DBD0',
+    ink: '#2A1E24',
+    inkMuted: '#6E5A64',
+    primary: '#C2255C',
+    border: '#F3DFE5',
   },
   dark: {
-    canvas: '#1C1A18',
-    surface: '#282522',
-    ink: '#F4EFE9',
-    inkMuted: '#BDB4AA',
-    primary: '#A7C7AB',
-    border: '#3D3833',
+    canvas: '#16111A',
+    surface: '#231B27',
+    ink: '#F9EEF2',
+    inkMuted: '#C7B4BE',
+    primary: '#FF8FB3',
+    border: '#3A2D3D',
   },
 } as const;
 
