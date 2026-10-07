@@ -1,6 +1,7 @@
 import { router } from 'expo-router';
 import { View } from 'react-native';
 
+import { WelcomeIllustration } from '@/features/onboarding/welcome-illustration';
 import { useProfile } from '@/features/profile/profile-context';
 import { AppText, Button, Card, Screen } from '@/ui';
 
@@ -9,7 +10,8 @@ export default function WelcomeScreen() {
   const editing = !!profile;
 
   return (
-    <Screen className="flex-grow justify-center pt-16">
+    <Screen className="flex-grow justify-center pt-12">
+      <WelcomeIllustration height={editing ? 180 : 260} />
       <View className="gap-3">
         <AppText variant="display">{editing ? 'Update your details' : 'Welcome, mama'}</AppText>
         <AppText variant="body" color="muted">
