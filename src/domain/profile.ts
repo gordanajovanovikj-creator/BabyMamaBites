@@ -28,7 +28,8 @@ export const diets = [
   'kosher',
   'gluten-free',
 ] as const;
-export const cookingTimes = ['minimal', 'short', 'relaxed'] as const;
+/** Stored values: append new options, never rename existing ones. */
+export const cookingTimes = ['minimal', 'short', 'relaxed', 'flexible'] as const;
 
 export type FeedingStatus = (typeof feedingStatuses)[number];
 export type Allergen = (typeof allergens)[number];

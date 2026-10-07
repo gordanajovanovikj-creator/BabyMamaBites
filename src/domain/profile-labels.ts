@@ -32,5 +32,6 @@ export const dietLabels: Record<Diet, string> = {
 export const cookingTimeLabels: Record<CookingTime, { title: string; detail: string }> = {
   minimal: { title: 'Barely any', detail: 'About 5 minutes, often one-handed' },
   short: { title: 'A little', detail: 'Around 15 minutes' },
-  relaxed: { title: 'Some time', detail: '30 minutes or more, or batch cooking' },
+  relaxed: { title: 'I have time', detail: '30 minutes or more, or batch cooking' },
+  flexible: { title: "I'm flexible", detail: 'It changes from day to day' },
 };

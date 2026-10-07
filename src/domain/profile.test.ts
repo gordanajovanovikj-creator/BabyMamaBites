@@ -58,3 +58,19 @@ describe('toggle', () => {
     expect(list).toEqual(['egg']);
   });
 });
+
+describe('cooking time', () => {
+  it('accepts the flexible option', () => {
+    expect(
+      profileSchema.parse({
+        babyName: null,
+        birthDate: '2026-05-01',
+        dueDate: null,
+        feeding: 'formula',
+        allergens: [],
+        diets: [],
+        cookingTime: 'flexible',
+      }).cookingTime,
+    ).toBe('flexible');
+  });
+});
