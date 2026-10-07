@@ -20,11 +20,20 @@ const labelColors: Record<Variant, TextColor> = {
 export type ButtonProps = Omit<PressableProps, 'children'> & {
   label: string;
   variant?: Variant;
+  /** 'full' stretches to the container; 'compact' is a centred pill. */
+  size?: 'full' | 'compact';
   className?: string;
 };
 
 /** Full-width, 56pt-tall button: easy to hit with a thumb while holding a baby. */
-export function Button({ label, variant = 'primary', disabled, className, ...rest }: ButtonProps) {
+export function Button({
+  label,
+  variant = 'primary',
+  size = 'full',
+  disabled,
+  className,
+  ...rest
+}: ButtonProps) {
   return (
     <Pressable
       accessibilityRole="button"
@@ -35,6 +44,7 @@ export function Button({ label, variant = 'primary', disabled, className, ...res
       className={cn(
         'min-h-14 items-center justify-center rounded-full px-6 py-3 active:opacity-80',
         containerClasses[variant],
+        size === 'compact' && 'self-center px-10',
         disabled && 'opacity-50',
         className,
       )}

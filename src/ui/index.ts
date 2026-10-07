@@ -1,9 +1,10 @@
 export { AppText } from './app-text';
 export { Button } from './button';
-export { Card } from './card';
+export { Card, type CardTone } from './card';
 export { Chip } from './chip';
 export { cn } from './cn';
 export { DateField } from './date-field';
+export { IconButton } from './icon-button';
 export { Notice } from './notice';
 export { OptionCard } from './option-card';
 export { Screen } from './screen';

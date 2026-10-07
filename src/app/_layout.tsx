@@ -29,6 +29,10 @@ function RootStack() {
           name="about"
           options={{ presentation: 'modal', headerShown: true, title: 'About & safety' }}
         />
+        <Stack.Screen
+          name="insight/[id]"
+          options={{ presentation: 'modal', headerShown: true, title: '' }}
+        />
       </Stack.Protected>
       <Stack.Screen name="onboarding" options={{ presentation: profile ? 'modal' : 'card' }} />
     </Stack>

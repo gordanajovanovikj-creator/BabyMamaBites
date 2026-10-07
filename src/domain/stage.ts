@@ -93,3 +93,27 @@ export function formatAge(age: Pick<BabyAge, 'days' | 'weeks' | 'months'>): stri
   }
   return plural(Math.floor(age.months / 12), 'year');
 }
+
+/** Age split into whole months plus the days since the last monthly birthday. */
+export function ageBreakdown(
+  countedFrom: IsoDate,
+  onDate: IsoDate,
+): { months: number; days: number } {
+  const months = Math.max(0, monthsBetween(countedFrom, onDate));
+  const days = Math.max(0, daysBetween(addMonths(countedFrom, months), onDate));
+  return { months, days };
+}
+
+/** Headline age for the Today screen, e.g. "12 days", "5 months, 12 days", "1 year, 2 months". */
+export function formatAgeHeadline(countedFrom: IsoDate, onDate: IsoDate): string {
+  const { months, days } = ageBreakdown(countedFrom, onDate);
+  const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
+  if (months === 0) return plural(days, 'day');
+  if (months < 24) {
+    if (months < 12)
+      return days ? `${plural(months, 'month')}, ${plural(days, 'day')}` : plural(months, 'month');
+    const rest = months - 12;
+    return rest ? `1 year, ${plural(rest, 'month')}` : '1 year';
+  }
+  return plural(Math.floor(months / 12), 'year');
+}

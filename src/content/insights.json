@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "insights": [
+    {
+      "id": "newborn-snack-basket",
+      "stages": ["newborn"],
+      "kind": "tip",
+      "tone": "surface",
+      "title": "A snack basket by your feeding chair",
+      "summary": "Food you can reach with one hand.",
+      "body": [
+        "[PLACEHOLDER - needs expert review] Feeds can be long and frequent. A small basket next to the place you usually sit means a snack and a drink are always within reach.",
+        "Pick things you can open and eat with one hand, and refill the basket when you make a cup of tea."
+      ],
+      "allergens": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "dietitian"
+    },
+    {
+      "id": "newborn-meal-help",
+      "stages": ["newborn"],
+      "kind": "self-care",
+      "tone": "accent",
+      "title": "Say yes to meal help",
+      "summary": "An easy answer to \"What can I do?\"",
+      "body": [
+        "[PLACEHOLDER - needs expert review] When friends and family ask how they can help, a meal, a bag of groceries or a tray of something for the freezer is a wonderful answer.",
+        "Keeping a short list of favourite meals on your phone makes it easy to say yes."
+      ],
+      "allergens": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "editorial"
+    },
+    {
+      "id": "newborn-overnight-oats",
+      "stages": ["newborn", "solids"],
+      "kind": "recipe",
+      "tone": "sky",
+      "title": "Overnight oats in a jar",
+      "summary": "Two minutes tonight, breakfast tomorrow.",
+      "body": [
+        "[PLACEHOLDER - needs expert review] Stir rolled oats and milk together in a jar, add some fruit, close the lid and leave it in the fridge overnight.",
+        "In the morning it's ready to eat straight from the jar, with a spoon in one hand.",
+        "Full recipe, quantities and variations coming in the Recipes tab."
+      ],
+      "allergens": ["milk"],
+      "reviewStatus": "placeholder",
+      "reviewer": "dietitian"
+    },
+    {
+      "id": "newborn-water",
+      "stages": ["newborn"],
+      "kind": "tip",
+      "tone": "muted",
+      "title": "Keep a drink within reach",
+      "summary": "A full bottle wherever you sit.",
+      "body": [
+        "[PLACEHOLDER - needs expert review] It's easy to forget to drink when your hands are full. Keeping a bottle with a straw or sports cap where you feed makes it simple to sip as you go."
+      ],
+      "allergens": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "dietitian"
+    },
+    {
+      "id": "newborn-rest",
+      "stages": ["newborn"],
+      "kind": "self-care",
+      "tone": "deep",
+      "title": "Rest counts, too",
+      "summary": "Lying down for ten minutes is enough.",
+      "body": [
+        "[PLACEHOLDER - needs expert review] You don't need to fill every quiet moment. If the baby is settled and someone is around, it's okay to put your feet up, even for a few minutes."
+      ],
+      "allergens": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "editorial"
+    },
+    {
+      "id": "feeling-low",
+      "stages": ["newborn", "solids"],
+      "kind": "when-to-call",
+      "tone": "deep",
+      "title": "Not feeling like yourself?",
+      "summary": "You don't have to carry it alone.",
+      "body": [
+        "[PLACEHOLDER - needs expert review] If you have felt sad, anxious, numb or not yourself most days, please talk to your doctor, midwife or health visitor. Asking for help is a strong thing to do.",
+        "If you ever have thoughts of harming yourself or your baby, contact your doctor or local emergency number straight away."
+      ],
+      "allergens": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "clinician"
+    },
+    {
+      "id": "solids-purees-first",
+      "stages": ["solids"],
+      "kind": "tip",
+      "tone": "sky",
+      "title": "Starting with purées",
+      "summary": "Smooth first, then step by step.",
+      "body": [
+        "[PLACEHOLDER - needs expert review] This guide will be written by a paediatric dietitian. It will cover signs your baby may be ready, starting with smooth purées, and moving on through thicker textures week by week."
+      ],
+      "allergens": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "paediatric dietitian"
+    },
+    {
+      "id": "solids-freezer-cubes",
+      "stages": ["solids"],
+      "kind": "tip",
+      "tone": "accent",
+      "title": "Freezer cubes, explained",
+      "summary": "A few hours of prep can stock your freezer for weeks.",
+      "body": [
+        "[PLACEHOLDER - needs expert review] Pick some fruits, vegetables and grains. Steam or cook them until soft, then purée.",
+        "Serve some fresh, and spoon the rest into ice-cube trays. Once frozen, move the cubes into labelled, dated bags and use them within 3 months.",
+        "Later you can mix cubes to make your own combinations. The full guide is in the Planner tab."
+      ],
+      "allergens": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "food safety"
+    },
+    {
+      "id": "solids-two-textures",
+      "stages": ["solids"],
+      "kind": "recipe",
+      "tone": "surface",
+      "title": "One meal, two textures",
+      "summary": "Cook once for the family and baby.",
+      "body": [
+        "[PLACEHOLDER - needs expert review] When you cook a family meal, set aside a plain portion for baby before seasoning, then mash or purée it to the texture they're used to.",
+        "Matching family meals for each week of the baby menu are coming soon."
+      ],
+      "allergens": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "paediatric dietitian"
+    },
+    {
+      "id": "solids-choking",
+      "stages": ["solids", "toddler"],
+      "kind": "when-to-call",
+      "tone": "deep",
+      "title": "Choking: be prepared",
+      "summary": "Know what to do before you need it.",
+      "body": [
+        "[PLACEHOLDER - needs expert review] Choking-hazard guidance by age will be written and reviewed by a paediatric professional. A baby first-aid course is a good way to feel prepared.",
+        "If your baby is choking and cannot breathe, cough or cry, call your local emergency number straight away."
+      ],
+      "allergens": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "paediatrician"
+    },
+    {
+      "id": "toddler-share-plate",
+      "stages": ["toddler"],
+      "kind": "recipe",
+      "tone": "sky",
+      "title": "Share your plate",
+      "summary": "Family food, toddler-sized.",
+      "body": [
+        "[PLACEHOLDER - needs expert review] Ideas for serving the family meal in toddler-friendly pieces are coming soon, reviewed by a dietitian."
+      ],
+      "allergens": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "paediatric dietitian"
+    },
+    {
+      "id": "toddler-picky-phases",
+      "stages": ["toddler"],
+      "kind": "self-care",
+      "tone": "accent",
+      "title": "Picky phases",
+      "summary": "You're doing better than you think.",
+      "body": [
+        "[PLACEHOLDER - needs expert review] Gentle, practical ideas for picky phases are coming soon, written and reviewed by a paediatric dietitian."
+      ],
+      "allergens": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "paediatric dietitian"
+    }
+  ]
+}

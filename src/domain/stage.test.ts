@@ -4,6 +4,7 @@ import {
   babyAge,
   babyStage,
   formatAge,
+  formatAgeHeadline,
   solidsStartDate,
   solidsWeek,
   stageForMonths,
@@ -119,5 +120,20 @@ describe('formatAge', () => {
     [{ days: 800, weeks: 114, months: 26 }, '2 years'],
   ])('%j → %s', (age, text) => {
     expect(formatAge(age)).toBe(text);
+  });
+});
+
+describe('formatAgeHeadline', () => {
+  it.each([
+    ['2026-10-07', '0 days'],
+    ['2026-09-26', '11 days'],
+    ['2026-09-07', '1 month'],
+    ['2026-04-25', '5 months, 12 days'],
+    ['2026-03-06', '7 months, 1 day'],
+    ['2025-08-07', '1 year, 2 months'],
+    ['2025-10-07', '1 year'],
+    ['2023-10-01', '3 years'],
+  ])('born %s → %s on 2026-10-07', (from, text) => {
+    expect(formatAgeHeadline(from, '2026-10-07')).toBe(text);
   });
 });

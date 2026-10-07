@@ -2,18 +2,20 @@ import { Pressable, View, type ViewProps } from 'react-native';
 
 import { cn } from './cn';
 
-type Tone = 'surface' | 'muted' | 'primary' | 'accent';
+export type CardTone = 'surface' | 'muted' | 'primary' | 'accent' | 'sky' | 'deep';
 
-const toneClasses: Record<Tone, string> = {
+const toneClasses: Record<CardTone, string> = {
   surface: 'bg-surface',
   muted: 'bg-surface-muted',
   primary: 'bg-primary',
   accent: 'bg-accent',
+  sky: 'bg-sky',
+  deep: 'bg-deep',
 };
 
 export type CardProps = ViewProps & {
   /** Background colour. Use this rather than a bg-* class so styles never clash. */
-  tone?: Tone;
+  tone?: CardTone;
   className?: string;
   onPress?: () => void;
   accessibilityLabel?: string;
@@ -35,6 +37,7 @@ export function Card({
         accessibilityRole="button"
         accessibilityLabel={accessibilityLabel}
         onPress={onPress}
+        style={rest.style}
         className={cn(classes, 'active:opacity-80')}
       >
         {children}

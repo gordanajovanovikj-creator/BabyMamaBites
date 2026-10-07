@@ -4,7 +4,15 @@ import { cn } from './cn';
 
 type Variant = 'display' | 'title' | 'heading' | 'body' | 'label' | 'caption';
 export type TextColor =
-  'ink' | 'muted' | 'primary' | 'on-primary' | 'on-accent' | 'caution' | 'danger';
+  | 'ink'
+  | 'muted'
+  | 'primary'
+  | 'on-primary'
+  | 'on-accent'
+  | 'on-sky'
+  | 'on-deep'
+  | 'caution'
+  | 'danger';
 
 const variantClasses: Record<Variant, string> = {
   display: 'text-4xl font-extrabold tracking-tight',
@@ -21,6 +29,8 @@ const colorClasses: Record<TextColor, string> = {
   primary: 'text-primary',
   'on-primary': 'text-on-primary',
   'on-accent': 'text-on-accent',
+  'on-sky': 'text-on-sky',
+  'on-deep': 'text-on-deep',
   caution: 'text-caution-ink',
   danger: 'text-danger-ink',
 };

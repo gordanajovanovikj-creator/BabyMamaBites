@@ -19,6 +19,10 @@
   --app-accent: #eee7fc;
   --app-on-accent: #3e2b6e;
   --app-border: #f3dfe5;
+  --app-sky: #e4eefb;
+  --app-on-sky: #1e2a44;
+  --app-deep: #4a1d3f;
+  --app-on-deep: #ffffff;
   --app-caution-bg: #fcefd9;
   --app-caution-ink: #6b4a12;
   --app-danger-bg: #fbe4e1;
@@ -37,6 +41,10 @@
     --app-accent: #382c57;
     --app-on-accent: #eee7fc;
     --app-border: #3a2d3d;
+    --app-sky: #22314a;
+    --app-on-sky: #e4eefb;
+    --app-deep: #f2c6da;
+    --app-on-deep: #2a0f22;
     --app-caution-bg: #3d3220;
     --app-caution-ink: #f2d29b;
     --app-danger-bg: #3e2523;
@@ -55,6 +63,10 @@
   --color-accent: var(--app-accent);
   --color-on-accent: var(--app-on-accent);
   --color-border: var(--app-border);
+  --color-sky: var(--app-sky);
+  --color-on-sky: var(--app-on-sky);
+  --color-deep: var(--app-deep);
+  --color-on-deep: var(--app-on-deep);
   --color-caution-bg: var(--app-caution-bg);
   --color-caution-ink: var(--app-caution-ink);
   --color-danger-bg: var(--app-danger-bg);
