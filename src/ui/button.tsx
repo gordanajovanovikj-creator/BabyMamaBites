@@ -53,7 +53,7 @@ export function Button({
       <AppText
         variant="label"
         color={labelColors[variant]}
-        className={cn('text-center text-lg', variant === 'quiet' && 'underline')}
+        className={cn('text-center text-lg font-bold', variant === 'quiet' && 'underline')}
       >
         {label}
       </AppText>

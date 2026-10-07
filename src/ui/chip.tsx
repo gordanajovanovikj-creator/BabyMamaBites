@@ -25,7 +25,7 @@ export function Chip({ label, selected = false, onPress, className }: ChipProps)
         className,
       )}
     >
-      <AppText variant="label" color={selected ? 'on-primary' : 'ink'}>
+      <AppText variant="label" color={selected ? 'on-primary' : 'ink'} className="font-bold">
         {label}
       </AppText>
     </Pressable>

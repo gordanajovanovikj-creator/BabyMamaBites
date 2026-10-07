@@ -1,7 +1,8 @@
 /**
  * Raw colour values for places that cannot take a className (native tab bar,
  * status bar, date picker, notification tint). Keep in sync with src/global.css.
- * Palette: warm blush and rose with a soft lavender accent.
+ * Palette: warm blush and soft rose with a lavender accent.
+ * Rose text only at large/bold sizes (3:1 contrast); body text stays ink.
  */
 export const colors = {
   light: {
@@ -9,7 +10,7 @@ export const colors = {
     surface: '#FFFFFF',
     ink: '#2A1E24',
     inkMuted: '#6E5A64',
-    primary: '#C2255C',
+    primary: '#DB6487',
     border: '#F3DFE5',
   },
   dark: {
@@ -17,7 +18,7 @@ export const colors = {
     surface: '#231B27',
     ink: '#F9EEF2',
     inkMuted: '#C7B4BE',
-    primary: '#FF8FB3',
+    primary: '#F5A3BC',
     border: '#3A2D3D',
   },
 } as const;

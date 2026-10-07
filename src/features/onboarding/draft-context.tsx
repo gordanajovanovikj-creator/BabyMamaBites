@@ -4,6 +4,7 @@ import type { Allergen, CookingTime, Diet, FeedingStatus, Profile } from '@/doma
 
 /** Answers collected across the onboarding screens before they are saved. */
 export type Draft = {
+  babyName: string;
   birthDate: string | null;
   bornEarly: boolean;
   dueDate: string | null;
@@ -15,6 +16,7 @@ export type Draft = {
 
 export function draftFromProfile(profile: Profile | null): Draft {
   return {
+    babyName: profile?.babyName ?? '',
     birthDate: profile?.birthDate ?? null,
     bornEarly: !!profile?.dueDate,
     dueDate: profile?.dueDate ?? null,
@@ -28,7 +30,9 @@ export function draftFromProfile(profile: Profile | null): Draft {
 /** Returns a complete profile, or null if a required answer is missing. */
 export function draftToProfile(draft: Draft): Profile | null {
   if (!draft.birthDate || !draft.feeding || !draft.cookingTime) return null;
+  const name = draft.babyName.trim();
   return {
+    babyName: name ? name : null,
     birthDate: draft.birthDate,
     dueDate: draft.bornEarly ? draft.dueDate : null,
     feeding: draft.feeding,

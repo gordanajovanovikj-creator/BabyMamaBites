@@ -24,6 +24,14 @@ export function AgeHero({ profile }: { profile: Profile }) {
   const stage = babyStage(profile, now);
   const week = stage === 'solids' ? solidsWeek(profile, now) : null;
   const headline = formatAgeHeadline(age.countedFrom, now);
+  const name = profile.babyName ?? 'Your baby';
+  const stageLine = [
+    stageLabels[stage].title,
+    week ? `Week ${week}` : null,
+    age.corrected ? 'Adjusted age' : null,
+  ]
+    .filter(Boolean)
+    .join(' · ');
 
   return (
     <View className="rounded-b-[48px] bg-surface px-5 pb-10" style={{ paddingTop: insets.top + 8 }}>
@@ -48,20 +56,17 @@ export function AgeHero({ profile }: { profile: Profile }) {
       <View
         className="items-center gap-2 pb-6 pt-14"
         accessible
-        accessibilityLabel={`${stageLabels[stage].title}. Your baby is ${headline}${age.corrected ? ', adjusted age' : ''}.${week ? ` Week ${week} of starting solids.` : ''}`}
+        accessibilityLabel={`${name} is ${headline}${age.corrected ? ', adjusted age' : ''}. ${stageLine}.`}
       >
-        <AppText variant="heading" color="primary" className="text-center">
-          {stageLabels[stage].title}
-          {week ? ` · Week ${week}` : ''}
+        <AppText variant="heading" color="primary" className="text-center text-2xl">
+          {name}
         </AppText>
-        <AppText variant="display" color="primary" className="text-center text-5xl leading-[56px]">
+        <AppText variant="display" color="primary" className="text-center">
           {headline}
         </AppText>
-        {age.corrected ? (
-          <AppText variant="caption" className="text-center">
-            Adjusted age, counted from the due date
-          </AppText>
-        ) : null}
+        <AppText variant="caption" className="text-center">
+          {stageLine}
+        </AppText>
       </View>
 
       <Button label="Find a meal" size="compact" onPress={() => router.navigate('/recipes')} />

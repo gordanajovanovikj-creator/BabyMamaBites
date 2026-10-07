@@ -23,16 +23,17 @@ export function createSqliteProfileStore(db: SQLiteDatabase): ProfileStore {
   return {
     async load() {
       const row = await db.getFirstAsync<ProfileRow>(
-        'SELECT birth_date, due_date, feeding, allergens, diets, cooking_time FROM profile WHERE id = 1',
+        'SELECT baby_name, birth_date, due_date, feeding, allergens, diets, cooking_time FROM profile WHERE id = 1',
       );
       return row ? rowToProfile(row) : null;
     },
     async save(profile) {
       const row = profileToRow(profile);
       await db.runAsync(
-        `INSERT INTO profile (id, birth_date, due_date, feeding, allergens, diets, cooking_time, updated_at)
-         VALUES (1, ?, ?, ?, ?, ?, ?, ?)
+        `INSERT INTO profile (id, baby_name, birth_date, due_date, feeding, allergens, diets, cooking_time, updated_at)
+         VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?)
          ON CONFLICT(id) DO UPDATE SET
+           baby_name = excluded.baby_name,
            birth_date = excluded.birth_date,
            due_date = excluded.due_date,
            feeding = excluded.feeding,
@@ -40,6 +41,7 @@ export function createSqliteProfileStore(db: SQLiteDatabase): ProfileStore {
            diets = excluded.diets,
            cooking_time = excluded.cooking_time,
            updated_at = excluded.updated_at`,
+        row.baby_name,
         row.birth_date,
         row.due_date,
         row.feeding,

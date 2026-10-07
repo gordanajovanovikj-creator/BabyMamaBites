@@ -11,10 +11,10 @@
 :root {
   --app-canvas: #fff7f5;
   --app-surface: #ffffff;
-  --app-surface-muted: #fdebef;
+  --app-surface-muted: #fdeef1;
   --app-ink: #2a1e24;
   --app-ink-muted: #6e5a64;
-  --app-primary: #c2255c;
+  --app-primary: #db6487;
   --app-on-primary: #ffffff;
   --app-accent: #eee7fc;
   --app-on-accent: #3e2b6e;
@@ -36,7 +36,7 @@
     --app-surface-muted: #2f2433;
     --app-ink: #f9eef2;
     --app-ink-muted: #c7b4be;
-    --app-primary: #ff8fb3;
+    --app-primary: #f5a3bc;
     --app-on-primary: #2b0b18;
     --app-accent: #382c57;
     --app-on-accent: #eee7fc;

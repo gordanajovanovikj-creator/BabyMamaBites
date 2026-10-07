@@ -3,6 +3,7 @@ import type { Profile } from '@/domain/profile';
 import { profileToRow, rowToProfile } from './profile-row';
 
 const profile: Profile = {
+  babyName: 'Mila',
   birthDate: '2026-05-01',
   dueDate: '2026-06-10',
   feeding: 'mixed',
@@ -12,6 +13,10 @@ const profile: Profile = {
 };
 
 describe('profile row mapping', () => {
+  it('reads rows saved before baby names existed', () => {
+    expect(rowToProfile({ ...profileToRow(profile), baby_name: null })?.babyName).toBeNull();
+  });
+
   it('round-trips a profile', () => {
     expect(rowToProfile(profileToRow(profile))).toEqual(profile);
   });

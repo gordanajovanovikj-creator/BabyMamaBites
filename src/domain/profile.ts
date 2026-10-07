@@ -38,7 +38,11 @@ export type CookingTime = (typeof cookingTimes)[number];
 const isoDate = z.string().refine(isIsoDate, 'Invalid date');
 
 /** Everything we store about the family. Kept deliberately small (privacy first). */
+export const BABY_NAME_MAX = 40;
+
 export const profileSchema = z.object({
+  /** Optional first name or nickname, shown on Today. */
+  babyName: z.string().trim().max(BABY_NAME_MAX).nullable().default(null),
   birthDate: isoDate,
   dueDate: isoDate.nullable(),
   feeding: z.enum(feedingStatuses),

@@ -28,6 +28,7 @@ describe('validateDueDate', () => {
 
 describe('profileSchema', () => {
   const valid = {
+    babyName: 'Mila',
     birthDate: '2026-05-01',
     dueDate: null,
     feeding: 'breast',
@@ -38,6 +39,10 @@ describe('profileSchema', () => {
 
   it('accepts a complete profile', () => {
     expect(profileSchema.parse(valid)).toEqual(valid);
+  });
+  it('accepts profiles saved before baby names existed', () => {
+    const { babyName: _omit, ...old } = valid;
+    expect(profileSchema.parse(old).babyName).toBeNull();
   });
   it('rejects unknown options and bad dates', () => {
     expect(() => profileSchema.parse({ ...valid, allergens: ['chocolate'] })).toThrow();

@@ -14,7 +14,9 @@
   raw hex in components. Set colours on `Card`/`AppText` via their `tone`/`color` props,
   not by adding a second `bg-*`/`text-*` class (two conflicting classes resolve unpredictably).
 - **Look and feel.** Inspired by Sweat and Flo (without copying their branding): blush
-  canvas, rose primary, lavender accent, bold headings, pill buttons, big rounded cards.
+  canvas, soft rose primary, lavender accent, bold headings, pill buttons, big rounded cards.
+  Soft rose only meets 3:1 contrast, so use it for large or bold text and fills, never
+  for small body text.
 - **UX.** Tap targets ≥ 48pt, warm non-judgemental copy, support Dynamic Type, VoiceOver,
   light and dark mode.
 - Run `npm run check` before committing.

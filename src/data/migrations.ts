@@ -13,4 +13,5 @@ export const migrations: string[] = [
      cooking_time TEXT NOT NULL,
      updated_at TEXT NOT NULL
    );`,
+  `ALTER TABLE profile ADD COLUMN baby_name TEXT;`,
 ];

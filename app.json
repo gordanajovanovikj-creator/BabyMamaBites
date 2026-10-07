@@ -46,7 +46,7 @@
       [
         "expo-notifications",
         {
-          "color": "#C2255C"
+          "color": "#DB6487"
         }
       ],
       "@react-native-community/datetimepicker"

@@ -2,6 +2,7 @@ import { profileSchema, type Profile } from '@/domain/profile';
 
 /** Shape of the `profile` table row. Lists are stored as JSON text. */
 export type ProfileRow = {
+  baby_name: string | null;
   birth_date: string;
   due_date: string | null;
   feeding: string;
@@ -12,6 +13,7 @@ export type ProfileRow = {
 
 export function profileToRow(profile: Profile): ProfileRow {
   return {
+    baby_name: profile.babyName,
     birth_date: profile.birthDate,
     due_date: profile.dueDate,
     feeding: profile.feeding,
@@ -25,6 +27,7 @@ export function profileToRow(profile: Profile): ProfileRow {
 export function rowToProfile(row: ProfileRow): Profile | null {
   try {
     const result = profileSchema.safeParse({
+      babyName: row.baby_name ?? null,
       birthDate: row.birth_date,
       dueDate: row.due_date,
       feeding: row.feeding,
