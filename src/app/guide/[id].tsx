@@ -1,9 +1,11 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
-import { monthlyGuides } from '@/content/monthly-guides';
+import { guideSourcesAccessed, monthlyGuides } from '@/content/monthly-guides';
+import { splitReviewMarker } from '@/content/schemas';
 import { adjacentGuides } from '@/domain/monthly-guides';
-import { AppText, Button, Card, Notice, Screen } from '@/ui';
+import { GuideSectionView } from '@/features/guides/guide-section-view';
+import { AppText, Button, Notice, Screen } from '@/ui';
 
 export default function GuideScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -28,7 +30,7 @@ export default function GuideScreen() {
           {guide.ageLabel}
         </AppText>
         <AppText variant="title">{guide.title}</AppText>
-        <AppText color="muted">{guide.intro}</AppText>
+        <AppText color="muted">{splitReviewMarker(guide.intro).text}</AppText>
       </View>
 
       {guide.reviewStatus === 'placeholder' ? (
@@ -39,16 +41,17 @@ export default function GuideScreen() {
         </View>
       ) : null}
 
-      {guide.sections.map((section) =>
-        section.id === 'when-to-call' ? (
-          <Notice key={section.id} tone="urgent" title={section.title} body={section.body} />
-        ) : (
-          <Card key={section.id} className="gap-2">
-            <AppText variant="heading">{section.title}</AppText>
-            <AppText>{section.body}</AppText>
-          </Card>
-        ),
-      )}
+      {guide.reviewStatus === 'placeholder' ? (
+        <Notice
+          tone="caution"
+          title="Draft from official sources"
+          body={`Summarised from CDC, NHS, AAP and WHO guidance (read ${guideSourcesAccessed}). Not yet reviewed by a health professional, and not medical advice. Always follow your own doctor's advice.`}
+        />
+      ) : null}
+
+      {guide.sections.map((section) => (
+        <GuideSectionView key={section.id} section={section} />
+      ))}
 
       <View className="flex-row gap-3">
         {previous ? (

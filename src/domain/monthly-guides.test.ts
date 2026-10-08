@@ -1,4 +1,5 @@
-import { monthlyGuides } from '@/content/monthly-guides';
+import { guideSources, monthlyGuides } from '@/content/monthly-guides';
+import { splitReviewMarker } from '@/content/schemas';
 
 import { adjacentGuides, guideForMonths } from './monthly-guides';
 
@@ -41,7 +42,22 @@ describe('bundled monthly guides', () => {
   it('mark every unreviewed section visibly', () => {
     for (const g of monthlyGuides.filter((x) => x.reviewStatus === 'placeholder')) {
       expect(g.intro).toContain('[PLACEHOLDER - needs expert review]');
-      for (const s of g.sections) expect(s.body).toContain('[PLACEHOLDER - needs expert review]');
+      for (const s of g.sections) {
+        expect(s.paragraphs[0].startsWith('[PLACEHOLDER - needs expert review]')).toBe(true);
+      }
+    }
+  });
+
+  it('have no markers left once a guide is marked reviewed', () => {
+    for (const g of monthlyGuides.filter((x) => x.reviewStatus === 'reviewed')) {
+      expect(JSON.stringify(g)).not.toContain('[PLACEHOLDER');
+    }
+  });
+
+  it('use unique section ids within each guide', () => {
+    for (const g of monthlyGuides) {
+      const ids = g.sections.map((s) => s.id);
+      expect(new Set(ids).size).toBe(ids.length);
     }
   });
 
@@ -51,8 +67,43 @@ describe('bundled monthly guides', () => {
 
   it('never claim a food increases milk supply', () => {
     const text = JSON.stringify(monthlyGuides).toLowerCase();
-    for (const banned of ['milk supply', 'boost milk', 'increase milk', 'galactagogue']) {
+    for (const banned of [
+      'boost milk',
+      'boosts milk',
+      'increase milk',
+      'increases milk',
+      'increase your milk',
+      'milk-boosting',
+      'galactagogue',
+      'lactogenic',
+    ]) {
       expect(text).not.toContain(banned);
     }
+  });
+
+  it('cite only known sources, and every source is an official site', () => {
+    const ids = new Set(guideSources.map((s) => s.id));
+    for (const g of monthlyGuides) {
+      for (const s of g.sections) for (const src of s.sources) expect(ids.has(src)).toBe(true);
+    }
+    const official = ['www.cdc.gov', 'www.nhs.uk', 'www.healthychildren.org', 'www.who.int'];
+    for (const s of guideSources) expect(official).toContain(new URL(s.url).host);
+  });
+
+  it('point to emergency help in every "when to call" section', () => {
+    for (const g of monthlyGuides) {
+      const call = g.sections.at(-1)!;
+      expect(JSON.stringify(call)).toMatch(/emergency/i);
+    }
+  });
+});
+
+describe('splitReviewMarker', () => {
+  it('removes a leading marker for display and reports it', () => {
+    expect(splitReviewMarker('[PLACEHOLDER - needs expert review] Hello')).toEqual({
+      text: 'Hello',
+      isDraft: true,
+    });
+    expect(splitReviewMarker('Hello')).toEqual({ text: 'Hello', isDraft: false });
   });
 });

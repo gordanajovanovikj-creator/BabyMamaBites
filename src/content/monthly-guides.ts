@@ -3,12 +3,26 @@ import { z } from 'zod';
 import guidesJson from './monthly-guides.json';
 import { reviewStatusSchema } from './schemas';
 
+export const guideSourceSchema = z.object({
+  id: z.string().min(1),
+  publisher: z.string().min(1),
+  title: z.string().min(1),
+  url: z.url(),
+});
+export type GuideSource = z.infer<typeof guideSourceSchema>;
+
 export const guideSectionSchema = z.object({
   id: z.string().min(1),
   title: z.string().min(1),
-  body: z.string().min(1),
+  paragraphs: z.array(z.string().min(1)).min(1),
+  bullets: z.array(z.string().min(1)),
+  /** Where official sources disagree (e.g. US vs UK guidance). */
+  note: z.string().min(1).optional(),
+  /** Ids into the `sources` list. */
+  sources: z.array(z.string().min(1)).min(1),
   reviewer: z.string().min(1),
 });
+export type GuideSection = z.infer<typeof guideSectionSchema>;
 
 export const monthlyGuideSchema = z.object({
   id: z.string().min(1),
@@ -26,6 +40,20 @@ export const monthlyGuideSchema = z.object({
 });
 export type MonthlyGuide = z.infer<typeof monthlyGuideSchema>;
 
-export const monthlyGuides: MonthlyGuide[] = z
-  .object({ version: z.number(), guides: z.array(monthlyGuideSchema).min(1) })
-  .parse(guidesJson).guides;
+const fileSchema = z.object({
+  version: z.number(),
+  /** Date the official sources were read. */
+  accessed: z.string(),
+  sources: z.array(guideSourceSchema).min(1),
+  guides: z.array(monthlyGuideSchema).min(1),
+});
+
+const file = fileSchema.parse(guidesJson);
+
+export const monthlyGuides: MonthlyGuide[] = file.guides;
+export const guideSources: GuideSource[] = file.sources;
+export const guideSourcesAccessed: string = file.accessed;
+
+export function getGuideSource(id: string): GuideSource | undefined {
+  return guideSources.find((s) => s.id === id);
+}

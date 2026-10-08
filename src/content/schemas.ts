@@ -24,3 +24,9 @@ export const copyCollectionSchema = z.object({
   blocks: z.array(copyBlockSchema).min(1),
 });
 export type CopyCollection = z.infer<typeof copyCollectionSchema>;
+
+/** Splits a leading review marker off text for display (the marker stays in the content file). */
+export function splitReviewMarker(text: string): { text: string; isDraft: boolean } {
+  if (!text.startsWith(PLACEHOLDER_MARKER)) return { text, isDraft: false };
+  return { text: text.slice(PLACEHOLDER_MARKER.length).trimStart(), isDraft: true };
+}
