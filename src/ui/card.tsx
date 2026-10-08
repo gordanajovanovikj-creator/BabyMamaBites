@@ -13,6 +13,11 @@ const toneClasses: Record<CardTone, string> = {
   deep: 'bg-deep',
 };
 
+/** Background class for a tone, for views that aren't Cards (e.g. icon tiles). */
+export function toneBackground(tone: CardTone): string {
+  return toneClasses[tone];
+}
+
 export type CardProps = ViewProps & {
   /** Background color. Use this rather than a bg-* class so styles never clash. */
   tone?: CardTone;

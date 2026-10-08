@@ -37,6 +37,10 @@ function RootStack() {
           name="guide/[id]"
           options={{ presentation: 'modal', headerShown: true, title: '' }}
         />
+        <Stack.Screen
+          name="recipe/[id]"
+          options={{ headerShown: true, title: '', headerBackButtonDisplayMode: 'minimal' }}
+        />
       </Stack.Protected>
       <Stack.Screen name="onboarding" options={{ presentation: profile ? 'modal' : 'card' }} />
     </Stack>

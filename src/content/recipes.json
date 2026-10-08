@@ -1,0 +1,952 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "nourish-while-nursing",
+      "label": "Nourish while nursing",
+      "icon": "mug.fill",
+      "emoji": "🥛",
+      "tone": "accent",
+      "description": "Comforting drinks, porridges and snacks to keep you nourished and hydrated while you feed."
+    },
+    {
+      "id": "busy-moms",
+      "label": "Busy moms",
+      "icon": "bolt.heart.fill",
+      "emoji": "⚡",
+      "tone": "muted",
+      "description": "Real food for days when there's no time at all."
+    },
+    {
+      "id": "one-hand",
+      "label": "With one hand",
+      "icon": "hand.raised.fill",
+      "emoji": "✋",
+      "tone": "sky",
+      "description": "Things you can eat with one hand while the other holds the baby."
+    },
+    {
+      "id": "dinner-in-30",
+      "label": "Dinner in 30",
+      "icon": "timer",
+      "emoji": "⏱️",
+      "tone": "muted",
+      "description": "Dinners on the table in about 30 minutes."
+    },
+    {
+      "id": "one-pot",
+      "label": "One pot",
+      "icon": "frying.pan.fill",
+      "emoji": "🍲",
+      "tone": "accent",
+      "description": "One pan or pot, less washing up."
+    },
+    {
+      "id": "top-breakfasts",
+      "label": "Top 10 breakfasts",
+      "icon": "sun.max.fill",
+      "emoji": "🍳",
+      "tone": "sky",
+      "description": "Our favorite ways to start the day."
+    },
+    {
+      "id": "prep-ahead-breakfast",
+      "label": "Prep-ahead breakfast",
+      "icon": "alarm.fill",
+      "emoji": "🥣",
+      "tone": "muted",
+      "description": "Make tonight, grab tomorrow morning."
+    },
+    {
+      "id": "prep-ahead-lunch",
+      "label": "Prep-ahead lunch",
+      "icon": "takeoutbag.and.cup.and.straw.fill",
+      "emoji": "🥪",
+      "tone": "accent",
+      "description": "Lunches you can make in a batch and grab all week."
+    },
+    {
+      "id": "high-protein-dinner",
+      "label": "High-protein dinner",
+      "icon": "flame.fill",
+      "emoji": "🍗",
+      "tone": "sky",
+      "description": "Satisfying dinners built around a good portion of protein."
+    },
+    {
+      "id": "high-protein",
+      "label": "High protein",
+      "icon": "dumbbell.fill",
+      "emoji": "💪",
+      "tone": "muted",
+      "description": "Meals and snacks built around protein foods."
+    },
+    {
+      "id": "snack-smart",
+      "label": "Snack smart",
+      "icon": "carrot.fill",
+      "emoji": "🍎",
+      "tone": "accent",
+      "description": "Quick snacks with a bit more staying power."
+    },
+    {
+      "id": "family-friendly",
+      "label": "Family friendly",
+      "icon": "figure.2.and.child.holdinghands",
+      "emoji": "👨‍👩‍👧",
+      "tone": "sky",
+      "description": "Meals the whole family can share."
+    },
+    {
+      "id": "nourished",
+      "label": "Nourished",
+      "icon": "leaf.fill",
+      "emoji": "🥗",
+      "tone": "muted",
+      "description": "Colorful, wholesome meals full of vegetables, beans and grains."
+    },
+    {
+      "id": "breakfast",
+      "label": "Breakfast",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "☕",
+      "tone": "accent",
+      "description": "All breakfast ideas."
+    },
+    {
+      "id": "lunch",
+      "label": "Lunch",
+      "icon": "takeoutbag.and.cup.and.straw.fill",
+      "emoji": "🥙",
+      "tone": "sky",
+      "description": "All lunch ideas."
+    },
+    {
+      "id": "dinner",
+      "label": "Dinner",
+      "icon": "fork.knife",
+      "emoji": "🍽️",
+      "tone": "muted",
+      "description": "All dinner ideas."
+    }
+  ],
+  "recipes": [
+    {
+      "id": "overnight-oats",
+      "title": "Overnight oats in a jar",
+      "summary": "[PLACEHOLDER - needs expert review] Stir it together tonight; breakfast is waiting in the fridge tomorrow.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🥣",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": [
+        "nourish-while-nursing",
+        "prep-ahead-breakfast",
+        "breakfast",
+        "top-breakfasts",
+        "busy-moms"
+      ],
+      "tags": ["five-minute", "no-cook", "one-handed"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup rolled oats",
+        "1/2 cup milk",
+        "1/4 cup plain yogurt",
+        "1/2 cup berries or chopped fruit",
+        "1 tsp maple syrup (optional)",
+        "Pinch of cinnamon"
+      ],
+      "steps": [
+        "Add the oats, milk, yogurt and cinnamon to a jar and stir well.",
+        "Top with the fruit, close the lid and refrigerate overnight (or at least 4 hours).",
+        "Stir and eat cold, straight from the jar. Add maple syrup if you like."
+      ],
+      "tips": [
+        "Make 3 or 4 jars at once; they keep in the fridge for up to 3 days.",
+        "Swap the milk and yogurt for fortified soy versions to make it dairy-free."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "banana-oat-smoothie",
+      "title": "Banana oat smoothie",
+      "summary": "[PLACEHOLDER - needs expert review] A thick, filling drink you can sip during a feed.",
+      "icon": "mug.fill",
+      "emoji": "🍌",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["nourish-while-nursing", "busy-moms", "one-hand", "breakfast", "snack-smart"],
+      "tags": ["five-minute", "no-cook", "one-handed"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 ripe banana (fresh or frozen)",
+        "1/4 cup rolled oats",
+        "1 cup milk",
+        "1/4 cup plain yogurt",
+        "Pinch of cinnamon"
+      ],
+      "steps": [
+        "Add everything to a blender.",
+        "Blend until smooth, about 1 minute.",
+        "Pour into a cup with a lid and a straw."
+      ],
+      "tips": [
+        "Freeze sliced ripe bananas so they're ready to go.",
+        "Use fortified soy milk and soy yogurt for a dairy-free version."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "pb-banana-shake",
+      "title": "Peanut butter banana milkshake",
+      "summary": "[PLACEHOLDER - needs expert review] Creamy, chocolatey and ready in two minutes.",
+      "icon": "mug.fill",
+      "emoji": "🥤",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["nourish-while-nursing", "snack-smart", "high-protein", "one-hand"],
+      "tags": ["five-minute", "no-cook", "one-handed"],
+      "energy": "low",
+      "allergens": ["milk", "peanut"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 frozen banana",
+        "1 tbsp smooth peanut butter",
+        "1 tsp unsweetened cocoa powder",
+        "1 cup milk",
+        "3 to 4 ice cubes"
+      ],
+      "steps": [
+        "Add everything to a blender.",
+        "Blend until thick and smooth.",
+        "Drink right away."
+      ],
+      "tips": [
+        "Cocoa contains a small amount of caffeine; leave it out if you're keeping caffeine low."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "warm-spiced-milk",
+      "title": "Warm cinnamon vanilla milk",
+      "summary": "[PLACEHOLDER - needs expert review] A soothing, caffeine-free warm drink for night feeds.",
+      "icon": "mug.fill",
+      "emoji": "🍵",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["nourish-while-nursing"],
+      "tags": ["five-minute", "one-handed"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 cup milk",
+        "1/4 tsp cinnamon",
+        "1/4 tsp vanilla extract",
+        "1 tsp maple syrup (optional)"
+      ],
+      "steps": [
+        "Warm the milk in a small pan or the microwave until steaming, not boiling.",
+        "Stir in the cinnamon, vanilla and maple syrup.",
+        "Pour into a mug with a lid and let it cool to a comfortable temperature."
+      ],
+      "tips": [
+        "Use a lidded mug so you can sip safely while holding your baby.",
+        "Fortified oat or soy milk work well too."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nut-butter-porridge",
+      "title": "Creamy oat porridge with peanut butter",
+      "summary": "[PLACEHOLDER - needs expert review] Warm, comforting oats with banana and a swirl of peanut butter.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🥣",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 10,
+      "servings": 1,
+      "categories": ["nourish-while-nursing", "breakfast", "top-breakfasts", "nourished"],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["milk", "peanut"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup rolled oats",
+        "1 cup milk or water",
+        "1/2 banana, sliced",
+        "1 tbsp smooth peanut butter",
+        "Pinch of cinnamon"
+      ],
+      "steps": [
+        "Add the oats and milk to a small pan and bring to a gentle simmer.",
+        "Cook for 4 to 5 minutes, stirring, until creamy.",
+        "Spoon into a bowl and top with banana, peanut butter and cinnamon."
+      ],
+      "tips": [
+        "Microwave option: cook oats and milk in a large bowl for 2 to 3 minutes, stirring halfway."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "egg-muffin-cups",
+      "title": "Veggie egg muffin cups",
+      "summary": "[PLACEHOLDER - needs expert review] Make a dozen on Sunday and reheat all week.",
+      "icon": "sun.max.fill",
+      "emoji": "🧁",
+      "tone": "muted",
+      "activeMinutes": 15,
+      "totalMinutes": 35,
+      "servings": 12,
+      "categories": [
+        "prep-ahead-breakfast",
+        "top-breakfasts",
+        "high-protein",
+        "breakfast",
+        "one-hand",
+        "family-friendly"
+      ],
+      "tags": ["batch-cook", "freezer-friendly", "one-handed"],
+      "energy": "medium",
+      "allergens": ["egg", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "10 eggs",
+        "1/4 cup milk",
+        "1 cup chopped vegetables (spinach, bell pepper, tomato)",
+        "1/2 cup shredded cheese",
+        "Black pepper",
+        "Oil or cooking spray for the pan"
+      ],
+      "steps": [
+        "Heat the oven to 350°F and grease a 12-cup muffin pan.",
+        "Whisk the eggs, milk and pepper together.",
+        "Divide the vegetables and cheese between the cups, then pour in the egg mixture.",
+        "Bake for 20 to 25 minutes, until set in the middle.",
+        "Cool, then store in the fridge for up to 4 days or freeze."
+      ],
+      "tips": [
+        "Reheat in the microwave for about 30 seconds until hot all the way through.",
+        "Leave out added salt if you'll share these with your baby."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "yogurt-parfait",
+      "title": "Berry yogurt parfait",
+      "summary": "[PLACEHOLDER - needs expert review] Layers of yogurt, fruit and crunchy oats in five minutes.",
+      "icon": "sun.max.fill",
+      "emoji": "🍓",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["top-breakfasts", "breakfast", "high-protein", "snack-smart"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "3/4 cup plain Greek yogurt",
+        "1/2 cup berries",
+        "2 tbsp rolled oats or toasted oats",
+        "1 tsp maple syrup (optional)"
+      ],
+      "steps": [
+        "Spoon half the yogurt into a glass or jar.",
+        "Add half the berries and oats, then repeat the layers.",
+        "Drizzle with maple syrup if you like."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "avocado-egg-toast",
+      "title": "Avocado toast with egg",
+      "summary": "[PLACEHOLDER - needs expert review] A quick, satisfying breakfast with a fully cooked egg.",
+      "icon": "sun.max.fill",
+      "emoji": "🥑",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 10,
+      "servings": 1,
+      "categories": ["top-breakfasts", "breakfast", "high-protein"],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["wheat", "egg"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 slice whole grain bread",
+        "1/2 ripe avocado",
+        "1 egg",
+        "Squeeze of lemon",
+        "Pepper and chili flakes (optional)"
+      ],
+      "steps": [
+        "Toast the bread.",
+        "Fry, scramble or boil the egg until the white and yolk are fully set.",
+        "Mash the avocado with lemon and spread on the toast.",
+        "Top with the egg and season."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "breakfast-burritos",
+      "title": "Freezer breakfast burritos",
+      "summary": "[PLACEHOLDER - needs expert review] Wrap, freeze and microwave on busy mornings.",
+      "icon": "alarm.fill",
+      "emoji": "🌯",
+      "tone": "muted",
+      "activeMinutes": 25,
+      "totalMinutes": 40,
+      "servings": 8,
+      "categories": ["prep-ahead-breakfast", "high-protein", "one-hand", "busy-moms", "breakfast"],
+      "tags": ["batch-cook", "freezer-friendly", "one-handed"],
+      "energy": "medium",
+      "allergens": ["egg", "wheat", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "8 large flour tortillas",
+        "10 eggs",
+        "1 can (15 oz) black beans, rinsed",
+        "1 cup shredded cheese",
+        "1 cup salsa",
+        "1 bell pepper, diced",
+        "1 tbsp oil"
+      ],
+      "steps": [
+        "Cook the pepper in the oil until soft.",
+        "Add the whisked eggs and scramble until fully cooked. Stir in the beans.",
+        "Divide the filling, cheese and salsa between the tortillas and roll up tightly.",
+        "Cool, wrap each one in foil or plastic wrap and freeze.",
+        "To reheat, unwrap, wrap in a paper towel and microwave for 2 to 3 minutes until hot in the center."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "baked-oatmeal",
+      "title": "Baked oatmeal squares",
+      "summary": "[PLACEHOLDER - needs expert review] A family-size breakfast that slices into grab-and-go squares.",
+      "icon": "alarm.fill",
+      "emoji": "🍰",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 45,
+      "servings": 9,
+      "categories": [
+        "prep-ahead-breakfast",
+        "family-friendly",
+        "breakfast",
+        "nourish-while-nursing"
+      ],
+      "tags": ["batch-cook", "freezer-friendly", "one-handed"],
+      "energy": "medium",
+      "allergens": ["milk", "egg"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "2 cups rolled oats",
+        "1 tsp baking powder",
+        "1 tsp cinnamon",
+        "1 3/4 cups milk",
+        "2 eggs",
+        "2 ripe bananas, mashed",
+        "1 cup blueberries"
+      ],
+      "steps": [
+        "Heat the oven to 375°F and grease an 8-inch square pan.",
+        "Mix the oats, baking powder and cinnamon.",
+        "Whisk the milk, eggs and banana, then stir into the oats with the blueberries.",
+        "Pour into the pan and bake for 35 minutes, until set and golden.",
+        "Cool and cut into 9 squares. Keeps in the fridge for 4 days or freezes well."
+      ],
+      "tips": ["Ripe bananas sweeten it, so there's no need for added sugar."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "hummus-wrap",
+      "title": "Hummus veggie wrap",
+      "summary": "[PLACEHOLDER - needs expert review] Roll it up in five minutes and eat with one hand.",
+      "icon": "hand.raised.fill",
+      "emoji": "🌯",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["one-hand", "lunch", "busy-moms", "nourished"],
+      "tags": ["five-minute", "no-cook", "one-handed"],
+      "energy": "low",
+      "allergens": ["wheat", "sesame"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 large whole wheat tortilla",
+        "3 tbsp hummus",
+        "Handful of spinach",
+        "1/4 cucumber, sliced",
+        "1 small carrot, grated"
+      ],
+      "steps": [
+        "Spread the hummus over the tortilla.",
+        "Add the vegetables in a line down the middle.",
+        "Roll up tightly and cut in half."
+      ],
+      "tips": ["Hummus is made with tahini (sesame)."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "chicken-quinoa-jars",
+      "title": "Chicken and quinoa salad jars",
+      "summary": "[PLACEHOLDER - needs expert review] Four lunches made at once, ready to grab from the fridge.",
+      "icon": "takeoutbag.and.cup.and.straw.fill",
+      "emoji": "🥗",
+      "tone": "accent",
+      "activeMinutes": 25,
+      "totalMinutes": 30,
+      "servings": 4,
+      "categories": ["prep-ahead-lunch", "high-protein", "lunch", "nourished"],
+      "tags": ["batch-cook"],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["halal", "gluten-free"],
+      "ingredients": [
+        "1 cup quinoa",
+        "2 cups cooked chicken breast, chopped",
+        "1 can (15 oz) chickpeas, rinsed",
+        "2 cups chopped cucumber and cherry tomatoes",
+        "3 tbsp olive oil",
+        "2 tbsp lemon juice",
+        "Pepper"
+      ],
+      "steps": [
+        "Cook the quinoa according to the package and let it cool.",
+        "Whisk the olive oil, lemon juice and pepper in each jar's bottom.",
+        "Layer the chickpeas, vegetables, quinoa and chicken on top.",
+        "Seal and refrigerate for up to 4 days. Shake into a bowl to eat."
+      ],
+      "tips": ["Halal and kosher depend on the chicken you buy; check the label."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "white-bean-tuna-salad",
+      "title": "White bean and tuna salad",
+      "summary": "[PLACEHOLDER - needs expert review] A no-cook, protein-packed lunch in ten minutes.",
+      "icon": "takeoutbag.and.cup.and.straw.fill",
+      "emoji": "🐟",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 10,
+      "servings": 2,
+      "categories": ["lunch", "high-protein", "nourished", "prep-ahead-lunch"],
+      "tags": ["no-cook"],
+      "energy": "low",
+      "allergens": ["fish"],
+      "diets": ["pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 can (5 oz) light tuna, drained",
+        "1 can (15 oz) white beans, rinsed",
+        "1/2 red onion, finely chopped",
+        "1 cup cherry tomatoes, halved",
+        "2 tbsp olive oil",
+        "1 tbsp lemon juice",
+        "Handful of parsley"
+      ],
+      "steps": [
+        "Mix the tuna, beans, onion and tomatoes in a bowl.",
+        "Dress with olive oil, lemon juice and pepper.",
+        "Stir through the parsley. Keeps in the fridge for 2 days."
+      ],
+      "tips": ["Canned light tuna is on the FDA's \"Best Choices\" list for lower mercury."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "black-bean-quesadilla",
+      "title": "Black bean quesadillas",
+      "summary": "[PLACEHOLDER - needs expert review] Crispy, cheesy and on the table in 15 minutes.",
+      "icon": "fork.knife",
+      "emoji": "🫓",
+      "tone": "sky",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["lunch", "dinner-in-30", "family-friendly", "busy-moms", "one-hand"],
+      "tags": ["one-handed"],
+      "energy": "low",
+      "allergens": ["wheat", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "4 small whole wheat tortillas",
+        "1 can (15 oz) black beans, rinsed and mashed",
+        "1 cup shredded cheese",
+        "1/2 cup corn",
+        "1/2 tsp cumin"
+      ],
+      "steps": [
+        "Mix the beans, corn and cumin.",
+        "Spread over two tortillas, sprinkle with cheese and top with the other tortillas.",
+        "Cook in a dry skillet over medium heat for 2 to 3 minutes per side until crisp and melted.",
+        "Cut into wedges."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "lentil-soup",
+      "title": "One-pot red lentil soup",
+      "summary": "[PLACEHOLDER - needs expert review] A big pot of warming soup that freezes beautifully.",
+      "icon": "frying.pan.fill",
+      "emoji": "🍲",
+      "tone": "accent",
+      "activeMinutes": 15,
+      "totalMinutes": 40,
+      "servings": 6,
+      "categories": ["one-pot", "nourished", "lunch", "family-friendly", "dinner"],
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 onion, chopped",
+        "2 carrots, chopped",
+        "2 cloves garlic",
+        "1 1/2 cups red lentils, rinsed",
+        "1 can (14 oz) chopped tomatoes",
+        "6 cups low-sodium vegetable broth",
+        "1 tsp cumin"
+      ],
+      "steps": [
+        "Soften the onion and carrots in the oil for 5 minutes.",
+        "Add the garlic and cumin and cook for 1 minute.",
+        "Add the lentils, tomatoes and broth. Simmer for 20 to 25 minutes until the lentils are soft.",
+        "Blend partly or fully if you like it smooth.",
+        "Cool and freeze in portions for up to 3 months."
+      ],
+      "tips": ["Use low-sodium broth, and blend a plain portion if you're sharing with your baby."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "turkey-chili",
+      "title": "One-pot turkey chili",
+      "summary": "[PLACEHOLDER - needs expert review] A mild, family-friendly chili for batch cooking.",
+      "icon": "flame.fill",
+      "emoji": "🌶️",
+      "tone": "muted",
+      "activeMinutes": 20,
+      "totalMinutes": 50,
+      "servings": 6,
+      "categories": ["one-pot", "high-protein-dinner", "high-protein", "family-friendly", "dinner"],
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["gluten-free", "halal"],
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 lb ground turkey",
+        "1 onion, chopped",
+        "1 bell pepper, chopped",
+        "2 cans (15 oz) beans, rinsed",
+        "1 can (28 oz) crushed tomatoes",
+        "2 tsp mild chili powder",
+        "1 tsp cumin"
+      ],
+      "steps": [
+        "Brown the turkey in the oil until cooked through, breaking it up.",
+        "Add the onion and pepper and cook for 5 minutes.",
+        "Stir in the spices, beans and tomatoes. Simmer for 25 to 30 minutes.",
+        "Serve with rice, or freeze portions for up to 3 months."
+      ],
+      "tips": ["Halal depends on the turkey you buy; check the label."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "sheet-pan-salmon",
+      "title": "Sheet-pan salmon and vegetables",
+      "summary": "[PLACEHOLDER - needs expert review] One tray, 25 minutes, minimal washing up.",
+      "icon": "fish.fill",
+      "emoji": "🐟",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": [
+        "dinner-in-30",
+        "high-protein-dinner",
+        "high-protein",
+        "family-friendly",
+        "dinner",
+        "nourished"
+      ],
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["fish"],
+      "diets": ["pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "4 salmon fillets (about 4 oz each)",
+        "1 lb baby potatoes, halved",
+        "2 cups broccoli florets",
+        "2 tbsp olive oil",
+        "1 lemon",
+        "Pepper and dried dill"
+      ],
+      "steps": [
+        "Heat the oven to 425°F. Toss the potatoes with half the oil and roast for 10 minutes.",
+        "Add the broccoli and salmon to the tray, drizzle with the rest of the oil, lemon juice, pepper and dill.",
+        "Roast for 12 to 15 minutes until the salmon flakes easily and reaches 145°F."
+      ],
+      "tips": ["Salmon is on the FDA's \"Best Choices\" list."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "chicken-stir-fry",
+      "title": "Chicken and vegetable stir-fry",
+      "summary": "[PLACEHOLDER - needs expert review] Fast, colorful and easy to adapt.",
+      "icon": "flame.fill",
+      "emoji": "🥢",
+      "tone": "accent",
+      "activeMinutes": 20,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": ["dinner-in-30", "high-protein-dinner", "high-protein", "dinner"],
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["soy", "wheat"],
+      "diets": ["halal"],
+      "ingredients": [
+        "1 lb chicken breast, thinly sliced",
+        "4 cups mixed stir-fry vegetables",
+        "2 tbsp low-sodium soy sauce",
+        "1 tbsp oil",
+        "1 tsp grated ginger",
+        "1 clove garlic",
+        "Cooked rice to serve"
+      ],
+      "steps": [
+        "Heat the oil in a large pan and cook the chicken until cooked through. Set aside.",
+        "Stir-fry the vegetables for 4 to 5 minutes.",
+        "Add the ginger, garlic, soy sauce and chicken and toss for 1 minute.",
+        "Serve over rice."
+      ],
+      "tips": ["Most soy sauce contains wheat; tamari labeled gluten-free is an option."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "one-pot-pasta",
+      "title": "One-pot tomato and spinach pasta",
+      "summary": "[PLACEHOLDER - needs expert review] Pasta and sauce cook together in one pot.",
+      "icon": "frying.pan.fill",
+      "emoji": "🍝",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": ["one-pot", "dinner-in-30", "family-friendly", "busy-moms", "dinner"],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["wheat", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "12 oz short pasta",
+        "1 can (28 oz) crushed tomatoes",
+        "3 cups water",
+        "2 cloves garlic",
+        "3 cups spinach",
+        "1/2 cup grated Parmesan",
+        "1 tbsp olive oil"
+      ],
+      "steps": [
+        "Add the pasta, tomatoes, water, garlic and oil to a large pot.",
+        "Bring to a boil, then simmer, stirring often, for 10 to 12 minutes until the pasta is tender.",
+        "Stir in the spinach until wilted, then the Parmesan."
+      ],
+      "tips": ["Some Parmesan isn't vegetarian (it may contain animal rennet); check the label."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "chickpea-curry",
+      "title": "Coconut chickpea curry",
+      "summary": "[PLACEHOLDER - needs expert review] A gentle, creamy curry that freezes well.",
+      "icon": "frying.pan.fill",
+      "emoji": "🍛",
+      "tone": "sky",
+      "activeMinutes": 15,
+      "totalMinutes": 35,
+      "servings": 4,
+      "categories": ["one-pot", "nourished", "family-friendly", "dinner"],
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 tbsp oil",
+        "1 onion, chopped",
+        "2 cloves garlic",
+        "1 tbsp mild curry powder",
+        "2 cans (15 oz) chickpeas, rinsed",
+        "1 can (14 oz) coconut milk",
+        "1 can (14 oz) chopped tomatoes",
+        "2 cups spinach"
+      ],
+      "steps": [
+        "Soften the onion in the oil for 5 minutes, then add the garlic and curry powder.",
+        "Add the chickpeas, coconut milk and tomatoes. Simmer for 15 minutes.",
+        "Stir in the spinach until wilted. Serve with rice."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "slow-cooker-chicken",
+      "title": "Slow-cooker shredded chicken",
+      "summary": "[PLACEHOLDER - needs expert review] Ten minutes in the morning, dinner ready by evening.",
+      "icon": "bolt.heart.fill",
+      "emoji": "🍗",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 250,
+      "servings": 6,
+      "categories": [
+        "busy-moms",
+        "high-protein",
+        "high-protein-dinner",
+        "family-friendly",
+        "dinner"
+      ],
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["gluten-free", "halal"],
+      "ingredients": [
+        "2 lb boneless chicken breasts or thighs",
+        "1 cup low-sodium chicken broth",
+        "1 tsp paprika",
+        "1 tsp garlic powder",
+        "1/2 tsp cumin"
+      ],
+      "steps": [
+        "Put the chicken in the slow cooker and sprinkle with the spices.",
+        "Pour in the broth, cover and cook on low for 4 hours, until the chicken reaches 165°F.",
+        "Shred with two forks. Use in wraps, rice bowls or salads, or freeze portions."
+      ],
+      "tips": ["Halal depends on the chicken you buy; check the label."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "energy-bites",
+      "title": "No-bake oat energy bites",
+      "summary": "[PLACEHOLDER - needs expert review] Grab-and-go bites, sweetened with dates.",
+      "icon": "carrot.fill",
+      "emoji": "🍪",
+      "tone": "muted",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 16,
+      "categories": [
+        "snack-smart",
+        "one-hand",
+        "busy-moms",
+        "nourish-while-nursing",
+        "prep-ahead-breakfast"
+      ],
+      "tags": ["batch-cook", "freezer-friendly", "no-cook", "one-handed"],
+      "energy": "low",
+      "allergens": ["peanut"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 cup rolled oats",
+        "1/2 cup smooth peanut butter",
+        "8 soft pitted dates, finely chopped",
+        "2 tbsp ground flaxseed",
+        "2 tbsp dairy-free mini chocolate chips (optional)"
+      ],
+      "steps": [
+        "Mix everything in a bowl until it holds together (add a splash of water if dry).",
+        "Roll into 16 balls.",
+        "Refrigerate for up to a week, or freeze."
+      ],
+      "tips": ["Not for babies: whole bites and nut butter in chunks are choking hazards."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "apple-pb",
+      "title": "Apple slices with peanut butter",
+      "summary": "[PLACEHOLDER - needs expert review] The fastest snack with some staying power.",
+      "icon": "carrot.fill",
+      "emoji": "🍏",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["snack-smart", "busy-moms", "one-hand"],
+      "tags": ["five-minute", "no-cook", "one-handed"],
+      "energy": "low",
+      "allergens": ["peanut"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1 apple", "1 to 2 tbsp peanut butter"],
+      "steps": ["Core and slice the apple.", "Dip or spread with peanut butter."],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "snack-plate",
+      "title": "Cheese, crackers and fruit plate",
+      "summary": "[PLACEHOLDER - needs expert review] A no-cook mini meal you can graze on.",
+      "icon": "carrot.fill",
+      "emoji": "🧀",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["snack-smart", "busy-moms", "one-hand"],
+      "tags": ["five-minute", "no-cook", "one-handed"],
+      "energy": "low",
+      "allergens": ["milk", "wheat"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 oz cheese, sliced",
+        "6 whole grain crackers",
+        "1 cup grapes or berries",
+        "A few baby carrots"
+      ],
+      "steps": ["Arrange everything on a plate or in a container with sections."],
+      "tips": ["For toddlers, cut grapes into quarters."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    }
+  ]
+}
