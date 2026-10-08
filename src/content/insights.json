@@ -29,7 +29,7 @@
       "summary": "An easy answer to \"What can I do?\"",
       "body": [
         "[PLACEHOLDER - needs expert review] When friends and family ask how they can help, a meal, a bag of groceries or a tray of something for the freezer is a wonderful answer.",
-        "Keeping a short list of favourite meals on your phone makes it easy to say yes."
+        "Keeping a short list of favorite meals on your phone makes it easy to say yes."
       ],
       "allergens": [],
       "reviewStatus": "placeholder",
@@ -95,8 +95,8 @@
       "title": "Not feeling like yourself?",
       "summary": "You don't have to carry it alone.",
       "body": [
-        "[PLACEHOLDER - needs expert review] If you have felt sad, anxious, numb or not yourself most days, please talk to your doctor, midwife or health visitor. Asking for help is a strong thing to do.",
-        "If you ever have thoughts of harming yourself or your baby, contact your doctor or local emergency number straight away."
+        "[PLACEHOLDER - needs expert review] If you have felt sad, anxious, numb or not yourself most days, please talk to your doctor, OB-GYN or midwife. Asking for help is a strong thing to do.",
+        "If you ever have thoughts of harming yourself or your baby, call your doctor right away, or call or text 988; in an emergency, call 911."
       ],
       "allergens": [],
       "reviewStatus": "placeholder",
@@ -112,11 +112,11 @@
       "title": "Starting with purées",
       "summary": "Smooth first, then step by step.",
       "body": [
-        "[PLACEHOLDER - needs expert review] This guide will be written by a paediatric dietitian. It will cover signs your baby may be ready, starting with smooth purées, and moving on through thicker textures week by week."
+        "[PLACEHOLDER - needs expert review] This guide will be written by a pediatric dietitian. It will cover signs your baby may be ready, starting with smooth purées, and moving on through thicker textures week by week."
       ],
       "allergens": [],
       "reviewStatus": "placeholder",
-      "reviewer": "paediatric dietitian"
+      "reviewer": "pediatric dietitian"
     },
     {
       "id": "solids-freezer-cubes",
@@ -151,7 +151,7 @@
       ],
       "allergens": [],
       "reviewStatus": "placeholder",
-      "reviewer": "paediatric dietitian"
+      "reviewer": "pediatric dietitian"
     },
     {
       "id": "solids-choking",
@@ -163,12 +163,12 @@
       "title": "Choking: be prepared",
       "summary": "Know what to do before you need it.",
       "body": [
-        "[PLACEHOLDER - needs expert review] Choking-hazard guidance by age will be written and reviewed by a paediatric professional. A baby first-aid course is a good way to feel prepared.",
-        "If your baby is choking and cannot breathe, cough or cry, call your local emergency number straight away."
+        "[PLACEHOLDER - needs expert review] Choking-hazard guidance by age will be written and reviewed by a pediatric professional. A baby first-aid course is a good way to feel prepared.",
+        "If your baby is choking and cannot breathe, cry or make a sound, call 911 right away."
       ],
       "allergens": [],
       "reviewStatus": "placeholder",
-      "reviewer": "paediatrician"
+      "reviewer": "pediatrician"
     },
     {
       "id": "toddler-share-plate",
@@ -184,7 +184,7 @@
       ],
       "allergens": [],
       "reviewStatus": "placeholder",
-      "reviewer": "paediatric dietitian"
+      "reviewer": "pediatric dietitian"
     },
     {
       "id": "toddler-picky-phases",
@@ -196,11 +196,11 @@
       "title": "Picky phases",
       "summary": "You're doing better than you think.",
       "body": [
-        "[PLACEHOLDER - needs expert review] Gentle, practical ideas for picky phases are coming soon, written and reviewed by a paediatric dietitian."
+        "[PLACEHOLDER - needs expert review] Gentle, practical ideas for picky phases are coming soon, written and reviewed by a pediatric dietitian."
       ],
       "allergens": [],
       "reviewStatus": "placeholder",
-      "reviewer": "paediatric dietitian"
+      "reviewer": "pediatric dietitian"
     }
   ]
 }

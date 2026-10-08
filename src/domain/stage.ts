@@ -4,7 +4,7 @@ import { addMonths, daysBetween, monthsBetween, type IsoDate } from './dates';
 
 /**
  * The three journeys of the app:
- * - `newborn`: mum-focused, roughly 0–6 months
+ * - `newborn`: mom-focused, roughly 0–6 months
  * - `solids`: starting solids, roughly 6–12 months
  * - `toddler`: 12 months and up
  */

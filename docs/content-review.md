@@ -7,9 +7,11 @@ All health-adjacent text lives in `src/content/` and ships marked as a draft.
 - Text: `src/content/monthly-guides.json` (one entry per month, then 12–18 m, 18–24 m, 2 y+).
 - Readable copy for reviewers: `docs/monthly-guides-review.md`
   (regenerate with `npm run content:guides-doc` after editing).
-- Drafted on 2026-10-08 by summarising, in original wording, official guidance from the
-  CDC, NHS, AAP (HealthyChildren.org) and WHO. Each section lists its sources.
-- Where US and UK guidance differ, the section has a `note` explaining both.
+- US-based: drafted on 2026-10-08 by summarizing, in original wording, official US guidance
+  from the CDC, AAP (HealthyChildren.org), FDA and HHS Office on Women's Health, with WHO
+  for global context. Each section lists its sources.
+- Where official US sources differ (for example, how long to wait between new foods), the
+  section has a `note` explaining both.
 
 ## How to approve a guide
 

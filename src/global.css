@@ -4,7 +4,7 @@
 @import 'nativewind/theme';
 
 /*
- * Semantic colour tokens. Keep in sync with src/theme/colors.ts, which native
+ * Semantic color tokens. Keep in sync with src/theme/colors.ts, which native
  * props (tab bar, status bar, notification tint) read directly.
  * Light and dark both define every token so the values stay as live variables.
  */

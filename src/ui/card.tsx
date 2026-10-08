@@ -14,7 +14,7 @@ const toneClasses: Record<CardTone, string> = {
 };
 
 export type CardProps = ViewProps & {
-  /** Background colour. Use this rather than a bg-* class so styles never clash. */
+  /** Background color. Use this rather than a bg-* class so styles never clash. */
   tone?: CardTone;
   className?: string;
   onPress?: () => void;

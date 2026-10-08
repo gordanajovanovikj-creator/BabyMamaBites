@@ -86,7 +86,13 @@ describe('bundled monthly guides', () => {
     for (const g of monthlyGuides) {
       for (const s of g.sections) for (const src of s.sources) expect(ids.has(src)).toBe(true);
     }
-    const official = ['www.cdc.gov', 'www.nhs.uk', 'www.healthychildren.org', 'www.who.int'];
+    const official = [
+      'www.cdc.gov',
+      'www.healthychildren.org',
+      'www.fda.gov',
+      'www.womenshealth.gov',
+      'www.who.int',
+    ];
     for (const s of guideSources) expect(official).toContain(new URL(s.url).host);
   });
 

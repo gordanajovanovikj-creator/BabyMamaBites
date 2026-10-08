@@ -45,7 +45,7 @@ export default function InsightScreen() {
         <Notice
           tone="urgent"
           title="If you're worried, reach out"
-          body="Your doctor, midwife or health visitor is there to help. In an emergency, call your local emergency number."
+          body="Your doctor, OB-GYN or midwife is there to help. In an emergency, call 911."
         />
       ) : null}
       <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />

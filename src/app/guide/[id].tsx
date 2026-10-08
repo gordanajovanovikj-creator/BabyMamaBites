@@ -45,7 +45,7 @@ export default function GuideScreen() {
         <Notice
           tone="caution"
           title="Draft from official sources"
-          body={`Summarised from CDC, NHS, AAP and WHO guidance (read ${guideSourcesAccessed}). Not yet reviewed by a health professional, and not medical advice. Always follow your own doctor's advice.`}
+          body={`Summarized from US guidance (CDC, AAP, FDA and the HHS Office on Women's Health) read on ${guideSourcesAccessed}. Not yet reviewed by a health professional, and not medical advice. Always follow your own pediatrician's advice.`}
         />
       ) : null}
 

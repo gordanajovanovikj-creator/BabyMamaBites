@@ -62,7 +62,7 @@ const headerVariants: Variant[] = ['display', 'title', 'heading'];
 
 export type AppTextProps = TextProps & {
   variant?: Variant;
-  /** Text colour. Use this rather than a text-* colour class so styles never clash. */
+  /** Text color. Use this rather than a text-* color class so styles never clash. */
   color?: TextColor;
   /** Font size. Use this rather than a text-* size class so styles never clash. */
   size?: TextSize;

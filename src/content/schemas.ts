@@ -14,7 +14,7 @@ export const copyBlockSchema = z.object({
   title: z.string().min(1),
   body: z.string().min(1),
   reviewStatus: reviewStatusSchema,
-  /** Who needs to review it, e.g. "legal", "dietitian", "paediatrician". */
+  /** Who needs to review it, e.g. "legal", "dietitian", "pediatrician". */
   reviewer: z.string().min(1),
 });
 export type CopyBlock = z.infer<typeof copyBlockSchema>;

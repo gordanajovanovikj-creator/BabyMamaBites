@@ -6,7 +6,7 @@ export default function PlannerScreen() {
       title="Planner"
       intro="Plan the week, and make a little prep go a long way."
       upcoming={[
-        'Weekly plan for baby, mum and family meals',
+        'Weekly plan for baby, mom and family meals',
         'Make-ahead baby food: a few hours of prep can stock your freezer for weeks',
         'Freezer inventory',
       ]}

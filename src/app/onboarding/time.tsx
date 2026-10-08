@@ -32,7 +32,7 @@ export default function TimeStep() {
     <StepScreen
       step={4}
       title="How much time do you usually have to cook?"
-      subtitle="No judgement. Some days it's a spoon and a banana."
+      subtitle="No judgment. Some days it's a spoon and a banana."
       continueLabel={saving ? 'Saving…' : 'Finish'}
       canContinue={!!profile && !saving}
       onContinue={finish}

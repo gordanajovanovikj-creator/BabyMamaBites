@@ -42,6 +42,8 @@ export type MonthlyGuide = z.infer<typeof monthlyGuideSchema>;
 
 const fileSchema = z.object({
   version: z.number(),
+  /** Country whose official guidance the guides follow. */
+  region: z.literal('US'),
   /** Date the official sources were read. */
   accessed: z.string(),
   sources: z.array(guideSourceSchema).min(1),

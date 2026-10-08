@@ -13,7 +13,7 @@ const lines = [
   '# Monthly guides: review copy',
   '',
   '> Generated from `src/content/monthly-guides.json`. Edit the JSON file, not this one.',
-  `> Drafted from official sources read on ${data.accessed}. Every section still needs expert review.`,
+  `> ${data.region} edition. Drafted from official sources read on ${data.accessed}. Every section still needs expert review.`,
   '',
 ];
 

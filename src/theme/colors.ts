@@ -1,5 +1,5 @@
 /**
- * Raw colour values for places that cannot take a className (native tab bar,
+ * Raw color values for places that cannot take a className (native tab bar,
  * status bar, date picker, notification tint). Keep in sync with src/global.css.
  * Palette: warm blush and soft rose with a lavender accent.
  * Rose text only at large/bold sizes (3:1 contrast); body text stays ink.
