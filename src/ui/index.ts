@@ -8,6 +8,7 @@ export { HeartButton } from './heart-button';
 export { IconButton } from './icon-button';
 export { Notice } from './notice';
 export { OptionCard } from './option-card';
+export { RoundIconButton } from './round-icon-button';
 export { Screen } from './screen';
 export { SegmentedTabs } from './segmented-tabs';
 export { SymbolIcon } from './symbol-icon';

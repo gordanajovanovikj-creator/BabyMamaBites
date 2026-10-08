@@ -9,6 +9,7 @@ import {
   recipeKicker,
   recipeMeta,
   recipeSections,
+  recipeTimings,
   suitsHousehold,
 } from './recipes';
 
@@ -231,5 +232,16 @@ describe('recipeKicker and recipeMeta', () => {
   });
   it('shows total time and servings', () => {
     expect(recipeMeta(make('a', { totalMinutes: 25, servings: 4 }))).toBe('25 min · Serves 4');
+  });
+});
+
+describe('recipeTimings', () => {
+  it('splits prep and cook time', () => {
+    expect(recipeTimings(make('a', { activeMinutes: 10, totalMinutes: 35, servings: 4 }))).toBe(
+      'Prep 10 min · Cook 25 min · Serves 4',
+    );
+    expect(recipeTimings(make('a', { activeMinutes: 5, totalMinutes: 5, servings: 1 }))).toBe(
+      'Prep 5 min · Cook 0 min · Serves 1',
+    );
   });
 });

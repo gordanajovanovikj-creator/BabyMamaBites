@@ -127,3 +127,9 @@ export function recipeKicker(recipe: Recipe): string {
 export function recipeMeta(recipe: Recipe): string {
   return `${formatMinutes(recipe.totalMinutes)} · Serves ${recipe.servings}`;
 }
+
+/** "Prep 10 min · Cook 15 min · Serves 4" (cook time is everything that isn't hands-on). */
+export function recipeTimings(recipe: Recipe): string {
+  const cook = Math.max(0, recipe.totalMinutes - recipe.activeMinutes);
+  return `Prep ${formatMinutes(recipe.activeMinutes)} · Cook ${cook ? formatMinutes(cook) : '0 min'} · Serves ${recipe.servings}`;
+}

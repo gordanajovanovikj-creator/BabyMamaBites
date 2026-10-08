@@ -1,4 +1,4 @@
-import { router, Stack, useLocalSearchParams } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 
@@ -6,31 +6,17 @@ import { getRecipe } from '@/content/recipes';
 import { splitReviewMarker } from '@/content/schemas';
 import { allergenLabels, dietLabels } from '@/domain/profile-labels';
 import { energyLabels, recipeTagLabels } from '@/domain/recipe-labels';
-import { formatMinutes } from '@/domain/recipes';
+import { recipeKicker, recipeTimings } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { useProfile } from '@/features/profile/profile-context';
-import {
-  AppText,
-  Button,
-  Card,
-  cn,
-  HeartButton,
-  Notice,
-  Screen,
-  SymbolIcon,
-  toneBackground,
-} from '@/ui';
+import { PictureHero } from '@/features/recipes/picture-hero';
+import { AppText, Button, cn, HeartButton, Notice, Screen } from '@/ui';
 
-function Fact({ label, value }: { label: string; value: string }) {
+function SectionTitle({ children }: { children: string }) {
   return (
-    <View className="min-w-24 flex-1 items-center gap-0.5 rounded-2xl bg-surface px-3 py-3">
-      <AppText variant="label" size="lg" className="font-bold">
-        {value}
-      </AppText>
-      <AppText variant="caption" size="xs">
-        {label}
-      </AppText>
-    </View>
+    <AppText variant="heading" size="2xl" className="px-5 pb-1 pt-8">
+      {children}
+    </AppText>
   );
 }
 
@@ -38,8 +24,8 @@ export default function RecipeScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const recipe = getRecipe(id);
   const { profile } = useProfile();
-  const [checked, setChecked] = useState<number[]>([]);
   const { isFavorite, toggle } = useFavorites();
+  const [checked, setChecked] = useState<number[]>([]);
 
   if (!recipe) {
     return (
@@ -54,77 +40,70 @@ export default function RecipeScreen() {
   const clashes = recipe.allergens.filter((a) => profile?.allergens.includes(a));
   const toggleIngredient = (i: number) =>
     setChecked((c) => (c.includes(i) ? c.filter((x) => x !== i) : [...c, i]));
+  const tags = [energyLabels[recipe.energy], ...recipe.tags.map((t) => recipeTagLabels[t])];
 
   return (
-    <Screen>
-      <Stack.Screen
-        options={{
-          headerRight: () => (
-            <HeartButton
-              saved={isFavorite(recipe.id)}
-              onPress={() => toggle(recipe.id)}
-              label={recipe.title}
-              className="bg-transparent"
-            />
-          ),
-        }}
+    <Screen padded={false} edgeToEdgeTop className="gap-0">
+      <PictureHero
+        tone={recipe.tone}
+        icon={recipe.icon}
+        emoji={recipe.emoji}
+        height={260}
+        right={
+          <HeartButton
+            saved={isFavorite(recipe.id)}
+            onPress={() => toggle(recipe.id)}
+            label={recipe.title}
+          />
+        }
       />
-      <View
-        className={cn('h-40 items-center justify-center rounded-3xl', toneBackground(recipe.tone))}
-      >
-        <SymbolIcon icon={recipe.icon} emoji={recipe.emoji} size={72} />
-      </View>
 
-      <View className="gap-2">
-        <AppText variant="title">{recipe.title}</AppText>
-        <AppText color="muted">{summary.text}</AppText>
-      </View>
-
-      {clashes.length ? (
-        <Notice
-          tone="urgent"
-          title="Heads up"
-          body={`This recipe contains ${clashes.map((a) => allergenLabels[a].toLowerCase()).join(' and ')}, which you told us your household avoids.`}
-        />
-      ) : null}
-
-      <View className="flex-row flex-wrap gap-2">
-        <Fact label="hands-on" value={formatMinutes(recipe.activeMinutes)} />
-        <Fact label="total" value={formatMinutes(recipe.totalMinutes)} />
-        <Fact
-          label={recipe.servings === 1 ? 'serving' : 'servings'}
-          value={String(recipe.servings)}
-        />
-      </View>
-
-      <View className="flex-row flex-wrap gap-2">
-        {[energyLabels[recipe.energy], ...recipe.tags.map((t) => recipeTagLabels[t])].map((t) => (
-          <View key={t} className="rounded-full bg-surface-muted px-3 py-1.5">
-            <AppText variant="label" size="sm">
-              {t}
-            </AppText>
-          </View>
-        ))}
-      </View>
-
-      <Card className="gap-1">
-        <AppText variant="label">
-          {recipe.allergens.length
-            ? `Contains: ${recipe.allergens.map((a) => allergenLabels[a]).join(', ')}`
-            : 'No major allergens listed'}
+      <View className="gap-2 px-5 pt-6">
+        <AppText
+          variant="label"
+          size="xs"
+          color="on-accent"
+          className="font-bold uppercase tracking-wider"
+        >
+          {recipeKicker(recipe)}
         </AppText>
-        {recipe.diets.length ? (
-          <AppText variant="caption" size="sm">
-            Suits: {recipe.diets.map((d) => dietLabels[d]).join(', ')}
-          </AppText>
+        <AppText variant="title">{recipe.title}</AppText>
+        <AppText variant="caption">{recipeTimings(recipe)}</AppText>
+        <AppText color="muted" className="pt-1">
+          {summary.text}
+        </AppText>
+        <View className="flex-row flex-wrap gap-2 pt-2">
+          {tags.map((t) => (
+            <View key={t} className="rounded-full bg-surface-muted px-3 py-1.5">
+              <AppText variant="label" size="sm">
+                {t}
+              </AppText>
+            </View>
+          ))}
+        </View>
+      </View>
+
+      <View className="gap-3 px-5 pt-5">
+        {clashes.length ? (
+          <Notice
+            tone="urgent"
+            title="Heads up"
+            body={`This recipe contains ${clashes.map((a) => allergenLabels[a].toLowerCase()).join(' and ')}, which you told us your household avoids.`}
+          />
         ) : null}
         <AppText variant="caption" size="sm">
+          {recipe.allergens.length
+            ? `Contains: ${recipe.allergens.map((a) => allergenLabels[a]).join(', ')}. `
+            : 'No major allergens listed. '}
+          {recipe.diets.length
+            ? `Suits: ${recipe.diets.map((d) => dietLabels[d]).join(', ')}. `
+            : ''}
           Always check the labels on packaged ingredients.
         </AppText>
-      </Card>
+      </View>
 
-      <View className="gap-2">
-        <AppText variant="heading">Ingredients</AppText>
+      <SectionTitle>Ingredients</SectionTitle>
+      <View>
         {recipe.ingredients.map((item, i) => {
           const done = checked.includes(i);
           return (
@@ -134,12 +113,18 @@ export default function RecipeScreen() {
               accessibilityState={{ checked: done }}
               accessibilityLabel={item}
               onPress={() => toggleIngredient(i)}
-              className="min-h-12 flex-row items-center gap-3 rounded-2xl bg-surface px-4 py-3 active:opacity-70"
+              className="min-h-14 flex-row items-center gap-3 border-b border-border px-5 py-3 active:bg-surface-muted"
             >
+              <AppText
+                color={done ? 'muted' : 'ink'}
+                className={cn('flex-1', done && 'line-through')}
+              >
+                {item}
+              </AppText>
               <View
                 className={cn(
-                  'h-6 w-6 items-center justify-center rounded-md border-2',
-                  done ? 'border-primary bg-primary' : 'border-ink-muted',
+                  'h-6 w-6 items-center justify-center rounded-full border-2',
+                  done ? 'border-primary bg-primary' : 'border-border',
                 )}
               >
                 {done ? (
@@ -148,47 +133,47 @@ export default function RecipeScreen() {
                   </AppText>
                 ) : null}
               </View>
-              <AppText
-                color={done ? 'muted' : 'ink'}
-                className={cn('flex-1', done && 'line-through')}
-              >
-                {item}
-              </AppText>
             </Pressable>
           );
         })}
       </View>
+      <AppText variant="caption" size="sm" className="px-5 pt-2">
+        Tap an ingredient to tick it off.
+      </AppText>
 
-      <View className="gap-3">
-        <AppText variant="heading">Steps</AppText>
+      <SectionTitle>Method</SectionTitle>
+      <View className="gap-4 px-5 pt-2">
         {recipe.steps.map((step, i) => (
-          <View key={step} className="flex-row gap-4">
-            <View className="h-9 w-9 items-center justify-center rounded-full bg-primary">
-              <AppText variant="label" color="on-primary" className="font-bold">
-                {i + 1}
-              </AppText>
-            </View>
-            <AppText className="flex-1 pt-1">{step}</AppText>
+          <View key={step} className="flex-row gap-3">
+            <AppText className="w-6 font-bold">{`${i + 1}.`}</AppText>
+            <AppText className="flex-1">{step}</AppText>
           </View>
         ))}
       </View>
 
       {recipe.tips.length ? (
-        <Card tone="muted" className="gap-2">
-          <AppText variant="heading">Tips</AppText>
-          {recipe.tips.map((t) => (
-            <AppText key={t}>• {t}</AppText>
-          ))}
-        </Card>
+        <>
+          <SectionTitle>Tips</SectionTitle>
+          <View className="gap-2 px-5 pt-2">
+            {recipe.tips.map((t) => (
+              <AppText key={t}>• {t}</AppText>
+            ))}
+          </View>
+        </>
       ) : null}
 
-      {summary.isDraft ? (
-        <Notice
-          tone="caution"
-          title="Draft recipe"
-          body="This recipe hasn't been reviewed by a registered dietitian yet."
-        />
-      ) : null}
+      <SectionTitle>Review</SectionTitle>
+      <View className="gap-2 px-5 pb-6 pt-2">
+        <AppText variant="label">
+          {summary.isDraft
+            ? 'Draft recipe, awaiting review by a registered dietitian.'
+            : `Reviewed by a ${recipe.reviewer}.`}
+        </AppText>
+        <AppText variant="caption" size="sm">
+          This recipe is for general information only and isn&apos;t health or nutrition advice.
+          Nutrition information will be added once it has been calculated and reviewed.
+        </AppText>
+      </View>
     </Screen>
   );
 }

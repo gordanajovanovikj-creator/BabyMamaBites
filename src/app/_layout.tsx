@@ -38,14 +38,8 @@ function RootStack() {
           name="guide/[id]"
           options={{ presentation: 'modal', headerShown: true, title: '' }}
         />
-        <Stack.Screen
-          name="recipe/[id]"
-          options={{ headerShown: true, title: '', headerBackButtonDisplayMode: 'minimal' }}
-        />
-        <Stack.Screen
-          name="category/[id]"
-          options={{ headerShown: true, headerBackButtonDisplayMode: 'minimal' }}
-        />
+        <Stack.Screen name="recipe/[id]" />
+        <Stack.Screen name="category/[id]" />
       </Stack.Protected>
       <Stack.Screen name="onboarding" options={{ presentation: profile ? 'modal' : 'card' }} />
     </Stack>
