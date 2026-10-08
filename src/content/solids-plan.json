@@ -174,7 +174,7 @@
         "howTo": "Soft tofu, mashed or blended."
       },
       "tips": [
-        "Freezing small portions (for up to 3 months) makes repeat tries easy and cuts waste.",
+        "Freezing small portions makes repeat tries easy and cuts waste.",
         "Eat the food yourself first; babies learn by watching."
       ],
       "sources": ["cdc-picky", "aap-allergens", "cdc-solids"],
@@ -492,7 +492,7 @@
       "title": "Safe food handling",
       "stage": "family",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Homemade baby food spoils faster than jarred. Refrigerate leftovers promptly, use them within 1 day, and check for signs of spoilage before serving.",
+        "[PLACEHOLDER - needs expert review] Homemade baby food spoils faster than jarred. Refrigerate leftovers promptly, and check for signs of spoilage before serving.",
         "Serve only pasteurized milk products and juices. Raw milk and unpasteurized cheeses can carry harmful bacteria."
       ],
       "tryFoods": [
@@ -502,7 +502,7 @@
       ],
       "allergen": null,
       "tips": [
-        "Freeze extra purees in small portions and use them within 3 months.",
+        "Freeze extra purees in small portions to use later.",
         "Choose cheeses and yogurts labeled pasteurized."
       ],
       "sources": ["aap-solids", "cdc-avoid"],
@@ -517,7 +517,11 @@
         "[PLACEHOLDER - needs expert review] Babies sometimes refuse foods they used to love. Liking only a few foods, or not wanting foods to touch, are normal phases.",
         "Keep foods your baby likes on the plate alongside something new, and give simple choices so they feel in control."
       ],
-      "tryFoods": ["Soft mini pancakes (no added sugar)", "Diced mango", "Chopped hard-boiled egg"],
+      "tryFoods": [
+        "Soft mini pancakes (no added sugar)",
+        "Diced mango",
+        "Chopped hard-boiled egg"
+      ],
       "allergen": null,
       "tips": [
         "Make it playful: a smiley face on the plate can help.",

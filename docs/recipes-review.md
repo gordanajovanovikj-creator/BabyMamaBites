@@ -75,12 +75,3 @@ in the review brief; no USDA page was among the downloaded sources.
 `overnight-oats`, `banana-oat-smoothie`, `pb-banana-shake`, `nut-butter-porridge`, `yogurt-parfait`,
 `avocado-egg-toast`, `breakfast-burritos`, `baked-oatmeal`, `hummus-wrap` (aside from the general
 store-bought label note above).
-
-## Storage times (product decision)
-
-All recipes, the solids plan and the freezer-cubes insight now use one rule: **refrigerate
-for up to 1 day, freeze for up to 3 months**. This is a product decision (more cautious
-than some guidance), not taken from a downloaded source. Because of it, `chicken-quinoa-jars`
-is no longer described as four days of lunches and lost its `batch-cook` tag, and
-`overnight-oats` and `egg-muffin-cups` no longer suggest eating from the fridge all week.
-Please confirm with the reviewer.
