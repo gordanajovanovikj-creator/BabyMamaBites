@@ -2,6 +2,8 @@ import disclaimers from './copy/disclaimers.json';
 import ageRules from './config/age-rules.json';
 import insights from './insights.json';
 import guides from './monthly-guides.json';
+import reactions from './reactions.json';
+import solidsPlan from './solids-plan.json';
 
 /** The app is US-based: bundled copy uses US English and US health-system terms. */
 const UK_TERMS = [
@@ -24,7 +26,7 @@ const UK_TERMS = [
   /\b(116 123|999|111)\b/,
 ];
 
-const bundles = { disclaimers, ageRules, insights, guides };
+const bundles = { disclaimers, ageRules, insights, guides, solidsPlan, reactions };
 
 describe('US English content', () => {
   for (const [name, content] of Object.entries(bundles)) {

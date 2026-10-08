@@ -1,8 +1,8 @@
-import * as WebBrowser from 'expo-web-browser';
-import { Pressable, View } from 'react-native';
+import { View } from 'react-native';
 
 import { getGuideSource, type GuideSection } from '@/content/monthly-guides';
 import { splitReviewMarker } from '@/content/schemas';
+import { SourceLinks } from '@/features/shared/source-links';
 import { AppText, Card, Notice } from '@/ui';
 
 function Bullets({ items, urgent }: { items: string[]; urgent: boolean }) {
@@ -17,31 +17,6 @@ function Bullets({ items, urgent }: { items: string[]; urgent: boolean }) {
             {item}
           </AppText>
         </View>
-      ))}
-    </View>
-  );
-}
-
-function Sources({ ids }: { ids: string[] }) {
-  const sources = ids.map(getGuideSource).filter((s) => s !== undefined);
-  return (
-    <View className="gap-1 pt-1">
-      <AppText variant="caption" size="sm" className="font-bold">
-        Sources
-      </AppText>
-      {sources.map((s) => (
-        <Pressable
-          key={s.id}
-          accessibilityRole="link"
-          accessibilityLabel={`${s.publisher}: ${s.title}. Opens the official page.`}
-          onPress={() => WebBrowser.openBrowserAsync(s.url)}
-          hitSlop={6}
-          className="min-h-11 justify-center active:opacity-60"
-        >
-          <AppText variant="caption" size="sm" className="underline">
-            {s.publisher}: {s.title}
-          </AppText>
-        </Pressable>
       ))}
     </View>
   );
@@ -62,7 +37,7 @@ export function GuideSectionView({ section }: { section: GuideSection }) {
       ))}
       {section.bullets.length ? <Bullets items={section.bullets} urgent={urgent} /> : null}
       {section.note ? <Notice title="Where guidance differs" body={section.note} /> : null}
-      <Sources ids={section.sources} />
+      <SourceLinks sources={section.sources.map(getGuideSource).filter((s) => s !== undefined)} />
     </Card>
   );
 }

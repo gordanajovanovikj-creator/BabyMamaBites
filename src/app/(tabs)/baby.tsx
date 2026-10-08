@@ -1,16 +1,141 @@
-import { ComingSoon } from '@/features/shared/coming-soon';
+import { router } from 'expo-router';
+import { View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
+import { splitReviewMarker } from '@/content/schemas';
+import { getPlanWeek, planWeeks, readiness, solidsSourcesFor } from '@/content/solids-plan';
+import { fromIsoDate, today } from '@/domain/dates';
+import { allergenProgress, foodsTriedCount, planWeekFor } from '@/domain/food-log';
+import { solidsStartDate, solidsWeek } from '@/domain/stage';
+import { useProfile } from '@/features/profile/profile-context';
+import { SourceLinks } from '@/features/shared/source-links';
+import { AllergenTracker } from '@/features/solids/allergen-tracker';
+import { useFoodLog } from '@/features/solids/food-log-context';
+import { LogEntryRow } from '@/features/solids/log-entry-row';
+import { WeekCard } from '@/features/solids/week-card';
+import { WeekStrip } from '@/features/solids/week-strip';
+import { AppText, Button, Card, Notice, Screen } from '@/ui';
+
+const RECENT = 5;
 
 export default function BabyScreen() {
+  const insets = useSafeAreaInsets();
+  const { profile } = useProfile();
+  const { entries } = useFoodLog();
+  if (!profile) return null;
+
+  const now = today();
+  const rawWeek = solidsWeek(profile, now);
+  const current = planWeekFor(rawWeek, planWeeks.length);
+  const week = current ? getPlanWeek(current) : undefined;
+  const finished = rawWeek !== null && rawWeek > planWeeks.length;
+  const name = profile.babyName ?? 'Your baby';
+  const startsOn = fromIsoDate(solidsStartDate(profile, now)).toLocaleDateString(undefined, {
+    month: 'long',
+    day: 'numeric',
+  });
+
   return (
-    <ComingSoon
-      title="Baby"
-      intro="Starting solids, week by week, at your baby's pace."
-      upcoming={[
-        'Weekly plan from about 6 months, starting with purées',
-        'Texture progression and allergen introduction reminders',
-        'A simple log for new foods and any reactions',
-        'Choking-hazard guidance by age',
-      ]}
-    />
+    <Screen padded={false} edgeToEdgeTop className="gap-6">
+      <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
+        <AppText variant="display">First foods</AppText>
+        <AppText variant="caption">
+          {current === null
+            ? `${name}'s starting-solids plan begins around ${startsOn}.`
+            : `${name}'s week-by-week plan, at your baby's own pace.`}
+        </AppText>
+      </View>
+
+      <View className="gap-4 px-5">
+        {current === null ? (
+          <Card tone="accent" className="gap-3">
+            <AppText variant="heading" color="on-accent">
+              Getting ready for solids
+            </AppText>
+            <AppText color="on-accent">{splitReviewMarker(readiness.intro).text}</AppText>
+            {readiness.signs.map((sign) => (
+              <View key={sign} className="flex-row gap-3">
+                <AppText color="on-accent" className="font-bold">
+                  •
+                </AppText>
+                <AppText color="on-accent" className="flex-1">
+                  {sign}
+                </AppText>
+              </View>
+            ))}
+            <AppText variant="caption" color="on-accent">
+              Talk to your pediatrician about when to start, especially if your baby was born early.
+            </AppText>
+            <SourceLinks sources={solidsSourcesFor(readiness.sources)} />
+          </Card>
+        ) : null}
+
+        {finished ? (
+          <Notice
+            title="You've finished the 26-week plan"
+            body="Keep offering a variety of foods, including the allergens your baby already tolerates. The monthly guides on Today keep growing with your toddler."
+          />
+        ) : null}
+
+        {week ? <WeekCard week={week} totalWeeks={planWeeks.length} /> : null}
+      </View>
+
+      <View className="gap-2">
+        <AppText variant="heading" className="px-5">
+          {current === null ? 'Read ahead' : 'All weeks'}
+        </AppText>
+        <WeekStrip weeks={planWeeks} current={current} />
+      </View>
+
+      <View className="gap-4 px-5">
+        <Button label="Log a food" onPress={() => router.push('/solids/log')} />
+
+        <AllergenTracker progress={allergenProgress(entries)} />
+
+        <Card className="gap-1">
+          <View className="flex-row items-baseline justify-between">
+            <AppText variant="heading">Food log</AppText>
+            <AppText variant="caption">{foodsTriedCount(entries)} foods tried</AppText>
+          </View>
+          {entries.length ? (
+            entries.slice(0, RECENT).map((e) => <LogEntryRow key={e.id} entry={e} />)
+          ) : (
+            <AppText variant="caption" className="py-2">
+              Nothing logged yet. Logging each new food makes it easier to spot a reaction.
+            </AppText>
+          )}
+          {entries.length > RECENT ? (
+            <Button
+              variant="quiet"
+              label={`See all ${entries.length}`}
+              onPress={() => router.push('/solids/history')}
+            />
+          ) : null}
+          {entries.length ? (
+            <AppText variant="caption" size="sm">
+              Your log is saved on this phone only.
+            </AppText>
+          ) : null}
+        </Card>
+
+        <Card
+          tone="muted"
+          className="gap-1"
+          onPress={() => router.push('/solids/choking')}
+          accessibilityLabel="Choking and gagging: what to know. Opens the safety guide."
+        >
+          <AppText variant="heading">Choking and gagging</AppText>
+          <AppText variant="caption">
+            Foods to avoid or change by age, and how to tell gagging from choking.
+          </AppText>
+        </Card>
+
+        <Notice
+          tone="caution"
+          title="Draft from official sources"
+          body="This plan is summarized from CDC and AAP guidance and hasn't been reviewed by a health professional yet. It's not medical advice: follow your pediatrician's advice, and call 911 in an emergency."
+        />
+      </View>
+    </Screen>
   );
 }
