@@ -14,4 +14,8 @@ export const migrations: string[] = [
      updated_at TEXT NOT NULL
    );`,
   `ALTER TABLE profile ADD COLUMN baby_name TEXT;`,
+  `CREATE TABLE IF NOT EXISTS favorite_recipe (
+     recipe_id TEXT PRIMARY KEY NOT NULL,
+     created_at TEXT NOT NULL
+   );`,
 ];

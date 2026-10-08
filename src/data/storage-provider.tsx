@@ -2,12 +2,19 @@ import { SQLiteProvider, useSQLiteContext } from 'expo-sqlite';
 import { useMemo, type ReactNode } from 'react';
 
 import { ProfileStoreContext } from './profile-store-context';
+import { createSqliteFavoritesStore } from './sqlite-favorites-store';
 import { createSqliteProfileStore, DATABASE_NAME, migrate } from './sqlite-profile-store';
+import { FavoritesStoreContext } from './stores-context';
 
 function SqliteStores({ children }: { children: ReactNode }) {
   const db = useSQLiteContext();
-  const store = useMemo(() => createSqliteProfileStore(db), [db]);
-  return <ProfileStoreContext.Provider value={store}>{children}</ProfileStoreContext.Provider>;
+  const profile = useMemo(() => createSqliteProfileStore(db), [db]);
+  const favorites = useMemo(() => createSqliteFavoritesStore(db), [db]);
+  return (
+    <ProfileStoreContext.Provider value={profile}>
+      <FavoritesStoreContext.Provider value={favorites}>{children}</FavoritesStoreContext.Provider>
+    </ProfileStoreContext.Provider>
+  );
 }
 
 /** Opens the on-device database, runs migrations, and provides the stores. */

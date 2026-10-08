@@ -5,8 +5,10 @@ import { AppText, cn, SymbolIcon, toneBackground } from '@/ui';
 
 export type CategoryRowProps = {
   categories: RecipeCategory[];
-  selectedId: string | null;
+  /** Highlighted category; null highlights "All" when `showAll` is set. */
+  selectedId?: string | null;
   onSelect(id: string | null): void;
+  showAll?: boolean;
 };
 
 function CategoryButton({
@@ -52,29 +54,36 @@ function CategoryButton({
   );
 }
 
-/** Horizontally scrolling recipe categories, with "All" first. Tap again to clear. */
-export function CategoryRow({ categories, selectedId, onSelect }: CategoryRowProps) {
+/** Horizontally scrolling round recipe category buttons. */
+export function CategoryRow({
+  categories,
+  selectedId = null,
+  onSelect,
+  showAll = false,
+}: CategoryRowProps) {
   return (
     <ScrollView
       horizontal
       showsHorizontalScrollIndicator={false}
       contentContainerClassName="gap-3 px-5 py-1"
     >
-      <CategoryButton
-        label="All"
-        tone="surface"
-        selected={selectedId === null}
-        onPress={() => onSelect(null)}
-      >
-        <SymbolIcon icon="sparkles" emoji="✨" />
-      </CategoryButton>
+      {showAll ? (
+        <CategoryButton
+          label="All"
+          tone="surface"
+          selected={selectedId === null}
+          onPress={() => onSelect(null)}
+        >
+          <SymbolIcon icon="sparkles" emoji="✨" />
+        </CategoryButton>
+      ) : null}
       {categories.map((c) => (
         <CategoryButton
           key={c.id}
           label={c.label}
           tone={c.tone}
           selected={selectedId === c.id}
-          onPress={() => onSelect(selectedId === c.id ? null : c.id)}
+          onPress={() => onSelect(c.id)}
         >
           <SymbolIcon icon={c.icon} emoji={c.emoji} />
         </CategoryButton>

@@ -1,4 +1,4 @@
-import { router, useLocalSearchParams } from 'expo-router';
+import { router, Stack, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 
@@ -7,8 +7,19 @@ import { splitReviewMarker } from '@/content/schemas';
 import { allergenLabels, dietLabels } from '@/domain/profile-labels';
 import { energyLabels, recipeTagLabels } from '@/domain/recipe-labels';
 import { formatMinutes } from '@/domain/recipes';
+import { useFavorites } from '@/features/favorites/favorites-context';
 import { useProfile } from '@/features/profile/profile-context';
-import { AppText, Button, Card, cn, Notice, Screen, SymbolIcon, toneBackground } from '@/ui';
+import {
+  AppText,
+  Button,
+  Card,
+  cn,
+  HeartButton,
+  Notice,
+  Screen,
+  SymbolIcon,
+  toneBackground,
+} from '@/ui';
 
 function Fact({ label, value }: { label: string; value: string }) {
   return (
@@ -28,6 +39,7 @@ export default function RecipeScreen() {
   const recipe = getRecipe(id);
   const { profile } = useProfile();
   const [checked, setChecked] = useState<number[]>([]);
+  const { isFavorite, toggle } = useFavorites();
 
   if (!recipe) {
     return (
@@ -45,6 +57,18 @@ export default function RecipeScreen() {
 
   return (
     <Screen>
+      <Stack.Screen
+        options={{
+          headerRight: () => (
+            <HeartButton
+              saved={isFavorite(recipe.id)}
+              onPress={() => toggle(recipe.id)}
+              label={recipe.title}
+              className="bg-transparent"
+            />
+          ),
+        }}
+      />
       <View
         className={cn('h-40 items-center justify-center rounded-3xl', toneBackground(recipe.tone))}
       >

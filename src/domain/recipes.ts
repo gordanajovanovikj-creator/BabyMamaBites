@@ -78,3 +78,52 @@ export function formatMinutes(minutes: number): string {
   const m = minutes % 60;
   return m ? `${h} hr ${m} min` : `${h} hr`;
 }
+
+export type RecipeSection<C> = { category: C; recipes: Recipe[] };
+
+/**
+ * One section per category (in the given order) with the household-safe recipes
+ * in it, best fit first. Empty categories are left out.
+ */
+export function recipeSections<C extends { id: string }>(
+  categories: C[],
+  all: Recipe[],
+  household: Household,
+  perSection = 10,
+): RecipeSection<C>[] {
+  // So the page feels varied, each section leads with a recipe that hasn't led an earlier one.
+  const leads = new Set<string>();
+  return categories
+    .map((category) => {
+      const found = findRecipes(all, household, { categoryId: category.id }).recipes;
+      const leadIndex = found.findIndex((r) => !leads.has(r.id));
+      const ordered =
+        leadIndex > 0
+          ? [found[leadIndex], ...found.slice(0, leadIndex), ...found.slice(leadIndex + 1)]
+          : found;
+      if (ordered[0]) leads.add(ordered[0].id);
+      return { category, recipes: ordered.slice(0, perSection) };
+    })
+    .filter((s) => s.recipes.length > 0);
+}
+
+const mealKickers: [string, string][] = [
+  ['breakfast', 'Breakfast'],
+  ['lunch', 'Lunch'],
+  ['dinner', 'Dinner'],
+  ['snack-smart', 'Snack'],
+  ['nourish-while-nursing', 'Drink & snack'],
+];
+
+/** Short label shown above a recipe title, e.g. "Breakfast" or "Snack". */
+export function recipeKicker(recipe: Recipe): string {
+  for (const [category, label] of mealKickers) {
+    if (recipe.categories.includes(category)) return label;
+  }
+  return 'Recipe';
+}
+
+/** "25 min · Serves 4" */
+export function recipeMeta(recipe: Recipe): string {
+  return `${formatMinutes(recipe.totalMinutes)} · Serves ${recipe.servings}`;
+}

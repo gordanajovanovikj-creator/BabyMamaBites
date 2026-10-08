@@ -1,105 +1,88 @@
-import { useMemo, useState } from 'react';
-import { ScrollView, View } from 'react-native';
+import { router } from 'expo-router';
+import { useState } from 'react';
+import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import {
-  getCategory,
-  recipeCategories,
-  recipes,
-  recipeTags,
-  type RecipeTag,
-} from '@/content/recipes';
-import { allergenLabels, dietLabels } from '@/domain/profile-labels';
-import { recipeTagLabels } from '@/domain/recipe-labels';
-import { findRecipes, fitsCookingTime } from '@/domain/recipes';
-import { toggle } from '@/domain/profile';
-import { useProfile } from '@/features/profile/profile-context';
+import { recipeCategories, recipes } from '@/content/recipes';
+import { findRecipes, fitsCookingTime, recipeSections } from '@/domain/recipes';
+import { useFavorites } from '@/features/favorites/favorites-context';
+import { useHousehold } from '@/features/profile/use-household';
 import { CategoryRow } from '@/features/recipes/category-row';
+import { HouseholdNote } from '@/features/recipes/household-note';
 import { RecipeCard } from '@/features/recipes/recipe-card';
-import { AppText, Chip, Notice, Screen } from '@/ui';
+import { RecipeSection } from '@/features/recipes/recipe-section';
+import { AppText, Notice, Screen, SegmentedTabs, SymbolIcon } from '@/ui';
 
-export default function RecipesScreen() {
-  const { profile } = useProfile();
+type Tab = 'recipes' | 'favorites';
+
+export default function FoodScreen() {
   const insets = useSafeAreaInsets();
-  const [categoryId, setCategoryId] = useState<string | null>(null);
-  const [tags, setTags] = useState<RecipeTag[]>([]);
-  const [lowEnergy, setLowEnergy] = useState(false);
+  const household = useHousehold();
+  const { ids: favoriteIds } = useFavorites();
+  const [tab, setTab] = useState<Tab>('recipes');
 
-  const household = useMemo(
-    () => ({
-      allergens: profile?.allergens ?? [],
-      diets: profile?.diets ?? [],
-      cookingTime: profile?.cookingTime ?? ('flexible' as const),
-    }),
-    [profile],
-  );
-
-  const results = findRecipes(recipes, household, {
-    categoryId,
-    tags,
-    maxEnergy: lowEnergy ? 'low' : null,
-  });
-  const category = categoryId ? getCategory(categoryId) : undefined;
-  const householdNote = [
-    household.allergens.length
-      ? `no ${household.allergens.map((a) => allergenLabels[a].toLowerCase()).join(', ')}`
-      : null,
-    ...household.diets.map((d) => dietLabels[d].toLowerCase()),
-  ]
-    .filter(Boolean)
-    .join(' · ');
+  const sections = recipeSections(recipeCategories, recipes, household);
+  const hidden = findRecipes(recipes, household).hiddenForSafety;
+  const favorites = favoriteIds
+    .map((id) => recipes.find((r) => r.id === id))
+    .filter((r) => r !== undefined);
 
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-5">
-      <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
-        <AppText variant="display">Recipes</AppText>
-        <AppText variant="caption">Nourishing food that fits your day.</AppText>
+    <Screen padded={false} edgeToEdgeTop className="gap-6">
+      <View className="gap-3 px-5" style={{ paddingTop: insets.top + 16 }}>
+        <AppText variant="display">Food</AppText>
+        <SegmentedTabs<Tab>
+          tabs={[
+            { id: 'recipes', label: 'Recipes' },
+            {
+              id: 'favorites',
+              label: `Favorites${favorites.length ? ` (${favorites.length})` : ''}`,
+            },
+          ]}
+          selected={tab}
+          onSelect={setTab}
+        />
       </View>
 
-      <CategoryRow categories={recipeCategories} selectedId={categoryId} onSelect={setCategoryId} />
-
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerClassName="gap-2 px-5"
-      >
-        <Chip label="Low energy" selected={lowEnergy} onPress={() => setLowEnergy((v) => !v)} />
-        {recipeTags.map((t) => (
-          <Chip
-            key={t}
-            label={recipeTagLabels[t]}
-            selected={tags.includes(t)}
-            onPress={() => setTags((current) => toggle(current, t))}
+      {tab === 'recipes' ? (
+        <>
+          <CategoryRow
+            categories={recipeCategories}
+            onSelect={(id) => id && router.push({ pathname: '/category/[id]', params: { id } })}
           />
-        ))}
-      </ScrollView>
-
-      <View className="gap-3 px-5">
-        {category ? (
-          <View className="gap-1">
-            <AppText variant="heading">{category.label}</AppText>
-            <AppText variant="caption">{category.description}</AppText>
+          <View className="px-5">
+            <HouseholdNote household={household} hidden={hidden} />
           </View>
-        ) : null}
-
-        {householdNote ? (
-          <AppText variant="caption" size="sm">
-            Matched to your household: {householdNote}.
-            {results.hiddenForSafety ? ` ${results.hiddenForSafety} hidden.` : ''}
-          </AppText>
-        ) : null}
-
-        {results.recipes.map((r) => (
-          <RecipeCard key={r.id} recipe={r} fitsTime={fitsCookingTime(r, household.cookingTime)} />
-        ))}
-
-        {results.recipes.length === 0 ? (
-          <Notice
-            title="Nothing matches just yet"
-            body="Try removing a filter or picking another category. More recipes are on the way."
-          />
-        ) : null}
-      </View>
+          {sections.map((s) => (
+            <RecipeSection key={s.category.id} category={s.category} recipes={s.recipes} />
+          ))}
+        </>
+      ) : (
+        <View className="gap-3 px-5">
+          {favorites.length ? (
+            favorites.map((r) => (
+              <RecipeCard
+                key={r.id}
+                recipe={r}
+                fitsTime={fitsCookingTime(r, household.cookingTime)}
+              />
+            ))
+          ) : (
+            <View className="items-center gap-3 py-12">
+              <View className="h-20 w-20 items-center justify-center rounded-full bg-surface-muted">
+                <SymbolIcon icon="heart" emoji="♡" size={36} />
+              </View>
+              <AppText variant="heading" className="text-center">
+                No favorites yet
+              </AppText>
+              <AppText variant="caption" className="text-center">
+                Tap the heart on any recipe to save it here.
+              </AppText>
+            </View>
+          )}
+          {favorites.length ? <Notice body="Favorites are saved on this phone only." /> : null}
+        </View>
+      )}
     </Screen>
   );
 }

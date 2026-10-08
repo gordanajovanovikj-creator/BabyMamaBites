@@ -6,6 +6,9 @@ import {
   fitsCookingTime,
   formatMinutes,
   matchesFilters,
+  recipeKicker,
+  recipeMeta,
+  recipeSections,
   suitsHousehold,
 } from './recipes';
 
@@ -187,5 +190,46 @@ describe('bundled recipes', () => {
     const { readFileSync } = require('fs') as typeof import('fs');
     const symbols = readFileSync(require.resolve('sf-symbols-typescript/dist/index.d.ts'), 'utf8');
     for (const x of [...bundled, ...recipeCategories]) expect(symbols).toContain(`'${x.icon}'`);
+  });
+});
+
+describe('recipeSections', () => {
+  const cats = [{ id: 'breakfast' }, { id: 'lunch' }, { id: 'dinner' }];
+  const all = [
+    make('b1', { categories: ['breakfast'] }),
+    make('b2', { categories: ['breakfast'], allergens: ['egg'] }),
+    make('d1', { categories: ['dinner'] }),
+  ];
+
+  it('keeps category order and drops empty or fully hidden sections', () => {
+    const sections = recipeSections(cats, all, { ...household, allergens: ['egg'] });
+    expect(sections.map((s) => s.category.id)).toEqual(['breakfast', 'dinner']);
+    expect(sections[0].recipes.map((r) => r.id)).toEqual(['b1']);
+  });
+
+  it('leads each section with a different recipe when it can', () => {
+    const shared = [
+      make('a', { categories: ['breakfast', 'lunch'], activeMinutes: 1 }),
+      make('b', { categories: ['breakfast', 'lunch'], activeMinutes: 2 }),
+    ];
+    const sections = recipeSections(cats, shared, household);
+    expect(sections.map((s) => s.recipes[0].id)).toEqual(['a', 'b']);
+    expect(sections[1].recipes.map((r) => r.id)).toEqual(['b', 'a']);
+  });
+
+  it('limits recipes per section', () => {
+    const many = Array.from({ length: 15 }, (_, i) => make(`r${i}`, { categories: ['lunch'] }));
+    expect(recipeSections(cats, many, household, 10)[0].recipes).toHaveLength(10);
+  });
+});
+
+describe('recipeKicker and recipeMeta', () => {
+  it('labels by meal', () => {
+    expect(recipeKicker(make('a', { categories: ['one-pot', 'dinner'] }))).toBe('Dinner');
+    expect(recipeKicker(make('a', { categories: ['snack-smart'] }))).toBe('Snack');
+    expect(recipeKicker(make('a', { categories: ['one-pot'] }))).toBe('Recipe');
+  });
+  it('shows total time and servings', () => {
+    expect(recipeMeta(make('a', { totalMinutes: 25, servings: 4 }))).toBe('25 min · Serves 4');
   });
 });

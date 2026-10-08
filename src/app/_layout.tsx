@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useColorScheme } from 'react-native';
 
 import { StorageProvider } from '@/data/storage-provider';
+import { FavoritesProvider } from '@/features/favorites/favorites-context';
 import { ProfileProvider, useProfile } from '@/features/profile/profile-context';
 import { colors } from '@/theme/colors';
 
@@ -41,6 +42,10 @@ function RootStack() {
           name="recipe/[id]"
           options={{ headerShown: true, title: '', headerBackButtonDisplayMode: 'minimal' }}
         />
+        <Stack.Screen
+          name="category/[id]"
+          options={{ headerShown: true, headerBackButtonDisplayMode: 'minimal' }}
+        />
       </Stack.Protected>
       <Stack.Screen name="onboarding" options={{ presentation: profile ? 'modal' : 'card' }} />
     </Stack>
@@ -69,7 +74,9 @@ export default function RootLayout() {
       <StatusBar style="auto" />
       <StorageProvider>
         <ProfileProvider>
-          <RootStack />
+          <FavoritesProvider>
+            <RootStack />
+          </FavoritesProvider>
         </ProfileProvider>
       </StorageProvider>
     </ThemeProvider>

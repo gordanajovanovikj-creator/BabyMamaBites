@@ -3,7 +3,7 @@ export const appTabs = [
   { name: 'index', label: 'Today', sf: 'sun.max', sfSelected: 'sun.max.fill', md: 'wb_sunny' },
   {
     name: 'recipes',
-    label: 'Recipes',
+    label: 'Food',
     sf: 'fork.knife',
     sfSelected: 'fork.knife',
     md: 'restaurant',
