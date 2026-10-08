@@ -100,3 +100,23 @@ so the recipes say "for best quality".
 **Not on the chart, left as they were for the reviewer:** `overnight-oats` (fridge up to
 3 days) and `energy-bites` (fridge up to a week, or freeze). USDA's FoodKeeper app covers
 these, but its data couldn't be downloaded here.
+
+## Baby and toddler recipes (`src/content/baby-recipes.json`)
+
+17 draft recipes in four age groups that follow the texture stages in the solids plan:
+First purees (6 months+), Thicker and mashed (7 months+), Lumps and finger foods
+(9 months+) and Toddler meals (12 months+). Built on CDC/AAP preparation guidance: cook
+until soft, puree or mash to the right texture, no added salt or sugar, no honey, no cow's
+milk to drink before 12 months, cut round foods and mash beans, thin nut butter. Tests
+check these rules, the allergen tags and that each recipe sits in the right age group.
+
+For the reviewer:
+- **Storage times** come from the USDA chart where a row fits (cooked poultry and meat,
+  soups and stews). Fruit and vegetable purees have no chart row, so they use the approved
+  "freeze in cubes, use within 3 months" method and "refrigerate promptly, check for
+  spoilage" (AAP) with no fridge time. Please add fridge times.
+- **Allergen recipes**: soft egg mash, peanut oat cereal (about 1 tsp peanut butter),
+  yogurt swirl, salmon mash, lentil pasta (wheat). Please confirm the amounts and the
+  7-month starting age.
+- **Oats and gluten**: oat-based recipes aren't tagged gluten-free because of possible
+  cross-contact with wheat.

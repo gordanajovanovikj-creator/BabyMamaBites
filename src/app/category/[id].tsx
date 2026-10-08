@@ -2,7 +2,7 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { ScrollView, View } from 'react-native';
 
-import { getCategory, recipes, recipeTags, type RecipeTag } from '@/content/recipes';
+import { allRecipes, getCategory, recipeTags, type RecipeTag } from '@/content/recipes';
 import { toggle } from '@/domain/profile';
 import { recipeTagLabels } from '@/domain/recipe-labels';
 import { findRecipes, fitsCookingTime } from '@/domain/recipes';
@@ -28,7 +28,7 @@ export default function CategoryScreen() {
     );
   }
 
-  const results = findRecipes(recipes, household, {
+  const results = findRecipes(allRecipes, household, {
     categoryId: category.id,
     tags,
     maxEnergy: lowEnergy ? 'low' : null,
@@ -45,7 +45,7 @@ export default function CategoryScreen() {
           color="on-accent"
           className="font-bold uppercase tracking-wider"
         >
-          Collection
+          {category.fromMonths !== undefined ? `From ${category.fromMonths} months` : 'Collection'}
         </AppText>
         <AppText variant="display">{category.label}</AppText>
         <AppText color="muted">{category.description}</AppText>
@@ -66,6 +66,12 @@ export default function CategoryScreen() {
           />
         ))}
       </ScrollView>
+
+      {category.fromMonths !== undefined ? (
+        <View className="px-5 pb-3">
+          <Notice body="Ages are a guide. Go at your baby's pace, always stay with them while they eat, and follow your pediatrician's advice." />
+        </View>
+      ) : null}
 
       <View className="px-5 pb-2">
         <HouseholdNote household={household} hidden={results.hiddenForSafety} />

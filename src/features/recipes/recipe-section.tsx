@@ -10,16 +10,26 @@ import { RECIPE_TILE_WIDTH, RecipeTile } from './recipe-tile';
 export function RecipeSection({
   category,
   recipes,
+  subtitle,
 }: {
   category: RecipeCategory;
   recipes: Recipe[];
+  /** Small line under the heading, e.g. "For Mila now · from 6 months". */
+  subtitle?: string;
 }) {
   return (
     <View className="gap-3">
       <View className="flex-row items-center justify-between px-5">
-        <AppText variant="heading" size="2xl" className="flex-1">
-          {category.label}
-        </AppText>
+        <View className="flex-1">
+          <AppText variant="heading" size="2xl">
+            {category.label}
+          </AppText>
+          {subtitle ? (
+            <AppText variant="caption" size="sm">
+              {subtitle}
+            </AppText>
+          ) : null}
+        </View>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel={`See all ${category.label} recipes`}

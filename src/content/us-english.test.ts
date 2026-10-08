@@ -3,6 +3,7 @@ import ageRules from './config/age-rules.json';
 import insights from './insights.json';
 import guides from './monthly-guides.json';
 import reactions from './reactions.json';
+import babyRecipes from './baby-recipes.json';
 import recipes from './recipes.json';
 import solidsPlan from './solids-plan.json';
 
@@ -28,7 +29,16 @@ const UK_TERMS = [
   /\b(116 123|999|111)\b/,
 ];
 
-const bundles = { disclaimers, ageRules, insights, guides, solidsPlan, reactions, recipes };
+const bundles = {
+  disclaimers,
+  ageRules,
+  insights,
+  guides,
+  solidsPlan,
+  reactions,
+  recipes,
+  babyRecipes,
+};
 
 describe('US English content', () => {
   for (const [name, content] of Object.entries(bundles)) {

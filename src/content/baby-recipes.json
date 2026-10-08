@@ -1,0 +1,572 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "baby-6m",
+      "label": "First purees",
+      "icon": "drop.fill",
+      "emoji": "🥄",
+      "tone": "accent",
+      "fromMonths": 6,
+      "description": "Very smooth, single-ingredient purees, including iron-rich first foods."
+    },
+    {
+      "id": "baby-7m",
+      "label": "Thicker and mashed",
+      "icon": "fork.knife",
+      "emoji": "🥣",
+      "tone": "sky",
+      "fromMonths": 7,
+      "description": "Thicker purees, fork-mashed foods and gentle first allergens."
+    },
+    {
+      "id": "baby-9m",
+      "label": "Lumps and finger foods",
+      "icon": "hand.raised.fill",
+      "emoji": "🥕",
+      "tone": "muted",
+      "fromMonths": 9,
+      "description": "Lumpy textures and soft finger foods your baby can pick up."
+    },
+    {
+      "id": "baby-12m",
+      "label": "Toddler meals",
+      "icon": "birthday.cake.fill",
+      "emoji": "🧒",
+      "tone": "deep",
+      "fromMonths": 12,
+      "description": "Soft, chopped family-style meals, cut into pieces no bigger than about 1/2 inch."
+    }
+  ],
+  "recipes": [
+    {
+      "id": "baby-oat-cereal",
+      "title": "Iron-fortified oat cereal",
+      "summary": "[PLACEHOLDER - needs expert review] A smooth, iron-rich first food ready in two minutes.",
+      "icon": "drop.fill",
+      "emoji": "🥣",
+      "tone": "accent",
+      "activeMinutes": 2,
+      "totalMinutes": 2,
+      "servings": 1,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 to 2 tbsp iron-fortified oat infant cereal",
+        "Breast milk, formula or water to mix"
+      ],
+      "steps": [
+        "Stir the cereal with enough breast milk, formula or water to make a thin, smooth mix.",
+        "Serve from a spoon. Thicken it a little as your baby gets used to eating."
+      ],
+      "tips": [
+        "Never put cereal in a bottle.",
+        "Rotate oat, barley and multigrain cereals rather than only rice cereal.",
+        "Some oat cereals are processed with wheat; check the label if you avoid gluten."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-sweet-potato-puree",
+      "title": "Sweet potato puree",
+      "summary": "[PLACEHOLDER - needs expert review] Naturally sweet and silky; freezes in handy cubes.",
+      "icon": "leaf.fill",
+      "emoji": "🍠",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 30,
+      "servings": 8,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["2 medium sweet potatoes", "Breast milk, formula or water to thin"],
+      "steps": [
+        "Peel the sweet potatoes and cut them into even chunks.",
+        "Steam or boil for 15 to 20 minutes, until soft enough to mash easily with a fork.",
+        "Puree until completely smooth. Thin with breast milk, formula or water until very smooth."
+      ],
+      "tips": [
+        "No salt, sugar or seasoning needed.",
+        "Freeze extra in ice-cube trays, then move the cubes to labeled, dated bags and use within 3 months.",
+        "Refrigerate leftovers promptly, and check for signs of spoilage before serving."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-chicken-puree",
+      "title": "Smooth chicken puree",
+      "summary": "[PLACEHOLDER - needs expert review] An easy way to offer iron and zinc from the very start.",
+      "icon": "fork.knife",
+      "emoji": "🍗",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 30,
+      "servings": 8,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "8 oz boneless, skinless chicken thighs or breast",
+        "Water, breast milk or formula to thin"
+      ],
+      "steps": [
+        "Trim off any fat, then cut the chicken into small pieces.",
+        "Simmer in water for about 15 minutes, until cooked through to 165°F. Keep the cooking water.",
+        "Blend with some of the cooking water until completely smooth, with no stringy bits. Thin with breast milk, formula or water until very smooth."
+      ],
+      "tips": [
+        "Mix with a vegetable puree your baby already eats if the texture is too thick on its own.",
+        "Refrigerate for 3 to 4 days, or freeze in cubes and use within 2 to 6 months for best quality.",
+        "Halal and kosher depend on the chicken you buy; check the label."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-pear-puree",
+      "title": "Ripe pear puree",
+      "summary": "[PLACEHOLDER - needs expert review] A gentle, sweet first fruit.",
+      "icon": "leaf.fill",
+      "emoji": "🍐",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 20,
+      "servings": 6,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["3 ripe pears"],
+      "steps": [
+        "Peel, core and chop the pears.",
+        "Steam for 5 to 8 minutes until very soft.",
+        "Puree until smooth. Thin with breast milk, formula or water until very smooth."
+      ],
+      "tips": [
+        "Freeze extra in ice-cube trays, then move the cubes to labeled, dated bags and use within 3 months.",
+        "Refrigerate leftovers promptly, and check for signs of spoilage before serving."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-avocado-banana-mash",
+      "title": "Avocado and banana mash",
+      "summary": "[PLACEHOLDER - needs expert review] No cooking, just a fork and two ripe fruits.",
+      "icon": "leaf.fill",
+      "emoji": "🥑",
+      "tone": "sky",
+      "activeMinutes": 3,
+      "totalMinutes": 3,
+      "servings": 1,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1/4 ripe avocado", "1/4 ripe banana"],
+      "steps": [
+        "Mash the avocado and banana together with a fork.",
+        "Leave it a little textured, or add breast milk or formula to loosen."
+      ],
+      "tips": [
+        "Make it fresh; avocado browns quickly.",
+        "Offer each fruit on its own first, a few days apart, before combining."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-lentil-carrot-mash",
+      "title": "Red lentil and carrot mash",
+      "summary": "[PLACEHOLDER - needs expert review] Plant iron plus vitamin C in one pot.",
+      "icon": "carrot.fill",
+      "emoji": "🥕",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 30,
+      "servings": 6,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/2 cup red lentils, rinsed",
+        "2 carrots, peeled and chopped",
+        "2 cups water"
+      ],
+      "steps": [
+        "Simmer the lentils and carrots in the water for 20 to 25 minutes, until both are very soft.",
+        "Mash with a fork or pulse briefly for a thick, slightly textured mash. Add water if needed."
+      ],
+      "tips": [
+        "No salt or stock cubes; they add sodium.",
+        "Refrigerate for 3 to 4 days, or freeze portions and use within 2 to 3 months for best quality."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-egg-mash",
+      "title": "Soft egg mash",
+      "summary": "[PLACEHOLDER - needs expert review] A simple way to introduce egg, fully cooked.",
+      "icon": "sun.max.fill",
+      "emoji": "🥚",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "tags": [],
+      "energy": "low",
+      "allergens": ["egg"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1 egg", "Breast milk or formula to loosen"],
+      "steps": [
+        "Hard-boil the egg for 10 to 12 minutes, until the yolk and white are completely firm.",
+        "Cool, peel and mash finely with a fork, adding breast milk or formula until soft and moist."
+      ],
+      "tips": [
+        "Offer egg on a day with no other new foods, and watch for any reaction.",
+        "Once tolerated, keep egg in the diet regularly. About 1/3 of an egg is a typical portion.",
+        "If you're worried about egg allergy, talk to your pediatrician first."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-peanut-oatmeal",
+      "title": "Peanut oat cereal",
+      "summary": "[PLACEHOLDER - needs expert review] Thinned peanut butter stirred into cereal, the safe way to offer peanut.",
+      "icon": "drop.fill",
+      "emoji": "🥜",
+      "tone": "sky",
+      "activeMinutes": 3,
+      "totalMinutes": 3,
+      "servings": 1,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["peanut"],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "2 tbsp iron-fortified oat infant cereal",
+        "About 1 tsp smooth peanut butter",
+        "Warm breast milk, formula or water"
+      ],
+      "steps": [
+        "Stir the peanut butter into a little warm liquid until fully dissolved, with no lumps.",
+        "Mix in the cereal to a smooth, spoonable texture."
+      ],
+      "tips": [
+        "Never offer chunks or spoonfuls of peanut butter; they're a choking hazard.",
+        "If your baby has severe eczema or an egg allergy, talk to your pediatrician before offering peanut.",
+        "Some oat cereals are processed with wheat; check the label if you avoid gluten."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-yogurt-berry-swirl",
+      "title": "Yogurt and blueberry swirl",
+      "summary": "[PLACEHOLDER - needs expert review] Plain whole-milk yogurt with a fruity swirl and no added sugar.",
+      "icon": "drop.fill",
+      "emoji": "🫐",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 2,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/2 cup plain, pasteurized whole-milk yogurt",
+        "1/4 cup blueberries (fresh or frozen)"
+      ],
+      "steps": [
+        "Simmer the blueberries with a splash of water for 5 minutes until they burst, then mash well and cool.",
+        "Swirl the mashed berries into the yogurt."
+      ],
+      "tips": [
+        "Whole blueberries are a choking hazard at this age; always mash or cook them down.",
+        "Yogurt is fine before 12 months, but cow's milk as a drink waits until then."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-salmon-sweet-potato",
+      "title": "Salmon and sweet potato mash",
+      "summary": "[PLACEHOLDER - needs expert review] Flaked salmon folded into a lumpy mash.",
+      "icon": "fish.fill",
+      "emoji": "🐟",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 30,
+      "servings": 4,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "tags": [],
+      "energy": "low",
+      "allergens": ["fish"],
+      "diets": ["pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["4 oz skinless salmon fillet", "1 medium sweet potato, peeled and cubed"],
+      "steps": [
+        "Bake the salmon at 400°F for 12 to 15 minutes, until it flakes easily and reaches 145°F.",
+        "Meanwhile, steam the sweet potato until very soft.",
+        "Remove every bone, flake the salmon finely and mash it into the sweet potato, leaving some soft lumps."
+      ],
+      "tips": [
+        "Salmon is on the FDA's \"Best Choices\" list for low mercury.",
+        "Refrigerate leftovers promptly, and check for signs of spoilage before serving."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-soft-veg-fingers",
+      "title": "Soft veggie fingers",
+      "summary": "[PLACEHOLDER - needs expert review] Steamed carrot and zucchini sticks for little hands.",
+      "icon": "carrot.fill",
+      "emoji": "🥒",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 20,
+      "servings": 2,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "tags": [],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1 carrot", "1 small zucchini"],
+      "steps": [
+        "Peel the carrot. Cut both vegetables into finger-length sticks.",
+        "Steam the carrot for about 12 minutes and the zucchini for about 5, until they squash easily between your fingers.",
+        "Cool before serving."
+      ],
+      "tips": [
+        "Raw carrot is a choking hazard; always cook it until soft.",
+        "Stay with your baby while they eat."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-banana-oat-pancakes",
+      "title": "Banana oat pancakes",
+      "summary": "[PLACEHOLDER - needs expert review] Three ingredients, cut into soft strips.",
+      "icon": "frying.pan.fill",
+      "emoji": "🥞",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 20,
+      "servings": 8,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["egg"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": ["1 ripe banana", "1 egg", "1/3 cup quick oats", "A little oil for the pan"],
+      "steps": [
+        "Mash the banana, then mix in the egg and oats.",
+        "Cook small spoonfuls in a lightly oiled pan over medium heat for 2 to 3 minutes per side, until set all the way through.",
+        "Cool and cut into thin strips."
+      ],
+      "tips": [
+        "Ripe banana sweetens them; no sugar or honey needed.",
+        "Oats may be processed with wheat; check the label if you avoid gluten."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-lentil-pasta",
+      "title": "Tiny pasta with lentil tomato sauce",
+      "summary": "[PLACEHOLDER - needs expert review] Soft pasta in a smooth, no-salt-added sauce.",
+      "icon": "fork.knife",
+      "emoji": "🍝",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "tags": [],
+      "energy": "low",
+      "allergens": ["wheat"],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup small pasta shapes",
+        "1/4 cup red lentils, rinsed",
+        "1 cup no-salt-added crushed tomatoes",
+        "1/2 cup water"
+      ],
+      "steps": [
+        "Simmer the lentils, tomatoes and water for 20 minutes until the lentils are very soft, then blend smooth.",
+        "Cook the pasta until very soft, a few minutes longer than the package says.",
+        "Stir the pasta into the sauce and cut any larger pieces small."
+      ],
+      "tips": [
+        "Choose canned tomatoes labeled no salt added.",
+        "Refrigerate leftovers promptly, and check for signs of spoilage before serving."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-turkey-meatballs",
+      "title": "Mini turkey and zucchini meatballs",
+      "summary": "[PLACEHOLDER - needs expert review] Soft baked meatballs for the whole family.",
+      "icon": "fork.knife",
+      "emoji": "🧆",
+      "tone": "deep",
+      "activeMinutes": 15,
+      "totalMinutes": 35,
+      "servings": 6,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "medium",
+      "allergens": ["egg", "wheat"],
+      "diets": ["halal", "kosher"],
+      "ingredients": [
+        "1 lb ground turkey",
+        "1 small zucchini, finely grated and squeezed dry",
+        "1/3 cup plain breadcrumbs",
+        "1 egg"
+      ],
+      "steps": [
+        "Heat the oven to 400°F and line a baking sheet.",
+        "Mix everything and roll into small balls.",
+        "Bake for 15 to 18 minutes, until cooked through to 165°F.",
+        "Cool, then cut your toddler's portion into pieces no bigger than about 1/2 inch."
+      ],
+      "tips": [
+        "Skip added salt; season the adults' portions at the table.",
+        "Refrigerate for 3 to 4 days, or freeze and use within 2 to 6 months for best quality."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-cheesy-broccoli-rice",
+      "title": "Cheesy broccoli rice",
+      "summary": "[PLACEHOLDER - needs expert review] Soft rice, tender broccoli and melted cheese.",
+      "icon": "leaf.fill",
+      "emoji": "🥦",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "tags": [],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 cup cooked rice",
+        "1 cup small broccoli florets",
+        "1/3 cup shredded pasteurized cheddar",
+        "Splash of whole milk"
+      ],
+      "steps": [
+        "Steam the broccoli until very soft, then chop it small.",
+        "Warm the rice with the milk, then stir in the broccoli and cheese until melted."
+      ],
+      "tips": [
+        "Cheese adds salt, so a little goes a long way.",
+        "Refrigerate leftovers promptly, and check for signs of spoilage before serving."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-bean-quesadilla",
+      "title": "Bean and cheese quesadilla strips",
+      "summary": "[PLACEHOLDER - needs expert review] Crispy outside, soft inside, cut into easy strips.",
+      "icon": "flame.fill",
+      "emoji": "🌮",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "tags": [],
+      "energy": "low",
+      "allergens": ["milk", "wheat"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 flour tortilla",
+        "1/4 cup no-salt-added black beans, rinsed",
+        "2 tbsp shredded pasteurized cheese"
+      ],
+      "steps": [
+        "Mash the beans well; whole beans are a choking hazard.",
+        "Spread on half the tortilla, add the cheese and fold.",
+        "Cook in a dry pan for 2 to 3 minutes per side, until the cheese melts.",
+        "Cool and cut into thin strips."
+      ],
+      "tips": ["Check tortilla labels; some contain extra allergens."],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-overnight-oats",
+      "title": "Toddler overnight oats",
+      "summary": "[PLACEHOLDER - needs expert review] Oats soaked in whole milk with mashed fruit.",
+      "icon": "sun.max.fill",
+      "emoji": "🥛",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 245,
+      "servings": 2,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "tags": ["no-cook"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup rolled oats",
+        "1/2 cup pasteurized whole milk",
+        "1/2 ripe banana or a few strawberries, mashed"
+      ],
+      "steps": [
+        "Stir the oats, milk and fruit together.",
+        "Cover and refrigerate overnight, or for at least 4 hours."
+      ],
+      "tips": [
+        "From 12 months, plain whole cow's milk is fine.",
+        "No added sugar or honey needed."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    }
+  ]
+}

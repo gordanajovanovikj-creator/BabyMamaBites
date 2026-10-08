@@ -115,8 +115,9 @@ const mealKickers: [string, string][] = [
   ['nourish-while-nursing', 'Drink & snack'],
 ];
 
-/** Short label shown above a recipe title, e.g. "Breakfast" or "Snack". */
+/** Short label shown above a recipe title, e.g. "Breakfast", "Snack" or "From 9 months". */
 export function recipeKicker(recipe: Recipe): string {
+  if (recipe.fromMonths !== undefined) return `From ${recipe.fromMonths} months`;
   for (const [category, label] of mealKickers) {
     if (recipe.categories.includes(category)) return label;
   }
@@ -132,4 +133,26 @@ export function recipeMeta(recipe: Recipe): string {
 export function recipeTimings(recipe: Recipe): string {
   const cook = Math.max(0, recipe.totalMinutes - recipe.activeMinutes);
   return `Prep ${formatMinutes(recipe.activeMinutes)} · Cook ${cook ? formatMinutes(cook) : '0 min'} · Serves ${recipe.servings}`;
+}
+
+/**
+ * Baby age-group collections, the one matching the baby's age first, then the rest in
+ * age order. `current` is the id of the group the baby is in now (null before 6 months).
+ */
+export function babyCollectionsFor<C extends { id: string; fromMonths?: number }>(
+  categories: C[],
+  ageMonths: number,
+): { ordered: C[]; current: string | null } {
+  const byAge = [...categories].sort((a, b) => (a.fromMonths ?? 0) - (b.fromMonths ?? 0));
+  const reached = byAge.filter((c) => (c.fromMonths ?? 0) <= ageMonths);
+  const current = reached.at(-1)?.id ?? null;
+  const ordered = current
+    ? [byAge.find((c) => c.id === current)!, ...byAge.filter((c) => c.id !== current)]
+    : byAge;
+  return { ordered, current };
+}
+
+/** Whether a baby recipe is meant for an older baby than this one. */
+export function isAheadOfAge(recipe: Recipe, ageMonths: number): boolean {
+  return recipe.fromMonths !== undefined && recipe.fromMonths > ageMonths;
 }

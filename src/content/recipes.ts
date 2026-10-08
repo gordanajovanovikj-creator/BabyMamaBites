@@ -2,6 +2,7 @@ import { z } from 'zod';
 
 import { allergens, diets } from '@/domain/profile';
 
+import babyRecipesJson from './baby-recipes.json';
 import recipesJson from './recipes.json';
 import { reviewStatusSchema } from './schemas';
 
@@ -28,6 +29,8 @@ export const recipeCategorySchema = z.object({
   emoji: z.string().min(1),
   tone,
   description: z.string().min(1),
+  /** Baby collections only: the age group starts at this many months. */
+  fromMonths: z.number().int().nonnegative().optional(),
 });
 export type RecipeCategory = z.infer<typeof recipeCategorySchema>;
 
@@ -44,6 +47,8 @@ export const recipeSchema = z.object({
   totalMinutes: z.number().int().positive(),
   servings: z.number().int().positive(),
   categories: z.array(z.string().min(1)).min(1),
+  /** Baby recipes only: suitable from this age in months. Absent for grown-up recipes. */
+  fromMonths: z.number().int().nonnegative().optional(),
   tags: z.array(z.enum(recipeTags)),
   /** How much energy it takes to make. */
   energy: z.enum(energyLevels),
@@ -59,21 +64,30 @@ export const recipeSchema = z.object({
 });
 export type Recipe = z.infer<typeof recipeSchema>;
 
-const file = z
-  .object({
-    version: z.number(),
-    categories: z.array(recipeCategorySchema).min(1),
-    recipes: z.array(recipeSchema).min(1),
-  })
-  .parse(recipesJson);
+const fileSchema = z.object({
+  version: z.number(),
+  categories: z.array(recipeCategorySchema).min(1),
+  recipes: z.array(recipeSchema).min(1),
+});
 
+const file = fileSchema.parse(recipesJson);
+const babyFile = fileSchema.parse(babyRecipesJson);
+
+/** Grown-up recipes (Food tab). */
 export const recipeCategories: RecipeCategory[] = file.categories;
 export const recipes: Recipe[] = file.recipes;
 
+/** Baby and toddler recipes by age group (Baby tab). */
+export const babyRecipeCategories: RecipeCategory[] = babyFile.categories;
+export const babyRecipes: Recipe[] = babyFile.recipes;
+
+export const allRecipes: Recipe[] = [...recipes, ...babyRecipes];
+const allCategories: RecipeCategory[] = [...recipeCategories, ...babyRecipeCategories];
+
 export function getRecipe(id: string): Recipe | undefined {
-  return recipes.find((r) => r.id === id);
+  return allRecipes.find((r) => r.id === id);
 }
 
 export function getCategory(id: string): RecipeCategory | undefined {
-  return recipeCategories.find((c) => c.id === id);
+  return allCategories.find((c) => c.id === id);
 }

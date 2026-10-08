@@ -6,7 +6,9 @@ import { getRecipe } from '@/content/recipes';
 import { splitReviewMarker } from '@/content/schemas';
 import { allergenLabels, dietLabels } from '@/domain/profile-labels';
 import { energyLabels, recipeTagLabels } from '@/domain/recipe-labels';
-import { recipeKicker, recipeTimings } from '@/domain/recipes';
+import { today } from '@/domain/dates';
+import { isAheadOfAge, recipeKicker, recipeTimings } from '@/domain/recipes';
+import { babyAge } from '@/domain/stage';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { useProfile } from '@/features/profile/profile-context';
 import { PictureHero } from '@/features/recipes/picture-hero';
@@ -38,6 +40,9 @@ export default function RecipeScreen() {
 
   const summary = splitReviewMarker(recipe.summary);
   const clashes = recipe.allergens.filter((a) => profile?.allergens.includes(a));
+  const ageMonths = profile ? babyAge(profile, today()).months : null;
+  const ahead = ageMonths !== null && isAheadOfAge(recipe, ageMonths);
+  const babyName = profile?.babyName ?? 'Your baby';
   const toggleIngredient = (i: number) =>
     setChecked((c) => (c.includes(i) ? c.filter((x) => x !== i) : [...c, i]));
   const tags = [energyLabels[recipe.energy], ...recipe.tags.map((t) => recipeTagLabels[t])];
@@ -84,6 +89,21 @@ export default function RecipeScreen() {
       </View>
 
       <View className="gap-3 px-5 pt-5">
+        {recipe.fromMonths !== undefined ? (
+          <Notice
+            tone={ahead ? 'caution' : 'info'}
+            title={
+              ahead
+                ? `For babies from ${recipe.fromMonths} months`
+                : `Suitable from ${recipe.fromMonths} months`
+            }
+            body={
+              ahead
+                ? `${babyName} is ${ageMonths} months, so save this one for later. Ages are a guide; go at your baby's pace.`
+                : 'Always stay with your baby while they eat, and offer new foods one at a time.'
+            }
+          />
+        ) : null}
         {clashes.length ? (
           <Notice
             tone="urgent"
@@ -166,7 +186,7 @@ export default function RecipeScreen() {
       <View className="gap-2 px-5 pb-6 pt-2">
         <AppText variant="label">
           {summary.isDraft
-            ? 'Draft recipe, awaiting review by a registered dietitian.'
+            ? `Draft recipe, awaiting review by a ${recipe.reviewer}.`
             : `Reviewed by a ${recipe.reviewer}.`}
         </AppText>
         <AppText variant="caption" size="sm">
