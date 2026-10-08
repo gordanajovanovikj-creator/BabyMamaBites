@@ -62,3 +62,11 @@ pediatrician or registered dietitian reviews it.
    confirm the texture advice.
 5. **Water amount.** CDC says 4–8 oz a day; AAP says "no more than 1 cup (8 oz)". The plan
    uses CDC's range.
+
+## Egg allergy note (week 3)
+
+Added a tip to week 3: most egg allergies are to egg-white proteins, but the yolk can cause
+reactions too and the two can't be fully separated, so worried parents should ask their
+pediatrician how to introduce egg. Source: ACAAI, "Egg Allergy" ("Allergy to egg white
+proteins is most common"; "it is not possible to completely separate the white from the
+yolk"). This replaces a suggested "yolk only" tip, which the source doesn't support.

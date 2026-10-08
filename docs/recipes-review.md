@@ -75,3 +75,28 @@ in the review brief; no USDA page was among the downloaded sources.
 `overnight-oats`, `banana-oat-smoothie`, `pb-banana-shake`, `nut-butter-porridge`, `yogurt-parfait`,
 `avocado-egg-toast`, `breakfast-burritos`, `baked-oatmeal`, `hummus-wrap` (aside from the general
 store-bought label note above).
+
+## Storage times (checked against the USDA chart)
+
+Source: FoodSafety.gov (USDA/HHS) **Cold Food Storage Chart**, last reviewed 2023-09-19.
+The live site blocks automated access, so it was read through the Internet Archive copy.
+The chart's freezer times are for quality; food kept frozen at 0°F stays safe indefinitely,
+so the recipes say "for best quality".
+
+| Recipe | Chart row used | Fridge | Freezer |
+| --- | --- | --- | --- |
+| egg-muffin-cups | Casseroles with eggs / quiche | 3–4 days (was "up to 4 days") | 2–3 months (was "freeze") |
+| breakfast-burritos | Casseroles with eggs | 3–4 days (new) | 2–3 months (was "freeze") |
+| baked-oatmeal | Casseroles with eggs | 3–4 days (was 4 days) | 2–3 months (was "freezes well") |
+| chicken-quinoa-jars | Chicken salad | 3–4 days (was up to 4) | Doesn't freeze well (new) |
+| white-bean-tuna-salad | Tuna salad | 3–4 days (was 2 days) | Doesn't freeze well (new) |
+| lentil-soup | Soups and stews | 3–4 days (new) | 2–3 months (was 3 months) |
+| turkey-chili | Soups and stews | 3–4 days (new) | 2–3 months (was 3 months) |
+| chickpea-curry | Soups and stews | 3–4 days (new) | 2–3 months (new) |
+| slow-cooker-chicken | Leftovers: cooked poultry | 3–4 days (new) | 2–6 months (was "freeze") |
+| sheet-pan-salmon | Leftovers: cooked fish | 3–4 days (new) | n/a |
+| chicken-stir-fry | Leftovers: cooked poultry | 3–4 days (new) | n/a |
+
+**Not on the chart, left as they were for the reviewer:** `overnight-oats` (fridge up to
+3 days) and `energy-bites` (fridge up to a week, or freeze). USDA's FoodKeeper app covers
+these, but its data couldn't be downloaded here.

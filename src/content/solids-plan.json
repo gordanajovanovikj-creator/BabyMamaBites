@@ -87,9 +87,10 @@
       },
       "tips": [
         "Offer the egg on its own day, so it's the only new food.",
-        "Once egg is tolerated, keep it in the diet regularly."
+        "Once egg is tolerated, keep it in the diet regularly.",
+        "Most egg allergies are caused by proteins in the egg white, but the yolk can cause reactions too, and the two can't be fully separated. If you're worried about egg allergy, or your baby has severe eczema or has reacted to a food before, talk to your pediatrician about the best way to introduce egg."
       ],
-      "sources": ["cdc-hungry", "aap-allergens", "cdc-solids"],
+      "sources": ["cdc-hungry", "aap-allergens", "cdc-solids", "acaai-egg"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
@@ -517,11 +518,7 @@
         "[PLACEHOLDER - needs expert review] Babies sometimes refuse foods they used to love. Liking only a few foods, or not wanting foods to touch, are normal phases.",
         "Keep foods your baby likes on the plate alongside something new, and give simple choices so they feel in control."
       ],
-      "tryFoods": [
-        "Soft mini pancakes (no added sugar)",
-        "Diced mango",
-        "Chopped hard-boiled egg"
-      ],
+      "tryFoods": ["Soft mini pancakes (no added sugar)", "Diced mango", "Chopped hard-boiled egg"],
       "allergen": null,
       "tips": [
         "Make it playful: a smiley face on the plate can help.",
@@ -790,6 +787,12 @@
       "publisher": "AAP (HealthyChildren.org)",
       "title": "When Can Babies Start Solid Foods?",
       "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/Starting-Solid-Foods.aspx"
+    },
+    {
+      "id": "acaai-egg",
+      "publisher": "ACAAI",
+      "title": "Egg Allergy",
+      "url": "https://acaai.org/allergies/allergic-conditions/food/egg/"
     },
     {
       "id": "cdc-avoid",
