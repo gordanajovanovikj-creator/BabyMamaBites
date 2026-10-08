@@ -55,8 +55,9 @@ pediatrician or registered dietitian reviews it.
 2. **"3 to 5 days" vs. "at least a day".** CDC and AAP's solids page say 3 to 5 days; AAP's
    allergen page says "at least a day". The plan follows the stricter 3 to 5 days. Should
    the advice relax after week 12?
-3. **Portion examples** (about 2 tsp nut butter, about 1/3 egg, about 4 oz per meal, 1 oz
-   fish around age 1) are quoted from AAP and FDA. Please confirm they suit the app's audience.
+3. **Portion examples.** About 1/3 egg, about 4 oz per meal and 1 oz fish around age 1
+   are quoted from AAP and FDA. The nut butter portion is **about 1 teaspoon** by product
+   decision; AAP's example is about 2 teaspoons. Please confirm.
 4. **Week 20 foods** (quartered grapes, soft-cooked apple slices) at about 10–11 months:
    confirm the texture advice.
 5. **Water amount.** CDC says 4–8 oz a day; AAP says "no more than 1 cup (8 oz)". The plan

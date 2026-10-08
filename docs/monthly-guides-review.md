@@ -480,7 +480,7 @@ Reviewer: **pediatric allergist**
 Start with a small taste of one new food at a time. If there's no reaction, you can slowly increase the amount, then keep it in your baby's diet regularly.
 
 - Common allergens: egg, peanut and other nut butters, dairy like yogurt, wheat, soy, sesame, fish and shellfish.
-- To keep peanut and egg in the diet, the AAP gives examples like about 2 teaspoons of peanut butter or about 1/3 of a well-cooked egg, served regularly.
+- To keep peanut and egg in the diet, offer small amounts regularly, such as about 1 teaspoon of thinned peanut butter or about 1/3 of a well-cooked egg.
 - Serve peanut safely: thin a small amount of smooth peanut butter into cereal, fruit puree or yogurt, or dissolve it in breast milk or formula. Never whole peanuts or nuts.
 - If your baby has severe, persistent eczema or has had an allergic reaction to a food like egg, talk to your pediatrician first. For these higher-risk babies, peanut may be recommended as early as 4 to 6 months.
 
@@ -604,7 +604,7 @@ Reviewer: **pediatric allergist**
 Start with a small taste of one new food at a time. If there's no reaction, you can slowly increase the amount, then keep it in your baby's diet regularly.
 
 - Common allergens: egg, peanut and other nut butters, dairy like yogurt, wheat, soy, sesame, fish and shellfish.
-- To keep peanut and egg in the diet, the AAP gives examples like about 2 teaspoons of peanut butter or about 1/3 of a well-cooked egg, served regularly.
+- To keep peanut and egg in the diet, offer small amounts regularly, such as about 1 teaspoon of thinned peanut butter or about 1/3 of a well-cooked egg.
 - Serve peanut safely: thin a small amount of smooth peanut butter into cereal, fruit puree or yogurt, or dissolve it in breast milk or formula. Never whole peanuts or nuts.
 - If your baby has severe, persistent eczema or has had an allergic reaction to a food like egg, talk to your pediatrician first. For these higher-risk babies, peanut may be recommended as early as 4 to 6 months.
 
