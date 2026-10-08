@@ -10,6 +10,10 @@ export const insightSchema = z.object({
   stages: z.array(z.enum(['newborn', 'solids', 'toddler'])).min(1),
   kind: z.enum(['tip', 'recipe', 'self-care', 'when-to-call']),
   tone: z.enum(['surface', 'muted', 'accent', 'sky', 'deep']),
+  /** SF Symbol name for the tile illustration (iOS). */
+  icon: z.string().min(1),
+  /** Stand-in shown where SF Symbols aren't available (Android, web). */
+  emoji: z.string().min(1),
   title: z.string().min(1).max(48),
   summary: z.string().min(1),
   body: z.array(z.string().min(1)).min(1),

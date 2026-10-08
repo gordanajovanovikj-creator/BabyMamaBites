@@ -42,7 +42,7 @@ export function AgeHero({ profile }: { profile: Profile }) {
           accessibilityLabel="Update my details"
           onPress={() => router.push('/onboarding')}
         />
-        <AppText variant="label" className="text-lg">
+        <AppText variant="label" size="lg">
           {formatToday()}
         </AppText>
         <IconButton
@@ -58,7 +58,7 @@ export function AgeHero({ profile }: { profile: Profile }) {
         accessible
         accessibilityLabel={`${name} is ${headline}${age.corrected ? ', adjusted age' : ''}. ${stageLine}.`}
       >
-        <AppText variant="heading" color="primary" className="text-center text-2xl">
+        <AppText variant="heading" color="primary" size="2xl" className="text-center">
           {name}
         </AppText>
         <AppText variant="display" color="primary" className="text-center">

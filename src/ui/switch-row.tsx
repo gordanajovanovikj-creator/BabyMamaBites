@@ -24,7 +24,7 @@ export function SwitchRow({ label, detail, value, onChange }: SwitchRowProps) {
       className="min-h-16 flex-row items-center gap-4 rounded-2xl border border-border bg-surface px-5 py-3 active:opacity-80"
     >
       <View className="flex-1 gap-0.5">
-        <AppText variant="label" className="text-lg">
+        <AppText variant="label" size="lg">
           {label}
         </AppText>
         {detail ? <AppText variant="caption">{detail}</AppText> : null}

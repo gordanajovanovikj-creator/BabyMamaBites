@@ -10,7 +10,7 @@ import { InsightTile } from './insight-tile';
 export function InsightsRow({ insights }: { insights: Insight[] }) {
   return (
     <View className="gap-3">
-      <AppText variant="heading" className="px-5 text-2xl">
+      <AppText variant="heading" size="2xl" className="px-5">
         My daily insights · Today
       </AppText>
       <ScrollView

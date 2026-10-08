@@ -6,6 +6,8 @@
       "stages": ["newborn"],
       "kind": "tip",
       "tone": "surface",
+      "icon": "basket.fill",
+      "emoji": "🧺",
       "title": "A snack basket by your feeding chair",
       "summary": "Food you can reach with one hand.",
       "body": [
@@ -21,6 +23,8 @@
       "stages": ["newborn"],
       "kind": "self-care",
       "tone": "accent",
+      "icon": "hands.and.sparkles.fill",
+      "emoji": "🤲",
       "title": "Say yes to meal help",
       "summary": "An easy answer to \"What can I do?\"",
       "body": [
@@ -36,6 +40,8 @@
       "stages": ["newborn", "solids"],
       "kind": "recipe",
       "tone": "sky",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🥣",
       "title": "Overnight oats in a jar",
       "summary": "Two minutes tonight, breakfast tomorrow.",
       "body": [
@@ -52,6 +58,8 @@
       "stages": ["newborn"],
       "kind": "tip",
       "tone": "muted",
+      "icon": "drop.fill",
+      "emoji": "💧",
       "title": "Keep a drink within reach",
       "summary": "A full bottle wherever you sit.",
       "body": [
@@ -66,6 +74,8 @@
       "stages": ["newborn"],
       "kind": "self-care",
       "tone": "deep",
+      "icon": "moon.zzz.fill",
+      "emoji": "🌙",
       "title": "Rest counts, too",
       "summary": "Lying down for ten minutes is enough.",
       "body": [
@@ -80,6 +90,8 @@
       "stages": ["newborn", "solids"],
       "kind": "when-to-call",
       "tone": "deep",
+      "icon": "heart.fill",
+      "emoji": "💗",
       "title": "Not feeling like yourself?",
       "summary": "You don't have to carry it alone.",
       "body": [
@@ -95,6 +107,8 @@
       "stages": ["solids"],
       "kind": "tip",
       "tone": "sky",
+      "icon": "carrot.fill",
+      "emoji": "🥕",
       "title": "Starting with purées",
       "summary": "Smooth first, then step by step.",
       "body": [
@@ -109,6 +123,8 @@
       "stages": ["solids"],
       "kind": "tip",
       "tone": "accent",
+      "icon": "snowflake",
+      "emoji": "❄️",
       "title": "Freezer cubes, explained",
       "summary": "A few hours of prep can stock your freezer for weeks.",
       "body": [
@@ -125,6 +141,8 @@
       "stages": ["solids"],
       "kind": "recipe",
       "tone": "surface",
+      "icon": "fork.knife",
+      "emoji": "🍽️",
       "title": "One meal, two textures",
       "summary": "Cook once for the family and baby.",
       "body": [
@@ -140,6 +158,8 @@
       "stages": ["solids", "toddler"],
       "kind": "when-to-call",
       "tone": "deep",
+      "icon": "cross.case.fill",
+      "emoji": "🩹",
       "title": "Choking: be prepared",
       "summary": "Know what to do before you need it.",
       "body": [
@@ -155,6 +175,8 @@
       "stages": ["toddler"],
       "kind": "recipe",
       "tone": "sky",
+      "icon": "fork.knife.circle.fill",
+      "emoji": "🍲",
       "title": "Share your plate",
       "summary": "Family food, toddler-sized.",
       "body": [
@@ -169,6 +191,8 @@
       "stages": ["toddler"],
       "kind": "self-care",
       "tone": "accent",
+      "icon": "face.smiling.fill",
+      "emoji": "🙂",
       "title": "Picky phases",
       "summary": "You're doing better than you think.",
       "body": [

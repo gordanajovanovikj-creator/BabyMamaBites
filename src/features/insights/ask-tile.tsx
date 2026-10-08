@@ -11,10 +11,10 @@ export function AskTile() {
     <Card
       onPress={() => router.navigate('/ask')}
       accessibilityLabel="Meal idea from what's in your fridge. Opens Ask."
-      className="min-h-52 items-center justify-between gap-3"
+      className="min-h-56 items-center justify-between gap-3 py-6"
       style={{ width: TILE_WIDTH }}
     >
-      <AppText variant="heading" className="text-center text-lg leading-6">
+      <AppText variant="heading" size="lg" className="text-center leading-6">
         Meal idea from your fridge
       </AppText>
       <View className="h-14 w-14 items-center justify-center rounded-full bg-primary">

@@ -14,13 +14,36 @@ export type TextColor =
   | 'caution'
   | 'danger';
 
+export type TextSize = 'xs' | 'sm' | 'base' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl';
+
 const variantClasses: Record<Variant, string> = {
-  display: 'text-4xl font-extrabold tracking-tight',
-  title: 'text-3xl font-extrabold tracking-tight',
-  heading: 'text-xl font-bold',
-  body: 'text-lg',
-  label: 'text-base font-semibold',
-  caption: 'text-base',
+  display: 'font-extrabold tracking-tight',
+  title: 'font-extrabold tracking-tight',
+  heading: 'font-bold',
+  body: '',
+  label: 'font-semibold',
+  caption: '',
+};
+
+const variantSizes: Record<Variant, TextSize> = {
+  display: '4xl',
+  title: '3xl',
+  heading: 'xl',
+  body: 'lg',
+  label: 'base',
+  caption: 'base',
+};
+
+const sizeClasses: Record<TextSize, string> = {
+  xs: 'text-xs',
+  sm: 'text-sm',
+  base: 'text-base',
+  lg: 'text-lg',
+  xl: 'text-xl',
+  '2xl': 'text-2xl',
+  '3xl': 'text-3xl',
+  '4xl': 'text-4xl',
+  '5xl': 'text-5xl',
 };
 
 const colorClasses: Record<TextColor, string> = {
@@ -41,16 +64,23 @@ export type AppTextProps = TextProps & {
   variant?: Variant;
   /** Text colour. Use this rather than a text-* colour class so styles never clash. */
   color?: TextColor;
+  /** Font size. Use this rather than a text-* size class so styles never clash. */
+  size?: TextSize;
   className?: string;
 };
 
 /** Text that follows the type scale and scales with the user's Dynamic Type setting. */
-export function AppText({ variant = 'body', color, className, ...rest }: AppTextProps) {
+export function AppText({ variant = 'body', color, size, className, ...rest }: AppTextProps) {
   const resolved = color ?? (variant === 'caption' ? 'muted' : 'ink');
   return (
     <Text
       accessibilityRole={headerVariants.includes(variant) ? 'header' : undefined}
-      className={cn(variantClasses[variant], colorClasses[resolved], className)}
+      className={cn(
+        variantClasses[variant],
+        sizeClasses[size ?? variantSizes[variant]],
+        colorClasses[resolved],
+        className,
+      )}
       {...rest}
     />
   );

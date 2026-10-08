@@ -31,7 +31,7 @@ export default function InsightScreen() {
       </View>
       {insight.reviewStatus === 'placeholder' ? (
         <View className="self-start rounded-full bg-accent px-3 py-1">
-          <AppText variant="label" color="on-accent" className="text-sm">
+          <AppText variant="label" color="on-accent" size="sm">
             Draft · awaiting expert review
           </AppText>
         </View>

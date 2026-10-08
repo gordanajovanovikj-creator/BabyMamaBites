@@ -32,7 +32,7 @@ export function Notice({ title, body, tone = 'info', className }: NoticeProps) {
           {title}
         </AppText>
       ) : null}
-      <AppText variant="body" color={t.text} className="text-base">
+      <AppText variant="body" color={t.text} size="base">
         {body}
       </AppText>
     </View>

@@ -1,3 +1,6 @@
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
 import type { Insight } from '@/content/insights';
 import { insights as bundled } from '@/content/insights';
 
@@ -9,6 +12,8 @@ function make(id: string, extra: Partial<Insight> = {}): Insight {
     stages: ['newborn'],
     kind: 'tip',
     tone: 'surface',
+    icon: 'sparkles',
+    emoji: '✨',
     title: id,
     summary: id,
     body: ['[PLACEHOLDER - needs expert review] text'],
@@ -71,6 +76,14 @@ describe('bundled insights', () => {
     for (const i of bundled.filter((x) => x.reviewStatus === 'placeholder')) {
       expect(i.body[0]).toContain('[PLACEHOLDER - needs expert review]');
     }
+  });
+
+  it('use SF Symbol names that exist', () => {
+    const symbols = readFileSync(
+      join(__dirname, '../../node_modules/sf-symbols-typescript/dist/index.d.ts'),
+      'utf8',
+    );
+    for (const i of bundled) expect(symbols).toContain(`'${i.icon}'`);
   });
 
   it('never claim a food increases milk supply', () => {

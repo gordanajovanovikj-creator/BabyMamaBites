@@ -35,7 +35,7 @@ export function OptionCard({ title, detail, selected, onPress, kind = 'radio' }:
         {selected ? <View className="h-2.5 w-2.5 rounded-full bg-on-primary" /> : null}
       </View>
       <View className="flex-1 gap-0.5">
-        <AppText variant="label" className="text-lg">
+        <AppText variant="label" size="lg">
           {title}
         </AppText>
         {detail ? <AppText variant="caption">{detail}</AppText> : null}

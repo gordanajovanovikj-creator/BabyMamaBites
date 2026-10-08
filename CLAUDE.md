@@ -11,8 +11,8 @@
   need a privacy-policy or App Store privacy-label change.
 - **Layers.** Screens in `src/app/` stay thin; logic lives in `src/domain/` (pure, tested);
   UI primitives in `src/ui/`. Use semantic colour classes (`bg-canvas`, `text-ink`…), never
-  raw hex in components. Set colours on `Card`/`AppText` via their `tone`/`color` props,
-  not by adding a second `bg-*`/`text-*` class (two conflicting classes resolve unpredictably).
+  raw hex in components. Set colours and sizes on `Card`/`AppText` via their `tone`/`color`/`size`
+  props, not by adding a second `bg-*`/`text-*` class (two conflicting classes resolve unpredictably).
 - **Look and feel.** Inspired by Sweat and Flo (without copying their branding): blush
   canvas, soft rose primary, lavender accent, bold headings, pill buttons, big rounded cards.
   Soft rose only meets 3:1 contrast, so use it for large or bold text and fills, never
