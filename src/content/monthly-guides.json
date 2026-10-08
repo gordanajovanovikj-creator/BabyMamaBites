@@ -1,0 +1,662 @@
+{
+  "version": 1,
+  "guides": [
+    {
+      "id": "month-1",
+      "fromMonth": 0,
+      "toMonth": 1,
+      "stage": "newborn",
+      "title": "Month 1",
+      "ageLabel": "0 to 1 months old",
+      "summary": "Feeding, food for you and when to get help.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to feeding your baby and yourself in month 1.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover what feeding usually looks like around 0–1 months, whether you breastfeed, formula feed or both.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover simple, nourishing meals and snacks that fit this stage, and staying hydrated.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "rest",
+          "title": "Rest and recovery",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover looking after yourself this month, and asking for help.",
+          "reviewer": "midwife"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including feeding difficulties and changes in your mood. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "month-2",
+      "fromMonth": 1,
+      "toMonth": 2,
+      "stage": "newborn",
+      "title": "Month 2",
+      "ageLabel": "1 to 2 months old",
+      "summary": "Feeding, food for you and when to get help.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to feeding your baby and yourself in month 2.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover what feeding usually looks like around 1–2 months, whether you breastfeed, formula feed or both.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover simple, nourishing meals and snacks that fit this stage, and staying hydrated.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "rest",
+          "title": "Rest and recovery",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover looking after yourself this month, and asking for help.",
+          "reviewer": "midwife"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including feeding difficulties and changes in your mood. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "month-3",
+      "fromMonth": 2,
+      "toMonth": 3,
+      "stage": "newborn",
+      "title": "Month 3",
+      "ageLabel": "2 to 3 months old",
+      "summary": "Feeding, food for you and when to get help.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to feeding your baby and yourself in month 3.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover what feeding usually looks like around 2–3 months, whether you breastfeed, formula feed or both.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover simple, nourishing meals and snacks that fit this stage, and staying hydrated.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "rest",
+          "title": "Rest and recovery",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover looking after yourself this month, and asking for help.",
+          "reviewer": "clinician"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including feeding difficulties and changes in your mood. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "month-4",
+      "fromMonth": 3,
+      "toMonth": 4,
+      "stage": "newborn",
+      "title": "Month 4",
+      "ageLabel": "3 to 4 months old",
+      "summary": "Feeding, food for you and when to get help.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to feeding your baby and yourself in month 4.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover what feeding usually looks like around 3–4 months, whether you breastfeed, formula feed or both.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover simple, nourishing meals and snacks that fit this stage, and staying hydrated.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "rest",
+          "title": "Rest and recovery",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover looking after yourself this month, and asking for help.",
+          "reviewer": "clinician"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including feeding difficulties and changes in your mood. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "month-5",
+      "fromMonth": 4,
+      "toMonth": 5,
+      "stage": "newborn",
+      "title": "Month 5",
+      "ageLabel": "4 to 5 months old",
+      "summary": "Feeding, food for you and when to get help.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to feeding your baby and yourself in month 5.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover what feeding usually looks like around 4–5 months, whether you breastfeed, formula feed or both.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "getting-ready",
+          "title": "Getting ready for solids",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover signs a baby may be getting ready for solid food, and why there is no need to rush.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover simple, nourishing meals and snacks that fit this stage, and staying hydrated.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "rest",
+          "title": "Rest and recovery",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover looking after yourself this month, and asking for help.",
+          "reviewer": "clinician"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including feeding difficulties and changes in your mood. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "month-6",
+      "fromMonth": 5,
+      "toMonth": 6,
+      "stage": "newborn",
+      "title": "Month 6",
+      "ageLabel": "5 to 6 months old",
+      "summary": "Feeding, food for you and when to get help.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to feeding your baby and yourself in month 6.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover what feeding usually looks like around 5–6 months, whether you breastfeed, formula feed or both.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "getting-ready",
+          "title": "Getting ready for solids",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover signs a baby may be getting ready for solid food, and why there is no need to rush.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover simple, nourishing meals and snacks that fit this stage, and staying hydrated.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "rest",
+          "title": "Rest and recovery",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover looking after yourself this month, and asking for help.",
+          "reviewer": "clinician"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including feeding difficulties and changes in your mood. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "month-7",
+      "fromMonth": 6,
+      "toMonth": 7,
+      "stage": "solids",
+      "title": "Month 7",
+      "ageLabel": "6 to 7 months old",
+      "summary": "New foods, textures, allergens and safety.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to starting solids in month 7.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover starting with smooth purées, first tastes, and how much (or how little) to expect.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "textures",
+          "title": "Textures this month",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover which textures usually suit month 7, and how to move on gently.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "allergens",
+          "title": "Allergens",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover how and when common allergens may be introduced, and what to watch for.",
+          "reviewer": "paediatric allergist"
+        },
+        {
+          "id": "safety",
+          "title": "Safety and choking",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover foods to prepare carefully at this age and how to serve them safely.",
+          "reviewer": "paediatrician"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover easy family meals that work alongside baby's food.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including allergic reactions and feeding difficulties. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "month-8",
+      "fromMonth": 7,
+      "toMonth": 8,
+      "stage": "solids",
+      "title": "Month 8",
+      "ageLabel": "7 to 8 months old",
+      "summary": "New foods, textures, allergens and safety.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to starting solids in month 8.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover moving on to thicker purées and mashed foods.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "textures",
+          "title": "Textures this month",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover which textures usually suit month 8, and how to move on gently.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "allergens",
+          "title": "Allergens",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover how and when common allergens may be introduced, and what to watch for.",
+          "reviewer": "paediatric allergist"
+        },
+        {
+          "id": "safety",
+          "title": "Safety and choking",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover foods to prepare carefully at this age and how to serve them safely.",
+          "reviewer": "paediatrician"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover easy family meals that work alongside baby's food.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including allergic reactions and feeding difficulties. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "month-9",
+      "fromMonth": 8,
+      "toMonth": 9,
+      "stage": "solids",
+      "title": "Month 9",
+      "ageLabel": "8 to 9 months old",
+      "summary": "New foods, textures, allergens and safety.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to starting solids in month 9.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover soft lumps, new flavours and finger foods.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "textures",
+          "title": "Textures this month",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover which textures usually suit month 9, and how to move on gently.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "allergens",
+          "title": "Allergens",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover how and when common allergens may be introduced, and what to watch for.",
+          "reviewer": "paediatric allergist"
+        },
+        {
+          "id": "safety",
+          "title": "Safety and choking",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover foods to prepare carefully at this age and how to serve them safely.",
+          "reviewer": "paediatrician"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover easy family meals that work alongside baby's food.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including allergic reactions and feeding difficulties. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "month-10",
+      "fromMonth": 9,
+      "toMonth": 10,
+      "stage": "solids",
+      "title": "Month 10",
+      "ageLabel": "9 to 10 months old",
+      "summary": "New foods, textures, allergens and safety.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to starting solids in month 10.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover more textures, family foods and feeding themselves.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "textures",
+          "title": "Textures this month",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover which textures usually suit month 10, and how to move on gently.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "allergens",
+          "title": "Allergens",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover how and when common allergens may be introduced, and what to watch for.",
+          "reviewer": "paediatric allergist"
+        },
+        {
+          "id": "safety",
+          "title": "Safety and choking",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover foods to prepare carefully at this age and how to serve them safely.",
+          "reviewer": "paediatrician"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover easy family meals that work alongside baby's food.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including allergic reactions and feeding difficulties. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "month-11",
+      "fromMonth": 10,
+      "toMonth": 11,
+      "stage": "solids",
+      "title": "Month 11",
+      "ageLabel": "10 to 11 months old",
+      "summary": "New foods, textures, allergens and safety.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to starting solids in month 11.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover chopped and soft family foods, and regular meal times.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "textures",
+          "title": "Textures this month",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover which textures usually suit month 11, and how to move on gently.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "allergens",
+          "title": "Allergens",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover how and when common allergens may be introduced, and what to watch for.",
+          "reviewer": "paediatric allergist"
+        },
+        {
+          "id": "safety",
+          "title": "Safety and choking",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover foods to prepare carefully at this age and how to serve them safely.",
+          "reviewer": "paediatrician"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover easy family meals that work alongside baby's food.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including allergic reactions and feeding difficulties. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "month-12",
+      "fromMonth": 11,
+      "toMonth": 12,
+      "stage": "solids",
+      "title": "Month 12",
+      "ageLabel": "11 to 12 months old",
+      "summary": "New foods, textures, allergens and safety.",
+      "intro": "[PLACEHOLDER - needs expert review] Your month-by-month guide to starting solids in month 12.",
+      "sections": [
+        {
+          "id": "feeding",
+          "title": "Feeding your baby",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover eating with the family and getting ready for the toddler months.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "textures",
+          "title": "Textures this month",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover which textures usually suit month 12, and how to move on gently.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "allergens",
+          "title": "Allergens",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover how and when common allergens may be introduced, and what to watch for.",
+          "reviewer": "paediatric allergist"
+        },
+        {
+          "id": "safety",
+          "title": "Safety and choking",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover foods to prepare carefully at this age and how to serve them safely.",
+          "reviewer": "paediatrician"
+        },
+        {
+          "id": "for-you",
+          "title": "Food for you",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover easy family meals that work alongside baby's food.",
+          "reviewer": "dietitian"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including allergic reactions and feeding difficulties. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "months-12-18",
+      "fromMonth": 12,
+      "toMonth": 18,
+      "stage": "toddler",
+      "title": "12 to 18 months",
+      "ageLabel": "1 year to 18 months old",
+      "summary": "Family meals, toddler portions and picky phases.",
+      "intro": "[PLACEHOLDER - needs expert review] Your guide to feeding your toddler from 1 year to 18 months.",
+      "sections": [
+        {
+          "id": "family-meals",
+          "title": "Family meals",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover sharing family meals and adapting them for a toddler.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "portions",
+          "title": "Portions and textures",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover typical toddler portions and textures at this age.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "picky",
+          "title": "Picky phases",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover gentle ways to handle picky phases without pressure.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "safety",
+          "title": "Safety and choking",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover foods to prepare carefully for toddlers.",
+          "reviewer": "paediatrician"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including concerns about eating or growth. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "months-18-24",
+      "fromMonth": 18,
+      "toMonth": 24,
+      "stage": "toddler",
+      "title": "18 to 24 months",
+      "ageLabel": "18 months to 2 years old",
+      "summary": "Family meals, toddler portions and picky phases.",
+      "intro": "[PLACEHOLDER - needs expert review] Your guide to feeding your toddler from 18 months to 2 years.",
+      "sections": [
+        {
+          "id": "family-meals",
+          "title": "Family meals",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover sharing family meals and adapting them for a toddler.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "portions",
+          "title": "Portions and textures",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover typical toddler portions and textures at this age.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "picky",
+          "title": "Picky phases",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover gentle ways to handle picky phases without pressure.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "safety",
+          "title": "Safety and choking",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover foods to prepare carefully for toddlers.",
+          "reviewer": "paediatrician"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including concerns about eating or growth. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    },
+    {
+      "id": "months-24-plus",
+      "fromMonth": 24,
+      "toMonth": null,
+      "stage": "toddler",
+      "title": "2 years and up",
+      "ageLabel": "2 years old and up",
+      "summary": "Family meals, toddler portions and picky phases.",
+      "intro": "[PLACEHOLDER - needs expert review] Your guide to feeding your toddler from 2 years and up.",
+      "sections": [
+        {
+          "id": "family-meals",
+          "title": "Family meals",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover sharing family meals and adapting them for a toddler.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "portions",
+          "title": "Portions and textures",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover typical toddler portions and textures at this age.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "picky",
+          "title": "Picky phases",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover gentle ways to handle picky phases without pressure.",
+          "reviewer": "paediatric dietitian"
+        },
+        {
+          "id": "safety",
+          "title": "Safety and choking",
+          "body": "[PLACEHOLDER - needs expert review] This section will cover foods to prepare carefully for toddlers.",
+          "reviewer": "paediatrician"
+        },
+        {
+          "id": "when-to-call",
+          "title": "When to call your doctor",
+          "reviewer": "paediatrician",
+          "body": "[PLACEHOLDER - needs expert review] A paediatrician will list the signs to watch for at this age, including concerns about eating or growth. If you are ever worried about your baby or yourself, contact your doctor, midwife or health visitor. In an emergency, call your local emergency number."
+        }
+      ],
+      "reviewStatus": "placeholder"
+    }
+  ]
+}
