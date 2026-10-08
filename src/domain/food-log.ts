@@ -52,6 +52,16 @@ export function planWeekFor(solidsWeek: number | null, totalWeeks: number): numb
   return Math.min(Math.max(solidsWeek, 1), totalWeeks);
 }
 
+/** Weeks where new foods go one at a time, 3 to 5 days apart (CDC, AAP). */
+export const ONE_AT_A_TIME_WEEKS = 12;
+
+/** Heading for a week's food list: paced new foods early on, ideas later. */
+export function tryFoodsHeading(week: number): { title: string; detail: string | null } {
+  return week <= ONE_AT_A_TIME_WEEKS
+    ? { title: 'New foods this week', detail: 'One at a time, 3 to 5 days apart' }
+    : { title: 'Ideas this week', detail: null };
+}
+
 export function newEntryId(now: Date = new Date()): string {
   return `${now.getTime().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 }

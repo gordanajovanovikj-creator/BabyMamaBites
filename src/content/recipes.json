@@ -39,7 +39,7 @@
       "icon": "frying.pan.fill",
       "emoji": "🍲",
       "tone": "accent",
-      "description": "One pan or pot, less washing up."
+      "description": "One pan or pot, fewer dishes."
     },
     {
       "id": "top-breakfasts",
@@ -242,7 +242,7 @@
     {
       "id": "warm-spiced-milk",
       "title": "Warm cinnamon vanilla milk",
-      "summary": "[PLACEHOLDER - needs expert review] A soothing, caffeine-free warm drink for night feeds.",
+      "summary": "[PLACEHOLDER - needs expert review] A cozy, caffeine-free warm drink for night feeds.",
       "icon": "mug.fill",
       "emoji": "🍵",
       "tone": "accent",
@@ -339,12 +339,12 @@
         "Heat the oven to 350°F and grease a 12-cup muffin pan.",
         "Whisk the eggs, milk and pepper together.",
         "Divide the vegetables and cheese between the cups, then pour in the egg mixture.",
-        "Bake for 20 to 25 minutes, until set in the middle.",
+        "Bake for 20 to 25 minutes, until the eggs are firm and fully set in the middle, with no runny egg.",
         "Cool, then store in the fridge for up to 4 days or freeze."
       ],
       "tips": [
         "Reheat in the microwave for about 30 seconds until hot all the way through.",
-        "Leave out added salt if you'll share these with your baby."
+        "Leave out added salt if you'll share these with your baby, and cut a baby's portion into small pieces or thin slices."
       ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
@@ -534,7 +534,7 @@
       "diets": ["halal", "gluten-free"],
       "ingredients": [
         "1 cup quinoa",
-        "2 cups cooked chicken breast, chopped",
+        "2 cups cooked chicken breast (cooked to 165°F), chopped",
         "1 can (15 oz) chickpeas, rinsed",
         "2 cups chopped cucumber and cherry tomatoes",
         "3 tbsp olive oil",
@@ -573,14 +573,18 @@
         "1 cup cherry tomatoes, halved",
         "2 tbsp olive oil",
         "1 tbsp lemon juice",
-        "Handful of parsley"
+        "Handful of parsley",
+        "Pepper"
       ],
       "steps": [
         "Mix the tuna, beans, onion and tomatoes in a bowl.",
         "Dress with olive oil, lemon juice and pepper.",
         "Stir through the parsley. Keeps in the fridge for 2 days."
       ],
-      "tips": ["Canned light tuna is on the FDA's \"Best Choices\" list for lower mercury."],
+      "tips": [
+        "Canned light tuna is on the FDA's \"Best Choices\" list for lower mercury. While breastfeeding, the FDA advises 2 to 3 servings (4 oz each) a week from that list.",
+        "Canned white (albacore) tuna is a \"Good Choice\" instead; the FDA advises no more than 1 serving a week of fish from that list."
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
@@ -612,7 +616,9 @@
         "Cook in a dry skillet over medium heat for 2 to 3 minutes per side until crisp and melted.",
         "Cut into wedges."
       ],
-      "tips": [],
+      "tips": [
+        "Sharing with a baby or toddler? Whole corn kernels are a choking hazard; mash them with the beans or leave them out."
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
@@ -637,7 +643,7 @@
         "2 carrots, chopped",
         "2 cloves garlic",
         "1 1/2 cups red lentils, rinsed",
-        "1 can (14 oz) chopped tomatoes",
+        "1 can (14 oz) diced tomatoes",
         "6 cups low-sodium vegetable broth",
         "1 tsp cumin"
       ],
@@ -648,7 +654,9 @@
         "Blend partly or fully if you like it smooth.",
         "Cool and freeze in portions for up to 3 months."
       ],
-      "tips": ["Use low-sodium broth, and blend a plain portion if you're sharing with your baby."],
+      "tips": [
+        "Use low-sodium or no-salt-added broth and tomatoes, and blend a plain portion if you're sharing with your baby."
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
@@ -678,19 +686,22 @@
         "1 tsp cumin"
       ],
       "steps": [
-        "Brown the turkey in the oil until cooked through, breaking it up.",
+        "Brown the turkey in the oil, breaking it up, until no pink remains and it reaches 165°F.",
         "Add the onion and pepper and cook for 5 minutes.",
         "Stir in the spices, beans and tomatoes. Simmer for 25 to 30 minutes.",
         "Serve with rice, or freeze portions for up to 3 months."
       ],
-      "tips": ["Halal depends on the turkey you buy; check the label."],
+      "tips": [
+        "Halal depends on the turkey you buy; check the label.",
+        "Sharing with a baby or toddler? Mash the beans (whole beans are a choking hazard) and choose low-sodium or no-salt-added canned beans and tomatoes."
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
     {
       "id": "sheet-pan-salmon",
       "title": "Sheet-pan salmon and vegetables",
-      "summary": "[PLACEHOLDER - needs expert review] One tray, 25 minutes, minimal washing up.",
+      "summary": "[PLACEHOLDER - needs expert review] One sheet pan, 25 minutes, minimal cleanup.",
       "icon": "fish.fill",
       "emoji": "🐟",
       "tone": "sky",
@@ -719,10 +730,13 @@
       ],
       "steps": [
         "Heat the oven to 425°F. Toss the potatoes with half the oil and roast for 10 minutes.",
-        "Add the broccoli and salmon to the tray, drizzle with the rest of the oil, lemon juice, pepper and dill.",
+        "Add the broccoli and salmon to the pan, drizzle with the rest of the oil, lemon juice, pepper and dill.",
         "Roast for 12 to 15 minutes until the salmon flakes easily and reaches 145°F."
       ],
-      "tips": ["Salmon is on the FDA's \"Best Choices\" list."],
+      "tips": [
+        "Salmon is on the FDA's \"Best Choices\" list. While breastfeeding, the FDA advises 2 to 3 servings (4 oz each) a week from that list.",
+        "Sharing with a baby or toddler? Remove the skin, check carefully for bones, and flake the fish into small pieces."
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
@@ -751,7 +765,7 @@
         "Cooked rice to serve"
       ],
       "steps": [
-        "Heat the oil in a large pan and cook the chicken until cooked through. Set aside.",
+        "Heat the oil in a large pan and cook the chicken until no pink remains and it reaches 165°F. Set aside.",
         "Stir-fry the vegetables for 4 to 5 minutes.",
         "Add the ginger, garlic, soy sauce and chicken and toss for 1 minute.",
         "Serve over rice."
@@ -789,7 +803,9 @@
         "Bring to a boil, then simmer, stirring often, for 10 to 12 minutes until the pasta is tender.",
         "Stir in the spinach until wilted, then the Parmesan."
       ],
-      "tips": ["Some Parmesan isn't vegetarian (it may contain animal rennet); check the label."],
+      "tips": [
+        "Some Parmesan isn't vegetarian, halal or kosher (it may contain animal rennet); check the label."
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
@@ -815,7 +831,7 @@
         "1 tbsp mild curry powder",
         "2 cans (15 oz) chickpeas, rinsed",
         "1 can (14 oz) coconut milk",
-        "1 can (14 oz) chopped tomatoes",
+        "1 can (14 oz) diced tomatoes",
         "2 cups spinach"
       ],
       "steps": [
@@ -823,7 +839,9 @@
         "Add the chickpeas, coconut milk and tomatoes. Simmer for 15 minutes.",
         "Stir in the spinach until wilted. Serve with rice."
       ],
-      "tips": [],
+      "tips": [
+        "Sharing with a baby or toddler? Mash the chickpeas; whole beans are a choking hazard."
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
@@ -860,7 +878,10 @@
         "Pour in the broth, cover and cook on low for 4 hours, until the chicken reaches 165°F.",
         "Shred with two forks. Use in wraps, rice bowls or salads, or freeze portions."
       ],
-      "tips": ["Halal depends on the chicken you buy; check the label."],
+      "tips": [
+        "Halal depends on the chicken you buy; check the label.",
+        "For a baby or toddler, shred the chicken finely; tough or large chunks of meat are a choking hazard."
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
@@ -897,7 +918,9 @@
         "Roll into 16 balls.",
         "Refrigerate for up to a week, or freeze."
       ],
-      "tips": ["Not for babies: whole bites and nut butter in chunks are choking hazards."],
+      "tips": [
+        "Not for babies or young children: whole bites and chunks of nut butter are choking hazards."
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
@@ -918,7 +941,9 @@
       "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
       "ingredients": ["1 apple", "1 to 2 tbsp peanut butter"],
       "steps": ["Core and slice the apple.", "Dip or spread with peanut butter."],
-      "tips": [],
+      "tips": [
+        "Not for babies or young children as is: raw apple pieces and thick peanut butter are choking hazards."
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
@@ -944,7 +969,9 @@
         "A few baby carrots"
       ],
       "steps": ["Arrange everything on a plate or in a container with sections."],
-      "tips": ["For toddlers, cut grapes into quarters."],
+      "tips": [
+        "Sharing with a toddler? Cut grapes into small pieces, slice cheese thinly instead of serving chunks, swap raw carrots for cooked soft ones, and skip crackers with seeds or whole grain kernels."
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     }

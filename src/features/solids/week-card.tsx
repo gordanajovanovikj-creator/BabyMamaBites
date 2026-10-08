@@ -3,6 +3,7 @@ import { View } from 'react-native';
 
 import { getStageInfo, type PlanWeek } from '@/content/solids-plan';
 import { splitReviewMarker } from '@/content/schemas';
+import { tryFoodsHeading } from '@/domain/food-log';
 import { AppText, Card } from '@/ui';
 
 export type WeekCardProps = {
@@ -45,7 +46,7 @@ export function WeekCard({ week, totalWeeks }: WeekCardProps) {
       <AppText color="on-accent">{focus}</AppText>
       <View className="gap-1">
         <AppText variant="label" color="on-accent" className="font-bold">
-          Foods to try
+          {tryFoodsHeading(week.week).title}
         </AppText>
         <AppText color="on-accent">{week.tryFoods.join(' · ')}</AppText>
       </View>

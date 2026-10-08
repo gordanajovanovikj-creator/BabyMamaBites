@@ -9,6 +9,7 @@ import {
   solidsAccessed,
   solidsSourcesFor,
 } from '@/content/solids-plan';
+import { tryFoodsHeading } from '@/domain/food-log';
 import { allergenLabels } from '@/domain/profile-labels';
 import { useProfile } from '@/features/profile/profile-context';
 import { SourceLinks } from '@/features/shared/source-links';
@@ -44,6 +45,7 @@ export default function PlanWeekScreen() {
   }
 
   const stage = getStageInfo(week.stage);
+  const foodsHeading = tryFoodsHeading(week.week);
   const previous = getPlanWeek(week.week - 1);
   const next = getPlanWeek(week.week + 1);
   const householdAvoids = week.allergen && profile?.allergens.includes(week.allergen.id);
@@ -89,8 +91,16 @@ export default function PlanWeekScreen() {
       ) : null}
 
       <Card className="gap-3">
-        <AppText variant="heading">Foods to try</AppText>
+        <View className="gap-1">
+          <AppText variant="heading">{foodsHeading.title}</AppText>
+          {foodsHeading.detail ? <AppText variant="caption">{foodsHeading.detail}</AppText> : null}
+        </View>
         <Bullets items={week.tryFoods} />
+        {week.allergen ? (
+          <AppText variant="caption">
+            Plus this week&apos;s allergen, below, on its own day.
+          </AppText>
+        ) : null}
       </Card>
 
       {week.allergen ? (

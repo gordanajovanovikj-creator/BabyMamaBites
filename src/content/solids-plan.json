@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "region": "US",
   "accessed": "2026-10-08",
   "stages": [
@@ -40,258 +40,250 @@
       "title": "First tastes",
       "stage": "smooth",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Start small: half a spoonful to a teaspoon or two of a single smooth puree, once a day, at a calm time. Some parents give a little breast milk or formula first.",
-        "Breast milk or formula is still your baby's main nutrition. This week is about getting used to the spoon and new tastes."
+        "[PLACEHOLDER - needs expert review] Start with a teaspoon or two of one smooth, single-ingredient food, once a day, at a calm time. Half a spoonful is plenty at first.",
+        "Some babies do better with a little breast milk or formula first, then a few tastes, then more milk. Breast milk or formula is still the main nutrition."
       ],
-      "tryFoods": [
-        "Iron-fortified oat or barley infant cereal",
-        "Pureed meat (chicken, beef or turkey)",
-        "Pureed sweet potato"
-      ],
+      "tryFoods": ["Iron-fortified oat or barley infant cereal", "Pureed sweet potato"],
       "allergen": null,
       "tips": [
-        "Offer foods rich in iron and zinc, like pureed meat or iron-fortified cereal.",
-        "Mix cereal with breast milk, formula or water; never put cereal in a bottle."
+        "Thin cereal with breast milk, formula or water, and serve it from a spoon. Never put cereal in a bottle.",
+        "If your baby turns away or cries, stop and try again another day."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-howmuch-food", "cdc-iron"],
+      "sources": ["cdc-solids", "aap-solids", "cdc-howmuch-food"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 2,
-      "title": "More first foods",
+      "title": "Iron-rich foods",
       "stage": "smooth",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Keep offering one new single-ingredient food at a time, building up toward 1 to 2 tablespoons as your baby is ready.",
-        "Watch for fullness cues: closing the mouth or turning away means they've had enough."
+        "[PLACEHOLDER - needs expert review] From about 6 months, your baby needs iron and zinc from food. Meat, poultry, eggs and fish have the type of iron the body absorbs most easily.",
+        "Plant sources like iron-fortified cereal, beans, lentils and tofu are absorbed better alongside vitamin C foods such as sweet potatoes, broccoli, berries or tomatoes."
       ],
-      "tryFoods": ["Pureed carrots", "Mashed avocado", "Pureed peas"],
+      "tryFoods": ["Pureed meat (chicken, beef or turkey)", "Pureed pears"],
       "allergen": null,
       "tips": [
-        "Vary infant cereals (oat, barley, multigrain) rather than only rice cereal.",
-        "Freeze small portions of purees in ice-cube trays to save time."
+        "Remove fat, skin and bones before cooking meat, then puree it until very smooth.",
+        "Wait 3 to 5 days between new foods so you can spot any reaction."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-howmuch-food", "cdc-iron"],
+      "sources": ["cdc-iron", "aap-solids", "cdc-solids"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 3,
-      "title": "First allergen",
+      "title": "Hungry or full?",
       "stage": "smooth",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Once your baby has had a few first foods without problems, you can start offering common allergens, one at a time, alongside other foods.",
-        "If your baby has severe, persistent eczema or has reacted to a food before, talk to your pediatrician first."
+        "[PLACEHOLDER - needs expert review] Your baby will tell you how much they want. Opening their mouth, reaching or getting excited means \"more\"; closing their mouth, turning away or pushing food away means \"done.\"",
+        "Let your baby decide how much to eat. They don't need to finish the bowl, and food works best when it isn't used as a reward."
       ],
-      "tryFoods": ["Pureed pears", "Pureed green beans", "Pureed butternut squash"],
+      "tryFoods": ["Mashed avocado"],
       "allergen": {
         "id": "egg",
         "label": "Egg",
         "howTo": "A small taste of well-cooked egg, mashed or thinned (hard-boiled or scrambled until fully set)."
       },
       "tips": [
-        "Introduce one new food at a time so you can spot any reaction.",
-        "Once a food is tolerated, keep offering it regularly."
+        "Offer the egg on its own day, so it's the only new food.",
+        "Once egg is tolerated, keep it in the diet regularly."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "aap-allergens"],
+      "sources": ["cdc-hungry", "aap-allergens", "cdc-solids"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 4,
-      "title": "Building variety",
+      "title": "Peanut, the early way",
       "stage": "smooth",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Once your baby has had a few first foods without problems, you can start offering common allergens, one at a time, alongside other foods.",
-        "If your baby has severe, persistent eczema or has reacted to a food before, talk to your pediatrician first."
+        "[PLACEHOLDER - needs expert review] Offering peanut early, then regularly, can help prevent peanut allergy. Studies found this protection lasted.",
+        "If your baby has severe, persistent eczema or has had an allergic reaction to a food such as egg, talk to your pediatrician before offering peanut."
       ],
-      "tryFoods": ["Mashed banana", "Pureed spinach", "Multigrain infant cereal"],
+      "tryFoods": ["Mashed banana"],
       "allergen": {
         "id": "peanut",
         "label": "Peanut",
         "howTo": "A small amount of smooth peanut butter thinned into cereal, fruit puree or yogurt, or dissolved in breast milk or formula. Never whole peanuts."
       },
       "tips": [
-        "Introduce one new food at a time so you can spot any reaction.",
-        "Once a food is tolerated, keep offering it regularly."
+        "Peanut butter is only safe thinned. Chunks or spoonfuls are a choking hazard.",
+        "Keep offering egg. A typical portion is about 1/3 of a well-cooked egg."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "aap-allergens"],
+      "sources": ["aap-allergens", "cdc-solids", "cdc-choking"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 5,
-      "title": "Thicker purees and mashed",
+      "title": "Thicker textures",
       "stage": "thicker",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Make purees a little thicker and start mashing soft foods with a fork as your baby's skills grow.",
-        "By 7 or 8 months, many babies are eating foods from all the food groups. Keep allergens they've tolerated in the diet regularly."
+        "[PLACEHOLDER - needs expert review] As your baby gets the hang of swallowing, make purees a little thicker and start mashing soft foods with a fork.",
+        "Coughing, sputtering and gagging are a normal part of learning new textures. Stay calm and keep your baby sitting upright."
       ],
-      "tryFoods": ["Pureed lentils", "Mashed sweet potato", "Pureed apples (cooked)"],
+      "tryFoods": ["Pureed carrots (cooked until soft)"],
       "allergen": {
         "id": "milk",
         "label": "Dairy",
         "howTo": "Plain whole-milk yogurt with no added sugar. (Cow's milk as a drink waits until 12 months.)"
       },
       "tips": [
-        "Introduce one new food at a time so you can spot any reaction.",
-        "Once a food is tolerated, keep offering it regularly."
+        "Yogurt and cheese are fine before 12 months, but cow's milk as a drink waits until then.",
+        "Choose pasteurized dairy with no added sugar."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "aap-allergens"],
+      "sources": ["cdc-textures", "cdc-solids", "aap-allergens", "cdc-cowsmilk"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 6,
-      "title": "Thicker purees and mashed",
+      "title": "A first cup",
       "stage": "thicker",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Make purees a little thicker and start mashing soft foods with a fork as your baby's skills grow.",
-        "By 7 or 8 months, many babies are eating foods from all the food groups. Keep allergens they've tolerated in the diet regularly."
+        "[PLACEHOLDER - needs expert review] Now is a good time to offer a little water in an open cup, a cup with a spouted lid or a cup with a straw. From 6 to 12 months, 4 to 8 oz of water a day is plenty.",
+        "Breast milk or formula still provides most of what your baby drinks. Juice isn't recommended before 12 months."
       ],
-      "tryFoods": ["Pureed beef", "Mashed beets", "Pureed peaches"],
+      "tryFoods": ["Pureed lentils"],
       "allergen": {
         "id": "wheat",
         "label": "Wheat",
         "howTo": "Infant cereal that contains wheat, or very soft, well-cooked pasta mashed small."
       },
       "tips": [
-        "Introduce one new food at a time so you can spot any reaction.",
-        "Once a food is tolerated, keep offering it regularly."
+        "Expect spills. Practice matters more than how much goes in.",
+        "Infant cereal is one easy way to offer wheat; check the label."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "aap-allergens"],
+      "sources": ["cdc-encourage", "cdc-utensils", "aap-solids"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 7,
-      "title": "Thicker purees and mashed",
+      "title": "Try, try again",
       "stage": "thicker",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Make purees a little thicker and start mashing soft foods with a fork as your baby's skills grow.",
-        "By 7 or 8 months, many babies are eating foods from all the food groups. Keep allergens they've tolerated in the diet regularly."
+        "[PLACEHOLDER - needs expert review] It's normal for a baby to refuse a new food. Many children need 8 to 10 tries before they accept it.",
+        "If a food is refused, wait about a week and offer it again, or mix it with a food your baby already likes."
       ],
-      "tryFoods": ["Mashed beans", "Mashed pumpkin", "Pureed blueberries"],
+      "tryFoods": ["Mashed green beans"],
       "allergen": {
         "id": "soy",
         "label": "Soy",
         "howTo": "Soft tofu, mashed or blended."
       },
       "tips": [
-        "Introduce one new food at a time so you can spot any reaction.",
-        "Once a food is tolerated, keep offering it regularly."
+        "Freezing small portions makes repeat tries easy and cuts waste.",
+        "Eat the food yourself first; babies learn by watching."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "aap-allergens"],
+      "sources": ["cdc-picky", "aap-allergens", "cdc-solids"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 8,
-      "title": "Thicker purees and mashed",
+      "title": "A rainbow of foods",
       "stage": "thicker",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Make purees a little thicker and start mashing soft foods with a fork as your baby's skills grow.",
-        "By 7 or 8 months, many babies are eating foods from all the food groups. Keep allergens they've tolerated in the diet regularly."
+        "[PLACEHOLDER - needs expert review] By 7 or 8 months, many babies are eating foods from every food group: vegetables, fruits, proteins, dairy without added sugar, and whole grains.",
+        "Aim for different colors across the week. If you serve infant cereal, rotate oat, barley and multigrain rather than only rice cereal, which can raise arsenic exposure."
       ],
-      "tryFoods": ["Mashed chicken with vegetables", "Mashed peas", "Mashed ripe pear"],
+      "tryFoods": ["Pureed butternut squash"],
       "allergen": {
         "id": "sesame",
         "label": "Sesame",
         "howTo": "A little tahini (sesame paste) thinned into a puree or yogurt."
       },
       "tips": [
-        "Introduce one new food at a time so you can spot any reaction.",
-        "Once a food is tolerated, keep offering it regularly."
+        "Thin tahini well, just like nut butters.",
+        "Keep offering the allergens your baby already tolerates."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "aap-allergens"],
+      "sources": ["cdc-solids", "cdc-encourage", "aap-allergens"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 9,
-      "title": "Lumpy and soft finger foods",
+      "title": "Finger foods",
       "stage": "lumpy",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Move on to lumpier, mashed textures and soft finger foods your baby can pick up. Coughing and gagging are normal while learning.",
-        "Around 9 months, babies can start learning to drink from a cup without a lid."
+        "[PLACEHOLDER - needs expert review] Once your baby sits up and brings things to their mouth, they can start feeding themselves soft finger foods. This builds the fine motor skills for pinching and picking up.",
+        "Good first finger foods are soft, easy to swallow and cut small: well-cooked pasta, small pieces of soft bread, ripe banana, or soft-cooked vegetables."
       ],
-      "tryFoods": ["Soft-cooked carrot sticks", "Banana pieces", "Soft-cooked broccoli florets"],
+      "tryFoods": ["Soft-cooked broccoli florets (small pieces)"],
       "allergen": {
         "id": "fish",
         "label": "Fish",
         "howTo": "Flaked, boneless, well-cooked low-mercury fish such as salmon or cod, mashed."
       },
       "tips": [
-        "Introduce one new food at a time so you can spot any reaction.",
-        "Once a food is tolerated, keep offering it regularly."
+        "Choose fish low in mercury, such as salmon or cod. Remove every bone.",
+        "Always stay with your baby while they eat."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "aap-allergens", "cdc-utensils"],
+      "sources": ["cdc-utensils", "aap-solids", "fda-fish", "cdc-choking"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 10,
-      "title": "Lumpy and soft finger foods",
+      "title": "What's in the diaper",
       "stage": "lumpy",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Move on to lumpier, mashed textures and soft finger foods your baby can pick up. Coughing and gagging are normal while learning.",
-        "Around 9 months, babies can start learning to drink from a cup without a lid."
+        "[PLACEHOLDER - needs expert review] Expect changes once solids begin: firmer, more colorful and stronger-smelling poop. Peas can turn it green, beets can turn it red, and small undigested bits are normal.",
+        "If poop is very loose, watery or full of mucus, slow down on solids. If it continues, call your pediatrician."
       ],
-      "tryFoods": ["Scrambled egg pieces", "Well-cooked pasta pieces", "Soft avocado strips"],
+      "tryFoods": ["Well-cooked pasta pieces"],
       "allergen": {
         "id": "shellfish",
         "label": "Shellfish",
         "howTo": "Well-cooked shrimp, very finely minced or blended into a puree."
       },
       "tips": [
-        "Introduce one new food at a time so you can spot any reaction.",
-        "Once a food is tolerated, keep offering it regularly."
+        "Cook shellfish thoroughly and mince it very finely.",
+        "Stop any new food that seems to cause a rash, vomiting or diarrhea, and call your pediatrician."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "aap-allergens", "cdc-utensils"],
+      "sources": ["aap-solids", "aap-allergens"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 11,
-      "title": "Lumpy and soft finger foods",
+      "title": "Lumpier and messier",
       "stage": "lumpy",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Move on to lumpier, mashed textures and soft finger foods your baby can pick up. Coughing and gagging are normal while learning.",
-        "Around 9 months, babies can start learning to drink from a cup without a lid."
+        "[PLACEHOLDER - needs expert review] Move from smooth to mashed and lumpy textures as your baby's chewing improves. Around 9 months, babies can start learning to drink from a cup without a lid.",
+        "A meal for a baby this age is often around 4 oz of food, about one small jar of baby food, but appetite varies from day to day."
       ],
-      "tryFoods": [
-        "Small pieces of soft bread",
-        "Soft-cooked sweet potato cubes",
-        "Ripe peeled pear pieces"
-      ],
+      "tryFoods": ["Ripe peeled pear pieces"],
       "allergen": {
         "id": "tree-nuts",
         "label": "Tree nuts",
         "howTo": "A smooth tree-nut butter (such as almond or cashew) thinned into a puree. Never whole nuts."
       },
       "tips": [
-        "Introduce one new food at a time so you can spot any reaction.",
-        "Once a food is tolerated, keep offering it regularly."
+        "Use a smooth nut butter, thinned. Whole or chopped nuts are a choking hazard.",
+        "Let your baby touch and squish food. Mess is part of learning."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "aap-allergens", "cdc-utensils"],
+      "sources": ["cdc-textures", "cdc-utensils", "aap-solids", "aap-allergens"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 12,
-      "title": "Lumpy and soft finger foods",
+      "title": "Keep allergens on the menu",
       "stage": "lumpy",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Move on to lumpier, mashed textures and soft finger foods your baby can pick up. Coughing and gagging are normal while learning.",
-        "Around 9 months, babies can start learning to drink from a cup without a lid."
+        "[PLACEHOLDER - needs expert review] If your baby has now tried all nine common allergens, the next step is keeping them in the diet regularly, in portions suited to your baby.",
+        "Check the allergen tracker. If any are still untried, or a reaction was logged, talk to your pediatrician about what to do next."
       ],
-      "tryFoods": ["Small pieces of mild cheese", "Flaked fish", "Soft melon pieces"],
+      "tryFoods": ["Small, thin slices of pasteurized mild cheese", "Soft ripe melon pieces"],
       "allergen": null,
       "tips": [
-        "Let your baby feed themselves with their fingers.",
-        "It can take many tries before a baby accepts a new food. Keep offering."
+        "Typical portions: about 2 teaspoons of a thinned nut or seed butter, or about 1/3 of a well-cooked egg.",
+        "Cut cheese into short, thin strips, never chunks."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils"],
+      "sources": ["aap-allergens", "cdc-utensils", "cdc-choking"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
@@ -300,8 +292,8 @@
       "title": "Finely chopped",
       "stage": "chopped",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer finely chopped or ground foods and plenty of soft finger foods.",
-        "Aim for a routine of about 3 meals and 2 to 3 snacks a day alongside breast milk or formula."
+        "[PLACEHOLDER - needs expert review] Your baby can begin eating finely chopped or ground foods as their skills grow. Keep pieces small and soft enough to mash between your fingers.",
+        "Whole grain kernels such as barley, wheat berries or brown rice should be cooked and finely ground or mashed."
       ],
       "tryFoods": [
         "Finely chopped chicken",
@@ -310,38 +302,38 @@
       ],
       "allergen": null,
       "tips": [
-        "Let your baby feed themselves with their fingers.",
-        "It can take many tries before a baby accepts a new food. Keep offering."
+        "Cut round foods like blueberries and grapes into small pieces.",
+        "Keep watching for reactions whenever you add something new."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["cdc-textures", "cdc-solids", "cdc-choking"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 14,
-      "title": "Finely chopped",
+      "title": "A daily rhythm",
       "stage": "chopped",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer finely chopped or ground foods and plenty of soft finger foods.",
-        "Aim for a routine of about 3 meals and 2 to 3 snacks a day alongside breast milk or formula."
+        "[PLACEHOLDER - needs expert review] Most babies this age eat something every 2 to 3 hours: about 3 meals and 2 to 3 snacks a day, alongside breast milk or formula.",
+        "Regular meal and snack times help. Try not to let your baby graze or sip all day long."
       ],
       "tryFoods": ["Lentils and rice", "Finely chopped beef", "Small pieces of ripe peach"],
       "allergen": null,
       "tips": [
-        "Let your baby feed themselves with their fingers.",
-        "It can take many tries before a baby accepts a new food. Keep offering."
+        "Plan snacks as mini-meals: a fruit or vegetable plus a protein or grain.",
+        "If you're worried about how much your baby eats, talk to your pediatrician."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["cdc-howmuch-food", "aap-solids"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 15,
-      "title": "Finely chopped",
+      "title": "Eating together",
       "stage": "chopped",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer finely chopped or ground foods and plenty of soft finger foods.",
-        "Aim for a routine of about 3 meals and 2 to 3 snacks a day alongside breast milk or formula."
+        "[PLACEHOLDER - needs expert review] Family meals can start from the very first feeding. Babies learn to eat by watching you eat and enjoy food.",
+        "When you can, sit together, keep the TV off and the mood calm, and let your baby join in."
       ],
       "tryFoods": [
         "Mashed beans on soft toast fingers",
@@ -350,256 +342,236 @@
       ],
       "allergen": null,
       "tips": [
-        "Let your baby feed themselves with their fingers.",
-        "It can take many tries before a baby accepts a new food. Keep offering."
+        "Set aside your baby's portion before adding salt, sugar or spicy seasoning.",
+        "Keep mealtimes unhurried; rushing raises the risk of choking."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["aap-solids", "cdc-picky", "cdc-choking"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 16,
-      "title": "Finely chopped",
+      "title": "Iron check-in",
       "stage": "chopped",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer finely chopped or ground foods and plenty of soft finger foods.",
-        "Aim for a routine of about 3 meals and 2 to 3 snacks a day alongside breast milk or formula."
+        "[PLACEHOLDER - needs expert review] Iron supports your baby's brain development and growth. Include an iron-rich food most days: meat, poultry, fish, eggs, beans, lentils, tofu or iron-fortified cereal.",
+        "Babies born early may need extra iron. Your pediatrician will likely check for anemia around 12 months."
       ],
-      "tryFoods": [
-        "Chopped family meal (no added salt)",
-        "Soft tofu cubes",
-        "Small pieces of strawberry"
-      ],
+      "tryFoods": ["Soft tofu cubes", "Small pieces of strawberry", "Finely chopped turkey"],
       "allergen": null,
       "tips": [
-        "Let your baby feed themselves with their fingers.",
-        "It can take many tries before a baby accepts a new food. Keep offering."
+        "Pair plant iron with vitamin C: beans with tomatoes, or cereal with berries.",
+        "Ask your pediatrician if you have questions about iron drops or supplements."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["cdc-iron"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 17,
-      "title": "Finely chopped",
+      "title": "No added salt or sugar",
       "stage": "chopped",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer finely chopped or ground foods and plenty of soft finger foods.",
-        "Aim for a routine of about 3 meals and 2 to 3 snacks a day alongside breast milk or formula."
+        "[PLACEHOLDER - needs expert review] Babies and toddlers have no room in their diet for added sugars. Skip sweetened yogurts, cookies and sweet drinks.",
+        "Go easy on salt too. Choose canned foods labeled low sodium or no salt added, and limit processed foods made for adults."
       ],
       "tryFoods": [
-        "Finely chopped chicken",
-        "Small soft-cooked vegetable pieces",
-        "Quartered blueberries"
+        "Plain yogurt with mashed fruit",
+        "Soft-cooked carrot sticks",
+        "Shredded chicken"
       ],
       "allergen": null,
       "tips": [
-        "Let your baby feed themselves with their fingers.",
-        "It can take many tries before a baby accepts a new food. Keep offering."
+        "Read the Nutrition Facts label for added sugars and sodium.",
+        "No honey before 12 months: it can cause infant botulism, a severe food poisoning."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["cdc-avoid", "aap-solids"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 18,
-      "title": "Finely chopped",
+      "title": "Self-feeding",
       "stage": "chopped",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer finely chopped or ground foods and plenty of soft finger foods.",
-        "Aim for a routine of about 3 meals and 2 to 3 snacks a day alongside breast milk or formula."
+        "[PLACEHOLDER - needs expert review] Between about 10 and 12 months, babies start trying to use a spoon themselves. Give them a chance, even though it's messy.",
+        "Offer soft finger foods at each meal too. By 12 months, most babies can easily feed themselves with their fingers."
       ],
-      "tryFoods": ["Lentils and rice", "Finely chopped beef", "Small pieces of ripe peach"],
+      "tryFoods": [
+        "Scrambled egg pieces",
+        "Soft-cooked sweet potato cubes",
+        "Small pieces of soft bread"
+      ],
       "allergen": null,
       "tips": [
-        "Let your baby feed themselves with their fingers.",
-        "It can take many tries before a baby accepts a new food. Keep offering."
+        "Pinching small, soft pieces builds fine motor skills.",
+        "Let your baby practice with a spoon or fork, even when it's messy."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["cdc-utensils", "cdc-textures"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 19,
-      "title": "Chopped family foods",
+      "title": "Family foods, chopped",
       "stage": "family",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer soft, chopped versions of family meals (without added salt or sugar), cut into pieces no bigger than about 1/2 inch.",
-        "Between about 10 and 12 months, babies start using a spoon themselves. Expect mess."
+        "[PLACEHOLDER - needs expert review] Your baby can now eat many of the foods you eat, made soft and chopped into pieces no bigger than about 1/2 inch.",
+        "Choose family meals built around vegetables, fruits, proteins, whole grains and dairy, and adapt the texture for your baby."
       ],
       "tryFoods": [
-        "Mashed beans on soft toast fingers",
-        "Small pasta shapes",
-        "Diced soft-cooked zucchini"
+        "Chopped family meal (no added salt)",
+        "Flaked, boneless salmon",
+        "Soft-cooked green beans, chopped"
       ],
       "allergen": null,
       "tips": [
-        "Eat together when you can; babies learn by watching.",
-        "No honey before 12 months, and no juice before 12 months."
+        "Serve your baby's portion before adding salt or hot spices.",
+        "Keep food soft enough to mash with a fork."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["aap-choking", "cdc-encourage", "cdc-avoid"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 20,
-      "title": "Chopped family foods",
+      "title": "Choking-safe shapes",
       "stage": "family",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer soft, chopped versions of family meals (without added salt or sugar), cut into pieces no bigger than about 1/2 inch.",
-        "Between about 10 and 12 months, babies start using a spoon themselves. Expect mess."
+        "[PLACEHOLDER - needs expert review] Shape matters as much as texture. Cut round foods like grapes, cherries and cherry tomatoes into small pieces, and cut long foods like hot dogs, sausages and string cheese into short, thin strips.",
+        "Avoid popcorn, nuts, hard candy, chips, and raw hard fruits or vegetables. Your baby should always eat sitting upright and supervised."
       ],
-      "tryFoods": [
-        "Chopped family meal (no added salt)",
-        "Soft tofu cubes",
-        "Small pieces of strawberry"
-      ],
+      "tryFoods": ["Quartered grapes", "Soft-cooked apple slices", "Finely chopped meatballs"],
       "allergen": null,
       "tips": [
-        "Eat together when you can; babies learn by watching.",
-        "No honey before 12 months, and no juice before 12 months."
+        "Ask your pediatrician what to do if your baby chokes.",
+        "No eating in the car, in the stroller or while crawling."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["cdc-choking", "aap-choking"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 21,
-      "title": "Chopped family foods",
+      "title": "Fish for growing brains",
       "stage": "family",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer soft, chopped versions of family meals (without added salt or sugar), cut into pieces no bigger than about 1/2 inch.",
-        "Between about 10 and 12 months, babies start using a spoon themselves. Expect mess."
+        "[PLACEHOLDER - needs expert review] Fish provides nutrients that support brain development, plus iron and zinc. Choose fish from the FDA's \"Best Choices\" list, such as salmon, cod, tilapia or canned light tuna.",
+        "Around age 1, a child-size serving is about 1 oz. Avoid high-mercury fish like shark, swordfish and king mackerel."
       ],
-      "tryFoods": [
-        "Finely chopped chicken",
-        "Small soft-cooked vegetable pieces",
-        "Quartered blueberries"
-      ],
+      "tryFoods": ["Flaked cod or tilapia", "Mashed potatoes with peas", "Soft avocado strips"],
       "allergen": null,
       "tips": [
-        "Eat together when you can; babies learn by watching.",
-        "No honey before 12 months, and no juice before 12 months."
+        "Check carefully for bones, even in fillets.",
+        "Fish also provides protein, vitamin B12, vitamin D and selenium."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["fda-fish", "cdc-avoid"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 22,
-      "title": "Chopped family foods",
+      "title": "Let them lead",
       "stage": "family",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer soft, chopped versions of family meals (without added salt or sugar), cut into pieces no bigger than about 1/2 inch.",
-        "Between about 10 and 12 months, babies start using a spoon themselves. Expect mess."
+        "[PLACEHOLDER - needs expert review] Your baby's appetite can change a lot from meal to meal and day to day. This is normal.",
+        "Keep offering a variety of healthy foods, and let your baby decide whether and how much to eat. Talk to your pediatrician if you're worried about growth."
       ],
-      "tryFoods": ["Lentils and rice", "Finely chopped beef", "Small pieces of ripe peach"],
+      "tryFoods": ["Whole grain pasta with soft vegetables", "Diced soft pear", "Shredded beef"],
       "allergen": null,
       "tips": [
-        "Eat together when you can; babies learn by watching.",
-        "No honey before 12 months, and no juice before 12 months."
+        "Pushing food away or turning their head means \"done.\"",
+        "Avoid using food as a reward or punishment."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["cdc-hungry", "cdc-howmuch-food"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 23,
-      "title": "Chopped family foods",
+      "title": "Safe food handling",
       "stage": "family",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer soft, chopped versions of family meals (without added salt or sugar), cut into pieces no bigger than about 1/2 inch.",
-        "Between about 10 and 12 months, babies start using a spoon themselves. Expect mess."
+        "[PLACEHOLDER - needs expert review] Homemade baby food spoils faster than jarred. Refrigerate leftovers promptly, and check for signs of spoilage before serving.",
+        "Serve only pasteurized milk products and juices. Raw milk and unpasteurized cheeses can carry harmful bacteria."
       ],
       "tryFoods": [
-        "Mashed beans on soft toast fingers",
-        "Small pasta shapes",
-        "Diced soft-cooked zucchini"
+        "Soft pasteurized cheese strips",
+        "Mashed black beans",
+        "Soft-cooked butternut squash cubes"
       ],
       "allergen": null,
       "tips": [
-        "Eat together when you can; babies learn by watching.",
-        "No honey before 12 months, and no juice before 12 months."
+        "Freeze extra purees in small portions to use later.",
+        "Choose cheeses and yogurts labeled pasteurized."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["aap-solids", "cdc-avoid"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 24,
-      "title": "Chopped family foods",
+      "title": "Picky phases",
       "stage": "family",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Offer soft, chopped versions of family meals (without added salt or sugar), cut into pieces no bigger than about 1/2 inch.",
-        "Between about 10 and 12 months, babies start using a spoon themselves. Expect mess."
+        "[PLACEHOLDER - needs expert review] Babies sometimes refuse foods they used to love. Liking only a few foods, or not wanting foods to touch, are normal phases.",
+        "Keep foods your baby likes on the plate alongside something new, and give simple choices so they feel in control."
       ],
       "tryFoods": [
-        "Chopped family meal (no added salt)",
-        "Soft tofu cubes",
-        "Small pieces of strawberry"
+        "Soft mini pancakes (no added sugar)",
+        "Diced mango",
+        "Chopped hard-boiled egg"
       ],
       "allergen": null,
       "tips": [
-        "Eat together when you can; babies learn by watching.",
-        "No honey before 12 months, and no juice before 12 months."
+        "Make it playful: a smiley face on the plate can help.",
+        "Model eating the food yourself."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-textures", "cdc-utensils", "cdc-howmuch-food"],
+      "sources": ["cdc-picky"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 25,
-      "title": "Chopped family foods",
+      "title": "Getting ready for 12 months",
       "stage": "family",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Your baby's first birthday is close. At 12 months (not before), you can start offering plain whole cow's milk or a fortified, unsweetened alternative.",
-        "Keep offering a wide variety of foods and textures, and keep allergens in the diet."
+        "[PLACEHOLDER - needs expert review] At 12 months, and not before, you can start offering plain, pasteurized whole cow's milk or a fortified, unsweetened dairy alternative in a cup.",
+        "Milk is a drink, not a replacement for food. Juice isn't needed. If you offer it after 12 months, keep it to 100% juice, no more than 4 oz a day, in a cup."
       ],
       "tryFoods": [
-        "Finely chopped chicken",
-        "Small soft-cooked vegetable pieces",
-        "Quartered blueberries"
+        "Soft-cooked broccoli, chopped",
+        "Lentil soup with soft vegetables",
+        "Small pieces of ripe kiwi"
       ],
       "allergen": null,
       "tips": [
-        "Eat together when you can; babies learn by watching.",
-        "No honey before 12 months, and no juice before 12 months."
+        "Talk to your pediatrician about moving from formula or bottles.",
+        "No honey until your baby's first birthday."
       ],
-      "sources": [
-        "cdc-solids",
-        "aap-solids",
-        "cdc-textures",
-        "cdc-utensils",
-        "cdc-howmuch-food",
-        "cdc-cowsmilk",
-        "cdc-avoid"
-      ],
+      "sources": ["cdc-cowsmilk", "aap-solids", "cdc-avoid"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
       "week": 26,
-      "title": "Chopped family foods",
+      "title": "First birthday",
       "stage": "family",
       "focus": [
-        "[PLACEHOLDER - needs expert review] Your baby's first birthday is close. At 12 months (not before), you can start offering plain whole cow's milk or a fortified, unsweetened alternative.",
-        "Keep offering a wide variety of foods and textures, and keep allergens in the diet."
+        "[PLACEHOLDER - needs expert review] Around 12 months, growth slows down and many children eat less than before. Some days they'll hardly eat; over a week, they usually get what they need.",
+        "Your baby will likely have a checkup around now, including an anemia test. Bring your questions about food, milk and the next stage."
       ],
-      "tryFoods": ["Lentils and rice", "Finely chopped beef", "Small pieces of ripe peach"],
+      "tryFoods": [
+        "Chopped family meal (no added salt)",
+        "Soft-cooked pasta with tomato sauce (no added salt)",
+        "Small pieces of ripe peach"
+      ],
       "allergen": null,
       "tips": [
-        "Eat together when you can; babies learn by watching.",
-        "No honey before 12 months, and no juice before 12 months."
+        "Keep offering all the allergens your baby tolerates.",
+        "The monthly guides on the Today tab keep going into the toddler years."
       ],
-      "sources": [
-        "cdc-solids",
-        "aap-solids",
-        "cdc-textures",
-        "cdc-utensils",
-        "cdc-howmuch-food",
-        "cdc-cowsmilk",
-        "cdc-avoid"
-      ],
+      "sources": ["cdc-howmuch-food", "cdc-iron", "aap-allergens"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     }
@@ -640,13 +612,14 @@
         "id": "infant",
         "title": "6 to 12 months: avoid or change",
         "items": [
-          "Whole or chopped nuts and seeds; chunks or spoonfuls of nut butter (thin it instead).",
-          "Whole grapes, cherries, berries, cherry tomatoes and melon balls (cut into small pieces).",
-          "Raw hard vegetables or fruit like carrots and apples (cook until soft).",
+          "Whole or chopped nuts and seeds; chunks or spoonfuls of nut or seed butter (thin it instead).",
+          "Uncut grapes, cherries, berries, cherry tomatoes and melon balls (cut into small pieces).",
+          "Raw hard vegetables or fruit like carrots and apples (cook until soft); whole pieces of canned fruit.",
           "Hot dogs, sausages and meat sticks; tough or large chunks of meat; bones in meat or fish.",
-          "Chunks of cheese, especially string cheese (cut into short, thin strips).",
-          "Whole corn kernels, whole beans, raisins and other dried fruit.",
-          "Popcorn, chips, pretzels, crackers or bread with seeds or whole grains, granola bars.",
+          "Large chunks of cheese, especially string cheese (cut into short, thin strips).",
+          "Whole corn kernels, whole beans, and raisins or other dried fruit.",
+          "Popcorn, chips, pretzels, cookies and granola bars; crackers or bread with seeds, nut pieces or whole grain kernels.",
+          "Whole kernels of cooked barley, wheat or other grains (grind or mash them).",
           "Hard, round or sticky candy, gummies, marshmallows and gum."
         ],
         "sources": ["cdc-choking", "aap-solids", "cdc-solids"]
@@ -837,16 +810,34 @@
       "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html"
     },
     {
+      "id": "cdc-encourage",
+      "publisher": "CDC",
+      "title": "Foods and Drinks to Encourage",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-encourage.html"
+    },
+    {
       "id": "cdc-howmuch-food",
       "publisher": "CDC",
       "title": "How Much and How Often To Feed",
       "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/how-much-and-how-often-to-feed.html"
     },
     {
+      "id": "cdc-hungry",
+      "publisher": "CDC",
+      "title": "Signs Your Child Is Hungry or Full",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/mealtime/signs-your-child-is-hungry-or-full.html"
+    },
+    {
       "id": "cdc-iron",
       "publisher": "CDC",
       "title": "Iron",
       "url": "https://www.cdc.gov/infant-toddler-nutrition/vitamins-minerals/iron.html"
+    },
+    {
+      "id": "cdc-picky",
+      "publisher": "CDC",
+      "title": "Picky Eaters and What to Do",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/picky-eaters.html"
     },
     {
       "id": "cdc-solids",
@@ -865,6 +856,12 @@
       "publisher": "CDC",
       "title": "Fingers, Spoons, Forks, and Cups",
       "url": "https://www.cdc.gov/infant-toddler-nutrition/mealtime/fingers-spoons-forks-and-cups.html"
+    },
+    {
+      "id": "fda-fish",
+      "publisher": "FDA",
+      "title": "Advice about Eating Fish",
+      "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish"
     }
   ]
 }

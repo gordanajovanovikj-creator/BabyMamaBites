@@ -12,6 +12,7 @@ import {
   allergenProgress,
   foodsTriedCount,
   makeEntry,
+  ONE_AT_A_TIME_WEEKS,
   planWeekFor,
   sortEntries,
   type FoodLogEntry,
@@ -150,6 +151,18 @@ describe('solids plan content', () => {
   it('has a quick-pick food for every major allergen', () => {
     const covered = new Set(quickFoods.map((f) => f.allergen).filter(Boolean));
     expect(covered).toEqual(new Set(allergens));
+  });
+
+  it('gives every week its own intro', () => {
+    const intros = planWeeks.map((w) => w.focus.join(' '));
+    expect(new Set(intros).size).toBe(planWeeks.length);
+    expect(new Set(planWeeks.map((w) => w.title)).size).toBe(planWeeks.length);
+  });
+
+  it('paces early weeks at no more than two new foods (3 to 5 days apart)', () => {
+    for (const w of planWeeks.filter((x) => x.week <= ONE_AT_A_TIME_WEEKS)) {
+      expect(w.tryFoods.length + (w.allergen ? 1 : 0)).toBeLessThanOrEqual(2);
+    }
   });
 
   it('links every source id to a real page', () => {
