@@ -166,7 +166,7 @@
         "Stir and eat cold, straight from the jar. Add maple syrup if you like."
       ],
       "tips": [
-        "Make 3 or 4 jars at once; they keep in the fridge for up to 3 days.",
+        "Eat it within 1 day of making it.",
         "Swap the milk and yogurt for fortified soy versions to make it dairy-free."
       ],
       "reviewStatus": "placeholder",
@@ -308,7 +308,7 @@
     {
       "id": "egg-muffin-cups",
       "title": "Veggie egg muffin cups",
-      "summary": "[PLACEHOLDER - needs expert review] Make a dozen on Sunday and reheat all week.",
+      "summary": "[PLACEHOLDER - needs expert review] Bake a dozen, freeze them, and reheat one whenever you need it.",
       "icon": "sun.max.fill",
       "emoji": "🧁",
       "tone": "muted",
@@ -340,7 +340,7 @@
         "Whisk the eggs, milk and pepper together.",
         "Divide the vegetables and cheese between the cups, then pour in the egg mixture.",
         "Bake for 20 to 25 minutes, until the eggs are firm and fully set in the middle, with no runny egg.",
-        "Cool, then store in the fridge for up to 4 days or freeze."
+        "Cool, then refrigerate for up to 1 day, or freeze for up to 3 months."
       ],
       "tips": [
         "Reheat in the microwave for about 30 seconds until hot all the way through.",
@@ -439,7 +439,7 @@
         "Cook the pepper in the oil until soft.",
         "Add the whisked eggs and scramble until fully cooked. Stir in the beans.",
         "Divide the filling, cheese and salsa between the tortillas and roll up tightly.",
-        "Cool, wrap each one in foil or plastic wrap and freeze.",
+        "Cool, wrap each one in foil or plastic wrap and freeze for up to 3 months.",
         "To reheat, unwrap, wrap in a paper towel and microwave for 2 to 3 minutes until hot in the center."
       ],
       "tips": [],
@@ -480,7 +480,7 @@
         "Mix the oats, baking powder and cinnamon.",
         "Whisk the milk, eggs and banana, then stir into the oats with the blueberries.",
         "Pour into the pan and bake for 35 minutes, until set and golden.",
-        "Cool and cut into 9 squares. Keeps in the fridge for 4 days or freezes well."
+        "Cool and cut into 9 squares. Refrigerate for up to 1 day, or freeze for up to 3 months."
       ],
       "tips": ["Ripe bananas sweeten it, so there's no need for added sugar."],
       "reviewStatus": "placeholder",
@@ -520,7 +520,7 @@
     {
       "id": "chicken-quinoa-jars",
       "title": "Chicken and quinoa salad jars",
-      "summary": "[PLACEHOLDER - needs expert review] Four lunches made at once, ready to grab from the fridge.",
+      "summary": "[PLACEHOLDER - needs expert review] Grab-and-go lunch jars for the whole household.",
       "icon": "takeoutbag.and.cup.and.straw.fill",
       "emoji": "🥗",
       "tone": "accent",
@@ -528,7 +528,7 @@
       "totalMinutes": 30,
       "servings": 4,
       "categories": ["prep-ahead-lunch", "high-protein", "lunch", "nourished"],
-      "tags": ["batch-cook"],
+      "tags": [],
       "energy": "medium",
       "allergens": [],
       "diets": ["halal", "gluten-free"],
@@ -545,7 +545,7 @@
         "Cook the quinoa according to the package and let it cool.",
         "Whisk the olive oil, lemon juice and pepper in each jar's bottom.",
         "Layer the chickpeas, vegetables, quinoa and chicken on top.",
-        "Seal and refrigerate for up to 4 days. Shake into a bowl to eat."
+        "Seal and refrigerate, and eat within 1 day. Shake into a bowl to eat."
       ],
       "tips": ["Halal and kosher depend on the chicken you buy; check the label."],
       "reviewStatus": "placeholder",
@@ -579,7 +579,7 @@
       "steps": [
         "Mix the tuna, beans, onion and tomatoes in a bowl.",
         "Dress with olive oil, lemon juice and pepper.",
-        "Stir through the parsley. Keeps in the fridge for 2 days."
+        "Stir through the parsley. Refrigerate leftovers and eat within 1 day."
       ],
       "tips": [
         "Canned light tuna is on the FDA's \"Best Choices\" list for lower mercury. While breastfeeding, the FDA advises 2 to 3 servings (4 oz each) a week from that list.",
@@ -652,7 +652,7 @@
         "Add the garlic and cumin and cook for 1 minute.",
         "Add the lentils, tomatoes and broth. Simmer for 20 to 25 minutes until the lentils are soft.",
         "Blend partly or fully if you like it smooth.",
-        "Cool and freeze in portions for up to 3 months."
+        "Cool, then refrigerate for up to 1 day, or freeze in portions for up to 3 months."
       ],
       "tips": [
         "Use low-sodium or no-salt-added broth and tomatoes, and blend a plain portion if you're sharing with your baby."
@@ -689,7 +689,7 @@
         "Brown the turkey in the oil, breaking it up, until no pink remains and it reaches 165°F.",
         "Add the onion and pepper and cook for 5 minutes.",
         "Stir in the spices, beans and tomatoes. Simmer for 25 to 30 minutes.",
-        "Serve with rice, or freeze portions for up to 3 months."
+        "Serve with rice. Refrigerate leftovers for up to 1 day, or freeze portions for up to 3 months."
       ],
       "tips": [
         "Halal depends on the turkey you buy; check the label.",
@@ -837,7 +837,7 @@
       "steps": [
         "Soften the onion in the oil for 5 minutes, then add the garlic and curry powder.",
         "Add the chickpeas, coconut milk and tomatoes. Simmer for 15 minutes.",
-        "Stir in the spinach until wilted. Serve with rice."
+        "Stir in the spinach until wilted. Serve with rice. Refrigerate leftovers for up to 1 day, or freeze portions for up to 3 months."
       ],
       "tips": [
         "Sharing with a baby or toddler? Mash the chickpeas; whole beans are a choking hazard."
@@ -876,7 +876,7 @@
       "steps": [
         "Put the chicken in the slow cooker and sprinkle with the spices.",
         "Pour in the broth, cover and cook on low for 4 hours, until the chicken reaches 165°F.",
-        "Shred with two forks. Use in wraps, rice bowls or salads, or freeze portions."
+        "Shred with two forks. Use in wraps, rice bowls or salads. Refrigerate for up to 1 day, or freeze portions for up to 3 months."
       ],
       "tips": [
         "Halal depends on the chicken you buy; check the label.",
@@ -916,7 +916,7 @@
       "steps": [
         "Mix everything in a bowl until it holds together (add a splash of water if dry).",
         "Roll into 16 balls.",
-        "Refrigerate for up to a week, or freeze."
+        "Refrigerate for up to 1 day, or freeze for up to 3 months."
       ],
       "tips": [
         "Not for babies or young children: whole bites and chunks of nut butter are choking hazards."

@@ -16,6 +16,7 @@ const UK_TERMS = [
   /\bcolour/i,
   /\bflavour/i,
   /\bfavourite/i,
+  /\blabell(ed|ing)\b/i,
   /\byoghurt/i,
   /\bfibre\b/i,
   /\bpaediatric/i,
