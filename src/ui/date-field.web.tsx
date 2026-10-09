@@ -10,6 +10,8 @@ export type DateFieldProps = {
   onChange(date: IsoDate): void;
   minimumDate?: IsoDate;
   maximumDate?: IsoDate;
+  /** Ignored in the browser preview, which always uses the browser's date input. */
+  display?: 'calendar' | 'wheel';
 };
 
 /** Browser preview only: a native HTML date input. */

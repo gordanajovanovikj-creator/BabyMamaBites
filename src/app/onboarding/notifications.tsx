@@ -2,6 +2,7 @@ import { router } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 
+import { QuestionBubble } from '@/features/onboarding/question-bubble';
 import { useReminders } from '@/features/reminders/reminders-context';
 import { AppText, Button, Card, Notice, Screen, SymbolIcon } from '@/ui';
 
@@ -29,13 +30,11 @@ export default function NotificationsScreen() {
   };
 
   return (
-    <Screen className="flex-grow justify-center pt-12">
-      <View className="gap-3">
-        <AppText variant="display">Stay on track, gently</AppText>
-        <AppText variant="body" color="muted">
-          Turn on reminders and we&apos;ll give you a quiet tap when it helps. No spam, ever.
-        </AppText>
-      </View>
+    <Screen className="flex-grow pt-8">
+      <QuestionBubble
+        title="Stay on track, gently"
+        subtitle="Turn on reminders and we'll give you a quiet tap when it helps. No spam, ever."
+      />
       <Card tone="muted" className="gap-4">
         {perks.map((p) => (
           <View key={p.icon} className="flex-row items-center gap-3">
@@ -46,7 +45,10 @@ export default function NotificationsScreen() {
           </View>
         ))}
       </Card>
-      <AppText variant="caption">You can change these any time in Settings.</AppText>
+      <AppText variant="caption" className="text-center">
+        You can change these any time in Settings.
+      </AppText>
+      <View className="flex-1" />
       {blocked ? (
         <Notice
           tone="caution"

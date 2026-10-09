@@ -12,6 +12,8 @@ export type DateFieldProps = {
   onChange(date: IsoDate): void;
   minimumDate?: IsoDate;
   maximumDate?: IsoDate;
+  /** 'calendar' (default) shows a month grid; 'wheel' shows spinning month/day/year wheels. */
+  display?: 'calendar' | 'wheel';
 };
 
 function formatLong(date: IsoDate): string {
@@ -22,8 +24,15 @@ function formatLong(date: IsoDate): string {
   });
 }
 
-/** Calendar date picker: an inline calendar on iOS, a tap-to-open dialog on Android. */
-export function DateField({ label, value, onChange, minimumDate, maximumDate }: DateFieldProps) {
+/** Date picker: an inline calendar or wheel on iOS, a tap-to-open dialog on Android. */
+export function DateField({
+  label,
+  value,
+  onChange,
+  minimumDate,
+  maximumDate,
+  display = 'calendar',
+}: DateFieldProps) {
   const palette = usePalette();
   const min = minimumDate ? fromIsoDate(minimumDate) : undefined;
   const max = maximumDate ? fromIsoDate(maximumDate) : undefined;
@@ -47,6 +56,24 @@ export function DateField({ label, value, onChange, minimumDate, maximumDate }: 
         <AppText variant="caption">{label}</AppText>
         <AppText variant="label">{formatLong(value)}</AppText>
       </Pressable>
+    );
+  }
+
+  if (display === 'wheel') {
+    return (
+      <View className="items-center">
+        <DateTimePicker
+          accessibilityLabel={label}
+          value={fromIsoDate(value)}
+          mode="date"
+          display="spinner"
+          minimumDate={min}
+          maximumDate={max}
+          textColor={palette.ink}
+          themeVariant="light"
+          onValueChange={(_event, date) => onChange(toIsoDate(date))}
+        />
+      </View>
     );
   }
 

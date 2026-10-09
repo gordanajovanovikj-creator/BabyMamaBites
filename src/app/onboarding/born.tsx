@@ -7,6 +7,7 @@ import {
   validateBirthDate,
   validateDueDate,
 } from '@/domain/profile';
+import { formatAgeHeadline } from '@/domain/stage';
 import { useDraft } from '@/features/onboarding/draft-context';
 import { StepScreen } from '@/features/onboarding/step-screen';
 import { DateField, Notice, SwitchRow } from '@/ui';
@@ -27,12 +28,18 @@ export default function BornStep() {
 
   const birthError = validateBirthDate(birthDate, now);
   const dueError = draft.bornEarly ? validateDueDate(dueDate, birthDate) : null;
+  const who = name || 'Your baby';
+  const footnote =
+    birthError || birthDate === now
+      ? undefined
+      : `${who} is ${formatAgeHeadline(birthDate, now)} old`;
 
   return (
     <StepScreen
       step={2}
       title={name ? `When was ${name} born?` : 'When was your baby born?'}
       subtitle="We use the birth date to show what fits your baby's age right now."
+      footnote={footnote}
       canContinue={!birthError && !dueError}
       onContinue={() => {
         update({ birthDate, dueDate: draft.bornEarly ? dueDate : null });
@@ -44,12 +51,13 @@ export default function BornStep() {
         value={birthDate}
         minimumDate={oldestBirthDate(now)}
         maximumDate={now}
+        display="wheel"
         onChange={(d) => update({ birthDate: d })}
       />
       {birthError ? <Notice tone="caution" body={birthErrors[birthError]} /> : null}
 
       <SwitchRow
-        label="Baby arrived early"
+        label="Baby was born early (before 37 weeks)"
         detail="Add the original due date and we'll go by your baby's adjusted age."
         value={draft.bornEarly}
         onChange={(on) => update({ bornEarly: on, dueDate: on ? dueDate : null })}
@@ -60,6 +68,7 @@ export default function BornStep() {
           value={dueDate}
           minimumDate={bounds.min}
           maximumDate={bounds.max}
+          display="wheel"
           onChange={(d) => update({ dueDate: d })}
         />
       ) : null}

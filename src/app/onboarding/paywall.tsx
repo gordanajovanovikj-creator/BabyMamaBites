@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Alert, Platform, View } from 'react-native';
 
 import { formatUsd, monthlyEquivalentCents, yearlyPlan } from '@/domain/subscription';
+import { QuestionBubble } from '@/features/onboarding/question-bubble';
 import { useFinishOnboarding } from '@/features/onboarding/use-finish';
 import { restorePurchases, startYearlyTrial } from '@/features/subscription/purchases';
 import { AppText, Button, Card, Notice, Screen, SymbolIcon } from '@/ui';
@@ -53,13 +54,11 @@ export default function PaywallScreen() {
   const disabled = busy || saving;
 
   return (
-    <Screen className="flex-grow justify-center pt-12">
-      <View className="gap-3">
-        <AppText variant="display">Try MamaBabyBites free for {yearlyPlan.trialDays} days</AppText>
-        <AppText variant="body" color="muted">
-          Everything you need to feed your baby and yourself well, in one calm place.
-        </AppText>
-      </View>
+    <Screen className="flex-grow pt-8">
+      <QuestionBubble
+        title={`Try MamaBabyBites free for ${yearlyPlan.trialDays} days`}
+        subtitle="Everything you need to feed your baby and yourself well, in one calm place."
+      />
       <Card tone="muted" className="gap-4">
         {features.map((f) => (
           <View key={f.icon} className="flex-row items-center gap-3">

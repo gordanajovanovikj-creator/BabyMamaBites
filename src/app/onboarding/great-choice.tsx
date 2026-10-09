@@ -1,9 +1,9 @@
 import { router } from 'expo-router';
 import { View } from 'react-native';
-
 import { useDraft } from '@/features/onboarding/draft-context';
 import { OnboardingPhoto, onboardingPhotos } from '@/features/onboarding/onboarding-photo';
-import { AppText, Button, Screen } from '@/ui';
+import { QuestionBubble } from '@/features/onboarding/question-bubble';
+import { Button, Screen } from '@/ui';
 
 const content = {
   'baby-led': {
@@ -31,14 +31,13 @@ export default function GreatChoiceScreen() {
   if (!c) return null;
 
   return (
-    <Screen className="flex-grow justify-center pt-4">
+    <Screen className="flex-grow pt-4">
       <OnboardingPhoto source={c.photo} label={c.label} height={380} focus="top" />
-      <View className="gap-3">
-        <AppText variant="display">{c.title}</AppText>
-        <AppText variant="body" color="muted">
-          We&apos;ll shape recipes and tips around the way your baby likes to eat.
-        </AppText>
-      </View>
+      <QuestionBubble
+        title={c.title}
+        subtitle="We'll shape recipes and tips around the way your baby likes to eat."
+      />
+      <View className="flex-1" />
       <Button label="Continue" onPress={() => router.push('/onboarding/notifications')} />
     </Screen>
   );
