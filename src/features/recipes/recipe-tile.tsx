@@ -4,7 +4,9 @@ import { Pressable, View } from 'react-native';
 import type { Recipe } from '@/content/recipes';
 import { recipeKicker, recipeMeta } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
-import { AppText, cn, HeartButton, SymbolIcon, toneBackground } from '@/ui';
+import { AppText, HeartButton } from '@/ui';
+
+import { RecipeImage } from './recipe-image';
 
 export const RECIPE_TILE_WIDTH = 240;
 
@@ -21,14 +23,7 @@ export function RecipeTile({ recipe }: { recipe: Recipe }) {
         onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
         className="gap-2 active:opacity-80"
       >
-        <View
-          className={cn(
-            'h-44 items-center justify-center rounded-3xl',
-            toneBackground(recipe.tone),
-          )}
-        >
-          <SymbolIcon icon={recipe.icon} emoji={recipe.emoji} size={64} />
-        </View>
+        <RecipeImage recipe={recipe} className="h-44 rounded-3xl" iconSize={64} />
         <View className="gap-0.5 pr-2">
           <AppText
             variant="label"

@@ -3,7 +3,9 @@ import { Pressable, View } from 'react-native';
 
 import type { Recipe } from '@/content/recipes';
 import { recipeKicker, recipeMeta } from '@/domain/recipes';
-import { AppText, cn, SymbolIcon, toneBackground } from '@/ui';
+import { AppText } from '@/ui';
+
+import { RecipeImage } from './recipe-image';
 
 /** Sweat-style list row: thumbnail, meal label, title, time and servings, chevron. */
 export function RecipeRow({ recipe, fitsTime }: { recipe: Recipe; fitsTime: boolean }) {
@@ -14,14 +16,7 @@ export function RecipeRow({ recipe, fitsTime }: { recipe: Recipe; fitsTime: bool
       onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
       className="flex-row items-center gap-4 border-b border-border px-5 py-4 active:bg-surface-muted"
     >
-      <View
-        className={cn(
-          'h-24 w-28 items-center justify-center rounded-2xl',
-          toneBackground(recipe.tone),
-        )}
-      >
-        <SymbolIcon icon={recipe.icon} emoji={recipe.emoji} size={36} />
-      </View>
+      <RecipeImage recipe={recipe} className="h-24 w-28 rounded-2xl" iconSize={36} />
       <View className="flex-1 gap-0.5">
         <AppText
           variant="label"

@@ -13,6 +13,7 @@ import { useFavorites } from '@/features/favorites/favorites-context';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
 import { PictureHero } from '@/features/recipes/picture-hero';
+import { recipePhoto } from '@/features/recipes/recipe-photos';
 import { AppText, Button, cn, HeartButton, Notice, Screen } from '@/ui';
 
 function SectionTitle({ children }: { children: string }) {
@@ -56,7 +57,8 @@ export default function RecipeScreen() {
         tone={recipe.tone}
         icon={recipe.icon}
         emoji={recipe.emoji}
-        height={260}
+        height={recipePhoto(recipe.id) ? 360 : 260}
+        photo={recipePhoto(recipe.id)}
         right={
           <HeartButton
             saved={isFavorite(recipe.id)}

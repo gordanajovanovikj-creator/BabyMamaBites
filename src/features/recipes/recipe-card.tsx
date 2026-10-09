@@ -7,7 +7,9 @@ import { allergenLabels } from '@/domain/profile-labels';
 import { energyLabels } from '@/domain/recipe-labels';
 import { formatMinutes } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
-import { AppText, Card, cn, HeartButton, SymbolIcon, toneBackground } from '@/ui';
+import { AppText, Card, HeartButton } from '@/ui';
+
+import { RecipeImage } from './recipe-image';
 
 export type RecipeCardProps = {
   recipe: Recipe;
@@ -27,14 +29,7 @@ export function RecipeCard({ recipe, fitsTime }: RecipeCardProps) {
         accessibilityLabel={`${recipe.title}. ${summary} ${meta}.${contains ? ` Contains ${contains}.` : ''}${fitsTime ? ' Fits your time.' : ''}`}
         className="flex-row gap-4 p-4"
       >
-        <View
-          className={cn(
-            'h-20 w-20 items-center justify-center rounded-2xl',
-            toneBackground(recipe.tone),
-          )}
-        >
-          <SymbolIcon icon={recipe.icon} emoji={recipe.emoji} size={34} />
-        </View>
+        <RecipeImage recipe={recipe} className="h-20 w-20 rounded-2xl" iconSize={34} />
         <View className="flex-1 gap-1 pr-8">
           <AppText variant="label" size="lg" className="font-bold leading-6">
             {recipe.title}
