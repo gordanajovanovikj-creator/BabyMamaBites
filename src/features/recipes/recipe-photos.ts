@@ -15,6 +15,7 @@ const photos: Record<string, ImageSource> = {
   'baby-sweet-potato-puree': require('@/assets/images/recipes/baby-sweet-potato-puree.jpg'),
   'baby-lentil-carrot-mash': require('@/assets/images/recipes/baby-lentil-carrot-mash.jpg'),
   'baby-egg-mash': require('@/assets/images/recipes/baby-egg-mash.jpg'),
+  'baby-soft-veg-fingers': require('@/assets/images/recipes/baby-soft-veg-fingers.jpg'),
   'overnight-oats': require('@/assets/images/recipes/overnight-oats.jpg'),
   'pb-banana-shake': require('@/assets/images/recipes/pb-banana-shake.jpg'),
   'warm-spiced-milk': require('@/assets/images/recipes/warm-spiced-milk.jpg'),
