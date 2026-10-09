@@ -81,3 +81,4 @@ Bundled in `assets/images/insights/` and registered in
 | first-foods | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | purees-vs-finger-foods | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | allergens | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
+| toddler-picky-phases | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
