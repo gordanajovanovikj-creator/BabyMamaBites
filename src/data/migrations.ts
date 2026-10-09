@@ -51,4 +51,8 @@ export const migrations: string[] = [
    INSERT OR IGNORE INTO meal_slot (date, slot, recipe_id, updated_at)
      SELECT date, 'lunch', recipe_id, updated_at FROM meal_plan;
    DROP TABLE IF EXISTS meal_plan;`,
+  `CREATE TABLE IF NOT EXISTS app_setting (
+     key TEXT PRIMARY KEY NOT NULL,
+     value TEXT NOT NULL
+   );`,
 ];

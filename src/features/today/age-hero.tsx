@@ -46,10 +46,10 @@ export function AgeHero({ profile }: { profile: Profile }) {
           {formatToday()}
         </AppText>
         <IconButton
-          symbol="info.circle"
-          fallback="i"
-          accessibilityLabel="About and safety"
-          onPress={() => router.push('/about')}
+          symbol="gearshape"
+          fallback="⚙︎"
+          accessibilityLabel="Settings and reminders"
+          onPress={() => router.push('/settings')}
         />
       </View>
 

@@ -13,9 +13,16 @@ import { profileSchema } from '@/domain/profile';
 import type { FavoritesStore } from './favorites-store';
 import type { FoodLogStore } from './food-log-store';
 import type { PlannerStore } from './planner-store';
+import type { SettingsStore } from './settings-store';
+import { parseReminders } from './sqlite-settings-store';
 import type { ProfileStore } from './profile-store';
 import { ProfileStoreContext } from './profile-store-context';
-import { FavoritesStoreContext, FoodLogStoreContext, PlannerStoreContext } from './stores-context';
+import {
+  FavoritesStoreContext,
+  FoodLogStoreContext,
+  PlannerStoreContext,
+  SettingsStoreContext,
+} from './stores-context';
 
 const KEY = 'mamababybites.profile';
 
@@ -148,13 +155,30 @@ const localPlanner: PlannerStore = {
   },
 };
 
+const REMINDERS_KEY = 'mamababybites.reminders';
+
+const localSettings: SettingsStore = {
+  async loadReminders() {
+    try {
+      return parseReminders(globalThis.localStorage?.getItem(REMINDERS_KEY));
+    } catch {
+      return parseReminders(null);
+    }
+  },
+  async saveReminders(settings) {
+    globalThis.localStorage?.setItem(REMINDERS_KEY, JSON.stringify(settings));
+  },
+};
+
 export function StorageProvider({ children }: { children: ReactNode }) {
   return (
     <ProfileStoreContext.Provider value={localStore}>
       <FavoritesStoreContext.Provider value={localFavorites}>
         <FoodLogStoreContext.Provider value={localFoodLog}>
           <PlannerStoreContext.Provider value={localPlanner}>
-            {children}
+            <SettingsStoreContext.Provider value={localSettings}>
+              {children}
+            </SettingsStoreContext.Provider>
           </PlannerStoreContext.Provider>
         </FoodLogStoreContext.Provider>
       </FavoritesStoreContext.Provider>
