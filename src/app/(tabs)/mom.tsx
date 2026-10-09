@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { allRecipes, recipeCategories, recipes } from '@/content/recipes';
+import { recipeCategories, recipes } from '@/content/recipes';
 import { findRecipes, fitsCookingTime, recipeSections } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { useHousehold } from '@/features/profile/use-household';
@@ -24,7 +24,7 @@ export default function MomScreen() {
   const sections = recipeSections(recipeCategories, recipes, household);
   const hidden = findRecipes(recipes, household).hiddenForSafety;
   const favorites = favoriteIds
-    .map((id) => allRecipes.find((r) => r.id === id))
+    .map((id) => recipes.find((r) => r.id === id))
     .filter((r) => r !== undefined);
 
   return (

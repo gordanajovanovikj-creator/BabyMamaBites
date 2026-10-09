@@ -8,6 +8,7 @@ import { useColorScheme } from 'react-native';
 
 import { StorageProvider } from '@/data/storage-provider';
 import { FavoritesProvider } from '@/features/favorites/favorites-context';
+import { PlannerProvider } from '@/features/planner/planner-context';
 import { ProfileProvider, useProfile } from '@/features/profile/profile-context';
 import { FoodLogProvider } from '@/features/solids/food-log-context';
 import { colors } from '@/theme/colors';
@@ -47,6 +48,14 @@ function RootStack() {
           options={{ presentation: 'modal', headerShown: true, title: 'New food' }}
         />
         <Stack.Screen name="solids/article/[id]" />
+        <Stack.Screen
+          name="planner/pick"
+          options={{ presentation: 'modal', headerShown: true, title: 'Choose a meal' }}
+        />
+        <Stack.Screen
+          name="planner/freezer-add"
+          options={{ presentation: 'modal', headerShown: true, title: 'Add to freezer' }}
+        />
         <Stack.Screen name="solids/history" options={{ headerShown: true, title: 'Food log' }} />
         <Stack.Screen
           name="solids/choking"
@@ -82,7 +91,9 @@ export default function RootLayout() {
         <ProfileProvider>
           <FavoritesProvider>
             <FoodLogProvider>
-              <RootStack />
+              <PlannerProvider>
+                <RootStack />
+              </PlannerProvider>
             </FoodLogProvider>
           </FavoritesProvider>
         </ProfileProvider>

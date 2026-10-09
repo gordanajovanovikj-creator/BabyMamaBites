@@ -8,6 +8,8 @@ import { getPlanWeek, planWeeks, readiness, solidsSourcesFor } from '@/content/s
 import { fromIsoDate, today } from '@/domain/dates';
 import { allergenProgress, foodsTriedCount, planWeekFor } from '@/domain/food-log';
 import { babyAge, solidsStartDate, solidsWeek } from '@/domain/stage';
+import { FreezerCard } from '@/features/planner/freezer-card';
+import { WeekMenu } from '@/features/planner/week-menu';
 import { useProfile } from '@/features/profile/profile-context';
 import { SourceLinks } from '@/features/shared/source-links';
 import { AllergenTracker } from '@/features/solids/allergen-tracker';
@@ -137,6 +139,39 @@ export default function BabyScreen() {
                   Your log is saved on this phone only.
                 </AppText>
               ) : null}
+            </Card>
+
+            <View className="gap-1 pt-2">
+              <AppText variant="heading" size="2xl">
+                Planner
+              </AppText>
+              <AppText variant="caption">
+                Plan {name === 'Your baby' ? "your baby's" : `${name}'s`} meals and keep track of
+                the freezer.
+              </AppText>
+            </View>
+
+            <WeekMenu />
+
+            <FreezerCard />
+
+            <Card
+              tone="accent"
+              className="gap-1"
+              onPress={() =>
+                router.push({
+                  pathname: '/solids/article/[id]',
+                  params: { id: 'homemade-baby-food' },
+                })
+              }
+              accessibilityLabel="Make-ahead baby food: a few hours of prep can stock your freezer for weeks. Opens the guide."
+            >
+              <AppText variant="heading" color="on-accent">
+                Make-ahead baby food
+              </AppText>
+              <AppText color="on-accent">
+                A few hours of prep can stock your freezer for weeks. See how ›
+              </AppText>
             </Card>
 
             <Card

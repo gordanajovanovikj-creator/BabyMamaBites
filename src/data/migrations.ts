@@ -29,4 +29,16 @@ export const migrations: string[] = [
      created_at TEXT NOT NULL
    );
    CREATE INDEX IF NOT EXISTS food_log_date ON food_log (date DESC);`,
+  `CREATE TABLE IF NOT EXISTS meal_plan (
+     date TEXT PRIMARY KEY NOT NULL,
+     recipe_id TEXT NOT NULL,
+     updated_at TEXT NOT NULL
+   );
+   CREATE TABLE IF NOT EXISTS freezer_item (
+     id TEXT PRIMARY KEY NOT NULL,
+     name TEXT NOT NULL,
+     cubes INTEGER NOT NULL,
+     frozen_on TEXT NOT NULL,
+     created_at TEXT NOT NULL
+   );`,
 ];

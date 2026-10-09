@@ -1,13 +1,15 @@
 import type { ReactNode } from 'react';
 
 import { foodLogEntrySchema, type FoodLogEntry } from '@/domain/food-log';
+import { freezerItemSchema, type FreezerItem, type MealPlan } from '@/domain/planner';
 import { profileSchema } from '@/domain/profile';
 
 import type { FavoritesStore } from './favorites-store';
 import type { FoodLogStore } from './food-log-store';
+import type { PlannerStore } from './planner-store';
 import type { ProfileStore } from './profile-store';
 import { ProfileStoreContext } from './profile-store-context';
-import { FavoritesStoreContext, FoodLogStoreContext } from './stores-context';
+import { FavoritesStoreContext, FoodLogStoreContext, PlannerStoreContext } from './stores-context';
 
 const KEY = 'mamababybites.profile';
 
@@ -89,11 +91,67 @@ const localFoodLog: FoodLogStore = {
   },
 };
 
+const PLAN_KEY = 'mamababybites.mealPlan';
+const FREEZER_KEY = 'mamababybites.freezer';
+
+function readJson(key: string): unknown {
+  try {
+    const raw = globalThis.localStorage?.getItem(key);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+function readPlan(): MealPlan {
+  const value = readJson(PLAN_KEY);
+  if (!value || typeof value !== 'object') return {};
+  return Object.fromEntries(
+    Object.entries(value).filter((e): e is [string, string] => typeof e[1] === 'string'),
+  );
+}
+
+function readFreezer(): FreezerItem[] {
+  const value = readJson(FREEZER_KEY);
+  if (!Array.isArray(value)) return [];
+  return value.flatMap((x) => {
+    const r = freezerItemSchema.safeParse(x);
+    return r.success ? [r.data] : [];
+  });
+}
+
+const localPlanner: PlannerStore = {
+  async loadPlan() {
+    return readPlan();
+  },
+  async setMeal(date, recipeId) {
+    const plan = readPlan();
+    if (recipeId === null) delete plan[date];
+    else plan[date] = recipeId;
+    globalThis.localStorage?.setItem(PLAN_KEY, JSON.stringify(plan));
+  },
+  async listFreezer() {
+    return readFreezer();
+  },
+  async saveFreezerItem(item) {
+    const next = [item, ...readFreezer().filter((i) => i.id !== item.id)];
+    globalThis.localStorage?.setItem(FREEZER_KEY, JSON.stringify(next));
+  },
+  async removeFreezerItem(id) {
+    const next = readFreezer().filter((i) => i.id !== id);
+    globalThis.localStorage?.setItem(FREEZER_KEY, JSON.stringify(next));
+  },
+};
+
 export function StorageProvider({ children }: { children: ReactNode }) {
   return (
     <ProfileStoreContext.Provider value={localStore}>
       <FavoritesStoreContext.Provider value={localFavorites}>
-        <FoodLogStoreContext.Provider value={localFoodLog}>{children}</FoodLogStoreContext.Provider>
+        <FoodLogStoreContext.Provider value={localFoodLog}>
+          <PlannerStoreContext.Provider value={localPlanner}>
+            {children}
+          </PlannerStoreContext.Provider>
+        </FoodLogStoreContext.Provider>
       </FavoritesStoreContext.Provider>
     </ProfileStoreContext.Provider>
   );
