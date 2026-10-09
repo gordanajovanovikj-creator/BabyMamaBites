@@ -1,4 +1,3 @@
-import { router } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -7,9 +6,10 @@ import { recipeCategories, recipes } from '@/content/recipes';
 import { findRecipes, fitsCookingTime, recipeSections } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { useHousehold } from '@/features/profile/use-household';
-import { CategoryRow } from '@/features/recipes/category-row';
+import { CategoryChips } from '@/features/recipes/category-chips';
 import { HouseholdNote } from '@/features/recipes/household-note';
 import { RecipeCard } from '@/features/recipes/recipe-card';
+import { RecipeGrid } from '@/features/recipes/recipe-grid';
 import { RecipeSection } from '@/features/recipes/recipe-section';
 import { AppText, Notice, Screen, SegmentedTabs, SymbolIcon } from '@/ui';
 
@@ -20,12 +20,15 @@ export default function MomScreen() {
   const household = useHousehold();
   const { ids: favoriteIds } = useFavorites();
   const [tab, setTab] = useState<Tab>('recipes');
+  const [categoryId, setCategoryId] = useState<string | null>(null);
 
   const sections = recipeSections(recipeCategories, recipes, household);
   const hidden = findRecipes(recipes, household).hiddenForSafety;
   const favorites = favoriteIds
     .map((id) => recipes.find((r) => r.id === id))
     .filter((r) => r !== undefined);
+  const chips = recipeCategories.filter((c) => sections.some((s) => s.category.id === c.id));
+  const selected = chips.find((c) => c.id === categoryId);
 
   return (
     <Screen padded={false} edgeToEdgeTop className="gap-6">
@@ -49,16 +52,21 @@ export default function MomScreen() {
 
       {tab === 'recipes' ? (
         <>
-          <CategoryRow
-            categories={recipeCategories}
-            onSelect={(id) => id && router.push({ pathname: '/category/[id]', params: { id } })}
-          />
+          <CategoryChips categories={chips} selectedId={categoryId} onSelect={setCategoryId} />
           <View className="px-5">
             <HouseholdNote household={household} hidden={hidden} />
           </View>
-          {sections.map((s) => (
-            <RecipeSection key={s.category.id} category={s.category} recipes={s.recipes} />
-          ))}
+          {selected ? (
+            <RecipeGrid
+              title={selected.label}
+              subtitle={selected.description}
+              recipes={findRecipes(recipes, household, { categoryId: selected.id }).recipes}
+            />
+          ) : (
+            sections.map((s) => (
+              <RecipeSection key={s.category.id} category={s.category} recipes={s.recipes} />
+            ))
+          )}
         </>
       ) : (
         <View className="gap-3 px-5">

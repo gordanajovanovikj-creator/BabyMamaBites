@@ -1,17 +1,16 @@
 import { useState } from 'react';
-import { ScrollView, useWindowDimensions, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 import { babyRecipeCategories, babyRecipes } from '@/content/recipes';
 import { babyCollectionsFor, findRecipes, recipeSections } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { useHousehold } from '@/features/profile/use-household';
+import { CategoryChips } from '@/features/recipes/category-chips';
 import { HouseholdNote } from '@/features/recipes/household-note';
+import { RecipeGrid } from '@/features/recipes/recipe-grid';
 import { RecipeSection } from '@/features/recipes/recipe-section';
 import { RECIPE_TILE_WIDTH, RecipeTile } from '@/features/recipes/recipe-tile';
-import { AppText, Card, Chip, Notice, SymbolIcon } from '@/ui';
-
-const GAP = 12;
-const SIDE = 20;
+import { AppText, Card, Notice, SymbolIcon } from '@/ui';
 
 export type BabyRecipesViewProps = {
   babyName: string | null;
@@ -30,7 +29,6 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
   const byAge = [...babyRecipeCategories].sort((a, b) => (a.fromMonths ?? 0) - (b.fromMonths ?? 0));
   const sections = recipeSections(ordered, babyRecipes, household);
   const hidden = findRecipes(babyRecipes, household).hiddenForSafety;
-  const { width } = useWindowDimensions();
   const [categoryId, setCategoryId] = useState<string | null>(null);
   // Filter chips run youngest to oldest; only age groups with recipes for this household.
   const chips = byAge.filter((c) => sections.some((s) => s.category.id === c.id));
@@ -38,25 +36,10 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
   const selectedRecipes = selected
     ? findRecipes(babyRecipes, household, { categoryId: selected.id }).recipes
     : [];
-  const cell = Math.floor((Math.min(width, 640) - SIDE * 2 - GAP) / 2);
 
   return (
     <>
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerClassName="gap-2 px-5"
-      >
-        <Chip label="All" selected={categoryId === null} onPress={() => setCategoryId(null)} />
-        {chips.map((c) => (
-          <Chip
-            key={c.id}
-            label={`${c.emoji} ${c.label}`}
-            selected={categoryId === c.id}
-            onPress={() => setCategoryId(c.id)}
-          />
-        ))}
-      </ScrollView>
+      <CategoryChips categories={chips} selectedId={categoryId} onSelect={setCategoryId} />
       <View className="gap-3 px-5">
         {current === null ? (
           <Notice
@@ -67,21 +50,11 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
         <HouseholdNote household={household} hidden={hidden} />
       </View>
       {selected ? (
-        <View className="gap-4 px-5">
-          <View className="gap-1">
-            <AppText variant="heading" size="2xl">
-              {selected.label}
-            </AppText>
-            <AppText variant="caption">
-              {`From ${selected.fromMonths ?? 0} months · ${selected.description}`}
-            </AppText>
-          </View>
-          <View className="flex-row flex-wrap" style={{ gap: GAP }}>
-            {selectedRecipes.map((r) => (
-              <RecipeTile key={r.id} recipe={r} width={cell} />
-            ))}
-          </View>
-        </View>
+        <RecipeGrid
+          title={selected.label}
+          subtitle={`From ${selected.fromMonths ?? 0} months · ${selected.description}`}
+          recipes={selectedRecipes}
+        />
       ) : (
         <>
           {sections.map((s) => {
