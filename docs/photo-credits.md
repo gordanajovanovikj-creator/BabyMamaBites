@@ -86,3 +86,4 @@ Bundled in `assets/images/insights/` and registered in
 | solids-choking | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | foods-to-avoid | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | newborn-meal-help | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
+| newborn-rest | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |

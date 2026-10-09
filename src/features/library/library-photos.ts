@@ -23,6 +23,7 @@ const photos: Record<string, ImageSource> = {
   'solids-choking': require('@/assets/images/insights/solids-choking.jpg'),
   'foods-to-avoid': require('@/assets/images/insights/foods-to-avoid.jpg'),
   'newborn-meal-help': require('@/assets/images/insights/newborn-meal-help.jpg'),
+  'newborn-rest': require('@/assets/images/insights/newborn-rest.jpg'),
 };
 
 export function libraryPhoto(id: string): ImageSource | undefined {
