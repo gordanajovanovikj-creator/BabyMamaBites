@@ -8,7 +8,7 @@ import { Button, Screen } from '@/ui';
 const content = {
   'baby-led': {
     photo: onboardingPhotos.babyLed,
-    label: 'A baby in a high chair feeding themselves soft pieces of fruit',
+    label: 'A baby in a high chair feeding themselves',
     title: 'Baby-led weaning is a great choice!',
   },
   spoon: {
