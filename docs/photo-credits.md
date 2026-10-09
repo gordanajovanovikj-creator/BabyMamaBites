@@ -15,3 +15,4 @@ Photos bundled in `assets/images/recipes/` and registered in
 | baby-avocado-banana-mash | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | baby-yogurt-berry-swirl | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | baby-sweet-potato-puree | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
+| baby-lentil-carrot-mash | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
