@@ -82,3 +82,4 @@ Bundled in `assets/images/insights/` and registered in
 | purees-vs-finger-foods | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | allergens | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | toddler-picky-phases | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
+| cups-and-drinks | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
