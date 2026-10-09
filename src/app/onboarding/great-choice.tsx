@@ -22,13 +22,13 @@ const content = {
     photo: onboardingPhotos.both,
     label: 'A smiling mom sitting with her baby, who feeds herself with a spoon in a high chair',
     title: "We've got you, mama",
-    subtitle: \"We're here to guide you every step of the way.\",
+    subtitle: "We're here to guide you every step of the way.",
   },
   'not-sure': {
     photo: onboardingPhotos.both,
     label: 'A smiling mom sitting with her baby, who feeds herself with a spoon in a high chair',
     title: "We've got you, mama",
-    subtitle: \"We're here to guide you every step of the way.\",
+    subtitle: "We're here to guide you every step of the way.",
   },
 } as const;
 
