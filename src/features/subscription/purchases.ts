@@ -1,4 +1,4 @@
-import { yearlyPlan } from '@/domain/subscription';
+import type { Plan } from '@/domain/subscription';
 
 export type PurchaseResult =
   | { status: 'subscribed' }
@@ -7,14 +7,14 @@ export type PurchaseResult =
   | { status: 'unavailable' };
 
 /**
- * Starts the yearly plan's free trial through the App Store.
+ * Starts a plan's free trial through the App Store.
  *
  * NOT CONNECTED YET: this needs an in-app purchase library (e.g. expo-iap or
- * RevenueCat), a development build, and the product `yearlyPlan.productId`
- * set up in App Store Connect. Until then it never charges anyone.
+ * RevenueCat), a development build, and each plan's `productId` set up in
+ * App Store Connect. Until then it never charges anyone.
  */
-export async function startYearlyTrial(): Promise<PurchaseResult> {
-  void yearlyPlan.productId;
+export async function startTrial(plan: Plan): Promise<PurchaseResult> {
+  void plan.productId;
   return { status: 'unavailable' };
 }
 
