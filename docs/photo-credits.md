@@ -79,3 +79,4 @@ Bundled in `assets/images/insights/` and registered in
 | gagging-vs-choking | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | ready | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | first-foods | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
+| purees-vs-finger-foods | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
