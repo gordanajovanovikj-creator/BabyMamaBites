@@ -2,15 +2,16 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 
-import { getRecipe } from '@/content/recipes';
+import { allRecipes, getRecipe } from '@/content/recipes';
 import { splitReviewMarker } from '@/content/schemas';
 import { allergenLabels, dietLabels } from '@/domain/profile-labels';
 import { energyLabels, recipeTagLabels } from '@/domain/recipe-labels';
 import { today } from '@/domain/dates';
-import { isAheadOfAge, recipeKicker, recipeTimings } from '@/domain/recipes';
+import { familyMealFor, isAheadOfAge, recipeKicker, recipeTimings } from '@/domain/recipes';
 import { babyAge } from '@/domain/stage';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { useProfile } from '@/features/profile/profile-context';
+import { useHousehold } from '@/features/profile/use-household';
 import { PictureHero } from '@/features/recipes/picture-hero';
 import { AppText, Button, cn, HeartButton, Notice, Screen } from '@/ui';
 
@@ -27,6 +28,7 @@ export default function RecipeScreen() {
   const recipe = getRecipe(id);
   const { profile } = useProfile();
   const { isFavorite, toggle } = useFavorites();
+  const household = useHousehold();
   const [checked, setChecked] = useState<number[]>([]);
 
   if (!recipe) {
@@ -43,6 +45,7 @@ export default function RecipeScreen() {
   const ageMonths = profile ? babyAge(profile, today()).months : null;
   const ahead = ageMonths !== null && isAheadOfAge(recipe, ageMonths);
   const babyName = profile?.babyName ?? 'Your baby';
+  const family = familyMealFor(recipe, allRecipes, household);
   const toggleIngredient = (i: number) =>
     setChecked((c) => (c.includes(i) ? c.filter((x) => x !== i) : [...c, i]));
   const tags = [energyLabels[recipe.energy], ...recipe.tags.map((t) => recipeTagLabels[t])];
@@ -170,6 +173,33 @@ export default function RecipeScreen() {
           </View>
         ))}
       </View>
+
+      {family ? (
+        <>
+          <SectionTitle>Family meal</SectionTitle>
+          <View className="px-5 pt-2">
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={`Family meal: ${family.recipe.title}. ${family.note} Opens the recipe.`}
+              onPress={() =>
+                router.push({ pathname: '/recipe/[id]', params: { id: family.recipe.id } })
+              }
+              className="gap-2 rounded-3xl bg-surface-muted p-4 active:opacity-70"
+            >
+              <View className="flex-row items-center gap-3">
+                <AppText size="3xl">{family.recipe.emoji}</AppText>
+                <AppText variant="label" size="lg" className="flex-1 font-bold">
+                  {family.recipe.title}
+                </AppText>
+                <AppText variant="heading" color="primary">
+                  ›
+                </AppText>
+              </View>
+              <AppText>{family.note}</AppText>
+            </Pressable>
+          </View>
+        </>
+      ) : null}
 
       {recipe.tips.length ? (
         <>

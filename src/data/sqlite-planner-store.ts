@@ -1,6 +1,6 @@
 import type { SQLiteDatabase } from 'expo-sqlite';
 
-import { freezerItemSchema, type FreezerItem } from '@/domain/planner';
+import { freezerItemSchema, normalizePlan, type FreezerItem } from '@/domain/planner';
 
 import type { PlannerStore } from './planner-store';
 
@@ -9,20 +9,23 @@ type FreezerRow = { id: string; name: string; cubes: number; frozen_on: string }
 export function createSqlitePlannerStore(db: SQLiteDatabase): PlannerStore {
   return {
     async loadPlan() {
-      const rows = await db.getAllAsync<{ date: string; recipe_id: string }>(
-        'SELECT date, recipe_id FROM meal_plan',
+      const rows = await db.getAllAsync<{ date: string; slot: string; recipe_id: string }>(
+        'SELECT date, slot, recipe_id FROM meal_slot',
       );
-      return Object.fromEntries(rows.map((r) => [r.date, r.recipe_id]));
+      return normalizePlan(
+        Object.fromEntries(rows.map((r) => [`${r.date}|${r.slot}`, r.recipe_id])),
+      );
     },
-    async setMeal(date, recipeId) {
+    async setMeal(date, slot, recipeId) {
       if (recipeId === null) {
-        await db.runAsync('DELETE FROM meal_plan WHERE date = ?', date);
+        await db.runAsync('DELETE FROM meal_slot WHERE date = ? AND slot = ?', date, slot);
         return;
       }
       await db.runAsync(
-        `INSERT INTO meal_plan (date, recipe_id, updated_at) VALUES (?, ?, ?)
-         ON CONFLICT(date) DO UPDATE SET recipe_id = excluded.recipe_id, updated_at = excluded.updated_at`,
+        `INSERT INTO meal_slot (date, slot, recipe_id, updated_at) VALUES (?, ?, ?, ?)
+         ON CONFLICT(date, slot) DO UPDATE SET recipe_id = excluded.recipe_id, updated_at = excluded.updated_at`,
         date,
+        slot,
         recipeId,
         new Date().toISOString(),
       );

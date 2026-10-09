@@ -156,3 +156,18 @@ export function babyCollectionsFor<C extends { id: string; fromMonths?: number }
 export function isAheadOfAge(recipe: Recipe, ageMonths: number): boolean {
   return recipe.fromMonths !== undefined && recipe.fromMonths > ageMonths;
 }
+
+/**
+ * The grown-up recipe paired with a baby recipe, if it suits the household's
+ * allergies and diets (otherwise null, so we never suggest an unsafe meal).
+ */
+export function familyMealFor(
+  babyRecipe: Recipe,
+  all: Recipe[],
+  household: Pick<Household, 'allergens' | 'diets'>,
+): { recipe: Recipe; note: string } | null {
+  if (!babyRecipe.familyMeal) return null;
+  const recipe = all.find((r) => r.id === babyRecipe.familyMeal?.recipeId);
+  if (!recipe || !suitsHousehold(recipe, household)) return null;
+  return { recipe, note: babyRecipe.familyMeal.note };
+}

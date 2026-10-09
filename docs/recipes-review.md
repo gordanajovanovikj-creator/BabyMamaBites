@@ -120,3 +120,10 @@ For the reviewer:
   7-month starting age.
 - **Oats and gluten**: oat-based recipes aren't tagged gluten-free because of possible
   cross-contact with wheat.
+
+## Family meal pairings
+
+Each baby recipe names a grown-up recipe to cook alongside (`familyMeal` in
+`baby-recipes.json`) with a one-line tip on sharing the work, such as setting baby's portion
+aside before adding salt, seasoning or broth. The app hides the family meal when it contains a
+household allergen or doesn't suit the household's diet. Please check the tips for accuracy.

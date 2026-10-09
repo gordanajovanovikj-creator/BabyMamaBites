@@ -7,7 +7,7 @@ import {
 } from '@/content/recipes';
 import { PLACEHOLDER_MARKER } from '@/content/schemas';
 
-import { babyCollectionsFor, isAheadOfAge, recipeKicker } from './recipes';
+import { babyCollectionsFor, familyMealFor, isAheadOfAge, recipeKicker } from './recipes';
 
 describe('babyCollectionsFor', () => {
   it('puts the current age group first, then the rest by age', () => {
@@ -93,6 +93,25 @@ describe('baby recipes', () => {
 
   it('show their starting age as the kicker', () => {
     expect(recipeKicker(babyRecipes[0])).toBe(`From ${babyRecipes[0].fromMonths} months`);
+  });
+});
+
+describe('family meals', () => {
+  it('pairs every baby recipe with a grown-up recipe', () => {
+    for (const r of babyRecipes) {
+      expect(r.familyMeal).toBeDefined();
+      expect(recipes.some((g) => g.id === r.familyMeal?.recipeId)).toBe(true);
+    }
+  });
+
+  it("hides the family meal when it doesn't suit the household", () => {
+    const lentils = babyRecipes.find((r) => r.id === 'baby-lentil-carrot-mash')!;
+    const all = [...recipes, ...babyRecipes];
+    expect(familyMealFor(lentils, all, { allergens: [], diets: [] })?.recipe.id).toBe(
+      'lentil-soup',
+    );
+    const avocado = babyRecipes.find((r) => r.id === 'baby-avocado-banana-mash')!;
+    expect(familyMealFor(avocado, all, { allergens: ['egg'], diets: [] })).toBeNull();
   });
 });
 

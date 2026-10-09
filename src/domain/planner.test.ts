@@ -1,5 +1,8 @@
 import {
   dayLabel,
+  mealsPlanned,
+  normalizePlan,
+  planKey,
   freezerStatus,
   makeFreezerItem,
   sortFreezer,
@@ -63,5 +66,28 @@ describe('freezer', () => {
     expect(() => makeFreezerItem({ name: '  ', cubes: 2, frozenOn: '2026-10-08' })).toThrow();
     expect(() => makeFreezerItem({ name: 'Peas', cubes: -1, frozenOn: '2026-10-08' })).toThrow();
     expect(makeFreezerItem({ name: ' Peas ', cubes: 2, frozenOn: '2026-10-08' }).name).toBe('Peas');
+  });
+});
+
+describe('meal slots', () => {
+  it('counts planned meals per day', () => {
+    const plan = {
+      [planKey('2026-10-05', 'breakfast')]: 'a',
+      [planKey('2026-10-05', 'dinner')]: 'b',
+    };
+    expect(mealsPlanned(plan, '2026-10-05')).toBe(2);
+    expect(mealsPlanned(plan, '2026-10-06')).toBe(0);
+  });
+
+  it('moves the old one-meal-a-day plan to lunch and drops bad keys', () => {
+    expect(
+      normalizePlan({
+        '2026-10-05': 'a',
+        '2026-10-06|dinner': 'b',
+        '2026-10-07|snack': 'c',
+        x: 'd',
+        '2026-10-08|lunch': 3,
+      }),
+    ).toEqual({ '2026-10-05|lunch': 'a', '2026-10-06|dinner': 'b' });
   });
 });

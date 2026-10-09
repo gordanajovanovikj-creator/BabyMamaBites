@@ -41,4 +41,14 @@ export const migrations: string[] = [
      frozen_on TEXT NOT NULL,
      created_at TEXT NOT NULL
    );`,
+  `CREATE TABLE IF NOT EXISTS meal_slot (
+     date TEXT NOT NULL,
+     slot TEXT NOT NULL,
+     recipe_id TEXT NOT NULL,
+     updated_at TEXT NOT NULL,
+     PRIMARY KEY (date, slot)
+   );
+   INSERT OR IGNORE INTO meal_slot (date, slot, recipe_id, updated_at)
+     SELECT date, 'lunch', recipe_id, updated_at FROM meal_plan;
+   DROP TABLE IF EXISTS meal_plan;`,
 ];

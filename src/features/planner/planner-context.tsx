@@ -10,11 +10,11 @@ import {
 
 import { usePlannerStore } from '@/data/stores-context';
 import type { IsoDate } from '@/domain/dates';
-import type { FreezerItem, MealPlan } from '@/domain/planner';
+import { planKey, type FreezerItem, type MealPlan, type MealSlot } from '@/domain/planner';
 
 type PlannerState = {
   plan: MealPlan;
-  setMeal(date: IsoDate, recipeId: string | null): Promise<void>;
+  setMeal(date: IsoDate, slot: MealSlot, recipeId: string | null): Promise<void>;
   freezer: FreezerItem[];
   saveFreezerItem(item: FreezerItem): Promise<void>;
   removeFreezerItem(id: string): Promise<void>;
@@ -42,12 +42,13 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
   }, [store]);
 
   const setMeal = useCallback(
-    async (date: IsoDate, recipeId: string | null) => {
-      await store.setMeal(date, recipeId);
+    async (date: IsoDate, slot: MealSlot, recipeId: string | null) => {
+      await store.setMeal(date, slot, recipeId);
+      const key = planKey(date, slot);
       setPlan((current) => {
         const next = { ...current };
-        if (recipeId === null) delete next[date];
-        else next[date] = recipeId;
+        if (recipeId === null) delete next[key];
+        else next[key] = recipeId;
         return next;
       });
     },

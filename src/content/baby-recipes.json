@@ -51,6 +51,10 @@
       "servings": 1,
       "categories": ["baby-6m"],
       "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "overnight-oats",
+        "note": "Oats for everyone: stir up your overnight oats while baby has their cereal."
+      },
       "tags": ["five-minute", "no-cook"],
       "energy": "low",
       "allergens": [],
@@ -83,6 +87,10 @@
       "servings": 8,
       "categories": ["baby-6m"],
       "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "sheet-pan-salmon",
+        "note": "Roast a sweet potato on the same sheet pan, then puree baby's portion with no seasoning."
+      },
       "tags": ["batch-cook", "freezer-friendly"],
       "energy": "low",
       "allergens": [],
@@ -113,6 +121,10 @@
       "servings": 8,
       "categories": ["baby-6m"],
       "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "slow-cooker-chicken",
+        "note": "Simmer a little plain chicken for baby while the family's seasoned chicken cooks."
+      },
       "tags": ["batch-cook", "freezer-friendly"],
       "energy": "low",
       "allergens": [],
@@ -146,6 +158,10 @@
       "servings": 6,
       "categories": ["baby-6m"],
       "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "overnight-oats",
+        "note": "Top your overnight oats with chopped pear and puree the rest for baby."
+      },
       "tags": ["batch-cook", "freezer-friendly"],
       "energy": "low",
       "allergens": [],
@@ -175,6 +191,10 @@
       "servings": 1,
       "categories": ["baby-7m"],
       "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "avocado-egg-toast",
+        "note": "Mash extra avocado for baby before you add lemon, pepper or chili to yours."
+      },
       "tags": ["five-minute", "no-cook"],
       "energy": "low",
       "allergens": [],
@@ -203,6 +223,10 @@
       "servings": 6,
       "categories": ["baby-7m"],
       "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "lentil-soup",
+        "note": "Scoop out baby's lentils and carrots before you add the broth, garlic and tomatoes, then mash."
+      },
       "tags": ["batch-cook", "freezer-friendly"],
       "energy": "low",
       "allergens": [],
@@ -235,6 +259,10 @@
       "servings": 2,
       "categories": ["baby-7m"],
       "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "egg-muffin-cups",
+        "note": "Hard-boil an extra egg for baby while your muffin cups bake."
+      },
       "tags": [],
       "energy": "low",
       "allergens": ["egg"],
@@ -264,6 +292,10 @@
       "servings": 1,
       "categories": ["baby-7m"],
       "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "nut-butter-porridge",
+        "note": "Same flavors: make your peanut butter porridge, and thin a little peanut butter into baby's cereal."
+      },
       "tags": ["five-minute", "no-cook"],
       "energy": "low",
       "allergens": ["peanut"],
@@ -297,6 +329,10 @@
       "servings": 2,
       "categories": ["baby-7m"],
       "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "yogurt-parfait",
+        "note": "Make your parfait with the same berries; mash baby's well, as whole blueberries are a choking hazard."
+      },
       "tags": ["five-minute"],
       "energy": "low",
       "allergens": ["milk"],
@@ -328,6 +364,10 @@
       "servings": 4,
       "categories": ["baby-9m"],
       "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "sheet-pan-salmon",
+        "note": "Bake one extra fillet with no lemon or seasoning, then flake it for baby, checking for bones."
+      },
       "tags": [],
       "energy": "low",
       "allergens": ["fish"],
@@ -357,6 +397,10 @@
       "servings": 2,
       "categories": ["baby-9m"],
       "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "chicken-stir-fry",
+        "note": "Steam a few carrot and zucchini sticks for baby before stir-frying the rest with soy sauce."
+      },
       "tags": [],
       "energy": "low",
       "allergens": [],
@@ -386,6 +430,10 @@
       "servings": 8,
       "categories": ["baby-9m"],
       "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "baked-oatmeal",
+        "note": "Same banana, oat and egg base: bake the oatmeal for the family and fry a few small pancakes for baby."
+      },
       "tags": [],
       "energy": "medium",
       "allergens": ["egg"],
@@ -415,6 +463,10 @@
       "servings": 4,
       "categories": ["baby-9m"],
       "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "one-pot-pasta",
+        "note": "Both are tomato pasta nights: cook baby's pasta a little longer so it's very soft."
+      },
       "tags": [],
       "energy": "low",
       "allergens": ["wheat"],
@@ -449,6 +501,10 @@
       "servings": 6,
       "categories": ["baby-12m"],
       "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "turkey-chili",
+        "note": "One pack of ground turkey covers both: meatballs for your toddler, chili for the family."
+      },
       "tags": ["batch-cook", "freezer-friendly"],
       "energy": "medium",
       "allergens": ["egg", "wheat"],
@@ -484,6 +540,10 @@
       "servings": 4,
       "categories": ["baby-12m"],
       "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "chicken-stir-fry",
+        "note": "Cook one pot of rice and steam extra broccoli for both meals."
+      },
       "tags": [],
       "energy": "low",
       "allergens": ["milk"],
@@ -517,6 +577,10 @@
       "servings": 2,
       "categories": ["baby-12m"],
       "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "black-bean-quesadilla",
+        "note": "Make yours with corn and cumin; keep corn out of your toddler's, mash the beans and cut it into strips."
+      },
       "tags": [],
       "energy": "low",
       "allergens": ["milk", "wheat"],
@@ -548,6 +612,10 @@
       "servings": 2,
       "categories": ["baby-12m"],
       "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "overnight-oats",
+        "note": "Make two jars: yours with yogurt and maple syrup if you like, theirs with whole milk and mashed fruit and no added sugar."
+      },
       "tags": ["no-cook"],
       "energy": "low",
       "allergens": ["milk"],

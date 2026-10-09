@@ -32,8 +32,43 @@ export function weekRangeLabel(monday: IsoDate): string {
     : `${month(start)} ${start.getDate()} – ${month(end)} ${end.getDate()}`;
 }
 
-/** Planned baby meals, one recipe per day. */
-export type MealPlan = Record<IsoDate, string>;
+export const mealSlots = ['breakfast', 'lunch', 'dinner'] as const;
+export type MealSlot = (typeof mealSlots)[number];
+
+export const mealSlotLabels: Record<MealSlot, string> = {
+  breakfast: 'Breakfast',
+  lunch: 'Lunch',
+  dinner: 'Dinner',
+};
+
+/** Planned baby meals keyed by `planKey(date, slot)`, one recipe per slot. */
+export type MealPlan = Record<string, string>;
+
+export function planKey(date: IsoDate, slot: MealSlot): string {
+  return `${date}|${slot}`;
+}
+
+export function isMealSlot(value: string): value is MealSlot {
+  return (mealSlots as readonly string[]).includes(value);
+}
+
+/** How many meals are planned on a day (0 to 3). */
+export function mealsPlanned(plan: MealPlan, date: IsoDate): number {
+  return mealSlots.filter((slot) => plan[planKey(date, slot)]).length;
+}
+
+/** Turns stored `{date|slot: id}` or legacy `{date: id}` (one meal a day, now lunch) into a plan. */
+export function normalizePlan(stored: Record<string, unknown>): MealPlan {
+  const plan: MealPlan = {};
+  for (const [key, value] of Object.entries(stored)) {
+    if (typeof value !== 'string') continue;
+    const [date, slot] = key.split('|');
+    if (!isIsoDate(date)) continue;
+    if (slot === undefined) plan[planKey(date, 'lunch')] = value;
+    else if (isMealSlot(slot)) plan[key] = value;
+  }
+  return plan;
+}
 
 // Freezer -------------------------------------------------------------------
 

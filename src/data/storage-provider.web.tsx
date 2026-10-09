@@ -1,7 +1,13 @@
 import type { ReactNode } from 'react';
 
 import { foodLogEntrySchema, type FoodLogEntry } from '@/domain/food-log';
-import { freezerItemSchema, type FreezerItem, type MealPlan } from '@/domain/planner';
+import {
+  freezerItemSchema,
+  normalizePlan,
+  planKey,
+  type FreezerItem,
+  type MealPlan,
+} from '@/domain/planner';
 import { profileSchema } from '@/domain/profile';
 
 import type { FavoritesStore } from './favorites-store';
@@ -106,9 +112,7 @@ function readJson(key: string): unknown {
 function readPlan(): MealPlan {
   const value = readJson(PLAN_KEY);
   if (!value || typeof value !== 'object') return {};
-  return Object.fromEntries(
-    Object.entries(value).filter((e): e is [string, string] => typeof e[1] === 'string'),
-  );
+  return normalizePlan(value as Record<string, unknown>);
 }
 
 function readFreezer(): FreezerItem[] {
@@ -124,10 +128,11 @@ const localPlanner: PlannerStore = {
   async loadPlan() {
     return readPlan();
   },
-  async setMeal(date, recipeId) {
+  async setMeal(date, slot, recipeId) {
     const plan = readPlan();
-    if (recipeId === null) delete plan[date];
-    else plan[date] = recipeId;
+    const key = planKey(date, slot);
+    if (recipeId === null) delete plan[key];
+    else plan[key] = recipeId;
     globalThis.localStorage?.setItem(PLAN_KEY, JSON.stringify(plan));
   },
   async listFreezer() {

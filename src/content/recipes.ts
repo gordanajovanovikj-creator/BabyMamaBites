@@ -49,6 +49,8 @@ export const recipeSchema = z.object({
   categories: z.array(z.string().min(1)).min(1),
   /** Baby recipes only: suitable from this age in months. Absent for grown-up recipes. */
   fromMonths: z.number().int().nonnegative().optional(),
+  /** Baby recipes only: a grown-up recipe to cook alongside, and how to share the work. */
+  familyMeal: z.object({ recipeId: z.string().min(1), note: z.string().min(1) }).optional(),
   tags: z.array(z.enum(recipeTags)),
   /** How much energy it takes to make. */
   energy: z.enum(energyLevels),

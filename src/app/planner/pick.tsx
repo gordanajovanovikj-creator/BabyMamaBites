@@ -3,6 +3,7 @@ import { Pressable, View } from 'react-native';
 
 import { babyRecipeCategories, babyRecipes } from '@/content/recipes';
 import { fromIsoDate, isIsoDate, today } from '@/domain/dates';
+import { isMealSlot, mealSlotLabels, planKey } from '@/domain/planner';
 import { babyCollectionsFor, isAheadOfAge, suitsHousehold } from '@/domain/recipes';
 import { babyAge } from '@/domain/stage';
 import { usePlanner } from '@/features/planner/planner-context';
@@ -11,12 +12,12 @@ import { useHousehold } from '@/features/profile/use-household';
 import { AppText, Button, cn, Screen, SymbolIcon, toneBackground } from '@/ui';
 
 export default function PickMealScreen() {
-  const { date } = useLocalSearchParams<{ date: string }>();
+  const { date, slot } = useLocalSearchParams<{ date: string; slot: string }>();
   const { profile } = useProfile();
   const household = useHousehold();
   const { plan, setMeal } = usePlanner();
 
-  if (!date || !isIsoDate(date)) {
+  if (!date || !isIsoDate(date) || !slot || !isMealSlot(slot)) {
     return (
       <Screen>
         <AppText variant="title">Day not found</AppText>
@@ -34,16 +35,25 @@ export default function PickMealScreen() {
   });
 
   const choose = (recipeId: string | null) => {
-    setMeal(date, recipeId)
+    setMeal(date, slot, recipeId)
       .then(() => router.back())
       .catch(() => {});
   };
 
   return (
     <Screen>
-      <AppText variant="title">{heading}</AppText>
-      {plan[date] ? (
-        <Button variant="secondary" label="Clear this day" onPress={() => choose(null)} />
+      <View className="gap-1">
+        <AppText variant="caption" size="sm" className="font-bold uppercase tracking-wider">
+          {mealSlotLabels[slot]}
+        </AppText>
+        <AppText variant="title">{heading}</AppText>
+      </View>
+      {plan[planKey(date, slot)] ? (
+        <Button
+          variant="secondary"
+          label={`Clear ${mealSlotLabels[slot].toLowerCase()}`}
+          onPress={() => choose(null)}
+        />
       ) : null}
 
       {ordered.map((group) => {
@@ -62,7 +72,7 @@ export default function PickMealScreen() {
             </AppText>
             {items.map((r) => {
               const ahead = isAheadOfAge(r, ageMonths);
-              const selected = plan[date] === r.id;
+              const selected = plan[planKey(date, slot)] === r.id;
               return (
                 <Pressable
                   key={r.id}
