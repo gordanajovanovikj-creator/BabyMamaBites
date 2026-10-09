@@ -12,6 +12,7 @@
       "toMonths": 7,
       "icon": "checklist",
       "emoji": "✅",
+      "illustration": "checklist",
       "tone": "accent",
       "readMinutes": 3,
       "sections": [
@@ -65,6 +66,7 @@
       "toMonths": 24,
       "icon": "chair.fill",
       "emoji": "🪑",
+      "illustration": "high-chair",
       "tone": "sky",
       "readMinutes": 3,
       "sections": [
@@ -118,6 +120,7 @@
       "toMonths": 10,
       "icon": "hand.raised.fill",
       "emoji": "🥄",
+      "illustration": "bowl-and-spoon",
       "tone": "muted",
       "readMinutes": 4,
       "sections": [
@@ -183,6 +186,7 @@
       "toMonths": 9,
       "icon": "carrot.fill",
       "emoji": "🥕",
+      "illustration": "veggies",
       "tone": "accent",
       "readMinutes": 3,
       "sections": [
@@ -234,6 +238,7 @@
       "toMonths": 12,
       "icon": "shield.lefthalf.filled",
       "emoji": "🥜",
+      "illustration": "egg-and-peanut",
       "tone": "sky",
       "readMinutes": 4,
       "sections": [
@@ -285,6 +290,7 @@
       "toMonths": 24,
       "icon": "exclamationmark.triangle.fill",
       "emoji": "⚠️",
+      "illustration": "first-aid",
       "tone": "muted",
       "readMinutes": 3,
       "sections": [
@@ -339,6 +345,7 @@
       "toMonths": 24,
       "icon": "hand.wave.fill",
       "emoji": "👋",
+      "illustration": "bib",
       "tone": "accent",
       "readMinutes": 2,
       "sections": [
@@ -383,6 +390,7 @@
       "toMonths": 14,
       "icon": "cup.and.saucer.fill",
       "emoji": "🥤",
+      "illustration": "cups",
       "tone": "sky",
       "readMinutes": 2,
       "sections": [
@@ -426,6 +434,7 @@
       "toMonths": 12,
       "icon": "snowflake",
       "emoji": "❄️",
+      "illustration": "blender",
       "tone": "muted",
       "readMinutes": 3,
       "sections": [
@@ -462,6 +471,7 @@
       "toMonths": 12,
       "icon": "xmark.octagon.fill",
       "emoji": "🚫",
+      "illustration": "no-honey",
       "tone": "accent",
       "readMinutes": 3,
       "sections": [
@@ -505,6 +515,7 @@
       "toMonths": 24,
       "icon": "face.smiling",
       "emoji": "🙂",
+      "illustration": "smiley-plate",
       "tone": "sky",
       "readMinutes": 2,
       "sections": [
@@ -547,6 +558,7 @@
       "toMonths": 18,
       "icon": "drop.fill",
       "emoji": "🥛",
+      "illustration": "milk",
       "tone": "muted",
       "readMinutes": 2,
       "sections": [

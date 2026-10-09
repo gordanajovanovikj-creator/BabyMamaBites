@@ -1,5 +1,7 @@
 import { z } from 'zod';
 
+import { illustrationNames } from './illustration-names';
+
 import { allergens } from '@/domain/profile';
 
 import insightsJson from './insights.json';
@@ -16,6 +18,8 @@ export const insightSchema = z.object({
   icon: z.string().min(1),
   /** Stand-in shown where SF Symbols aren't available (Android, web). */
   emoji: z.string().min(1),
+  /** Vector illustration shown on cards. */
+  illustration: z.enum(illustrationNames),
   title: z.string().min(1).max(48),
   summary: z.string().min(1),
   body: z.array(z.string().min(1)).min(1),

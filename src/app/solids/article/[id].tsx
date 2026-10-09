@@ -7,7 +7,7 @@ import { solidsSourcesFor } from '@/content/solids-plan';
 import { ageRangeLabel } from '@/domain/articles';
 import { PictureHero } from '@/features/recipes/picture-hero';
 import { SourceLinks } from '@/features/shared/source-links';
-import { AppText, Button, Notice, Screen } from '@/ui';
+import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
 
 export default function ArticleScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -24,7 +24,18 @@ export default function ArticleScreen() {
 
   return (
     <Screen padded={false} edgeToEdgeTop className="gap-0">
-      <PictureHero tone={article.tone} icon={article.icon} emoji={article.emoji} />
+      <PictureHero
+        tone={article.tone}
+        icon={article.icon}
+        emoji={article.emoji}
+        art={
+          <Illustration
+            name={article.illustration}
+            height={200}
+            on={article.tone === 'surface' ? 'white' : article.tone === 'deep' ? 'dark' : 'pastel'}
+          />
+        }
+      />
 
       <View className="gap-2 px-5 pt-8">
         <AppText

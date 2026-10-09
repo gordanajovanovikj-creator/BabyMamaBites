@@ -1,0 +1,28 @@
+/** Names of the bundled vector illustrations content can refer to (drawn in src/ui/illustrations). */
+export const illustrationNames = [
+  'checklist',
+  'high-chair',
+  'bowl-and-spoon',
+  'veggies',
+  'egg-and-peanut',
+  'first-aid',
+  'bib',
+  'cups',
+  'freezer-tray',
+  'no-honey',
+  'smiley-plate',
+  'milk',
+  'snack-basket',
+  'casserole',
+  'oats-jar',
+  'water-bottle',
+  'moon',
+  'hearts',
+  'baby-food-jar',
+  'two-textures',
+  'share-plates',
+  'blender',
+  'toddler-face',
+  'phone',
+] as const;
+export type IllustrationName = (typeof illustrationNames)[number];

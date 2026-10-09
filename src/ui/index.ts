@@ -6,6 +6,7 @@ export { cn } from './cn';
 export { DateField } from './date-field';
 export { HeartButton } from './heart-button';
 export { IconButton } from './icon-button';
+export { Illustration } from './illustrations/illustration';
 export { Notice } from './notice';
 export { OptionCard } from './option-card';
 export { RoundIconButton } from './round-icon-button';

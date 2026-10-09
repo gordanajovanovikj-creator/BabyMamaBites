@@ -1,3 +1,4 @@
+import type { IllustrationName } from '@/content/illustration-names';
 import type { InsightCategory } from '@/content/insight-categories';
 import type { Insight } from '@/content/insights';
 import type { Article } from '@/content/solids-articles';
@@ -15,6 +16,7 @@ export type LibraryItem = {
   tone: Article['tone'];
   icon: string;
   emoji: string;
+  illustration: IllustrationName;
   fromMonths: number;
   toMonths: number;
   readMinutes: number;
@@ -41,6 +43,7 @@ export function articleItem(a: Article): LibraryItem {
     tone: a.tone,
     icon: a.icon,
     emoji: a.emoji,
+    illustration: a.illustration,
     fromMonths: a.fromMonths,
     toMonths: a.toMonths,
     readMinutes: a.readMinutes,
@@ -57,6 +60,7 @@ export function insightItem(i: Insight): LibraryItem {
     tone: i.tone,
     icon: i.icon,
     emoji: i.emoji,
+    illustration: i.illustration,
     fromMonths: Math.min(...ranges.map((r) => r[0])),
     toMonths: Math.max(...ranges.map((r) => r[1])),
     readMinutes: readingMinutes(i.body),

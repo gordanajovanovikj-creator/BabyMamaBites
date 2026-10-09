@@ -9,6 +9,7 @@
       "tone": "surface",
       "icon": "basket.fill",
       "emoji": "🧺",
+      "illustration": "snack-basket",
       "title": "A snack basket by your feeding chair",
       "summary": "Food you can reach with one hand.",
       "body": [
@@ -27,6 +28,7 @@
       "tone": "accent",
       "icon": "hands.and.sparkles.fill",
       "emoji": "🤲",
+      "illustration": "casserole",
       "title": "Say yes to meal help",
       "summary": "An easy answer to \"What can I do?\"",
       "body": [
@@ -45,6 +47,7 @@
       "tone": "sky",
       "icon": "cup.and.saucer.fill",
       "emoji": "🥣",
+      "illustration": "oats-jar",
       "title": "Overnight oats in a jar",
       "summary": "Two minutes tonight, breakfast tomorrow.",
       "body": [
@@ -64,6 +67,7 @@
       "tone": "muted",
       "icon": "drop.fill",
       "emoji": "💧",
+      "illustration": "water-bottle",
       "title": "Keep a drink within reach",
       "summary": "A full bottle wherever you sit.",
       "body": [
@@ -81,6 +85,7 @@
       "tone": "deep",
       "icon": "moon.zzz.fill",
       "emoji": "🌙",
+      "illustration": "moon",
       "title": "Rest counts, too",
       "summary": "Lying down for ten minutes is enough.",
       "body": [
@@ -98,6 +103,7 @@
       "tone": "deep",
       "icon": "heart.fill",
       "emoji": "💗",
+      "illustration": "hearts",
       "title": "Not feeling like yourself?",
       "summary": "You don't have to carry it alone.",
       "body": [
@@ -116,6 +122,7 @@
       "tone": "sky",
       "icon": "carrot.fill",
       "emoji": "🥕",
+      "illustration": "baby-food-jar",
       "title": "Starting with purées",
       "summary": "Smooth first, then step by step.",
       "body": [
@@ -133,6 +140,7 @@
       "tone": "accent",
       "icon": "snowflake",
       "emoji": "❄️",
+      "illustration": "freezer-tray",
       "title": "Freezer cubes, explained",
       "summary": "A few hours of prep can stock your freezer for weeks.",
       "body": [
@@ -152,6 +160,7 @@
       "tone": "surface",
       "icon": "fork.knife",
       "emoji": "🍽️",
+      "illustration": "two-textures",
       "title": "One meal, two textures",
       "summary": "Cook once for the family and baby.",
       "body": [
@@ -170,6 +179,7 @@
       "tone": "deep",
       "icon": "cross.case.fill",
       "emoji": "🩹",
+      "illustration": "phone",
       "title": "Choking: be prepared",
       "summary": "Know what to do before you need it.",
       "body": [
@@ -188,6 +198,7 @@
       "tone": "sky",
       "icon": "fork.knife.circle.fill",
       "emoji": "🍲",
+      "illustration": "share-plates",
       "title": "Share your plate",
       "summary": "Family food, toddler-sized.",
       "body": [
@@ -205,6 +216,7 @@
       "tone": "accent",
       "icon": "face.smiling.fill",
       "emoji": "🙂",
+      "illustration": "toddler-face",
       "title": "Picky phases",
       "summary": "You're doing better than you think.",
       "body": [

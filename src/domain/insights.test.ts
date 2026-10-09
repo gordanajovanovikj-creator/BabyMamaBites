@@ -15,6 +15,7 @@ function make(id: string, extra: Partial<Insight> = {}): Insight {
     tone: 'surface',
     icon: 'sparkles',
     emoji: '✨',
+    illustration: 'hearts',
     title: id,
     summary: id,
     body: ['[PLACEHOLDER - needs expert review] text'],

@@ -5,8 +5,7 @@ import { getInsightCategory } from '@/content/insight-categories';
 import { ageRangeLabel, articleTiming } from '@/domain/articles';
 import type { LibraryItem } from '@/domain/library';
 import { insightTextColor } from '@/features/insights/insight-style';
-import { TileIllustration } from '@/features/insights/tile-illustration';
-import { AppText, Card } from '@/ui';
+import { AppText, Card, Illustration } from '@/ui';
 
 export const LIBRARY_TILE_WIDTH = 168;
 
@@ -66,7 +65,13 @@ export function LibraryTile({ item, ageMonths, width = LIBRARY_TILE_WIDTH }: Lib
             {item.title}
           </AppText>
         </View>
-        <TileIllustration icon={item.icon} emoji={item.emoji} onWhite={item.tone === 'surface'} />
+        <View className="items-center">
+          <Illustration
+            name={item.illustration}
+            on={item.tone === 'surface' ? 'white' : item.tone === 'deep' ? 'dark' : 'pastel'}
+            height={100}
+          />
+        </View>
       </Card>
     </Pressable>
   );

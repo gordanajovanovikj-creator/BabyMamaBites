@@ -2,10 +2,9 @@ import { router } from 'expo-router';
 import { Pressable, View } from 'react-native';
 
 import type { Insight } from '@/content/insights';
-import { AppText, Card } from '@/ui';
+import { AppText, Card, Illustration } from '@/ui';
 
 import { insightKindLabel, insightTextColor } from './insight-style';
-import { TileIllustration } from './tile-illustration';
 
 export const TILE_WIDTH = 168;
 
@@ -34,11 +33,13 @@ export function InsightTile({ insight }: { insight: Insight }) {
             {insight.title}
           </AppText>
         </View>
-        <TileIllustration
-          icon={insight.icon}
-          emoji={insight.emoji}
-          onWhite={insight.tone === 'surface'}
-        />
+        <View className="items-center">
+          <Illustration
+            name={insight.illustration}
+            on={insight.tone === 'surface' ? 'white' : insight.tone === 'deep' ? 'dark' : 'pastel'}
+            height={96}
+          />
+        </View>
       </Card>
     </Pressable>
   );

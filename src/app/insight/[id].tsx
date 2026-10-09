@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 import { getInsight } from '@/content/insights';
 import { insightKindLabel } from '@/features/insights/insight-style';
-import { AppText, Button, Card, Notice, Screen } from '@/ui';
+import { AppText, Button, Card, Illustration, Notice, Screen } from '@/ui';
 
 export default function InsightScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -20,6 +20,9 @@ export default function InsightScreen() {
 
   return (
     <Screen>
+      <View className="items-center">
+        <Illustration name={insight.illustration} height={160} />
+      </View>
       <View className="gap-2">
         <AppText variant="caption" className="font-semibold uppercase tracking-wider">
           {insightKindLabel[insight.kind]}

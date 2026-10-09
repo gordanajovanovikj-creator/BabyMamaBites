@@ -12,13 +12,15 @@ export type PictureHeroProps = {
   height?: number;
   /** Extra button shown top-right (e.g. a heart). */
   right?: ReactNode;
+  /** Artwork shown instead of the icon (e.g. a vector illustration). */
+  art?: ReactNode;
 };
 
 /**
  * Full-width picture area at the top of a page with a floating back button.
  * Shows a large icon on a soft color until recipe photos are added.
  */
-export function PictureHero({ tone, icon, emoji, height = 300, right }: PictureHeroProps) {
+export function PictureHero({ tone, icon, emoji, height = 300, right, art }: PictureHeroProps) {
   const insets = useSafeAreaInsets();
   return (
     <View
@@ -26,7 +28,7 @@ export function PictureHero({ tone, icon, emoji, height = 300, right }: PictureH
       style={{ height: height + insets.top, paddingTop: insets.top }}
       importantForAccessibility="no"
     >
-      <SymbolIcon icon={icon} emoji={emoji} size={96} />
+      {art ?? <SymbolIcon icon={icon} emoji={emoji} size={96} />}
       <View
         className="absolute left-5 right-5 flex-row justify-between"
         style={{ top: insets.top + 8 }}

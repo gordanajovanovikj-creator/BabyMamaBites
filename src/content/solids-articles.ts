@@ -1,5 +1,7 @@
 import { z } from 'zod';
 
+import { illustrationNames } from './illustration-names';
+
 import articlesJson from './solids-articles.json';
 import { reviewStatusSchema } from './schemas';
 
@@ -22,6 +24,8 @@ export const articleSchema = z
     toMonths: z.number().int().nonnegative(),
     icon: z.string().min(1),
     emoji: z.string().min(1),
+    /** Vector illustration shown on cards. */
+    illustration: z.enum(illustrationNames),
     tone: z.enum(['surface', 'muted', 'accent', 'sky', 'deep']),
     readMinutes: z.number().int().positive(),
     sections: z.array(sectionSchema).min(1),

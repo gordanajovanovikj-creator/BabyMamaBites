@@ -65,3 +65,10 @@ describe('librarySections and pickedForAge', () => {
     expect(picked[0].source).toBe('article');
   });
 });
+
+describe('illustrations', () => {
+  it('gives every article and insight its own illustration', () => {
+    const names = [...solidsArticles, ...insights].map((x) => x.illustration);
+    expect(new Set(names).size).toBe(names.length);
+  });
+});
