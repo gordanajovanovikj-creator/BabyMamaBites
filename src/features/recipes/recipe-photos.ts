@@ -20,6 +20,7 @@ const photos: Record<string, ImageSource> = {
   'chicken-stir-fry': require('@/assets/images/recipes/chicken-stir-fry.jpg'),
   'baby-peanut-oatmeal': require('@/assets/images/recipes/baby-peanut-oatmeal.jpg'),
   'baby-banana-oat-pancakes': require('@/assets/images/recipes/baby-banana-oat-pancakes.jpg'),
+  'toddler-turkey-meatballs': require('@/assets/images/recipes/toddler-turkey-meatballs.jpg'),
   'overnight-oats': require('@/assets/images/recipes/overnight-oats.jpg'),
   'pb-banana-shake': require('@/assets/images/recipes/pb-banana-shake.jpg'),
   'warm-spiced-milk': require('@/assets/images/recipes/warm-spiced-milk.jpg'),
