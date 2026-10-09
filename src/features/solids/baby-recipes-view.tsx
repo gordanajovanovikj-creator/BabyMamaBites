@@ -17,10 +17,12 @@ export type BabyRecipesViewProps = {
   babyName: string | null;
   /** Age used for feeding (corrected where it applies). */
   ageMonths: number;
+  /** Whether the search box is showing (toggled from the page header). */
+  searchOpen: boolean;
 };
 
 /** Baby and toddler recipes grouped by age, the baby's current group first (Mom-tab style). */
-export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
+export function BabyRecipesView({ babyName, ageMonths, searchOpen }: BabyRecipesViewProps) {
   const household = useHousehold();
   const { ids: favoriteIds } = useFavorites();
   const makeAgain = favoriteIds
@@ -32,7 +34,13 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
   const hidden = findRecipes(babyRecipes, household).hiddenForSafety;
   const [categoryId, setCategoryId] = useState<string | null>(null);
   const [query, setQuery] = useState('');
-  const searching = query.trim().length > 0;
+  const searching = searchOpen && query.trim().length > 0;
+  // Closing the box clears the search.
+  const [wasOpen, setWasOpen] = useState(searchOpen);
+  if (wasOpen !== searchOpen) {
+    setWasOpen(searchOpen);
+    if (!searchOpen) setQuery('');
+  }
   // Filter chips run youngest to oldest; only age groups with recipes for this household.
   const chips = byAge.filter((c) => sections.some((s) => s.category.id === c.id));
   const selected = chips.find((c) => c.id === categoryId);
@@ -42,14 +50,17 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
 
   return (
     <>
-      <View className="px-5">
-        <SearchField
-          label="Search baby recipes"
-          placeholder="Search recipes or ingredients"
-          value={query}
-          onChangeText={setQuery}
-        />
-      </View>
+      {searchOpen ? (
+        <View className="px-5">
+          <SearchField
+            label="Search baby recipes"
+            placeholder="Search recipes or ingredients"
+            value={query}
+            onChangeText={setQuery}
+            autoFocus
+          />
+        </View>
+      ) : null}
       {!searching ? (
         <CategoryChips categories={chips} selectedId={categoryId} onSelect={setCategoryId} />
       ) : null}

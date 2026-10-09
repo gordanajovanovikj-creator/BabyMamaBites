@@ -19,7 +19,7 @@ import { useFoodLog } from '@/features/solids/food-log-context';
 import { LogEntryRow } from '@/features/solids/log-entry-row';
 import { WeekCard } from '@/features/solids/week-card';
 import { WeekStrip } from '@/features/solids/week-strip';
-import { AppText, Button, Card, Notice, Screen, SegmentedTabs } from '@/ui';
+import { AppText, Button, Card, Notice, Screen, SearchButton, SegmentedTabs } from '@/ui';
 
 const RECENT = 5;
 
@@ -30,6 +30,7 @@ export default function BabyScreen() {
   const { profile } = useProfile();
   const { entries } = useFoodLog();
   const [tab, setTab] = useState<Tab>('recipes');
+  const [searchOpen, setSearchOpen] = useState(false);
   if (!profile) return null;
 
   const now = today();
@@ -46,7 +47,16 @@ export default function BabyScreen() {
   return (
     <Screen padded={false} edgeToEdgeTop className="gap-6">
       <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
-        <AppText variant="display">Baby</AppText>
+        <View className="flex-row items-center justify-between gap-3">
+          <AppText variant="display">Baby</AppText>
+          {tab === 'recipes' ? (
+            <SearchButton
+              open={searchOpen}
+              onPress={() => setSearchOpen((open) => !open)}
+              subject="baby recipes"
+            />
+          ) : null}
+        </View>
         <AppText variant="caption">
           {current === null
             ? `${name}'s starting-solids plan begins around ${startsOn}.`
@@ -63,7 +73,11 @@ export default function BabyScreen() {
       </View>
 
       {tab === 'recipes' ? (
-        <BabyRecipesView babyName={profile.babyName} ageMonths={babyAge(profile, now).months} />
+        <BabyRecipesView
+          babyName={profile.babyName}
+          ageMonths={babyAge(profile, now).months}
+          searchOpen={searchOpen}
+        />
       ) : (
         <>
           <View className="gap-4 px-5">

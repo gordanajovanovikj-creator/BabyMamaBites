@@ -12,7 +12,15 @@ import { RecipeCard } from '@/features/recipes/recipe-card';
 import { RecipeGrid } from '@/features/recipes/recipe-grid';
 import { RecipeSearchResults } from '@/features/recipes/recipe-search-results';
 import { RecipeSection } from '@/features/recipes/recipe-section';
-import { AppText, Notice, Screen, SearchField, SegmentedTabs, SymbolIcon } from '@/ui';
+import {
+  AppText,
+  Notice,
+  Screen,
+  SearchButton,
+  SearchField,
+  SegmentedTabs,
+  SymbolIcon,
+} from '@/ui';
 
 type Tab = 'recipes' | 'favorites';
 
@@ -22,8 +30,13 @@ export default function MomScreen() {
   const { ids: favoriteIds } = useFavorites();
   const [tab, setTab] = useState<Tab>('recipes');
   const [categoryId, setCategoryId] = useState<string | null>(null);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState('');
-  const searching = query.trim().length > 0;
+  const searching = searchOpen && query.trim().length > 0;
+  const toggleSearch = () => {
+    setSearchOpen((open) => !open);
+    setQuery('');
+  };
 
   const sections = recipeSections(recipeCategories, recipes, household);
   const hidden = findRecipes(recipes, household).hiddenForSafety;
@@ -37,7 +50,12 @@ export default function MomScreen() {
     <Screen padded={false} edgeToEdgeTop className="gap-6">
       <View className="gap-3 px-5" style={{ paddingTop: insets.top + 16 }}>
         <View className="gap-1">
-          <AppText variant="display">Mom</AppText>
+          <View className="flex-row items-center justify-between gap-3">
+            <AppText variant="display">Mom</AppText>
+            {tab === 'recipes' ? (
+              <SearchButton open={searchOpen} onPress={toggleSearch} subject="recipes" />
+            ) : null}
+          </View>
           <AppText variant="caption">Recipes to keep you nourished, matched to your time.</AppText>
         </View>
         <SegmentedTabs<Tab>
@@ -55,14 +73,17 @@ export default function MomScreen() {
 
       {tab === 'recipes' ? (
         <>
-          <View className="px-5">
-            <SearchField
-              label="Search recipes"
-              placeholder="Search recipes or ingredients"
-              value={query}
-              onChangeText={setQuery}
-            />
-          </View>
+          {searchOpen ? (
+            <View className="px-5">
+              <SearchField
+                label="Search recipes"
+                placeholder="Search recipes or ingredients"
+                value={query}
+                onChangeText={setQuery}
+                autoFocus
+              />
+            </View>
+          ) : null}
           {!searching ? (
             <CategoryChips categories={chips} selectedId={categoryId} onSelect={setCategoryId} />
           ) : null}

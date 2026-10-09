@@ -11,6 +11,7 @@ export { Notice } from './notice';
 export { OptionCard } from './option-card';
 export { RoundIconButton } from './round-icon-button';
 export { Screen } from './screen';
+export { SearchButton } from './search-button';
 export { SearchField } from './search-field';
 export { SegmentedTabs } from './segmented-tabs';
 export { SymbolIcon } from './symbol-icon';

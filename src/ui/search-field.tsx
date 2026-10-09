@@ -11,10 +11,18 @@ export type SearchFieldProps = {
   placeholder: string;
   /** Read by VoiceOver, e.g. "Search recipes". */
   label: string;
+  /** Focus the box (and open the keyboard) when it appears. */
+  autoFocus?: boolean;
 };
 
 /** Rounded search box with a clear button, 48pt tall. */
-export function SearchField({ value, onChangeText, placeholder, label }: SearchFieldProps) {
+export function SearchField({
+  value,
+  onChangeText,
+  placeholder,
+  label,
+  autoFocus,
+}: SearchFieldProps) {
   const palette = usePalette();
   return (
     <View className="min-h-12 flex-row items-center gap-2 rounded-full border-2 border-border bg-surface pl-4 pr-1">
@@ -26,6 +34,7 @@ export function SearchField({ value, onChangeText, placeholder, label }: SearchF
         onChangeText={onChangeText}
         placeholder={placeholder}
         placeholderTextColor={palette.inkMuted}
+        autoFocus={autoFocus}
         returnKeyType="search"
         autoCorrect={false}
         clearButtonMode="never"

@@ -8,7 +8,7 @@ import { searchLibrary } from '@/domain/search';
 import { LibraryCarousel } from '@/features/library/library-carousel';
 import { LibraryTile } from '@/features/library/library-tile';
 import { useLibrary } from '@/features/library/use-library';
-import { AppText, Chip, Notice, Screen, SearchField } from '@/ui';
+import { AppText, Chip, Notice, Screen, SearchButton, SearchField } from '@/ui';
 
 const GAP = 12;
 const SIDE = 20;
@@ -19,8 +19,13 @@ export default function InsightsScreen() {
   const { items, ageMonths, babyName } = useLibrary();
   const { width } = useWindowDimensions();
   const [categoryId, setCategoryId] = useState<string | null>(null);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState('');
-  const searching = query.trim().length > 0;
+  const searching = searchOpen && query.trim().length > 0;
+  const toggleSearch = () => {
+    setSearchOpen((open) => !open);
+    setQuery('');
+  };
   const results = searchLibrary(
     items,
     query,
@@ -36,18 +41,24 @@ export default function InsightsScreen() {
   return (
     <Screen padded={false} edgeToEdgeTop className="gap-6">
       <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
-        <AppText variant="display">Insights</AppText>
+        <View className="flex-row items-center justify-between gap-3">
+          <AppText variant="display">Insights</AppText>
+          <SearchButton open={searchOpen} onPress={toggleSearch} subject="articles and tips" />
+        </View>
         <AppText variant="caption">Articles and tips for you and {name}, chosen by age.</AppText>
       </View>
 
-      <View className="px-5">
-        <SearchField
-          label="Search articles and tips"
-          placeholder="Search articles and tips"
-          value={query}
-          onChangeText={setQuery}
-        />
-      </View>
+      {searchOpen ? (
+        <View className="px-5">
+          <SearchField
+            label="Search articles and tips"
+            placeholder="Search articles and tips"
+            value={query}
+            onChangeText={setQuery}
+            autoFocus
+          />
+        </View>
+      ) : null}
 
       {searching ? null : (
         <ScrollView
