@@ -75,3 +75,4 @@ Bundled in `assets/images/insights/` and registered in
 | solids-freezer-cubes | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | homemade-baby-food | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | hunger-cues | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
+| high-chair | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
