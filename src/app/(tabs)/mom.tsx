@@ -15,7 +15,7 @@ import { AppText, Notice, Screen, SegmentedTabs, SymbolIcon } from '@/ui';
 
 type Tab = 'recipes' | 'favorites';
 
-export default function FoodScreen() {
+export default function MomScreen() {
   const insets = useSafeAreaInsets();
   const household = useHousehold();
   const { ids: favoriteIds } = useFavorites();
@@ -30,7 +30,10 @@ export default function FoodScreen() {
   return (
     <Screen padded={false} edgeToEdgeTop className="gap-6">
       <View className="gap-3 px-5" style={{ paddingTop: insets.top + 16 }}>
-        <AppText variant="display">Food</AppText>
+        <View className="gap-1">
+          <AppText variant="display">Mom</AppText>
+          <AppText variant="caption">Recipes to keep you nourished, matched to your time.</AppText>
+        </View>
         <SegmentedTabs<Tab>
           tabs={[
             { id: 'recipes', label: 'Recipes' },

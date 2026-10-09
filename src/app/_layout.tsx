@@ -47,7 +47,6 @@ function RootStack() {
           options={{ presentation: 'modal', headerShown: true, title: 'New food' }}
         />
         <Stack.Screen name="solids/article/[id]" />
-        <Stack.Screen name="insights/index" options={{ headerShown: true, title: '' }} />
         <Stack.Screen name="solids/history" options={{ headerShown: true, title: 'Food log' }} />
         <Stack.Screen
           name="solids/choking"

@@ -15,7 +15,7 @@ export type BabyRecipesViewProps = {
   ageMonths: number;
 };
 
-/** Baby and toddler recipes grouped by age, the baby's current group first (Food-tab style). */
+/** Baby and toddler recipes grouped by age, the baby's current group first (Mom-tab style). */
 export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
   const household = useHousehold();
   const { ordered, current } = babyCollectionsFor(babyRecipeCategories, ageMonths);

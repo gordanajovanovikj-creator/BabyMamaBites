@@ -69,7 +69,7 @@ export function AgeHero({ profile }: { profile: Profile }) {
         </AppText>
       </View>
 
-      <Button label="Find a meal" size="compact" onPress={() => router.navigate('/recipes')} />
+      <Button label="Find a meal" size="compact" onPress={() => router.navigate('/mom')} />
     </View>
   );
 }

@@ -73,7 +73,7 @@ const fileSchema = z.object({
 const file = fileSchema.parse(recipesJson);
 const babyFile = fileSchema.parse(babyRecipesJson);
 
-/** Grown-up recipes (Food tab). */
+/** Grown-up recipes (Mom tab). */
 export const recipeCategories: RecipeCategory[] = file.categories;
 export const recipes: Recipe[] = file.recipes;
 

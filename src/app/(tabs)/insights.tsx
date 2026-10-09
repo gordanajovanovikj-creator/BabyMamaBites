@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ScrollView, useWindowDimensions, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { insightCategories } from '@/content/insight-categories';
 import { librarySections, pickedForAge } from '@/domain/library';
@@ -13,6 +14,7 @@ const SIDE = 20;
 
 /** Insights library for mom and baby, Flo-style: category chips, then story-card rows. */
 export default function InsightsScreen() {
+  const insets = useSafeAreaInsets();
   const { items, ageMonths, babyName } = useLibrary();
   const { width } = useWindowDimensions();
   const [categoryId, setCategoryId] = useState<string | null>(null);
@@ -24,8 +26,8 @@ export default function InsightsScreen() {
   const name = babyName ?? 'your baby';
 
   return (
-    <Screen padded={false} className="gap-6 pt-2">
-      <View className="gap-1 px-5">
+    <Screen padded={false} edgeToEdgeTop className="gap-6">
+      <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
         <AppText variant="display">Insights</AppText>
         <AppText variant="caption">Articles and tips for you and {name}, chosen by age.</AppText>
       </View>
