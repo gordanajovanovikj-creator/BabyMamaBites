@@ -74,3 +74,4 @@ Bundled in `assets/images/insights/` and registered in
 | food-refusal | Pixabay | timkraaijvanger | https://pixabay.com/photos/toddler-girl-laugh-blue-eyes-cute-2675884/ | Pixabay Content License | 2026-10-09 |
 | solids-freezer-cubes | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | homemade-baby-food | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
+| hunger-cues | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
