@@ -7,6 +7,7 @@ import type { ImageSource } from 'expo-image';
 const photos: Record<string, ImageSource> = {
   'banana-oat-smoothie': require('@/assets/images/recipes/banana-oat-smoothie.jpg'),
   'baby-oat-cereal': require('@/assets/images/recipes/baby-oat-cereal.jpg'),
+  'baby-salmon-sweet-potato': require('@/assets/images/recipes/baby-salmon-sweet-potato.jpg'),
 };
 
 export function recipePhoto(recipeId: string): ImageSource | undefined {
