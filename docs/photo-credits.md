@@ -84,3 +84,4 @@ Bundled in `assets/images/insights/` and registered in
 | toddler-picky-phases | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | cups-and-drinks | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | solids-choking | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
+| foods-to-avoid | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
