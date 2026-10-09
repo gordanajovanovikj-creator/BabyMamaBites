@@ -13,6 +13,8 @@ export type LibraryItem = {
   source: 'article' | 'insight';
   category: string;
   title: string;
+  /** One-line summary, used by search. */
+  summary: string;
   tone: Article['tone'];
   icon: string;
   emoji: string;
@@ -40,6 +42,7 @@ export function articleItem(a: Article): LibraryItem {
     source: 'article',
     category: a.category,
     title: a.title,
+    summary: a.summary,
     tone: a.tone,
     icon: a.icon,
     emoji: a.emoji,
@@ -57,6 +60,7 @@ export function insightItem(i: Insight): LibraryItem {
     source: 'insight',
     category: i.category,
     title: i.title,
+    summary: i.summary,
     tone: i.tone,
     icon: i.icon,
     emoji: i.emoji,

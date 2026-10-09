@@ -10,8 +10,9 @@ import { CategoryChips } from '@/features/recipes/category-chips';
 import { HouseholdNote } from '@/features/recipes/household-note';
 import { RecipeCard } from '@/features/recipes/recipe-card';
 import { RecipeGrid } from '@/features/recipes/recipe-grid';
+import { RecipeSearchResults } from '@/features/recipes/recipe-search-results';
 import { RecipeSection } from '@/features/recipes/recipe-section';
-import { AppText, Notice, Screen, SegmentedTabs, SymbolIcon } from '@/ui';
+import { AppText, Notice, Screen, SearchField, SegmentedTabs, SymbolIcon } from '@/ui';
 
 type Tab = 'recipes' | 'favorites';
 
@@ -21,6 +22,8 @@ export default function MomScreen() {
   const { ids: favoriteIds } = useFavorites();
   const [tab, setTab] = useState<Tab>('recipes');
   const [categoryId, setCategoryId] = useState<string | null>(null);
+  const [query, setQuery] = useState('');
+  const searching = query.trim().length > 0;
 
   const sections = recipeSections(recipeCategories, recipes, household);
   const hidden = findRecipes(recipes, household).hiddenForSafety;
@@ -52,11 +55,23 @@ export default function MomScreen() {
 
       {tab === 'recipes' ? (
         <>
-          <CategoryChips categories={chips} selectedId={categoryId} onSelect={setCategoryId} />
+          <View className="px-5">
+            <SearchField
+              label="Search recipes"
+              placeholder="Search recipes or ingredients"
+              value={query}
+              onChangeText={setQuery}
+            />
+          </View>
+          {!searching ? (
+            <CategoryChips categories={chips} selectedId={categoryId} onSelect={setCategoryId} />
+          ) : null}
           <View className="px-5">
             <HouseholdNote household={household} hidden={hidden} />
           </View>
-          {selected ? (
+          {searching ? (
+            <RecipeSearchResults recipes={findRecipes(recipes, household).recipes} query={query} />
+          ) : selected ? (
             <RecipeGrid
               title={selected.label}
               subtitle={selected.description}

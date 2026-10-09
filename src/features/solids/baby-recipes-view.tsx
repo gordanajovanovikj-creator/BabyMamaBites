@@ -8,9 +8,10 @@ import { useHousehold } from '@/features/profile/use-household';
 import { CategoryChips } from '@/features/recipes/category-chips';
 import { HouseholdNote } from '@/features/recipes/household-note';
 import { RecipeGrid } from '@/features/recipes/recipe-grid';
+import { RecipeSearchResults } from '@/features/recipes/recipe-search-results';
 import { RecipeSection } from '@/features/recipes/recipe-section';
 import { RECIPE_TILE_WIDTH, RecipeTile } from '@/features/recipes/recipe-tile';
-import { AppText, Card, Notice, SymbolIcon } from '@/ui';
+import { AppText, Card, Notice, SearchField, SymbolIcon } from '@/ui';
 
 export type BabyRecipesViewProps = {
   babyName: string | null;
@@ -30,6 +31,8 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
   const sections = recipeSections(ordered, babyRecipes, household);
   const hidden = findRecipes(babyRecipes, household).hiddenForSafety;
   const [categoryId, setCategoryId] = useState<string | null>(null);
+  const [query, setQuery] = useState('');
+  const searching = query.trim().length > 0;
   // Filter chips run youngest to oldest; only age groups with recipes for this household.
   const chips = byAge.filter((c) => sections.some((s) => s.category.id === c.id));
   const selected = chips.find((c) => c.id === categoryId);
@@ -39,7 +42,17 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
 
   return (
     <>
-      <CategoryChips categories={chips} selectedId={categoryId} onSelect={setCategoryId} />
+      <View className="px-5">
+        <SearchField
+          label="Search baby recipes"
+          placeholder="Search recipes or ingredients"
+          value={query}
+          onChangeText={setQuery}
+        />
+      </View>
+      {!searching ? (
+        <CategoryChips categories={chips} selectedId={categoryId} onSelect={setCategoryId} />
+      ) : null}
       <View className="gap-3 px-5">
         {current === null ? (
           <Notice
@@ -49,7 +62,9 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
         ) : null}
         <HouseholdNote household={household} hidden={hidden} />
       </View>
-      {selected ? (
+      {searching ? (
+        <RecipeSearchResults recipes={findRecipes(babyRecipes, household).recipes} query={query} />
+      ) : selected ? (
         <RecipeGrid
           title={selected.label}
           subtitle={`From ${selected.fromMonths ?? 0} months · ${selected.description}`}

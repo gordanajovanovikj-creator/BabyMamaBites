@@ -4,10 +4,11 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { insightCategories } from '@/content/insight-categories';
 import { librarySections, pickedForAge } from '@/domain/library';
+import { searchLibrary } from '@/domain/search';
 import { LibraryCarousel } from '@/features/library/library-carousel';
 import { LibraryTile } from '@/features/library/library-tile';
 import { useLibrary } from '@/features/library/use-library';
-import { AppText, Chip, Notice, Screen } from '@/ui';
+import { AppText, Chip, Notice, Screen, SearchField } from '@/ui';
 
 const GAP = 12;
 const SIDE = 20;
@@ -18,6 +19,13 @@ export default function InsightsScreen() {
   const { items, ageMonths, babyName } = useLibrary();
   const { width } = useWindowDimensions();
   const [categoryId, setCategoryId] = useState<string | null>(null);
+  const [query, setQuery] = useState('');
+  const searching = query.trim().length > 0;
+  const results = searchLibrary(
+    items,
+    query,
+    (id) => insightCategories.find((c) => c.id === id)?.label ?? '',
+  );
 
   const sections = librarySections(insightCategories, items, ageMonths);
   const picked = pickedForAge(items, ageMonths);
@@ -32,23 +40,61 @@ export default function InsightsScreen() {
         <AppText variant="caption">Articles and tips for you and {name}, chosen by age.</AppText>
       </View>
 
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerClassName="gap-2 px-5"
-      >
-        <Chip label="All" selected={categoryId === null} onPress={() => setCategoryId(null)} />
-        {sections.map((s) => (
-          <Chip
-            key={s.category.id}
-            label={`${s.category.emoji} ${s.category.label}`}
-            selected={categoryId === s.category.id}
-            onPress={() => setCategoryId(s.category.id)}
-          />
-        ))}
-      </ScrollView>
+      <View className="px-5">
+        <SearchField
+          label="Search articles and tips"
+          placeholder="Search articles and tips"
+          value={query}
+          onChangeText={setQuery}
+        />
+      </View>
 
-      {selected ? (
+      {searching ? null : (
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerClassName="gap-2 px-5"
+        >
+          <Chip label="All" selected={categoryId === null} onPress={() => setCategoryId(null)} />
+          {sections.map((s) => (
+            <Chip
+              key={s.category.id}
+              label={`${s.category.emoji} ${s.category.label}`}
+              selected={categoryId === s.category.id}
+              onPress={() => setCategoryId(s.category.id)}
+            />
+          ))}
+        </ScrollView>
+      )}
+
+      {searching ? (
+        results.length ? (
+          <View className="gap-4 px-5">
+            <AppText variant="heading" size="2xl">
+              {`${results.length} ${results.length === 1 ? 'result' : 'results'} found`}
+            </AppText>
+            <View className="flex-row flex-wrap" style={{ gap: GAP }}>
+              {results.map((item) => (
+                <LibraryTile
+                  key={`${item.source}-${item.id}`}
+                  item={item}
+                  ageMonths={ageMonths}
+                  width={cell}
+                />
+              ))}
+            </View>
+          </View>
+        ) : (
+          <View className="gap-1 px-5 py-6">
+            <AppText variant="heading" className="text-center">
+              Nothing matches “{query.trim()}”
+            </AppText>
+            <AppText variant="caption" className="text-center">
+              Try a simpler word, like “iron” or “allergens”.
+            </AppText>
+          </View>
+        )
+      ) : selected ? (
         <View className="gap-4 px-5">
           <View className="gap-1">
             <AppText variant="heading" size="2xl">
