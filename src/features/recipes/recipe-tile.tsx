@@ -10,13 +10,20 @@ import { RecipeImage } from './recipe-image';
 
 export const RECIPE_TILE_WIDTH = 240;
 
-/** Large, picture-style recipe card for horizontal rows (Sweat-style). */
-export function RecipeTile({ recipe }: { recipe: Recipe }) {
+/** Large, picture-style recipe card for horizontal rows (Sweat-style) and grids. */
+export function RecipeTile({
+  recipe,
+  width = RECIPE_TILE_WIDTH,
+}: {
+  recipe: Recipe;
+  /** Set for grid cells; defaults to the row width. */
+  width?: number;
+}) {
   const { isFavorite, toggle } = useFavorites();
   const saved = isFavorite(recipe.id);
 
   return (
-    <View style={{ width: RECIPE_TILE_WIDTH }} className="gap-2">
+    <View style={{ width }} className="gap-2">
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={`${recipe.title}. ${recipeKicker(recipe)}. ${recipeMeta(recipe)}.`}

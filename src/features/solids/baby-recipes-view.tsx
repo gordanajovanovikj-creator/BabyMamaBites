@@ -1,15 +1,17 @@
-import { router } from 'expo-router';
-import { ScrollView, View } from 'react-native';
+import { useState } from 'react';
+import { ScrollView, useWindowDimensions, View } from 'react-native';
 
 import { babyRecipeCategories, babyRecipes } from '@/content/recipes';
 import { babyCollectionsFor, findRecipes, recipeSections } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { useHousehold } from '@/features/profile/use-household';
-import { CategoryRow } from '@/features/recipes/category-row';
 import { HouseholdNote } from '@/features/recipes/household-note';
 import { RecipeSection } from '@/features/recipes/recipe-section';
 import { RECIPE_TILE_WIDTH, RecipeTile } from '@/features/recipes/recipe-tile';
-import { AppText, Card, Notice, SymbolIcon } from '@/ui';
+import { AppText, Card, Chip, Notice, SymbolIcon } from '@/ui';
+
+const GAP = 12;
+const SIDE = 20;
 
 export type BabyRecipesViewProps = {
   babyName: string | null;
@@ -28,14 +30,33 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
   const byAge = [...babyRecipeCategories].sort((a, b) => (a.fromMonths ?? 0) - (b.fromMonths ?? 0));
   const sections = recipeSections(ordered, babyRecipes, household);
   const hidden = findRecipes(babyRecipes, household).hiddenForSafety;
+  const { width } = useWindowDimensions();
+  const [categoryId, setCategoryId] = useState<string | null>(null);
+  // Filter chips run youngest to oldest; only age groups with recipes for this household.
+  const chips = byAge.filter((c) => sections.some((s) => s.category.id === c.id));
+  const selected = chips.find((c) => c.id === categoryId);
+  const selectedRecipes = selected
+    ? findRecipes(babyRecipes, household, { categoryId: selected.id }).recipes
+    : [];
+  const cell = Math.floor((Math.min(width, 640) - SIDE * 2 - GAP) / 2);
 
   return (
     <>
-      <CategoryRow
-        categories={byAge}
-        selectedId={current}
-        onSelect={(id) => id && router.push({ pathname: '/category/[id]', params: { id } })}
-      />
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerClassName="gap-2 px-5"
+      >
+        <Chip label="All" selected={categoryId === null} onPress={() => setCategoryId(null)} />
+        {chips.map((c) => (
+          <Chip
+            key={c.id}
+            label={`${c.emoji} ${c.label}`}
+            selected={categoryId === c.id}
+            onPress={() => setCategoryId(c.id)}
+          />
+        ))}
+      </ScrollView>
       <View className="gap-3 px-5">
         {current === null ? (
           <Notice
@@ -45,55 +66,75 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
         ) : null}
         <HouseholdNote household={household} hidden={hidden} />
       </View>
-      {sections.map((s) => {
-        const from = s.category.fromMonths ?? 0;
-        const subtitle =
-          s.category.id === current
-            ? `For ${babyName ?? 'your baby'} now · from ${from} months`
-            : from > ageMonths
-              ? `Coming up · from ${from} months`
-              : `From ${from} months`;
-        return (
-          <RecipeSection
-            key={s.category.id}
-            category={s.category}
-            recipes={s.recipes}
-            subtitle={subtitle}
-          />
-        );
-      })}
-      <View className="gap-3">
-        <View className="px-5">
-          <AppText variant="heading" size="2xl">
-            Make again
-          </AppText>
-          <AppText variant="caption" size="sm">
-            {`${babyName ?? 'Your baby'}'s favorites, saved on this phone`}
-          </AppText>
-        </View>
-        {makeAgain.length ? (
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            decelerationRate="fast"
-            snapToInterval={RECIPE_TILE_WIDTH + 16}
-            contentContainerClassName="gap-4 px-5"
-          >
-            {makeAgain.map((r) => (
-              <RecipeTile key={r.id} recipe={r} />
-            ))}
-          </ScrollView>
-        ) : (
-          <View className="px-5">
-            <Card tone="muted" className="flex-row items-center gap-4">
-              <SymbolIcon icon="heart" emoji="♡" size={28} />
-              <AppText className="flex-1">
-                Tap the heart on a recipe {babyName ?? 'your baby'} loved to keep it here.
-              </AppText>
-            </Card>
+      {selected ? (
+        <View className="gap-4 px-5">
+          <View className="gap-1">
+            <AppText variant="heading" size="2xl">
+              {selected.label}
+            </AppText>
+            <AppText variant="caption">
+              {`From ${selected.fromMonths ?? 0} months · ${selected.description}`}
+            </AppText>
           </View>
-        )}
-      </View>
+          <View className="flex-row flex-wrap" style={{ gap: GAP }}>
+            {selectedRecipes.map((r) => (
+              <RecipeTile key={r.id} recipe={r} width={cell} />
+            ))}
+          </View>
+        </View>
+      ) : (
+        <>
+          {sections.map((s) => {
+            const from = s.category.fromMonths ?? 0;
+            const subtitle =
+              s.category.id === current
+                ? `For ${babyName ?? 'your baby'} now · from ${from} months`
+                : from > ageMonths
+                  ? `Coming up · from ${from} months`
+                  : `From ${from} months`;
+            return (
+              <RecipeSection
+                key={s.category.id}
+                category={s.category}
+                recipes={s.recipes}
+                subtitle={subtitle}
+              />
+            );
+          })}
+          <View className="gap-3">
+            <View className="px-5">
+              <AppText variant="heading" size="2xl">
+                Make again
+              </AppText>
+              <AppText variant="caption" size="sm">
+                {`${babyName ?? 'Your baby'}'s favorites, saved on this phone`}
+              </AppText>
+            </View>
+            {makeAgain.length ? (
+              <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                decelerationRate="fast"
+                snapToInterval={RECIPE_TILE_WIDTH + 16}
+                contentContainerClassName="gap-4 px-5"
+              >
+                {makeAgain.map((r) => (
+                  <RecipeTile key={r.id} recipe={r} />
+                ))}
+              </ScrollView>
+            ) : (
+              <View className="px-5">
+                <Card tone="muted" className="flex-row items-center gap-4">
+                  <SymbolIcon icon="heart" emoji="♡" size={28} />
+                  <AppText className="flex-1">
+                    Tap the heart on a recipe {babyName ?? 'your baby'} loved to keep it here.
+                  </AppText>
+                </Card>
+              </View>
+            )}
+          </View>
+        </>
+      )}
 
       <View className="px-5">
         <Notice
