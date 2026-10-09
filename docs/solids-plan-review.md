@@ -70,3 +70,26 @@ reactions too and the two can't be fully separated, so worried parents should as
 pediatrician how to introduce egg. Source: ACAAI, "Egg Allergy" ("Allergy to egg white
 proteins is most common"; "it is not possible to completely separate the white from the
 yolk"). This replaces a suggested "yolk only" tip, which the source doesn't support.
+
+## Insights articles (`src/content/solids-articles.json`)
+
+12 draft articles on the Plan tab, each with an age range and sources. The Insights row and
+the "See all" page show the articles for the baby's current age first, then upcoming ones.
+
+| Article | Ages | Sources |
+| --- | --- | --- |
+| Is my baby ready for solids? | 4–7 months | cdc-solids, aap-solids |
+| Choosing and using a high chair | 5 months+ | AAP "6 Quick High Chair Safety Tips", CPSC high chair standard (2019) |
+| Purees or finger foods? | 5–10 months | cdc-textures, aap-solids, cdc-utensils |
+| What to offer first | 5–9 months | cdc-solids, aap-solids, cdc-iron |
+| Introducing common allergens | 5–12 months | aap-allergens, aap-anaphylaxis, acaai-egg |
+| Gagging or choking? | 5 months+ | aap-choking, cdc-choking |
+| Hungry or full? | 6 months+ | cdc-hungry |
+| Cups, water and juice | 6–14 months | cdc-utensils, cdc-encourage, aap-solids |
+| Making and storing baby food | 5–12 months | aap-solids, cdc-solids |
+| Foods to skip in the first year | 5–12 months | cdc-avoid, cdc-cowsmilk |
+| When your baby refuses food | 8 months+ | cdc-picky |
+| Moving to cow's milk | 11–18 months | cdc-cowsmilk |
+
+For the reviewer: the high-chair article suggests checking CPSC.gov for recalls on a
+secondhand chair; that line is based on CPSC's recall rules, not on a tip from the page.

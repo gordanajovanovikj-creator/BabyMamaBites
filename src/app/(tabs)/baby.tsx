@@ -11,6 +11,7 @@ import { babyAge, solidsStartDate, solidsWeek } from '@/domain/stage';
 import { useProfile } from '@/features/profile/profile-context';
 import { SourceLinks } from '@/features/shared/source-links';
 import { AllergenTracker } from '@/features/solids/allergen-tracker';
+import { ArticlesRow } from '@/features/solids/articles-row';
 import { BabyRecipesView } from '@/features/solids/baby-recipes-view';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { LogEntryRow } from '@/features/solids/log-entry-row';
@@ -104,6 +105,8 @@ export default function BabyScreen() {
             </AppText>
             <WeekStrip weeks={planWeeks} current={current} />
           </View>
+
+          <ArticlesRow ageMonths={babyAge(profile, now).months} />
 
           <View className="gap-4 px-5">
             <Button label="Log a food" onPress={() => router.push('/solids/log')} />

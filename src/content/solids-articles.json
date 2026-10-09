@@ -1,0 +1,568 @@
+{
+  "version": 1,
+  "region": "US",
+  "accessed": "2026-10-08",
+  "articles": [
+    {
+      "id": "ready",
+      "title": "Is my baby ready for solids?",
+      "summary": "[PLACEHOLDER - needs expert review] The signs to look for, and why about 6 months is the usual start.",
+      "fromMonths": 4,
+      "toMonths": 7,
+      "icon": "checklist",
+      "emoji": "✅",
+      "tone": "accent",
+      "readMinutes": 3,
+      "sections": [
+        {
+          "heading": "When to start",
+          "paragraphs": [
+            "Most babies are ready for foods other than breast milk or formula at about 6 months. Starting before 4 months isn't recommended. Every baby is different, so look at your baby, not just the calendar.",
+            "From 6 to 12 months, breast milk or formula is still the main source of nutrition. Solid foods gradually become a bigger part of the diet."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Signs your baby is ready",
+          "paragraphs": ["Look for these signs together:"],
+          "bullets": [
+            "Sits up alone or with support",
+            "Can control their head and neck",
+            "Opens their mouth when you offer food",
+            "Swallows food rather than pushing it back out onto their chin",
+            "Brings objects to their mouth",
+            "Tries to grasp small objects, such as toys or food",
+            "Moves food from the front to the back of the tongue to swallow"
+          ]
+        },
+        {
+          "heading": "If the first tries don't go well",
+          "paragraphs": [
+            "If your baby pushes the food out and it dribbles down their chin, they may not be able to move it to the back of their mouth yet. That's normal: they've never had anything thicker than milk.",
+            "Try thinning the food the first few times, then gradually thicken it. Or wait a week or two and try again. If your baby cries or turns away, don't make them eat."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Babies born early",
+          "paragraphs": [
+            "If your baby was born early, ask your pediatrician when to start. This app counts your baby's age from their due date (corrected age) where that applies."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["cdc-solids", "aap-solids", "cdc-howmuch-food"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatrician"
+    },
+    {
+      "id": "high-chair",
+      "title": "Choosing and using a high chair",
+      "summary": "[PLACEHOLDER - needs expert review] What to look for when you buy one, and how to use it safely at every meal.",
+      "fromMonths": 5,
+      "toMonths": 24,
+      "icon": "chair.fill",
+      "emoji": "🪑",
+      "tone": "sky",
+      "readMinutes": 3,
+      "sections": [
+        {
+          "heading": "Why it matters",
+          "paragraphs": [
+            "High chairs are linked to thousands of emergency room visits each year. Most injuries happen when a child climbs in or out, when the chair tips as a child pushes back or rocks, or when a part like the strap, tray or lock fails."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What to look for",
+          "paragraphs": [],
+          "bullets": [
+            "A chair that can't be tipped over easily.",
+            "A manufacture date on or after June 19, 2019. Chairs made since then must meet a federal standard for stability, restraints and warning labels. The date is on a label on the chair.",
+            "If it folds, a lock that holds every time you set it up.",
+            "Straps that include a crotch strap, not just a waist strap.",
+            "For a secondhand chair, check that it hasn't been recalled at CPSC.gov."
+          ]
+        },
+        {
+          "heading": "At every meal",
+          "paragraphs": [],
+          "bullets": [
+            "Use the safety straps every time, including the crotch strap, and adjust them to fit snugly. This stops your baby from slipping down.",
+            "Don't rely on the tray to hold your baby in. It isn't a restraint.",
+            "Never let your child stand in the high chair.",
+            "Keep the chair away from counters and tables; a child can push off hard enough to tip it.",
+            "Never leave your baby alone in the chair, and don't let older children climb or play on it."
+          ]
+        },
+        {
+          "heading": "Hook-on chairs",
+          "paragraphs": [
+            "A chair that hooks onto a table isn't a good substitute for a freestanding one. If you use one when eating out or traveling, choose one that locks onto the table, make sure the table is heavy enough not to tip, and check that your child's feet can't push against a table support."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["aap-hc", "cpsc-hc"],
+      "reviewStatus": "placeholder",
+      "reviewer": "child safety specialist"
+    },
+    {
+      "id": "purees-vs-finger-foods",
+      "title": "Purees or finger foods?",
+      "summary": "[PLACEHOLDER - needs expert review] How textures build up, and how spoon-feeding and finger foods fit together.",
+      "fromMonths": 5,
+      "toMonths": 10,
+      "icon": "hand.raised.fill",
+      "emoji": "🥄",
+      "tone": "muted",
+      "readMinutes": 4,
+      "sections": [
+        {
+          "heading": "Start smooth",
+          "paragraphs": [
+            "At around 6 months, it's easiest for babies to eat very smooth mashed, pureed or strained foods. It can take time to adjust to new textures, and your baby may cough, gag or spit up while learning."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Then build up textures",
+          "paragraphs": [
+            "As your baby's skills develop, move on to thicker and lumpier foods, then finely chopped or ground foods. Trying different textures helps your baby:"
+          ],
+          "bullets": [
+            "Learn to accept and like a variety of foods",
+            "Develop fine motor skills, like pinching and picking up food",
+            "Develop chewing skills"
+          ]
+        },
+        {
+          "heading": "When finger foods fit in",
+          "paragraphs": [
+            "Once your baby can sit up and bring their hands or objects to their mouth, they can start feeding themselves finger foods. Choose foods that are soft, easy to swallow and cut into small pieces, for example:"
+          ],
+          "bullets": [
+            "Small pieces of banana",
+            "Scrambled eggs",
+            "Well-cooked pasta",
+            "Well-cooked, finely chopped chicken",
+            "Well-cooked, cut-up potatoes or peas",
+            "Small pieces of soft bread"
+          ]
+        },
+        {
+          "heading": "You don't have to choose",
+          "paragraphs": [
+            "Spoon-feeding and finger foods work well together. Many babies eat purees from a spoon while they practice picking up soft pieces. By about 12 months, most babies can easily feed themselves with their fingers."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Whichever way you go",
+          "paragraphs": [],
+          "bullets": [
+            "Offer foods that dissolve easily or don't need chewing, cut small.",
+            "Sit your baby upright, and stay with them the whole meal.",
+            "Keep meals calm and unhurried."
+          ]
+        }
+      ],
+      "sources": ["cdc-textures", "cdc-solids", "aap-solids", "cdc-utensils", "cdc-choking"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "first-foods",
+      "title": "What to offer first",
+      "summary": "[PLACEHOLDER - needs expert review] There's no set order, but iron-rich foods matter from the start.",
+      "fromMonths": 5,
+      "toMonths": 9,
+      "icon": "carrot.fill",
+      "emoji": "🥕",
+      "tone": "accent",
+      "readMinutes": 3,
+      "sections": [
+        {
+          "heading": "Any order works",
+          "paragraphs": [
+            "For most babies, foods don't need to come in a certain order. There's no evidence that offering fruit first makes a baby dislike vegetables."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Put iron first",
+          "paragraphs": [
+            "From about 6 months, your baby needs iron and zinc from food. Include foods like:"
+          ],
+          "bullets": [
+            "Pureed meat, poultry or fish",
+            "Iron-fortified infant cereal",
+            "Eggs",
+            "Beans, lentils and tofu"
+          ]
+        },
+        {
+          "heading": "One at a time",
+          "paragraphs": [
+            "Offer one single-ingredient food at a time, and wait 3 to 5 days before the next new food. That makes it easier to spot a reaction."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Build variety",
+          "paragraphs": [
+            "By 7 or 8 months, many babies are eating foods from every group: vegetables, fruits, proteins, dairy without added sugar, and whole grains.",
+            "If you use infant cereal, rotate oat, barley and multigrain rather than only rice cereal, which can raise arsenic exposure."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["cdc-solids", "aap-solids", "cdc-iron"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "allergens",
+      "title": "Introducing common allergens",
+      "summary": "[PLACEHOLDER - needs expert review] Why offering egg, peanut and other allergens early can help, and how to do it.",
+      "fromMonths": 5,
+      "toMonths": 12,
+      "icon": "shield.lefthalf.filled",
+      "emoji": "🥜",
+      "tone": "sky",
+      "readMinutes": 4,
+      "sections": [
+        {
+          "heading": "Early can help",
+          "paragraphs": [
+            "Experts used to suggest waiting. Newer research found no benefit to delaying allergens, and offering peanut early, then regularly, helped prevent peanut allergy in babies at high risk."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "How to start",
+          "paragraphs": [],
+          "bullets": [
+            "Start with a few low-allergy foods first, like infant cereal or pureed fruit.",
+            "Then offer the common allergens one at a time: egg, peanut, dairy (like yogurt), wheat, soy, sesame, fish, shellfish and tree nuts.",
+            "Start with a small taste. If there's no reaction, gradually offer more.",
+            "Once a food is tolerated, keep it in the diet regularly.",
+            "Always use a safe form: peanut and nut butters thinned, never chunks or whole nuts; egg fully cooked."
+          ]
+        },
+        {
+          "heading": "Talk to your pediatrician first if",
+          "paragraphs": [],
+          "bullets": [
+            "Your baby has severe, persistent eczema",
+            "Your baby has had an allergic reaction to a food, such as egg"
+          ]
+        },
+        {
+          "heading": "Watch for reactions",
+          "paragraphs": [
+            "After a new food, watch for signs like a rash, vomiting or diarrhea. If you see them, stop the food and call your pediatrician. Call 911 for trouble breathing, swelling of the lips or tongue, repeated vomiting, or unusual sleepiness.",
+            "Most egg allergies are caused by proteins in the egg white, but the yolk can cause reactions too."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["aap-allergens", "aap-anaphylaxis", "cdc-solids", "acaai-egg"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric allergist"
+    },
+    {
+      "id": "gagging-vs-choking",
+      "title": "Gagging or choking?",
+      "summary": "[PLACEHOLDER - needs expert review] Gagging is part of learning to eat. Choking is an emergency. Know the difference.",
+      "fromMonths": 5,
+      "toMonths": 24,
+      "icon": "exclamationmark.triangle.fill",
+      "emoji": "⚠️",
+      "tone": "muted",
+      "readMinutes": 3,
+      "sections": [
+        {
+          "heading": "Gagging is normal",
+          "paragraphs": [
+            "While your baby learns new textures, coughing, sputtering and gagging are common. Stay calm, and keep them sitting upright."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Choking is an emergency",
+          "paragraphs": [
+            "Choking happens when food or an object blocks the airway. Call 911 if your child:"
+          ],
+          "bullets": [
+            "Can't breathe, or is gasping or wheezing",
+            "Can't cry or make a sound",
+            "Turns a bluish color",
+            "Grabs at their throat or looks panicked",
+            "Goes limp or unconscious"
+          ]
+        },
+        {
+          "heading": "Prevent it",
+          "paragraphs": [],
+          "bullets": [
+            "Serve the right texture for your baby's stage.",
+            "Cut round foods like grapes into small pieces, and long foods like hot dogs into short, thin strips.",
+            "Have your baby sit upright to eat; no eating while lying down, crawling, walking, or in the car or stroller.",
+            "Always watch your baby while they eat."
+          ]
+        },
+        {
+          "heading": "Be ready",
+          "paragraphs": [
+            "Ask your pediatrician what to do if your child chokes, and consider a certified infant CPR and first-aid class. The American Red Cross and American Heart Association offer them."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["aap-choking", "cdc-choking", "cdc-solids"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatrician"
+    },
+    {
+      "id": "hunger-cues",
+      "title": "Hungry or full?",
+      "summary": "[PLACEHOLDER - needs expert review] How babies tell you they want more, or they're done.",
+      "fromMonths": 6,
+      "toMonths": 24,
+      "icon": "hand.wave.fill",
+      "emoji": "👋",
+      "tone": "accent",
+      "readMinutes": 2,
+      "sections": [
+        {
+          "heading": "Signs of hunger",
+          "paragraphs": ["From 6 months, your baby may be hungry if they:"],
+          "bullets": [
+            "Reach for or point to food",
+            "Open their mouth when offered a spoon or food",
+            "Get excited when they see food",
+            "Use hand motions or sounds to say they want more"
+          ]
+        },
+        {
+          "heading": "Signs of fullness",
+          "paragraphs": [],
+          "bullets": [
+            "Push food away",
+            "Close their mouth when food is offered",
+            "Turn their head away",
+            "Use hand motions or sounds to say they're done"
+          ]
+        },
+        {
+          "heading": "Let them decide",
+          "paragraphs": [
+            "Your baby doesn't need to finish the jar or the plate. Food works best when it isn't used as a reward or punishment. If you're worried about how much your baby eats, talk to your pediatrician."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["cdc-hungry"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "cups-and-drinks",
+      "title": "Cups, water and juice",
+      "summary": "[PLACEHOLDER - needs expert review] When to offer a cup, how much water, and why juice can wait.",
+      "fromMonths": 6,
+      "toMonths": 14,
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🥤",
+      "tone": "sky",
+      "readMinutes": 2,
+      "sections": [
+        {
+          "heading": "A first cup",
+          "paragraphs": [
+            "From about 6 months, you can offer a cup with a spouted lid, a cup with a straw, or an open cup. Around 9 months, babies can start learning to drink from a cup without a lid; by 12 months they can drink from one as you hold it. Expect spills."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Water",
+          "paragraphs": [
+            "Breast milk or formula gives your baby the fluids they need. Once solids start, a little water is fine: about 4 to 8 oz a day."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Juice",
+          "paragraphs": [
+            "Juice isn't recommended before 12 months. After that, if you offer it, give only 100% juice, no more than 4 oz a day, in a cup, not a bottle."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Cow's milk",
+          "paragraphs": ["Plain cow's milk as a drink waits until 12 months."],
+          "bullets": []
+        }
+      ],
+      "sources": ["cdc-utensils", "cdc-encourage", "aap-solids", "cdc-cowsmilk"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "homemade-baby-food",
+      "title": "Making and storing baby food",
+      "summary": "[PLACEHOLDER - needs expert review] A few hours of prep can stock your freezer for weeks.",
+      "fromMonths": 5,
+      "toMonths": 12,
+      "icon": "snowflake",
+      "emoji": "❄️",
+      "tone": "muted",
+      "readMinutes": 3,
+      "sections": [
+        {
+          "heading": "Make it",
+          "paragraphs": [
+            "Pick some fruits, vegetables and grains. Cook them until soft enough to mash easily with a fork; ripe banana and avocado can be mashed raw. Puree or mash, and thin with breast milk, formula or water."
+          ],
+          "bullets": [
+            "Cook with no added salt or seasoning.",
+            "Remove fat, skin and bones from meat, poultry and fish before cooking.",
+            "Remove seeds and hard pits from fruit."
+          ]
+        },
+        {
+          "heading": "Store it",
+          "paragraphs": [
+            "Homemade food isn't bacteria-free and spoils faster than food from a jar. Refrigerate what you don't use and check for signs of spoilage before serving.",
+            "To freeze, spoon purees into ice-cube trays. Once frozen, move the cubes to labeled, dated bags and use them within 3 months. Later, mix cubes to make new combinations."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["aap-solids", "cdc-solids", "cdc-picky"],
+      "reviewStatus": "placeholder",
+      "reviewer": "food safety"
+    },
+    {
+      "id": "foods-to-avoid",
+      "title": "Foods to skip in the first year",
+      "summary": "[PLACEHOLDER - needs expert review] Honey, added sugar and a few others that wait until later.",
+      "fromMonths": 5,
+      "toMonths": 12,
+      "icon": "xmark.octagon.fill",
+      "emoji": "🚫",
+      "tone": "accent",
+      "readMinutes": 3,
+      "sections": [
+        {
+          "heading": "Not before 12 months",
+          "paragraphs": [],
+          "bullets": [
+            "Honey, in any form. It can cause infant botulism, a severe food poisoning.",
+            "Cow's milk or plant milks as a drink.",
+            "Juice."
+          ]
+        },
+        {
+          "heading": "Not for babies or toddlers",
+          "paragraphs": [],
+          "bullets": [
+            "Added sugars, including sweetened yogurts, cookies and sweet drinks.",
+            "Salty foods. Choose canned foods labeled low sodium or no salt added.",
+            "Unpasteurized (raw) milk, cheese, yogurt or juice.",
+            "Fish high in mercury, like shark, swordfish and king mackerel."
+          ]
+        },
+        {
+          "heading": "Choking hazards",
+          "paragraphs": [
+            "Some foods are only safe once changed: whole grapes, nuts, chunks of nut butter, raw hard vegetables and more. See the choking guide in this tab."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["cdc-avoid", "cdc-cowsmilk", "aap-solids"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "food-refusal",
+      "title": "When your baby refuses food",
+      "summary": "[PLACEHOLDER - needs expert review] Refusing new foods is normal. Here's how to keep offering.",
+      "fromMonths": 8,
+      "toMonths": 24,
+      "icon": "face.smiling",
+      "emoji": "🙂",
+      "tone": "sky",
+      "readMinutes": 2,
+      "sections": [
+        {
+          "heading": "It takes time",
+          "paragraphs": [
+            "Your baby may not like a food the first time. It can take 8 to 10 tries before a young child accepts a new food."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Try this",
+          "paragraphs": [],
+          "bullets": [
+            "Wait about a week, then offer the food again.",
+            "Mix the new food with one your baby already likes.",
+            "Eat the food yourself first; babies learn by watching.",
+            "Give a simple choice between two foods.",
+            "Freeze small portions so repeat tries don't waste food."
+          ]
+        },
+        {
+          "heading": "Phases are normal",
+          "paragraphs": [
+            "Toddlers may suddenly refuse foods they used to love, or not want foods to touch. These phases often pass by about age 5. Talk to your pediatrician if you're worried about growth."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["cdc-picky", "cdc-hungry"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "cows-milk",
+      "title": "Moving to cow's milk",
+      "summary": "[PLACEHOLDER - needs expert review] What changes at 12 months, and how much is enough.",
+      "fromMonths": 11,
+      "toMonths": 18,
+      "icon": "drop.fill",
+      "emoji": "🥛",
+      "tone": "muted",
+      "readMinutes": 2,
+      "sections": [
+        {
+          "heading": "Why wait until 12 months",
+          "paragraphs": [
+            "Before 12 months, cow's milk as a drink may cause intestinal bleeding, has too much protein and minerals for a baby's kidneys, and lacks the right nutrients."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What to offer",
+          "paragraphs": [
+            "From 12 months, offer plain, pasteurized whole cow's milk, or a plant milk fortified with calcium and vitamin D, unflavored and unsweetened. Children 12 to 23 months need about 2 servings of dairy a day, which can include milk, full-fat yogurt and cheese."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Not too much",
+          "paragraphs": [
+            "Milk is a drink, not a replacement for food. Too much can leave your child less hungry for other foods, and some experts say it can make it harder to absorb iron. Ask your pediatrician if you're unsure how much is right."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["cdc-cowsmilk"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    }
+  ]
+}

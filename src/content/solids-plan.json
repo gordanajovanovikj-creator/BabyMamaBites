@@ -783,6 +783,12 @@
       "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"
     },
     {
+      "id": "aap-hc",
+      "publisher": "AAP (HealthyChildren.org)",
+      "title": "6 Quick High Chair Safety Tips",
+      "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/High-Chair-Safety-Tips.aspx"
+    },
+    {
       "id": "aap-solids",
       "publisher": "AAP (HealthyChildren.org)",
       "title": "When Can Babies Start Solid Foods?",
@@ -859,6 +865,12 @@
       "publisher": "CDC",
       "title": "Fingers, Spoons, Forks, and Cups",
       "url": "https://www.cdc.gov/infant-toddler-nutrition/mealtime/fingers-spoons-forks-and-cups.html"
+    },
+    {
+      "id": "cpsc-hc",
+      "publisher": "U.S. Consumer Product Safety Commission",
+      "title": "New Federal Standard to Improve Safety of High Chairs Takes Effect",
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2019/New-Federal-Standard-to-Improve-Safety-of-High-Chairs-Takes-Effect"
     },
     {
       "id": "fda-fish",

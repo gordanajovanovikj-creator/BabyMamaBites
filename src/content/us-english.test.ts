@@ -5,6 +5,7 @@ import guides from './monthly-guides.json';
 import reactions from './reactions.json';
 import babyRecipes from './baby-recipes.json';
 import recipes from './recipes.json';
+import solidsArticles from './solids-articles.json';
 import solidsPlan from './solids-plan.json';
 
 /** The app is US-based: bundled copy uses US English and US health-system terms. */
@@ -38,6 +39,7 @@ const bundles = {
   reactions,
   recipes,
   babyRecipes,
+  solidsArticles,
 };
 
 describe('US English content', () => {
