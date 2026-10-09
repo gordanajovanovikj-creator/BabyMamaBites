@@ -10,33 +10,39 @@ const content = {
     photo: onboardingPhotos.babyLed,
     label: 'A baby in a high chair feeding themselves',
     title: 'Baby-led weaning is a great choice!',
+    subtitle: "We'll shape recipes and tips around the way your baby likes to eat.",
   },
   spoon: {
     photo: onboardingPhotos.spoon,
     label: 'A baby in a high chair being fed puree from a soft spoon',
     title: 'Spoon feeding is a great choice!',
+    subtitle: "We'll shape recipes and tips around the way your baby likes to eat.",
   },
   both: {
-    photo: onboardingPhotos.spoon,
-    label: 'A baby in a high chair being fed puree from a soft spoon',
+    photo: onboardingPhotos.both,
+    label: 'A smiling mom sitting with her baby, who feeds herself with a spoon in a high chair',
     title: 'Mixing both is a great choice!',
+    subtitle: "We'll shape recipes and tips around the way your baby likes to eat.",
+  },
+  'not-sure': {
+    photo: onboardingPhotos.both,
+    label: 'A smiling mom sitting with her baby, who feeds herself with a spoon in a high chair',
+    title: "Not sure yet? That's completely okay!",
+    subtitle: "We'll show you both ways, so you can find what feels right for you and your baby.",
   },
 } as const;
 
 export default function GreatChoiceScreen() {
   const { draft } = useDraft();
   const approach = draft.solidsApproach;
-  const c = approach && approach !== 'not-sure' ? content[approach] : null;
+  const c = approach ? content[approach] : null;
 
   if (!c) return null;
 
   return (
     <Screen className="flex-grow pt-4">
       <OnboardingPhoto source={c.photo} label={c.label} height={380} focus="top" />
-      <QuestionBubble
-        title={c.title}
-        subtitle="We'll shape recipes and tips around the way your baby likes to eat."
-      />
+      <QuestionBubble title={c.title} subtitle={c.subtitle} />
       <View className="flex-1" />
       <Button label="Continue" onPress={() => router.push('/onboarding/notifications')} />
     </Screen>

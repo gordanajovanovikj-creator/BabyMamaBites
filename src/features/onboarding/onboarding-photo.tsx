@@ -5,6 +5,7 @@ export const onboardingPhotos = {
   welcome: require('@/assets/images/onboarding/welcome-mom-baby.jpg'),
   babyLed: require('@/assets/images/onboarding/baby-led-weaning.jpg'),
   spoon: require('@/assets/images/onboarding/spoon-feeding.jpg'),
+  both: require('@/assets/images/onboarding/both-ways.jpg'),
 } satisfies Record<string, ImageSource>;
 
 export type OnboardingPhotoProps = {

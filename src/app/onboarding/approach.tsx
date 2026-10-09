@@ -21,8 +21,7 @@ export default function ApproachStep() {
   const next = () => {
     // Editing from Settings: save here and skip the welcome extras.
     if (!isNew) return finish();
-    if (approach === 'not-sure') router.push('/onboarding/notifications');
-    else router.push('/onboarding/great-choice');
+    router.push('/onboarding/great-choice');
   };
 
   return (
