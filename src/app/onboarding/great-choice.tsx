@@ -21,14 +21,14 @@ const content = {
   both: {
     photo: onboardingPhotos.both,
     label: 'A smiling mom sitting with her baby, who feeds herself with a spoon in a high chair',
-    title: 'Mixing both is a great choice!',
-    subtitle: "We'll shape recipes and tips around the way your baby likes to eat.",
+    title: "We've got you, mama",
+    subtitle: \"We're here to guide you every step of the way.\",
   },
   'not-sure': {
     photo: onboardingPhotos.both,
     label: 'A smiling mom sitting with her baby, who feeds herself with a spoon in a high chair',
-    title: "Not sure yet? That's completely okay!",
-    subtitle: "We'll show you both ways, so you can find what feels right for you and your baby.",
+    title: "We've got you, mama",
+    subtitle: \"We're here to guide you every step of the way.\",
   },
 } as const;
 

@@ -59,4 +59,4 @@ owner must hold the rights and model releases to use them in the app and App Sto
 | welcome-mom-baby | Welcome screen | Supplied by the app owner | Owner-supplied | 2026-10-09 |
 | baby-led-weaning | "Baby-led weaning is a great choice!" | Supplied by the app owner | Owner-supplied | 2026-10-09 |
 | spoon-feeding | "Spoon feeding is a great choice!" | Supplied by the app owner | Owner-supplied | 2026-10-09 |
-| both-ways | "Mixing both" and "Not sure yet" screens | Supplied by the app owner | Owner-supplied | 2026-10-09 |
+| both-ways | "We've got you, mama" screen (both / not sure yet) | Supplied by the app owner | Owner-supplied | 2026-10-09 |
