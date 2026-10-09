@@ -72,3 +72,4 @@ Bundled in `assets/images/insights/` and registered in
 | newborn-overnight-oats | Pixabay | devansee | https://pixabay.com/photos/breakfast-healthy-yogurt-mason-jar-655894/ | Pixabay Content License | 2026-10-09 |
 | solids-purees-first | Pixabay | Ben_Kerckx | https://pixabay.com/photos/child-vegetable-pap-power-supply-818432/ | Pixabay Content License | 2026-10-09 |
 | food-refusal | Pixabay | timkraaijvanger | https://pixabay.com/photos/toddler-girl-laugh-blue-eyes-cute-2675884/ | Pixabay Content License | 2026-10-09 |
+| solids-freezer-cubes | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
