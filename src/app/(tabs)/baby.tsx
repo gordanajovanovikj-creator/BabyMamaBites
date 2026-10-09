@@ -29,7 +29,7 @@ export default function BabyScreen() {
   const insets = useSafeAreaInsets();
   const { profile } = useProfile();
   const { entries } = useFoodLog();
-  const [tab, setTab] = useState<Tab>('plan');
+  const [tab, setTab] = useState<Tab>('recipes');
   if (!profile) return null;
 
   const now = today();
@@ -46,7 +46,7 @@ export default function BabyScreen() {
   return (
     <Screen padded={false} edgeToEdgeTop className="gap-6">
       <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
-        <AppText variant="display">First foods</AppText>
+        <AppText variant="display">Baby</AppText>
         <AppText variant="caption">
           {current === null
             ? `${name}'s starting-solids plan begins around ${startsOn}.`
@@ -54,8 +54,8 @@ export default function BabyScreen() {
         </AppText>
         <SegmentedTabs<Tab>
           tabs={[
-            { id: 'plan', label: 'Plan' },
             { id: 'recipes', label: 'Recipes' },
+            { id: 'plan', label: 'Plan' },
           ]}
           selected={tab}
           onSelect={setTab}
