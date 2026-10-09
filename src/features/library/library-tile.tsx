@@ -1,3 +1,4 @@
+import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { Pressable, View } from 'react-native';
 
@@ -6,6 +7,8 @@ import { ageRangeLabel, articleTiming } from '@/domain/articles';
 import type { LibraryItem } from '@/domain/library';
 import { insightTextColor } from '@/features/insights/insight-style';
 import { AppText, Card, Illustration } from '@/ui';
+
+import { libraryPhoto } from './library-photos';
 
 export const LIBRARY_TILE_WIDTH = 168;
 
@@ -43,6 +46,7 @@ export type LibraryTileProps = {
 export function LibraryTile({ item, ageMonths, width = LIBRARY_TILE_WIDTH }: LibraryTileProps) {
   const color = insightTextColor[item.tone];
   const kicker = libraryKicker(item, ageMonths);
+  const photo = libraryPhoto(item.id);
   return (
     <Pressable
       accessibilityRole="button"
@@ -65,13 +69,25 @@ export function LibraryTile({ item, ageMonths, width = LIBRARY_TILE_WIDTH }: Lib
             {item.title}
           </AppText>
         </View>
-        <View className="items-center">
-          <Illustration
-            name={item.illustration}
-            on={item.tone === 'surface' ? 'white' : item.tone === 'deep' ? 'dark' : 'pastel'}
-            height={100}
-          />
-        </View>
+        {photo ? (
+          <View className="h-28 overflow-hidden rounded-2xl">
+            <Image
+              source={photo}
+              contentFit="cover"
+              transition={150}
+              accessible={false}
+              style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+            />
+          </View>
+        ) : (
+          <View className="items-center">
+            <Illustration
+              name={item.illustration}
+              on={item.tone === 'surface' ? 'white' : item.tone === 'deep' ? 'dark' : 'pastel'}
+              height={100}
+            />
+          </View>
+        )}
       </Card>
     </Pressable>
   );

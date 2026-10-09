@@ -60,3 +60,15 @@ owner must hold the rights and model releases to use them in the app and App Sto
 | baby-led-weaning | "Baby-led weaning is a great choice!" | Supplied by the app owner | Owner-supplied | 2026-10-09 |
 | spoon-feeding | "Spoon feeding is a great choice!" | Supplied by the app owner | Owner-supplied | 2026-10-09 |
 | both-ways | "We've got you, mama" screen (both / not sure yet) | Supplied by the app owner | Owner-supplied | 2026-10-09 |
+
+## Insights article photos
+
+Bundled in `assets/images/insights/` and registered in
+`src/features/library/library-photos.ts`.
+
+| Article id | Source | Photographer | Link | License | Added |
+| --- | --- | --- | --- | --- | --- |
+| newborn-snack-basket | Pixabay | sweetlouise | https://pixabay.com/photos/dried-fruit-nuts-coconut-mango-3164835/ | Pixabay Content License | 2026-10-09 |
+| newborn-overnight-oats | Pixabay | devansee | https://pixabay.com/photos/breakfast-healthy-yogurt-mason-jar-655894/ | Pixabay Content License | 2026-10-09 |
+| solids-purees-first | Pixabay | Ben_Kerckx | https://pixabay.com/photos/child-vegetable-pap-power-supply-818432/ | Pixabay Content License | 2026-10-09 |
+| food-refusal | Pixabay | timkraaijvanger | https://pixabay.com/photos/toddler-girl-laugh-blue-eyes-cute-2675884/ | Pixabay Content License | 2026-10-09 |
