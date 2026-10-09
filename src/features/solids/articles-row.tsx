@@ -1,44 +1,21 @@
 import { router } from 'expo-router';
-import { Pressable, ScrollView, View } from 'react-native';
 
-import { solidsArticles } from '@/content/solids-articles';
+import { getInsightCategory } from '@/content/insight-categories';
 import { articlesForAge } from '@/domain/articles';
-import { AppText } from '@/ui';
+import { LibraryCarousel } from '@/features/library/library-carousel';
+import { useLibrary } from '@/features/library/use-library';
 
-import { ARTICLE_TILE_WIDTH, ArticleTile } from './article-tile';
-
-/** "Insights": starting-solids articles, the ones for the baby's age first. */
-export function ArticlesRow({ ageMonths }: { ageMonths: number }) {
-  const ordered = articlesForAge(solidsArticles, ageMonths);
+/** "Insights" on the Plan tab: baby articles and tips, the ones for the baby's age first. */
+export function ArticlesRow() {
+  const { items, ageMonths } = useLibrary();
+  const baby = items.filter((i) => getInsightCategory(i.category)?.audience === 'baby');
   return (
-    <View className="gap-3">
-      <View className="flex-row items-center justify-between px-5">
-        <AppText variant="heading" size="2xl" className="flex-1">
-          Insights
-        </AppText>
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel="See all insights"
-          onPress={() => router.push('/solids/articles')}
-          hitSlop={8}
-          className="min-h-11 flex-row items-center justify-center pl-3 active:opacity-60"
-        >
-          <AppText variant="label" color="muted" className="font-bold">
-            See all ›
-          </AppText>
-        </Pressable>
-      </View>
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        decelerationRate="fast"
-        snapToInterval={ARTICLE_TILE_WIDTH + 16}
-        contentContainerClassName="gap-4 px-5"
-      >
-        {ordered.map((a) => (
-          <ArticleTile key={a.id} article={a} ageMonths={ageMonths} />
-        ))}
-      </ScrollView>
-    </View>
+    <LibraryCarousel
+      title="Insights"
+      subtitle="Picked for your baby's age"
+      items={articlesForAge(baby, ageMonths).slice(0, 10)}
+      ageMonths={ageMonths}
+      onSeeAll={() => router.push('/insights')}
+    />
   );
 }

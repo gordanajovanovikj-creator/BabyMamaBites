@@ -5,6 +5,7 @@
   "articles": [
     {
       "id": "ready",
+      "category": "starting-solids",
       "title": "Is my baby ready for solids?",
       "summary": "[PLACEHOLDER - needs expert review] The signs to look for, and why about 6 months is the usual start.",
       "fromMonths": 4,
@@ -57,6 +58,7 @@
     },
     {
       "id": "high-chair",
+      "category": "safety",
       "title": "Choosing and using a high chair",
       "summary": "[PLACEHOLDER - needs expert review] What to look for when you buy one, and how to use it safely at every meal.",
       "fromMonths": 5,
@@ -109,6 +111,7 @@
     },
     {
       "id": "purees-vs-finger-foods",
+      "category": "starting-solids",
       "title": "Purees or finger foods?",
       "summary": "[PLACEHOLDER - needs expert review] How textures build up, and how spoon-feeding and finger foods fit together.",
       "fromMonths": 5,
@@ -173,6 +176,7 @@
     },
     {
       "id": "first-foods",
+      "category": "starting-solids",
       "title": "What to offer first",
       "summary": "[PLACEHOLDER - needs expert review] There's no set order, but iron-rich foods matter from the start.",
       "fromMonths": 5,
@@ -223,6 +227,7 @@
     },
     {
       "id": "allergens",
+      "category": "starting-solids",
       "title": "Introducing common allergens",
       "summary": "[PLACEHOLDER - needs expert review] Why offering egg, peanut and other allergens early can help, and how to do it.",
       "fromMonths": 5,
@@ -273,6 +278,7 @@
     },
     {
       "id": "gagging-vs-choking",
+      "category": "safety",
       "title": "Gagging or choking?",
       "summary": "[PLACEHOLDER - needs expert review] Gagging is part of learning to eat. Choking is an emergency. Know the difference.",
       "fromMonths": 5,
@@ -326,6 +332,7 @@
     },
     {
       "id": "hunger-cues",
+      "category": "happy-eaters",
       "title": "Hungry or full?",
       "summary": "[PLACEHOLDER - needs expert review] How babies tell you they want more, or they're done.",
       "fromMonths": 6,
@@ -369,6 +376,7 @@
     },
     {
       "id": "cups-and-drinks",
+      "category": "happy-eaters",
       "title": "Cups, water and juice",
       "summary": "[PLACEHOLDER - needs expert review] When to offer a cup, how much water, and why juice can wait.",
       "fromMonths": 6,
@@ -411,6 +419,7 @@
     },
     {
       "id": "homemade-baby-food",
+      "category": "cooking-for-baby",
       "title": "Making and storing baby food",
       "summary": "[PLACEHOLDER - needs expert review] A few hours of prep can stock your freezer for weeks.",
       "fromMonths": 5,
@@ -446,6 +455,7 @@
     },
     {
       "id": "foods-to-avoid",
+      "category": "safety",
       "title": "Foods to skip in the first year",
       "summary": "[PLACEHOLDER - needs expert review] Honey, added sugar and a few others that wait until later.",
       "fromMonths": 5,
@@ -488,6 +498,7 @@
     },
     {
       "id": "food-refusal",
+      "category": "happy-eaters",
       "title": "When your baby refuses food",
       "summary": "[PLACEHOLDER - needs expert review] Refusing new foods is normal. Here's how to keep offering.",
       "fromMonths": 8,
@@ -529,6 +540,7 @@
     },
     {
       "id": "cows-milk",
+      "category": "happy-eaters",
       "title": "Moving to cow's milk",
       "summary": "[PLACEHOLDER - needs expert review] What changes at 12 months, and how much is enough.",
       "fromMonths": 11,

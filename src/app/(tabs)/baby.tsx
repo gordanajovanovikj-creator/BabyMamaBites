@@ -106,7 +106,7 @@ export default function BabyScreen() {
             <WeekStrip weeks={planWeeks} current={current} />
           </View>
 
-          <ArticlesRow ageMonths={babyAge(profile, now).months} />
+          <ArticlesRow />
 
           <View className="gap-4 px-5">
             <Button label="Log a food" onPress={() => router.push('/solids/log')} />

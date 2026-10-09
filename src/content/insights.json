@@ -3,6 +3,7 @@
   "insights": [
     {
       "id": "newborn-snack-basket",
+      "category": "nourishing-you",
       "stages": ["newborn"],
       "kind": "tip",
       "tone": "surface",
@@ -20,6 +21,7 @@
     },
     {
       "id": "newborn-meal-help",
+      "category": "nourishing-you",
       "stages": ["newborn"],
       "kind": "self-care",
       "tone": "accent",
@@ -37,6 +39,7 @@
     },
     {
       "id": "newborn-overnight-oats",
+      "category": "nourishing-you",
       "stages": ["newborn", "solids"],
       "kind": "recipe",
       "tone": "sky",
@@ -55,6 +58,7 @@
     },
     {
       "id": "newborn-water",
+      "category": "nourishing-you",
       "stages": ["newborn"],
       "kind": "tip",
       "tone": "muted",
@@ -71,6 +75,7 @@
     },
     {
       "id": "newborn-rest",
+      "category": "your-wellbeing",
       "stages": ["newborn"],
       "kind": "self-care",
       "tone": "deep",
@@ -87,6 +92,7 @@
     },
     {
       "id": "feeling-low",
+      "category": "your-wellbeing",
       "stages": ["newborn", "solids"],
       "kind": "when-to-call",
       "tone": "deep",
@@ -104,6 +110,7 @@
     },
     {
       "id": "solids-purees-first",
+      "category": "starting-solids",
       "stages": ["solids"],
       "kind": "tip",
       "tone": "sky",
@@ -120,6 +127,7 @@
     },
     {
       "id": "solids-freezer-cubes",
+      "category": "cooking-for-baby",
       "stages": ["solids"],
       "kind": "tip",
       "tone": "accent",
@@ -138,6 +146,7 @@
     },
     {
       "id": "solids-two-textures",
+      "category": "cooking-for-baby",
       "stages": ["solids"],
       "kind": "recipe",
       "tone": "surface",
@@ -155,6 +164,7 @@
     },
     {
       "id": "solids-choking",
+      "category": "safety",
       "stages": ["solids", "toddler"],
       "kind": "when-to-call",
       "tone": "deep",
@@ -172,6 +182,7 @@
     },
     {
       "id": "toddler-share-plate",
+      "category": "cooking-for-baby",
       "stages": ["toddler"],
       "kind": "recipe",
       "tone": "sky",
@@ -188,6 +199,7 @@
     },
     {
       "id": "toddler-picky-phases",
+      "category": "happy-eaters",
       "stages": ["toddler"],
       "kind": "self-care",
       "tone": "accent",

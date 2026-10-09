@@ -12,6 +12,8 @@ const sectionSchema = z.object({
 export const articleSchema = z
   .object({
     id: z.string().min(1),
+    /** Insights library category (see insight-categories.json). */
+    category: z.string().min(1),
     title: z.string().min(1),
     summary: z.string().min(1),
     /** Most relevant from this age in months (corrected age where it applies)… */

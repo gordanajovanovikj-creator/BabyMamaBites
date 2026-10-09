@@ -9,6 +9,7 @@ import { pickDailyInsights } from './insights';
 function make(id: string, extra: Partial<Insight> = {}): Insight {
   return {
     id,
+    category: 'starting-solids',
     stages: ['newborn'],
     kind: 'tip',
     tone: 'surface',

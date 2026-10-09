@@ -7,6 +7,8 @@ import { reviewStatusSchema } from './schemas';
 
 export const insightSchema = z.object({
   id: z.string().min(1),
+  /** Insights library category (see insight-categories.json). */
+  category: z.string().min(1),
   stages: z.array(z.enum(['newborn', 'solids', 'toddler'])).min(1),
   kind: z.enum(['tip', 'recipe', 'self-care', 'when-to-call']),
   tone: z.enum(['surface', 'muted', 'accent', 'sky', 'deep']),

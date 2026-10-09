@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "starting-solids",
+      "label": "Starting solids",
+      "icon": "carrot.fill",
+      "emoji": "🥄",
+      "tone": "accent",
+      "audience": "baby",
+      "description": "When to start, what to offer first, and how textures build up."
+    },
+    {
+      "id": "safety",
+      "label": "Safety first",
+      "icon": "shield.lefthalf.filled",
+      "emoji": "🛡️",
+      "tone": "muted",
+      "audience": "baby",
+      "description": "Choking, high chairs and the foods to skip in the first year."
+    },
+    {
+      "id": "happy-eaters",
+      "label": "Happy eaters",
+      "icon": "face.smiling.fill",
+      "emoji": "🙂",
+      "tone": "sky",
+      "audience": "baby",
+      "description": "Hunger cues, picky phases, cups and drinks."
+    },
+    {
+      "id": "cooking-for-baby",
+      "label": "Cooking for baby",
+      "icon": "snowflake",
+      "emoji": "❄️",
+      "tone": "accent",
+      "audience": "baby",
+      "description": "Batch prep, freezer cubes and one meal for the whole family."
+    },
+    {
+      "id": "nourishing-you",
+      "label": "Nourishing you",
+      "icon": "basket.fill",
+      "emoji": "🧺",
+      "tone": "sky",
+      "audience": "mom",
+      "description": "Simple ways to keep yourself fed and hydrated."
+    },
+    {
+      "id": "your-wellbeing",
+      "label": "Your wellbeing",
+      "icon": "heart.fill",
+      "emoji": "💗",
+      "tone": "deep",
+      "audience": "mom",
+      "description": "Rest, support, and when to reach out for help."
+    }
+  ]
+}
