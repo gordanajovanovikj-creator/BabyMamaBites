@@ -16,6 +16,7 @@ Photos bundled in `assets/images/recipes/` and registered in
 | baby-yogurt-berry-swirl | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | baby-sweet-potato-puree | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | baby-lentil-carrot-mash | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
+| baby-egg-mash | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | overnight-oats | Pixabay | ponce_photography | https://pixabay.com/photos/yogurt-strawberries-food-fruit-1442034/ | Pixabay Content License | 2026-10-09 |
 | pb-banana-shake | Pixabay | ImagesBG | https://pixabay.com/photos/banana-apple-smoothie-drink-fruit-1610797/ | Pixabay Content License | 2026-10-09 |
 | warm-spiced-milk | Pixabay | Joshua_Willson | https://pixabay.com/photos/hot-chocolate-hot-chocolate-coffee-1065674/ | Pixabay Content License | 2026-10-09 |
