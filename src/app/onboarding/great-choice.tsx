@@ -13,12 +13,12 @@ const content = {
   },
   spoon: {
     photo: onboardingPhotos.spoon,
-    label: 'A mom spoon-feeding her baby in a high chair',
+    label: 'A baby in a high chair being fed puree from a soft spoon',
     title: 'Spoon feeding is a great choice!',
   },
   both: {
     photo: onboardingPhotos.spoon,
-    label: 'A mom spoon-feeding her baby, who holds a spoon of their own',
+    label: 'A baby in a high chair being fed puree from a soft spoon',
     title: 'Mixing both is a great choice!',
   },
 } as const;
