@@ -12,6 +12,7 @@ const photos: Record<string, ImageSource> = {
   'baby-chicken-puree': require('@/assets/images/recipes/baby-chicken-puree.jpg'),
   'baby-avocado-banana-mash': require('@/assets/images/recipes/baby-avocado-banana-mash.jpg'),
   'baby-yogurt-berry-swirl': require('@/assets/images/recipes/baby-yogurt-berry-swirl.jpg'),
+  'baby-sweet-potato-puree': require('@/assets/images/recipes/baby-sweet-potato-puree.jpg'),
 };
 
 export function recipePhoto(recipeId: string): ImageSource | undefined {
