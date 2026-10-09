@@ -10,3 +10,4 @@ Photos bundled in `assets/images/recipes/` and registered in
 | banana-oat-smoothie | Supplied by the app owner | — | — | Owner-supplied | 2026-10 |
 | baby-oat-cereal | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | baby-salmon-sweet-potato | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
+| baby-pear-puree | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
