@@ -34,7 +34,7 @@ export function AgeHero({ profile }: { profile: Profile }) {
     .join(' · ');
 
   return (
-    <View className="rounded-b-[48px] bg-surface px-5 pb-10" style={{ paddingTop: insets.top + 8 }}>
+    <View className="rounded-b-[48px] bg-surface-muted px-5 pb-10" style={{ paddingTop: insets.top + 8 }}>
       <View className="flex-row items-center justify-between">
         <IconButton
           symbol="person.crop.circle"

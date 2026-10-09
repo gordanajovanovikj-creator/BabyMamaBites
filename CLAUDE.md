@@ -18,10 +18,10 @@
   UI primitives in `src/ui/`. Use semantic color classes (`bg-canvas`, `text-ink`…), never
   raw hex in components. Set colors and sizes on `Card`/`AppText` via their `tone`/`color`/`size`
   props, not by adding a second `bg-*`/`text-*` class (two conflicting classes resolve unpredictably).
-- **Look and feel.** Inspired by Sweat and Flo (without copying their branding): blush
-  canvas, soft rose primary, lavender accent, bold headings, pill buttons, big rounded cards.
-  Soft rose only meets 3:1 contrast, so use it for large or bold text and fills, never
-  for small body text.
-- **UX.** Tap targets ≥ 48pt, warm non-judgmental copy, support Dynamic Type, VoiceOver,
-  light and dark mode.
+- **Look and feel.** Always-white background with soft, natural earthy tones: sage/fresh green
+  (primary, `#487549`), warm cream, oat, soft beige, terracotta/coral and butter yellow. Keep UI
+  chrome neutral so real food photos are the focal point. Bold headings, pill buttons, big rounded
+  cards (white cards get a hairline border). The app is light-only by design. Primary green meets
+  4.5:1 on white; keep body text in ink or ink-muted.
+- **UX.** Tap targets ≥ 48pt, warm non-judgmental copy, support Dynamic Type and VoiceOver.
 - Run `npm run check` before committing.

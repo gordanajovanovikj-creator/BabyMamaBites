@@ -31,7 +31,7 @@ export function WeekStrip({ weeks, current }: WeekStripProps) {
             }
             className={cn(
               'min-h-14 min-w-14 items-center justify-center rounded-2xl px-3 active:opacity-80',
-              active ? 'bg-primary' : 'bg-surface',
+              active ? 'bg-primary' : 'bg-surface-muted',
             )}
           >
             <AppText variant="caption" size="xs" color={active ? 'on-primary' : 'muted'}>

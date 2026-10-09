@@ -5,7 +5,7 @@ import { cn } from './cn';
 export type CardTone = 'surface' | 'muted' | 'primary' | 'accent' | 'sky' | 'deep';
 
 const toneClasses: Record<CardTone, string> = {
-  surface: 'bg-surface',
+  surface: 'bg-surface border border-border',
   muted: 'bg-surface-muted',
   primary: 'bg-primary',
   accent: 'bg-accent',

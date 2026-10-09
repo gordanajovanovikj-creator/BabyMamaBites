@@ -6,50 +6,30 @@
 /*
  * Semantic color tokens. Keep in sync with src/theme/colors.ts, which native
  * props (tab bar, status bar, notification tint) read directly.
- * Light and dark both define every token so the values stay as live variables.
+ * Palette: always-white background with soft, natural earthy tones (sage green,
+ * warm cream, oat, terracotta, butter yellow). Chrome stays neutral so food
+ * photos are the focal point. The app is light-only by design.
+ * Token names are roles, not colors: "sky" is now soft sage, "deep" terracotta.
  */
 :root {
-  --app-canvas: #fff7f5;
+  --app-canvas: #ffffff;
   --app-surface: #ffffff;
-  --app-surface-muted: #fdeef1;
-  --app-ink: #2a1e24;
-  --app-ink-muted: #6e5a64;
-  --app-primary: #db6487;
+  --app-surface-muted: #f6f2ea;
+  --app-ink: #2c2a25;
+  --app-ink-muted: #6a655b;
+  --app-primary: #487549;
   --app-on-primary: #ffffff;
-  --app-accent: #eee7fc;
-  --app-on-accent: #3e2b6e;
-  --app-border: #f3dfe5;
-  --app-sky: #e4eefb;
-  --app-on-sky: #1e2a44;
-  --app-deep: #4a1d3f;
+  --app-accent: #f7eedc;
+  --app-on-accent: #5b4a2e;
+  --app-border: #e9e3d8;
+  --app-sky: #e7efe2;
+  --app-on-sky: #2e4a31;
+  --app-deep: #b25a3b;
   --app-on-deep: #ffffff;
-  --app-caution-bg: #fcefd9;
-  --app-caution-ink: #6b4a12;
-  --app-danger-bg: #fbe4e1;
-  --app-danger-ink: #9b2c2c;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --app-canvas: #16111a;
-    --app-surface: #231b27;
-    --app-surface-muted: #2f2433;
-    --app-ink: #f9eef2;
-    --app-ink-muted: #c7b4be;
-    --app-primary: #f5a3bc;
-    --app-on-primary: #2b0b18;
-    --app-accent: #382c57;
-    --app-on-accent: #eee7fc;
-    --app-border: #3a2d3d;
-    --app-sky: #22314a;
-    --app-on-sky: #e4eefb;
-    --app-deep: #f2c6da;
-    --app-on-deep: #2a0f22;
-    --app-caution-bg: #3d3220;
-    --app-caution-ink: #f2d29b;
-    --app-danger-bg: #3e2523;
-    --app-danger-ink: #f4a9a9;
-  }
+  --app-caution-bg: #fbf0cf;
+  --app-caution-ink: #6a4f12;
+  --app-danger-bg: #f8e1d8;
+  --app-danger-ink: #9a3a1f;
 }
 
 @theme inline {

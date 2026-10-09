@@ -1,50 +1,30 @@
 /**
- * Flat illustration colors (SVG fills can't take classNames). Soft, warm and on-brand:
- * blush and rose with lavender, sky and a few food colors. Dark mode is dimmed slightly
- * so white plates and jars don't glare.
+ * Flat illustration colors (SVG fills can't take classNames), in the app's soft
+ * earthy palette: sage, warm cream, oat, terracotta and butter yellow. Key names
+ * are roles kept from the first palette: "rose" is now terracotta, "lavender"
+ * soft sage, "sky" a pale sage-blue. Light-only, like the app.
  */
 export const illustrationPalette = {
   light: {
     blob: '#FFFFFF',
-    blobOpacity: 0.7,
-    blobOnWhite: '#FDEEF1',
-    blobOnDarkOpacity: 0.16,
+    blobOpacity: 0.75,
+    blobOnWhite: '#F6F2EA',
+    blobOnDarkOpacity: 0.18,
     white: '#FFFFFF',
-    cream: '#FFF4E0',
-    rose: '#DB6487',
-    roseSoft: '#F5A3BC',
-    roseDeep: '#B84A6E',
-    lavender: '#CDBEF2',
-    lavenderDeep: '#8E78D0',
-    sky: '#BFD6F2',
-    skyDeep: '#6F95C9',
-    butter: '#F8D57E',
-    honey: '#E9A93B',
-    mint: '#BFE3CF',
-    leaf: '#6FB58C',
-    carrot: '#F29B5C',
-    brown: '#B98463',
-  },
-  dark: {
-    blob: '#FFFFFF',
-    blobOpacity: 0.1,
-    blobOnWhite: '#2E2433',
-    blobOnDarkOpacity: 0.1,
-    white: '#EFE4EA',
-    cream: '#F1E2C8',
-    rose: '#E0779A',
-    roseSoft: '#F5A3BC',
-    roseDeep: '#C25A7D',
-    lavender: '#B8A8E6',
-    lavenderDeep: '#8E78D0',
-    sky: '#A9C3E6',
-    skyDeep: '#6F95C9',
-    butter: '#EBC46C',
-    honey: '#D99A32',
-    mint: '#A8D6BE',
-    leaf: '#62A67E',
-    carrot: '#E58D50',
-    brown: '#A87657',
+    cream: '#FBF3E2',
+    rose: '#D9805E',
+    roseSoft: '#EDB9A0',
+    roseDeep: '#B25A3B',
+    lavender: '#C9D9BD',
+    lavenderDeep: '#7E9C72',
+    sky: '#D3E0D8',
+    skyDeep: '#7A9A8C',
+    butter: '#F3D98B',
+    honey: '#E2B04A',
+    mint: '#CFE3C4',
+    leaf: '#6E9A5E',
+    carrot: '#E8945E',
+    brown: '#A9825F',
   },
 } as const;
 

@@ -1,10 +1,9 @@
 import '@/global.css';
 
-import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
+import { DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
-import { useColorScheme } from 'react-native';
 
 import { StorageProvider } from '@/data/storage-provider';
 import { FavoritesProvider } from '@/features/favorites/favorites-context';
@@ -70,9 +69,9 @@ function RootStack() {
 }
 
 export default function RootLayout() {
-  const scheme = useColorScheme() === 'dark' ? 'dark' : 'light';
-  const base = scheme === 'dark' ? DarkTheme : DefaultTheme;
-  const palette = colors[scheme];
+  // Light-only by design: white background at all times.
+  const base = DefaultTheme;
+  const palette = colors.light;
 
   return (
     <ThemeProvider
@@ -88,7 +87,7 @@ export default function RootLayout() {
         },
       }}
     >
-      <StatusBar style="auto" />
+      <StatusBar style="dark" />
       <StorageProvider>
         <ProfileProvider>
           <FavoritesProvider>

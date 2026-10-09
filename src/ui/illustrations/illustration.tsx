@@ -1,4 +1,3 @@
-import { useColorScheme } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
 import type { IllustrationName } from '@/content/illustration-names';
@@ -19,8 +18,7 @@ export type IllustrationProps = {
 
 /** A soft, flat vector illustration on an organic blob. Decorative: hidden from VoiceOver. */
 export function Illustration({ name, height = 96, on = 'pastel' }: IllustrationProps) {
-  const scheme = useColorScheme() === 'dark' ? 'dark' : 'light';
-  const c = illustrationPalette[scheme];
+  const c = illustrationPalette.light;
   return (
     <Svg
       viewBox={VIEWBOX}

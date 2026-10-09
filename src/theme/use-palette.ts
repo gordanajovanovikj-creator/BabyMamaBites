@@ -1,7 +1,6 @@
-import { useColorScheme } from 'react-native';
-
 import { colors, type Palette } from './colors';
 
+/** The app is light-only (white background at all times). */
 export function usePalette(): Palette {
-  return useColorScheme() === 'dark' ? colors.dark : colors.light;
+  return colors.light;
 }

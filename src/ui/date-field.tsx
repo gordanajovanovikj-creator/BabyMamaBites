@@ -1,5 +1,5 @@
 import DateTimePicker, { DateTimePickerAndroid } from '@react-native-community/datetimepicker';
-import { Platform, Pressable, useColorScheme, View } from 'react-native';
+import { Platform, Pressable, View } from 'react-native';
 
 import { fromIsoDate, toIsoDate, type IsoDate } from '@/domain/dates';
 import { usePalette } from '@/theme/use-palette';
@@ -25,7 +25,6 @@ function formatLong(date: IsoDate): string {
 /** Calendar date picker: an inline calendar on iOS, a tap-to-open dialog on Android. */
 export function DateField({ label, value, onChange, minimumDate, maximumDate }: DateFieldProps) {
   const palette = usePalette();
-  const scheme = useColorScheme() === 'dark' ? 'dark' : 'light';
   const min = minimumDate ? fromIsoDate(minimumDate) : undefined;
   const max = maximumDate ? fromIsoDate(maximumDate) : undefined;
 
@@ -63,7 +62,7 @@ export function DateField({ label, value, onChange, minimumDate, maximumDate }: 
           minimumDate={min}
           maximumDate={max}
           accentColor={palette.primary}
-          themeVariant={scheme}
+          themeVariant="light"
           onValueChange={(_event, date) => onChange(toIsoDate(date))}
         />
       </View>
