@@ -1,23 +1,27 @@
 import { router } from 'expo-router';
 import { View } from 'react-native';
 
-import { WelcomeIllustration } from '@/features/onboarding/welcome-illustration';
-import { useProfile } from '@/features/profile/profile-context';
+import { useDraft } from '@/features/onboarding/draft-context';
+import { OnboardingPhoto, onboardingPhotos } from '@/features/onboarding/onboarding-photo';
 import { AppText, Button, Card, Screen } from '@/ui';
 
 export default function WelcomeScreen() {
-  const { profile } = useProfile();
-  const editing = !!profile;
+  const { isNew } = useDraft();
 
   return (
     <Screen className="flex-grow justify-center pt-12">
-      <WelcomeIllustration height={editing ? 180 : 260} />
+      <OnboardingPhoto
+        source={onboardingPhotos.welcome}
+        label="A smiling mom cuddling her happy baby"
+        height={isNew ? 360 : 200}
+        focus="top"
+      />
       <View className="gap-3">
-        <AppText variant="display">{editing ? 'Update your details' : 'Welcome, mama'}</AppText>
+        <AppText variant="display">{isNew ? 'Welcome, mama' : 'Update your details'}</AppText>
         <AppText variant="body" color="muted">
-          {editing
-            ? 'Change anything that has moved on. It only takes a moment.'
-            : "Four quick questions, mostly taps, so we can suggest food that fits your baby's age and your day."}
+          {isNew
+            ? "A few quick questions, mostly taps, so we can suggest food that fits your baby's age and your day."
+            : 'Change anything that has moved on. It only takes a moment.'}
         </AppText>
       </View>
       <Card tone="muted" className="gap-1">
@@ -27,10 +31,10 @@ export default function WelcomeScreen() {
         </AppText>
       </Card>
       <Button
-        label={editing ? 'Start' : "Let's begin"}
-        onPress={() => router.push('/onboarding/baby')}
+        label={isNew ? "Let's begin" : 'Start'}
+        onPress={() => router.push('/onboarding/name')}
       />
-      {editing ? <Button label="Cancel" variant="quiet" onPress={() => router.back()} /> : null}
+      {!isNew ? <Button label="Cancel" variant="quiet" onPress={() => router.back()} /> : null}
     </Screen>
   );
 }

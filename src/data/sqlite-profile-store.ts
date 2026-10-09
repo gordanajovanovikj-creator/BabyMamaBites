@@ -23,15 +23,15 @@ export function createSqliteProfileStore(db: SQLiteDatabase): ProfileStore {
   return {
     async load() {
       const row = await db.getFirstAsync<ProfileRow>(
-        'SELECT baby_name, birth_date, due_date, feeding, allergens, diets, cooking_time FROM profile WHERE id = 1',
+        'SELECT baby_name, birth_date, due_date, feeding, allergens, diets, cooking_time, help_topics, solids_approach FROM profile WHERE id = 1',
       );
       return row ? rowToProfile(row) : null;
     },
     async save(profile) {
       const row = profileToRow(profile);
       await db.runAsync(
-        `INSERT INTO profile (id, baby_name, birth_date, due_date, feeding, allergens, diets, cooking_time, updated_at)
-         VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?)
+        `INSERT INTO profile (id, baby_name, birth_date, due_date, feeding, allergens, diets, cooking_time, help_topics, solids_approach, updated_at)
+         VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
          ON CONFLICT(id) DO UPDATE SET
            baby_name = excluded.baby_name,
            birth_date = excluded.birth_date,
@@ -40,6 +40,8 @@ export function createSqliteProfileStore(db: SQLiteDatabase): ProfileStore {
            allergens = excluded.allergens,
            diets = excluded.diets,
            cooking_time = excluded.cooking_time,
+           help_topics = excluded.help_topics,
+           solids_approach = excluded.solids_approach,
            updated_at = excluded.updated_at`,
         row.baby_name,
         row.birth_date,
@@ -48,6 +50,8 @@ export function createSqliteProfileStore(db: SQLiteDatabase): ProfileStore {
         row.allergens,
         row.diets,
         row.cooking_time,
+        row.help_topics,
+        row.solids_approach,
         new Date().toISOString(),
       );
     },

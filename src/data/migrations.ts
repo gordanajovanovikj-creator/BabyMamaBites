@@ -55,4 +55,6 @@ export const migrations: string[] = [
      key TEXT PRIMARY KEY NOT NULL,
      value TEXT NOT NULL
    );`,
+  `ALTER TABLE profile ADD COLUMN help_topics TEXT;
+   ALTER TABLE profile ADD COLUMN solids_approach TEXT;`,
 ];

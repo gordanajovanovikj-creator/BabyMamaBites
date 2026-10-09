@@ -2,7 +2,6 @@ import { router } from 'expo-router';
 
 import { today } from '@/domain/dates';
 import {
-  BABY_NAME_MAX,
   dueDateBounds,
   oldestBirthDate,
   validateBirthDate,
@@ -10,7 +9,7 @@ import {
 } from '@/domain/profile';
 import { useDraft } from '@/features/onboarding/draft-context';
 import { StepScreen } from '@/features/onboarding/step-screen';
-import { DateField, Notice, SwitchRow, TextField } from '@/ui';
+import { DateField, Notice, SwitchRow } from '@/ui';
 
 const birthErrors = {
   'in-future': "That date is in the future. If baby isn't here yet, come back after the birth.",
@@ -18,8 +17,9 @@ const birthErrors = {
   'out-of-range': '',
 } as const;
 
-export default function BabyStep() {
+export default function BornStep() {
   const { draft, update } = useDraft();
+  const name = draft.babyName.trim();
   const now = today();
   const birthDate = draft.birthDate ?? now;
   const bounds = dueDateBounds(birthDate);
@@ -30,8 +30,8 @@ export default function BabyStep() {
 
   return (
     <StepScreen
-      step={1}
-      title="Tell us about your baby"
+      step={2}
+      title={name ? `When was ${name} born?` : 'When was your baby born?'}
       subtitle="We use the birth date to show what fits your baby's age right now."
       canContinue={!birthError && !dueError}
       onContinue={() => {
@@ -39,16 +39,6 @@ export default function BabyStep() {
         router.push('/onboarding/feeding');
       }}
     >
-      <TextField
-        label="Baby's name (optional)"
-        value={draft.babyName}
-        onChangeText={(text) => update({ babyName: text })}
-        placeholder="First name or nickname"
-        maxLength={BABY_NAME_MAX}
-        autoCapitalize="words"
-        autoCorrect={false}
-        returnKeyType="done"
-      />
       <DateField
         label="Birth date"
         value={birthDate}

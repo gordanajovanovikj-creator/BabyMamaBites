@@ -1,4 +1,11 @@
-import type { Allergen, CookingTime, Diet, FeedingStatus } from './profile';
+import type {
+  Allergen,
+  CookingTime,
+  Diet,
+  FeedingStatus,
+  HelpTopic,
+  SolidsApproach,
+} from './profile';
 
 export const feedingLabels: Record<FeedingStatus, string> = {
   breast: 'Breastfeeding',
@@ -34,4 +41,20 @@ export const cookingTimeLabels: Record<CookingTime, { title: string; detail: str
   short: { title: 'A little', detail: 'Around 15 minutes' },
   relaxed: { title: 'I have time', detail: '30 minutes or more, or batch cooking' },
   flexible: { title: "I'm flexible", detail: 'It changes from day to day' },
+};
+
+export const helpTopicLabels: Record<HelpTopic, string> = {
+  'getting-started': 'Knowing how to start',
+  'introducing-foods': 'Introducing foods',
+  nutrition: 'Learning about nutrition',
+  'baby-meal-planning': 'Meal planning for baby',
+  'mom-food': 'Nourishing food for mom',
+  'family-recipes': 'Family recipe ideas',
+};
+
+export const solidsApproachLabels: Record<SolidsApproach, string> = {
+  'baby-led': 'Baby-led weaning',
+  spoon: 'Spoon feeding',
+  both: 'A bit of both',
+  'not-sure': "I'm not sure yet",
 };

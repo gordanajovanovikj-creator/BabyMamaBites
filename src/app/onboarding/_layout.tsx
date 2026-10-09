@@ -7,7 +7,7 @@ export default function OnboardingLayout() {
   const { profile } = useProfile();
 
   return (
-    <DraftProvider initial={draftFromProfile(profile)}>
+    <DraftProvider initial={draftFromProfile(profile)} isNew={!profile}>
       <Stack
         screenOptions={{
           title: '',

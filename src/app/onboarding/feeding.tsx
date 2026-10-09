@@ -11,7 +11,7 @@ export default function FeedingStep() {
 
   return (
     <StepScreen
-      step={2}
+      step={3}
       title="How are you feeding your baby?"
       subtitle="Every way of feeding is a good one. This just helps us pick relevant ideas for you."
       canContinue={!!draft.feeding}

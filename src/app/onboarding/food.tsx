@@ -13,12 +13,12 @@ export default function FoodStep() {
 
   return (
     <StepScreen
-      step={3}
+      step={4}
       title="Anything you avoid?"
       subtitle="Tap any that apply to your household. We'll leave these out of suggestions."
       continueLabel={nothingPicked ? 'None of these' : 'Continue'}
       canContinue
-      onContinue={() => router.push('/onboarding/time')}
+      onContinue={() => router.push('/onboarding/help')}
     >
       <AppText variant="heading">Allergies</AppText>
       <View className="flex-row flex-wrap gap-2">

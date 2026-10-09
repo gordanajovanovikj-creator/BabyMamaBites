@@ -9,6 +9,9 @@ export type ProfileRow = {
   allergens: string;
   diets: string;
   cooking_time: string;
+  /** JSON list; null in rows saved before this column existed. */
+  help_topics: string | null;
+  solids_approach: string | null;
 };
 
 export function profileToRow(profile: Profile): ProfileRow {
@@ -20,6 +23,8 @@ export function profileToRow(profile: Profile): ProfileRow {
     allergens: JSON.stringify(profile.allergens),
     diets: JSON.stringify(profile.diets),
     cooking_time: profile.cookingTime,
+    help_topics: JSON.stringify(profile.helpTopics),
+    solids_approach: profile.solidsApproach,
   };
 }
 
@@ -34,6 +39,8 @@ export function rowToProfile(row: ProfileRow): Profile | null {
       allergens: JSON.parse(row.allergens),
       diets: JSON.parse(row.diets),
       cookingTime: row.cooking_time,
+      helpTopics: row.help_topics ? JSON.parse(row.help_topics) : [],
+      solidsApproach: row.solids_approach ?? null,
     });
     return result.success ? result.data : null;
   } catch {

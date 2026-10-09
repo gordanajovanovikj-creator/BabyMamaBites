@@ -30,11 +30,24 @@ export const diets = [
 ] as const;
 /** Stored values: append new options, never rename existing ones. */
 export const cookingTimes = ['minimal', 'short', 'relaxed', 'flexible'] as const;
+/** Stored values: append new options, never rename existing ones. */
+export const helpTopics = [
+  'getting-started',
+  'introducing-foods',
+  'nutrition',
+  'baby-meal-planning',
+  'mom-food',
+  'family-recipes',
+] as const;
+/** Stored values: append new options, never rename existing ones. */
+export const solidsApproaches = ['baby-led', 'spoon', 'both', 'not-sure'] as const;
 
 export type FeedingStatus = (typeof feedingStatuses)[number];
 export type Allergen = (typeof allergens)[number];
 export type Diet = (typeof diets)[number];
 export type CookingTime = (typeof cookingTimes)[number];
+export type HelpTopic = (typeof helpTopics)[number];
+export type SolidsApproach = (typeof solidsApproaches)[number];
 
 const isoDate = z.string().refine(isIsoDate, 'Invalid date');
 
@@ -51,6 +64,10 @@ export const profileSchema = z.object({
   allergens: z.array(z.enum(allergens)),
   diets: z.array(z.enum(diets)),
   cookingTime: z.enum(cookingTimes),
+  /** What the family wants help with most. Profiles saved before this existed have none. */
+  helpTopics: z.array(z.enum(helpTopics)).default([]),
+  /** How they plan to introduce solids, or null if not answered yet. */
+  solidsApproach: z.enum(solidsApproaches).nullable().default(null),
 });
 export type Profile = z.infer<typeof profileSchema>;
 

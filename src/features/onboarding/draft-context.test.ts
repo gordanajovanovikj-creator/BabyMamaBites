@@ -10,6 +10,8 @@ const profile: Profile = {
   allergens: ['peanut'],
   diets: [],
   cookingTime: 'minimal',
+  helpTopics: ['getting-started', 'mom-food'],
+  solidsApproach: 'baby-led',
 };
 
 describe('onboarding draft', () => {
@@ -25,6 +27,11 @@ describe('onboarding draft', () => {
     const base = draftFromProfile(profile);
     expect(draftToProfile({ ...base, babyName: '  Mila ' })?.babyName).toBe('Mila');
     expect(draftToProfile({ ...base, babyName: '   ' })?.babyName).toBeNull();
+  });
+
+  it('needs a solids approach before it can finish', () => {
+    const draft = { ...draftFromProfile(profile), solidsApproach: null };
+    expect(draftToProfile(draft)).toBeNull();
   });
 
   it('drops the due date when "born early" is switched off', () => {

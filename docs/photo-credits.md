@@ -48,3 +48,14 @@ Photos bundled in `assets/images/recipes/` and registered in
 | baby-lentil-pasta | Pixabay | alexbadulescu | https://pixabay.com/photos/easter-tomato-sauce-italian-pasta-2686112/ | Pixabay Content License | 2026-10-09 |
 | toddler-cheesy-broccoli-rice | Pixabay | Simone_ph | https://pixabay.com/photos/rice-risotto-kitchen-shrimp-1823664/ | Pixabay Content License | 2026-10-09 |
 | toddler-bean-quesadilla | Pixabay | Nayuta | https://pixabay.com/photos/quesadilla-vegan-food-mexican-2297036/ | Pixabay Content License | 2026-10-09 |
+
+## Welcome (onboarding) photos
+
+Bundled in `assets/images/onboarding/`. These show identifiable people, so the app
+owner must hold the rights and model releases to use them in the app and App Store.
+
+| Photo | Used on | Source | License | Added |
+| --- | --- | --- | --- | --- |
+| welcome-mom-baby | Welcome screen | Supplied by the app owner | Owner-supplied | 2026-10-09 |
+| baby-led-weaning | "Baby-led weaning is a great choice!" | Supplied by the app owner | Owner-supplied | 2026-10-09 |
+| spoon-feeding | "Spoon feeding / mixing both is a great choice!" | Supplied by the app owner | Owner-supplied | 2026-10-09 |

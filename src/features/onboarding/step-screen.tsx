@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 import { AppText, Button, Screen } from '@/ui';
 
-export const ONBOARDING_STEPS = 4;
+export const ONBOARDING_STEPS = 7;
 
 export type StepScreenProps = {
   step: number;

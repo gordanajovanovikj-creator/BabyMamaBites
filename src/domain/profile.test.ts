@@ -35,6 +35,8 @@ describe('profileSchema', () => {
     allergens: ['peanut'],
     diets: ['vegetarian'],
     cookingTime: 'minimal',
+    helpTopics: ['nutrition'],
+    solidsApproach: 'spoon',
   };
 
   it('accepts a complete profile', () => {
@@ -43,6 +45,12 @@ describe('profileSchema', () => {
   it('accepts profiles saved before baby names existed', () => {
     const { babyName: _omit, ...old } = valid;
     expect(profileSchema.parse(old).babyName).toBeNull();
+  });
+  it('accepts profiles saved before help topics and solids approach existed', () => {
+    const { helpTopics: _h, solidsApproach: _s, ...old } = valid;
+    const parsed = profileSchema.parse(old);
+    expect(parsed.helpTopics).toEqual([]);
+    expect(parsed.solidsApproach).toBeNull();
   });
   it('rejects unknown options and bad dates', () => {
     expect(() => profileSchema.parse({ ...valid, allergens: ['chocolate'] })).toThrow();

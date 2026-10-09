@@ -10,11 +10,19 @@ const profile: Profile = {
   allergens: ['egg', 'sesame'],
   diets: ['halal'],
   cookingTime: 'short',
+  helpTopics: ['nutrition'],
+  solidsApproach: 'spoon',
 };
 
 describe('profile row mapping', () => {
   it('reads rows saved before baby names existed', () => {
     expect(rowToProfile({ ...profileToRow(profile), baby_name: null })?.babyName).toBeNull();
+  });
+
+  it('reads rows saved before help topics and solids approach existed', () => {
+    const old = rowToProfile({ ...profileToRow(profile), help_topics: null, solids_approach: null });
+    expect(old?.helpTopics).toEqual([]);
+    expect(old?.solidsApproach).toBeNull();
   });
 
   it('round-trips a profile', () => {
