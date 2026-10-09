@@ -12,3 +12,4 @@ Photos bundled in `assets/images/recipes/` and registered in
 | baby-salmon-sweet-potato | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | baby-pear-puree | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | baby-chicken-puree | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
+| baby-avocado-banana-mash | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
