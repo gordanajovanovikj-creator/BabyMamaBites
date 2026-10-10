@@ -91,3 +91,4 @@ Bundled in `assets/images/insights/` and registered in
 | cows-milk | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | feeling-low | Supplied by the app owner | — | — | Owner-supplied | 2026-10-09 |
 | toddler-share-plate | Supplied by the app owner | — | — | Owner-supplied | 2026-10-10 |
+| solids-two-textures | Supplied by the app owner | — | — | Owner-supplied | 2026-10-10 |
