@@ -42,11 +42,45 @@ export type LibraryTileProps = {
   width?: number;
 };
 
-/** Tall, colorful story card with the title on the card (Flo-style). */
+/**
+ * Story card. With a photo, the photo fills a rounded box and the text sits below it
+ * (food-catalog style); without one, a colorful card with an illustration.
+ */
 export function LibraryTile({ item, ageMonths, width = LIBRARY_TILE_WIDTH }: LibraryTileProps) {
   const color = insightTextColor[item.tone];
   const kicker = libraryKicker(item, ageMonths);
   const photo = libraryPhoto(item.id);
+
+  if (photo) {
+    return (
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={`${item.title}. ${kicker} read.`}
+        onPress={() => openLibraryItem(item)}
+        style={{ width }}
+        className="gap-2 active:opacity-80"
+      >
+        <View className="overflow-hidden rounded-3xl bg-surface-muted" style={{ height: width }}>
+          <Image
+            source={photo}
+            contentFit="cover"
+            transition={150}
+            accessible={false}
+            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+          />
+        </View>
+        <View className="gap-0.5 pr-1">
+          <AppText variant="heading" size="lg" className="leading-6">
+            {item.title}
+          </AppText>
+          <AppText variant="caption" size="sm">
+            {kicker}
+          </AppText>
+        </View>
+      </Pressable>
+    );
+  }
+
   return (
     <Pressable
       accessibilityRole="button"
@@ -69,25 +103,13 @@ export function LibraryTile({ item, ageMonths, width = LIBRARY_TILE_WIDTH }: Lib
             {item.title}
           </AppText>
         </View>
-        {photo ? (
-          <View className="h-28 overflow-hidden rounded-2xl">
-            <Image
-              source={photo}
-              contentFit="cover"
-              transition={150}
-              accessible={false}
-              style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
-            />
-          </View>
-        ) : (
-          <View className="items-center">
-            <Illustration
-              name={item.illustration}
-              on={item.tone === 'surface' ? 'white' : item.tone === 'deep' ? 'dark' : 'pastel'}
-              height={100}
-            />
-          </View>
-        )}
+        <View className="items-center">
+          <Illustration
+            name={item.illustration}
+            on={item.tone === 'surface' ? 'white' : item.tone === 'deep' ? 'dark' : 'pastel'}
+            height={100}
+          />
+        </View>
       </Card>
     </Pressable>
   );
