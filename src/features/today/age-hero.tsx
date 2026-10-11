@@ -6,6 +6,7 @@ import type { MonthlyGuide } from '@/content/monthly-guides';
 import { today } from '@/domain/dates';
 import type { Profile } from '@/domain/profile';
 import { babyAge, formatAge } from '@/domain/stage';
+import { shadows } from '@/theme/colors';
 import { AppText, SymbolIcon } from '@/ui';
 
 function formatToday(): string {
@@ -60,7 +61,8 @@ export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyG
             accessibilityRole="button"
             accessibilityLabel={`${name}, ${shortAge}${age.corrected ? ', adjusted age' : ''}. Update details.`}
             onPress={() => router.push('/onboarding')}
-            className="min-h-12 max-w-[40%] justify-center rounded-full border border-border bg-surface px-5 py-1.5 active:opacity-70"
+            className="min-h-12 max-w-[40%] justify-center rounded-full bg-surface px-5 py-1.5 active:opacity-70"
+            style={{ boxShadow: shadows.float }}
           >
             <AppText variant="label" numberOfLines={1} className="text-center">
               {name}
