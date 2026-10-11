@@ -10,8 +10,8 @@ import { AppText, SymbolIcon } from '@/ui';
 
 function formatToday(): string {
   return new Date().toLocaleDateString('en-US', {
-    weekday: 'long',
-    month: 'long',
+    weekday: 'short',
+    month: 'short',
     day: 'numeric',
   });
 }
@@ -26,9 +26,9 @@ export function initialsFor(name: string | null): string {
 }
 
 /**
- * Top of Today: greeting and date on the left (tap to open the calendar); a pill with the baby's name,
- * age and initials (opens settings and details) on the right; then a soft banner that
- * opens this month's guide for baby and mom.
+ * Top of Today (Apple-style): a big "Today" title, a white pill with calendar and settings, and the
+ * baby's initials avatar (opens details); a greeting, the date and baby's age underneath (opens the
+ * calendar); then a soft banner that opens this month's guide for baby and mom.
  */
 export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyGuide }) {
   const insets = useSafeAreaInsets();
@@ -38,54 +38,66 @@ export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyG
   const name = profile.babyName ?? 'Your baby';
   const initials = initialsFor(profile.babyName);
   const hour = new Date().getHours();
-  const greeting = hour < 12 ? 'Good morning!' : hour < 18 ? 'Good afternoon!' : 'Good evening!';
+  const greeting = hour < 12 ? 'Good morning ·' : hour < 18 ? 'Good afternoon ·' : 'Good evening ·';
 
   return (
     <View className="gap-5 px-5" style={{ paddingTop: insets.top + 12 }}>
-      <View className="flex-row items-center gap-2">
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={`${greeting} ${formatToday()}. Opens your calendar.`}
-          onPress={() => router.push('/calendar')}
-          hitSlop={6}
-          className="min-h-12 flex-1 justify-center active:opacity-70"
-        >
-          <AppText variant="heading" size="xl" numberOfLines={1}>
-            {greeting}
+      <View className="gap-1">
+        <View className="flex-row items-center gap-3">
+          <AppText
+            variant="display"
+            className="flex-1"
+            numberOfLines={1}
+            accessibilityRole="header"
+          >
+            Today
           </AppText>
-          <View className="flex-row items-center gap-1.5">
-            <SymbolIcon icon="calendar" emoji="📅" size={14} />
-            <AppText
-              variant="caption"
-              size="sm"
-              color="primary"
-              className="font-semibold"
-              numberOfLines={1}
+          {/* Grouped actions in one white pill, Apple-style. */}
+          <View className="flex-row items-center rounded-full border border-border bg-surface px-1">
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Calendar: events, notes and planned meals"
+              onPress={() => router.push('/calendar')}
+              hitSlop={4}
+              className="h-12 w-12 items-center justify-center active:opacity-60"
             >
-              {formatToday()}
-            </AppText>
+              <SymbolIcon icon="calendar" emoji="📅" size={22} />
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Settings and reminders"
+              onPress={() => router.push('/settings')}
+              hitSlop={4}
+              className="h-12 w-12 items-center justify-center active:opacity-60"
+            >
+              <SymbolIcon icon="ellipsis" emoji="⋯" size={22} />
+            </Pressable>
           </View>
-        </Pressable>
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={`${name}, ${headline}${age.corrected ? ', adjusted age' : ''}. Opens settings and your details.`}
-          onPress={() => router.push('/settings')}
-          className="max-w-[55%] flex-row items-center gap-2 rounded-full border border-border bg-surface py-1.5 pl-4 pr-1.5 active:opacity-80"
-        >
-          <View className="flex-shrink items-end">
-            <AppText variant="label" numberOfLines={1}>
-              {name}
-            </AppText>
-            <AppText variant="caption" size="xs" numberOfLines={1}>
-              {headline}
-              {age.corrected ? ' · adjusted' : ''}
-            </AppText>
-          </View>
-          <View className="h-11 w-11 items-center justify-center rounded-full bg-primary">
-            <AppText variant="label" color="on-primary" className="font-bold">
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={`${name}, ${headline}${age.corrected ? ', adjusted age' : ''}. Update details.`}
+            onPress={() => router.push('/onboarding')}
+            className="h-14 w-14 items-center justify-center rounded-full border-4 border-sky bg-primary active:opacity-80"
+          >
+            <AppText variant="heading" color="on-primary">
               {initials || '♡'}
             </AppText>
-          </View>
+          </Pressable>
+        </View>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={`${greeting} ${formatToday()}. ${name} is ${headline}. Opens your calendar.`}
+          onPress={() => router.push('/calendar')}
+          hitSlop={6}
+          className="min-h-11 justify-center self-start active:opacity-70"
+        >
+          <AppText variant="caption">
+            {greeting} {formatToday()} ·{' '}
+            <AppText variant="caption" color="primary" className="font-semibold">
+              {name}, {headline}
+              {age.corrected ? ' (adjusted)' : ''}
+            </AppText>
+          </AppText>
         </Pressable>
       </View>
 

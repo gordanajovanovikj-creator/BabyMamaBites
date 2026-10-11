@@ -30,7 +30,7 @@ export function RecipeTile({
         onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
         className="gap-2 active:opacity-80"
       >
-        <RecipeImage recipe={recipe} className="h-44 rounded-3xl" iconSize={64} />
+        <RecipeImage recipe={recipe} className="h-44 rounded-xl" iconSize={64} />
         <View className="gap-0.5 pr-2">
           <AppText
             variant="label"

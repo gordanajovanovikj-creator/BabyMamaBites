@@ -20,7 +20,7 @@ export function AskTile() {
       className="gap-2 active:opacity-80"
     >
       <View
-        className="items-center justify-center rounded-3xl bg-sky"
+        className="items-center justify-center rounded-xl bg-sky"
         style={{ height: LIBRARY_TILE_WIDTH }}
       >
         <View className="h-16 w-16 items-center justify-center rounded-full bg-primary">

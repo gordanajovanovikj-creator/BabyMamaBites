@@ -60,7 +60,7 @@ export function LibraryTile({ item, ageMonths, width = LIBRARY_TILE_WIDTH }: Lib
         style={{ width }}
         className="gap-2 active:opacity-80"
       >
-        <View className="overflow-hidden rounded-3xl bg-surface-muted" style={{ height: width }}>
+        <View className="overflow-hidden rounded-xl bg-surface-muted" style={{ height: width }}>
           <Image
             source={photo}
             contentFit="cover"
