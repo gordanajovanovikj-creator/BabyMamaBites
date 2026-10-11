@@ -16,7 +16,7 @@ function formatToday(): string {
   });
 }
 
-/** Top of Today: date header, then the baby's age big and centred with one action. */
+/** Top of Today: date header, then the baby's name and age centred with one action. */
 export function AgeHero({ profile }: { profile: Profile }) {
   const insets = useSafeAreaInsets();
   const now = today();
@@ -57,14 +57,14 @@ export function AgeHero({ profile }: { profile: Profile }) {
       </View>
 
       <View
-        className="items-center gap-2 pb-6 pt-14"
+        className="items-center gap-1 pb-5 pt-8"
         accessible
         accessibilityLabel={`${name} is ${headline}${age.corrected ? ', adjusted age' : ''}. ${stageLine}.`}
       >
-        <AppText variant="heading" color="primary" size="2xl" className="text-center">
+        <AppText variant="heading" color="primary" size="lg" className="text-center">
           {name}
         </AppText>
-        <AppText variant="display" color="primary" className="text-center">
+        <AppText variant="title" color="primary" size="2xl" className="text-center">
           {headline}
         </AppText>
         <AppText variant="caption" className="text-center">
