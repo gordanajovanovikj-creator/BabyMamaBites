@@ -1,45 +1,28 @@
-import { Image } from 'expo-image';
-import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
 import { ScrollView, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { ArrowButton } from '@/features/onboarding/arrow-button';
 import { useDraft } from '@/features/onboarding/draft-context';
+import { FadePhoto, fadeHeight } from '@/features/onboarding/fade-photo';
 import { onboardingPhotos } from '@/features/onboarding/onboarding-photo';
-import { usePalette } from '@/theme/use-palette';
 import { AppText, Button } from '@/ui';
 
 export default function WelcomeScreen() {
   const { isNew } = useDraft();
   const { height } = useWindowDimensions();
   const insets = useSafeAreaInsets();
-  const palette = usePalette();
   // The photo fills the top of the screen and fades into white behind the text.
   const photoHeight = Math.round(height * (isNew ? 0.68 : 0.45));
-  const fade = Math.round(photoHeight * 0.45);
+  const fade = fadeHeight(photoHeight);
 
   return (
     <View className="flex-1 bg-canvas">
-      <View
-        accessible
-        accessibilityRole="image"
-        accessibilityLabel="A smiling mom sharing a snack with her baby in a high chair"
-        style={{ position: 'absolute', top: 0, left: 0, right: 0, height: photoHeight }}
-      >
-        <Image
-          source={onboardingPhotos.welcome}
-          contentFit="cover"
-          contentPosition="top"
-          transition={150}
-          accessible={false}
-          style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
-        />
-        <LinearGradient
-          colors={[`${palette.canvas}00`, palette.canvas]}
-          style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: fade }}
-        />
-      </View>
+      <FadePhoto
+        source={onboardingPhotos.welcome}
+        label="A smiling mom sharing a snack with her baby in a high chair"
+        height={photoHeight}
+      />
 
       <ScrollView
         className="flex-1"

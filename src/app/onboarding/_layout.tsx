@@ -16,6 +16,7 @@ export default function OnboardingLayout() {
         }}
       >
         <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="great-choice" options={{ headerShown: false }} />
       </Stack>
     </DraftProvider>
   );

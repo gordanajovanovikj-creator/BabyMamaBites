@@ -1,9 +1,12 @@
 import { router } from 'expo-router';
-import { View } from 'react-native';
+import { ScrollView, useWindowDimensions, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
 import { useDraft } from '@/features/onboarding/draft-context';
-import { OnboardingPhoto, onboardingPhotos } from '@/features/onboarding/onboarding-photo';
+import { FadePhoto, fadeHeight } from '@/features/onboarding/fade-photo';
+import { onboardingPhotos } from '@/features/onboarding/onboarding-photo';
 import { QuestionHeader } from '@/features/onboarding/question-header';
-import { Button, Screen } from '@/ui';
+import { Button, RoundIconButton } from '@/ui';
 
 const content = {
   'baby-led': {
@@ -32,19 +35,53 @@ const content = {
   },
 } as const;
 
+const FADE = 0.2;
+
 export default function GreatChoiceScreen() {
   const { draft } = useDraft();
+  const { height } = useWindowDimensions();
+  const insets = useSafeAreaInsets();
   const approach = draft.solidsApproach;
   const c = approach ? content[approach] : null;
 
   if (!c) return null;
 
+  // The photo fills the top of the screen, high chair and all, and fades into the text.
+  const photoHeight = Math.round(height * 0.68);
+  // A short fade keeps the high chair tray in view.
+  const fade = fadeHeight(photoHeight, FADE);
+
   return (
-    <Screen className="flex-grow pt-4">
-      <OnboardingPhoto source={c.photo} label={c.label} height={380} focus="top" />
-      <QuestionHeader title={c.title} subtitle={c.subtitle} />
-      <View className="flex-1" />
-      <Button label="Continue" onPress={() => router.push('/onboarding/notifications')} />
-    </Screen>
+    <View className="flex-1 bg-canvas">
+      <FadePhoto
+        source={c.photo}
+        label={c.label}
+        height={photoHeight}
+        position="bottom"
+        fade={FADE}
+      />
+
+      <ScrollView
+        className="flex-1"
+        contentContainerClassName="flex-grow justify-end gap-6 px-5"
+        contentContainerStyle={{
+          paddingTop: photoHeight - fade,
+          paddingBottom: insets.bottom + 24,
+        }}
+        bounces={false}
+      >
+        <QuestionHeader title={c.title} subtitle={c.subtitle} />
+        <Button label="Continue" onPress={() => router.push('/onboarding/notifications')} />
+      </ScrollView>
+
+      <View className="absolute left-5" style={{ top: insets.top + 8 }}>
+        <RoundIconButton
+          symbol="chevron.left"
+          fallback="‹"
+          accessibilityLabel="Back"
+          onPress={() => router.back()}
+        />
+      </View>
+    </View>
   );
 }
