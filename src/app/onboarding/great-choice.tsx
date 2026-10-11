@@ -21,8 +21,8 @@ type Choice = {
 const content: Record<SolidsApproach, Choice> = {
   'baby-led': {
     photo: onboardingPhotos.babyLed,
-    label: 'A baby in a high chair feeding themselves',
-    position: 'bottom',
+    label: 'A smiling baby in a high chair with soft finger foods on the tray',
+    position: 'center',
     title: 'Baby-led weaning is a great choice!',
     subtitle: "We'll shape recipes and tips around the way your baby likes to eat.",
   },
