@@ -57,6 +57,17 @@ export function mealsPlanned(plan: MealPlan, date: IsoDate): number {
   return mealSlots.filter((slot) => plan[planKey(date, slot)]).length;
 }
 
+/** The meals planned on a day, breakfast to dinner, as slot and recipe id. */
+export function plannedMeals(
+  plan: MealPlan,
+  date: IsoDate,
+): { slot: MealSlot; recipeId: string }[] {
+  return mealSlots.flatMap((slot) => {
+    const recipeId = plan[planKey(date, slot)];
+    return recipeId ? [{ slot, recipeId }] : [];
+  });
+}
+
 /** Turns stored `{date|slot: id}` or legacy `{date: id}` (one meal a day, now lunch) into a plan. */
 export function normalizePlan(stored: Record<string, unknown>): MealPlan {
   const plan: MealPlan = {};

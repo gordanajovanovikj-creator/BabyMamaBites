@@ -12,13 +12,13 @@ const CARD_WIDTH = 280;
 const PHOTO_HEIGHT = 320;
 
 /** Big feature card: a tall photo box with the meal's age, name and time underneath. */
-function FeatureCard({ recipe }: { recipe: Recipe }) {
+function FeatureCard({ recipe, kicker }: { recipe: Recipe; kicker: string }) {
   const { isFavorite, toggle } = useFavorites();
   return (
     <View style={{ width: CARD_WIDTH }} className="gap-2">
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel={`${recipe.title}, from ${recipe.fromMonths} months. ${recipeMeta(recipe)}. Opens the recipe.`}
+        accessibilityLabel={`${kicker}: ${recipe.title}. ${recipeMeta(recipe)}. Opens the recipe.`}
         onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
         className="gap-2 active:opacity-90"
       >
@@ -38,7 +38,7 @@ function FeatureCard({ recipe }: { recipe: Recipe }) {
             color="on-accent"
             className="font-bold uppercase tracking-wider"
           >
-            From {recipe.fromMonths} months
+            {kicker}
           </AppText>
           <AppText variant="heading" size="xl" numberOfLines={2}>
             {recipe.title}
@@ -63,34 +63,58 @@ export type FoodsToTryProps = {
   recipes: Recipe[];
   /** True before 6 months: these are first foods to read about, not to offer yet. */
   readAhead: boolean;
+  /** Today's meals from the planner. When there are any, they replace the suggestions. */
+  planned?: { label: string; recipe: Recipe }[];
 };
 
-/** "Foods to try today": baby meals for the baby's age, changing every day. */
-export function FoodsToTry({ babyName, recipes, readAhead }: FoodsToTryProps) {
-  if (!recipes.length) return null;
+/**
+ * Today's baby food: the meals planned for today if there are any, otherwise
+ * "Foods to try today" (meals for the baby's age, changing every day).
+ */
+export function FoodsToTry({ babyName, recipes, readAhead, planned = [] }: FoodsToTryProps) {
   const who = babyName ?? 'your baby';
+  const hasPlan = planned.length > 0;
+  const cards = hasPlan
+    ? planned.map((p) => ({ kicker: p.label, recipe: p.recipe }))
+    : recipes.map((r) => ({ kicker: `From ${r.fromMonths} months`, recipe: r }));
+  if (!cards.length) return null;
+  const title = hasPlan
+    ? 'Your food for today'
+    : readAhead
+      ? 'First foods to look forward to'
+      : 'Foods to try today';
+  const subtitle = hasPlan
+    ? `What you planned for ${who}`
+    : readAhead
+      ? 'Solids usually start around 6 months. Read ahead for now.'
+      : `Meals that fit ${who}'s age`;
   return (
     <View className="gap-3">
       <View className="flex-row items-center justify-between px-5">
         <View className="flex-1">
           <AppText variant="heading" size="2xl">
-            {readAhead ? 'First foods to look forward to' : 'Foods to try today'}
+            {title}
           </AppText>
           <AppText variant="caption" size="sm">
-            {readAhead
-              ? 'Solids usually start around 6 months. Read ahead for now.'
-              : `Meals that fit ${who}'s age`}
+            {subtitle}
           </AppText>
         </View>
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel="See all baby recipes"
-          onPress={() => router.navigate('/baby')}
+          accessibilityLabel={hasPlan ? 'Open the meal planner' : 'See all baby recipes'}
+          onPress={() =>
+            hasPlan
+              ? router.navigate({
+                  pathname: '/baby',
+                  params: { tab: 'plan', at: String(Date.now()) },
+                })
+              : router.navigate('/baby')
+          }
           hitSlop={8}
           className="min-h-11 flex-row items-center justify-center pl-3 active:opacity-60"
         >
           <AppText variant="label" color="muted" className="font-bold">
-            See all ›
+            {hasPlan ? 'Plan ›' : 'See all ›'}
           </AppText>
         </Pressable>
       </View>
@@ -102,8 +126,8 @@ export function FoodsToTry({ babyName, recipes, readAhead }: FoodsToTryProps) {
         // Room above and below so the card shadows aren't clipped.
         contentContainerClassName="gap-3 px-5 pb-4 pt-1"
       >
-        {recipes.map((r) => (
-          <FeatureCard key={r.id} recipe={r} />
+        {cards.map((c) => (
+          <FeatureCard key={`${c.kicker}-${c.recipe.id}`} recipe={c.recipe} kicker={c.kicker} />
         ))}
       </ScrollView>
     </View>

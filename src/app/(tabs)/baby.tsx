@@ -1,4 +1,4 @@
-import { router } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -33,7 +33,16 @@ export default function BabyScreen() {
   const { profile } = useProfile();
   const { entries } = useFoodLog();
   const { ids: favoriteIds } = useFavorites();
+  const params = useLocalSearchParams<{ tab?: string; at?: string }>();
   const [tab, setTab] = useState<Tab>('recipes');
+  // Links can open a tab (e.g. Home's "Plan ›"); `at` makes each tap count once.
+  const [seenAt, setSeenAt] = useState<string | undefined>(undefined);
+  if (params.at && params.at !== seenAt) {
+    setSeenAt(params.at);
+    if (params.tab === 'plan' || params.tab === 'recipes' || params.tab === 'favorites') {
+      setTab(params.tab);
+    }
+  }
   const [searchOpen, setSearchOpen] = useState(false);
   if (!profile) return null;
 

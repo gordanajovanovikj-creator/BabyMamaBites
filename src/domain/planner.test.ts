@@ -1,6 +1,7 @@
 import {
   dayLabel,
   mealsPlanned,
+  plannedMeals,
   normalizePlan,
   planKey,
   freezerStatus,
@@ -77,6 +78,19 @@ describe('meal slots', () => {
     };
     expect(mealsPlanned(plan, '2026-10-05')).toBe(2);
     expect(mealsPlanned(plan, '2026-10-06')).toBe(0);
+  });
+
+  it("lists a day's planned meals in meal order", () => {
+    const plan = {
+      [planKey('2026-10-05', 'dinner')]: 'b',
+      [planKey('2026-10-05', 'breakfast')]: 'a',
+      [planKey('2026-10-06', 'lunch')]: 'c',
+    };
+    expect(plannedMeals(plan, '2026-10-05')).toEqual([
+      { slot: 'breakfast', recipeId: 'a' },
+      { slot: 'dinner', recipeId: 'b' },
+    ]);
+    expect(plannedMeals(plan, '2026-10-07')).toEqual([]);
   });
 
   it('moves the old one-meal-a-day plan to lunch and drops bad keys', () => {
