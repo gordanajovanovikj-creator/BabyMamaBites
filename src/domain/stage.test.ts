@@ -5,6 +5,7 @@ import {
   babyStage,
   formatAge,
   formatAgeHeadline,
+  showsReadinessPrompt,
   solidsStartDate,
   solidsWeek,
   stageForMonths,
@@ -135,5 +136,14 @@ describe('formatAgeHeadline', () => {
     ['2023-10-01', '3 years'],
   ])('born %s → %s on 2026-10-07', (from, text) => {
     expect(formatAgeHeadline(from, '2026-10-07')).toBe(text);
+  });
+});
+
+describe('showsReadinessPrompt', () => {
+  it('shows only at 6 and 7 months', () => {
+    expect(showsReadinessPrompt(5)).toBe(false);
+    expect(showsReadinessPrompt(6)).toBe(true);
+    expect(showsReadinessPrompt(7)).toBe(true);
+    expect(showsReadinessPrompt(8)).toBe(false);
   });
 });

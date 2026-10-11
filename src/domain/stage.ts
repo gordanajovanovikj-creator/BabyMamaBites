@@ -117,3 +117,11 @@ export function formatAgeHeadline(countedFrom: IsoDate, onDate: IsoDate): string
   }
   return plural(Math.floor(months / 12), 'year');
 }
+
+/** Ages (whole months, corrected where it applies) when the Plan tab asks "Is your baby ready?". */
+export const READINESS_PROMPT_MONTHS = { from: 6, to: 7 } as const;
+
+/** Whether to show the "Is your baby ready to start solids?" box: only at 6 to 7 months. */
+export function showsReadinessPrompt(months: number): boolean {
+  return months >= READINESS_PROMPT_MONTHS.from && months <= READINESS_PROMPT_MONTHS.to;
+}

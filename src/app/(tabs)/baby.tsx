@@ -4,17 +4,15 @@ import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { babyRecipes } from '@/content/recipes';
-import { splitReviewMarker } from '@/content/schemas';
-import { getPlanWeek, planWeeks, readiness, solidsSourcesFor } from '@/content/solids-plan';
+import { getPlanWeek, planWeeks } from '@/content/solids-plan';
 import { fromIsoDate, today } from '@/domain/dates';
 import { allergenProgress, foodsTriedCount, planWeekFor } from '@/domain/food-log';
-import { babyAge, solidsStartDate, solidsWeek } from '@/domain/stage';
+import { babyAge, showsReadinessPrompt, solidsStartDate, solidsWeek } from '@/domain/stage';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { FavoritesList } from '@/features/favorites/favorites-list';
 import { FreezerCard } from '@/features/planner/freezer-card';
 import { WeekMenu } from '@/features/planner/week-menu';
 import { useProfile } from '@/features/profile/profile-context';
-import { SourceLinks } from '@/features/shared/source-links';
 import { AllergenTracker } from '@/features/solids/allergen-tracker';
 import { ArticlesRow } from '@/features/solids/articles-row';
 import { BabyRecipesView } from '@/features/solids/baby-recipes-view';
@@ -50,6 +48,7 @@ export default function BabyScreen() {
     .map((id) => babyRecipes.find((r) => r.id === id))
     .filter((r) => r !== undefined);
   const now = today();
+  const ageMonths = babyAge(profile, now).months;
   const rawWeek = solidsWeek(profile, now);
   const current = planWeekFor(rawWeek, planWeeks.length);
   const week = current ? getPlanWeek(current) : undefined;
@@ -105,7 +104,7 @@ export default function BabyScreen() {
       ) : tab === 'recipes' ? (
         <BabyRecipesView
           babyName={profile.babyName}
-          ageMonths={babyAge(profile, now).months}
+          ageMonths={ageMonths}
           searchOpen={searchOpen}
         />
       ) : (
@@ -118,27 +117,19 @@ export default function BabyScreen() {
           </View>
 
           <View className="gap-4 px-5">
-            {current === null ? (
-              <Card tone="accent" className="gap-3">
-                <AppText variant="heading" color="on-accent">
-                  Getting ready for solids
+            {showsReadinessPrompt(ageMonths) ? (
+              <Card
+                className="flex-row items-center gap-4"
+                onPress={() => router.push('/solids/readiness')}
+                accessibilityLabel="Is your baby ready to start solids? See the signs to look for."
+              >
+                <View className="flex-1 gap-1">
+                  <AppText variant="heading">Is your baby ready to start solids?</AppText>
+                  <AppText variant="caption">The signs to look for, all together.</AppText>
+                </View>
+                <AppText variant="heading" color="primary">
+                  ›
                 </AppText>
-                <AppText color="on-accent">{splitReviewMarker(readiness.intro).text}</AppText>
-                {readiness.signs.map((sign) => (
-                  <View key={sign} className="flex-row gap-3">
-                    <AppText color="on-accent" className="font-bold">
-                      •
-                    </AppText>
-                    <AppText color="on-accent" className="flex-1">
-                      {sign}
-                    </AppText>
-                  </View>
-                ))}
-                <AppText variant="caption" color="on-accent">
-                  Talk to your pediatrician about when to start, especially if your baby was born
-                  early.
-                </AppText>
-                <SourceLinks sources={solidsSourcesFor(readiness.sources)} />
               </Card>
             ) : null}
 
