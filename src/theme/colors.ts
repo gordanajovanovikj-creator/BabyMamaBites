@@ -18,3 +18,8 @@ export const colors = { light, dark: light } as const;
 
 export type ColorScheme = keyof typeof colors;
 export type Palette = typeof light;
+
+/** Soft, warm drop shadows (CSS box-shadow syntax) for raised white cards. */
+export const shadows = {
+  card: '0 1px 2px rgba(44, 42, 37, 0.06), 0 6px 16px rgba(44, 42, 37, 0.08)',
+} as const;

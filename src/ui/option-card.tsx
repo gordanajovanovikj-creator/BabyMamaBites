@@ -1,5 +1,7 @@
 import { Pressable, View } from 'react-native';
 
+import { shadows } from '@/theme/colors';
+
 import { AppText } from './app-text';
 import { cn } from './cn';
 
@@ -12,7 +14,10 @@ export type OptionCardProps = {
   kind?: 'radio' | 'checkbox';
 };
 
-/** Large, full-width answer card for one-tap choices. */
+/**
+ * Large, full-width answer card for one-tap choices: a raised white card with
+ * a soft shadow and an iOS-style check on the right.
+ */
 export function OptionCard({ title, detail, selected, onPress, kind = 'radio' }: OptionCardProps) {
   return (
     <Pressable
@@ -21,24 +26,29 @@ export function OptionCard({ title, detail, selected, onPress, kind = 'radio' }:
       accessibilityLabel={detail ? `${title}. ${detail}` : title}
       onPress={onPress}
       className={cn(
-        'min-h-16 flex-row items-center gap-4 rounded-2xl border-2 px-5 py-4 active:opacity-80',
-        selected ? 'border-primary bg-surface-muted' : 'border-border bg-surface',
+        'min-h-16 flex-row items-center gap-4 rounded-2xl border-2 bg-surface px-5 py-4 active:opacity-70',
+        selected ? 'border-primary' : 'border-surface',
       )}
+      style={{ borderCurve: 'continuous', boxShadow: shadows.card }}
     >
-      <View
-        className={cn(
-          'h-6 w-6 items-center justify-center border-2',
-          kind === 'radio' ? 'rounded-full' : 'rounded-md',
-          selected ? 'border-primary bg-primary' : 'border-ink-muted',
-        )}
-      >
-        {selected ? <View className="h-2.5 w-2.5 rounded-full bg-on-primary" /> : null}
-      </View>
       <View className="flex-1 gap-0.5">
         <AppText variant="label" size="lg">
           {title}
         </AppText>
         {detail ? <AppText variant="caption">{detail}</AppText> : null}
+      </View>
+      <View
+        className={cn(
+          'h-7 w-7 items-center justify-center',
+          kind === 'radio' ? 'rounded-full' : 'rounded-lg',
+          selected ? 'bg-primary' : 'border-2 border-border',
+        )}
+      >
+        {selected ? (
+          <AppText variant="label" color="on-primary" size="sm" className="font-bold">
+            ✓
+          </AppText>
+        ) : null}
       </View>
     </Pressable>
   );
