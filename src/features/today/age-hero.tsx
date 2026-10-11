@@ -82,7 +82,7 @@ export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyG
             accessibilityRole="button"
             accessibilityLabel="Settings, reminders and your details"
             onPress={() => router.push('/settings')}
-            className="h-14 w-14 items-center justify-center rounded-full border-4 border-sky bg-primary active:opacity-80"
+            className="h-14 w-14 items-center justify-center rounded-full bg-primary active:opacity-80"
           >
             <AppText variant="heading" color="on-primary">
               {initials || '♡'}
