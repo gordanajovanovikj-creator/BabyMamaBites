@@ -3,11 +3,14 @@ import { useState } from 'react';
 import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { babyRecipes } from '@/content/recipes';
 import { splitReviewMarker } from '@/content/schemas';
 import { getPlanWeek, planWeeks, readiness, solidsSourcesFor } from '@/content/solids-plan';
 import { fromIsoDate, today } from '@/domain/dates';
 import { allergenProgress, foodsTriedCount, planWeekFor } from '@/domain/food-log';
 import { babyAge, solidsStartDate, solidsWeek } from '@/domain/stage';
+import { useFavorites } from '@/features/favorites/favorites-context';
+import { FavoritesList } from '@/features/favorites/favorites-list';
 import { FreezerCard } from '@/features/planner/freezer-card';
 import { WeekMenu } from '@/features/planner/week-menu';
 import { useProfile } from '@/features/profile/profile-context';
@@ -23,16 +26,20 @@ import { AppText, Button, Card, Notice, Screen, SearchButton, SegmentedTabs } fr
 
 const RECENT = 5;
 
-type Tab = 'plan' | 'recipes';
+type Tab = 'plan' | 'recipes' | 'favorites';
 
 export default function BabyScreen() {
   const insets = useSafeAreaInsets();
   const { profile } = useProfile();
   const { entries } = useFoodLog();
+  const { ids: favoriteIds } = useFavorites();
   const [tab, setTab] = useState<Tab>('recipes');
   const [searchOpen, setSearchOpen] = useState(false);
   if (!profile) return null;
 
+  const favorites = favoriteIds
+    .map((id) => babyRecipes.find((r) => r.id === id))
+    .filter((r) => r !== undefined);
   const now = today();
   const rawWeek = solidsWeek(profile, now);
   const current = planWeekFor(rawWeek, planWeeks.length);
@@ -70,6 +77,10 @@ export default function BabyScreen() {
             tabs={[
               { id: 'recipes', label: 'Recipes' },
               { id: 'plan', label: 'Plan' },
+              {
+                id: 'favorites',
+                label: `Favorites${favorites.length ? ` (${favorites.length})` : ''}`,
+              },
             ]}
             selected={tab}
             onSelect={setTab}
@@ -77,7 +88,12 @@ export default function BabyScreen() {
         </View>
       }
     >
-      {tab === 'recipes' ? (
+      {tab === 'favorites' ? (
+        <FavoritesList
+          recipes={favorites}
+          emptyHint={`Tap the heart on a recipe ${profile.babyName ?? 'your baby'} loved to save it here.`}
+        />
+      ) : tab === 'recipes' ? (
         <BabyRecipesView
           babyName={profile.babyName}
           ageMonths={babyAge(profile, now).months}

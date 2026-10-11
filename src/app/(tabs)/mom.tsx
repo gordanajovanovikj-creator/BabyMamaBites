@@ -3,24 +3,16 @@ import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { recipeCategories, recipes } from '@/content/recipes';
-import { findRecipes, fitsCookingTime, recipeSections } from '@/domain/recipes';
+import { findRecipes, recipeSections } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
+import { FavoritesList } from '@/features/favorites/favorites-list';
 import { useHousehold } from '@/features/profile/use-household';
 import { CategoryChips } from '@/features/recipes/category-chips';
 import { HouseholdNote } from '@/features/recipes/household-note';
-import { RecipeCard } from '@/features/recipes/recipe-card';
 import { RecipeGrid } from '@/features/recipes/recipe-grid';
 import { RecipeSearchResults } from '@/features/recipes/recipe-search-results';
 import { RecipeSection } from '@/features/recipes/recipe-section';
-import {
-  AppText,
-  Notice,
-  Screen,
-  SearchButton,
-  SearchField,
-  SegmentedTabs,
-  SymbolIcon,
-} from '@/ui';
+import { AppText, Screen, SearchButton, SearchField, SegmentedTabs } from '@/ui';
 
 type Tab = 'recipes' | 'favorites';
 
@@ -112,30 +104,7 @@ export default function MomScreen() {
           )}
         </>
       ) : (
-        <View className="gap-3 px-5">
-          {favorites.length ? (
-            favorites.map((r) => (
-              <RecipeCard
-                key={r.id}
-                recipe={r}
-                fitsTime={fitsCookingTime(r, household.cookingTime)}
-              />
-            ))
-          ) : (
-            <View className="items-center gap-3 py-12">
-              <View className="h-20 w-20 items-center justify-center rounded-full bg-surface-muted">
-                <SymbolIcon icon="heart" emoji="♡" size={36} />
-              </View>
-              <AppText variant="heading" className="text-center">
-                No favorites yet
-              </AppText>
-              <AppText variant="caption" className="text-center">
-                Tap the heart on any recipe to save it here.
-              </AppText>
-            </View>
-          )}
-          {favorites.length ? <Notice body="Favorites are saved on this phone only." /> : null}
-        </View>
+        <FavoritesList recipes={favorites} />
       )}
     </Screen>
   );
