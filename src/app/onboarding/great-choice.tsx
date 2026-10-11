@@ -28,9 +28,8 @@ const content: Record<SolidsApproach, Choice> = {
   },
   spoon: {
     photo: onboardingPhotos.spoon,
-    label: 'A mom feeding her baby puree from a soft spoon',
-    // The baby sits left of center in this wide photo.
-    position: 'left',
+    label: 'A baby in a high chair being fed puree from a soft spoon',
+    position: 'bottom',
     title: 'Spoon feeding is a great choice!',
     subtitle: "We'll shape recipes and tips around the way your baby likes to eat.",
   },
