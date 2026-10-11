@@ -3,6 +3,7 @@ import { insights } from '@/content/insights';
 import { solidsArticles } from '@/content/solids-articles';
 
 import {
+  forMom,
   insightItem,
   librarySections,
   libraryItems,
@@ -120,5 +121,18 @@ describe('todayRow', () => {
     );
     expect(row.map((i) => i.id)).toEqual(['t1', 't2', 'now', 'soon', 't3']);
     expect(row[2].source).toBe('article');
+  });
+});
+
+describe('forMom', () => {
+  it('returns only items from mom categories, in category order', () => {
+    const items = libraryItems(solidsArticles, insights, []);
+    const mom = forMom(items, insightCategories);
+    const momIds = insightCategories.filter((c) => c.audience === 'mom').map((c) => c.id);
+    expect(mom.length).toBeGreaterThan(0);
+    expect(mom.every((i) => momIds.includes(i.category))).toBe(true);
+    expect(mom.map((i) => momIds.indexOf(i.category))).toEqual(
+      [...mom.map((i) => momIds.indexOf(i.category))].sort((a, b) => a - b),
+    );
   });
 });

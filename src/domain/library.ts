@@ -124,3 +124,9 @@ export function todayRow(
   const reads = articlesForAge(articles, ageMonths).slice(0, articleCount).map(articleItem);
   return [...tips.slice(0, 2), ...reads, ...tips.slice(2)];
 }
+
+/** Library items written for mom ("For you"), in category order. */
+export function forMom(items: LibraryItem[], categories: InsightCategory[]): LibraryItem[] {
+  const momCategories = categories.filter((c) => c.audience === 'mom').map((c) => c.id);
+  return momCategories.flatMap((id) => items.filter((i) => i.category === id));
+}
