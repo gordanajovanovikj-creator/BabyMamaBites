@@ -1,4 +1,4 @@
-import { Image, type ImageSource } from 'expo-image';
+import { Image, type ImageContentPosition, type ImageSource } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
 import { View } from 'react-native';
 
@@ -10,7 +10,7 @@ export type FadePhotoProps = {
   label: string;
   height: number;
   /** Where to anchor the crop, so faces (or the high chair) stay in frame. */
-  position?: 'top' | 'center' | 'bottom';
+  position?: ImageContentPosition;
   /** Share of the photo that fades out at the bottom. */
   fade?: number;
 };

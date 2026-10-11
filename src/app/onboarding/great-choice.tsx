@@ -1,39 +1,54 @@
+import type { ImageContentPosition, ImageSource } from 'expo-image';
 import { router } from 'expo-router';
 import { ScrollView, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import type { SolidsApproach } from '@/domain/profile';
 import { useDraft } from '@/features/onboarding/draft-context';
 import { FadePhoto, fadeHeight } from '@/features/onboarding/fade-photo';
 import { onboardingPhotos } from '@/features/onboarding/onboarding-photo';
 import { QuestionHeader } from '@/features/onboarding/question-header';
 import { Button, RoundIconButton } from '@/ui';
 
-const content = {
+type Choice = {
+  photo: ImageSource;
+  label: string;
+  position: ImageContentPosition;
+  title: string;
+  subtitle: string;
+};
+
+const content: Record<SolidsApproach, Choice> = {
   'baby-led': {
     photo: onboardingPhotos.babyLed,
     label: 'A baby in a high chair feeding themselves',
+    position: 'bottom',
     title: 'Baby-led weaning is a great choice!',
     subtitle: "We'll shape recipes and tips around the way your baby likes to eat.",
   },
   spoon: {
     photo: onboardingPhotos.spoon,
-    label: 'A baby in a high chair being fed puree from a soft spoon',
+    label: 'A mom feeding her baby puree from a soft spoon',
+    // The baby sits left of center in this wide photo.
+    position: 'left',
     title: 'Spoon feeding is a great choice!',
     subtitle: "We'll shape recipes and tips around the way your baby likes to eat.",
   },
   both: {
     photo: onboardingPhotos.both,
     label: 'A smiling mom sitting with her baby, who feeds herself with a spoon in a high chair',
+    position: 'bottom',
     title: "We've got you, mama",
     subtitle: "We're here to guide you every step of the way.",
   },
   'not-sure': {
     photo: onboardingPhotos.both,
     label: 'A smiling mom sitting with her baby, who feeds herself with a spoon in a high chair',
+    position: 'bottom',
     title: "We've got you, mama",
     subtitle: "We're here to guide you every step of the way.",
   },
-} as const;
+};
 
 const FADE = 0.2;
 
@@ -57,7 +72,7 @@ export default function GreatChoiceScreen() {
         source={c.photo}
         label={c.label}
         height={photoHeight}
-        position="bottom"
+        position={c.position}
         fade={FADE}
       />
 
