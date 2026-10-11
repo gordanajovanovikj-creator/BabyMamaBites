@@ -171,16 +171,27 @@ export default function CalendarScreen() {
         {dayEntries.length ? (
           dayEntries.map((e) => (
             <View key={e.id} className="flex-row items-start gap-3 border-b border-border py-2">
-              <View className="flex-1 gap-0.5">
-                <AppText variant="caption" size="sm" className="font-bold uppercase tracking-wider">
-                  {e.kind === 'event'
-                    ? e.time
-                      ? formatTime(e.time)
-                      : 'All day'
-                    : calendarKindLabels.note}
-                </AppText>
-                <AppText variant="body">{e.text}</AppText>
-              </View>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={`${calendarKindLabels[e.kind]}: ${e.text}. Tap to edit.`}
+                onPress={() => router.push({ pathname: '/calendar/add', params: { id: e.id } })}
+                className="min-h-12 flex-1 active:opacity-70"
+              >
+                <View className="gap-0.5">
+                  <AppText
+                    variant="caption"
+                    size="sm"
+                    className="font-bold uppercase tracking-wider"
+                  >
+                    {e.kind === 'event'
+                      ? e.time
+                        ? formatTime(e.time)
+                        : 'All day'
+                      : calendarKindLabels.note}
+                  </AppText>
+                  <AppText variant="body">{e.text}</AppText>
+                </View>
+              </Pressable>
               <Pressable
                 accessibilityRole="button"
                 accessibilityLabel={`Delete ${calendarKindLabels[e.kind].toLowerCase()}: ${e.text}`}

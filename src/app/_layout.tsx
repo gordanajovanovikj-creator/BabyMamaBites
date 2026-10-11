@@ -99,11 +99,11 @@ export default function RootLayout() {
           <FavoritesProvider>
             <FoodLogProvider>
               <PlannerProvider>
-                <RemindersProvider>
-                  <CalendarProvider>
+                <CalendarProvider>
+                  <RemindersProvider>
                     <RootStack />
-                  </CalendarProvider>
-                </RemindersProvider>
+                  </RemindersProvider>
+                </CalendarProvider>
               </PlannerProvider>
             </FoodLogProvider>
           </FavoritesProvider>

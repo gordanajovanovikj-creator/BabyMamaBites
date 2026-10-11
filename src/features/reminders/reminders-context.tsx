@@ -11,14 +11,17 @@ import { AppState } from 'react-native';
 
 import { getPlanWeek, planWeeks } from '@/content/solids-plan';
 import { useSettingsStore } from '@/data/stores-context';
+import { calendarReminders } from '@/domain/calendar';
 import { today } from '@/domain/dates';
 import {
   anyReminderOn,
+  MAX_REMINDERS,
   defaultReminderSettings,
   planReminders,
   type ReminderSettings,
 } from '@/domain/reminders';
 import { solidsStartDate } from '@/domain/stage';
+import { useCalendar } from '@/features/calendar/calendar-context';
 import { usePlanner } from '@/features/planner/planner-context';
 import { useProfile } from '@/features/profile/profile-context';
 
@@ -36,6 +39,7 @@ export function RemindersProvider({ children }: { children: ReactNode }) {
   const store = useSettingsStore();
   const { profile } = useProfile();
   const { freezer } = usePlanner();
+  const { entries: calendarEntries } = useCalendar();
   const [settings, setSettings] = useState<ReminderSettings>(defaultReminderSettings);
   const [loaded, setLoaded] = useState(false);
   const [foreground, setForeground] = useState(0);
@@ -75,8 +79,10 @@ export function RemindersProvider({ children }: { children: ReactNode }) {
           weekTitle: (w) => getPlanWeek(w)?.title,
         })
       : [];
-    syncReminders(planned).catch(() => {});
-  }, [loaded, settings, freezer, profile, foreground]);
+    // Calendar events the mom asked to be reminded about come first.
+    const all = [...calendarReminders(calendarEntries, new Date()), ...planned];
+    syncReminders(all.slice(0, MAX_REMINDERS)).catch(() => {});
+  }, [loaded, settings, freezer, profile, foreground, calendarEntries]);
 
   const update = useCallback(
     async (next: ReminderSettings) => {

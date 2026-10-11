@@ -66,4 +66,5 @@ export const migrations: string[] = [
      created_at TEXT NOT NULL
    );
    CREATE INDEX IF NOT EXISTS calendar_entry_date ON calendar_entry (date);`,
+  `ALTER TABLE calendar_entry ADD COLUMN remind INTEGER NOT NULL DEFAULT 0;`,
 ];

@@ -1,4 +1,5 @@
 import {
+  calendarReminders,
   entriesOn,
   formatTime,
   makeCalendarEntry,
@@ -34,7 +35,14 @@ describe('makeCalendarEntry', () => {
       { date: '2026-10-11', kind: 'note', text: '  hi ', time: '09:00' },
       'x',
     );
-    expect(e).toEqual({ id: 'x', date: '2026-10-11', kind: 'note', text: 'hi', time: null });
+    expect(e).toEqual({
+      id: 'x',
+      date: '2026-10-11',
+      kind: 'note',
+      text: 'hi',
+      time: null,
+      remind: false,
+    });
   });
   it('rejects empty text and bad times', () => {
     expect(() =>
@@ -48,7 +56,7 @@ describe('makeCalendarEntry', () => {
 
 describe('entriesOn', () => {
   const e = (id: string, kind: CalendarEntry['kind'], time: string | null, date = '2026-10-11') =>
-    ({ id, date, kind, text: id, time }) as CalendarEntry;
+    ({ id, date, kind, text: id, time, remind: false }) as CalendarEntry;
   it('orders timed events, then all-day events, then notes', () => {
     const list = [
       e('note', 'note', null),
@@ -71,5 +79,46 @@ describe('formatTime', () => {
     expect(formatTime('00:05')).toBe('12:05 AM');
     expect(formatTime('12:00')).toBe('12:00 PM');
     expect(formatTime('19:30')).toBe('7:30 PM');
+  });
+});
+
+describe('calendarReminders', () => {
+  const ev = (id: string, date: string, time: string | null, remind = true) =>
+    ({ id, date, kind: 'event', text: `Text ${id}`, time, remind }) as CalendarEntry;
+  const now = new Date(2026, 9, 11, 10, 0); // Oct 11, 2026, 10:00 AM
+
+  it('schedules upcoming events with remind on, soonest first', () => {
+    const list = [
+      ev('tomorrow', '2026-10-12', '08:00'),
+      ev('later-today', '2026-10-11', '15:30'),
+      ev('past-today', '2026-10-11', '09:00'),
+      ev('yesterday', '2026-10-10', '12:00'),
+      ev('off', '2026-10-12', '08:00', false),
+      ev('allday', '2026-10-13', null),
+    ];
+    const out = calendarReminders(list, now);
+    expect(out.map((r) => r.id)).toEqual([
+      'calendar-later-today',
+      'calendar-tomorrow',
+      'calendar-allday',
+    ]);
+    expect(out[0]).toMatchObject({
+      title: 'Today at 3:30 PM',
+      body: 'Text later-today',
+      trigger: { kind: 'date', date: '2026-10-11', hour: 15, minute: 30 },
+    });
+    expect(out[2].trigger).toMatchObject({ hour: 9, minute: 0 });
+  });
+
+  it('never schedules notes', () => {
+    const note = {
+      id: 'n',
+      date: '2026-10-12',
+      kind: 'note',
+      text: 'x',
+      time: null,
+      remind: true,
+    } as CalendarEntry;
+    expect(calendarReminders([note], now)).toEqual([]);
   });
 });
