@@ -54,7 +54,7 @@ export default function CategoryScreen() {
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        contentContainerClassName="gap-2 px-5 pb-3"
+        contentContainerClassName="gap-2 px-5 pb-3 pt-1"
       >
         <Chip label="Low energy" selected={lowEnergy} onPress={() => setLowEnergy((v) => !v)} />
         {recipeTags.map((t) => (

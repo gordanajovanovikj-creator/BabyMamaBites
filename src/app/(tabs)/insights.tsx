@@ -69,7 +69,7 @@ export default function InsightsScreen() {
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
-          contentContainerClassName="gap-2 px-5"
+          contentContainerClassName="gap-2 px-5 pb-2 pt-1"
         >
           <Chip label="All" selected={categoryId === null} onPress={() => setCategoryId(null)} />
           {sections.map((s) => (
