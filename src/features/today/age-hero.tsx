@@ -2,100 +2,113 @@ import { router } from 'expo-router';
 import { Pressable, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import type { MonthlyGuide } from '@/content/monthly-guides';
 import { today } from '@/domain/dates';
 import type { Profile } from '@/domain/profile';
-import { babyAge, babyStage, formatAgeHeadline, solidsWeek } from '@/domain/stage';
-import { stageLabels } from '@/domain/stage-labels';
-import { AppText, Button, IconButton } from '@/ui';
+import { babyAge, formatAgeHeadline } from '@/domain/stage';
+import { AppText, IconButton } from '@/ui';
 
 function formatToday(): string {
-  return new Date().toLocaleDateString(undefined, {
-    weekday: 'long',
-    month: 'long',
+  return new Date().toLocaleDateString('en-US', {
+    weekday: 'short',
+    month: 'short',
     day: 'numeric',
   });
 }
 
-/** Top of Today: date and greeting with calendar and settings, a baby card, one action. */
-export function AgeHero({ profile }: { profile: Profile }) {
+/** Up to two initials, Apple-style: "Mila Rose" → "MR". */
+export function initialsFor(name: string | null): string {
+  const parts = (name ?? '').trim().split(/\s+/).filter(Boolean);
+  return parts
+    .slice(0, 2)
+    .map((p) => p.charAt(0).toUpperCase())
+    .join('');
+}
+
+/**
+ * Top of Today: the baby's initials avatar, the date and name with age, calendar and
+ * settings on the right, then a soft banner that opens this month's guide for baby and mom.
+ */
+export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyGuide }) {
   const insets = useSafeAreaInsets();
   const now = today();
   const age = babyAge(profile, now);
-  const stage = babyStage(profile, now);
-  const week = stage === 'solids' ? solidsWeek(profile, now) : null;
   const headline = formatAgeHeadline(age.countedFrom, now);
   const name = profile.babyName ?? 'Your baby';
-  const stageLine = [
-    stageLabels[stage].title,
-    week ? `Week ${week}` : null,
-    age.corrected ? 'Adjusted age' : null,
-  ]
-    .filter(Boolean)
-    .join(' · ');
-
-  const hour = new Date().getHours();
-  const greeting =
-    hour < 12 ? 'Good morning, mama' : hour < 18 ? 'Good afternoon, mama' : 'Good evening, mama';
-  const initial = name.trim().charAt(0).toUpperCase();
+  const initials = initialsFor(profile.babyName);
 
   return (
-    <View
-      className="gap-5 rounded-b-[48px] bg-surface-muted px-5 pb-8"
-      style={{ paddingTop: insets.top + 12 }}
-    >
-      <View className="flex-row items-center justify-between gap-3">
-        <View className="flex-1 gap-0.5">
-          <AppText variant="caption" size="sm" className="font-bold uppercase tracking-wider">
-            {formatToday()}
-          </AppText>
-          <AppText variant="heading" size="xl">
-            {greeting}
-          </AppText>
-        </View>
+    <View className="gap-5 px-5" style={{ paddingTop: insets.top + 12 }}>
+      <View className="flex-row items-center gap-3">
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={`${name}, ${headline}${age.corrected ? ', adjusted age' : ''}. Update details.`}
+          onPress={() => router.push('/onboarding')}
+          className="flex-1 flex-row items-center gap-3 active:opacity-80"
+        >
+          <View className="h-14 w-14 items-center justify-center rounded-full bg-primary">
+            <AppText variant="heading" size="xl" color="on-primary">
+              {initials || '♡'}
+            </AppText>
+          </View>
+          <View className="flex-1">
+            <AppText variant="caption" size="sm">
+              {formatToday()}
+            </AppText>
+            <AppText variant="heading" size="2xl" numberOfLines={1}>
+              {name}
+            </AppText>
+            <AppText variant="caption" size="sm" color="primary" className="font-semibold">
+              {headline}
+              {age.corrected ? ' · adjusted' : ''}
+            </AppText>
+          </View>
+        </Pressable>
         <IconButton
           symbol="calendar"
           fallback="📅"
           accessibilityLabel="Calendar: events, notes and planned meals"
           onPress={() => router.push('/calendar')}
-          tone="surface"
         />
         <IconButton
           symbol="gearshape"
           fallback="⚙︎"
           accessibilityLabel="Settings and reminders"
           onPress={() => router.push('/settings')}
-          tone="surface"
         />
       </View>
 
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel={`${name} is ${headline}${age.corrected ? ', adjusted age' : ''}. ${stageLine}. Tap to update details.`}
-        onPress={() => router.push('/onboarding')}
-        className="flex-row items-center gap-4 rounded-3xl border border-border bg-surface p-4 active:opacity-80"
-      >
-        <View className="h-14 w-14 items-center justify-center rounded-full bg-sky">
-          <AppText variant="heading" size="2xl" color="on-sky">
-            {initial}
-          </AppText>
-        </View>
-        <View className="flex-1 gap-0.5">
-          <AppText variant="heading" size="lg">
-            {name}
-          </AppText>
-          <AppText variant="label" color="primary">
-            {headline}
-          </AppText>
-          <AppText variant="caption" size="sm">
-            {stageLine}
-          </AppText>
-        </View>
-        <AppText variant="heading" color="muted">
-          ›
-        </AppText>
-      </Pressable>
-
-      <Button label="Find a meal" size="compact" onPress={() => router.navigate('/mom')} />
+      {guide ? (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={`${guide.title} with ${name}. ${guide.summary} Opens the guide.`}
+          onPress={() => router.push({ pathname: '/guide/[id]', params: { id: guide.id } })}
+          className="overflow-hidden rounded-3xl bg-sky px-5 py-6 active:opacity-90"
+        >
+          {/* Soft decorative shapes in the app's earthy accents. */}
+          <View className="absolute -left-8 -top-10 h-28 w-28 rounded-full bg-deep opacity-15" />
+          <View className="absolute -bottom-12 -right-6 h-40 w-40 rounded-full bg-accent" />
+          <View className="gap-2">
+            <AppText
+              variant="caption"
+              size="xs"
+              color="on-sky"
+              className="font-bold uppercase tracking-wider"
+            >
+              {guide.ageLabel}
+            </AppText>
+            <AppText variant="title" size="2xl" color="on-sky">
+              {guide.title} with {name}
+            </AppText>
+            <AppText variant="body" color="on-sky">
+              {guide.summary}
+            </AppText>
+            <AppText variant="label" color="primary" className="pt-1 font-bold">
+              Read this month&apos;s guide ›
+            </AppText>
+          </View>
+        </Pressable>
+      ) : null}
     </View>
   );
 }
