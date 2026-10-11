@@ -10,7 +10,12 @@ export function AskTile() {
     <Pressable
       accessibilityRole="button"
       accessibilityLabel="Meal idea from what's in your fridge. Opens Ask."
-      onPress={() => router.navigate('/ask')}
+      onPress={() =>
+        router.navigate({
+          pathname: '/ask',
+          params: { q: 'What can I make with what I have? I have ' },
+        })
+      }
       style={{ width: LIBRARY_TILE_WIDTH }}
       className="gap-2 active:opacity-80"
     >
