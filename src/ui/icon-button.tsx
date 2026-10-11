@@ -13,6 +13,8 @@ export type IconButtonProps = {
   fallback: string;
   accessibilityLabel: string;
   onPress(): void;
+  /** 'surface' (white) for buttons sitting on a cream background. */
+  tone?: 'muted' | 'surface';
   className?: string;
 };
 
@@ -22,6 +24,7 @@ export function IconButton({
   fallback,
   accessibilityLabel,
   onPress,
+  tone = 'muted',
   className,
 }: IconButtonProps) {
   const palette = usePalette();
@@ -32,7 +35,8 @@ export function IconButton({
       onPress={onPress}
       hitSlop={6}
       className={cn(
-        'h-12 w-12 items-center justify-center rounded-full bg-surface-muted active:opacity-70',
+        'h-12 w-12 items-center justify-center rounded-full active:opacity-70',
+        tone === 'surface' ? 'bg-surface' : 'bg-surface-muted',
         className,
       )}
     >
