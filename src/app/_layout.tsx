@@ -6,6 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 
 import { StorageProvider } from '@/data/storage-provider';
+import { CalendarProvider } from '@/features/calendar/calendar-context';
 import { FavoritesProvider } from '@/features/favorites/favorites-context';
 import { PlannerProvider } from '@/features/planner/planner-context';
 import { ProfileProvider, useProfile } from '@/features/profile/profile-context';
@@ -57,6 +58,11 @@ function RootStack() {
           options={{ presentation: 'modal', headerShown: true, title: 'Add to freezer' }}
         />
         <Stack.Screen name="settings" options={{ headerShown: true, title: 'Settings' }} />
+        <Stack.Screen name="calendar/index" options={{ headerShown: true, title: 'Calendar' }} />
+        <Stack.Screen
+          name="calendar/add"
+          options={{ presentation: 'modal', headerShown: true, title: '' }}
+        />
         <Stack.Screen name="solids/history" options={{ headerShown: true, title: 'Food log' }} />
         <Stack.Screen
           name="solids/choking"
@@ -94,7 +100,9 @@ export default function RootLayout() {
             <FoodLogProvider>
               <PlannerProvider>
                 <RemindersProvider>
-                  <RootStack />
+                  <CalendarProvider>
+                    <RootStack />
+                  </CalendarProvider>
                 </RemindersProvider>
               </PlannerProvider>
             </FoodLogProvider>

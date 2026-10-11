@@ -2,12 +2,14 @@ import { SQLiteProvider, useSQLiteContext } from 'expo-sqlite';
 import { useMemo, type ReactNode } from 'react';
 
 import { ProfileStoreContext } from './profile-store-context';
+import { createSqliteCalendarStore } from './sqlite-calendar-store';
 import { createSqliteFavoritesStore } from './sqlite-favorites-store';
 import { createSqliteFoodLogStore } from './sqlite-food-log-store';
 import { createSqlitePlannerStore } from './sqlite-planner-store';
 import { createSqliteSettingsStore } from './sqlite-settings-store';
 import { createSqliteProfileStore, DATABASE_NAME, migrate } from './sqlite-profile-store';
 import {
+  CalendarStoreContext,
   FavoritesStoreContext,
   FoodLogStoreContext,
   PlannerStoreContext,
@@ -21,13 +23,16 @@ function SqliteStores({ children }: { children: ReactNode }) {
   const foodLog = useMemo(() => createSqliteFoodLogStore(db), [db]);
   const planner = useMemo(() => createSqlitePlannerStore(db), [db]);
   const settings = useMemo(() => createSqliteSettingsStore(db), [db]);
+  const calendar = useMemo(() => createSqliteCalendarStore(db), [db]);
   return (
     <ProfileStoreContext.Provider value={profile}>
       <FavoritesStoreContext.Provider value={favorites}>
         <FoodLogStoreContext.Provider value={foodLog}>
           <PlannerStoreContext.Provider value={planner}>
             <SettingsStoreContext.Provider value={settings}>
-              {children}
+              <CalendarStoreContext.Provider value={calendar}>
+                {children}
+              </CalendarStoreContext.Provider>
             </SettingsStoreContext.Provider>
           </PlannerStoreContext.Provider>
         </FoodLogStoreContext.Provider>

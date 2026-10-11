@@ -48,12 +48,20 @@ export function AgeHero({ profile }: { profile: Profile }) {
         <AppText variant="label" size="lg">
           {formatToday()}
         </AppText>
-        <IconButton
-          symbol="gearshape"
-          fallback="⚙︎"
-          accessibilityLabel="Settings and reminders"
-          onPress={() => router.push('/settings')}
-        />
+        <View className="flex-row gap-2">
+          <IconButton
+            symbol="calendar"
+            fallback="📅"
+            accessibilityLabel="Calendar: events, notes and planned meals"
+            onPress={() => router.push('/calendar')}
+          />
+          <IconButton
+            symbol="gearshape"
+            fallback="⚙︎"
+            accessibilityLabel="Settings and reminders"
+            onPress={() => router.push('/settings')}
+          />
+        </View>
       </View>
 
       <View

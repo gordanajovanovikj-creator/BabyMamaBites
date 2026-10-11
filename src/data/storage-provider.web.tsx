@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react';
 
+import { calendarEntrySchema, type CalendarEntry } from '@/domain/calendar';
+
 import { foodLogEntrySchema, type FoodLogEntry } from '@/domain/food-log';
 import {
   freezerItemSchema,
@@ -10,6 +12,7 @@ import {
 } from '@/domain/planner';
 import { profileSchema } from '@/domain/profile';
 
+import type { CalendarStore } from './calendar-store';
 import type { FavoritesStore } from './favorites-store';
 import type { FoodLogStore } from './food-log-store';
 import type { PlannerStore } from './planner-store';
@@ -18,6 +21,7 @@ import { parseReminders } from './sqlite-settings-store';
 import type { ProfileStore } from './profile-store';
 import { ProfileStoreContext } from './profile-store-context';
 import {
+  CalendarStoreContext,
   FavoritesStoreContext,
   FoodLogStoreContext,
   PlannerStoreContext,
@@ -170,6 +174,31 @@ const localSettings: SettingsStore = {
   },
 };
 
+const CALENDAR_KEY = 'mamababybites.calendar';
+
+function readCalendar(): CalendarEntry[] {
+  const value = readJson(CALENDAR_KEY);
+  if (!Array.isArray(value)) return [];
+  return value.flatMap((x) => {
+    const r = calendarEntrySchema.safeParse(x);
+    return r.success ? [r.data] : [];
+  });
+}
+
+const localCalendar: CalendarStore = {
+  async list() {
+    return readCalendar();
+  },
+  async save(entry) {
+    const next = [entry, ...readCalendar().filter((e) => e.id !== entry.id)];
+    globalThis.localStorage?.setItem(CALENDAR_KEY, JSON.stringify(next));
+  },
+  async remove(id) {
+    const next = readCalendar().filter((e) => e.id !== id);
+    globalThis.localStorage?.setItem(CALENDAR_KEY, JSON.stringify(next));
+  },
+};
+
 export function StorageProvider({ children }: { children: ReactNode }) {
   return (
     <ProfileStoreContext.Provider value={localStore}>
@@ -177,7 +206,9 @@ export function StorageProvider({ children }: { children: ReactNode }) {
         <FoodLogStoreContext.Provider value={localFoodLog}>
           <PlannerStoreContext.Provider value={localPlanner}>
             <SettingsStoreContext.Provider value={localSettings}>
-              {children}
+              <CalendarStoreContext.Provider value={localCalendar}>
+                {children}
+              </CalendarStoreContext.Provider>
             </SettingsStoreContext.Provider>
           </PlannerStoreContext.Provider>
         </FoodLogStoreContext.Provider>

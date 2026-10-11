@@ -57,4 +57,13 @@ export const migrations: string[] = [
    );`,
   `ALTER TABLE profile ADD COLUMN help_topics TEXT;
    ALTER TABLE profile ADD COLUMN solids_approach TEXT;`,
+  `CREATE TABLE IF NOT EXISTS calendar_entry (
+     id TEXT PRIMARY KEY NOT NULL,
+     date TEXT NOT NULL,
+     kind TEXT NOT NULL,
+     text TEXT NOT NULL,
+     time TEXT,
+     created_at TEXT NOT NULL
+   );
+   CREATE INDEX IF NOT EXISTS calendar_entry_date ON calendar_entry (date);`,
 ];

@@ -17,3 +17,4 @@ export { SegmentedTabs } from './segmented-tabs';
 export { SymbolIcon } from './symbol-icon';
 export { SwitchRow } from './switch-row';
 export { TextField } from './text-field';
+export { TimeField } from './time-field';
