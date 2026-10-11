@@ -9,6 +9,8 @@ export type ChipProps = {
   label: string;
   selected?: boolean;
   onPress?: () => void;
+  /** No border, with the airy floating shadow of the Home name pill (filter rows on Mom, Baby and Insights). */
+  borderless?: boolean;
   className?: string;
 };
 
@@ -17,7 +19,13 @@ export type ChipProps = {
  * At least 48pt tall. Rows that scroll sideways need a little vertical padding
  * so the shadow isn't clipped.
  */
-export function Chip({ label, selected = false, onPress, className }: ChipProps) {
+export function Chip({
+  label,
+  selected = false,
+  onPress,
+  borderless = false,
+  className,
+}: ChipProps) {
   return (
     <Pressable
       accessibilityRole={onPress ? 'button' : 'text'}
@@ -26,11 +34,12 @@ export function Chip({ label, selected = false, onPress, className }: ChipProps)
       onPress={onPress}
       hitSlop={4}
       className={cn(
-        'min-h-12 items-center justify-center rounded-full border px-5 py-2 active:opacity-80',
+        'min-h-12 items-center justify-center rounded-full px-5 py-2 active:opacity-80',
+        !borderless && 'border',
         selected ? 'border-primary bg-primary' : 'border-border bg-surface',
         className,
       )}
-      style={{ boxShadow: shadows.chip }}
+      style={{ boxShadow: borderless ? shadows.float : shadows.chip }}
     >
       <AppText variant="label" color={selected ? 'on-primary' : 'ink'} className="font-bold">
         {label}

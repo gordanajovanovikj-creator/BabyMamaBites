@@ -1,6 +1,7 @@
 import { SymbolView } from 'expo-symbols';
 import { Pressable, Text } from 'react-native';
 
+import { shadows } from '@/theme/colors';
 import { usePalette } from '@/theme/use-palette';
 
 import { cn } from './cn';
@@ -13,7 +14,10 @@ export type SearchButtonProps = {
   subject: string;
 };
 
-/** Round 48pt button beside a page title that opens and closes the search box. */
+/**
+ * Round 48pt button beside a page title that opens and closes the search box:
+ * white with the same floating shadow as the Home name pill.
+ */
 export function SearchButton({ open, onPress, subject }: SearchButtonProps) {
   const palette = usePalette();
   return (
@@ -25,8 +29,9 @@ export function SearchButton({ open, onPress, subject }: SearchButtonProps) {
       hitSlop={4}
       className={cn(
         'h-12 w-12 items-center justify-center rounded-full active:opacity-70',
-        open ? 'bg-primary' : 'bg-surface-muted',
+        open ? 'bg-primary' : 'bg-surface',
       )}
+      style={{ boxShadow: shadows.float }}
     >
       <SymbolView
         name={open ? 'xmark' : 'magnifyingglass'}

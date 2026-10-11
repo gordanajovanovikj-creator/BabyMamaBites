@@ -16,11 +16,12 @@ export function CategoryChips({ categories, selectedId, onSelect }: CategoryChip
     <ScrollView
       horizontal
       showsHorizontalScrollIndicator={false}
-      contentContainerClassName="gap-2 px-5 pb-2 pt-1"
+      contentContainerClassName="gap-2 px-5 pb-5 pt-2"
     >
-      <Chip label="All" selected={selectedId === null} onPress={() => onSelect(null)} />
+      <Chip borderless label="All" selected={selectedId === null} onPress={() => onSelect(null)} />
       {categories.map((c) => (
         <Chip
+          borderless
           key={c.id}
           label={`${c.emoji} ${c.label}`}
           selected={selectedId === c.id}

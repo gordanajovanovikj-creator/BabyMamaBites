@@ -69,11 +69,17 @@ export default function InsightsScreen() {
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
-          contentContainerClassName="gap-2 px-5 pb-2 pt-1"
+          contentContainerClassName="gap-2 px-5 pb-5 pt-2"
         >
-          <Chip label="All" selected={categoryId === null} onPress={() => setCategoryId(null)} />
+          <Chip
+            borderless
+            label="All"
+            selected={categoryId === null}
+            onPress={() => setCategoryId(null)}
+          />
           {sections.map((s) => (
             <Chip
+              borderless
               key={s.category.id}
               label={`${s.category.emoji} ${s.category.label}`}
               selected={categoryId === s.category.id}
