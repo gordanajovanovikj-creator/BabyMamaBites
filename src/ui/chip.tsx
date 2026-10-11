@@ -39,7 +39,7 @@ export function Chip({
         selected ? 'border-primary bg-primary' : 'border-border bg-surface',
         className,
       )}
-      style={{ boxShadow: borderless ? shadows.float : shadows.chip }}
+      style={{ boxShadow: borderless ? shadows.floatTight : shadows.chip }}
     >
       <AppText variant="label" color={selected ? 'on-primary' : 'ink'} className="font-bold">
         {label}

@@ -69,7 +69,7 @@ export default function InsightsScreen() {
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
-          contentContainerClassName="gap-2 px-5 pb-5 pt-2"
+          contentContainerClassName="gap-2 px-5 pb-6 pt-3"
         >
           <Chip
             borderless

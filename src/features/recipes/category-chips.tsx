@@ -16,7 +16,7 @@ export function CategoryChips({ categories, selectedId, onSelect }: CategoryChip
     <ScrollView
       horizontal
       showsHorizontalScrollIndicator={false}
-      contentContainerClassName="gap-2 px-5 pb-5 pt-2"
+      contentContainerClassName="gap-2 px-5 pb-6 pt-3"
     >
       <Chip borderless label="All" selected={selectedId === null} onPress={() => onSelect(null)} />
       {categories.map((c) => (
