@@ -10,6 +10,8 @@ const light = {
   ink: '#2C2A25',
   inkMuted: '#6A655B',
   primary: '#487549',
+  /** Lighter sage for the top of primary gradients (white bold text still reads on it). */
+  primaryLight: '#6E9A6D',
   border: '#E9E3D8',
 } as const;
 

@@ -1,3 +1,4 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
 import { Pressable, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -7,6 +8,7 @@ import { today } from '@/domain/dates';
 import type { Profile } from '@/domain/profile';
 import { babyAge, formatAge } from '@/domain/stage';
 import { shadows } from '@/theme/colors';
+import { usePalette } from '@/theme/use-palette';
 import { AppText, SymbolIcon } from '@/ui';
 
 function formatToday(): string {
@@ -33,6 +35,7 @@ export function initialsFor(name: string | null): string {
  */
 export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyGuide }) {
   const insets = useSafeAreaInsets();
+  const palette = usePalette();
   const now = today();
   const age = babyAge(profile, now);
   const shortAge = formatAge(age);
@@ -82,8 +85,14 @@ export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyG
             accessibilityRole="button"
             accessibilityLabel="Settings, reminders and your details"
             onPress={() => router.push('/settings')}
-            className="h-14 w-14 items-center justify-center rounded-full bg-primary active:opacity-80"
+            className="h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-primary active:opacity-80"
           >
+            <LinearGradient
+              colors={[palette.primaryLight, palette.primary]}
+              start={{ x: 0.15, y: 0 }}
+              end={{ x: 0.85, y: 1 }}
+              style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+            />
             <AppText variant="heading" color="on-primary">
               {initials || '♡'}
             </AppText>
