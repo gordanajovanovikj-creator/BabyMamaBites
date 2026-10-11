@@ -47,30 +47,37 @@ export default function MomScreen() {
   const selected = chips.find((c) => c.id === categoryId);
 
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-6">
-      <View className="gap-3 px-5" style={{ paddingTop: insets.top + 16 }}>
-        <View className="gap-1">
-          <View className="flex-row items-center justify-between gap-3">
-            <AppText variant="display">Mom</AppText>
-            {tab === 'recipes' ? (
-              <SearchButton open={searchOpen} onPress={toggleSearch} subject="recipes" />
-            ) : null}
+    <Screen
+      padded={false}
+      edgeToEdgeTop
+      className="gap-6"
+      stickyHeader={
+        <View className="gap-3 px-5" style={{ paddingTop: insets.top + 16 }}>
+          <View className="gap-1">
+            <View className="flex-row items-center justify-between gap-3">
+              <AppText variant="display">Mom</AppText>
+              {tab === 'recipes' ? (
+                <SearchButton open={searchOpen} onPress={toggleSearch} subject="recipes" />
+              ) : null}
+            </View>
+            <AppText variant="caption">
+              Recipes to keep you nourished, matched to your time.
+            </AppText>
           </View>
-          <AppText variant="caption">Recipes to keep you nourished, matched to your time.</AppText>
+          <SegmentedTabs<Tab>
+            tabs={[
+              { id: 'recipes', label: 'Recipes' },
+              {
+                id: 'favorites',
+                label: `Favorites${favorites.length ? ` (${favorites.length})` : ''}`,
+              },
+            ]}
+            selected={tab}
+            onSelect={setTab}
+          />
         </View>
-        <SegmentedTabs<Tab>
-          tabs={[
-            { id: 'recipes', label: 'Recipes' },
-            {
-              id: 'favorites',
-              label: `Favorites${favorites.length ? ` (${favorites.length})` : ''}`,
-            },
-          ]}
-          selected={tab}
-          onSelect={setTab}
-        />
-      </View>
-
+      }
+    >
       {tab === 'recipes' ? (
         <>
           {searchOpen ? (

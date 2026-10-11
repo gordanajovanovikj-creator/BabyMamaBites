@@ -45,33 +45,38 @@ export default function BabyScreen() {
   });
 
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-6">
-      <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
-        <View className="flex-row items-center justify-between gap-3">
-          <AppText variant="display">Baby</AppText>
-          {tab === 'recipes' ? (
-            <SearchButton
-              open={searchOpen}
-              onPress={() => setSearchOpen((open) => !open)}
-              subject="baby recipes"
-            />
-          ) : null}
+    <Screen
+      padded={false}
+      edgeToEdgeTop
+      className="gap-6"
+      stickyHeader={
+        <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
+          <View className="flex-row items-center justify-between gap-3">
+            <AppText variant="display">Baby</AppText>
+            {tab === 'recipes' ? (
+              <SearchButton
+                open={searchOpen}
+                onPress={() => setSearchOpen((open) => !open)}
+                subject="baby recipes"
+              />
+            ) : null}
+          </View>
+          <AppText variant="caption">
+            {current === null
+              ? `${name}'s starting-solids plan begins around ${startsOn}.`
+              : `${name}'s week-by-week plan, at your baby's own pace.`}
+          </AppText>
+          <SegmentedTabs<Tab>
+            tabs={[
+              { id: 'recipes', label: 'Recipes' },
+              { id: 'plan', label: 'Plan' },
+            ]}
+            selected={tab}
+            onSelect={setTab}
+          />
         </View>
-        <AppText variant="caption">
-          {current === null
-            ? `${name}'s starting-solids plan begins around ${startsOn}.`
-            : `${name}'s week-by-week plan, at your baby's own pace.`}
-        </AppText>
-        <SegmentedTabs<Tab>
-          tabs={[
-            { id: 'recipes', label: 'Recipes' },
-            { id: 'plan', label: 'Plan' },
-          ]}
-          selected={tab}
-          onSelect={setTab}
-        />
-      </View>
-
+      }
+    >
       {tab === 'recipes' ? (
         <BabyRecipesView
           babyName={profile.babyName}

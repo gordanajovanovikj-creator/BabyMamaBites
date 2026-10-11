@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react';
-import { ScrollView, View } from 'react-native';
+import { useState, type ReactNode } from 'react';
+import { ScrollView, View, type NativeSyntheticEvent, type NativeScrollEvent } from 'react-native';
 
 import { cn } from './cn';
 
@@ -14,6 +14,11 @@ export type ScreenProps = {
    * top safe-area inset itself), for a hero that fills the top of the screen.
    */
   edgeToEdgeTop?: boolean;
+  /**
+   * Stays pinned to the top while the content scrolls (title, tabs). With
+   * `edgeToEdgeTop` it must add the top safe-area inset itself.
+   */
+  stickyHeader?: ReactNode;
   className?: string;
 };
 
@@ -23,8 +28,15 @@ export function Screen({
   scroll = true,
   padded = true,
   edgeToEdgeTop = false,
+  stickyHeader,
   className,
 }: ScreenProps) {
+  // A hairline under the pinned header once content slides beneath it.
+  const [scrolled, setScrolled] = useState(false);
+  const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+    const next = e.nativeEvent.contentOffset.y > 4;
+    if (next !== scrolled) setScrolled(next);
+  };
   if (!scroll) {
     return <View className={cn('flex-1 bg-canvas', padded && 'px-5', className)}>{children}</View>;
   }
@@ -33,7 +45,15 @@ export function Screen({
       className="flex-1 bg-canvas"
       contentInsetAdjustmentBehavior={edgeToEdgeTop ? 'never' : 'automatic'}
       contentContainerClassName={cn('gap-4 pb-12', padded && 'px-5 pt-4', className)}
+      stickyHeaderIndices={stickyHeader ? [0] : undefined}
+      onScroll={stickyHeader ? onScroll : undefined}
+      scrollEventThrottle={stickyHeader ? 16 : undefined}
     >
+      {stickyHeader ? (
+        <View className={cn('bg-canvas pb-3', scrolled && 'border-b border-border')}>
+          {stickyHeader}
+        </View>
+      ) : null}
       {children}
     </ScrollView>
   );

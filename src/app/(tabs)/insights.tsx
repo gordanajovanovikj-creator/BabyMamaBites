@@ -39,15 +39,20 @@ export default function InsightsScreen() {
   const name = babyName ?? 'your baby';
 
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-6">
-      <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
-        <View className="flex-row items-center justify-between gap-3">
-          <AppText variant="display">Insights</AppText>
-          <SearchButton open={searchOpen} onPress={toggleSearch} subject="articles and tips" />
+    <Screen
+      padded={false}
+      edgeToEdgeTop
+      className="gap-6"
+      stickyHeader={
+        <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
+          <View className="flex-row items-center justify-between gap-3">
+            <AppText variant="display">Insights</AppText>
+            <SearchButton open={searchOpen} onPress={toggleSearch} subject="articles and tips" />
+          </View>
+          <AppText variant="caption">Articles and tips for you and {name}, chosen by age.</AppText>
         </View>
-        <AppText variant="caption">Articles and tips for you and {name}, chosen by age.</AppText>
-      </View>
-
+      }
+    >
       {searchOpen ? (
         <View className="px-5">
           <SearchField
