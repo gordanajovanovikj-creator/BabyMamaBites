@@ -5,6 +5,7 @@ import { splitReviewMarker } from '@/content/schemas';
 import { articlesAccessed, getArticle } from '@/content/solids-articles';
 import { solidsSourcesFor } from '@/content/solids-plan';
 import { ageRangeLabel } from '@/domain/articles';
+import { libraryPhoto } from '@/features/library/library-photos';
 import { PictureHero } from '@/features/recipes/picture-hero';
 import { SourceLinks } from '@/features/shared/source-links';
 import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
@@ -28,6 +29,7 @@ export default function ArticleScreen() {
         tone={article.tone}
         icon={article.icon}
         emoji={article.emoji}
+        photo={libraryPhoto(article.id)}
         art={
           <Illustration
             name={article.illustration}

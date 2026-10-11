@@ -2,12 +2,16 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
 import { getInsight } from '@/content/insights';
+import { splitReviewMarker } from '@/content/schemas';
 import { insightKindLabel } from '@/features/insights/insight-style';
+import { libraryPhoto } from '@/features/library/library-photos';
+import { HeroPhoto } from '@/features/shared/hero-photo';
 import { AppText, Button, Card, Illustration, Notice, Screen } from '@/ui';
 
 export default function InsightScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const insight = getInsight(id);
+  const photo = insight ? libraryPhoto(insight.id) : undefined;
 
   if (!insight) {
     return (
@@ -20,16 +24,20 @@ export default function InsightScreen() {
 
   return (
     <Screen>
-      <View className="items-center">
-        <Illustration name={insight.illustration} height={160} />
-      </View>
+      {photo ? (
+        <HeroPhoto source={photo} />
+      ) : (
+        <View className="items-center">
+          <Illustration name={insight.illustration} height={160} />
+        </View>
+      )}
       <View className="gap-2">
         <AppText variant="caption" className="font-semibold uppercase tracking-wider">
           {insightKindLabel[insight.kind]}
         </AppText>
         <AppText variant="title">{insight.title}</AppText>
         <AppText variant="body" color="muted">
-          {insight.summary}
+          {splitReviewMarker(insight.summary).text}
         </AppText>
       </View>
       {insight.reviewStatus === 'placeholder' ? (
@@ -41,7 +49,7 @@ export default function InsightScreen() {
       ) : null}
       <Card className="gap-4">
         {insight.body.map((paragraph, i) => (
-          <AppText key={i}>{paragraph}</AppText>
+          <AppText key={i}>{splitReviewMarker(paragraph).text}</AppText>
         ))}
       </Card>
       {insight.kind === 'when-to-call' ? (

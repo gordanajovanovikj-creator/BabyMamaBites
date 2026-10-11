@@ -1,4 +1,5 @@
 import { disclaimers } from '@/content/copy';
+import { splitReviewMarker } from '@/content/schemas';
 import { AppText, Notice, Screen } from '@/ui';
 
 export default function AboutScreen() {
@@ -11,7 +12,7 @@ export default function AboutScreen() {
         <Notice
           key={block.id}
           title={block.title}
-          body={block.body}
+          body={splitReviewMarker(block.body).text}
           tone={block.id === 'worried' ? 'caution' : 'info'}
         />
       ))}

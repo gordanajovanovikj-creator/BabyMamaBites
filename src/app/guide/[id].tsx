@@ -4,7 +4,9 @@ import { View } from 'react-native';
 import { guideSourcesAccessed, monthlyGuides } from '@/content/monthly-guides';
 import { splitReviewMarker } from '@/content/schemas';
 import { adjacentGuides } from '@/domain/monthly-guides';
+import { guidePhoto } from '@/features/guides/guide-photos';
 import { GuideSectionView } from '@/features/guides/guide-section-view';
+import { HeroPhoto } from '@/features/shared/hero-photo';
 import { AppText, Button, Notice, Screen } from '@/ui';
 
 export default function GuideScreen() {
@@ -21,10 +23,12 @@ export default function GuideScreen() {
   }
 
   const { previous, next } = adjacentGuides(monthlyGuides, guide.id);
+  const photo = guidePhoto(guide.id);
 
   return (
     // keyed so switching months starts at the top
     <Screen key={guide.id}>
+      {photo ? <HeroPhoto source={photo} /> : null}
       <View className="gap-1">
         <AppText variant="caption" size="sm" className="font-bold uppercase tracking-wider">
           {guide.ageLabel}
