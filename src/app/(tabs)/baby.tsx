@@ -110,6 +110,13 @@ export default function BabyScreen() {
         />
       ) : (
         <>
+          <View className="gap-2">
+            <AppText variant="heading" className="px-5">
+              Your baby, week by week
+            </AppText>
+            <WeekStrip weeks={planWeeks} current={current} />
+          </View>
+
           <View className="gap-4 px-5">
             {current === null ? (
               <Card tone="accent" className="gap-3">
@@ -143,13 +150,6 @@ export default function BabyScreen() {
             ) : null}
 
             {week ? <WeekCard week={week} totalWeeks={planWeeks.length} /> : null}
-          </View>
-
-          <View className="gap-2">
-            <AppText variant="heading" className="px-5">
-              {current === null ? 'Read ahead' : 'All weeks'}
-            </AppText>
-            <WeekStrip weeks={planWeeks} current={current} />
           </View>
 
           <ArticlesRow />
