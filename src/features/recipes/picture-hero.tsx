@@ -21,22 +21,15 @@ export type PictureHeroProps = {
 
 /**
  * Full-width picture area at the top of a page with a floating back button.
- * Shows a large icon on a soft color until recipe photos are added.
+ * Shows a large icon on a soft color when there is no photo.
  */
-export function PictureHero({
-  tone,
-  icon,
-  emoji,
-  height = 300,
-  right,
-  art,
-  photo,
-}: PictureHeroProps) {
+export function PictureHero({ tone, icon, emoji, height, right, art, photo }: PictureHeroProps) {
   const insets = useSafeAreaInsets();
+  const h = height ?? (photo ? 360 : 300);
   return (
     <View
       className={cn('items-center justify-center', toneBackground(tone))}
-      style={{ height: height + insets.top, paddingTop: insets.top }}
+      style={{ height: h + insets.top, paddingTop: insets.top }}
       importantForAccessibility="no"
     >
       {photo ? (

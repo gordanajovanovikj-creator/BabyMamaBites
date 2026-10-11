@@ -6,7 +6,8 @@ import { splitReviewMarker } from '@/content/schemas';
 import { adjacentGuides } from '@/domain/monthly-guides';
 import { guidePhoto } from '@/features/guides/guide-photos';
 import { GuideSectionView } from '@/features/guides/guide-section-view';
-import { HeroPhoto } from '@/features/shared/hero-photo';
+import { PictureHero } from '@/features/recipes/picture-hero';
+import { DetailHeader } from '@/features/shared/detail-header';
 import { AppText, Button, Notice, Screen } from '@/ui';
 
 export default function GuideScreen() {
@@ -23,61 +24,53 @@ export default function GuideScreen() {
   }
 
   const { previous, next } = adjacentGuides(monthlyGuides, guide.id);
-  const photo = guidePhoto(guide.id);
 
   return (
     // keyed so switching months starts at the top
-    <Screen key={guide.id}>
-      {photo ? <HeroPhoto source={photo} /> : null}
-      <View className="gap-1">
-        <AppText variant="caption" size="sm" className="font-bold uppercase tracking-wider">
-          {guide.ageLabel}
-        </AppText>
-        <AppText variant="title">{guide.title}</AppText>
-        <AppText color="muted">{splitReviewMarker(guide.intro).text}</AppText>
-      </View>
+    <Screen key={guide.id} padded={false} edgeToEdgeTop className="gap-0">
+      <PictureHero tone="muted" icon="calendar" emoji="📅" photo={guidePhoto(guide.id)} />
 
-      {guide.reviewStatus === 'placeholder' ? (
-        <View className="self-start rounded-full bg-accent px-3 py-1">
-          <AppText variant="label" color="on-accent" size="sm">
-            Draft · awaiting expert review
-          </AppText>
+      <DetailHeader
+        kicker={guide.ageLabel}
+        title={guide.title}
+        summary={splitReviewMarker(guide.intro).text}
+      />
+
+      <View className="gap-6 px-5 pt-6">
+        {guide.reviewStatus === 'placeholder' ? (
+          <Notice
+            tone="caution"
+            title="Draft from official sources"
+            body={`Summarized from US guidance (CDC, AAP, FDA and the HHS Office on Women's Health) read on ${guideSourcesAccessed}. Not yet reviewed by a health professional, and not medical advice. Always follow your own pediatrician's advice.`}
+          />
+        ) : null}
+
+        {guide.sections.map((section) => (
+          <GuideSectionView key={section.id} section={section} />
+        ))}
+
+        <View className="flex-row gap-3">
+          {previous ? (
+            <Button
+              className="flex-1"
+              variant="secondary"
+              label={`‹ ${previous.title}`}
+              accessibilityLabel={`Previous guide: ${previous.title}`}
+              onPress={() => router.setParams({ id: previous.id })}
+            />
+          ) : null}
+          {next ? (
+            <Button
+              className="flex-1"
+              variant="secondary"
+              label={`${next.title} ›`}
+              accessibilityLabel={`Next guide: ${next.title}`}
+              onPress={() => router.setParams({ id: next.id })}
+            />
+          ) : null}
         </View>
-      ) : null}
-
-      {guide.reviewStatus === 'placeholder' ? (
-        <Notice
-          tone="caution"
-          title="Draft from official sources"
-          body={`Summarized from US guidance (CDC, AAP, FDA and the HHS Office on Women's Health) read on ${guideSourcesAccessed}. Not yet reviewed by a health professional, and not medical advice. Always follow your own pediatrician's advice.`}
-        />
-      ) : null}
-
-      {guide.sections.map((section) => (
-        <GuideSectionView key={section.id} section={section} />
-      ))}
-
-      <View className="flex-row gap-3">
-        {previous ? (
-          <Button
-            className="flex-1"
-            variant="secondary"
-            label={`‹ ${previous.title}`}
-            accessibilityLabel={`Previous guide: ${previous.title}`}
-            onPress={() => router.setParams({ id: previous.id })}
-          />
-        ) : null}
-        {next ? (
-          <Button
-            className="flex-1"
-            variant="secondary"
-            label={`${next.title} ›`}
-            accessibilityLabel={`Next guide: ${next.title}`}
-            onPress={() => router.setParams({ id: next.id })}
-          />
-        ) : null}
+        <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
       </View>
-      <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
     </Screen>
   );
 }

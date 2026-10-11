@@ -33,14 +33,8 @@ function RootStack() {
           name="about"
           options={{ presentation: 'modal', headerShown: true, title: 'About & safety' }}
         />
-        <Stack.Screen
-          name="insight/[id]"
-          options={{ presentation: 'modal', headerShown: true, title: '' }}
-        />
-        <Stack.Screen
-          name="guide/[id]"
-          options={{ presentation: 'modal', headerShown: true, title: '' }}
-        />
+        <Stack.Screen name="insight/[id]" />
+        <Stack.Screen name="guide/[id]" />
         <Stack.Screen name="recipe/[id]" />
         <Stack.Screen name="category/[id]" />
         <Stack.Screen name="solids/week/[n]" options={{ headerShown: true, title: '' }} />

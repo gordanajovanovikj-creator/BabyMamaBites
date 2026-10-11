@@ -5,13 +5,13 @@ import { getInsight } from '@/content/insights';
 import { splitReviewMarker } from '@/content/schemas';
 import { insightKindLabel } from '@/features/insights/insight-style';
 import { libraryPhoto } from '@/features/library/library-photos';
-import { HeroPhoto } from '@/features/shared/hero-photo';
-import { AppText, Button, Card, Illustration, Notice, Screen } from '@/ui';
+import { PictureHero } from '@/features/recipes/picture-hero';
+import { DetailHeader } from '@/features/shared/detail-header';
+import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
 
 export default function InsightScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const insight = getInsight(id);
-  const photo = insight ? libraryPhoto(insight.id) : undefined;
 
   if (!insight) {
     return (
@@ -23,43 +23,45 @@ export default function InsightScreen() {
   }
 
   return (
-    <Screen>
-      {photo ? (
-        <HeroPhoto source={photo} />
-      ) : (
-        <View className="items-center">
-          <Illustration name={insight.illustration} height={160} />
+    <Screen padded={false} edgeToEdgeTop className="gap-0">
+      <PictureHero
+        tone={insight.tone}
+        icon={insight.icon}
+        emoji={insight.emoji}
+        photo={libraryPhoto(insight.id)}
+        art={<Illustration name={insight.illustration} height={200} />}
+      />
+
+      <DetailHeader
+        kicker={insightKindLabel[insight.kind]}
+        title={insight.title}
+        summary={splitReviewMarker(insight.summary).text}
+      />
+
+      <View className="gap-6 px-5 pt-6">
+        {insight.reviewStatus === 'placeholder' ? (
+          <Notice
+            tone="caution"
+            title="Draft · awaiting expert review"
+            body="Not yet reviewed by a health professional, and not medical advice."
+          />
+        ) : null}
+
+        <View className="gap-3">
+          {insight.body.map((paragraph, i) => (
+            <AppText key={i}>{splitReviewMarker(paragraph).text}</AppText>
+          ))}
         </View>
-      )}
-      <View className="gap-2">
-        <AppText variant="caption" className="font-semibold uppercase tracking-wider">
-          {insightKindLabel[insight.kind]}
-        </AppText>
-        <AppText variant="title">{insight.title}</AppText>
-        <AppText variant="body" color="muted">
-          {splitReviewMarker(insight.summary).text}
-        </AppText>
+
+        {insight.kind === 'when-to-call' ? (
+          <Notice
+            tone="urgent"
+            title="If you're worried, reach out"
+            body="Your doctor, OB-GYN or midwife is there to help. In an emergency, call 911."
+          />
+        ) : null}
+        <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
       </View>
-      {insight.reviewStatus === 'placeholder' ? (
-        <View className="self-start rounded-full bg-accent px-3 py-1">
-          <AppText variant="label" color="on-accent" size="sm">
-            Draft · awaiting expert review
-          </AppText>
-        </View>
-      ) : null}
-      <Card className="gap-4">
-        {insight.body.map((paragraph, i) => (
-          <AppText key={i}>{splitReviewMarker(paragraph).text}</AppText>
-        ))}
-      </Card>
-      {insight.kind === 'when-to-call' ? (
-        <Notice
-          tone="urgent"
-          title="If you're worried, reach out"
-          body="Your doctor, OB-GYN or midwife is there to help. In an emergency, call 911."
-        />
-      ) : null}
-      <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
     </Screen>
   );
 }

@@ -7,6 +7,7 @@ import { solidsSourcesFor } from '@/content/solids-plan';
 import { ageRangeLabel } from '@/domain/articles';
 import { libraryPhoto } from '@/features/library/library-photos';
 import { PictureHero } from '@/features/recipes/picture-hero';
+import { DetailHeader } from '@/features/shared/detail-header';
 import { SourceLinks } from '@/features/shared/source-links';
 import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
 
@@ -39,18 +40,11 @@ export default function ArticleScreen() {
         }
       />
 
-      <View className="gap-2 px-5 pt-8">
-        <AppText
-          variant="label"
-          size="xs"
-          color="on-accent"
-          className="font-bold uppercase tracking-wider"
-        >
-          {ageRangeLabel(article)} · {article.readMinutes} min read
-        </AppText>
-        <AppText variant="title">{article.title}</AppText>
-        <AppText color="muted">{splitReviewMarker(article.summary).text}</AppText>
-      </View>
+      <DetailHeader
+        kicker={`${ageRangeLabel(article)} · ${article.readMinutes} min read`}
+        title={article.title}
+        summary={splitReviewMarker(article.summary).text}
+      />
 
       <View className="gap-6 px-5 pt-6">
         {article.reviewStatus === 'placeholder' ? (

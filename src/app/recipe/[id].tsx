@@ -13,6 +13,7 @@ import { useFavorites } from '@/features/favorites/favorites-context';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
 import { PictureHero } from '@/features/recipes/picture-hero';
+import { DetailHeader } from '@/features/shared/detail-header';
 import { recipePhoto } from '@/features/recipes/recipe-photos';
 import { AppText, Button, cn, HeartButton, Notice, Screen } from '@/ui';
 
@@ -57,7 +58,6 @@ export default function RecipeScreen() {
         tone={recipe.tone}
         icon={recipe.icon}
         emoji={recipe.emoji}
-        height={recipePhoto(recipe.id) ? 360 : 260}
         photo={recipePhoto(recipe.id)}
         right={
           <HeartButton
@@ -68,16 +68,7 @@ export default function RecipeScreen() {
         }
       />
 
-      <View className="gap-2 px-5 pt-6">
-        <AppText
-          variant="label"
-          size="xs"
-          color="on-accent"
-          className="font-bold uppercase tracking-wider"
-        >
-          {recipeKicker(recipe)}
-        </AppText>
-        <AppText variant="title">{recipe.title}</AppText>
+      <DetailHeader kicker={recipeKicker(recipe)} title={recipe.title}>
         <AppText variant="caption">{recipeTimings(recipe)}</AppText>
         <AppText color="muted" className="pt-1">
           {summary.text}
@@ -91,7 +82,7 @@ export default function RecipeScreen() {
             </View>
           ))}
         </View>
-      </View>
+      </DetailHeader>
 
       <View className="gap-3 px-5 pt-5">
         {recipe.fromMonths !== undefined ? (
