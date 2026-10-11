@@ -6,12 +6,12 @@ import type { MonthlyGuide } from '@/content/monthly-guides';
 import { today } from '@/domain/dates';
 import type { Profile } from '@/domain/profile';
 import { babyAge, formatAgeHeadline } from '@/domain/stage';
-import { AppText, IconButton } from '@/ui';
+import { AppText, SymbolIcon } from '@/ui';
 
 function formatToday(): string {
   return new Date().toLocaleDateString('en-US', {
-    weekday: 'short',
-    month: 'short',
+    weekday: 'long',
+    month: 'long',
     day: 'numeric',
   });
 }
@@ -26,8 +26,9 @@ export function initialsFor(name: string | null): string {
 }
 
 /**
- * Top of Today: the baby's initials avatar, the date and name with age, calendar and
- * settings on the right, then a soft banner that opens this month's guide for baby and mom.
+ * Top of Today: greeting and date on the left (tap to open the calendar); a pill with the baby's name,
+ * age and initials (opens settings and details) on the right; then a soft banner that
+ * opens this month's guide for baby and mom.
  */
 export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyGuide }) {
   const insets = useSafeAreaInsets();
@@ -36,46 +37,56 @@ export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyG
   const headline = formatAgeHeadline(age.countedFrom, now);
   const name = profile.babyName ?? 'Your baby';
   const initials = initialsFor(profile.babyName);
+  const hour = new Date().getHours();
+  const greeting = hour < 12 ? 'Good morning!' : hour < 18 ? 'Good afternoon!' : 'Good evening!';
 
   return (
     <View className="gap-5 px-5" style={{ paddingTop: insets.top + 12 }}>
-      <View className="flex-row items-center gap-3">
+      <View className="flex-row items-center gap-2">
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel={`${name}, ${headline}${age.corrected ? ', adjusted age' : ''}. Update details.`}
-          onPress={() => router.push('/onboarding')}
-          className="flex-1 flex-row items-center gap-3 active:opacity-80"
+          accessibilityLabel={`${greeting} ${formatToday()}. Opens your calendar.`}
+          onPress={() => router.push('/calendar')}
+          hitSlop={6}
+          className="min-h-12 flex-1 justify-center active:opacity-70"
         >
-          <View className="h-14 w-14 items-center justify-center rounded-full bg-primary">
-            <AppText variant="heading" size="xl" color="on-primary">
-              {initials || '♡'}
-            </AppText>
-          </View>
-          <View className="flex-1">
-            <AppText variant="caption" size="sm">
+          <AppText variant="heading" size="xl" numberOfLines={1}>
+            {greeting}
+          </AppText>
+          <View className="flex-row items-center gap-1.5">
+            <SymbolIcon icon="calendar" emoji="📅" size={14} />
+            <AppText
+              variant="caption"
+              size="sm"
+              color="primary"
+              className="font-semibold"
+              numberOfLines={1}
+            >
               {formatToday()}
             </AppText>
-            <AppText variant="heading" size="2xl" numberOfLines={1}>
+          </View>
+        </Pressable>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={`${name}, ${headline}${age.corrected ? ', adjusted age' : ''}. Opens settings and your details.`}
+          onPress={() => router.push('/settings')}
+          className="max-w-[55%] flex-row items-center gap-2 rounded-full border border-border bg-surface py-1.5 pl-4 pr-1.5 active:opacity-80"
+        >
+          <View className="flex-shrink items-end">
+            <AppText variant="label" numberOfLines={1}>
               {name}
             </AppText>
-            <AppText variant="caption" size="sm" color="primary" className="font-semibold">
+            <AppText variant="caption" size="xs" numberOfLines={1}>
               {headline}
               {age.corrected ? ' · adjusted' : ''}
             </AppText>
           </View>
+          <View className="h-11 w-11 items-center justify-center rounded-full bg-primary">
+            <AppText variant="label" color="on-primary" className="font-bold">
+              {initials || '♡'}
+            </AppText>
+          </View>
         </Pressable>
-        <IconButton
-          symbol="calendar"
-          fallback="📅"
-          accessibilityLabel="Calendar: events, notes and planned meals"
-          onPress={() => router.push('/calendar')}
-        />
-        <IconButton
-          symbol="gearshape"
-          fallback="⚙︎"
-          accessibilityLabel="Settings and reminders"
-          onPress={() => router.push('/settings')}
-        />
       </View>
 
       {guide ? (
