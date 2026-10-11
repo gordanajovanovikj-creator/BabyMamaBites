@@ -5,6 +5,7 @@ import type { Recipe } from '@/content/recipes';
 import { recipeMeta } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { RecipeImage } from '@/features/recipes/recipe-image';
+import { shadows } from '@/theme/colors';
 import { AppText, HeartButton } from '@/ui';
 
 const CARD_WIDTH = 280;
@@ -21,12 +22,15 @@ function FeatureCard({ recipe }: { recipe: Recipe }) {
         onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
         className="gap-2 active:opacity-90"
       >
-        <RecipeImage
-          recipe={recipe}
-          className="rounded-xl"
-          iconSize={96}
-          style={{ height: PHOTO_HEIGHT }}
-        />
+        {/* The shadow sits on a wrapper: the rounded photo clips its own edges. */}
+        <View className="rounded-xl bg-surface" style={{ boxShadow: shadows.card }}>
+          <RecipeImage
+            recipe={recipe}
+            className="rounded-xl"
+            iconSize={96}
+            style={{ height: PHOTO_HEIGHT }}
+          />
+        </View>
         <View className="gap-0.5 pr-2">
           <AppText
             variant="label"
@@ -95,7 +99,8 @@ export function FoodsToTry({ babyName, recipes, readAhead }: FoodsToTryProps) {
         showsHorizontalScrollIndicator={false}
         decelerationRate="fast"
         snapToInterval={CARD_WIDTH + 12}
-        contentContainerClassName="gap-3 px-5 pb-1"
+        // Room above and below so the card shadows aren't clipped.
+        contentContainerClassName="gap-3 px-5 pb-4 pt-1"
       >
         {recipes.map((r) => (
           <FeatureCard key={r.id} recipe={r} />
