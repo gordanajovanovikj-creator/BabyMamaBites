@@ -11,7 +11,12 @@ function getClient(): Anthropic | null {
   return client;
 }
 
-const MODEL = 'claude-opus-5-5';
+/**
+ * Which model answers. Defaults to Claude Haiku 5.5 (small, fast, about 1/40 of the cost).
+ * Set CHAT_MODEL=opus on the server to switch to Claude Opus 5.5 for a side-by-side try,
+ * with no code change or new app build.
+ */
+const wantsOpus = () => process.env.CHAT_MODEL === 'opus';
 
 /** POST /api/chat: { turns, ageMonths } → { reply } */
 export async function POST(request: Request) {
@@ -36,13 +41,15 @@ export async function POST(request: Request) {
 
   try {
     const response = await anthropic.beta.messages.create({
-      model: MODEL,
+      model: wantsOpus() ? 'claude-opus-5-5' : 'claude-haiku-5-5',
       max_tokens: 16000,
       // Chat answers are short and everyday: low effort keeps them quick and inexpensive.
       output_config: { effort: 'low' },
-      // If a safety classifier declines, the API retries on a suitable model in the same call.
-      betas: ['server-side-fallback-2026-07-01'],
-      fallbacks: 'default',
+      // Opus only: if a safety classifier declines, the API retries on a suitable model in the
+      // same call. Haiku has no server-side fallback; a decline shows the gentle message below.
+      ...(wantsOpus()
+        ? { betas: ['server-side-fallback-2026-07-01'], fallbacks: 'default' as const }
+        : {}),
       system: [{ type: 'text', text: CHAT_SYSTEM_PROMPT, cache_control: { type: 'ephemeral' } }],
       messages,
     });
