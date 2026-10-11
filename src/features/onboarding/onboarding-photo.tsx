@@ -5,7 +5,6 @@ export const onboardingPhotos = {
   welcome: require('@/assets/images/onboarding/welcome-kitchen.jpg'),
   babyLed: require('@/assets/images/onboarding/baby-led-weaning.jpg'),
   spoon: require('@/assets/images/onboarding/spoon-feeding.jpg'),
-  both: require('@/assets/images/onboarding/both-ways.jpg'),
   family: require('@/assets/images/onboarding/family-kitchen.jpg'),
 } satisfies Record<string, ImageSource>;
 

@@ -41,8 +41,8 @@ const content: Record<SolidsApproach, Choice> = {
     subtitle: "We're here to guide you every step of the way.",
   },
   'not-sure': {
-    photo: onboardingPhotos.both,
-    label: 'A laughing mom holding her baby at the table during a family meal',
+    photo: onboardingPhotos.family,
+    label: 'Mom and dad in the kitchen watching their baby eat in a high chair',
     position: 'center',
     title: "We've got you, mama",
     subtitle: "We're here to guide you every step of the way.",
