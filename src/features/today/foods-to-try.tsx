@@ -8,33 +8,38 @@ import { RecipeImage } from '@/features/recipes/recipe-image';
 import { AppText, HeartButton } from '@/ui';
 
 const CARD_WIDTH = 280;
-const CARD_HEIGHT = 360;
+const PHOTO_HEIGHT = 320;
 
-/** Big feature card: the photo fills the card, with the meal's name on a soft dark band. */
+/** Big feature card: a tall photo box with the meal's age, name and time underneath. */
 function FeatureCard({ recipe }: { recipe: Recipe }) {
   const { isFavorite, toggle } = useFavorites();
   return (
-    <View style={{ width: CARD_WIDTH, height: CARD_HEIGHT }}>
+    <View style={{ width: CARD_WIDTH }} className="gap-2">
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={`${recipe.title}, from ${recipe.fromMonths} months. ${recipeMeta(recipe)}. Opens the recipe.`}
         onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
-        className="flex-1 overflow-hidden rounded-xl active:opacity-90"
+        className="gap-2 active:opacity-90"
       >
         <RecipeImage
           recipe={recipe}
-          className="absolute bottom-0 left-0 right-0 top-0"
+          className="rounded-xl"
           iconSize={96}
+          style={{ height: PHOTO_HEIGHT }}
         />
-        <View className="absolute bottom-0 left-0 right-0 gap-0.5 px-4 pb-4 pt-6">
-          <View className="absolute bottom-0 left-0 right-0 top-0 bg-ink opacity-50" />
-          <AppText variant="caption" size="sm" color="on-primary" className="font-semibold">
+        <View className="gap-0.5 pr-2">
+          <AppText
+            variant="label"
+            size="xs"
+            color="on-accent"
+            className="font-bold uppercase tracking-wider"
+          >
             From {recipe.fromMonths} months
           </AppText>
-          <AppText variant="heading" size="xl" color="on-primary" numberOfLines={2}>
+          <AppText variant="heading" size="xl" numberOfLines={2}>
             {recipe.title}
           </AppText>
-          <AppText variant="caption" size="sm" color="on-primary">
+          <AppText variant="caption" size="sm">
             {recipeMeta(recipe)}
           </AppText>
         </View>

@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { View } from 'react-native';
+import { View, type StyleProp, type ViewStyle } from 'react-native';
 
 import type { Recipe } from '@/content/recipes';
 import { cn, SymbolIcon, toneBackground } from '@/ui';
@@ -11,13 +11,16 @@ export type RecipeImageProps = {
   /** Size and corner classes, e.g. "h-44 rounded-3xl". */
   className: string;
   iconSize: number;
+  /** Extra layout, e.g. an exact height. */
+  style?: StyleProp<ViewStyle>;
 };
 
 /** The recipe's photo when there is one; otherwise its color block and icon. Decorative. */
-export function RecipeImage({ recipe, className, iconSize }: RecipeImageProps) {
+export function RecipeImage({ recipe, className, iconSize, style }: RecipeImageProps) {
   const photo = recipePhoto(recipe.id);
   return (
     <View
+      style={style}
       importantForAccessibility="no-hide-descendants"
       accessibilityElementsHidden
       className={cn(
