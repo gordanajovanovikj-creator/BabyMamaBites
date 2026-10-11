@@ -2,7 +2,7 @@ import { router } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
 
-import { QuestionBubble } from '@/features/onboarding/question-bubble';
+import { QuestionHeader } from '@/features/onboarding/question-header';
 import { useReminders } from '@/features/reminders/reminders-context';
 import { AppText, Button, Card, Notice, Screen, SymbolIcon } from '@/ui';
 
@@ -31,7 +31,7 @@ export default function NotificationsScreen() {
 
   return (
     <Screen className="flex-grow pt-8">
-      <QuestionBubble
+      <QuestionHeader
         title="Stay on track, gently"
         subtitle="Turn on reminders and we'll give you a quiet tap when it helps. No spam, ever."
       />

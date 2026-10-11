@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 import { AppText, Button, Screen } from '@/ui';
 
-import { QuestionBubble } from './question-bubble';
+import { QuestionHeader } from './question-header';
 
 export const ONBOARDING_STEPS = 7;
 
@@ -21,7 +21,7 @@ export type StepScreenProps = {
   secondary?: { label: string; onPress(): void };
 };
 
-/** Shared layout for each onboarding question: progress, question bubble, answers, continue. */
+/** Shared layout for each onboarding question: progress, question, answers, continue. */
 export function StepScreen({
   step,
   title,
@@ -36,22 +36,20 @@ export function StepScreen({
   return (
     <Screen className="flex-grow">
       <View
-        className="flex-row gap-2"
+        className="h-1 overflow-hidden rounded-full bg-border"
         accessible
         accessibilityLabel={`Step ${step} of ${ONBOARDING_STEPS}`}
       >
-        {Array.from({ length: ONBOARDING_STEPS }, (_, i) => (
-          <View
-            key={i}
-            className={
-              i < step
-                ? 'h-1.5 flex-1 rounded-full bg-primary'
-                : 'h-1.5 flex-1 rounded-full bg-border'
-            }
-          />
-        ))}
+        <View
+          className="h-1 rounded-full bg-primary"
+          style={{ width: `${Math.round((step / ONBOARDING_STEPS) * 100)}%` }}
+        />
       </View>
-      <QuestionBubble title={title} subtitle={subtitle} />
+      <QuestionHeader
+        kicker={`Step ${step} of ${ONBOARDING_STEPS}`}
+        title={title}
+        subtitle={subtitle}
+      />
       <View className="gap-3">{children}</View>
       {/* Pushes the buttons to the bottom on short screens. */}
       <View className="flex-1" />

@@ -2,7 +2,7 @@ import { router } from 'expo-router';
 import { View } from 'react-native';
 import { useDraft } from '@/features/onboarding/draft-context';
 import { OnboardingPhoto, onboardingPhotos } from '@/features/onboarding/onboarding-photo';
-import { QuestionBubble } from '@/features/onboarding/question-bubble';
+import { QuestionHeader } from '@/features/onboarding/question-header';
 import { Button, Screen } from '@/ui';
 
 const content = {
@@ -42,7 +42,7 @@ export default function GreatChoiceScreen() {
   return (
     <Screen className="flex-grow pt-4">
       <OnboardingPhoto source={c.photo} label={c.label} height={380} focus="top" />
-      <QuestionBubble title={c.title} subtitle={c.subtitle} />
+      <QuestionHeader title={c.title} subtitle={c.subtitle} />
       <View className="flex-1" />
       <Button label="Continue" onPress={() => router.push('/onboarding/notifications')} />
     </Screen>

@@ -10,7 +10,7 @@ import {
   yearlySavingsPercent,
   type PlanId,
 } from '@/domain/subscription';
-import { QuestionBubble } from '@/features/onboarding/question-bubble';
+import { QuestionHeader } from '@/features/onboarding/question-header';
 import { useFinishOnboarding } from '@/features/onboarding/use-finish';
 import { PlanCard } from '@/features/subscription/plan-card';
 import {
@@ -79,7 +79,7 @@ export default function PaywallScreen() {
 
   return (
     <Screen className="flex-grow pt-8">
-      <QuestionBubble
+      <QuestionHeader
         title={`Try MamaBabyBites free for ${TRIAL_DAYS} days`}
         subtitle="Everything you need to feed your baby and yourself well, in one calm place."
       />
