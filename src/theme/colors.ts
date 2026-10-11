@@ -22,4 +22,5 @@ export type Palette = typeof light;
 /** Soft, warm drop shadows (CSS box-shadow syntax) for raised white cards. */
 export const shadows = {
   card: '0 1px 2px rgba(44, 42, 37, 0.06), 0 6px 16px rgba(44, 42, 37, 0.08)',
+  chip: '0 1px 2px rgba(44, 42, 37, 0.06), 0 3px 8px rgba(44, 42, 37, 0.07)',
 } as const;

@@ -25,6 +25,7 @@ export default function FoodStep() {
         {allergens.map((a) => (
           <Chip
             key={a}
+            raised
             label={allergenLabels[a]}
             selected={draft.allergens.includes(a)}
             onPress={() => update({ allergens: toggle(draft.allergens, a) })}
@@ -38,6 +39,7 @@ export default function FoodStep() {
         {diets.map((d) => (
           <Chip
             key={d}
+            raised
             label={dietLabels[d]}
             selected={draft.diets.includes(d)}
             onPress={() => update({ diets: toggle(draft.diets, d) })}
