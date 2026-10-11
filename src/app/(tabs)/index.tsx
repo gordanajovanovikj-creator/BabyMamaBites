@@ -2,8 +2,10 @@ import { View } from 'react-native';
 
 import { insights } from '@/content/insights';
 import { monthlyGuides } from '@/content/monthly-guides';
+import { solidsArticles } from '@/content/solids-articles';
 import { today } from '@/domain/dates';
 import { pickDailyInsights } from '@/domain/insights';
+import { todayRow } from '@/domain/library';
 import { guideForMonths } from '@/domain/monthly-guides';
 import { babyAge, babyStage } from '@/domain/stage';
 import { stageLabels } from '@/domain/stage-labels';
@@ -20,7 +22,9 @@ export default function TodayScreen() {
   const now = today();
   const stage = babyStage(profile, now);
   const daily = pickDailyInsights(insights, stage, profile.allergens, now);
-  const guide = guideForMonths(monthlyGuides, babyAge(profile, now).months);
+  const ageMonths = babyAge(profile, now).months;
+  const guide = guideForMonths(monthlyGuides, ageMonths);
+  const row = todayRow(daily, solidsArticles, ageMonths);
 
   return (
     <Screen padded={false} edgeToEdgeTop className="gap-8">
@@ -30,7 +34,7 @@ export default function TodayScreen() {
           <MonthGuideCard guide={guide} focus={stageLabels[stage].focus} />
         </View>
       ) : null}
-      <InsightsRow insights={daily} />
+      <InsightsRow items={row} ageMonths={ageMonths} />
     </Screen>
   );
 }

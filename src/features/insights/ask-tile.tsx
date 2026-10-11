@@ -1,27 +1,37 @@
 import { router } from 'expo-router';
-import { View } from 'react-native';
+import { Pressable, View } from 'react-native';
 
-import { AppText, Card } from '@/ui';
+import { LIBRARY_TILE_WIDTH } from '@/features/library/library-tile';
+import { AppText } from '@/ui';
 
-import { TILE_WIDTH } from './insight-tile';
-
-/** First tile in the row: a quick way into Ask for a meal idea. */
+/** First tile in the row: a quick way into Ask for a meal idea, shaped like the photo cards. */
 export function AskTile() {
   return (
-    <Card
-      onPress={() => router.navigate('/ask')}
+    <Pressable
+      accessibilityRole="button"
       accessibilityLabel="Meal idea from what's in your fridge. Opens Ask."
-      className="min-h-56 items-center justify-between gap-3 py-6"
-      style={{ width: TILE_WIDTH }}
+      onPress={() => router.navigate('/ask')}
+      style={{ width: LIBRARY_TILE_WIDTH }}
+      className="gap-2 active:opacity-80"
     >
-      <AppText variant="heading" size="lg" className="text-center leading-6">
-        Meal idea from your fridge
-      </AppText>
-      <View className="h-14 w-14 items-center justify-center rounded-full bg-primary">
-        <AppText variant="title" color="on-primary" className="leading-9">
-          +
+      <View
+        className="items-center justify-center rounded-3xl bg-sky"
+        style={{ height: LIBRARY_TILE_WIDTH }}
+      >
+        <View className="h-16 w-16 items-center justify-center rounded-full bg-primary">
+          <AppText variant="title" color="on-primary" className="leading-9">
+            +
+          </AppText>
+        </View>
+      </View>
+      <View className="gap-0.5 pr-1">
+        <AppText variant="heading" size="lg" className="leading-6">
+          Meal idea from your fridge
+        </AppText>
+        <AppText variant="caption" size="sm">
+          Ask · Quick idea
         </AppText>
       </View>
-    </Card>
+    </Pressable>
   );
 }

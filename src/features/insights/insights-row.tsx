@@ -1,14 +1,14 @@
 import { router } from 'expo-router';
 import { Pressable, ScrollView, View } from 'react-native';
 
-import type { Insight } from '@/content/insights';
+import type { LibraryItem } from '@/domain/library';
+import { LIBRARY_TILE_WIDTH, LibraryTile } from '@/features/library/library-tile';
 import { AppText } from '@/ui';
 
 import { AskTile } from './ask-tile';
-import { InsightTile } from './insight-tile';
 
-/** "My daily insights · Today": a horizontally scrolling row of tiles. */
-export function InsightsRow({ insights }: { insights: Insight[] }) {
+/** "My daily insights · Today": a horizontally scrolling row of tips and articles. */
+export function InsightsRow({ items, ageMonths }: { items: LibraryItem[]; ageMonths: number }) {
   return (
     <View className="gap-3">
       <View className="flex-row items-center justify-between px-5">
@@ -31,12 +31,12 @@ export function InsightsRow({ insights }: { insights: Insight[] }) {
         horizontal
         showsHorizontalScrollIndicator={false}
         decelerationRate="fast"
-        snapToInterval={168 + 12}
+        snapToInterval={LIBRARY_TILE_WIDTH + 12}
         contentContainerClassName="gap-3 px-5 pb-1"
       >
         <AskTile />
-        {insights.map((insight) => (
-          <InsightTile key={insight.id} insight={insight} />
+        {items.map((item) => (
+          <LibraryTile key={`${item.source}-${item.id}`} item={item} ageMonths={ageMonths} />
         ))}
       </ScrollView>
     </View>

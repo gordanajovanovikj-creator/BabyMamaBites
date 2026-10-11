@@ -8,6 +8,7 @@ import {
   libraryItems,
   pickedForAge,
   readingMinutes,
+  todayRow,
 } from './library';
 
 describe('library content', () => {
@@ -70,5 +71,54 @@ describe('illustrations', () => {
   it('gives every article and insight its own illustration', () => {
     const names = [...solidsArticles, ...insights].map((x) => x.illustration);
     expect(new Set(names).size).toBe(names.length);
+  });
+});
+
+describe('todayRow', () => {
+  const tip = (id: string) =>
+    ({
+      id,
+      category: 'nourishing-you',
+      stages: ['solids'],
+      kind: 'tip',
+      tone: 'muted',
+      icon: 'i',
+      emoji: 'e',
+      illustration: 'bowl',
+      title: id,
+      summary: 's',
+      body: ['b'],
+      allergens: [],
+      reviewStatus: 'placeholder',
+      reviewer: 'x',
+    }) as unknown as Parameters<typeof todayRow>[0][number];
+  const article = (id: string, fromMonths: number, toMonths: number) =>
+    ({
+      id,
+      category: 'starting-solids',
+      title: id,
+      summary: 's',
+      fromMonths,
+      toMonths,
+      icon: 'i',
+      emoji: 'e',
+      illustration: 'bowl',
+      tone: 'muted',
+      readMinutes: 3,
+      sections: [],
+      sources: [],
+      reviewStatus: 'placeholder',
+      reviewer: 'x',
+    }) as unknown as Parameters<typeof todayRow>[1][number];
+
+  it('puts two tips first, then age-ordered articles, then the other tips', () => {
+    const row = todayRow(
+      [tip('t1'), tip('t2'), tip('t3')],
+      [article('later', 9, 12), article('now', 5, 8), article('soon', 7, 9)],
+      6,
+      2,
+    );
+    expect(row.map((i) => i.id)).toEqual(['t1', 't2', 'now', 'soon', 't3']);
+    expect(row[2].source).toBe('article');
   });
 });
