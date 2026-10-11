@@ -5,7 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import type { MonthlyGuide } from '@/content/monthly-guides';
 import { today } from '@/domain/dates';
 import type { Profile } from '@/domain/profile';
-import { babyAge, formatAgeHeadline } from '@/domain/stage';
+import { babyAge, formatAge } from '@/domain/stage';
 import { AppText, SymbolIcon } from '@/ui';
 
 function formatToday(): string {
@@ -26,15 +26,15 @@ export function initialsFor(name: string | null): string {
 }
 
 /**
- * Top of Today (Apple-style): a long white pill with the baby's name and age, calendar and
- * settings, and the baby's initials
- * avatar (opens details) on top; a big greeting with the date underneath (opens the calendar); then a soft banner that opens this month's guide for baby and mom.
+ * Top of Today (Apple-style): a big greeting, a white pill with the baby's name and age
+ * (opens details) and the initials avatar (opens settings); the date underneath opens the
+ * calendar; then a soft banner that opens this month's guide for baby and mom.
  */
 export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyGuide }) {
   const insets = useSafeAreaInsets();
   const now = today();
   const age = babyAge(profile, now);
-  const headline = formatAgeHeadline(age.countedFrom, now);
+  const shortAge = formatAge(age);
   const name = profile.babyName ?? 'Your baby';
   const initials = initialsFor(profile.babyName);
   const hour = new Date().getHours();
@@ -43,48 +43,43 @@ export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyG
   return (
     <View className="gap-5 px-5" style={{ paddingTop: insets.top + 12 }}>
       <View className="gap-1">
-        {/* iOS large-title layout: actions on top, the greeting big underneath. */}
-        <View className="flex-row items-center justify-end gap-3">
-          {/* One long white pill: baby's name and age, then calendar and settings. */}
-          <View className="flex-shrink flex-row items-center rounded-full border border-border bg-surface pl-4 pr-1">
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={`${name}, ${headline}${age.corrected ? ', adjusted age' : ''}. Update details.`}
-              onPress={() => router.push('/onboarding')}
-              className="min-h-12 flex-shrink justify-center pr-2 active:opacity-60"
-            >
-              <AppText variant="label" numberOfLines={1}>
-                {name}
-              </AppText>
-              <AppText variant="caption" size="xs" color="primary" numberOfLines={1}>
-                {headline}
-                {age.corrected ? ' · adjusted' : ''}
-              </AppText>
-            </Pressable>
-            <View className="h-7 w-px bg-border" />
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Calendar: events, notes and planned meals"
-              onPress={() => router.push('/calendar')}
-              hitSlop={4}
-              className="h-12 w-12 items-center justify-center active:opacity-60"
-            >
-              <SymbolIcon icon="calendar" emoji="📅" size={22} />
-            </Pressable>
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Settings and reminders"
-              onPress={() => router.push('/settings')}
-              hitSlop={4}
-              className="h-12 w-12 items-center justify-center active:opacity-60"
-            >
-              <SymbolIcon icon="ellipsis" emoji="⋯" size={22} />
-            </Pressable>
-          </View>
+        {/* Apple-style large title row: greeting, a white pill with the baby, the avatar. */}
+        <View className="flex-row items-center gap-3">
+          <AppText
+            variant="display"
+            size="3xl"
+            className="flex-1"
+            numberOfLines={2}
+            adjustsFontSizeToFit
+            minimumFontScale={0.75}
+            accessibilityRole="header"
+          >
+            {greeting}
+          </AppText>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel={`${name}'s profile. Update details.`}
+            accessibilityLabel={`${name}, ${shortAge}${age.corrected ? ', adjusted age' : ''}. Update details.`}
             onPress={() => router.push('/onboarding')}
+            className="min-h-12 max-w-[40%] justify-center rounded-full border border-border bg-surface px-5 py-1.5 active:opacity-70"
+          >
+            <AppText variant="label" numberOfLines={1} className="text-center">
+              {name}
+            </AppText>
+            <AppText
+              variant="caption"
+              size="xs"
+              color="primary"
+              numberOfLines={1}
+              className="text-center"
+            >
+              {shortAge}
+              {age.corrected ? ' · adjusted' : ''}
+            </AppText>
+          </Pressable>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Settings, reminders and your details"
+            onPress={() => router.push('/settings')}
             className="h-14 w-14 items-center justify-center rounded-full border-4 border-sky bg-primary active:opacity-80"
           >
             <AppText variant="heading" color="on-primary">
@@ -92,17 +87,15 @@ export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyG
             </AppText>
           </Pressable>
         </View>
-        <AppText variant="display" accessibilityRole="header" className="pt-1">
-          {greeting}
-        </AppText>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel={`${formatToday()}. Opens your calendar.`}
           onPress={() => router.push('/calendar')}
           hitSlop={6}
-          className="min-h-11 justify-center self-start active:opacity-70"
+          className="min-h-11 flex-row items-center gap-2 self-start active:opacity-70"
         >
-          <AppText variant="body" color="muted">
+          <SymbolIcon icon="calendar" emoji="📅" size={18} />
+          <AppText variant="body" color="primary" className="font-semibold">
             {formatToday()}
           </AppText>
         </Pressable>
