@@ -3,6 +3,7 @@ import { recipeCategories, recipes as bundled, type Recipe } from '@/content/rec
 import { allergens } from './profile';
 import {
   findRecipes,
+  foodsToTryToday,
   fitsCookingTime,
   formatMinutes,
   matchesFilters,
@@ -243,5 +244,44 @@ describe('recipeTimings', () => {
     expect(recipeTimings(make('a', { activeMinutes: 5, totalMinutes: 5, servings: 1 }))).toBe(
       'Prep 5 min · Cook 0 min · Serves 1',
     );
+  });
+});
+
+describe('foodsToTryToday', () => {
+  const r = (id: string, fromMonths: number, allergens: string[] = []) =>
+    ({ id, fromMonths, allergens, diets: ['vegetarian'] }) as unknown as Recipe;
+  const list = [r('p1', 6), r('p2', 6), r('m1', 7), r('m2', 7, ['egg']), r('f1', 9), r('t1', 12)];
+  const house = { allergens: [] as never[], diets: [] as never[] };
+
+  it('leads with the current age group and never suggests older textures', () => {
+    const out = foodsToTryToday(list, 7, house, '2026-01-01');
+    expect(out.readAhead).toBe(false);
+    expect(
+      out.recipes
+        .slice(0, 2)
+        .map((x) => x.id)
+        .sort(),
+    ).toEqual(['m1', 'm2']);
+    expect(out.recipes.map((x) => x.id)).not.toContain('f1');
+    expect(out.recipes.map((x) => x.id)).not.toContain('t1');
+  });
+  it('leaves out household allergens', () => {
+    const out = foodsToTryToday(
+      list,
+      7,
+      { allergens: ['egg'] as never[], diets: [] as never[] },
+      '2026-01-01',
+    );
+    expect(out.recipes.map((x) => x.id)).not.toContain('m2');
+  });
+  it('before 6 months shows only first purees, to read ahead', () => {
+    const out = foodsToTryToday(list, 3, house, '2026-01-01');
+    expect(out.readAhead).toBe(true);
+    expect(out.recipes.every((x) => x.fromMonths === 6)).toBe(true);
+  });
+  it('rotates day to day', () => {
+    const a = foodsToTryToday(list, 7, house, '2026-01-01').recipes[0].id;
+    const b = foodsToTryToday(list, 7, house, '2026-01-02').recipes[0].id;
+    expect(a).not.toBe(b);
   });
 });

@@ -1,5 +1,6 @@
 import type { EnergyLevel, Recipe, RecipeTag } from '@/content/recipes';
 
+import { daysBetween, type IsoDate } from './dates';
 import type { Allergen, CookingTime, Diet } from './profile';
 
 export type RecipeFilters = {
@@ -170,4 +171,42 @@ export function familyMealFor(
   const recipe = all.find((r) => r.id === babyRecipe.familyMeal?.recipeId);
   if (!recipe || !suitsHousehold(recipe, household)) return null;
   return { recipe, note: babyRecipe.familyMeal.note };
+}
+
+const ROTATION_EPOCH = '2026-01-01';
+/** First foods are offered from about 6 months (AAP/CDC). */
+export const SOLIDS_START_MONTHS = 6;
+
+/**
+ * "Foods to try today" on Today: baby meals for the baby's age that suit the household.
+ * Meals from the baby's current age group come first (rotated daily so the row changes
+ * without being random), then earlier, simpler textures. Before 6 months it returns the
+ * first-purees group to read ahead, never anything younger.
+ */
+export function foodsToTryToday(
+  all: Recipe[],
+  ageMonths: number,
+  household: Pick<Household, 'allergens' | 'diets'>,
+  onDate: IsoDate,
+  count = 6,
+): { recipes: Recipe[]; readAhead: boolean } {
+  const readAhead = ageMonths < SOLIDS_START_MONTHS;
+  const age = readAhead ? SOLIDS_START_MONTHS : ageMonths;
+  const eligible = all
+    .filter((r) => r.fromMonths !== undefined && r.fromMonths <= age)
+    .filter((r) => suitsHousehold(r, household))
+    .sort((a, b) => (b.fromMonths ?? 0) - (a.fromMonths ?? 0) || a.id.localeCompare(b.id));
+  if (!eligible.length) return { recipes: [], readAhead };
+  const newest = eligible[0].fromMonths;
+  const current = eligible.filter((r) => r.fromMonths === newest);
+  const earlier = eligible.filter((r) => r.fromMonths !== newest);
+  const day = daysBetween(ROTATION_EPOCH, onDate);
+  const rotate = (list: Recipe[]) => {
+    const offset = ((day % list.length) + list.length) % list.length;
+    return [...list.slice(offset), ...list.slice(0, offset)];
+  };
+  return {
+    recipes: [...rotate(current), ...(earlier.length ? rotate(earlier) : [])].slice(0, count),
+    readAhead,
+  };
 }
