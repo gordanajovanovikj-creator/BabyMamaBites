@@ -58,13 +58,56 @@ function FeatureCard({ recipe, kicker }: { recipe: Recipe; kicker: string }) {
   );
 }
 
+/** A planned food the parent typed in: a soft green box in place of a photo. */
+function OwnFoodCard({ name, kicker }: { name: string; kicker: string }) {
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={`${kicker}: ${name}, your own food. Opens the meal planner.`}
+      onPress={openPlanner}
+      style={{ width: CARD_WIDTH }}
+      className="gap-2 active:opacity-90"
+    >
+      <View
+        className="items-center justify-center rounded-xl bg-sky"
+        style={{ height: PHOTO_HEIGHT, boxShadow: shadows.card }}
+      >
+        <AppText style={{ fontSize: 72, lineHeight: 86 }}>🍽️</AppText>
+      </View>
+      <View className="gap-0.5 pr-2">
+        <AppText
+          variant="label"
+          size="xs"
+          color="on-accent"
+          className="font-bold uppercase tracking-wider"
+        >
+          {kicker}
+        </AppText>
+        <AppText variant="heading" size="xl" numberOfLines={2}>
+          {name}
+        </AppText>
+        <AppText variant="caption" size="sm">
+          Your own food
+        </AppText>
+      </View>
+    </Pressable>
+  );
+}
+
+function openPlanner() {
+  router.navigate({ pathname: '/baby', params: { tab: 'plan', at: String(Date.now()) } });
+}
+
+/** One planned meal for today: a recipe, or a food the parent typed in. */
+export type PlannedFood = { label: string } & ({ recipe: Recipe } | { own: string });
+
 export type FoodsToTryProps = {
   babyName: string | null;
   recipes: Recipe[];
   /** True before 6 months: these are first foods to read about, not to offer yet. */
   readAhead: boolean;
   /** Today's meals from the planner. When there are any, they replace the suggestions. */
-  planned?: { label: string; recipe: Recipe }[];
+  planned?: PlannedFood[];
 };
 
 /**
@@ -74,9 +117,9 @@ export type FoodsToTryProps = {
 export function FoodsToTry({ babyName, recipes, readAhead, planned = [] }: FoodsToTryProps) {
   const who = babyName ?? 'your baby';
   const hasPlan = planned.length > 0;
-  const cards = hasPlan
-    ? planned.map((p) => ({ kicker: p.label, recipe: p.recipe }))
-    : recipes.map((r) => ({ kicker: `From ${r.fromMonths} months`, recipe: r }));
+  const cards: PlannedFood[] = hasPlan
+    ? planned
+    : recipes.map((r) => ({ label: `From ${r.fromMonths} months`, recipe: r }));
   if (!cards.length) return null;
   const title = hasPlan
     ? 'Your food for today'
@@ -126,9 +169,13 @@ export function FoodsToTry({ babyName, recipes, readAhead, planned = [] }: Foods
         // Room above and below so the card shadows aren't clipped.
         contentContainerClassName="gap-3 px-5 pb-4 pt-1"
       >
-        {cards.map((c) => (
-          <FeatureCard key={`${c.kicker}-${c.recipe.id}`} recipe={c.recipe} kicker={c.kicker} />
-        ))}
+        {cards.map((c) =>
+          'recipe' in c ? (
+            <FeatureCard key={`${c.label}-${c.recipe.id}`} recipe={c.recipe} kicker={c.label} />
+          ) : (
+            <OwnFoodCard key={`${c.label}-${c.own}`} name={c.own} kicker={c.label} />
+          ),
+        )}
       </ScrollView>
     </View>
   );

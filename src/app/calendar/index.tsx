@@ -11,7 +11,7 @@ import {
   monthStart,
 } from '@/domain/calendar';
 import { addMonths, fromIsoDate, today, type IsoDate } from '@/domain/dates';
-import { mealSlotLabels, mealSlots, mealsPlanned, planKey } from '@/domain/planner';
+import { customMealName, mealSlotLabels, mealSlots, mealsPlanned, planKey } from '@/domain/planner';
 import { useCalendar } from '@/features/calendar/calendar-context';
 import { usePlanner } from '@/features/planner/planner-context';
 import { AppText, Button, Card, cn, Screen } from '@/ui';
@@ -139,12 +139,12 @@ export default function CalendarScreen() {
         <AppText variant="heading">Baby&apos;s meals</AppText>
         {mealSlots.map((slot) => {
           const id = plan[planKey(selected, slot)];
-          const recipe = id ? getRecipe(id) : undefined;
+          const title = id ? (getRecipe(id)?.title ?? customMealName(id)) : null;
           return (
             <Pressable
               key={slot}
               accessibilityRole="button"
-              accessibilityLabel={`${mealSlotLabels[slot]}: ${recipe ? recipe.title : 'not planned'}. Tap to ${recipe ? 'change' : 'plan'}.`}
+              accessibilityLabel={`${mealSlotLabels[slot]}: ${title ?? 'not planned'}. Tap to ${title ? 'change' : 'plan'}.`}
               onPress={() =>
                 router.push({ pathname: '/planner/pick', params: { date: selected, slot } })
               }
@@ -154,12 +154,12 @@ export default function CalendarScreen() {
                 <AppText variant="caption" size="sm" className="font-bold uppercase tracking-wider">
                   {mealSlotLabels[slot]}
                 </AppText>
-                <AppText variant="label" size="lg" color={recipe ? 'ink' : 'muted'}>
-                  {recipe ? recipe.title : 'Plan a meal'}
+                <AppText variant="label" size="lg" color={title ? 'ink' : 'muted'}>
+                  {title ?? 'Plan a meal'}
                 </AppText>
               </View>
               <AppText variant="heading" color="primary">
-                {recipe ? '›' : '+'}
+                {title ? '›' : '+'}
               </AppText>
             </Pressable>
           );

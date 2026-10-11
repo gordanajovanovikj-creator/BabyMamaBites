@@ -1,6 +1,8 @@
 import {
   dayLabel,
   mealsPlanned,
+  customMealId,
+  customMealName,
   plannedMeals,
   normalizePlan,
   planKey,
@@ -103,5 +105,23 @@ describe('meal slots', () => {
         '2026-10-08|lunch': 3,
       }),
     ).toEqual({ '2026-10-05|lunch': 'a', '2026-10-06|dinner': 'b' });
+  });
+});
+
+describe('custom meals', () => {
+  it('stores a typed-in food and reads it back', () => {
+    const id = customMealId('  Mashed   peas ');
+    expect(id).toBe('custom:Mashed peas');
+    expect(customMealName(id!)).toBe('Mashed peas');
+  });
+
+  it('ignores blank names and recipe ids', () => {
+    expect(customMealId('   ')).toBeNull();
+    expect(customMealName('baby-pear-puree')).toBeNull();
+    expect(customMealName('custom:')).toBeNull();
+  });
+
+  it('trims long names', () => {
+    expect(customMealName(customMealId('a'.repeat(100))!)).toHaveLength(60);
   });
 });

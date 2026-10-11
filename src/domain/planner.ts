@@ -52,6 +52,22 @@ export function isMealSlot(value: string): value is MealSlot {
   return (mealSlots as readonly string[]).includes(value);
 }
 
+// A planned slot holds a recipe id, or a food the parent typed in, stored as "custom:<name>".
+const CUSTOM_PREFIX = 'custom:';
+export const CUSTOM_MEAL_MAX_LENGTH = 60;
+
+/** The stored id for a food the parent typed in, or null if the name is blank. */
+export function customMealId(name: string): string | null {
+  const clean = name.trim().replace(/\s+/g, ' ').slice(0, CUSTOM_MEAL_MAX_LENGTH);
+  return clean ? `${CUSTOM_PREFIX}${clean}` : null;
+}
+
+/** The typed-in food name for a custom meal id, or null for a recipe id. */
+export function customMealName(id: string): string | null {
+  if (!id.startsWith(CUSTOM_PREFIX)) return null;
+  return id.slice(CUSTOM_PREFIX.length) || null;
+}
+
 /** How many meals are planned on a day (0 to 3). */
 export function mealsPlanned(plan: MealPlan, date: IsoDate): number {
   return mealSlots.filter((slot) => plan[planKey(date, slot)]).length;

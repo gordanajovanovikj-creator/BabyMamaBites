@@ -5,6 +5,7 @@ import { Pressable, ScrollView, View } from 'react-native';
 import { allRecipes, getRecipe } from '@/content/recipes';
 import { addDays, today, type IsoDate } from '@/domain/dates';
 import {
+  customMealName,
   dayLabel,
   mealSlotLabels,
   mealSlots,
@@ -99,6 +100,7 @@ function SlotCard({ date, slot }: { date: IsoDate; slot: MealSlot }) {
   const household = useHousehold();
   const id = plan[planKey(date, slot)];
   const recipe = id ? getRecipe(id) : undefined;
+  const own = id ? customMealName(id) : null;
   const family = recipe ? familyMealFor(recipe, allRecipes, household) : null;
   const pick = () => router.push({ pathname: '/planner/pick', params: { date, slot } });
 
@@ -107,7 +109,32 @@ function SlotCard({ date, slot }: { date: IsoDate; slot: MealSlot }) {
       <AppText variant="caption" size="xs" className="font-bold uppercase tracking-wider">
         {mealSlotLabels[slot]}
       </AppText>
-      {recipe ? (
+      {own ? (
+        <>
+          <View className="min-h-12 flex-row items-center gap-3">
+            <AppText size="2xl">🍽️</AppText>
+            <View className="flex-1">
+              <AppText variant="caption" size="xs">
+                Your own food
+              </AppText>
+              <AppText variant="label" size="lg" className="font-bold">
+                {own}
+              </AppText>
+            </View>
+          </View>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={`Change ${mealSlotLabels[slot].toLowerCase()}`}
+            onPress={pick}
+            hitSlop={6}
+            className="min-h-11 justify-center self-start active:opacity-60"
+          >
+            <AppText variant="label" color="primary" className="font-bold">
+              Change
+            </AppText>
+          </Pressable>
+        </>
+      ) : recipe ? (
         <>
           <Pressable
             accessibilityRole="button"

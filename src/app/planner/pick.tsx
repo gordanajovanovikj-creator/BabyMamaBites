@@ -1,21 +1,32 @@
 import { router, useLocalSearchParams } from 'expo-router';
+import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 
 import { babyRecipeCategories, babyRecipes } from '@/content/recipes';
 import { fromIsoDate, isIsoDate, today } from '@/domain/dates';
-import { isMealSlot, mealSlotLabels, planKey } from '@/domain/planner';
+import {
+  CUSTOM_MEAL_MAX_LENGTH,
+  customMealId,
+  customMealName,
+  isMealSlot,
+  mealSlotLabels,
+  planKey,
+} from '@/domain/planner';
 import { babyCollectionsFor, isAheadOfAge, suitsHousehold } from '@/domain/recipes';
 import { babyAge } from '@/domain/stage';
 import { usePlanner } from '@/features/planner/planner-context';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
-import { AppText, Button, cn, Screen, SymbolIcon, toneBackground } from '@/ui';
+import { AppText, Button, Card, cn, Screen, SymbolIcon, TextField, toneBackground } from '@/ui';
 
 export default function PickMealScreen() {
   const { date, slot } = useLocalSearchParams<{ date: string; slot: string }>();
   const { profile } = useProfile();
   const household = useHousehold();
   const { plan, setMeal } = usePlanner();
+  const planned =
+    date && isIsoDate(date) && slot && isMealSlot(slot) ? plan[planKey(date, slot)] : undefined;
+  const [ownFood, setOwnFood] = useState(() => (planned ? (customMealName(planned) ?? '') : ''));
 
   if (!date || !isIsoDate(date) || !slot || !isMealSlot(slot)) {
     return (
@@ -55,6 +66,33 @@ export default function PickMealScreen() {
           onPress={() => choose(null)}
         />
       ) : null}
+
+      <Card className="gap-3">
+        <TextField
+          label="Your own food"
+          value={ownFood}
+          onChangeText={setOwnFood}
+          maxLength={CUSTOM_MEAL_MAX_LENGTH}
+          placeholder="e.g. Mashed peas"
+          returnKeyType="done"
+          onSubmitEditing={() => {
+            const id = customMealId(ownFood);
+            if (id) choose(id);
+          }}
+        />
+        <Button
+          label={`Add to ${mealSlotLabels[slot].toLowerCase()}`}
+          disabled={!customMealId(ownFood)}
+          onPress={() => {
+            const id = customMealId(ownFood);
+            if (id) choose(id);
+          }}
+        />
+      </Card>
+
+      <AppText variant="heading" size="2xl" className="pt-2">
+        Or pick a recipe
+      </AppText>
 
       {ordered.map((group) => {
         const items = babyRecipes.filter(

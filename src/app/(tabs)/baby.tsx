@@ -138,6 +138,17 @@ export default function BabyScreen() {
               </Card>
             ) : null}
 
+            <View className="gap-1 pt-2">
+              <AppText variant="heading" size="2xl">
+                Planner
+              </AppText>
+              <AppText variant="caption">
+                Plan {name === 'Your baby' ? "your baby's" : `${name}'s`} meals for the week.
+              </AppText>
+            </View>
+
+            <WeekMenu />
+
             {finished ? (
               <Notice
                 title="You've finished the 26-week plan"
@@ -180,18 +191,6 @@ export default function BabyScreen() {
                 </AppText>
               ) : null}
             </Card>
-
-            <View className="gap-1 pt-2">
-              <AppText variant="heading" size="2xl">
-                Planner
-              </AppText>
-              <AppText variant="caption">
-                Plan {name === 'Your baby' ? "your baby's" : `${name}'s`} meals and keep track of
-                the freezer.
-              </AppText>
-            </View>
-
-            <WeekMenu />
 
             <FreezerCard />
 

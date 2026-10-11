@@ -7,7 +7,7 @@ import { today } from '@/domain/dates';
 import { pickDailyInsights } from '@/domain/insights';
 import { forMom, libraryItems, todayRow } from '@/domain/library';
 import { guideForMonths } from '@/domain/monthly-guides';
-import { mealSlotLabels, plannedMeals } from '@/domain/planner';
+import { customMealName, mealSlotLabels, plannedMeals } from '@/domain/planner';
 import { foodsToTryToday } from '@/domain/recipes';
 import { babyAge, babyStage } from '@/domain/stage';
 import { InsightsRow } from '@/features/insights/insights-row';
@@ -15,7 +15,7 @@ import { usePlanner } from '@/features/planner/planner-context';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
 import { AgeHero } from '@/features/today/age-hero';
-import { FoodsToTry } from '@/features/today/foods-to-try';
+import { FoodsToTry, type PlannedFood } from '@/features/today/foods-to-try';
 import { ForYouRow } from '@/features/today/for-you-row';
 import { HelpCard } from '@/features/today/help-card';
 import { Screen } from '@/ui';
@@ -39,9 +39,12 @@ export default function TodayScreen() {
   const momIds = new Set(momItems.map((i) => i.id));
   const row = todayRow(daily, solidsArticles, ageMonths).filter((i) => !momIds.has(i.id));
   const foods = foodsToTryToday(babyRecipes, ageMonths, household, now);
-  const planned = plannedMeals(plan, now).flatMap(({ slot, recipeId }) => {
+  const planned = plannedMeals(plan, now).flatMap(({ slot, recipeId }): PlannedFood[] => {
+    const label = mealSlotLabels[slot];
     const recipe = getRecipe(recipeId);
-    return recipe ? [{ label: mealSlotLabels[slot], recipe }] : [];
+    if (recipe) return [{ label, recipe }];
+    const own = customMealName(recipeId);
+    return own ? [{ label, own }] : [];
   });
 
   return (
