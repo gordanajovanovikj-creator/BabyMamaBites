@@ -119,15 +119,20 @@ export default function BabyScreen() {
           <View className="gap-4 px-5">
             {showsReadinessPrompt(ageMonths) ? (
               <Card
+                tone="sky"
                 className="flex-row items-center gap-4"
                 onPress={() => router.push('/solids/readiness')}
                 accessibilityLabel="Is your baby ready to start solids? See the signs to look for."
               >
                 <View className="flex-1 gap-1">
-                  <AppText variant="heading">Is your baby ready to start solids?</AppText>
-                  <AppText variant="caption">The signs to look for, all together.</AppText>
+                  <AppText variant="heading" color="on-sky">
+                    Is your baby ready to start solids?
+                  </AppText>
+                  <AppText variant="caption" color="on-sky">
+                    The signs to look for, all together.
+                  </AppText>
                 </View>
-                <AppText variant="heading" color="primary">
+                <AppText variant="heading" color="on-sky">
                   ›
                 </AppText>
               </Card>
