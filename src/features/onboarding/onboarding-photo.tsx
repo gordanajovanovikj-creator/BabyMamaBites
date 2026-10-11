@@ -2,7 +2,7 @@ import { Image, type ImageSource } from 'expo-image';
 import { View } from 'react-native';
 
 export const onboardingPhotos = {
-  welcome: require('@/assets/images/onboarding/welcome-mom-baby.jpg'),
+  welcome: require('@/assets/images/onboarding/welcome-kitchen.jpg'),
   babyLed: require('@/assets/images/onboarding/baby-led-weaning.jpg'),
   spoon: require('@/assets/images/onboarding/spoon-feeding.jpg'),
   both: require('@/assets/images/onboarding/both-ways.jpg'),

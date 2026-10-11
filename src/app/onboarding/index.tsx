@@ -24,7 +24,7 @@ export default function WelcomeScreen() {
       <View
         accessible
         accessibilityRole="image"
-        accessibilityLabel="A smiling mom cuddling her happy baby"
+        accessibilityLabel="A smiling mom sharing a snack with her baby in a high chair"
         style={{ position: 'absolute', top: 0, left: 0, right: 0, height: photoHeight }}
       >
         <Image
