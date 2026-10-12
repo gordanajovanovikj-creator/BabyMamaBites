@@ -146,6 +146,22 @@ const photos: Record<string, ImageSource> = {
   'baby-cauliflower-bean-mash': require('@/assets/images/recipes/baby-cauliflower-bean-mash.jpg'),
   'baby-pear-cottage-cheese': require('@/assets/images/recipes/baby-pear-cottage-cheese.jpg'),
   'baby-zucchini-egg-strips': require('@/assets/images/recipes/baby-zucchini-egg-strips.jpg'),
+  'toddler-french-toast-sticks': require('@/assets/images/recipes/toddler-french-toast-sticks.jpg'),
+  'toddler-apple-oat-pancakes': require('@/assets/images/recipes/toddler-apple-oat-pancakes.jpg'),
+  'toddler-spinach-cheese-omelets': require('@/assets/images/recipes/toddler-spinach-cheese-omelets.jpg'),
+  'toddler-nut-butter-rice-cake': require('@/assets/images/recipes/toddler-nut-butter-rice-cake.jpg'),
+  'toddler-chicken-avocado-pinwheels': require('@/assets/images/recipes/toddler-chicken-avocado-pinwheels.jpg'),
+  'toddler-turkey-veggie-quesadilla': require('@/assets/images/recipes/toddler-turkey-veggie-quesadilla.jpg'),
+  'toddler-tuna-cucumber-bites': require('@/assets/images/recipes/toddler-tuna-cucumber-bites.jpg'),
+  'toddler-chickpea-salad-sandwich': require('@/assets/images/recipes/toddler-chickpea-salad-sandwich.jpg'),
+  'toddler-beef-veggie-meatballs': require('@/assets/images/recipes/toddler-beef-veggie-meatballs.jpg'),
+  'toddler-sweet-potato-mac': require('@/assets/images/recipes/toddler-sweet-potato-mac.jpg'),
+  'toddler-salmon-rice-patties': require('@/assets/images/recipes/toddler-salmon-rice-patties.jpg'),
+  'toddler-chicken-coconut-curry': require('@/assets/images/recipes/toddler-chicken-coconut-curry.jpg'),
+  'toddler-yogurt-berry-bark': require('@/assets/images/recipes/toddler-yogurt-berry-bark.jpg'),
+  'toddler-baked-apple-slices': require('@/assets/images/recipes/toddler-baked-apple-slices.jpg'),
+  'toddler-pb-banana-oat-bites': require('@/assets/images/recipes/toddler-pb-banana-oat-bites.jpg'),
+  'toddler-broccoli-potato-tots': require('@/assets/images/recipes/toddler-broccoli-potato-tots.jpg'),
 };
 
 export function recipePhoto(recipeId: string): ImageSource | undefined {

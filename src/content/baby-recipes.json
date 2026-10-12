@@ -1830,6 +1830,620 @@
       ],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-french-toast-sticks",
+      "title": "Banana berry French toast sticks",
+      "summary": "[PLACEHOLDER - needs expert review] Soft, cinnamon French toast strips for dipping, with banana and berries.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🍞",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "avocado-egg-toast",
+        "note": "Make French toast or eggs for the whole family at once."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": ["egg", "milk", "wheat"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "2 slices whole-wheat bread, cut into thick strips",
+        "1 large egg",
+        "2 tbsp whole milk",
+        "1/2 tsp cinnamon",
+        "1 tbsp unsalted butter for the pan",
+        "Mashed banana and chopped berries to serve"
+      ],
+      "steps": [
+        "Whisk the egg, milk and cinnamon in a shallow dish.",
+        "Dip the bread strips so they soak up a little of the mixture.",
+        "Cook in the melted butter over medium-low heat for 2 to 3 minutes per side, until golden and there’s no runny egg.",
+        "Let them cool, and serve with mashed banana and chopped berries for dipping."
+      ],
+      "tips": [
+        "Cook eggs until both the yolk and white are firm.",
+        "Quarter berries like blueberries and cut strawberries small."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-apple-oat-pancakes",
+      "title": "Apple cinnamon oat pancakes",
+      "summary": "[PLACEHOLDER - needs expert review] Soft blender pancakes with oats, banana, apple and egg.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🥞",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 15,
+      "servings": 8,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "apple-cinnamon-porridge",
+        "note": "Cook a pot of apple cinnamon porridge for yourself."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": ["egg"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup rolled oats",
+        "1 ripe banana",
+        "1 large egg",
+        "1/4 cup grated apple",
+        "1/2 tsp cinnamon",
+        "A little oil for the pan"
+      ],
+      "steps": [
+        "Blend the oats, banana, egg, apple and cinnamon until smooth.",
+        "Pour small circles into a lightly oiled skillet over medium-low heat.",
+        "Cook for 2 to 3 minutes per side, until set all the way through and golden.",
+        "Cool and cut into strips or small pieces."
+      ],
+      "tips": [
+        "Some oats are processed with wheat; check the label if you avoid gluten.",
+        "Freeze extras between sheets of parchment and reheat in the toaster."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-spinach-cheese-omelets",
+      "title": "Spinach and cheese mini omelets",
+      "summary": "[PLACEHOLDER - needs expert review] Baked mini omelets with spinach and cheese, easy to grab.",
+      "icon": "leaf.fill",
+      "emoji": "🧀",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "egg-muffin-cups",
+        "note": "Bake a tray of veggie egg muffins for the grown-ups at the same time."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": ["egg", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "2 large eggs",
+        "2 tbsp whole milk",
+        "1/4 cup finely chopped baby spinach",
+        "2 tbsp shredded mild cheese"
+      ],
+      "steps": [
+        "Heat the oven to 350°F (175°C) and grease 3 or 4 cups of a muffin tin.",
+        "Whisk the eggs and milk, then stir in the spinach and cheese.",
+        "Pour into the cups and bake for 12 to 15 minutes, until set all the way through.",
+        "Cool, then cut into pieces."
+      ],
+      "tips": [
+        "Cook eggs until both the yolk and white are firm.",
+        "Cheese can be salty; choose lower-sodium options like mozzarella or Swiss when you can."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-nut-butter-rice-cake",
+      "title": "Nut butter and banana rice cake",
+      "summary": "[PLACEHOLDER - needs expert review] A thin layer of nut butter and soft banana on a plain rice cake.",
+      "icon": "carrot.fill",
+      "emoji": "🍌",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "apple-pb",
+        "note": "Have apple slices and peanut butter as your own snack."
+      },
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["peanut"],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 plain brown rice cake",
+        "1 1/2 tsp smooth peanut butter or almond butter",
+        "1/4 banana, thinly sliced"
+      ],
+      "steps": [
+        "Spread the nut butter in a very thin layer over the rice cake.",
+        "Press the banana slices gently into the nut butter.",
+        "Break into small, toddler-sized pieces."
+      ],
+      "tips": [
+        "Always spread nut butter thinly; never serve it by the spoonful.",
+        "If you use almond butter, the snack contains tree nuts instead of peanuts.",
+        "Offer rice cakes as an occasional snack, and vary your toddler’s grains.",
+        "Always stay with your toddler while they eat, and have them sit down."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-chicken-avocado-pinwheels",
+      "title": "Avocado and chicken pinwheels",
+      "summary": "[PLACEHOLDER - needs expert review] Soft tortilla roll-ups with avocado and shredded chicken.",
+      "icon": "fork.knife",
+      "emoji": "🌯",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 10,
+      "servings": 2,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "hummus-wrap",
+        "note": "Roll up a hummus wrap for your own lunch."
+      },
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["wheat"],
+      "diets": ["halal", "kosher"],
+      "ingredients": [
+        "1 large whole-wheat tortilla",
+        "1/2 ripe avocado, mashed",
+        "1/3 cup finely shredded cooked chicken"
+      ],
+      "steps": [
+        "Spread the avocado over the tortilla.",
+        "Sprinkle the chicken over the top.",
+        "Roll up tightly and slice into rounds, then cut each round in half."
+      ],
+      "tips": [
+        "Use chicken cooked to 165°F, with no added salt.",
+        "Halal and kosher depend on the chicken you buy; check the label."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-turkey-veggie-quesadilla",
+      "title": "Cheesy turkey and veggie quesadilla wedges",
+      "summary": "[PLACEHOLDER - needs expert review] A warm, melty quesadilla with turkey and soft vegetables.",
+      "icon": "fork.knife",
+      "emoji": "🫓",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 2,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "black-bean-quesadilla",
+        "note": "Make a big batch of quesadillas for the family."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": ["milk", "wheat"],
+      "diets": ["halal", "kosher"],
+      "ingredients": [
+        "1 whole-wheat tortilla",
+        "1/4 cup shredded mozzarella cheese",
+        "2 tbsp finely diced cooked turkey",
+        "2 tbsp finely chopped soft-cooked broccoli or carrots"
+      ],
+      "steps": [
+        "Put the cheese, turkey and vegetables on half the tortilla and fold it over.",
+        "Cook in a dry skillet over medium-low heat for 2 to 3 minutes per side, until the cheese melts.",
+        "Cool and cut into thin strips or small triangles."
+      ],
+      "tips": [
+        "Choose plain cooked turkey rather than deli meat, which is salty.",
+        "Halal and kosher depend on the turkey you buy; check the label."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-tuna-cucumber-bites",
+      "title": "Tuna salad on cucumber",
+      "summary": "[PLACEHOLDER - needs expert review] Creamy tuna salad served on thin, peeled cucumber slices.",
+      "icon": "fork.knife",
+      "emoji": "🥒",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 10,
+      "servings": 3,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "white-bean-tuna-salad",
+        "note": "Make yourself a white bean and tuna salad with the rest of the can."
+      },
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["fish", "milk"],
+      "diets": ["pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/2 cup canned light tuna in water, drained and flaked",
+        "1 tbsp plain whole-milk Greek yogurt",
+        "1/2 cucumber, peeled"
+      ],
+      "steps": [
+        "Mix the tuna with the yogurt until creamy.",
+        "Slice the cucumber thinly, then cut the slices into half-moons.",
+        "Top each slice with a little tuna salad, or serve the tuna on soft toast with cucumber on the side."
+      ],
+      "tips": [
+        "Canned light tuna is on the FDA’s \"Best Choices\" list. For toddlers 1 to 3, a serving is about 1 oz, 2 to 3 times a week.",
+        "Thick, firm cucumber rounds can be hard to chew; thin, peeled slices are safer."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-chickpea-salad-sandwich",
+      "title": "Chickpea salad sandwich squares",
+      "summary": "[PLACEHOLDER - needs expert review] Mashed chickpea salad on soft bread, cut into small squares.",
+      "icon": "fork.knife",
+      "emoji": "🥪",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 10,
+      "servings": 2,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "lemon-herb-quinoa-chickpea-salad",
+        "note": "Toss the rest of the chickpeas into your own quinoa salad."
+      },
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["milk", "wheat"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup canned chickpeas (no salt added), rinsed and drained",
+        "1 tbsp plain whole-milk Greek yogurt",
+        "1 tsp Dijon mustard (optional)",
+        "Soft whole-wheat bread"
+      ],
+      "steps": [
+        "Mash the chickpeas well with a fork, so no whole chickpeas are left.",
+        "Stir in the yogurt and mustard.",
+        "Spread thinly on the bread and cut into small squares; remove the crusts if you like."
+      ],
+      "tips": [
+        "Whole chickpeas are a choking hazard; mash them well.",
+        "You can use mayonnaise instead of yogurt; it contains egg."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-beef-veggie-meatballs",
+      "title": "Beef and veggie meatballs",
+      "summary": "[PLACEHOLDER - needs expert review] Tender beef meatballs with hidden zucchini, for iron and zinc.",
+      "icon": "fork.knife",
+      "emoji": "🍖",
+      "tone": "muted",
+      "activeMinutes": 15,
+      "totalMinutes": 30,
+      "servings": 16,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "turkey-meatball-zoodle-box",
+        "note": "Make extra meatballs for the grown-ups’ meal-prep boxes."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": ["egg", "wheat"],
+      "diets": ["halal", "kosher"],
+      "ingredients": [
+        "1/2 lb lean ground beef",
+        "1/4 cup finely grated zucchini, squeezed dry",
+        "1/4 cup plain breadcrumbs",
+        "1 small egg"
+      ],
+      "steps": [
+        "Heat the oven to 375°F (190°C) and line a baking sheet.",
+        "Mix everything together and shape into small meatballs.",
+        "Bake for about 15 minutes, until cooked through to 160°F.",
+        "Cool, then cut your toddler’s portion into small pieces."
+      ],
+      "tips": [
+        "Cut your toddler’s portion into pieces no bigger than about 1/2 inch.",
+        "Skip added salt; season the grown-ups’ portions at the table.",
+        "Halal and kosher depend on the beef you buy; check the label."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-sweet-potato-mac",
+      "title": "Creamy sweet potato macaroni shells",
+      "summary": "[PLACEHOLDER - needs expert review] Pasta shells in a creamy sweet potato and parmesan sauce.",
+      "icon": "fork.knife",
+      "emoji": "🍝",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "one-pot-pasta",
+        "note": "Cook extra pasta for baby before you add the family’s sauce."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": ["milk", "wheat"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup small pasta shells, cooked soft in unsalted water",
+        "1/4 cup smooth mashed sweet potato",
+        "2 tbsp whole milk",
+        "1 tbsp grated parmesan"
+      ],
+      "steps": [
+        "Warm the sweet potato and milk together in a small pan to make a creamy sauce.",
+        "Stir in the pasta and parmesan until coated.",
+        "Let it cool before serving."
+      ],
+      "tips": ["Parmesan is salty, so a little goes a long way."],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-salmon-rice-patties",
+      "title": "Salmon and brown rice patties",
+      "summary": "[PLACEHOLDER - needs expert review] Soft little fish cakes with salmon and brown rice.",
+      "icon": "fork.knife",
+      "emoji": "🐟",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 20,
+      "servings": 6,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "sheet-pan-salmon",
+        "note": "Set aside some plain salmon for these before you season the family’s."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": ["fish", "egg", "wheat"],
+      "diets": ["pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup cooked brown rice",
+        "1/2 cup cooked salmon, flaked, skin and bones removed",
+        "1 small egg",
+        "1 tbsp plain breadcrumbs",
+        "A little oil for the pan"
+      ],
+      "steps": [
+        "Mix the rice, salmon, egg and breadcrumbs.",
+        "Shape into small, flat patties.",
+        "Cook in a lightly oiled skillet over medium heat for about 3 minutes per side, until golden and cooked through.",
+        "Cool, then cut into strips or small pieces."
+      ],
+      "tips": [
+        "Check the salmon carefully for bones.",
+        "Salmon is on the FDA’s \"Best Choices\" list for children."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-chicken-coconut-curry",
+      "title": "Mild chicken and vegetable coconut curry",
+      "summary": "[PLACEHOLDER - needs expert review] A gentle, creamy curry with chicken, carrots and peas, served with soft rice.",
+      "icon": "flame.fill",
+      "emoji": "🍛",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 2,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "chickpea-curry",
+        "note": "Cook a coconut chickpea curry for the grown-ups."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/2 cup cooked chicken, diced small",
+        "1/4 cup diced carrots and peas, steamed soft",
+        "1/4 cup light coconut milk",
+        "A pinch of turmeric",
+        "Soft cooked rice to serve"
+      ],
+      "steps": [
+        "Simmer the chicken, vegetables, coconut milk and turmeric in a small pot for about 5 minutes.",
+        "Lightly mash the peas.",
+        "Cool and serve with soft rice."
+      ],
+      "tips": [
+        "Use chicken cooked to 165°F.",
+        "Halal and kosher depend on the chicken you buy; check the label."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-yogurt-berry-bark",
+      "title": "Frozen berry yogurt bark",
+      "summary": "[PLACEHOLDER - needs expert review] Plain yogurt and chopped berries, frozen and broken into pieces.",
+      "icon": "snowflake",
+      "emoji": "🍓",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 190,
+      "servings": 6,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "yogurt-parfait",
+        "note": "Make yourself a yogurt parfait with the rest of the yogurt."
+      },
+      "tags": ["freezer-friendly"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 cup plain whole-milk Greek yogurt",
+        "1/2 cup mixed berries, finely chopped",
+        "Mashed ripe banana, to sweeten (optional)"
+      ],
+      "steps": [
+        "Stir the banana into the yogurt if you’re using it, then spread thinly on a parchment-lined baking sheet.",
+        "Scatter the berries over the top and press them in lightly.",
+        "Freeze for 2 to 3 hours, then break into toddler-sized pieces.",
+        "Let pieces soften for a few minutes before serving."
+      ],
+      "tips": [
+        "Health experts advise skipping added sweeteners before age 2; ripe fruit adds natural sweetness.",
+        "Chop berries small; whole blueberries are a choking hazard."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-baked-apple-slices",
+      "title": "Soft baked cinnamon apple slices",
+      "summary": "[PLACEHOLDER - needs expert review] Thin apple slices baked until soft and tender, with cinnamon.",
+      "icon": "carrot.fill",
+      "emoji": "🍎",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 2,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "apple-pb",
+        "note": "Have apple slices with peanut butter as your own snack."
+      },
+      "tags": ["batch-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1 apple, peeled, cored and thinly sliced", "A light dusting of cinnamon"],
+      "steps": [
+        "Heat the oven to 375°F (190°C) and line a baking sheet with parchment.",
+        "Spread the apple slices in a single layer and dust with cinnamon.",
+        "Bake for about 15 minutes, until soft enough to squash between your fingers.",
+        "Let them cool before serving."
+      ],
+      "tips": [
+        "Crunchy apple chips and raw apple pieces are choking hazards for young children; soft-baked slices are safer."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-pb-banana-oat-bites",
+      "title": "Peanut butter banana oat bites",
+      "summary": "[PLACEHOLDER - needs expert review] Soft, flattened no-bake oat bites with peanut butter and banana.",
+      "icon": "carrot.fill",
+      "emoji": "🥜",
+      "tone": "muted",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 16,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "energy-bites",
+        "note": "Roll a batch of energy bites for yourself."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": ["peanut"],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 cup quick oats",
+        "1/3 cup smooth natural peanut butter",
+        "1/4 cup mashed ripe banana or unsweetened applesauce",
+        "2 tbsp ground flaxseed"
+      ],
+      "steps": [
+        "Mix everything well in a bowl.",
+        "Press into small, flat discs or short bars rather than round balls.",
+        "Refrigerate for up to 4 days."
+      ],
+      "tips": [
+        "Round, sticky balls are a choking hazard for young children; flat bites are easier to chew.",
+        "Thin the mixture with a little more banana if it’s very thick and sticky.",
+        "Some oats are processed with wheat; check the label if you avoid gluten.",
+        "Always stay with your toddler while they eat, and have them sit down."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "toddler-broccoli-potato-tots",
+      "title": "Cheesy broccoli and potato tots",
+      "summary": "[PLACEHOLDER - needs expert review] Baked veggie tots with potato, broccoli and cheese.",
+      "icon": "leaf.fill",
+      "emoji": "🥦",
+      "tone": "sky",
+      "activeMinutes": 15,
+      "totalMinutes": 30,
+      "servings": 12,
+      "categories": ["baby-12m"],
+      "fromMonths": 12,
+      "familyMeal": {
+        "recipeId": "sweet-potato-spinach-hash",
+        "note": "Make a breakfast hash for yourself with any extra potato."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": ["milk", "egg"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 cup mashed potato",
+        "1/2 cup finely chopped steamed broccoli",
+        "1/4 cup shredded mild cheese",
+        "1 egg yolk"
+      ],
+      "steps": [
+        "Heat the oven to 400°F (200°C) and line a baking sheet with parchment.",
+        "Mix the potato, broccoli, cheese and egg yolk.",
+        "Shape into small tots.",
+        "Bake for about 15 minutes, until golden outside and cooked through. Cool, then cut in half lengthwise."
+      ],
+      "tips": [
+        "Cheese can be salty; choose lower-sodium options like mozzarella or Swiss when you can.",
+        "Freeze extras and reheat in the oven."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
     }
   ]
 }

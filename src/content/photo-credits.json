@@ -380,11 +380,25 @@
       "url": "https://pixabay.com/photos/muffins-zucchini-muffin-cakes-nut-5082254/"
     },
     {
+      "id": "toddler-apple-oat-pancakes",
+      "usedOn": "Apple cinnamon oat pancakes",
+      "source": "pixabay",
+      "author": "RitaE",
+      "url": "https://pixabay.com/photos/pancakes-schaumomelette-omelette-1984716/"
+    },
+    {
       "id": "apple-pb",
       "usedOn": "Apple slices with peanut butter",
       "source": "pixabay",
       "author": "cgdsro",
       "url": "https://pixabay.com/photos/food-butter-peanut-spread-3126525/"
+    },
+    {
+      "id": "toddler-chicken-avocado-pinwheels",
+      "usedOn": "Avocado and chicken pinwheels",
+      "source": "pixabay",
+      "author": "ggrocks",
+      "url": "https://pixabay.com/photos/wraps-food-tortilla-healthy-1170195/"
     },
     {
       "id": "baby-avocado-egg-soldiers",
@@ -415,11 +429,25 @@
       "url": "https://pixabay.com/photos/granola-breakfast-bars-healthy-6989373/"
     },
     {
+      "id": "toddler-french-toast-sticks",
+      "usedOn": "Banana berry French toast sticks",
+      "source": "pixabay",
+      "author": "blandinejoannic",
+      "url": "https://pixabay.com/photos/french-toast-food-flatlay-breakfast-5763429/"
+    },
+    {
       "id": "toddler-bean-quesadilla",
       "usedOn": "Bean and cheese quesadilla strips",
       "source": "pixabay",
       "author": "Nayuta",
       "url": "https://pixabay.com/photos/quesadilla-vegan-food-mexican-2297036/"
+    },
+    {
+      "id": "toddler-beef-veggie-meatballs",
+      "usedOn": "Beef and veggie meatballs",
+      "source": "pixabay",
+      "author": "minipukkik",
+      "url": "https://pixabay.com/photos/noodle-noodles-thai-food-food-3380423/"
     },
     {
       "id": "baby-berry-baked-oatmeal",
@@ -492,6 +520,13 @@
       "url": "https://pixabay.com/photos/cheese-slicer-crackers-appetizers-650029/"
     },
     {
+      "id": "toddler-broccoli-potato-tots",
+      "usedOn": "Cheesy broccoli and potato tots",
+      "source": "pixabay",
+      "author": "CharlotteGovaert",
+      "url": "https://pixabay.com/photos/croquette-shrimp-croquette-food-5681992/"
+    },
+    {
       "id": "baby-broccoli-quinoa-bites",
       "usedOn": "Cheesy broccoli and quinoa bites",
       "source": "pixabay",
@@ -513,11 +548,25 @@
       "url": "https://pixabay.com/photos/soup-cream-of-cauliflower-3930288/"
     },
     {
+      "id": "toddler-turkey-veggie-quesadilla",
+      "usedOn": "Cheesy turkey and veggie quesadilla wedges",
+      "source": "pixabay",
+      "author": "Pexels",
+      "url": "https://pixabay.com/photos/avocado-dip-food-mexican-1840186/"
+    },
+    {
       "id": "baby-chicken-sweet-potato-bites",
       "usedOn": "Chicken and sweet potato polpette",
       "source": "pixabay",
       "author": "MarCuesBo",
       "url": "https://pixabay.com/photos/prescriptions-burgers-vegetables-2920072/"
+    },
+    {
+      "id": "toddler-chickpea-salad-sandwich",
+      "usedOn": "Chickpea salad sandwich squares",
+      "source": "pixabay",
+      "author": "Heribertoaguirrefotograf",
+      "url": "https://pixabay.com/photos/sandwich-egg-sandwich-breakfast-7009977/"
     },
     {
       "id": "nursing-chocolate-chip-bites",
@@ -639,6 +688,13 @@
       "url": "https://pixabay.com/photos/food-gnocchi-plate-fresh-pasta-4770756/"
     },
     {
+      "id": "toddler-sweet-potato-mac",
+      "usedOn": "Creamy sweet potato macaroni shells",
+      "source": "pixabay",
+      "author": "wesweaver",
+      "url": "https://pixabay.com/photos/macaroni-mac-and-cheese-cheese-mac-1046612/"
+    },
+    {
       "id": "tomato-tortellini-soup",
       "usedOn": "Creamy tomato tortellini soup",
       "source": "pixabay",
@@ -665,6 +721,13 @@
       "source": "pixabay",
       "author": "rafasuarezfoto",
       "url": "https://pixabay.com/photos/tortilla-burrito-mexican-burritos-5247124/"
+    },
+    {
+      "id": "toddler-yogurt-berry-bark",
+      "usedOn": "Frozen berry yogurt bark",
+      "source": "pixabay",
+      "author": "DagnyWalter",
+      "url": "https://pixabay.com/photos/breakfast-dessert-yoghurt-delicious-3928800/"
     },
     {
       "id": "garlic-butter-shrimp-pasta",
@@ -772,6 +835,13 @@
       "url": "https://pixabay.com/photos/gyros-restaurant-meal-yummy-cook-674425/"
     },
     {
+      "id": "toddler-chicken-coconut-curry",
+      "usedOn": "Mild chicken and vegetable coconut curry",
+      "source": "pixabay",
+      "author": "harrydona",
+      "url": "https://pixabay.com/photos/rice-dish-chicken-breast-4240511/"
+    },
+    {
       "id": "toddler-turkey-meatballs",
       "usedOn": "Mini turkey and zucchini meatballs",
       "source": "pixabay",
@@ -812,6 +882,13 @@
       "source": "pixabay",
       "author": "Layenday",
       "url": "https://pixabay.com/photos/tea-teacup-flowers-vase-warm-tea-6405249/"
+    },
+    {
+      "id": "toddler-nut-butter-rice-cake",
+      "usedOn": "Nut butter and banana rice cake",
+      "source": "pixabay",
+      "author": "natic_ua",
+      "url": "https://pixabay.com/photos/peanut-oil-peanut-butter-strawberry-1771672/"
     },
     {
       "id": "baby-oatmeal-blueberry",
@@ -891,6 +968,13 @@
       "url": "https://pixabay.com/photos/oatmeal-muffins-cakes-healthy-287760/"
     },
     {
+      "id": "toddler-pb-banana-oat-bites",
+      "usedOn": "Peanut butter banana oat bites",
+      "source": "pixabay",
+      "author": "WikimediaImages",
+      "url": "https://pixabay.com/photos/food-eat-diet-quaker-oats-2202393/"
+    },
+    {
       "id": "smoothie-pb-banana-protein",
       "usedOn": "Peanut butter banana protein shake",
       "source": "pixabay",
@@ -961,6 +1045,13 @@
       "url": "https://pixabay.com/photos/sweet-potato-soup-puree-flat-lay-6691256/"
     },
     {
+      "id": "toddler-salmon-rice-patties",
+      "usedOn": "Salmon and brown rice patties",
+      "source": "pixabay",
+      "author": "cattalin",
+      "url": "https://pixabay.com/photos/new-years-eve-salmon-fish-seafood-518032/"
+    },
+    {
       "id": "baby-salmon-sweet-potato",
       "usedOn": "Salmon and sweet potato mash",
       "source": "pixabay",
@@ -1008,6 +1099,20 @@
       "source": "pixabay",
       "author": "erichbauer0",
       "url": "https://pixabay.com/photos/dips-sauces-glass-avocado-tomatoes-623582/"
+    },
+    {
+      "id": "toddler-baked-apple-slices",
+      "usedOn": "Soft baked cinnamon apple slices",
+      "source": "pixabay",
+      "author": "RitaE",
+      "url": "https://pixabay.com/photos/apple-baked-apple-advent-christmas-1883934/"
+    },
+    {
+      "id": "toddler-spinach-cheese-omelets",
+      "usedOn": "Spinach and cheese mini omelets",
+      "source": "pixabay",
+      "author": "Pexels",
+      "url": "https://pixabay.com/photos/avocado-chopping-board-ingredients-1838785/"
     },
     {
       "id": "nursing-spinach-pear-quinoa-salad",
@@ -1127,6 +1232,13 @@
       "source": "pixabay",
       "author": "blandinejoannic",
       "url": "https://pixabay.com/photos/smoothie-breakfast-berries-5154447/"
+    },
+    {
+      "id": "toddler-tuna-cucumber-bites",
+      "usedOn": "Tuna salad on cucumber",
+      "source": "pixabay",
+      "author": "eak_kkk",
+      "url": "https://pixabay.com/photos/salad-tuna-salad-clean-food-1088411/"
     },
     {
       "id": "turkey-meatball-zoodle-box",
