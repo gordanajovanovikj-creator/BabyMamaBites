@@ -17,7 +17,8 @@ import { babyAge } from '@/domain/stage';
 import { usePlanner } from '@/features/planner/planner-context';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
-import { AppText, Button, Card, cn, Screen, SymbolIcon, TextField, toneBackground } from '@/ui';
+import { RecipeImage } from '@/features/recipes/recipe-image';
+import { AppText, Button, Card, cn, Screen, TextField } from '@/ui';
 
 export default function PickMealScreen() {
   const { date, slot } = useLocalSearchParams<{ date: string; slot: string }>();
@@ -123,14 +124,7 @@ export default function PickMealScreen() {
                     ahead && 'opacity-60',
                   )}
                 >
-                  <View
-                    className={cn(
-                      'h-12 w-12 items-center justify-center rounded-2xl',
-                      toneBackground(r.tone),
-                    )}
-                  >
-                    <SymbolIcon icon={r.icon} emoji={r.emoji} size={24} />
-                  </View>
+                  <RecipeImage recipe={r} className="h-14 w-14 rounded-xl" iconSize={24} />
                   <View className="flex-1">
                     <AppText variant="label" size="lg">
                       {r.title}
