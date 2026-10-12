@@ -1,6 +1,12 @@
 import disclaimersJson from './copy/disclaimers.json';
 import medicalDisclaimerJson from './copy/medical-disclaimer.json';
-import { articleDisclaimerNote, disclaimers, getDisclaimer, medicalDisclaimer } from './copy';
+import {
+  articleDisclaimerNote,
+  chokingDisclaimer,
+  disclaimers,
+  getDisclaimer,
+  medicalDisclaimer,
+} from './copy';
 import { copyCollectionSchema, PLACEHOLDER_MARKER } from './schemas';
 
 describe('bundled content', () => {
@@ -38,5 +44,6 @@ describe('bundled content', () => {
       expect(block.body.includes(PLACEHOLDER_MARKER)).toBe(block.reviewStatus === 'placeholder');
     }
     expect(articleDisclaimerNote.body).toMatch(/911/);
+    expect(chokingDisclaimer.body).toMatch(/911/);
   });
 });

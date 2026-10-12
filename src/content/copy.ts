@@ -12,7 +12,12 @@ export function getDisclaimer(id: string): CopyBlock | undefined {
 const medical = copyCollectionSchema.parse(medicalDisclaimerJson).blocks;
 
 /** The full Medical and Health Information Disclaimer, section by section (legal menu). */
-export const medicalDisclaimer: CopyBlock[] = medical.filter((b) => b.id !== 'article-note');
+export const medicalDisclaimer: CopyBlock[] = medical.filter(
+  (b) => b.id !== 'article-note' && b.id !== 'choking',
+);
 
 /** The short note shown at the bottom of health-related articles, guides and recipes. */
 export const articleDisclaimerNote: CopyBlock = medical.find((b) => b.id === 'article-note')!;
+
+/** The longer disclaimer at the bottom of the choking and gagging page. */
+export const chokingDisclaimer: CopyBlock = medical.find((b) => b.id === 'choking')!;

@@ -1,5 +1,6 @@
 import { Linking, View } from 'react-native';
 
+import { chokingDisclaimer } from '@/content/copy';
 import { splitReviewMarker } from '@/content/schemas';
 import { chokingGuide, solidsSourcesFor } from '@/content/solids-plan';
 import { SourceLinks } from '@/features/shared/source-links';
@@ -44,6 +45,16 @@ export default function ChokingScreen() {
         </Card>
       ))}
 
+      <View className="gap-2 pt-2">
+        <AppText variant="heading">{chokingDisclaimer.title}</AppText>
+        {splitReviewMarker(chokingDisclaimer.body)
+          .text.split('\n\n')
+          .map((p) => (
+            <AppText key={p} variant="caption">
+              {p}
+            </AppText>
+          ))}
+      </View>
       <HealthDisclaimerNote draftReviewer="health professional" />
     </Screen>
   );

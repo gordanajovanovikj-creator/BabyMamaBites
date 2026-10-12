@@ -42,6 +42,13 @@
       "body": "[PLACEHOLDER - needs expert review] The content in this app is for informational and educational purposes only and is not medical, pediatric or nutritional advice. Every baby and mom is unique. Always talk to your pediatrician or healthcare provider before making significant changes to your baby's diet, introducing major allergens, or managing postpartum health concerns. If you think your child is having a medical or allergic emergency, call 911 right away.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
+    },
+    {
+      "id": "choking",
+      "title": "Choking first aid disclaimer",
+      "body": "[PLACEHOLDER - needs expert review] This page is general information for typically developing babies under 12 months. It isn't a substitute for advice from your pediatrician or another qualified health professional, and it isn't a replacement for hands-on first aid training. Never ignore professional medical advice or wait to get help because of something you read in this app.\n\nEvery child is different. If your child was born early or has developmental, muscle-tone, airway, swallowing, digestive, heart, lung or neurological differences, ask your pediatrician to help you make a choking first aid plan for your child.\n\nWe encourage every parent and caregiver to take an in-person infant CPR and choking first aid class, such as those offered by the American Red Cross or the American Heart Association. The information here is summarized from US guidance from the CDC and the AAP.\n\nMamaBabyBites doesn't give individual medical advice to users, their children or their families. If your baby is choking and can't breathe, cough, cry or make a sound, call 911 right away.",
+      "reviewStatus": "placeholder",
+      "reviewer": "legal"
     }
   ]
 }
