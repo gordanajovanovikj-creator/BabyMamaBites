@@ -142,29 +142,29 @@ people, so the app owner must hold the rights to use them in the app and App Sto
 Bundled in `assets/images/insights/` and registered in
 `src/features/library/library-photos.ts`.
 
-| Article id             | Source                    | Photographer    | Link                                                                  | License                 | Added      |
-| ---------------------- | ------------------------- | --------------- | --------------------------------------------------------------------- | ----------------------- | ---------- |
-| newborn-snack-basket   | Pixabay                   | sweetlouise     | https://pixabay.com/photos/dried-fruit-nuts-coconut-mango-3164835/    | Pixabay Content License | 2026-10-09 |
-| newborn-overnight-oats | Pixabay                   | devansee        | https://pixabay.com/photos/breakfast-healthy-yogurt-mason-jar-655894/ | Pixabay Content License | 2026-10-09 |
-| solids-purees-first    | Pixabay                   | Ben_Kerckx      | https://pixabay.com/photos/child-vegetable-pap-power-supply-818432/   | Pixabay Content License | 2026-10-09 |
-| food-refusal           | Pixabay                   | timkraaijvanger | https://pixabay.com/photos/toddler-girl-laugh-blue-eyes-cute-2675884/ | Pixabay Content License | 2026-10-09 |
-| solids-freezer-cubes   | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| homemade-baby-food     | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| hunger-cues            | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| high-chair             | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| gagging-vs-choking     | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| ready                  | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| first-foods            | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| purees-vs-finger-foods | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| allergens              | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| toddler-picky-phases   | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| cups-and-drinks        | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| solids-choking         | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| foods-to-avoid         | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| newborn-meal-help      | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| newborn-rest           | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| newborn-water          | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| cows-milk              | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| feeling-low            | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| toddler-share-plate    | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-10 |
-| solids-two-textures    | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-10 |
+| Article id             | Source                    | Photographer               | Link                                                                  | License                                        | Added      |
+| ---------------------- | ------------------------- | -------------------------- | --------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
+| newborn-snack-basket   | Pixabay                   | sweetlouise                | https://pixabay.com/photos/dried-fruit-nuts-coconut-mango-3164835/    | Pixabay Content License                        | 2026-10-09 |
+| newborn-overnight-oats | Pixabay                   | devansee                   | https://pixabay.com/photos/breakfast-healthy-yogurt-mason-jar-655894/ | Pixabay Content License                        | 2026-10-09 |
+| solids-purees-first    | Pixabay                   | Ben_Kerckx                 | https://pixabay.com/photos/child-vegetable-pap-power-supply-818432/   | Pixabay Content License                        | 2026-10-09 |
+| food-refusal           | Pixabay                   | timkraaijvanger            | https://pixabay.com/photos/toddler-girl-laugh-blue-eyes-cute-2675884/ | Pixabay Content License                        | 2026-10-09 |
+| solids-freezer-cubes   | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| homemade-baby-food     | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| hunger-cues            | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| high-chair             | Dreamstime (ID 125874719) | © Photobac, Dreamstime.com | —                                                                     | Dreamstime license (supplied by the app owner) | 2026-10-12 |
+| gagging-vs-choking     | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| ready                  | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| first-foods            | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| purees-vs-finger-foods | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| allergens              | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| toddler-picky-phases   | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| cups-and-drinks        | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| solids-choking         | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| foods-to-avoid         | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| newborn-meal-help      | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| newborn-rest           | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| newborn-water          | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| cows-milk              | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| feeling-low            | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-09 |
+| toddler-share-plate    | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-10 |
+| solids-two-textures    | Supplied by the app owner | —                          | —                                                                     | Owner-supplied                                 | 2026-10-10 |
