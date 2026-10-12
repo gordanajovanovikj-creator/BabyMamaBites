@@ -1112,6 +1112,579 @@
       "reviewer": "pediatric dietitian"
     },
     {
+      "id": "baby-salmon-potato-mash",
+      "title": "Flaked salmon and cream cheese mash",
+      "summary": "[PLACEHOLDER - needs expert review] Soft salmon folded into creamy potato, with gentle chunks to explore.",
+      "icon": "fork.knife",
+      "emoji": "🐟",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 2,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "sheet-pan-salmon",
+        "note": "Set aside a piece of plain salmon for baby before you season the family’s."
+      },
+      "tags": [],
+      "energy": "low",
+      "allergens": ["fish", "milk"],
+      "diets": ["pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 small cooked salmon fillet, skin and bones removed",
+        "1 small potato, peeled, boiled and mashed",
+        "1 tbsp plain cream cheese or whole-milk Greek yogurt"
+      ],
+      "steps": [
+        "Flake the salmon with a fork, checking carefully for any bones.",
+        "Stir the salmon into the warm mashed potato with the cream cheese until creamy, with soft chunks."
+      ],
+      "tips": [
+        "Cook salmon to 145°F, until it flakes easily.",
+        "Salmon is on the FDA’s \"Best Choices\" list for children.",
+        "Refrigerate for up to 2 days."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-carrot-zucchini-fries",
+      "title": "Steamed carrot and zucchini \"fries\" with yogurt dip",
+      "summary": "[PLACEHOLDER - needs expert review] Soft veggie sticks for self-feeding, with a creamy yogurt dip.",
+      "icon": "carrot.fill",
+      "emoji": "🥕",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "snack-plate",
+        "note": "Steam extra veggie sticks for your own snack plate."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 medium carrot, peeled and cut into finger-sized sticks",
+        "1 small zucchini, cut into finger-sized sticks",
+        "2 tbsp plain whole-milk Greek yogurt",
+        "A tiny pinch of garlic powder"
+      ],
+      "steps": [
+        "Steam the carrot and zucchini sticks for 8 to 12 minutes, until soft enough to squash between your thumb and finger.",
+        "Stir the garlic powder into the yogurt.",
+        "Serve the sticks lukewarm with the yogurt on the side for dipping."
+      ],
+      "tips": [
+        "Finger foods should be soft enough to squash easily between your thumb and finger.",
+        "Raw or firm carrot is a choking hazard; always cook it soft.",
+        "Always stay with your baby while they eat, and have them sit upright."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-broccoli-quinoa-bites",
+      "title": "Cheesy broccoli and quinoa bites",
+      "summary": "[PLACEHOLDER - needs expert review] Soft mini muffins with quinoa, broccoli, cheese and egg.",
+      "icon": "leaf.fill",
+      "emoji": "🥦",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 12,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "egg-muffin-cups",
+        "note": "Bake a tray of veggie egg muffins for yourself at the same time."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": ["egg", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/2 cup cooked quinoa",
+        "1/4 cup steamed broccoli, finely chopped",
+        "1/4 cup shredded mild cheese",
+        "1 large egg, beaten"
+      ],
+      "steps": [
+        "Heat the oven to 350°F (175°C) and lightly grease a mini muffin tin.",
+        "Mix the quinoa, broccoli, cheese and egg.",
+        "Spoon into the muffin cups and bake for 12 to 15 minutes, until set all the way through.",
+        "Let them cool completely before serving."
+      ],
+      "tips": [
+        "Cheese can be salty; choose lower-sodium options like fresh mozzarella, ricotta or Swiss when you can.",
+        "Freeze extras and thaw in the fridge overnight."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-avocado-egg-soldiers",
+      "title": "Avocado toast soldiers with egg",
+      "summary": "[PLACEHOLDER - needs expert review] Toast strips spread with avocado, served with soft-cooked egg.",
+      "icon": "drop.fill",
+      "emoji": "🥑",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 15,
+      "servings": 1,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "avocado-egg-toast",
+        "note": "Make yourself avocado toast with an egg at the same time."
+      },
+      "tags": [],
+      "energy": "low",
+      "allergens": ["egg", "wheat"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": ["1 large egg", "1/2 ripe avocado", "1 slice whole-grain bread"],
+      "steps": [
+        "Boil the egg for 10 to 12 minutes, until the yolk and white are firm. Cool, peel and mash with a fork, or cut into wedges.",
+        "Mash the avocado.",
+        "Toast the bread lightly, spread with the avocado, and cut into long, narrow strips.",
+        "Serve the strips with the egg."
+      ],
+      "tips": [
+        "Cook eggs until both the yolk and white are firm.",
+        "Lightly toasted bread is easier for babies to manage than soft, gummy bread.",
+        "Always stay with your baby while they eat, and have them sit upright."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-squash-chicken-risotto",
+      "title": "Creamy butternut squash and chicken risotto",
+      "summary": "[PLACEHOLDER - needs expert review] A soft, chunky spoon meal with rice, squash and chicken.",
+      "icon": "fork.knife",
+      "emoji": "🎃",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 1,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "slow-cooker-chicken",
+        "note": "Set aside a little plain chicken for baby before seasoning the family’s."
+      },
+      "tags": [],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/4 cup cooked brown or arborio rice",
+        "1/4 cup roasted or steamed butternut squash, mashed",
+        "2 tbsp cooked chicken, finely shredded",
+        "1/4 cup water"
+      ],
+      "steps": [
+        "Add the rice, squash, chicken and water to a small pot.",
+        "Simmer over low heat for 3 to 5 minutes, stirring, until thick and creamy.",
+        "Let it cool before serving."
+      ],
+      "tips": [
+        "We use water instead of broth; even low-sodium broth adds salt babies don’t need.",
+        "Refrigerate for up to 2 days."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-sweet-potato-bean-quesadilla",
+      "title": "Sweet potato and black bean quesadilla wedges",
+      "summary": "[PLACEHOLDER - needs expert review] Soft tortilla wedges filled with sweet potato, beans and melted cheese.",
+      "icon": "fork.knife",
+      "emoji": "🌮",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 2,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "black-bean-quesadilla",
+        "note": "Make a bigger batch of quesadillas for the family."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": ["wheat", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 small whole-wheat tortilla",
+        "2 tbsp mashed cooked sweet potato",
+        "2 tbsp canned black beans (no salt added), rinsed and well mashed",
+        "2 tbsp shredded mild cheese",
+        "A little oil for the pan"
+      ],
+      "steps": [
+        "Spread the sweet potato and mashed beans over half the tortilla and sprinkle with cheese.",
+        "Fold the tortilla in half.",
+        "Cook in a lightly oiled skillet over medium-low heat for about 2 minutes per side, until the cheese melts and the tortilla is soft.",
+        "Cool, then cut into thin strips."
+      ],
+      "tips": [
+        "Mash every bean well; whole beans are a choking hazard.",
+        "Cheese can be salty; choose lower-sodium options like fresh mozzarella, ricotta or Swiss when you can."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-berry-baked-oatmeal",
+      "title": "Berry and chia baked oatmeal squares",
+      "summary": "[PLACEHOLDER - needs expert review] Soft baked oatmeal squares with banana and blueberry.",
+      "icon": "drop.fill",
+      "emoji": "🫐",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "baked-oatmeal",
+        "note": "Bake a big pan of baked oatmeal for your own breakfasts."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup rolled oats",
+        "1/2 cup breast milk, formula or water",
+        "1/4 ripe banana, mashed",
+        "2 tbsp blueberries, mashed or quartered",
+        "1/2 tsp ground chia seeds"
+      ],
+      "steps": [
+        "Heat the oven to 350°F (175°C) and grease a small oven-safe ramekin.",
+        "Mix the oats, liquid, banana, blueberries and chia in the ramekin.",
+        "Bake for about 20 minutes, until set.",
+        "Cool, then cut into small squares or strips."
+      ],
+      "tips": [
+        "Never serve whole blueberries; mash or quarter them.",
+        "Some oats are processed with wheat; check the label if you avoid gluten."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-lentil-cottage-pie",
+      "title": "Lentil and vegetable cottage pie",
+      "summary": "[PLACEHOLDER - needs expert review] Soft lentils and vegetables under a mashed potato topping.",
+      "icon": "carrot.fill",
+      "emoji": "🥧",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "lentil-soup",
+        "note": "Scoop out baby’s lentils before you season the family’s soup."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/4 cup cooked red lentils",
+        "2 tbsp diced carrots and peas, steamed very soft",
+        "1/2 cup mashed potato"
+      ],
+      "steps": [
+        "Lightly mash the peas, then spread the lentils, carrots and peas in a small oven-safe dish.",
+        "Spread the mashed potato over the top.",
+        "Bake or microwave until heated through, then let it cool before serving."
+      ],
+      "tips": [
+        "Mash or flatten peas so they aren’t whole.",
+        "If you microwave it, stir and check for hot spots."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-apple-oatmeal-fingers",
+      "title": "Apple and cinnamon oatmeal fingers",
+      "summary": "[PLACEHOLDER - needs expert review] Thick, chilled oatmeal cut into soft fingers for little hands.",
+      "icon": "drop.fill",
+      "emoji": "🍎",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 70,
+      "servings": 4,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "apple-cinnamon-porridge",
+        "note": "Make a pot of apple cinnamon porridge for yourself."
+      },
+      "tags": ["batch-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/3 cup quick oats",
+        "1/2 cup water, breast milk or formula",
+        "1/4 apple, peeled and finely grated",
+        "A tiny pinch of cinnamon"
+      ],
+      "steps": [
+        "Cook the oats, apple and cinnamon in the water over low heat for about 4 minutes, until very thick. If using breast milk or formula, stir it in off the heat.",
+        "Press into a small parchment-lined container and chill for about 1 hour, until firm.",
+        "Cut into finger-sized strips."
+      ],
+      "tips": [
+        "Some oats are processed with wheat; check the label if you avoid gluten.",
+        "Refrigerate for up to 2 days."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-apple-zucchini-muffins",
+      "title": "Apple and zucchini mini muffins",
+      "summary": "[PLACEHOLDER - needs expert review] Soft mini muffins with oats, applesauce and grated zucchini.",
+      "icon": "drop.fill",
+      "emoji": "🧁",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 12,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "pb-banana-baked-oatmeal-cups",
+        "note": "Bake banana oatmeal cups for yourself at the same time."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": ["egg"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup rolled oats, ground into flour or left whole",
+        "1/4 cup unsweetened applesauce",
+        "1/4 cup finely grated zucchini, squeezed dry",
+        "1 large egg",
+        "A pinch of cinnamon"
+      ],
+      "steps": [
+        "Heat the oven to 350°F (175°C) and grease a mini muffin tin.",
+        "Whisk the egg, applesauce and cinnamon, then stir in the oats and zucchini.",
+        "Spoon into the cups and bake for 12 to 15 minutes, until set.",
+        "Cool completely before serving."
+      ],
+      "tips": [
+        "Some oats are processed with wheat; check the label if you avoid gluten.",
+        "Freeze extras and thaw in the fridge overnight."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-spinach-ricotta-shells",
+      "title": "Creamy spinach and ricotta pasta shells",
+      "summary": "[PLACEHOLDER - needs expert review] Soft pasta shells in a creamy ricotta and spinach coating.",
+      "icon": "fork.knife",
+      "emoji": "🍝",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "one-pot-pasta",
+        "note": "Cook extra pasta for baby before you add the family’s sauce."
+      },
+      "tags": [],
+      "energy": "low",
+      "allergens": ["wheat", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/4 cup small pasta shells",
+        "2 tbsp full-fat ricotta",
+        "2 tbsp steamed baby spinach, finely chopped",
+        "1 tsp olive oil"
+      ],
+      "steps": [
+        "Cook the pasta until very soft, then drain.",
+        "While warm, stir in the ricotta, spinach and olive oil until creamy.",
+        "Let it cool before serving."
+      ],
+      "tips": ["Cook pasta in unsalted water.", "Ricotta is one of the lower-sodium cheeses."],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-chicken-sweet-potato-bites",
+      "title": "Chicken and sweet potato polpette",
+      "summary": "[PLACEHOLDER - needs expert review] Soft, finger-shaped chicken and sweet potato bites.",
+      "icon": "fork.knife",
+      "emoji": "🍗",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 10,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "turkey-meatball-zoodle-box",
+        "note": "Make a batch of meatballs for the family at the same time."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["halal", "kosher"],
+      "ingredients": [
+        "1/2 cup finely shredded cooked chicken",
+        "1/4 cup mashed cooked sweet potato",
+        "1 tbsp oat flour",
+        "A pinch of mild herbs, like parsley or oregano"
+      ],
+      "steps": [
+        "Heat the oven to 375°F (190°C) and line a baking sheet with parchment.",
+        "Mix the chicken, sweet potato, oat flour and herbs.",
+        "Shape into small logs about the size of your finger, or flatten into small patties.",
+        "Bake for 10 to 12 minutes, until heated through. Let them cool."
+      ],
+      "tips": [
+        "Logs and patties are easier for babies to hold, and safer than small round balls.",
+        "They should stay soft enough to squash between your fingers.",
+        "Halal and kosher depend on the chicken you buy; check the label."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-cauliflower-bean-mash",
+      "title": "Cheesy cauliflower and white bean mash",
+      "summary": "[PLACEHOLDER - needs expert review] Soft cauliflower and beans mashed with a little melted cheese.",
+      "icon": "leaf.fill",
+      "emoji": "🫘",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "white-bean-tuna-salad",
+        "note": "Use the rest of the beans in your own bean salad."
+      },
+      "tags": [],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/2 cup cauliflower florets",
+        "1/4 cup canned cannellini beans (no salt added), rinsed and drained",
+        "2 tbsp shredded mild cheese",
+        "1 tsp olive oil"
+      ],
+      "steps": [
+        "Steam the cauliflower until completely soft.",
+        "Mash the warm cauliflower, beans and olive oil until mostly smooth, with no whole beans left.",
+        "Stir in the cheese until melted. Serve warm, not hot."
+      ],
+      "tips": [
+        "Mash every bean well; whole beans are a choking hazard.",
+        "Cheese can be salty; choose lower-sodium options like fresh mozzarella, ricotta or Swiss when you can."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-pear-cottage-cheese",
+      "title": "Warm cinnamon pear and cottage cheese",
+      "summary": "[PLACEHOLDER - needs expert review] Soft, warm pear folded into creamy cottage cheese.",
+      "icon": "drop.fill",
+      "emoji": "🍐",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 1,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "yogurt-parfait",
+        "note": "Make yourself a yogurt parfait with the rest of the pear."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 ripe pear, peeled, cored and finely diced",
+        "1/4 cup full-fat cottage cheese, curds mashed a little",
+        "A tiny pinch of cinnamon",
+        "1 tsp water"
+      ],
+      "steps": [
+        "Cook the pear with the water in a covered pot or microwave-safe bowl for 3 to 4 minutes, until very soft.",
+        "Stir in the cinnamon and let it cool.",
+        "Fold the pear into the cottage cheese."
+      ],
+      "tips": [
+        "Cottage cheese is often salty; look for a low-sodium one.",
+        "If you use the microwave, stir and check for hot spots."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-zucchini-egg-strips",
+      "title": "Zucchini and egg breakfast strips",
+      "summary": "[PLACEHOLDER - needs expert review] A thin, soft omelet sliced into strips for self-feeding.",
+      "icon": "drop.fill",
+      "emoji": "🍳",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 1,
+      "categories": ["baby-9m"],
+      "fromMonths": 9,
+      "familyMeal": {
+        "recipeId": "spinach-feta-frittata",
+        "note": "Make a frittata for the family with the rest of the eggs."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": ["egg"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 large egg",
+        "1 tbsp breast milk, formula or water",
+        "2 tbsp finely grated zucchini, squeezed dry",
+        "A little oil for the pan"
+      ],
+      "steps": [
+        "Whisk the egg and liquid, then stir in the zucchini.",
+        "Heat a little oil in a small nonstick skillet over medium-low heat. Pour in the egg and tilt the pan to make a thin layer.",
+        "Cook for about 2 minutes, until set, then flip and cook 1 more minute, until there’s no runny egg.",
+        "Slide onto a board and cut into long, narrow strips."
+      ],
+      "tips": [
+        "Cook eggs until both the yolk and white are firm.",
+        "Once your baby has had dairy, you can cook it in a little unsalted butter."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
       "id": "toddler-turkey-meatballs",
       "title": "Mini turkey and zucchini meatballs",
       "summary": "[PLACEHOLDER - needs expert review] Soft baked meatballs for the whole family.",

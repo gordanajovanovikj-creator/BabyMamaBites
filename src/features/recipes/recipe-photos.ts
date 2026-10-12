@@ -131,6 +131,21 @@ const photos: Record<string, ImageSource> = {
   'baby-zucchini-white-bean-mash': require('@/assets/images/recipes/baby-zucchini-white-bean-mash.jpg'),
   'baby-apple-spinach-puree': require('@/assets/images/recipes/baby-apple-spinach-puree.jpg'),
   'baby-sweet-potato-peach-mash': require('@/assets/images/recipes/baby-sweet-potato-peach-mash.jpg'),
+  'baby-salmon-potato-mash': require('@/assets/images/recipes/baby-salmon-potato-mash.jpg'),
+  'baby-carrot-zucchini-fries': require('@/assets/images/recipes/baby-carrot-zucchini-fries.jpg'),
+  'baby-broccoli-quinoa-bites': require('@/assets/images/recipes/baby-broccoli-quinoa-bites.jpg'),
+  'baby-avocado-egg-soldiers': require('@/assets/images/recipes/baby-avocado-egg-soldiers.jpg'),
+  'baby-squash-chicken-risotto': require('@/assets/images/recipes/baby-squash-chicken-risotto.jpg'),
+  'baby-sweet-potato-bean-quesadilla': require('@/assets/images/recipes/baby-sweet-potato-bean-quesadilla.jpg'),
+  'baby-berry-baked-oatmeal': require('@/assets/images/recipes/baby-berry-baked-oatmeal.jpg'),
+  'baby-lentil-cottage-pie': require('@/assets/images/recipes/baby-lentil-cottage-pie.jpg'),
+  'baby-apple-oatmeal-fingers': require('@/assets/images/recipes/baby-apple-oatmeal-fingers.jpg'),
+  'baby-apple-zucchini-muffins': require('@/assets/images/recipes/baby-apple-zucchini-muffins.jpg'),
+  'baby-spinach-ricotta-shells': require('@/assets/images/recipes/baby-spinach-ricotta-shells.jpg'),
+  'baby-chicken-sweet-potato-bites': require('@/assets/images/recipes/baby-chicken-sweet-potato-bites.jpg'),
+  'baby-cauliflower-bean-mash': require('@/assets/images/recipes/baby-cauliflower-bean-mash.jpg'),
+  'baby-pear-cottage-cheese': require('@/assets/images/recipes/baby-pear-cottage-cheese.jpg'),
+  'baby-zucchini-egg-strips': require('@/assets/images/recipes/baby-zucchini-egg-strips.jpg'),
 };
 
 export function recipePhoto(recipeId: string): ImageSource | undefined {

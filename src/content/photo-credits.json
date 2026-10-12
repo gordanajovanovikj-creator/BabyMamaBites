@@ -366,11 +366,32 @@
       "url": "https://pixabay.com/photos/food-smoothie-protein-shake-5227756/"
     },
     {
+      "id": "baby-apple-oatmeal-fingers",
+      "usedOn": "Apple and cinnamon oatmeal fingers",
+      "source": "pixabay",
+      "author": "purple_zeppelin",
+      "url": "https://pixabay.com/photos/bar-cereals-fitness-breakfast-1001347/"
+    },
+    {
+      "id": "baby-apple-zucchini-muffins",
+      "usedOn": "Apple and zucchini mini muffins",
+      "source": "pixabay",
+      "author": "Einladung_zum_Essen",
+      "url": "https://pixabay.com/photos/muffins-zucchini-muffin-cakes-nut-5082254/"
+    },
+    {
       "id": "apple-pb",
       "usedOn": "Apple slices with peanut butter",
       "source": "pixabay",
       "author": "cgdsro",
       "url": "https://pixabay.com/photos/food-butter-peanut-spread-3126525/"
+    },
+    {
+      "id": "baby-avocado-egg-soldiers",
+      "usedOn": "Avocado toast soldiers with egg",
+      "source": "pixabay",
+      "author": "Einladung_zum_Essen",
+      "url": "https://pixabay.com/photos/avocado-breakfast-loaf-toast-egg-1821778/"
     },
     {
       "id": "nursing-avocado-toast",
@@ -399,6 +420,13 @@
       "source": "pixabay",
       "author": "Nayuta",
       "url": "https://pixabay.com/photos/quesadilla-vegan-food-mexican-2297036/"
+    },
+    {
+      "id": "baby-berry-baked-oatmeal",
+      "usedOn": "Berry and chia baked oatmeal squares",
+      "source": "pixabay",
+      "author": "Sophkins",
+      "url": "https://pixabay.com/photos/blueberry-muffins-muffins-cupcakes-2136749/"
     },
     {
       "id": "yogurt-parfait",
@@ -464,11 +492,32 @@
       "url": "https://pixabay.com/photos/cheese-slicer-crackers-appetizers-650029/"
     },
     {
+      "id": "baby-broccoli-quinoa-bites",
+      "usedOn": "Cheesy broccoli and quinoa bites",
+      "source": "pixabay",
+      "author": "ponce_photography",
+      "url": "https://pixabay.com/photos/muffin-cupcakes-homemade-pastry-1390368/"
+    },
+    {
       "id": "toddler-cheesy-broccoli-rice",
       "usedOn": "Cheesy broccoli rice",
       "source": "pixabay",
       "author": "Simone_ph",
       "url": "https://pixabay.com/photos/rice-risotto-kitchen-shrimp-1823664/"
+    },
+    {
+      "id": "baby-cauliflower-bean-mash",
+      "usedOn": "Cheesy cauliflower and white bean mash",
+      "source": "pixabay",
+      "author": "DagnyWalter",
+      "url": "https://pixabay.com/photos/soup-cream-of-cauliflower-3930288/"
+    },
+    {
+      "id": "baby-chicken-sweet-potato-bites",
+      "usedOn": "Chicken and sweet potato polpette",
+      "source": "pixabay",
+      "author": "MarCuesBo",
+      "url": "https://pixabay.com/photos/prescriptions-burgers-vegetables-2920072/"
     },
     {
       "id": "nursing-chocolate-chip-bites",
@@ -541,6 +590,13 @@
       "url": "https://pixabay.com/photos/smoothie-avocado-blueberry-fruit-5160684/"
     },
     {
+      "id": "baby-squash-chicken-risotto",
+      "usedOn": "Creamy butternut squash and chicken risotto",
+      "source": "pixabay",
+      "author": "Hansuan_Fabregas",
+      "url": "https://pixabay.com/photos/pumpkin-risotto-pumpkin-food-dish-7556652/"
+    },
+    {
       "id": "chicken-salad-lettuce-wraps",
       "usedOn": "Creamy chicken salad lettuce wraps",
       "source": "pixabay",
@@ -569,6 +625,13 @@
       "url": "https://pixabay.com/photos/pumpkin-porridge-food-diet-328922/"
     },
     {
+      "id": "baby-spinach-ricotta-shells",
+      "usedOn": "Creamy spinach and ricotta pasta shells",
+      "source": "pixabay",
+      "author": "Pexels",
+      "url": "https://pixabay.com/photos/dish-food-greens-kale-pasta-1840077/"
+    },
+    {
       "id": "spinach-tomato-gnocchi",
       "usedOn": "Creamy spinach and tomato gnocchi",
       "source": "pixabay",
@@ -588,6 +651,13 @@
       "source": "pixabay",
       "author": "Smacznadietetyka",
       "url": "https://pixabay.com/photos/cocktail-smoothie-food-vegetables-7213414/"
+    },
+    {
+      "id": "baby-salmon-potato-mash",
+      "usedOn": "Flaked salmon and cream cheese mash",
+      "source": "pixabay",
+      "author": "gleenferdinand",
+      "url": "https://pixabay.com/photos/steak-grill-food-meal-grilled-626214/"
     },
     {
       "id": "breakfast-burritos",
@@ -665,6 +735,13 @@
       "source": "pixabay",
       "author": "Einladung_zum_Essen",
       "url": "https://pixabay.com/photos/quinoa-salad-tomatoes-lime-rocket-1822176/"
+    },
+    {
+      "id": "baby-lentil-cottage-pie",
+      "usedOn": "Lentil and vegetable cottage pie",
+      "source": "pixabay",
+      "author": "TehzeebNoah",
+      "url": "https://pixabay.com/photos/shepherds-pie-mashed-potato-meat-10366225/"
     },
     {
       "id": "baby-mango-yogurt",
@@ -968,11 +1045,25 @@
       "url": "https://pixabay.com/photos/broccoli-vegetables-healthy-cook-1974801/"
     },
     {
+      "id": "baby-carrot-zucchini-fries",
+      "usedOn": "Steamed carrot and zucchini \"fries\" with yogurt dip",
+      "source": "pixabay",
+      "author": "narya",
+      "url": "https://pixabay.com/photos/vegetables-starter-fresh-crisp-815777/"
+    },
+    {
       "id": "nursing-strawberry-banana-oat-smoothie",
       "usedOn": "Strawberry banana oat smoothie",
       "source": "pixabay",
       "author": "Couleur",
       "url": "https://pixabay.com/photos/drink-fruity-fruit-raspberry-red-2471550/"
+    },
+    {
+      "id": "baby-sweet-potato-bean-quesadilla",
+      "usedOn": "Sweet potato and black bean quesadilla wedges",
+      "source": "pixabay",
+      "author": "tehzeebkazmii",
+      "url": "https://pixabay.com/photos/quesadilla-tortilla-cheese-grilled-10391439/"
     },
     {
       "id": "sweet-potato-black-bean-quinoa-bowls",
@@ -1059,6 +1150,13 @@
       "url": "https://pixabay.com/photos/cereal-porridge-breakfast-healthy-3186256/"
     },
     {
+      "id": "baby-pear-cottage-cheese",
+      "usedOn": "Warm cinnamon pear and cottage cheese",
+      "source": "pixabay",
+      "author": "Enotovyj",
+      "url": "https://pixabay.com/photos/food-healthy-a-bowl-no-one-dessert-3366516/"
+    },
+    {
       "id": "warm-spiced-milk",
       "usedOn": "Warm cinnamon vanilla milk",
       "source": "pixabay",
@@ -1085,6 +1183,13 @@
       "source": "pixabay",
       "author": "Ben_Kerckx",
       "url": "https://pixabay.com/photos/child-vegetable-pap-power-supply-818432/"
+    },
+    {
+      "id": "baby-zucchini-egg-strips",
+      "usedOn": "Zucchini and egg breakfast strips",
+      "source": "pixabay",
+      "author": "181381",
+      "url": "https://pixabay.com/photos/spring-rolls-korean-asian-food-281883/"
     },
     {
       "id": "baby-zucchini-potato-mash",
