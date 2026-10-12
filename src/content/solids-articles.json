@@ -915,6 +915,95 @@
       "sources": ["owh-pmhc", "nimh-perinatal", "owh-ppd", "cdc-hearher"],
       "reviewStatus": "placeholder",
       "reviewer": "perinatal mental health professional"
+    },
+    {
+      "id": "mom-hacks",
+      "category": "nourishing-you",
+      "title": "Practical life and mom hacks",
+      "summary": "[PLACEHOLDER - needs expert review] Saving time and sanity when every minute counts: comfy clothes, easy meals, and your first outings with a newborn.",
+      "fromMonths": 0,
+      "toMonths": 12,
+      "icon": "sparkles",
+      "emoji": "👜",
+      "illustration": "diaper-bag",
+      "tone": "accent",
+      "readMinutes": 6,
+      "sections": [
+        {
+          "heading": "Clothes that fit the body you have now",
+          "paragraphs": [
+            "Your body keeps changing for months after birth, and that's normal. You don't need a new wardrobe, just a few comfortable pieces that make you feel like yourself again.",
+            "If you had a C-section, soft high-waisted bottoms that sit above the incision, or low ones that sit well below it, are often more comfortable than waistbands that press on it. Ask your provider before using a belly band or support garment."
+          ],
+          "bullets": [
+            "Soft, stretchy leggings or joggers with a wide waistband",
+            "Button-front or wrap tops, and nursing tops or bras if you're breastfeeding",
+            "Breathable cotton underwear in a size up while you heal",
+            "A long cardigan or overshirt that goes over everything",
+            "Slip-on shoes, for when bending down feels like a lot",
+            "One outfit you love, for days you want to feel put together"
+          ]
+        },
+        {
+          "heading": "Easy, nourishing meals",
+          "paragraphs": [
+            "When your hands are full, food that's ready in minutes makes a big difference. A little planning, or a friend's help, can stock your freezer before or after the baby arrives."
+          ],
+          "bullets": [
+            "Freeze soups, chilis, curries and casseroles in single portions, labeled with the name and date.",
+            "Cool cooked food and put it in the fridge or freezer within 2 hours.",
+            "Eat refrigerated leftovers within 3 to 4 days. Frozen meals taste best within 3 to 4 months.",
+            "Thaw frozen meals in the fridge, in cold water, or in the microwave, never on the counter.",
+            "Reheat leftovers until they're steaming hot, to 165°F.",
+            "Keep one-handed snacks within reach: cheese sticks, yogurt, fruit, nut butter on toast, trail mix, energy bites and hard-boiled eggs.",
+            "Keep a water bottle wherever you usually feed the baby."
+          ]
+        },
+        {
+          "heading": "Grocery shortcuts",
+          "paragraphs": [
+            "Grocery delivery or curbside pickup can save hours a week. Keep a running list of staples in your notes app so reordering takes a minute.",
+            "When friends ask how they can help, it's okay to say: \"A meal or a grocery run would be amazing.\""
+          ],
+          "bullets": [
+            "Stock up on staples: frozen vegetables, canned beans, rice, pasta, oats, eggs and bread.",
+            "Pre-cut fruit and vegetables cost a bit more but save time on hard days.",
+            "Rotisserie chicken turns into sandwiches, salads, wraps and quesadillas."
+          ]
+        },
+        {
+          "heading": "Your first outings with a newborn",
+          "paragraphs": [
+            "Leaving the house for the first time can feel huge. Start small: a short walk around the block, a quick coffee, or a visit to a friend. Each trip gets easier.",
+            "Go at a time that's usually calm for your baby, often right after a feed. Know where you could sit to feed or change them, and give yourself permission to head home early."
+          ],
+          "bullets": [
+            "In the car, babies ride rear-facing in their car seat, with the harness snug and no bulky coat underneath. Lay a blanket over the buckled straps instead.",
+            "Car seats are for travel, not for sleeping or feeding outside the car.",
+            "Keep babies younger than 6 months out of direct sun. Use shade, light clothing that covers their arms and legs, and a wide-brimmed hat. Sunscreen is a last resort, on small areas like the face.",
+            "Wash your hands, and ask others to wash theirs, before touching the baby."
+          ]
+        },
+        {
+          "heading": "Packing the diaper bag",
+          "paragraphs": ["Restock the bag as soon as you get home, so it's always ready to grab."],
+          "bullets": [
+            "Diapers (one for every 2 hours you'll be out, plus 2 extra) and wipes",
+            "A changing pad and a few bags for dirty diapers or clothes",
+            "A spare outfit for the baby, and a spare top for you",
+            "Burp cloths",
+            "Feeding supplies: a nursing cover if you like one, or bottles and formula or pumped milk",
+            "A pacifier, if your baby uses one",
+            "A hat and a light blanket",
+            "Hand sanitizer and tissues",
+            "Water, a snack and a phone charger for you",
+            "Your baby's insurance card and pediatrician's number"
+          ]
+        }
+      ],
+      "sources": ["usda-leftovers", "aap-car-seats", "aap-sun"],
+      "reviewStatus": "placeholder",
+      "reviewer": "health professional"
     }
   ]
 }

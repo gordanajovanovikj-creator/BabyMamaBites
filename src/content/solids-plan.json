@@ -967,6 +967,24 @@
       "publisher": "National Institute of Mental Health (NIH)",
       "title": "Perinatal Depression",
       "url": "https://www.nimh.nih.gov/health/publications/perinatal-depression"
+    },
+    {
+      "id": "usda-leftovers",
+      "publisher": "USDA Food Safety and Inspection Service",
+      "title": "Leftovers and Food Safety",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety"
+    },
+    {
+      "id": "aap-car-seats",
+      "publisher": "AAP (HealthyChildren.org)",
+      "title": "Car Seats: Information for Families",
+      "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Car-Safety-Seats-Information-for-Families.aspx"
+    },
+    {
+      "id": "aap-sun",
+      "publisher": "AAP (HealthyChildren.org)",
+      "title": "Sun Safety",
+      "url": "https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Sun-Safety.aspx"
     }
   ]
 }

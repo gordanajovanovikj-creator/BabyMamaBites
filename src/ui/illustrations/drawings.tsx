@@ -607,4 +607,23 @@ export const drawings: Record<IllustrationName, Drawing> = {
       <Path d={sparkle(118, 82, 6)} fill={c.butter} />
     </G>
   ),
+
+  'diaper-bag': (c) => (
+    <G>
+      <Path
+        d="M64 44 C64 28 96 28 96 44"
+        stroke={c.lavenderDeep}
+        strokeWidth={6}
+        fill="none"
+        strokeLinecap="round"
+      />
+      <Rect x={48} y={42} width={64} height={60} rx={14} fill={c.mint} />
+      <Rect x={60} y={62} width={40} height={24} rx={8} fill={c.white} opacity={0.85} />
+      <Path d={heart(80, 74, 7)} fill={c.rose} />
+      <Rect x={118} y={64} width={14} height={36} rx={6} fill={c.white} opacity={0.9} />
+      <Rect x={120} y={56} width={10} height={10} rx={3} fill={c.sky} />
+      <Path d={sparkle(36, 48, 6)} fill={c.butter} />
+      <Ellipse cx={84} cy={106} rx={40} ry={6} fill={c.lavender} />
+    </G>
+  ),
 };
