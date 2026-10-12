@@ -200,12 +200,12 @@ export default function BabyScreen() {
             <PhotoLinkCard
               photo={planPhotos.makeAhead}
               title="Make-ahead baby food"
-              body="A few hours of prep can stock your freezer for weeks."
-              accessibilityLabel="Make-ahead baby food: a few hours of prep can stock your freezer for weeks. Opens the guide."
+              body="Freezer cube magic: 3 months of baby food in 3 hours."
+              accessibilityLabel="Make-ahead baby food: 3 months of baby food in 3 hours with freezer cubes. Opens the guide."
               onPress={() =>
                 router.push({
                   pathname: '/solids/article/[id]',
-                  params: { id: 'homemade-baby-food' },
+                  params: { id: 'solids-freezer-cubes' },
                 })
               }
             />
