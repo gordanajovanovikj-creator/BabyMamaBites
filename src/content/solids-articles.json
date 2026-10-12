@@ -1218,6 +1218,81 @@
       ],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "solids-freezer-cubes",
+      "category": "cooking-for-baby",
+      "title": "Freezer cube magic: 3 months of baby food in 3 hours",
+      "summary": "[PLACEHOLDER - needs expert review] Batch-cook single-ingredient purees, freeze them in cubes, and mix and match all month long.",
+      "fromMonths": 6,
+      "toMonths": 12,
+      "icon": "snowflake",
+      "emoji": "❄️",
+      "illustration": "freezer-tray",
+      "tone": "accent",
+      "readMinutes": 5,
+      "sections": [
+        {
+          "heading": "Homemade food, without the burnout",
+          "paragraphs": [
+            "Lots of parents love the idea of homemade baby food. What gets in the way is exhaustion: steaming, peeling and pureeing a single serving every day wears you out fast.",
+            "The freezer cube approach, popularized by food scientist Dr. Lisa Barrangou in The Amazing Make-Ahead Baby Food Book, treats each puree as a building block. One afternoon of cooking can save time and money and give your baby lots of variety."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Why freezer cubes work",
+          "paragraphs": [
+            "When babies start solids at around 6 months, they eat very little, often just a spoonful or two. A whole batch of sweet potato puree can mean a mountain of leftovers. Ice-cube trays, or baby food freezer trays with lids, solve that:"
+          ],
+          "bullets": [
+            "Right-sized portions: a standard cube is about 1 oz, which matches a beginner eater's portion.",
+            "Less waste: you only thaw what your baby needs for that meal.",
+            "More variety: freeze single-ingredient cubes, like peas, carrots, chicken or apple, then mix and match them on the day."
+          ]
+        },
+        {
+          "heading": "The 3-hour plan",
+          "paragraphs": ["Set your kitchen up like an assembly line:"],
+          "bullets": [
+            "Hour 1, prep: wash, peel and chop a mix of vegetables, fruits and proteins. Remove seeds, pits, skin, fat and bones. Group them on baking sheets or in steamer baskets so they cook at the same time.",
+            "Hour 2, cook and puree: steam or roast until fork-tender, with no added salt, sugar or seasoning. Puree until smooth, thinning with a little cooking water, breast milk or formula. Cool the purees and get them into the freezer within 2 hours.",
+            "Hour 3, freeze and pop: spoon the purees into trays, cover, and freeze. Once solid, usually overnight, pop out the cubes and store them in airtight freezer bags or containers labeled with the food and the date."
+          ]
+        },
+        {
+          "heading": "Mix and match",
+          "paragraphs": [
+            "Once your baby has tried each food on its own without a reaction, you can start combining cubes. New flavor combinations help your baby get used to lots of different tastes."
+          ],
+          "bullets": [
+            "Sweet and earthy: 1 cube sweet potato + 1 cube green peas",
+            "Protein-packed: 1 cube chicken or lentils + 1 cube carrots + a little squash",
+            "Breakfast bowl: 1 cube iron-fortified baby oatmeal + 1 cube baked apple or pear"
+          ]
+        },
+        {
+          "heading": "Freezer safety",
+          "paragraphs": [],
+          "bullets": [
+            "Use frozen homemade purees within 3 months.",
+            "Thaw cubes in the refrigerator, never on the counter, and use them within 1 to 2 days.",
+            "To warm, put the food in a bowl and heat gently, for example by setting the bowl in hot water or warming it on the stovetop. Warm meat and egg purees on the stovetop.",
+            "If you use a microwave, use a microwave-safe dish, stir well, let it stand for 30 seconds, and test the temperature before serving. Microwaves heat unevenly and can leave hot spots.",
+            "Serve from a bowl, not straight from the storage container. Throw away food your baby's spoon has touched.",
+            "Don't refreeze food that has been thawed."
+          ]
+        }
+      ],
+      "sources": [
+        "fda-once-baby-arrives",
+        "cdc-solids",
+        "aap-solids",
+        "usda-leftovers",
+        "cdc-iron"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
     }
   ]
 }
