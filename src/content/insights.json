@@ -21,25 +21,6 @@
       "reviewer": "dietitian"
     },
     {
-      "id": "newborn-meal-help",
-      "category": "nourishing-you",
-      "stages": ["newborn"],
-      "kind": "self-care",
-      "tone": "accent",
-      "icon": "hands.and.sparkles.fill",
-      "emoji": "🤲",
-      "illustration": "casserole",
-      "title": "Say yes to meal help",
-      "summary": "An easy answer to \"What can I do?\"",
-      "body": [
-        "[PLACEHOLDER - needs expert review] When friends and family ask how they can help, a meal, a bag of groceries or a tray of something for the freezer is a wonderful answer.",
-        "Keeping a short list of favorite meals on your phone makes it easy to say yes."
-      ],
-      "allergens": [],
-      "reviewStatus": "placeholder",
-      "reviewer": "editorial"
-    },
-    {
       "id": "newborn-overnight-oats",
       "category": "nourishing-you",
       "stages": ["newborn", "solids"],

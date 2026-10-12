@@ -1031,6 +1031,82 @@
       "reviewer": "health professional"
     },
     {
+      "id": "newborn-meal-help",
+      "category": "nourishing-you",
+      "title": "Say yes to meal prep: a lifesaver for new moms",
+      "summary": "[PLACEHOLDER - needs expert review] Small, stress-free ways to keep nourishing food ready, so feeding yourself is one less thing to think about.",
+      "fromMonths": 0,
+      "toMonths": 12,
+      "icon": "hands.and.sparkles.fill",
+      "emoji": "🤲",
+      "illustration": "casserole",
+      "tone": "accent",
+      "readMinutes": 5,
+      "sections": [
+        {
+          "heading": "Meal prep as self-care",
+          "paragraphs": [
+            "The early weeks and months with a new baby are a joyful, overwhelming blur. Between night feeds, diaper changes and learning your baby’s cues, a proper sit-down meal can feel like a luxury.",
+            "Meal prep isn’t a strict diet chore. Think of it as self-care, and your secret weapon for getting through the day. Here’s why it helps, and how to make it work without the pressure."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Why it helps",
+          "paragraphs": [],
+          "bullets": [
+            "Steady energy for recovery: your body needs enough food, protein and fluids while you heal. Having food ready helps you avoid skipped meals and energy crashes.",
+            "Fuel for breastfeeding: if you’re breastfeeding, the CDC says you need about 330 to 400 extra calories a day. Easy, ready-to-eat food helps you keep up with your appetite.",
+            "One less decision: sleep loss makes every choice harder. Knowing what’s for lunch frees up mental energy.",
+            "Less spending and less waste: a stocked fridge means fewer last-minute takeout orders and less produce going bad."
+          ]
+        },
+        {
+          "heading": "Skip the pressure: try micro-prep",
+          "paragraphs": [
+            "Meal prep doesn’t have to mean six hours on a Sunday filling 20 identical containers. With a newborn, small steps work better."
+          ],
+          "bullets": [
+            "Prep ingredients, not full meals: roast a sheet pan of sweet potatoes and vegetables, cook a pot of quinoa, and shred a store-bought rotisserie chicken. Store them separately, then mix and match into bowls, wraps or salads in a couple of minutes.",
+            "Cook once, eat twice: when you make soup, a casserole or chili, double it and freeze half in single portions.",
+            "Use small windows: chop vegetables while the kettle boils, or roll a batch of energy bites while your baby naps."
+          ]
+        },
+        {
+          "heading": "Foods worth making ahead",
+          "paragraphs": [
+            "Choose foods that keep well, need little reheating and are full of nutrients."
+          ],
+          "bullets": [
+            "Overnight oats and energy bites: an easy, filling base. Make a few jars of overnight oats, or roll oat and peanut butter bites for a one-handed snack.",
+            "Sheet-pan dinners: chicken, salmon, sweet potatoes and green beans can roast together on parchment for easy cleanup.",
+            "Jar and grain salads: layer the dressing at the bottom, then sturdy ingredients like chickpeas, cucumber, quinoa and chicken, with greens on top. They keep crisp for up to 4 days.",
+            "Soups and stews: broth soups, lentil chili and sweet potato coconut stew freeze well and are easy to reheat."
+          ]
+        },
+        {
+          "heading": "Smart strategies",
+          "paragraphs": [],
+          "bullets": [
+            "Go one-handed: babies often want to be held at mealtimes. Pick foods you can eat with one hand or a single spoon or fork, like wraps, bites, bowls and smoothies.",
+            "Use shortcuts: frozen steam-in-bag vegetables, microwave rice pouches, canned beans and prewashed greens all save time.",
+            "Accept help: when someone asks “How can I help?”, ask for a homemade soup or a batch of muffins.",
+            "Keep it food-safe: refrigerate cooked food and rotisserie chicken within 2 hours, eat leftovers within 3 to 4 days or freeze them, and reheat until steaming hot (165°F)."
+          ]
+        },
+        {
+          "heading": "One batch at a time",
+          "paragraphs": [
+            "Saying yes to meal prep isn’t about a picture-perfect fridge. It’s about feeding yourself well, so you have the energy to care for your baby. Take it one batch, one jar and one meal at a time."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["cdc-maternal-diet", "usda-leftovers"],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
       "id": "milestones-without-anxiety",
       "category": "newborn-days",
       "title": "Growth and milestones, without the anxiety",
