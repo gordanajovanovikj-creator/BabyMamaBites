@@ -5,10 +5,26 @@ import { articleDisclaimerNote } from '@/content/copy';
 import { splitReviewMarker } from '@/content/schemas';
 import { AppText } from '@/ui';
 
-/** Short italic disclaimer at the bottom of health-related pages, with a link to the full text. */
-export function HealthDisclaimerNote() {
+export type HealthDisclaimerNoteProps = {
+  /** Who still needs to review this content, e.g. "pediatrician". Shows a draft line when set. */
+  draftReviewer?: string;
+};
+
+/**
+ * Short italic disclaimer at the bottom of health-related pages, with a link to
+ * the full text. For unreviewed content it also says it's a draft.
+ */
+export function HealthDisclaimerNote({ draftReviewer }: HealthDisclaimerNoteProps) {
   return (
-    <View className="gap-1 border-t border-border pt-4">
+    <View className="gap-2 border-t border-border pt-4">
+      {draftReviewer ? (
+        <AppText variant="caption" size="sm" className="italic">
+          <AppText variant="caption" size="sm" className="font-bold italic">
+            Draft:{' '}
+          </AppText>
+          Summarized from official US guidance and not yet reviewed by a {draftReviewer}.
+        </AppText>
+      ) : null}
       <AppText variant="caption" size="sm" className="italic">
         <AppText variant="caption" size="sm" className="font-bold italic">
           {articleDisclaimerNote.title}:{' '}

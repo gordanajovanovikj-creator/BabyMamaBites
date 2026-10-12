@@ -1,9 +1,8 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
-import { getInsightCategory } from '@/content/insight-categories';
 import { splitReviewMarker } from '@/content/schemas';
-import { articlesAccessed, getArticle } from '@/content/solids-articles';
+import { getArticle } from '@/content/solids-articles';
 import { solidsSourcesFor } from '@/content/solids-plan';
 import { ageRangeLabel } from '@/domain/articles';
 import { libraryPhoto } from '@/features/library/library-photos';
@@ -11,12 +10,11 @@ import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { SourceLinks } from '@/features/shared/source-links';
-import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
+import { AppText, Button, Illustration, Screen } from '@/ui';
 
 export default function ArticleScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const article = getArticle(id);
-  const forMom = article ? getInsightCategory(article.category)?.audience === 'mom' : false;
 
   if (!article) {
     return (
@@ -71,15 +69,9 @@ export default function ArticleScreen() {
 
         <SourceLinks sources={solidsSourcesFor(article.sources)} />
 
-        {article.reviewStatus === 'placeholder' ? (
-          <Notice
-            tone="caution"
-            title="Draft from official sources"
-            body={`Summarized from US guidance read on ${articlesAccessed}. Not yet reviewed by a ${article.reviewer}, and not medical advice. Follow your ${forMom ? 'doctor' : 'pediatrician'}'s advice, and call 911 in an emergency.`}
-          />
-        ) : null}
-
-        <HealthDisclaimerNote />
+        <HealthDisclaimerNote
+          draftReviewer={article.reviewStatus === 'placeholder' ? article.reviewer : undefined}
+        />
       </View>
     </Screen>
   );

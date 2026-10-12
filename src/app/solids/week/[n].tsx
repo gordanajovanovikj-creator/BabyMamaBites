@@ -2,13 +2,7 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
 import { splitReviewMarker } from '@/content/schemas';
-import {
-  getPlanWeek,
-  getStageInfo,
-  planWeeks,
-  solidsAccessed,
-  solidsSourcesFor,
-} from '@/content/solids-plan';
+import { getPlanWeek, getStageInfo, planWeeks, solidsSourcesFor } from '@/content/solids-plan';
 import { tryFoodsHeading } from '@/domain/food-log';
 import { allergenLabels } from '@/domain/profile-labels';
 import { useProfile } from '@/features/profile/profile-context';
@@ -59,14 +53,6 @@ export default function PlanWeekScreen() {
         </AppText>
         <AppText variant="title">{week.title}</AppText>
       </View>
-
-      {week.reviewStatus === 'placeholder' ? (
-        <Notice
-          tone="caution"
-          title="Draft from official sources"
-          body={`Summarized from CDC and AAP guidance read on ${solidsAccessed}. Not yet reviewed by a ${week.reviewer}, and not medical advice. Go at your baby's pace and follow your pediatrician's advice.`}
-        />
-      ) : null}
 
       <Card className="gap-3">
         {week.focus.map((p) => (
@@ -173,7 +159,9 @@ export default function PlanWeekScreen() {
         variant="quiet"
         onPress={() => router.push('/solids/choking')}
       />
-      <HealthDisclaimerNote />
+      <HealthDisclaimerNote
+        draftReviewer={week.reviewStatus === 'placeholder' ? week.reviewer : undefined}
+      />
     </Screen>
   );
 }

@@ -8,7 +8,8 @@ import { searchLibrary } from '@/domain/search';
 import { LibraryCarousel } from '@/features/library/library-carousel';
 import { LibraryTile } from '@/features/library/library-tile';
 import { useLibrary } from '@/features/library/use-library';
-import { AppText, Chip, Notice, Screen, SearchButton, SearchField } from '@/ui';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { AppText, Chip, Screen, SearchButton, SearchField } from '@/ui';
 
 const GAP = 12;
 const SIDE = 20;
@@ -159,11 +160,7 @@ export default function InsightsScreen() {
       )}
 
       <View className="px-5">
-        <Notice
-          tone="caution"
-          title="Drafts from official sources"
-          body="These articles and tips haven't been reviewed by a health professional yet. They're not medical advice. Follow your doctor's and pediatrician's advice, and call 911 in an emergency."
-        />
+        <HealthDisclaimerNote draftReviewer="health professional" />
       </View>
     </Screen>
   );

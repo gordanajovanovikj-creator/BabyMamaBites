@@ -223,12 +223,7 @@ export default function BabyScreen() {
           <ArticlesRow />
 
           <View className="px-5">
-            <Notice
-              tone="caution"
-              title="Draft from official sources"
-              body="This plan is summarized from CDC and AAP guidance and hasn't been reviewed by a health professional yet. It's not medical advice: follow your pediatrician's advice, and call 911 in an emergency."
-            />
-            <HealthDisclaimerNote />
+            <HealthDisclaimerNote draftReviewer="health professional" />
           </View>
         </>
       )}

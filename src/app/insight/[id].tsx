@@ -40,14 +40,6 @@ export default function InsightScreen() {
       />
 
       <View className="gap-6 px-5 pt-6">
-        {insight.reviewStatus === 'placeholder' ? (
-          <Notice
-            tone="caution"
-            title="Draft · awaiting expert review"
-            body="Not yet reviewed by a health professional, and not medical advice."
-          />
-        ) : null}
-
         <View className="gap-3">
           {insight.body.map((paragraph, i) => (
             <AppText key={i}>{splitReviewMarker(paragraph).text}</AppText>
@@ -62,7 +54,9 @@ export default function InsightScreen() {
           />
         ) : null}
         <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
-        <HealthDisclaimerNote />
+        <HealthDisclaimerNote
+          draftReviewer={insight.reviewStatus === 'placeholder' ? 'health professional' : undefined}
+        />
       </View>
     </Screen>
   );

@@ -1,7 +1,7 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
-import { guideSourcesAccessed, monthlyGuides } from '@/content/monthly-guides';
+import { monthlyGuides } from '@/content/monthly-guides';
 import { splitReviewMarker } from '@/content/schemas';
 import { adjacentGuides } from '@/domain/monthly-guides';
 import { guidePhoto } from '@/features/guides/guide-photos';
@@ -9,7 +9,7 @@ import { GuideSectionView } from '@/features/guides/guide-section-view';
 import { PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
-import { AppText, Button, Notice, Screen } from '@/ui';
+import { AppText, Button, Screen } from '@/ui';
 
 export default function GuideScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -38,14 +38,6 @@ export default function GuideScreen() {
       />
 
       <View className="gap-6 px-5 pt-6">
-        {guide.reviewStatus === 'placeholder' ? (
-          <Notice
-            tone="caution"
-            title="Draft from official sources"
-            body={`Summarized from US guidance (CDC, AAP, FDA and the HHS Office on Women's Health) read on ${guideSourcesAccessed}. Not yet reviewed by a health professional, and not medical advice. Always follow your own pediatrician's advice.`}
-          />
-        ) : null}
-
         {guide.sections.map((section) => (
           <GuideSectionView key={section.id} section={section} />
         ))}
@@ -71,7 +63,9 @@ export default function GuideScreen() {
           ) : null}
         </View>
         <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
-        <HealthDisclaimerNote />
+        <HealthDisclaimerNote
+          draftReviewer={guide.reviewStatus === 'placeholder' ? 'health professional' : undefined}
+        />
       </View>
     </Screen>
   );

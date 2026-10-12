@@ -11,6 +11,7 @@ import { RecipeGrid } from '@/features/recipes/recipe-grid';
 import { RecipeSearchResults } from '@/features/recipes/recipe-search-results';
 import { RecipeSection } from '@/features/recipes/recipe-section';
 import { RECIPE_TILE_WIDTH, RecipeTile } from '@/features/recipes/recipe-tile';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { AppText, Card, Notice, SearchField, SymbolIcon } from '@/ui';
 
 export type BabyRecipesViewProps = {
@@ -136,11 +137,7 @@ export function BabyRecipesView({ babyName, ageMonths, searchOpen }: BabyRecipes
       )}
 
       <View className="px-5">
-        <Notice
-          tone="caution"
-          title="Draft recipes"
-          body="Not yet reviewed by a pediatric dietitian. Offer new foods one at a time, always stay with your baby while they eat, and follow your pediatrician's advice."
-        />
+        <HealthDisclaimerNote draftReviewer="pediatric dietitian" />
       </View>
     </>
   );
