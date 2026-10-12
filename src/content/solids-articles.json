@@ -1122,6 +1122,102 @@
       ],
       "reviewStatus": "placeholder",
       "reviewer": "pediatrician"
+    },
+    {
+      "id": "solids-purees-first",
+      "category": "starting-solids",
+      "title": "Your guide to starting solids, week by week",
+      "summary": "[PLACEHOLDER - needs expert review] How to tell your baby is ready, and how to move from smooth purees to finger foods at a gentle pace.",
+      "fromMonths": 4,
+      "toMonths": 9,
+      "icon": "carrot.fill",
+      "emoji": "🥕",
+      "illustration": "baby-food-jar",
+      "tone": "sky",
+      "readMinutes": 6,
+      "sections": [
+        {
+          "heading": "Starting solids",
+          "paragraphs": [
+            "Starting solid foods is one of the most exciting milestones in your baby's first year. Moving from breast milk or formula to solid foods is a gradual journey of development, taste exploration and new textures.",
+            "Breast milk or formula is still your baby's main source of nutrition until 12 months. In the beginning, solids are about practice and discovery, not filling your baby up."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Is your baby ready? Look for the signs",
+          "paragraphs": [
+            "Most babies are ready for solids at about 6 months. Starting before 4 months isn't recommended. Watch your baby, not just the calendar, for these signs:"
+          ],
+          "bullets": [
+            "Good head and neck control: they can hold their head steady and upright on their own.",
+            "Sitting up with little support in a high chair or supported seat.",
+            "The tongue-thrust reflex has faded: they keep food in their mouth instead of pushing it straight back out with their tongue.",
+            "Active interest in food: watching you eat, reaching for your plate, or opening their mouth when food comes near.",
+            "Growing well: many babies have about doubled their birth weight by this stage.",
+            "Talk to your pediatrician about when to start, especially if your baby was born early."
+          ]
+        },
+        {
+          "heading": "Week 1: Smooth purees",
+          "paragraphs": [
+            "Texture: completely smooth and runny, like single-ingredient iron-fortified baby cereal, smooth avocado, or steamed and blended sweet potato.",
+            "Goal: practice, not volume. Offer 1 to 2 small spoonfuls once a day, after a milk feed. Your baby is learning how to move food around their mouth and swallow it."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Week 2: Thicker purees and new flavors",
+          "paragraphs": [
+            "Texture: slightly thicker purees that cling to the spoon, like yogurt or applesauce. You can start mixing flavors, such as pear with spinach.",
+            "Goal: keep introducing new single-ingredient vegetables and fruits. This is also a good time to start offering common allergens, like peanut butter thinned with water, breast milk or formula, or well-cooked egg, one at a time, with a few days between each new one so you can watch for a reaction.",
+            "If your baby has severe eczema or an egg allergy, talk to your pediatrician before offering peanut."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Week 3: Lumpy and mashed textures",
+          "paragraphs": [
+            "Texture: lumpy purees or foods mashed with a fork, with small soft lumps, like mashed banana, fork-mashed avocado, or well-cooked oatmeal.",
+            "Goal: encourage your baby to move their tongue and mash food against the roof of their mouth, instead of just swallowing."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Week 4 and beyond: Soft pieces and finger foods",
+          "paragraphs": [
+            "Texture: soft, finely chopped foods, small soft pieces, or easy-to-grab finger foods, like well-cooked carrot sticks, soft broccoli florets, or strips of tender chicken.",
+            "Goal: move toward family meals. Let your baby feed themselves and explore different shapes, temperatures and textures.",
+            "Every baby moves at their own pace. If your baby isn't ready for the next texture yet, stay where they're comfortable for a little longer and try again in a few days."
+          ],
+          "bullets": [
+            "Finger foods should be soft enough to squash easily between your fingers.",
+            "Always stay with your baby and make sure they're sitting upright while they eat.",
+            "Avoid hard, round or sticky foods that are choking risks, like whole grapes, nuts, popcorn and raw carrots."
+          ]
+        },
+        {
+          "heading": "Tips for success",
+          "paragraphs": [],
+          "bullets": [
+            "Follow your baby's cues. Turning away, leaning back or closing their mouth means \"I'm full.\" Leaning forward or opening wide means \"More, please!\"",
+            "Iron is key. From about 6 months, your baby needs more iron than breast milk alone provides. Offer iron-rich foods early, like pureed meats, iron-fortified cereals or mashed beans.",
+            "Keep meals low-pressure. Mess is part of learning! Let your baby touch, smell and smear their food.",
+            "No honey before 12 months, and no cow's milk as a drink before 12 months."
+          ]
+        }
+      ],
+      "sources": [
+        "cdc-solids",
+        "aap-solids",
+        "cdc-textures",
+        "cdc-iron",
+        "aap-allergens",
+        "cdc-choking",
+        "cdc-hungry"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
     }
   ]
 }

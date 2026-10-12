@@ -115,24 +115,6 @@
       "reviewer": "clinician"
     },
     {
-      "id": "solids-purees-first",
-      "category": "starting-solids",
-      "stages": ["solids"],
-      "kind": "tip",
-      "tone": "sky",
-      "icon": "carrot.fill",
-      "emoji": "🥕",
-      "illustration": "baby-food-jar",
-      "title": "Starting with purées",
-      "summary": "Smooth first, then step by step.",
-      "body": [
-        "[PLACEHOLDER - needs expert review] This guide will be written by a pediatric dietitian. It will cover signs your baby may be ready, starting with smooth purées, and moving on through thicker textures week by week."
-      ],
-      "allergens": [],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric dietitian"
-    },
-    {
       "id": "solids-freezer-cubes",
       "category": "cooking-for-baby",
       "stages": ["solids"],
