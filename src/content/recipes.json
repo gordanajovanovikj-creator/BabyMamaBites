@@ -600,31 +600,32 @@
     },
     {
       "id": "black-bean-quesadilla",
-      "title": "Black bean quesadillas",
-      "summary": "[PLACEHOLDER - needs expert review] Crispy, cheesy and on the table in 15 minutes.",
+      "title": "Black bean and corn quesadillas",
+      "summary": "[PLACEHOLDER - needs expert review] A super-fast weeknight lifesaver: crispy, cheesy and ready in about 10 minutes.",
       "icon": "fork.knife",
       "emoji": "🫓",
       "tone": "sky",
-      "activeMinutes": 15,
-      "totalMinutes": 15,
-      "servings": 2,
+      "activeMinutes": 10,
+      "totalMinutes": 10,
+      "servings": 4,
       "categories": ["lunch", "dinner-in-30", "family-friendly", "busy-moms", "one-hand"],
       "tags": ["one-handed"],
       "energy": "low",
       "allergens": ["wheat", "milk"],
       "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
       "ingredients": [
-        "4 small whole wheat tortillas",
-        "1 can (15 oz) black beans, rinsed and mashed",
-        "1 cup shredded cheese",
-        "1/2 cup corn",
-        "1/2 tsp cumin"
+        "4 large whole-wheat tortillas",
+        "1 can (15 oz) black beans, rinsed and drained",
+        "1 cup frozen corn, thawed",
+        "1 cup salsa",
+        "1 1/2 cups shredded Mexican cheese blend",
+        "1 tbsp butter or oil for the pan"
       ],
       "steps": [
-        "Mix the beans, corn and cumin.",
-        "Spread over two tortillas, sprinkle with cheese and top with the other tortillas.",
-        "Cook in a dry skillet over medium heat for 2 to 3 minutes per side until crisp and melted.",
-        "Cut into wedges."
+        "Mix the beans, corn and salsa in a bowl.",
+        "Sprinkle cheese over half of each tortilla, add a scoop of the bean mixture, top with a little more cheese, and fold over.",
+        "Melt a little butter in a large skillet over medium heat. Cook the quesadillas for 2 to 3 minutes per side, until golden and the cheese is melted.",
+        "Cut into triangles and serve with sour cream or guacamole."
       ],
       "tips": [
         "Sharing with a baby or toddler? Whole corn kernels are a choking hazard; mash them with the beans or leave them out."
@@ -710,14 +711,14 @@
     },
     {
       "id": "sheet-pan-salmon",
-      "title": "Sheet-pan salmon and vegetables",
-      "summary": "[PLACEHOLDER - needs expert review] One sheet pan, 25 minutes, minimal cleanup.",
+      "title": "Sheet-pan lemon garlic salmon and broccoli",
+      "summary": "[PLACEHOLDER - needs expert review] Salmon, broccoli and peppers roasted on one pan with lemon and garlic. Zero messy pots.",
       "icon": "fish.fill",
       "emoji": "🐟",
       "tone": "sky",
       "activeMinutes": 10,
       "totalMinutes": 25,
-      "servings": 4,
+      "servings": 2,
       "categories": [
         "dinner-in-30",
         "high-protein-dinner",
@@ -731,17 +732,19 @@
       "allergens": ["fish"],
       "diets": ["pescatarian", "halal", "kosher", "gluten-free"],
       "ingredients": [
-        "4 salmon fillets (about 4 oz each)",
-        "1 lb baby potatoes, halved",
-        "2 cups broccoli florets",
-        "2 tbsp olive oil",
-        "1 lemon",
-        "Pepper and dried dill"
+        "2 salmon fillets",
+        "3 cups broccoli florets",
+        "1 bell pepper, sliced",
+        "3 tbsp olive oil",
+        "2 cloves garlic, minced",
+        "1 lemon, sliced into rounds",
+        "Salt, pepper and garlic powder"
       ],
       "steps": [
-        "Heat the oven to 425°F. Toss the potatoes with half the oil and roast for 10 minutes.",
-        "Add the broccoli and salmon to the pan, drizzle with the rest of the oil, lemon juice, pepper and dill.",
-        "Roast for 12 to 15 minutes until the salmon flakes easily and reaches 145°F."
+        "Heat the oven to 400°F.",
+        "Put the salmon and vegetables on a large baking sheet. Drizzle with oil and season with the garlic, salt, pepper and garlic powder.",
+        "Lay the lemon slices on top of the salmon.",
+        "Bake for 12 to 15 minutes, until the salmon flakes easily with a fork (145°F) and the broccoli is tender with crispy edges."
       ],
       "tips": [
         "Salmon is on the FDA's \"Best Choices\" list. While breastfeeding, the FDA advises 2 to 3 servings (4 oz each) a week from that list.",
@@ -1621,6 +1624,646 @@
         "Blend on high for 60 to 90 seconds, until the dates are completely smooth."
       ],
       "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "turkey-taco-skillet",
+      "title": "Turkey taco skillet",
+      "summary": "[PLACEHOLDER - needs expert review] Taco night flavor in one pan, with turkey, black beans and corn.",
+      "icon": "frying.pan.fill",
+      "emoji": "🌮",
+      "tone": "accent",
+      "activeMinutes": 20,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "one-pot", "high-protein-dinner", "family-friendly"],
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["milk"],
+      "diets": [],
+      "ingredients": [
+        "1 lb lean ground turkey",
+        "1 packet low-sodium taco seasoning",
+        "1 can (15 oz) black beans, rinsed and drained",
+        "1 can (14 oz) fire-roasted diced tomatoes",
+        "1 cup frozen corn",
+        "1 cup shredded cheddar cheese",
+        "Fresh cilantro, to serve"
+      ],
+      "steps": [
+        "Brown the turkey in a large skillet over medium-high heat until fully cooked, 6 to 7 minutes.",
+        "Stir in the taco seasoning and 1/4 cup water and simmer for 2 minutes.",
+        "Add the beans, tomatoes with their juices, and corn. Simmer for 5 to 7 minutes until heated through.",
+        "Sprinkle the cheese over the top, cover for 2 minutes until melted, and top with cilantro.",
+        "Serve with avocado or whole-wheat tortillas."
+      ],
+      "tips": [
+        "Cook chicken and turkey to 165°F.",
+        "Check the taco seasoning label if you avoid gluten.",
+        "Sharing with a baby or toddler? Whole corn kernels are a choking hazard; mash them or leave them out."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "lemon-herb-chicken-asparagus",
+      "title": "Lemon herb chicken and asparagus",
+      "summary": "[PLACEHOLDER - needs expert review] Golden chicken and tender-crisp asparagus in a bright lemon-garlic pan sauce.",
+      "icon": "frying.pan.fill",
+      "emoji": "🍋",
+      "tone": "sky",
+      "activeMinutes": 20,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "high-protein-dinner", "high-protein"],
+      "tags": [],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["gluten-free"],
+      "ingredients": [
+        "2 large chicken breasts, cut into cutlets or bite-size pieces",
+        "1 bunch thin asparagus, trimmed and cut into thirds",
+        "2 tbsp olive oil",
+        "3 cloves garlic, minced",
+        "1 lemon, juiced and zested",
+        "1/2 tsp dried oregano",
+        "Salt and black pepper"
+      ],
+      "steps": [
+        "Heat 1 tbsp oil in a skillet over medium-high heat.",
+        "Season the chicken with salt, pepper and oregano and cook for 5 to 6 minutes per side until golden and cooked through. Set aside.",
+        "Add the rest of the oil, the garlic and the asparagus to the pan. Sauté for 4 minutes until tender-crisp.",
+        "Pour in the lemon juice, scraping up the browned bits.",
+        "Return the chicken, toss in the pan juices, and top with lemon zest."
+      ],
+      "tips": ["Cook chicken and turkey to 165°F."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "spinach-tomato-gnocchi",
+      "title": "Creamy spinach and tomato gnocchi",
+      "summary": "[PLACEHOLDER - needs expert review] Comfort food made fast: soft gnocchi in a creamy garlic, tomato and spinach sauce.",
+      "icon": "frying.pan.fill",
+      "emoji": "🍅",
+      "tone": "accent",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "family-friendly"],
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["milk", "wheat"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 package (16 oz) shelf-stable potato gnocchi",
+        "2 tbsp butter or olive oil",
+        "3 cloves garlic, minced",
+        "1 cup cherry tomatoes, halved",
+        "2 cups baby spinach",
+        "1/2 cup heavy cream or canned coconut milk",
+        "1/4 cup grated parmesan"
+      ],
+      "steps": [
+        "Cook the gnocchi in boiling salted water as the package directs, usually 2 to 3 minutes, and drain when they float.",
+        "Meanwhile, melt the butter in a large skillet over medium heat. Sauté the garlic and tomatoes for 3 minutes, until the tomatoes start to burst.",
+        "Stir in the cream and spinach until the spinach wilts, about 1 minute.",
+        "Add the gnocchi and parmesan and stir until coated in a creamy sauce."
+      ],
+      "tips": [
+        "Most gnocchi contain wheat; check the label.",
+        "For dairy-free, use olive oil and coconut milk and skip the parmesan."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "beef-broccoli-stir-fry",
+      "title": "Ground beef and broccoli stir-fry",
+      "summary": "[PLACEHOLDER - needs expert review] Better than takeout: savory ground beef and broccoli in a glossy ginger-soy sauce.",
+      "icon": "frying.pan.fill",
+      "emoji": "🥦",
+      "tone": "muted",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "high-protein-dinner", "high-protein"],
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["soy", "wheat", "sesame"],
+      "diets": [],
+      "ingredients": [
+        "1 lb lean ground beef",
+        "3 cups broccoli florets",
+        "3 cloves garlic, minced",
+        "1 tbsp fresh ginger, grated",
+        "1/3 cup low-sodium soy sauce",
+        "1 tbsp honey or maple syrup",
+        "1 tbsp cornstarch mixed with 2 tbsp cold water",
+        "1 tsp sesame oil"
+      ],
+      "steps": [
+        "Brown the beef in a large skillet or wok over medium-high heat, breaking it up, until cooked through. Drain extra fat if needed.",
+        "Add the garlic, ginger, broccoli and 2 tbsp water. Cover for 3 minutes to steam the broccoli until bright green and tender-crisp.",
+        "Whisk the soy sauce, honey and cornstarch mixture, pour it in, and stir for 2 minutes until thick and glossy.",
+        "Drizzle with sesame oil. Serve over rice or cauliflower rice."
+      ],
+      "tips": [
+        "Cook ground beef to 160°F.",
+        "Use tamari labeled gluten-free if you avoid wheat.",
+        "Sharing with a baby? Never give honey to a baby under 12 months."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "tomato-tortellini-soup",
+      "title": "Creamy tomato tortellini soup",
+      "summary": "[PLACEHOLDER - needs expert review] A cozy, creamy tomato soup with cheese tortellini and spinach that kids tend to love.",
+      "icon": "fork.knife",
+      "emoji": "🥣",
+      "tone": "accent",
+      "activeMinutes": 20,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "one-pot", "family-friendly"],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["milk", "wheat", "egg"],
+      "diets": ["vegetarian", "pescatarian"],
+      "ingredients": [
+        "1 package (9 oz) fresh cheese tortellini",
+        "3 cups low-sodium vegetable or chicken broth",
+        "1 can (28 oz) crushed or diced tomatoes",
+        "3 cloves garlic, minced",
+        "1 tsp Italian seasoning",
+        "1/2 cup heavy cream or cream cheese",
+        "2 cups baby spinach",
+        "Parmesan, to serve"
+      ],
+      "steps": [
+        "In a medium pot, combine the broth, tomatoes, garlic, Italian seasoning and a pinch of salt and pepper. Bring to a boil over medium-high heat.",
+        "Add the tortellini and cook as the package directs, about 4 to 5 minutes.",
+        "Reduce the heat to low and stir in the cream and spinach until the spinach wilts.",
+        "Ladle into bowls and top with parmesan."
+      ],
+      "tips": ["Use vegetable broth to keep it vegetarian."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "black-bean-sweet-potato-chili",
+      "title": "Black bean and sweet potato chili",
+      "summary": "[PLACEHOLDER - needs expert review] A cozy plant-based chili with black beans, sweet potato and warm spices.",
+      "icon": "flame.fill",
+      "emoji": "🍠",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "one-pot", "family-friendly"],
+      "tags": ["freezer-friendly", "batch-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 large sweet potato, peeled and diced small",
+        "1 onion, diced",
+        "1 tbsp olive oil",
+        "2 cans (15 oz each) black beans, rinsed and drained",
+        "1 can (14 oz) diced tomatoes",
+        "2 tbsp chili powder",
+        "1 tsp cumin",
+        "2 cups vegetable broth"
+      ],
+      "steps": [
+        "In a medium pot, cook the onion and sweet potato in the oil for 5 minutes, until the onion is translucent. Dicing the sweet potato small helps it cook quickly.",
+        "Add the chili powder and cumin and stir for 1 minute until fragrant.",
+        "Add the beans, tomatoes and broth. Bring to a boil, then cover and simmer for 15 minutes, until the sweet potato is fork-tender."
+      ],
+      "tips": ["Freeze leftovers in portions for up to 3 months."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "coconut-curry-chickpea-soup",
+      "title": "Coconut curry chickpea soup",
+      "summary": "[PLACEHOLDER - needs expert review] A fragrant, creamy chickpea soup with coconut milk, curry and spinach.",
+      "icon": "flame.fill",
+      "emoji": "🍛",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "one-pot"],
+      "tags": ["freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "2 cans (15 oz each) chickpeas, rinsed and drained",
+        "1 can (14 oz) full-fat coconut milk",
+        "2 cups vegetable broth",
+        "2 tbsp yellow curry powder",
+        "1 onion, diced",
+        "3 cloves garlic, minced",
+        "1 tbsp fresh ginger, grated",
+        "3 cups baby spinach",
+        "Drizzle of olive oil"
+      ],
+      "steps": [
+        "Heat the oil in a soup pot over medium heat. Sauté the onion, garlic and ginger for 3 to 4 minutes until soft.",
+        "Stir in the curry powder and cook for 1 minute.",
+        "Add the chickpeas, coconut milk and broth. Bring to a gentle boil, then simmer for 10 minutes.",
+        "Stir in the spinach just before serving, until wilted."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "sheet-pan-sausage-hash",
+      "title": "Sheet-pan sausage and pepper hash",
+      "summary": "[PLACEHOLDER - needs expert review] A hearty, low-prep dinner of crispy potatoes, sausage and peppers on one pan.",
+      "icon": "flame.fill",
+      "emoji": "🫑",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 30,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "one-pot", "family-friendly"],
+      "tags": [],
+      "energy": "low",
+      "allergens": [],
+      "diets": [],
+      "ingredients": [
+        "4 chicken or turkey sausage links, sliced into rounds",
+        "2 bell peppers, sliced",
+        "1 red onion, sliced",
+        "1 lb baby gold potatoes, halved",
+        "2 tbsp olive oil",
+        "1 tsp smoked paprika",
+        "Salt and pepper"
+      ],
+      "steps": [
+        "Heat the oven to 400°F.",
+        "Toss the potatoes with 1 tbsp oil, salt and pepper on a baking sheet and roast for 10 minutes.",
+        "Add the sausage, peppers and onion. Drizzle with the rest of the oil and sprinkle with paprika.",
+        "Toss and roast for another 15 minutes, until the potatoes are crispy and the sausage is browned."
+      ],
+      "tips": [
+        "Cook chicken or turkey sausage to 165°F, unless the package says it's fully cooked.",
+        "Check sausage labels for allergens and gluten."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "honey-mustard-chicken-green-beans",
+      "title": "Sheet-pan honey mustard chicken",
+      "summary": "[PLACEHOLDER - needs expert review] Sweet and savory chicken tenders and green beans, all on one pan.",
+      "icon": "flame.fill",
+      "emoji": "🍯",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "one-pot", "high-protein-dinner", "family-friendly"],
+      "tags": [],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["gluten-free"],
+      "ingredients": [
+        "2 chicken breasts, cut into bite-size tenders",
+        "1 lb green beans, ends trimmed",
+        "3 tbsp Dijon mustard",
+        "2 tbsp honey",
+        "1 tbsp olive oil",
+        "1/2 tsp garlic powder"
+      ],
+      "steps": [
+        "Heat the oven to 400°F.",
+        "Whisk the mustard, honey, oil and garlic powder in a small bowl.",
+        "Put the chicken and green beans on a baking sheet, pour over the sauce and toss to coat.",
+        "Bake for 15 to 18 minutes, until the chicken is cooked through and the beans are tender-crisp."
+      ],
+      "tips": [
+        "Cook chicken and turkey to 165°F.",
+        "Sharing with a baby? Never give honey to a baby under 12 months."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "mediterranean-tuna-pita",
+      "title": "Mediterranean tuna pita pockets",
+      "summary": "[PLACEHOLDER - needs expert review] No-cook tuna salad with yogurt, cucumber, tomato and feta, stuffed into pitas.",
+      "icon": "fork.knife",
+      "emoji": "🥙",
+      "tone": "sky",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["dinner-in-30", "dinner", "lunch", "high-protein"],
+      "tags": ["no-cook"],
+      "energy": "low",
+      "allergens": ["fish", "milk", "wheat"],
+      "diets": ["pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "2 cans (5 oz each) light tuna in water, drained",
+        "1/4 cup plain Greek yogurt",
+        "2 tbsp olive oil",
+        "1 cucumber, diced",
+        "1/2 cup cherry tomatoes, halved",
+        "1/4 cup crumbled feta",
+        "2 whole-wheat pita pockets",
+        "Salt and pepper"
+      ],
+      "steps": [
+        "Flake the tuna in a medium bowl with a fork.",
+        "Stir in the yogurt, olive oil, salt and pepper until creamy.",
+        "Fold in the cucumber, tomatoes and feta.",
+        "Stuff into warmed pita pockets."
+      ],
+      "tips": [
+        "Canned light tuna is on the FDA's \"Best Choices\" list. Albacore (white) tuna is a \"Good Choice\": have no more than 1 serving a week."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "teriyaki-chicken-bowls",
+      "title": "Teriyaki chicken rice bowls",
+      "summary": "[PLACEHOLDER - needs expert review] Chicken, vegetables and brown rice in a glossy teriyaki sauce.",
+      "icon": "fork.knife",
+      "emoji": "🍚",
+      "tone": "accent",
+      "activeMinutes": 20,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": [
+        "dinner-in-30",
+        "dinner",
+        "high-protein-dinner",
+        "high-protein",
+        "family-friendly"
+      ],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["soy", "wheat"],
+      "diets": [],
+      "ingredients": [
+        "2 chicken breasts, sliced into strips",
+        "1 tbsp oil",
+        "2 cups precooked or microwave brown rice",
+        "2 cups mixed stir-fry vegetables, such as snap peas, carrots and broccoli",
+        "1/3 cup low-sodium teriyaki sauce"
+      ],
+      "steps": [
+        "Heat the oil in a skillet over medium-high heat and cook the chicken for 6 minutes, until browned and cooked through.",
+        "Add the vegetables and 2 tbsp water. Cover for 3 minutes to steam.",
+        "Pour in the teriyaki sauce and simmer for 2 minutes, until glossy and thick.",
+        "Serve over warm brown rice."
+      ],
+      "tips": [
+        "Cook chicken and turkey to 165°F.",
+        "Most teriyaki sauce contains soy and wheat; check the label."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "garlic-butter-shrimp-pasta",
+      "title": "Garlic butter shrimp pasta",
+      "summary": "[PLACEHOLDER - needs expert review] Feel fancy with minimal effort: shrimp and pasta in a lemony garlic butter sauce.",
+      "icon": "fork.knife",
+      "emoji": "🍤",
+      "tone": "sky",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "high-protein-dinner"],
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["shellfish", "milk", "wheat"],
+      "diets": ["pescatarian"],
+      "ingredients": [
+        "8 oz spaghetti or linguine",
+        "1 lb shrimp, peeled and deveined",
+        "3 tbsp butter",
+        "4 cloves garlic, minced",
+        "1/4 cup chicken broth or pasta water",
+        "1 tbsp lemon juice",
+        "Fresh parsley"
+      ],
+      "steps": [
+        "Cook the pasta in salted water as the package directs. Save 1/4 cup pasta water, then drain.",
+        "Meanwhile, melt the butter in a large skillet over medium-high heat. Add the garlic and shrimp and cook for about 2 minutes per side, until pink and opaque. Set the shrimp aside.",
+        "Add the broth and lemon juice to the pan, scraping up the browned bits.",
+        "Toss in the pasta, shrimp and reserved pasta water until coated. Top with parsley."
+      ],
+      "tips": ["Shrimp is on the FDA's \"Best Choices\" list."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "creamy-mushroom-pasta",
+      "title": "Creamy mushroom pasta",
+      "summary": "[PLACEHOLDER - needs expert review] Vegetarian comfort in a flash: golden mushrooms in a creamy parmesan sauce.",
+      "icon": "fork.knife",
+      "emoji": "🍄",
+      "tone": "muted",
+      "activeMinutes": 20,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "family-friendly"],
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["milk", "wheat"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "8 oz penne or fettuccine",
+        "8 oz button or cremini mushrooms, sliced",
+        "2 tbsp butter",
+        "2 cloves garlic, minced",
+        "1/2 cup heavy cream or cream cheese",
+        "1/4 cup parmesan",
+        "Fresh thyme"
+      ],
+      "steps": [
+        "Cook the pasta as the package directs and drain.",
+        "Meanwhile, melt the butter in a large skillet over medium heat. Cook the mushrooms for 5 to 6 minutes, until golden and their liquid has evaporated.",
+        "Add the garlic and thyme and cook for 1 minute.",
+        "Stir in the cream and parmesan and simmer for 2 minutes, until creamy.",
+        "Toss in the pasta until well coated."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "pesto-chicken-penne",
+      "title": "Pesto chicken and tomato penne",
+      "summary": "[PLACEHOLDER - needs expert review] A pantry-shortcut dinner with jarred pesto, rotisserie chicken and cherry tomatoes.",
+      "icon": "fork.knife",
+      "emoji": "🌿",
+      "tone": "sky",
+      "activeMinutes": 20,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "high-protein-dinner", "family-friendly"],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["milk", "wheat", "tree-nuts"],
+      "diets": [],
+      "ingredients": [
+        "8 oz penne",
+        "2 cooked chicken breasts, shredded or diced (rotisserie chicken works great)",
+        "1/3 cup store-bought basil pesto",
+        "1 cup cherry tomatoes, halved",
+        "1/4 cup grated parmesan"
+      ],
+      "steps": [
+        "Cook the penne as the package directs. Save 2 tbsp pasta water, then drain.",
+        "Off the heat, toss the pasta in the warm pot with the chicken, pesto, tomatoes and reserved pasta water.",
+        "Sprinkle with parmesan and serve right away."
+      ],
+      "tips": ["Many pestos contain pine nuts, other nuts and cheese; check the label."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "spinach-feta-frittata",
+      "title": "Spinach, tomato and feta frittata",
+      "summary": "[PLACEHOLDER - needs expert review] A protein-packed, low-prep frittata with spinach, tomatoes and feta.",
+      "icon": "frying.pan.fill",
+      "emoji": "🍳",
+      "tone": "accent",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "breakfast", "high-protein"],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["egg", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "6 large eggs",
+        "1/4 cup milk",
+        "1 cup baby spinach",
+        "1/2 cup cherry tomatoes, halved",
+        "1/3 cup crumbled feta",
+        "1 tbsp olive oil",
+        "Salt and pepper"
+      ],
+      "steps": [
+        "Heat the oven broiler to high.",
+        "Whisk the eggs, milk, salt and pepper.",
+        "Heat the oil in an oven-safe skillet over medium heat. Cook the tomatoes and spinach for 2 minutes, until the spinach wilts.",
+        "Pour in the eggs and sprinkle with feta. Cook without stirring for 5 minutes, until the edges set.",
+        "Broil for 3 to 4 minutes, until golden, puffed and set in the middle."
+      ],
+      "tips": ["Cook until the center is firm, with no runny egg."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "huevos-rancheros-bowls",
+      "title": "Huevos rancheros bowls",
+      "summary": "[PLACEHOLDER - needs expert review] Bold flavors from pantry staples: eggs, black beans, salsa and avocado on warm tortillas.",
+      "icon": "frying.pan.fill",
+      "emoji": "🥑",
+      "tone": "accent",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "breakfast"],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["egg"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "4 large eggs",
+        "1 can (15 oz) black beans, rinsed",
+        "1 cup salsa",
+        "4 corn tortillas",
+        "1 avocado, sliced",
+        "Fresh cilantro",
+        "A little oil for frying"
+      ],
+      "steps": [
+        "Warm the beans in a small pot.",
+        "Warm the tortillas in a dry skillet.",
+        "In the same skillet, fry the eggs in a little oil.",
+        "Put a tortilla in each bowl and top with beans, salsa, avocado and a fried egg."
+      ],
+      "tips": ["Sharing with a baby or toddler? Cook their egg until the white and yolk are firm."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "naan-margherita-pizzas",
+      "title": "Naan margherita pizzas",
+      "summary": "[PLACEHOLDER - needs expert review] Friday-night pizza made fast on store-bought naan.",
+      "icon": "flame.fill",
+      "emoji": "🍕",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "family-friendly"],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["milk", "wheat"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "4 pieces store-bought naan, garlic or plain",
+        "1 cup marinara or pizza sauce",
+        "2 cups shredded mozzarella",
+        "1 cup cherry tomatoes, halved",
+        "Fresh basil leaves"
+      ],
+      "steps": [
+        "Heat the oven to 425°F.",
+        "Lay the naan on a baking sheet and spread each with a few tablespoons of sauce.",
+        "Top with mozzarella and tomatoes.",
+        "Bake for 8 to 10 minutes, until the cheese is melted and bubbling. Top with basil and slice."
+      ],
+      "tips": ["Many naans contain milk and egg; check the label."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "bbq-chicken-flatbread",
+      "title": "BBQ chicken flatbread",
+      "summary": "[PLACEHOLDER - needs expert review] Sweet, savory and effortless, with rotisserie chicken, red onion and melty cheese.",
+      "icon": "flame.fill",
+      "emoji": "🍗",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["dinner-in-30", "dinner", "family-friendly"],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["milk", "wheat"],
+      "diets": [],
+      "ingredients": [
+        "2 large flatbreads or premade pizza crusts",
+        "1 cup shredded cooked chicken (rotisserie chicken works great)",
+        "1/2 cup BBQ sauce",
+        "1 red onion, thinly sliced",
+        "1 1/2 cups shredded mozzarella and gouda cheese",
+        "Fresh cilantro"
+      ],
+      "steps": [
+        "Heat the oven to 425°F.",
+        "Toss the chicken with half the BBQ sauce.",
+        "Spread the rest of the sauce over the flatbreads and top with the cheese, chicken and onion.",
+        "Bake for 8 to 12 minutes, until the crust is crisp and the cheese is bubbly. Top with cilantro."
+      ],
+      "tips": ["Check BBQ sauce labels: some contain fish (in Worcestershire sauce) or honey."],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     }
