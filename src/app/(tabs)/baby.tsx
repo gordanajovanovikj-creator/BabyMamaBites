@@ -14,22 +14,15 @@ import { FreezerCard } from '@/features/planner/freezer-card';
 import { WeekMenu } from '@/features/planner/week-menu';
 import { useProfile } from '@/features/profile/profile-context';
 import { AllergenTracker } from '@/features/solids/allergen-tracker';
-import { ArticlesRow } from '@/features/solids/articles-row';
 import { BabyRecipesView } from '@/features/solids/baby-recipes-view';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { LogEntryRow } from '@/features/solids/log-entry-row';
-import { PhotoLinkCard } from '@/features/solids/photo-link-card';
 import { WeekCard } from '@/features/solids/week-card';
 import { WeekStrip } from '@/features/solids/week-strip';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { AppText, Button, Card, Notice, Screen, SearchButton, SegmentedTabs } from '@/ui';
 
 const RECENT = 5;
-
-const planPhotos = {
-  makeAhead: require('@/assets/images/plan/make-ahead.jpg'),
-  choking: require('@/assets/images/plan/choking.jpg'),
-};
 
 type Tab = 'plan' | 'recipes' | 'favorites';
 
@@ -197,30 +190,37 @@ export default function BabyScreen() {
 
             <Button label="Log a food" onPress={() => router.push('/solids/log')} />
 
-            <PhotoLinkCard
-              photo={planPhotos.makeAhead}
-              title="Make-ahead baby food"
-              body="Freezer cube magic: 3 months of baby food in 3 hours."
-              accessibilityLabel="Make-ahead baby food: 3 months of baby food in 3 hours with freezer cubes. Opens the guide."
+            <Card
+              tone="accent"
+              className="gap-1"
               onPress={() =>
                 router.push({
                   pathname: '/solids/article/[id]',
                   params: { id: 'solids-freezer-cubes' },
                 })
               }
-            />
+              accessibilityLabel="Make-ahead baby food: 3 months of baby food in 3 hours with freezer cubes. Opens the guide."
+            >
+              <AppText variant="heading" color="on-accent">
+                Make-ahead baby food
+              </AppText>
+              <AppText color="on-accent">
+                Freezer cube magic: 3 months of baby food in 3 hours. See how ›
+              </AppText>
+            </Card>
 
-            <PhotoLinkCard
-              photo={planPhotos.choking}
-              title="Choking and gagging"
-              body="Foods to avoid or change by age, and how to tell gagging from choking."
-              cta="Learn more"
-              accessibilityLabel="Choking and gagging: what to know. Opens the safety guide."
+            <Card
+              tone="muted"
+              className="gap-1"
               onPress={() => router.push('/solids/choking')}
-            />
+              accessibilityLabel="Choking and gagging: what to know. Opens the safety guide."
+            >
+              <AppText variant="heading">Choking and gagging</AppText>
+              <AppText variant="caption">
+                Foods to avoid or change by age, and how to tell gagging from choking. Learn more ›
+              </AppText>
+            </Card>
           </View>
-
-          <ArticlesRow />
 
           <View className="px-5">
             <HealthDisclaimerNote draftReviewer="health professional" />

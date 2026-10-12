@@ -181,20 +181,18 @@ add it to both; a test checks they match. Free Magnific images require the visib
 | baby-carrot-squash-puree               | Pixabay                                            | congerdesign                          | https://pixabay.com/photos/pumpkin-soup-soup-2972858/                                                                                                       | Pixabay Content License                        | 2026-10-12 |
 | baby-zucchini-sweet-potato-puree       | Pixabay                                            | RitaE                                 | https://pixabay.com/photos/potato-soup-potato-soup-wild-garlic-2152254/                                                                                     | Pixabay Content License                        | 2026-10-12 |
 
-## Welcome (onboarding) and Baby tab photos
+## Welcome (onboarding) photos
 
-Bundled in `assets/images/onboarding/` and `assets/images/plan/`. Several show identifiable
+Bundled in `assets/images/onboarding/`. Several show identifiable
 people, so the app owner must hold the rights to use them in the app and App Store.
 
-| Photo            | Used on                               | Source                                             | Link                                                                                          | License                                        | Added      |
-| ---------------- | ------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
-| welcome-kitchen  | Welcome screen                        | Magnific (magnific.com), supplied by the app owner | https://www.magnific.com/free-photo/lifestyle-woman-going-through-motherhood_94964571.htm     | Magnific free license (credit required)        | 2026-10-12 |
-| baby-led-weaning | "Baby-led weaning is a great choice!" | Magnific (magnific.com), supplied by the app owner | https://www.magnific.com/free-photo/happy-baby-highchair-choosing-what-fruit-eat_10952478.htm | Magnific free license (credit required)        | 2026-10-12 |
-| spoon-feeding    | "Spoon feeding is a great choice!"    | Pixabay, by 5686750                                | https://pixabay.com/photos/baby-eating-firsts-food-child-2423896/                             | Pixabay Content License                        | 2026-10-12 |
-| family-kitchen   | "We've got you, mama" screen          | Pixabay, by smpratt90                              | https://pixabay.com/photos/family-newborn-baby-child-infant-2610205/                          | Pixabay Content License                        | 2026-10-12 |
-| welcome-mom-baby | Month 1 guide                         | Pixabay, by BabyAayansh                            | https://pixabay.com/photos/baby-cute-portrait-child-indian-7318667/                           | Pixabay Content License                        | 2026-10-12 |
-| make-ahead       | Baby tab: make-ahead card             | Dreamstime (ID 5826918), © Monkey Business Images  | —                                                                                             | Dreamstime license (supplied by the app owner) | 2026-10-12 |
-| choking          | Baby tab: choking card                | Dreamstime (ID 204669953), © Wellphotos            | —                                                                                             | Dreamstime license (supplied by the app owner) | 2026-10-12 |
+| Photo            | Used on                               | Source                                             | Link                                                                                          | License                                 | Added      |
+| ---------------- | ------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------- | ---------- |
+| welcome-kitchen  | Welcome screen                        | Magnific (magnific.com), supplied by the app owner | https://www.magnific.com/free-photo/lifestyle-woman-going-through-motherhood_94964571.htm     | Magnific free license (credit required) | 2026-10-12 |
+| baby-led-weaning | "Baby-led weaning is a great choice!" | Magnific (magnific.com), supplied by the app owner | https://www.magnific.com/free-photo/happy-baby-highchair-choosing-what-fruit-eat_10952478.htm | Magnific free license (credit required) | 2026-10-12 |
+| spoon-feeding    | "Spoon feeding is a great choice!"    | Pixabay, by 5686750                                | https://pixabay.com/photos/baby-eating-firsts-food-child-2423896/                             | Pixabay Content License                 | 2026-10-12 |
+| family-kitchen   | "We've got you, mama" screen          | Pixabay, by smpratt90                              | https://pixabay.com/photos/family-newborn-baby-child-infant-2610205/                          | Pixabay Content License                 | 2026-10-12 |
+| welcome-mom-baby | Month 1 guide                         | Pixabay, by BabyAayansh                            | https://pixabay.com/photos/baby-cute-portrait-child-indian-7318667/                           | Pixabay Content License                 | 2026-10-12 |
 
 ## Insights article photos
 
