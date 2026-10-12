@@ -124,7 +124,7 @@ const allergenSignals: Record<(typeof allergens)[number], RegExp> = {
   shellfish: /\b(shrimp|crab|lobster|scallops?|clams?|mussels?)\b/i,
 };
 /** Ingredient phrases that look like an allergen but aren't. */
-const notAllergen = /\b(coconut milk|peanut-free|dairy-free|oat milk|plant milk)\b/i;
+const notAllergen = /\b((coconut|oat|plant|almond|soy|rice|hemp) milk|peanut-free|dairy-free)\b/i;
 
 describe('bundled recipes', () => {
   it('declare every allergen their ingredients suggest', () => {

@@ -66,29 +66,49 @@ owner must hold the rights and model releases to use them in the app and App Sto
 Bundled in `assets/images/insights/` and registered in
 `src/features/library/library-photos.ts`.
 
-| Article id             | Source                    | Photographer    | Link                                                                  | License                 | Added      |
-| ---------------------- | ------------------------- | --------------- | --------------------------------------------------------------------- | ----------------------- | ---------- |
-| newborn-snack-basket   | Pixabay                   | sweetlouise     | https://pixabay.com/photos/dried-fruit-nuts-coconut-mango-3164835/    | Pixabay Content License | 2026-10-09 |
-| newborn-overnight-oats | Pixabay                   | devansee        | https://pixabay.com/photos/breakfast-healthy-yogurt-mason-jar-655894/ | Pixabay Content License | 2026-10-09 |
-| solids-purees-first    | Pixabay                   | Ben_Kerckx      | https://pixabay.com/photos/child-vegetable-pap-power-supply-818432/   | Pixabay Content License | 2026-10-09 |
-| food-refusal           | Pixabay                   | timkraaijvanger | https://pixabay.com/photos/toddler-girl-laugh-blue-eyes-cute-2675884/ | Pixabay Content License | 2026-10-09 |
-| solids-freezer-cubes   | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| homemade-baby-food     | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| hunger-cues            | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| high-chair             | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| gagging-vs-choking     | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| ready                  | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| first-foods            | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| purees-vs-finger-foods | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| allergens              | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| toddler-picky-phases   | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| cups-and-drinks        | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| solids-choking         | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| foods-to-avoid         | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| newborn-meal-help      | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| newborn-rest           | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| newborn-water          | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| cows-milk              | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| feeling-low            | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-09 |
-| toddler-share-plate    | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-10 |
-| solids-two-textures    | Supplied by the app owner | —               | —                                                                     | Owner-supplied          | 2026-10-10 |
+| Article id                  | Source                    | Photographer      | Link                                                                   | License                 | Added      |
+| --------------------------- | ------------------------- | ----------------- | ---------------------------------------------------------------------- | ----------------------- | ---------- |
+| newborn-snack-basket        | Pixabay                   | sweetlouise       | https://pixabay.com/photos/dried-fruit-nuts-coconut-mango-3164835/     | Pixabay Content License | 2026-10-09 |
+| newborn-overnight-oats      | Pixabay                   | devansee          | https://pixabay.com/photos/breakfast-healthy-yogurt-mason-jar-655894/  | Pixabay Content License | 2026-10-09 |
+| solids-purees-first         | Pixabay                   | Ben_Kerckx        | https://pixabay.com/photos/child-vegetable-pap-power-supply-818432/    | Pixabay Content License | 2026-10-09 |
+| food-refusal                | Pixabay                   | timkraaijvanger   | https://pixabay.com/photos/toddler-girl-laugh-blue-eyes-cute-2675884/  | Pixabay Content License | 2026-10-09 |
+| solids-freezer-cubes        | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| homemade-baby-food          | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| hunger-cues                 | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| high-chair                  | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| gagging-vs-choking          | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| ready                       | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| first-foods                 | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| purees-vs-finger-foods      | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| allergens                   | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| toddler-picky-phases        | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| cups-and-drinks             | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| solids-choking              | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| foods-to-avoid              | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| newborn-meal-help           | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| newborn-rest                | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| newborn-water               | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| cows-milk                   | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| feeling-low                 | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-09 |
+| toddler-share-plate         | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-10 |
+| solids-two-textures         | Supplied by the app owner | —                 | —                                                                      | Owner-supplied          | 2026-10-10 |
+| smoothie-tropical-green     | Pixabay                   | NatureFriend      | https://pixabay.com/photos/green-smoothie-leafy-greens-422995/         | Pixabay Content License | 2026-10-12 |
+| smoothie-avocado-green      | Pixabay                   | dmarr515          | https://pixabay.com/photos/smoothie-avocado-blueberry-fruit-5160684/   | Pixabay Content License | 2026-10-12 |
+| smoothie-cucumber-ginger    | Pixabay                   | Smacznadietetyka  | https://pixabay.com/photos/cocktail-smoothie-food-vegetables-7213414/  | Pixabay Content License | 2026-10-12 |
+| smoothie-matcha-green       | Pixabay                   | dungthuyvunguyen  | https://pixabay.com/photos/matcha-latte-latte-matcha-drink-2356772/    | Pixabay Content License | 2026-10-12 |
+| smoothie-triple-berry       | Pixabay                   | blandinejoannic   | https://pixabay.com/photos/smoothie-breakfast-berries-5154447/         | Pixabay Content License | 2026-10-12 |
+| smoothie-wild-blueberry     | Pixabay                   | kaboompics        | https://pixabay.com/photos/blueberry-yogurt-yoghurt-health-791564/     | Pixabay Content License | 2026-10-12 |
+| smoothie-pomegranate-acai   | Pixabay                   | HealthyFoodImages | https://pixabay.com/photos/smoothie-turmix-raspberry-fitness-463331/   | Pixabay Content License | 2026-10-12 |
+| smoothie-pb-banana-protein  | Pixabay                   | 2SIF              | https://pixabay.com/photos/fig-milk-shake-milk-shake-smoothie-7267991/ | Pixabay Content License | 2026-10-12 |
+| smoothie-chocolate-hemp     | Pixabay                   | stevepb           | https://pixabay.com/photos/chocolate-smoothie-milkshake-1058191/       | Pixabay Content License | 2026-10-12 |
+| smoothie-greek-yogurt-berry | Pixabay                   | robertasriabovas  | https://pixabay.com/photos/berries-cocktail-milkshake-drink-4944590/   | Pixabay Content License | 2026-10-12 |
+| smoothie-salted-caramel     | Pixabay                   | MorningbirdPhoto  | https://pixabay.com/photos/coffee-milkshake-drink-food-cream-540653/   | Pixabay Content License | 2026-10-12 |
+| smoothie-citrus-sunshine    | Pixabay                   | tehzeebhud        | https://pixabay.com/photos/mango-smoothie-glass-straw-10449416/        | Pixabay Content License | 2026-10-12 |
+| smoothie-ginger-turmeric    | Pixabay                   | TesaPhotography   | https://pixabay.com/photos/smoothie-milkshake-pineapple-2566825/       | Pixabay Content License | 2026-10-12 |
+| smoothie-golden-tropical    | Pixabay                   | Imoflow           | https://pixabay.com/photos/mango-drink-fruits-diet-healthy-3380631/    | Pixabay Content License | 2026-10-12 |
+| smoothie-papaya-mint        | Pixabay                   | photosforyou      | https://pixabay.com/photos/smoothie-fruit-mango-pear-apple-790711/     | Pixabay Content License | 2026-10-12 |
+| smoothie-pear-cinnamon      | Pixabay                   | dmarr515          | https://pixabay.com/photos/smoothie-blueberry-healthy-food-5127118/    | Pixabay Content License | 2026-10-12 |
+| smoothie-kiwi-lime          | Pixabay                   | milivigerova      | https://pixabay.com/photos/smoothie-fruit-blend-glass-drink-729923/    | Pixabay Content License | 2026-10-12 |
+| smoothie-blueberry-oatmeal  | Pixabay                   | bubithebear       | https://pixabay.com/photos/smoothie-smoothies-purple-food-3401697/     | Pixabay Content License | 2026-10-12 |
+| smoothie-almond-fig         | Pixabay                   | World_of_Plants   | https://pixabay.com/photos/blueberries-breakfast-drinks-table-4211525/ | Pixabay Content License | 2026-10-12 |
+| smoothie-tahini-date        | Pixabay                   | dbreen            | https://pixabay.com/photos/milkshake-milk-dairy-drink-glass-1085004/   | Pixabay Content License | 2026-10-12 |

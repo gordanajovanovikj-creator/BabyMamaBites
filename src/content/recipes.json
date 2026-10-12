@@ -10,6 +10,14 @@
       "description": "Comforting drinks, porridges and snacks to keep you nourished and hydrated while you feed."
     },
     {
+      "id": "smoothies",
+      "label": "Smoothies",
+      "icon": "takeoutbag.and.cup.and.straw.fill",
+      "emoji": "🥤",
+      "tone": "sky",
+      "description": "Quick blended drinks you can sip one-handed."
+    },
+    {
       "id": "busy-moms",
       "label": "Busy moms",
       "icon": "bolt.heart.fill",
@@ -979,6 +987,640 @@
       "tips": [
         "Sharing with a toddler? Cut grapes into small pieces, slice cheese thinly instead of serving chunks, swap raw carrots for cooked soft ones, and skip crackers with seeds or whole grain kernels."
       ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-tropical-green",
+      "title": "Classic tropical green",
+      "summary": "[PLACEHOLDER - needs expert review] A bright, fruity green smoothie with spinach, mango and pineapple.",
+      "icon": "mug.fill",
+      "emoji": "🥬",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "1 cup fresh spinach",
+        "1/2 frozen banana",
+        "1/2 cup frozen mango",
+        "1/2 cup pineapple chunks",
+        "1 cup unsweetened coconut water"
+      ],
+      "steps": [
+        "Add the coconut water and spinach to the blender first.",
+        "Blend on high for about 20 seconds, until the greens are completely liquefied.",
+        "Add the banana, mango and pineapple.",
+        "Blend on high for 45 to 60 seconds, until completely smooth."
+      ],
+      "tips": ["Blending the greens with the liquid first gets rid of leafy bits."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-avocado-green",
+      "title": "Creamy avocado green",
+      "summary": "[PLACEHOLDER - needs expert review] Creamy and thick, with avocado, greens and chia to keep you full.",
+      "icon": "mug.fill",
+      "emoji": "🥑",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["tree-nuts"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "1/2 ripe avocado",
+        "1 cup kale or spinach",
+        "1/2 green apple, cored",
+        "1/2 cucumber",
+        "1 tbsp chia seeds",
+        "1 cup unsweetened almond milk"
+      ],
+      "steps": [
+        "Pour the almond milk into the blender, then add the greens, cucumber and apple.",
+        "Blend briefly to break down the greens and apple skin.",
+        "Add the avocado and chia seeds.",
+        "Blend on high for about 1 minute, until creamy and thick."
+      ],
+      "tips": ["Use any unsweetened milk you like, such as dairy, soy or oat, if you avoid nuts."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-cucumber-ginger",
+      "title": "Cucumber ginger green",
+      "summary": "[PLACEHOLDER - needs expert review] A light, refreshing green smoothie with lemon, cucumber and fresh ginger.",
+      "icon": "mug.fill",
+      "emoji": "🥒",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "1 cup kale",
+        "Juice of 1/2 lemon",
+        "1/2 cup cucumber chunks",
+        "1 tbsp fresh ginger, grated",
+        "1/2 green apple",
+        "1 cup cold water or coconut water"
+      ],
+      "steps": [
+        "Pour the water and lemon juice into the blender.",
+        "Add the ginger, cucumber, apple and kale.",
+        "Blend on high for about 60 seconds, until fully smooth."
+      ],
+      "tips": ["For a smoother, juice-like drink, pour it through a fine mesh strainer."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-matcha-green",
+      "title": "Matcha green tea smoothie",
+      "summary": "[PLACEHOLDER - needs expert review] A bright green, gently energizing smoothie with matcha, banana and hemp seeds.",
+      "icon": "mug.fill",
+      "emoji": "🍵",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["soy"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 tsp matcha powder",
+        "1 frozen banana",
+        "1 cup spinach",
+        "1 tbsp hemp seeds",
+        "1 cup unsweetened soy or oat milk"
+      ],
+      "steps": [
+        "Add the milk, matcha and hemp seeds first so the matcha dissolves evenly.",
+        "Add the spinach and banana.",
+        "Blend on medium-high for about 45 seconds, until smooth and bright green."
+      ],
+      "tips": [
+        "Matcha contains caffeine. If you're breastfeeding, count it toward your daily caffeine, and ask your provider if you're unsure how much is right for you."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-triple-berry",
+      "title": "Triple berry",
+      "summary": "[PLACEHOLDER - needs expert review] Sweet-tart strawberries, blueberries and raspberries, blended until smooth.",
+      "icon": "mug.fill",
+      "emoji": "🍓",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["tree-nuts"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup strawberries",
+        "1/2 cup blueberries",
+        "1/2 cup raspberries",
+        "1/2 frozen banana",
+        "1 cup unsweetened almond milk"
+      ],
+      "steps": [
+        "Add the almond milk to the blender first.",
+        "Add the berries, fresh or frozen, and the banana.",
+        "Blend on high for 45 to 60 seconds, until smooth."
+      ],
+      "tips": ["Use any unsweetened milk you like, such as dairy, soy or oat, if you avoid nuts."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-wild-blueberry",
+      "title": "Wild blueberry flax",
+      "summary": "[PLACEHOLDER - needs expert review] Thick and velvety, with wild blueberries, Greek yogurt, flaxseed and cinnamon.",
+      "icon": "mug.fill",
+      "emoji": "🫐",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["milk", "tree-nuts"],
+      "diets": ["vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "1 cup frozen wild blueberries",
+        "1 tbsp ground flaxseed",
+        "1/2 cup plain Greek yogurt",
+        "1/2 tsp cinnamon",
+        "1 cup unsweetened almond milk"
+      ],
+      "steps": [
+        "Add the almond milk and yogurt to the blender.",
+        "Add the flaxseed, cinnamon and blueberries.",
+        "Blend on high for 50 to 60 seconds, until velvety and thick."
+      ],
+      "tips": ["Use any unsweetened milk you like, such as dairy, soy or oat, if you avoid nuts."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-pomegranate-acai",
+      "title": "Pomegranate acai",
+      "summary": "[PLACEHOLDER - needs expert review] A deep purple smoothie with acai, pomegranate juice and strawberries.",
+      "icon": "mug.fill",
+      "emoji": "🍇",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "1 frozen unsweetened acai packet",
+        "1/2 cup 100% pomegranate juice",
+        "1/2 cup frozen strawberries",
+        "1 tbsp chia seeds",
+        "1/2 cup water"
+      ],
+      "steps": [
+        "Run warm water over the acai packet for about 5 seconds, then break it into chunks.",
+        "Pour the pomegranate juice and water into the blender.",
+        "Add the chia seeds, strawberries and acai.",
+        "Blend on high for about 1 minute."
+      ],
+      "tips": ["Choose pasteurized juice."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-pb-banana-protein",
+      "title": "Peanut butter banana protein shake",
+      "summary": "[PLACEHOLDER - needs expert review] Thick and creamy, with peanut butter, banana and protein powder.",
+      "icon": "mug.fill",
+      "emoji": "🥜",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["peanut", "milk", "tree-nuts"],
+      "diets": ["vegetarian", "pescatarian"],
+      "ingredients": [
+        "1 frozen banana",
+        "2 tbsp natural peanut butter",
+        "1 scoop vanilla protein powder (whey or plant-based)",
+        "1 cup unsweetened almond milk"
+      ],
+      "steps": [
+        "Pour the almond milk into the blender, then add the protein powder and peanut butter, so the powder doesn't stick.",
+        "Add the banana.",
+        "Blend on high for about 45 seconds, until thick and creamy."
+      ],
+      "tips": [
+        "Check the protein powder label: many contain milk or soy. Supplements aren't reviewed by the FDA before they're sold, so look for one tested by an independent lab, and ask your provider if you're breastfeeding."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-chocolate-hemp",
+      "title": "Chocolate hemp seed shake",
+      "summary": "[PLACEHOLDER - needs expert review] A chocolatey plant-based shake with hemp seeds, cacao and banana.",
+      "icon": "mug.fill",
+      "emoji": "🍫",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "3 tbsp hemp seeds",
+        "1 frozen banana",
+        "1 1/2 tbsp raw cacao powder",
+        "1/2 tsp vanilla extract",
+        "1 cup oat milk"
+      ],
+      "steps": [
+        "Add the oat milk, cacao powder, vanilla and hemp seeds to the blender.",
+        "Add the banana on top.",
+        "Blend on high for 45 to 60 seconds, until the hemp seeds are finely blended and the shake is smooth."
+      ],
+      "tips": ["Cacao contains a little caffeine."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-greek-yogurt-berry",
+      "title": "Greek yogurt berry",
+      "summary": "[PLACEHOLDER - needs expert review] Rich and smooth, with Greek yogurt and mixed berries.",
+      "icon": "mug.fill",
+      "emoji": "🍒",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "3/4 cup plain nonfat Greek yogurt",
+        "1 cup frozen mixed berries",
+        "1 tbsp honey or maple syrup",
+        "1/2 cup water or milk of your choice"
+      ],
+      "steps": [
+        "Add the water or milk, sweetener and yogurt to the blender.",
+        "Add the berries.",
+        "Pulse 3 or 4 times to crush the berries, then blend on high for about 45 seconds, until smooth."
+      ],
+      "tips": ["Never give honey to a baby under 12 months, even a taste."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-salted-caramel",
+      "title": "Salted caramel date shake",
+      "summary": "[PLACEHOLDER - needs expert review] A sweet treat with dates, banana and a pinch of sea salt.",
+      "icon": "mug.fill",
+      "emoji": "🍯",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["milk", "tree-nuts"],
+      "diets": ["vegetarian", "pescatarian", "gluten-free"],
+      "ingredients": [
+        "1 frozen banana",
+        "2 pitted Medjool dates",
+        "1 scoop vanilla protein powder (whey or plant-based)",
+        "Pinch of sea salt",
+        "1 cup unsweetened almond milk"
+      ],
+      "steps": [
+        "Chop or tear the dates into small pieces.",
+        "Pour the almond milk into the blender, then add the dates, protein powder and salt.",
+        "Add the banana.",
+        "Blend on high for about 60 seconds, until the dates are fully blended into a caramel-like shake."
+      ],
+      "tips": ["Check the protein powder label: many contain milk or soy."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-citrus-sunshine",
+      "title": "Citrus sunshine",
+      "summary": "[PLACEHOLDER - needs expert review] A sunny orange smoothie with orange, mango, carrot and turmeric.",
+      "icon": "mug.fill",
+      "emoji": "🍊",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "1 orange, peeled",
+        "1/2 cup frozen mango",
+        "1/2 carrot, chopped or grated",
+        "1/2 tsp grated fresh turmeric",
+        "1 tbsp chia seeds",
+        "1 cup water or coconut water"
+      ],
+      "steps": [
+        "Add the liquid, orange, carrot and turmeric to the blender.",
+        "Blend on high for about 30 seconds to break down the carrot.",
+        "Add the chia seeds and mango.",
+        "Blend on high for another 45 seconds."
+      ],
+      "tips": ["Fresh turmeric can stain, so rinse the blender right away."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-ginger-turmeric",
+      "title": "Ginger turmeric pineapple",
+      "summary": "[PLACEHOLDER - needs expert review] Bright yellow and silky, with pineapple, banana, ginger and turmeric.",
+      "icon": "mug.fill",
+      "emoji": "🍍",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "1 tbsp fresh ginger, grated",
+        "1/2 tsp ground turmeric",
+        "1/2 cup frozen pineapple",
+        "1/2 banana",
+        "Pinch of black pepper",
+        "1 cup coconut water"
+      ],
+      "steps": [
+        "Add the coconut water, ginger, turmeric and black pepper to the blender.",
+        "Add the pineapple and banana.",
+        "Blend on high for about 45 seconds, until bright yellow and silky."
+      ],
+      "tips": ["Black pepper is a classic partner for turmeric."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-golden-tropical",
+      "title": "Golden milk tropical",
+      "summary": "[PLACEHOLDER - needs expert review] Rich and creamy, with mango, turmeric, cinnamon and kefir.",
+      "icon": "mug.fill",
+      "emoji": "🥭",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup frozen mango",
+        "1/2 banana",
+        "1/2 tsp ground turmeric",
+        "1/4 tsp cinnamon",
+        "1/2 cup plain kefir or yogurt",
+        "1 cup coconut milk"
+      ],
+      "steps": [
+        "Add the coconut milk, kefir or yogurt, turmeric and cinnamon to the blender.",
+        "Add the mango and banana.",
+        "Blend on high for 45 to 60 seconds, until rich and smooth."
+      ],
+      "tips": ["Use a coconut yogurt for a dairy-free version."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-papaya-mint",
+      "title": "Papaya mint",
+      "summary": "[PLACEHOLDER - needs expert review] Light and refreshing, with papaya, fresh mint and lemon.",
+      "icon": "mug.fill",
+      "emoji": "🌿",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "1 cup fresh or frozen papaya chunks",
+        "5 to 6 fresh mint leaves",
+        "Juice of 1/2 lemon",
+        "1 tbsp chia seeds",
+        "1 cup coconut water"
+      ],
+      "steps": [
+        "Pour the coconut water and lemon juice into the blender.",
+        "Add the mint, chia seeds and papaya.",
+        "Blend on high for about 45 seconds, until smooth."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-pear-cinnamon",
+      "title": "Pear cinnamon oat",
+      "summary": "[PLACEHOLDER - needs expert review] Thick and cozy, with pear, oats and cinnamon.",
+      "icon": "mug.fill",
+      "emoji": "🍐",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 ripe pear, cored",
+        "1/2 frozen banana",
+        "2 tbsp rolled oats",
+        "1/2 tsp cinnamon",
+        "1 cup oat milk"
+      ],
+      "steps": [
+        "Add the oat milk, oats and cinnamon first so the oats can soak up a little liquid.",
+        "Add the pear and banana.",
+        "Blend on high for about 60 seconds, until velvety."
+      ],
+      "tips": ["Use certified gluten-free oats if you avoid gluten."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-kiwi-lime",
+      "title": "Kiwi lime green",
+      "summary": "[PLACEHOLDER - needs expert review] Zingy and green, with kiwi, cucumber, spinach and lime.",
+      "icon": "mug.fill",
+      "emoji": "🥝",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "2 kiwis, peeled",
+        "1/2 cup cucumber",
+        "1 cup spinach",
+        "Juice of 1/2 lime",
+        "1 cup cold water"
+      ],
+      "steps": [
+        "Add the water, lime juice, spinach and cucumber to the blender.",
+        "Blend on high for about 20 seconds.",
+        "Add the kiwis and blend on medium-high for another 30 seconds, so the seeds don't get crushed and turn bitter."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-blueberry-oatmeal",
+      "title": "Blueberry oatmeal breakfast",
+      "summary": "[PLACEHOLDER - needs expert review] A thick, filling breakfast in a cup, with oats, blueberries and almond butter.",
+      "icon": "mug.fill",
+      "emoji": "🥣",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["tree-nuts"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/4 cup rolled oats",
+        "1/2 cup frozen blueberries",
+        "1/2 banana",
+        "1 tbsp almond butter",
+        "1 cup unsweetened almond milk"
+      ],
+      "steps": [
+        "Pulse the oats in the blender 5 times to break them into a coarse flour.",
+        "Add the almond milk, almond butter, banana and blueberries.",
+        "Blend on high for about 60 seconds, until thick."
+      ],
+      "tips": ["Use certified gluten-free oats if you avoid gluten."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-almond-fig",
+      "title": "Creamy almond fig",
+      "summary": "[PLACEHOLDER - needs expert review] Naturally sweet and creamy, with figs, almond butter and flaxseed.",
+      "icon": "mug.fill",
+      "emoji": "🍯",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["tree-nuts", "soy"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "gluten-free", "halal", "kosher"],
+      "ingredients": [
+        "3 dried or fresh figs, stems removed",
+        "1/2 frozen banana",
+        "1 tbsp almond butter",
+        "1 tbsp flaxseed",
+        "1 cup unsweetened soy milk"
+      ],
+      "steps": [
+        "If using dried figs, soak them in warm water for 5 minutes to soften.",
+        "Add the soy milk, almond butter, flaxseed and figs to the blender.",
+        "Add the banana.",
+        "Blend on high for about 60 seconds, until smooth."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "smoothie-tahini-date",
+      "title": "Tahini date",
+      "summary": "[PLACEHOLDER - needs expert review] Rich and nutty, with tahini, dates and banana.",
+      "icon": "mug.fill",
+      "emoji": "🌰",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["smoothies"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["sesame"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 1/2 tbsp tahini (sesame paste)",
+        "2 pitted Medjool dates",
+        "1 frozen banana",
+        "1 tbsp hemp seeds",
+        "1 cup oat milk"
+      ],
+      "steps": [
+        "Chop the dates into small pieces.",
+        "Add the oat milk, tahini, dates and hemp seeds to the blender.",
+        "Add the banana.",
+        "Blend on high for 60 to 90 seconds, until the dates are completely smooth."
+      ],
+      "tips": [],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     }
