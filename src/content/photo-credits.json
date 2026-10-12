@@ -44,6 +44,13 @@
       "url": "https://www.magnific.com/free-photo/lifestyle-woman-going-through-motherhood_94964571.htm"
     },
     {
+      "id": "baby-avocado-banana-mash",
+      "usedOn": "Avocado and banana mash",
+      "source": "dreamstime",
+      "author": "Reinis Bigacs",
+      "url": null
+    },
+    {
       "id": "chicken-quinoa-jars",
       "usedOn": "Chicken and quinoa salad",
       "source": "dreamstime",
@@ -107,11 +114,25 @@
       "url": "https://www.dreamstime.com/roasted-salmon-fillet-placed-grain-bowl-salad-image-generated-using-ai-image476518839"
     },
     {
+      "id": "baby-sweet-potato-puree",
+      "usedOn": "Sweet potato puree",
+      "source": "dreamstime",
+      "author": "Monkey Business Images",
+      "url": null
+    },
+    {
       "id": "white-bean-tuna-salad",
       "usedOn": "White bean and tuna salad",
       "source": "dreamstime",
       "author": "Nelly Kovalchuk",
       "url": "https://www.dreamstime.com/stock-photo-tuna-salad-white-beans-red-onions-bowl-basil-leaves-old-wooden-background-freshly-made-bean-image84788222"
+    },
+    {
+      "id": "baby-yogurt-berry-swirl",
+      "usedOn": "Yogurt and blueberry swirl",
+      "source": "dreamstime",
+      "author": "Marazem",
+      "url": null
     },
     {
       "id": "almond-butter-chia-pudding",
