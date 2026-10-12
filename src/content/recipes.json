@@ -2339,8 +2339,8 @@
     },
     {
       "id": "nursing-green-mango-smoothie",
-      "title": "Green mango avocado smoothie",
-      "summary": "[PLACEHOLDER - needs expert review] Spinach, mango and avocado blended silky smooth.",
+      "title": "Mango avocado smoothie",
+      "summary": "[PLACEHOLDER - needs expert review] Mango and avocado blended silky smooth, with spinach if you like.",
       "icon": "leaf.fill",
       "emoji": "🥭",
       "tone": "sky",
@@ -2354,7 +2354,7 @@
       "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
       "ingredients": [
         "1 cup coconut water or oat milk",
-        "1 cup fresh baby spinach",
+        "1 cup fresh baby spinach (optional; it turns the smoothie green)",
         "1/2 cup frozen mango",
         "1/2 avocado"
       ],
