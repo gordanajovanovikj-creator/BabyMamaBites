@@ -443,6 +443,13 @@
       "url": "https://pixabay.com/photos/oatmeal-banana-breakfast-cinnamon-10379125/"
     },
     {
+      "id": "baby-squash-chicken-puree",
+      "usedOn": "Butternut squash and chicken puree",
+      "source": "pixabay",
+      "author": "galyafanaseva",
+      "url": "https://pixabay.com/photos/autumn-soup-pumpkin-harvest-8305097/"
+    },
+    {
       "id": "snack-plate",
       "usedOn": "Cheese, crackers and fruit plate",
       "source": "pixabay",
@@ -511,6 +518,13 @@
       "source": "pixabay",
       "author": "World_of_Plants",
       "url": "https://pixabay.com/photos/blueberries-breakfast-drinks-table-4211525/"
+    },
+    {
+      "id": "baby-apple-cinnamon-oatmeal",
+      "usedOn": "Creamy apple-cinnamon baby oatmeal",
+      "source": "pixabay",
+      "author": "nad_dyagileva",
+      "url": "https://pixabay.com/photos/breakfast-food-oatmeal-table-3551420/"
     },
     {
       "id": "smoothie-avocado-green",
@@ -821,6 +835,13 @@
       "url": "https://pixabay.com/photos/woman-nap-bedtime-mattress-room-8121473/"
     },
     {
+      "id": "baby-sweet-potato-apple-mash",
+      "usedOn": "Roasted sweet potato and apple mash",
+      "source": "pixabay",
+      "author": "syuyusyuyus",
+      "url": "https://pixabay.com/photos/sweet-potato-soup-puree-flat-lay-6691256/"
+    },
+    {
       "id": "baby-salmon-sweet-potato",
       "usedOn": "Salmon and sweet potato mash",
       "source": "pixabay",
@@ -861,6 +882,13 @@
       "source": "pixabay",
       "author": "Pexels",
       "url": "https://pixabay.com/photos/delicious-food-lunch-meal-meat-1839514/"
+    },
+    {
+      "id": "baby-avocado-pear-mash",
+      "usedOn": "Smooth avocado and pear mash",
+      "source": "pixabay",
+      "author": "erichbauer0",
+      "url": "https://pixabay.com/photos/dips-sauces-glass-avocado-tomatoes-623582/"
     },
     {
       "id": "nursing-spinach-pear-quinoa-salad",

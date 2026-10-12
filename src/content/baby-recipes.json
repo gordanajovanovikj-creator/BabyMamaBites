@@ -180,6 +180,163 @@
       "reviewer": "pediatric dietitian"
     },
     {
+      "id": "baby-avocado-pear-mash",
+      "title": "Smooth avocado and pear mash",
+      "summary": "[PLACEHOLDER - needs expert review] Creamy avocado with naturally sweet pear, blended silky smooth.",
+      "icon": "leaf.fill",
+      "emoji": "🥑",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 4,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "nursing-avocado-toast",
+        "note": "Mash a little extra avocado for your own toast while baby has theirs."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 ripe avocado",
+        "1 ripe Bartlett or Bosc pear",
+        "Water, breast milk or formula to thin"
+      ],
+      "steps": [
+        "Peel and core the pear, cut it into pieces, and steam for 5 to 7 minutes until fork-tender.",
+        "Halve the avocado and scoop out the flesh.",
+        "Blend the pear and avocado until completely smooth.",
+        "Thin with a little water, breast milk or formula until runny and smooth."
+      ],
+      "tips": [
+        "Offer each food on its own a few times before you mix them together.",
+        "Serve fresh. Avocado browns once cut; store leftovers in an airtight container in the fridge and use within a day.",
+        "Freeze the pear puree in cubes on its own, and mix in fresh avocado on the day."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-sweet-potato-apple-mash",
+      "title": "Roasted sweet potato and apple mash",
+      "summary": "[PLACEHOLDER - needs expert review] Roasting brings out the natural sweetness of sweet potato and apple.",
+      "icon": "drop.fill",
+      "emoji": "🍠",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 40,
+      "servings": 8,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "sweet-potato-spinach-hash",
+        "note": "Roast an extra sweet potato for your breakfast hash tomorrow."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 medium sweet potato",
+        "1 sweet apple, like Honeycrisp or Gala",
+        "Water, breast milk or formula to thin"
+      ],
+      "steps": [
+        "Heat the oven to 400°F (200°C).",
+        "Prick the sweet potato a few times with a fork. Peel, core and chop the apple.",
+        "Roast the whole sweet potato and the apple pieces on a baking sheet for 25 to 30 minutes, until both are very soft. A larger sweet potato may need longer.",
+        "Scoop the sweet potato out of its skin and throw the skin away.",
+        "Blend the sweet potato and apple until silky smooth, thinning with water, breast milk or formula as needed."
+      ],
+      "tips": [
+        "Offer each food on its own a few times before you mix them together.",
+        "Freeze in cubes and use within 3 months; refrigerate for up to 3 days."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-squash-chicken-puree",
+      "title": "Butternut squash and chicken puree",
+      "summary": "[PLACEHOLDER - needs expert review] Tender squash and chicken, blended velvety smooth, for iron and protein.",
+      "icon": "fork.knife",
+      "emoji": "🎃",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "slow-cooker-chicken",
+        "note": "Set aside a little plain chicken for baby before seasoning the family’s."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 cup cubed butternut squash, fresh or frozen",
+        "1/4 cup cooked chicken breast or thigh, chopped (cooked to 165°F with no salt)",
+        "Water, breast milk or formula to thin"
+      ],
+      "steps": [
+        "Steam the squash until very tender.",
+        "Add the squash and chicken to a blender or food processor.",
+        "Add a generous splash of water, breast milk or formula to help the blades break down the chicken.",
+        "Blend on high until completely smooth, with no stringy bits."
+      ],
+      "tips": [
+        "Skip store-bought broth, even low-sodium; it still adds salt babies don’t need.",
+        "Chicken thigh has more iron than breast, so it’s a good choice if you have it.",
+        "Freeze in cubes and use within 2 to 6 months for best quality; refrigerate for 3 to 4 days.",
+        "Halal and kosher depend on the chicken you buy; check the label."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-apple-cinnamon-oatmeal",
+      "title": "Creamy apple-cinnamon baby oatmeal",
+      "summary": "[PLACEHOLDER - needs expert review] Iron-fortified oatmeal with smooth applesauce and a tiny pinch of cinnamon.",
+      "icon": "drop.fill",
+      "emoji": "🍎",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "apple-cinnamon-porridge",
+        "note": "Make a pot of apple cinnamon porridge for yourself while baby has theirs."
+      },
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "3 tbsp iron-fortified single-grain infant oatmeal",
+        "1/4 cup breast milk, formula or water",
+        "2 tbsp smooth unsweetened applesauce",
+        "A tiny pinch of cinnamon (optional)"
+      ],
+      "steps": [
+        "Gently warm the liquid. Warm breast milk or formula in a bowl of warm water, never in the microwave and never boiled.",
+        "Stir the warm liquid into the oatmeal until smooth and creamy.",
+        "Stir in the applesauce and a tiny pinch of cinnamon."
+      ],
+      "tips": [
+        "Make it fresh each time, and throw away what your baby doesn’t eat.",
+        "Never put cereal in a bottle.",
+        "Some oat cereals are processed with wheat; check the label if you avoid gluten."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
       "id": "baby-avocado-banana-mash",
       "title": "Avocado and banana mash",
       "summary": "[PLACEHOLDER - needs expert review] No cooking, just a fork and two ripe fruits.",

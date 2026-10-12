@@ -114,6 +114,10 @@ const photos: Record<string, ImageSource> = {
   'pesto-chicken-pasta-salad': require('@/assets/images/recipes/pesto-chicken-pasta-salad.jpg'),
   'sweet-potato-black-bean-quinoa-bowls': require('@/assets/images/recipes/sweet-potato-black-bean-quinoa-bowls.jpg'),
   'turkey-meatball-zoodle-box': require('@/assets/images/recipes/turkey-meatball-zoodle-box.jpg'),
+  'baby-avocado-pear-mash': require('@/assets/images/recipes/baby-avocado-pear-mash.jpg'),
+  'baby-sweet-potato-apple-mash': require('@/assets/images/recipes/baby-sweet-potato-apple-mash.jpg'),
+  'baby-squash-chicken-puree': require('@/assets/images/recipes/baby-squash-chicken-puree.jpg'),
+  'baby-apple-cinnamon-oatmeal': require('@/assets/images/recipes/baby-apple-cinnamon-oatmeal.jpg'),
 };
 
 export function recipePhoto(recipeId: string): ImageSource | undefined {
