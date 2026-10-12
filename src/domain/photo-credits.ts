@@ -33,7 +33,7 @@ export function creditLine(credit: PhotoCredit): string {
     case 'pixabay':
       return credit.author ? `${credit.author} on Pixabay` : 'Pixabay';
     case 'magnific':
-      return credit.author ? `${credit.author}, designed by Magnific` : 'Designed by Magnific';
+      return credit.author ? `Image by ${credit.author} on Magnific` : 'Designed by Magnific';
   }
 }
 

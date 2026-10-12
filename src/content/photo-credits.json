@@ -9,6 +9,13 @@
       "url": null
     },
     {
+      "id": "allergens",
+      "usedOn": "Introducing common allergens",
+      "source": "magnific",
+      "author": null,
+      "url": "https://www.magnific.com/free-photo/front-view-blue-plate-with-flour-jelly-eggs-different-nuts-white-background-sugar-color-dough-fruit-photo-pie-nut-sweet-cake_17231594.htm"
+    },
+    {
       "id": "baby-led-weaning",
       "usedOn": "Onboarding: baby-led weaning",
       "source": "magnific",
@@ -28,6 +35,13 @@
       "source": "magnific",
       "author": null,
       "url": null
+    },
+    {
+      "id": "baby-chicken-puree",
+      "usedOn": "Smooth chicken puree",
+      "source": "magnific",
+      "author": "valeria_aksakova",
+      "url": "https://www.magnific.com/free-photo/pumpkin-mashed-soup-cream-bowl_373052405.htm"
     },
     {
       "id": "baby-egg-mash",
