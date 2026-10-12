@@ -1,6 +1,7 @@
 import { SymbolView, type SymbolViewProps } from 'expo-symbols';
 import { Pressable, Text } from 'react-native';
 
+import { shadows } from '@/theme/colors';
 import { usePalette } from '@/theme/use-palette';
 
 import { cn } from './cn';
@@ -14,7 +15,10 @@ export type RoundIconButtonProps = {
   className?: string;
 };
 
-/** White round 44pt button for floating over a picture (back, close). */
+/**
+ * White round 48pt button with a soft floating shadow, matching the search
+ * button: back buttons in headers and over pictures, close.
+ */
 export function RoundIconButton({
   symbol,
   fallback,
@@ -30,9 +34,10 @@ export function RoundIconButton({
       onPress={onPress}
       hitSlop={8}
       className={cn(
-        'h-11 w-11 items-center justify-center rounded-full bg-surface active:opacity-70',
+        'h-12 w-12 items-center justify-center rounded-full bg-surface active:opacity-70',
         className,
       )}
+      style={{ boxShadow: shadows.floatTight }}
     >
       <SymbolView
         name={symbol}

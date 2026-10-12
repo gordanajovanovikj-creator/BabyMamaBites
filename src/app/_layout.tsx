@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import { StorageProvider } from '@/data/storage-provider';
 import { CalendarProvider } from '@/features/calendar/calendar-context';
 import { FavoritesProvider } from '@/features/favorites/favorites-context';
+import { headerBackButton } from '@/features/navigation/header-back-button';
 import { PlannerProvider } from '@/features/planner/planner-context';
 import { ProfileProvider, useProfile } from '@/features/profile/profile-context';
 import { RemindersProvider } from '@/features/reminders/reminders-context';
@@ -26,7 +27,14 @@ function RootStack() {
   if (!ready) return null;
 
   return (
-    <Stack screenOptions={{ headerShown: false }}>
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        headerShadowVisible: false,
+        headerBackButtonDisplayMode: 'minimal',
+        headerLeft: headerBackButton,
+      }}
+    >
       <Stack.Protected guard={!!profile}>
         <Stack.Screen name="(tabs)" />
         <Stack.Screen
