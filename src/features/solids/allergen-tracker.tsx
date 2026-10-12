@@ -1,4 +1,5 @@
-import { View } from 'react-native';
+import { router } from 'expo-router';
+import { Pressable, View } from 'react-native';
 
 import type { AllergenStatus } from '@/domain/food-log';
 import { allergens, type Allergen } from '@/domain/profile';
@@ -15,7 +16,10 @@ export type AllergenTrackerProps = {
   progress: Record<Allergen, AllergenStatus>;
 };
 
-/** The nine major US allergens and whether each has been offered. Status uses text, not just color. */
+/**
+ * The nine major US allergens and whether each has been offered; tap one to log
+ * it. Status uses text, not just color.
+ */
 export function AllergenTracker({ progress }: AllergenTrackerProps) {
   const tried = allergens.filter((a) => progress[a] !== 'not-tried').length;
   return (
@@ -23,7 +27,7 @@ export function AllergenTracker({ progress }: AllergenTrackerProps) {
       <View className="gap-1">
         <AppText variant="heading">Allergen tracker</AppText>
         <AppText variant="caption">
-          {tried} of {allergens.length} major allergens offered
+          {tried} of {allergens.length} major allergens offered. Tap one to log it.
         </AppText>
       </View>
       <View className="flex-row flex-wrap gap-2">
@@ -31,12 +35,15 @@ export function AllergenTracker({ progress }: AllergenTrackerProps) {
           const status = progress[a];
           const { mark, label } = statusText[status];
           return (
-            <View
+            <Pressable
               key={a}
-              accessible
+              accessibilityRole="button"
               accessibilityLabel={`${allergenLabels[a]}: ${label}`}
+              accessibilityHint="Opens Log a food with this allergen picked"
+              onPress={() => router.push({ pathname: '/solids/log', params: { allergen: a } })}
+              hitSlop={4}
               className={cn(
-                'min-h-11 flex-row items-center gap-2 rounded-full px-4 py-2',
+                'min-h-12 flex-row items-center gap-2 rounded-full px-4 py-2 active:opacity-70',
                 status === 'tried' && 'bg-surface-muted',
                 status === 'reaction' && 'bg-danger-bg',
                 status === 'not-tried' && 'border border-border',
@@ -52,7 +59,7 @@ export function AllergenTracker({ progress }: AllergenTrackerProps) {
               <AppText variant="label" color={status === 'reaction' ? 'danger' : 'ink'}>
                 {allergenLabels[a]}
               </AppText>
-            </View>
+            </Pressable>
           );
         })}
       </View>
