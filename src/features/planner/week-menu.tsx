@@ -155,7 +155,7 @@ function SlotCard({ date, slot }: { date: IsoDate; slot: MealSlot }) {
           </Pressable>
           {family ? (
             <View className="rounded-2xl bg-surface p-3">
-              <FamilyMealCard recipe={family.recipe} note={family.note} />
+              <FamilyMealCard recipe={family.recipe} note={family.note} compact />
             </View>
           ) : null}
           <Pressable
