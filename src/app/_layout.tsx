@@ -77,6 +77,12 @@ function RootStack() {
         />
       </Stack.Protected>
       <Stack.Screen name="onboarding" options={{ presentation: profile ? 'modal' : 'card' }} />
+      {/* Open before setup too: the subscription screen links here. Listed after
+          onboarding so a fresh install still starts at the welcome screen. */}
+      <Stack.Screen
+        name="legal/[doc]"
+        options={{ presentation: 'modal', headerShown: true, title: '' }}
+      />
     </Stack>
   );
 }

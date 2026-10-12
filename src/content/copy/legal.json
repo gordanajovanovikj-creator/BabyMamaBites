@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "id": "terms",
+      "title": "Terms of Use",
+      "updated": "October 12, 2026",
+      "intro": "[PLACEHOLDER - needs expert review] These Terms of Use apply when you download or use the MamaBabyBites app. By using the app, you agree to them. If you don't agree, please don't use the app.",
+      "sections": [
+        {
+          "heading": "What MamaBabyBites is",
+          "paragraphs": [
+            "MamaBabyBites offers recipes, feeding plans, articles, tips, reminders, tracking tools and an AI chat helper for parents of babies and young children. It's for adults (18 or older) using the app for themselves and their family."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Not medical advice",
+          "paragraphs": [
+            "Everything in the app, including articles, recipes, plans, tips and chat answers, is general information for education only. It isn't medical, pediatric or nutritional advice, and it doesn't create a doctor-patient or any other professional relationship.",
+            "Always ask your pediatrician, doctor or a registered dietitian about your child's and your own health, and never delay getting care because of something you read in the app. In an emergency, call 911. Please also read our Medical Disclaimer, which is part of these terms."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "You're in charge of your child's safety",
+          "paragraphs": [
+            "You decide what and how to feed your child. Always prepare food safely, offer textures that suit your child's age and development, check ingredients for allergens, and stay with your child while they eat."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "The AI chat helper",
+          "paragraphs": [
+            "Answers in the Ask tab are written by an AI model. They can be incomplete or wrong, and they aren't checked by a person before you see them. Use them as a starting point, not as advice, and check anything important with a professional. Don't use the chat for emergencies."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Subscriptions and free trial",
+          "paragraphs": [
+            "Some features need a paid subscription, bought through Apple's App Store. New subscribers may get a free trial."
+          ],
+          "bullets": [
+            "Payment is charged to your Apple account when you confirm the purchase, or when a free trial ends.",
+            "Your subscription renews automatically at the same price and length unless you turn off auto-renew at least 24 hours before the end of the current period.",
+            "You can manage or cancel your subscription in your iPhone Settings under your name, then Subscriptions.",
+            "Deleting the app doesn't cancel your subscription.",
+            "Refunds are handled by Apple under its own policies.",
+            "If we change prices, Apple will tell you before the new price applies."
+          ]
+        },
+        {
+          "heading": "Using the app fairly",
+          "paragraphs": [
+            "Please don't copy, resell or redistribute the app's content, try to break or reverse-engineer the app, overload the chat helper, or use the app for anything illegal or harmful."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Our content",
+          "paragraphs": [
+            "The app's text, recipes, drawings and design belong to MamaBabyBites or the people who licensed them to us. You may use them for your own family, but not for commercial purposes. Photos are credited where their licenses require it."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Changes and availability",
+          "paragraphs": [
+            "We may update, change or remove features and content at any time, and we may update these terms. If we make important changes, we'll let you know in the app. Using the app after a change means you accept the new terms."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Limits of our responsibility",
+          "paragraphs": [
+            "The app is provided \"as is\" and \"as available\", without warranties of any kind. To the fullest extent the law allows, MamaBabyBites isn't liable for any harm, loss or damage that comes from using or relying on the app or its content, including chat answers. Some places don't allow these limits, so they may not all apply to you."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Apple",
+          "paragraphs": [
+            "These terms are between you and MamaBabyBites, not Apple. Apple isn't responsible for the app or its content, and has no obligation to provide support for it. Apple and its subsidiaries are third-party beneficiaries of these terms and may enforce them."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Contact",
+          "paragraphs": [
+            "Questions about these terms? Use the support link on our App Store page."
+          ],
+          "bullets": []
+        }
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "lawyer"
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy Policy",
+      "updated": "October 12, 2026",
+      "intro": "[PLACEHOLDER - needs expert review] Your privacy matters, especially when it comes to your family. MamaBabyBites is built so that your information stays on your phone. This policy explains what the app stores, what it sends, and the choices you have.",
+      "sections": [
+        {
+          "heading": "No accounts, no tracking",
+          "paragraphs": [
+            "You don't need an account to use MamaBabyBites. We don't sell your information, show ads, or track you across other apps and websites."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What stays on your phone",
+          "paragraphs": [
+            "The details you enter are saved only on your device, in the app's own storage. We don't receive them. This includes:"
+          ],
+          "bullets": [
+            "Your baby's name, birth date and due date",
+            "How you're feeding, foods your household avoids, and your cooking time",
+            "Your food log, allergen tracker, favorites, meal plan, freezer list and calendar",
+            "Your reminder settings"
+          ]
+        },
+        {
+          "heading": "Reminders",
+          "paragraphs": [
+            "Reminders are scheduled on your phone. They never include your baby's name, and you can turn them off at any time in the app or in your iPhone Settings."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "The Ask chat",
+          "paragraphs": [
+            "When you use the Ask tab, the questions you type and your baby's age in months are sent to our server and then to Anthropic, the company that provides the AI model, to write an answer. Your baby's name, birth date, allergies and other details aren't sent.",
+            "The app doesn't save your chat on your phone or on our server. Anthropic may keep messages for a limited time under its own policies, for example for safety. Please don't type names, contact details or other personal information into the chat."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Subscriptions",
+          "paragraphs": [
+            "Purchases are handled by Apple. We don't see or store your payment details. Apple tells the app whether you have an active subscription."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Children",
+          "paragraphs": [
+            "The app is meant for parents and caregivers, not for children to use. We don't knowingly collect personal information from children."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Deleting your information",
+          "paragraphs": [
+            "Because your information lives on your phone, you're in control. Deleting the app removes everything it stored. You can also change your details at any time in Settings."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Changes to this policy",
+          "paragraphs": [
+            "If we change how the app handles information, we'll update this policy and tell you in the app before the change applies."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Contact",
+          "paragraphs": [
+            "Questions about your privacy? Use the support link on our App Store page."
+          ],
+          "bullets": []
+        }
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "lawyer"
+    }
+  ]
+}

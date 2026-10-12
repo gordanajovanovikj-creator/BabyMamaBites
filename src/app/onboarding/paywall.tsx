@@ -1,3 +1,4 @@
+import { router } from 'expo-router';
 import { useState } from 'react';
 import { Alert, Platform, View } from 'react-native';
 
@@ -138,6 +139,20 @@ export default function PaywallScreen() {
         disabled={disabled}
         onPress={() => run(restorePurchases)}
       />
+      <View className="flex-row justify-center gap-6">
+        <Button
+          label="Terms of Use"
+          variant="quiet"
+          size="compact"
+          onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'terms' } })}
+        />
+        <Button
+          label="Privacy Policy"
+          variant="quiet"
+          size="compact"
+          onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'privacy' } })}
+        />
+      </View>
     </Screen>
   );
 }

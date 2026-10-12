@@ -1,4 +1,5 @@
 import disclaimers from './copy/disclaimers.json';
+import legal from './copy/legal.json';
 import medicalDisclaimer from './copy/medical-disclaimer.json';
 import ageRules from './config/age-rules.json';
 import insights from './insights.json';
@@ -34,6 +35,7 @@ const UK_TERMS = [
 const bundles = {
   disclaimers,
   medicalDisclaimer,
+  legal,
   ageRules,
   insights,
   guides,

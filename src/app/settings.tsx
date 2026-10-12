@@ -126,6 +126,16 @@ export default function SettingsScreen() {
         detail="Educational information only, not medical advice"
         onPress={() => router.push('/disclaimer')}
       />
+      <LinkRow
+        label="Terms of Use"
+        detail="The rules for using the app and subscriptions"
+        onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'terms' } })}
+      />
+      <LinkRow
+        label="Privacy Policy"
+        detail="Your details stay on this phone"
+        onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'privacy' } })}
+      />
     </Screen>
   );
 }

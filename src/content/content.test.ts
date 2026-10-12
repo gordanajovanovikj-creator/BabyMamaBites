@@ -7,6 +7,7 @@ import {
   getDisclaimer,
   medicalDisclaimer,
 } from './copy';
+import { getLegalDocument } from './legal';
 import { copyCollectionSchema, PLACEHOLDER_MARKER } from './schemas';
 
 describe('bundled content', () => {
@@ -45,5 +46,13 @@ describe('bundled content', () => {
     }
     expect(articleDisclaimerNote.body).toMatch(/911/);
     expect(chokingDisclaimer.body).toMatch(/911/);
+  });
+
+  it('has Terms of Use and a Privacy Policy, marked for legal review', () => {
+    for (const id of ['terms', 'privacy']) {
+      const doc = getLegalDocument(id);
+      expect(doc).toBeDefined();
+      expect(doc!.intro.includes(PLACEHOLDER_MARKER)).toBe(doc!.reviewStatus === 'placeholder');
+    }
   });
 });
