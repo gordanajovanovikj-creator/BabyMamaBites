@@ -141,8 +141,8 @@
   "recipes": [
     {
       "id": "overnight-oats",
-      "title": "Overnight oats in a jar",
-      "summary": "[PLACEHOLDER - needs expert review] Stir it together tonight; breakfast is waiting in the fridge tomorrow.",
+      "title": "Creamy berry vanilla overnight oats",
+      "summary": "[PLACEHOLDER - needs expert review] Oats, chia and Greek yogurt for lasting energy, fiber and protein. Stir it tonight; breakfast is waiting tomorrow.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🥣",
       "tone": "sky",
@@ -161,21 +161,27 @@
       "allergens": ["milk"],
       "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
       "ingredients": [
-        "1/2 cup rolled oats",
-        "1/2 cup milk",
-        "1/4 cup plain yogurt",
-        "1/2 cup berries or chopped fruit",
-        "1 tsp maple syrup (optional)",
-        "Pinch of cinnamon"
+        "1/2 cup old-fashioned rolled oats (not instant, which gets too mushy)",
+        "1/2 cup milk or oat milk",
+        "1/4 cup plain or vanilla Greek yogurt",
+        "1 tbsp chia seeds",
+        "1 tsp maple syrup or honey (optional)",
+        "1/2 tsp vanilla extract",
+        "1/3 cup fresh or frozen berries (strawberries, blueberries or raspberries)"
       ],
       "steps": [
-        "Add the oats, milk, yogurt and cinnamon to a jar and stir well.",
-        "Top with the fruit, close the lid and refrigerate overnight (or at least 4 hours).",
-        "Stir and eat cold, straight from the jar. Add maple syrup if you like."
+        "In a clean 16 oz mason jar or airtight container, stir the milk, yogurt, maple syrup and vanilla until smooth.",
+        "Add the oats and chia seeds and stir well, so all the oats are covered and no clumps of chia are left at the bottom.",
+        "Gently fold in the berries. Frozen berries thaw overnight and add their juice.",
+        "Close the lid and refrigerate for at least 4 hours; overnight (6 to 8 hours) gives the creamiest texture.",
+        "In the morning, stir and eat cold straight from the jar, or warm it in the microwave for 45 to 60 seconds."
       ],
       "tips": [
+        "Warming it up? Spoon it into a microwave-safe bowl first, since not every jar is microwave-safe, and stir before eating.",
+        "Top with chopped nuts, a drizzle of peanut butter or extra fruit just before eating. Nuts and peanut butter add common allergens.",
+        "Honey is fine for you, but never give honey to a baby under 12 months.",
         "Make 3 or 4 jars at once; they keep in the fridge for up to 3 days.",
-        "Swap the milk and yogurt for fortified soy versions to make it dairy-free."
+        "Any milk works, including almond or soy milk (these add tree nut or soy). For dairy-free, use a plant milk and a dairy-free yogurt."
       ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
