@@ -9,6 +9,13 @@
       "url": null
     },
     {
+      "id": "overnight-oats",
+      "usedOn": "Creamy berry vanilla overnight oats",
+      "source": "magnific",
+      "author": "stockking",
+      "url": "https://www.magnific.com/free-photo/side-view-overnight-oats-with-fresh-strawberries-blueberries-nuts-glass-jar-rustic-table_8668920.htm"
+    },
+    {
       "id": "allergens",
       "usedOn": "Introducing common allergens",
       "source": "magnific",
@@ -735,13 +742,6 @@
       "source": "pixabay",
       "author": "Be_Stasya",
       "url": "https://pixabay.com/photos/berries-chia-pudding-breakfast-6514670/"
-    },
-    {
-      "id": "overnight-oats",
-      "usedOn": "Overnight oats in a jar",
-      "source": "pixabay",
-      "author": "ponce_photography",
-      "url": "https://pixabay.com/photos/yogurt-strawberries-food-fruit-1442034/"
     },
     {
       "id": "newborn-overnight-oats",
