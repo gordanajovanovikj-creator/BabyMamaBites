@@ -162,6 +162,17 @@ const photos: Record<string, ImageSource> = {
   'toddler-baked-apple-slices': require('@/assets/images/recipes/toddler-baked-apple-slices.jpg'),
   'toddler-pb-banana-oat-bites': require('@/assets/images/recipes/toddler-pb-banana-oat-bites.jpg'),
   'toddler-broccoli-potato-tots': require('@/assets/images/recipes/toddler-broccoli-potato-tots.jpg'),
+  'baby-avocado-puree': require('@/assets/images/recipes/baby-avocado-puree.jpg'),
+  'baby-carrot-puree': require('@/assets/images/recipes/baby-carrot-puree.jpg'),
+  'baby-banana-mash': require('@/assets/images/recipes/baby-banana-mash.jpg'),
+  'baby-apple-puree': require('@/assets/images/recipes/baby-apple-puree.jpg'),
+  'baby-squash-puree': require('@/assets/images/recipes/baby-squash-puree.jpg'),
+  'baby-pumpkin-puree': require('@/assets/images/recipes/baby-pumpkin-puree.jpg'),
+  'baby-zucchini-puree': require('@/assets/images/recipes/baby-zucchini-puree.jpg'),
+  'baby-homemade-oatmeal': require('@/assets/images/recipes/baby-homemade-oatmeal.jpg'),
+  'baby-pear-banana-blend': require('@/assets/images/recipes/baby-pear-banana-blend.jpg'),
+  'baby-carrot-squash-puree': require('@/assets/images/recipes/baby-carrot-squash-puree.jpg'),
+  'baby-zucchini-sweet-potato-puree': require('@/assets/images/recipes/baby-zucchini-sweet-potato-puree.jpg'),
 };
 
 export function recipePhoto(recipeId: string): ImageSource | undefined {

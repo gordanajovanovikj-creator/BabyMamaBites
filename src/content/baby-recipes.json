@@ -337,6 +337,366 @@
       "reviewer": "pediatric dietitian"
     },
     {
+      "id": "baby-avocado-puree",
+      "title": "Smooth avocado puree",
+      "summary": "[PLACEHOLDER - needs expert review] Creamy, no-cook avocado, full of healthy fats.",
+      "icon": "leaf.fill",
+      "emoji": "🥑",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 2,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "nursing-avocado-toast",
+        "note": "Mash the other half of the avocado onto your own toast."
+      },
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1/2 ripe avocado", "1 to 2 tsp breast milk, formula or water"],
+      "steps": [
+        "Scoop the avocado into a bowl and mash well with a fork.",
+        "Blend or whisk with the liquid until completely smooth, with no lumps."
+      ],
+      "tips": [
+        "Serve fresh; cut avocado turns brown quickly. Keep leftovers covered in the fridge and use within a day."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-carrot-puree",
+      "title": "Steamed carrot puree",
+      "summary": "[PLACEHOLDER - needs expert review] A smooth, naturally sweet first vegetable.",
+      "icon": "carrot.fill",
+      "emoji": "🥕",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 4,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "lentil-soup",
+        "note": "Steam extra carrots and add them to your own lentil soup."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1 large carrot", "Water, breast milk or formula to thin"],
+      "steps": [
+        "Peel the carrot and slice it into thin rounds.",
+        "Steam for 10 to 12 minutes, until very soft.",
+        "Blend until completely smooth. Thin with a little water, breast milk or formula until runny and smooth."
+      ],
+      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-banana-mash",
+      "title": "Smooth banana mash",
+      "summary": "[PLACEHOLDER - needs expert review] No cooking needed: ripe banana mashed until smooth.",
+      "icon": "drop.fill",
+      "emoji": "🍌",
+      "tone": "accent",
+      "activeMinutes": 3,
+      "totalMinutes": 3,
+      "servings": 1,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "banana-oat-smoothie",
+        "note": "Blend the rest of the banana into your own smoothie."
+      },
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 ripe banana with brown spots",
+        "Breast milk, formula or water to thin (optional)"
+      ],
+      "steps": [
+        "Peel the banana and mash it well with a fork until no lumps remain.",
+        "Thin with a little breast milk, formula or water if needed."
+      ],
+      "tips": ["Serve fresh; mashed banana browns quickly."],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-apple-puree",
+      "title": "Steamed apple puree",
+      "summary": "[PLACEHOLDER - needs expert review] Sweet apple, steamed soft and blended smooth.",
+      "icon": "drop.fill",
+      "emoji": "🍎",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 4,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "apple-pb",
+        "note": "Have the rest of the apple with peanut butter as your own snack."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1 sweet apple, such as Gala or Fuji", "Water for steaming"],
+      "steps": [
+        "Peel, core and chop the apple.",
+        "Steam for 8 to 10 minutes, until tender.",
+        "Blend until completely smooth, adding a little of the steaming water as needed."
+      ],
+      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-squash-puree",
+      "title": "Steamed butternut squash puree",
+      "summary": "[PLACEHOLDER - needs expert review] Velvety squash, rich in vitamins A and C.",
+      "icon": "drop.fill",
+      "emoji": "🎃",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "nursing-sweet-potato-coconut-stew",
+        "note": "Steam extra squash to add to your own stew."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 cup peeled, cubed butternut squash",
+        "Water, breast milk or formula to thin"
+      ],
+      "steps": [
+        "Steam the squash for 12 to 15 minutes, until very soft.",
+        "Blend until completely smooth. Thin with a little water, breast milk or formula until runny and smooth."
+      ],
+      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-pumpkin-puree",
+      "title": "Steamed pumpkin puree",
+      "summary": "[PLACEHOLDER - needs expert review] Smooth, comforting pumpkin, fresh or from a can.",
+      "icon": "drop.fill",
+      "emoji": "🎃",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "coconut-curry-chickpea-soup",
+        "note": "Use the rest of the pumpkin in your own soup or curry."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1 cup peeled fresh pumpkin cubes, or canned 100% pumpkin", "Water to thin"],
+      "steps": [
+        "Fresh pumpkin: steam the cubes for about 15 minutes, until tender, then blend until smooth.",
+        "Canned pumpkin: warm it gently with a splash of water."
+      ],
+      "tips": [
+        "Check the can says 100% pumpkin; pumpkin pie filling has added sweeteners and spices.",
+        "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-zucchini-puree",
+      "title": "Steamed zucchini puree",
+      "summary": "[PLACEHOLDER - needs expert review] A very mild first green vegetable.",
+      "icon": "leaf.fill",
+      "emoji": "🥒",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 3,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "turkey-meatball-zoodle-box",
+        "note": "Steam a little zucchini for baby while you make your zucchini noodles."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1 small zucchini"],
+      "steps": [
+        "Trim the ends and chop the zucchini.",
+        "Steam for 6 to 8 minutes, until tender.",
+        "Blend until smooth."
+      ],
+      "tips": [
+        "Zucchini is watery; if the puree is too runny, stir in a little infant cereal to thicken it.",
+        "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-homemade-oatmeal",
+      "title": "Homemade oatmeal puree",
+      "summary": "[PLACEHOLDER - needs expert review] Finely ground oats cooked into a smooth, creamy first grain.",
+      "icon": "drop.fill",
+      "emoji": "🥣",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 1,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "overnight-oats",
+        "note": "Stir up your overnight oats while baby has theirs."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "2 tbsp rolled oats",
+        "1/3 cup water",
+        "Breast milk or formula to thin (optional)"
+      ],
+      "steps": [
+        "Grind the oats into a fine flour in a blender.",
+        "Cook the oat flour in the water over medium-low heat for 3 to 4 minutes, stirring constantly, until smooth and creamy.",
+        "Let it cool, then stir in a little breast milk or formula if you like."
+      ],
+      "tips": [
+        "Homemade oats don’t have added iron. Iron-fortified infant cereal is an easy way to add iron at this age.",
+        "Some oats are processed with wheat; check the label if you avoid gluten.",
+        "Make it fresh, and throw away what your baby doesn’t eat."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-pear-banana-blend",
+      "title": "Pear and banana blend",
+      "summary": "[PLACEHOLDER - needs expert review] Soft pear and banana, blended silky smooth.",
+      "icon": "drop.fill",
+      "emoji": "🍐",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 2,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "nursing-spinach-pear-quinoa-salad",
+        "note": "Slice the rest of the pear into your own salad."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1 ripe pear", "1/2 ripe banana"],
+      "steps": [
+        "Peel and core the pear, then steam it for about 5 minutes to soften.",
+        "Blend the pear and banana until silky smooth."
+      ],
+      "tips": [
+        "Offer each food on its own a few times before you mix them together.",
+        "Serve fresh; banana browns quickly."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-carrot-squash-puree",
+      "title": "Carrot and butternut squash puree",
+      "summary": "[PLACEHOLDER - needs expert review] A bright orange blend of carrot and squash.",
+      "icon": "carrot.fill",
+      "emoji": "🥕",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "chicken-stir-fry",
+        "note": "Steam extra carrots for baby before you stir-fry the family’s."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 medium carrot",
+        "1/2 cup cubed butternut squash",
+        "Water, breast milk or formula to thin"
+      ],
+      "steps": [
+        "Peel and chop the carrot and squash.",
+        "Steam together for 12 to 15 minutes, until completely tender.",
+        "Blend until smooth. Thin with a little water, breast milk or formula until runny and smooth."
+      ],
+      "tips": [
+        "Offer each food on its own a few times before you mix them together.",
+        "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-zucchini-sweet-potato-puree",
+      "title": "Zucchini and sweet potato puree",
+      "summary": "[PLACEHOLDER - needs expert review] Mild zucchini balanced with naturally sweet sweet potato.",
+      "icon": "leaf.fill",
+      "emoji": "🍠",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["baby-6m"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "sweet-potato-black-bean-quinoa-bowls",
+        "note": "Roast extra sweet potato for your own quinoa bowls."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1/2 small sweet potato", "1/2 small zucchini"],
+      "steps": [
+        "Peel the sweet potato and chop both vegetables.",
+        "Steam together for about 12 minutes, until tender.",
+        "Blend until completely smooth."
+      ],
+      "tips": [
+        "Offer each food on its own a few times before you mix them together.",
+        "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
       "id": "baby-avocado-banana-mash",
       "title": "Avocado and banana mash",
       "summary": "[PLACEHOLDER - needs expert review] No cooking, just a fork and two ripe fruits.",

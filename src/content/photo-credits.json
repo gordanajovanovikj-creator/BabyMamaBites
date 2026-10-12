@@ -513,6 +513,13 @@
       "url": "https://pixabay.com/photos/autumn-soup-pumpkin-harvest-8305097/"
     },
     {
+      "id": "baby-carrot-squash-puree",
+      "usedOn": "Carrot and butternut squash puree",
+      "source": "pixabay",
+      "author": "congerdesign",
+      "url": "https://pixabay.com/photos/pumpkin-soup-soup-2972858/"
+    },
+    {
       "id": "snack-plate",
       "usedOn": "Cheese, crackers and fruit plate",
       "source": "pixabay",
@@ -765,6 +772,13 @@
       "url": "https://pixabay.com/photos/bento-lunch-box-japanese-food-7006657/"
     },
     {
+      "id": "baby-homemade-oatmeal",
+      "usedOn": "Homemade oatmeal puree",
+      "source": "pixabay",
+      "author": "Pexels",
+      "url": "https://pixabay.com/photos/oatmeal-cereals-strawberries-1839515/"
+    },
+    {
       "id": "huevos-rancheros-bowls",
       "usedOn": "Huevos rancheros bowls",
       "source": "pixabay",
@@ -989,6 +1003,13 @@
       "url": "https://pixabay.com/photos/chocolate-oatmeal-food-sweet-3477519/"
     },
     {
+      "id": "baby-pear-banana-blend",
+      "usedOn": "Pear and banana blend",
+      "source": "pixabay",
+      "author": "LubosHouska",
+      "url": "https://pixabay.com/photos/fruit-vitamins-health-sweet-1213041/"
+    },
+    {
       "id": "smoothie-pear-cinnamon",
       "usedOn": "Pear cinnamon oat",
       "source": "pixabay",
@@ -1101,6 +1122,20 @@
       "url": "https://pixabay.com/photos/dips-sauces-glass-avocado-tomatoes-623582/"
     },
     {
+      "id": "baby-avocado-puree",
+      "usedOn": "Smooth avocado puree",
+      "source": "pixabay",
+      "author": "stevepb",
+      "url": "https://pixabay.com/photos/avocado-salad-fresh-food-829092/"
+    },
+    {
+      "id": "baby-banana-mash",
+      "usedOn": "Smooth banana mash",
+      "source": "pixabay",
+      "author": "Hans",
+      "url": "https://pixabay.com/photos/banana-fruit-healthy-yellow-5734/"
+    },
+    {
       "id": "toddler-baked-apple-slices",
       "usedOn": "Soft baked cinnamon apple slices",
       "source": "pixabay",
@@ -1143,6 +1178,13 @@
       "url": "https://pixabay.com/photos/top-view-basil-herbs-bowl-closeup-1248955/"
     },
     {
+      "id": "baby-apple-puree",
+      "usedOn": "Steamed apple puree",
+      "source": "pixabay",
+      "author": "neelam279",
+      "url": "https://pixabay.com/photos/apple-compote-apple-harvest-7487506/"
+    },
+    {
       "id": "baby-broccoli-potato-mash",
       "usedOn": "Steamed broccoli and potato mash",
       "source": "pixabay",
@@ -1150,11 +1192,39 @@
       "url": "https://pixabay.com/photos/broccoli-vegetables-healthy-cook-1974801/"
     },
     {
+      "id": "baby-squash-puree",
+      "usedOn": "Steamed butternut squash puree",
+      "source": "pixabay",
+      "author": "wowwandee",
+      "url": "https://pixabay.com/photos/cream-soup-food-vegetable-pumpkin-1285948/"
+    },
+    {
       "id": "baby-carrot-zucchini-fries",
       "usedOn": "Steamed carrot and zucchini \"fries\" with yogurt dip",
       "source": "pixabay",
       "author": "narya",
       "url": "https://pixabay.com/photos/vegetables-starter-fresh-crisp-815777/"
+    },
+    {
+      "id": "baby-carrot-puree",
+      "usedOn": "Steamed carrot puree",
+      "source": "pixabay",
+      "author": "Einladung_zum_Essen",
+      "url": "https://pixabay.com/photos/soup-carrot-ginger-food-meal-2006317/"
+    },
+    {
+      "id": "baby-pumpkin-puree",
+      "usedOn": "Steamed pumpkin puree",
+      "source": "pixabay",
+      "author": "RosZie",
+      "url": "https://pixabay.com/photos/pumpkin-soup-soup-pumpkin-cream-soup-7534625/"
+    },
+    {
+      "id": "baby-zucchini-puree",
+      "usedOn": "Steamed zucchini puree",
+      "source": "pixabay",
+      "author": "rottonara",
+      "url": "https://pixabay.com/photos/soup-vegetables-healthy-vegetarian-1825590/"
     },
     {
       "id": "nursing-strawberry-banana-oat-smoothie",
@@ -1309,6 +1379,13 @@
       "source": "pixabay",
       "author": "422737",
       "url": "https://pixabay.com/photos/mashed-potatoes-potatoes-meal-food-439984/"
+    },
+    {
+      "id": "baby-zucchini-sweet-potato-puree",
+      "usedOn": "Zucchini and sweet potato puree",
+      "source": "pixabay",
+      "author": "RitaE",
+      "url": "https://pixabay.com/photos/potato-soup-potato-soup-wild-garlic-2152254/"
     },
     {
       "id": "baby-zucchini-white-bean-mash",
