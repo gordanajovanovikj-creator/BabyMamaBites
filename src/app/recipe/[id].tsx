@@ -12,6 +12,7 @@ import { babyAge } from '@/domain/stage';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
+import { FamilyMealCard } from '@/features/recipes/family-meal-card';
 import { PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { recipePhoto } from '@/features/recipes/recipe-photos';
@@ -168,33 +169,6 @@ export default function RecipeScreen() {
         ))}
       </View>
 
-      {family ? (
-        <>
-          <SectionTitle>Family meal</SectionTitle>
-          <View className="px-5 pt-2">
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={`Family meal: ${family.recipe.title}. ${family.note} Opens the recipe.`}
-              onPress={() =>
-                router.push({ pathname: '/recipe/[id]', params: { id: family.recipe.id } })
-              }
-              className="gap-2 rounded-3xl bg-surface-muted p-4 active:opacity-70"
-            >
-              <View className="flex-row items-center gap-3">
-                <AppText size="3xl">{family.recipe.emoji}</AppText>
-                <AppText variant="label" size="lg" className="flex-1 font-bold">
-                  {family.recipe.title}
-                </AppText>
-                <AppText variant="heading" color="primary">
-                  ›
-                </AppText>
-              </View>
-              <AppText>{family.note}</AppText>
-            </Pressable>
-          </View>
-        </>
-      ) : null}
-
       {recipe.tips.length ? (
         <>
           <SectionTitle>Tips</SectionTitle>
@@ -202,6 +176,15 @@ export default function RecipeScreen() {
             {recipe.tips.map((t) => (
               <AppText key={t}>• {t}</AppText>
             ))}
+          </View>
+        </>
+      ) : null}
+
+      {family ? (
+        <>
+          <SectionTitle>Make it a family meal</SectionTitle>
+          <View className="px-5 pt-2">
+            <FamilyMealCard recipe={family.recipe} note={family.note} />
           </View>
         </>
       ) : null}

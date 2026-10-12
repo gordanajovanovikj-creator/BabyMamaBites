@@ -18,6 +18,7 @@ import {
 } from '@/domain/planner';
 import { familyMealFor } from '@/domain/recipes';
 import { useHousehold } from '@/features/profile/use-household';
+import { FamilyMealCard } from '@/features/recipes/family-meal-card';
 import { AppText, Card, cn } from '@/ui';
 
 import { usePlanner } from './planner-context';
@@ -153,29 +154,9 @@ function SlotCard({ date, slot }: { date: IsoDate; slot: MealSlot }) {
             </View>
           </Pressable>
           {family ? (
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={`Family meal: ${family.recipe.title}. ${family.note} Opens the recipe.`}
-              onPress={() =>
-                router.push({ pathname: '/recipe/[id]', params: { id: family.recipe.id } })
-              }
-              className="min-h-12 gap-1 rounded-2xl bg-surface p-3 active:opacity-70"
-            >
-              <View className="flex-row items-center gap-3">
-                <AppText size="2xl">{family.recipe.emoji}</AppText>
-                <View className="flex-1">
-                  <AppText variant="caption" size="xs">
-                    Family meal
-                  </AppText>
-                  <AppText variant="label" className="font-bold">
-                    {family.recipe.title}
-                  </AppText>
-                </View>
-              </View>
-              <AppText variant="caption" size="sm">
-                {family.note}
-              </AppText>
-            </Pressable>
+            <View className="rounded-2xl bg-surface p-3">
+              <FamilyMealCard recipe={family.recipe} note={family.note} />
+            </View>
           ) : null}
           <Pressable
             accessibilityRole="button"
