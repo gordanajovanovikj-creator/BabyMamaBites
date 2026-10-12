@@ -1027,6 +1027,12 @@
       "publisher": "FDA",
       "title": "Once Baby Arrives: Food Safety for Moms-to-Be",
       "url": "https://www.fda.gov/food/people-risk-foodborne-illness/once-baby-arrives-food-safety-moms-be"
+    },
+    {
+      "id": "medline-choking-infant",
+      "publisher": "MedlinePlus (NIH)",
+      "title": "Choking - infant under 1 year",
+      "url": "https://medlineplus.gov/ency/article/000048.htm"
     }
   ]
 }

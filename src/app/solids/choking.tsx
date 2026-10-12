@@ -1,3 +1,4 @@
+import { router } from 'expo-router';
 import { Linking, View } from 'react-native';
 
 import { chokingDisclaimer } from '@/content/copy';
@@ -36,6 +37,15 @@ export default function ChokingScreen() {
         <Bullets items={chokingGuide.signs} color="danger" />
         <Button label="Call 911" onPress={() => Linking.openURL('tel:911').catch(() => {})} />
       </View>
+
+      <Button
+        label="Read: Choking vs. gagging guide"
+        variant="secondary"
+        accessibilityLabel="Read the choking vs. gagging guide, with first aid steps"
+        onPress={() =>
+          router.push({ pathname: '/solids/article/[id]', params: { id: 'gagging-vs-choking' } })
+        }
+      />
 
       {chokingGuide.groups.map((g) => (
         <Card key={g.id} className="gap-3">
