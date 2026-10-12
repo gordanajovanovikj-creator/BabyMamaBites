@@ -163,8 +163,6 @@ export default function BabyScreen() {
 
             {week ? <WeekCard week={week} totalWeeks={planWeeks.length} /> : null}
 
-            <Button label="Log a food" onPress={() => router.push('/solids/log')} />
-
             <Card className="gap-1">
               <View className="flex-row items-baseline justify-between">
                 <AppText variant="heading">Food log</AppText>
@@ -190,11 +188,9 @@ export default function BabyScreen() {
                 </AppText>
               ) : null}
             </Card>
-          </View>
 
-          <ArticlesRow />
+            <Button label="Log a food" onPress={() => router.push('/solids/log')} />
 
-          <View className="gap-4 px-5">
             <MakeAheadCard />
 
             <Card
@@ -208,7 +204,11 @@ export default function BabyScreen() {
                 Foods to avoid or change by age, and how to tell gagging from choking.
               </AppText>
             </Card>
+          </View>
 
+          <ArticlesRow />
+
+          <View className="px-5">
             <Notice
               tone="caution"
               title="Draft from official sources"
