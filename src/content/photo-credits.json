@@ -639,6 +639,20 @@
       "url": "https://pixabay.com/photos/gyros-restaurant-meal-yummy-cook-674425/"
     },
     {
+      "id": "toddler-turkey-meatballs",
+      "usedOn": "Mini turkey and zucchini meatballs",
+      "source": "pixabay",
+      "author": "stina_magnus",
+      "url": "https://pixabay.com/photos/chicken-meatballs-mediterian-food-1018988/"
+    },
+    {
+      "id": "welcome-mom-baby",
+      "usedOn": "Month 1 guide",
+      "source": "pixabay",
+      "author": "BabyAayansh",
+      "url": "https://pixabay.com/photos/baby-cute-portrait-child-indian-7318667/"
+    },
+    {
       "id": "nursing-barley-milk-soup",
       "usedOn": "Moroccan barley milk soup (hssoua)",
       "source": "pixabay",
@@ -660,11 +674,39 @@
       "url": "https://pixabay.com/photos/food-eat-diet-chewy-granola-bar-2202344/"
     },
     {
+      "id": "feeling-low",
+      "usedOn": "Not feeling like yourself?",
+      "source": "pixabay",
+      "author": "Layenday",
+      "url": "https://pixabay.com/photos/tea-teacup-flowers-vase-warm-tea-6405249/"
+    },
+    {
       "id": "nursing-oatmeal-chocolate-chip-cookies",
       "usedOn": "Oatmeal chocolate chip cookies",
       "source": "pixabay",
       "author": "StockSnap",
       "url": "https://pixabay.com/photos/chocolate-chip-cookies-food-sweets-2562000/"
+    },
+    {
+      "id": "family-kitchen",
+      "usedOn": "Onboarding: \"We've got you, mama\"",
+      "source": "pixabay",
+      "author": "smpratt90",
+      "url": "https://pixabay.com/photos/family-newborn-baby-child-infant-2610205/"
+    },
+    {
+      "id": "spoon-feeding",
+      "usedOn": "Onboarding: spoon feeding",
+      "source": "pixabay",
+      "author": "5686750",
+      "url": "https://pixabay.com/photos/baby-eating-firsts-food-child-2423896/"
+    },
+    {
+      "id": "solids-two-textures",
+      "usedOn": "One meal, two textures",
+      "source": "pixabay",
+      "author": "MapleHorizons",
+      "url": "https://pixabay.com/photos/food-healthy-diet-nutrients-3245382/"
     },
     {
       "id": "lentil-soup",
@@ -723,6 +765,13 @@
       "url": "https://pixabay.com/photos/fig-milk-shake-milk-shake-smoothie-7267991/"
     },
     {
+      "id": "baby-peanut-oatmeal",
+      "usedOn": "Peanut oat cereal",
+      "source": "pixabay",
+      "author": "FlitsArt",
+      "url": "https://pixabay.com/photos/chocolate-oatmeal-food-sweet-3477519/"
+    },
+    {
       "id": "smoothie-pear-cinnamon",
       "usedOn": "Pear cinnamon oat",
       "source": "pixabay",
@@ -749,6 +798,34 @@
       "source": "pixabay",
       "author": "HealthyFoodImages",
       "url": "https://pixabay.com/photos/smoothie-turmix-raspberry-fitness-463331/"
+    },
+    {
+      "id": "purees-vs-finger-foods",
+      "usedOn": "Purees or finger foods?",
+      "source": "pixabay",
+      "author": "DayronV",
+      "url": "https://pixabay.com/photos/cookie-yummy-food-dessert-sweet-1577040/"
+    },
+    {
+      "id": "newborn-rest",
+      "usedOn": "Rest counts, too",
+      "source": "pixabay",
+      "author": "slaapwijsheid",
+      "url": "https://pixabay.com/photos/woman-nap-bedtime-mattress-room-8121473/"
+    },
+    {
+      "id": "baby-pear-puree",
+      "usedOn": "Ripe pear puree",
+      "source": "pixabay",
+      "author": "Taken",
+      "url": "https://pixabay.com/photos/apple-sauce-chunky-applesauce-bowl-544676/"
+    },
+    {
+      "id": "baby-salmon-sweet-potato",
+      "usedOn": "Salmon and sweet potato mash",
+      "source": "pixabay",
+      "author": "tomwieden",
+      "url": "https://pixabay.com/photos/mashed-sweet-potato-food-dish-meal-6218759/"
     },
     {
       "id": "smoothie-salted-caramel",
@@ -840,6 +917,13 @@
       "source": "pixabay",
       "author": "alexbadulescu",
       "url": "https://pixabay.com/photos/easter-tomato-sauce-italian-pasta-2686112/"
+    },
+    {
+      "id": "toddler-overnight-oats",
+      "usedOn": "Toddler overnight oats",
+      "source": "pixabay",
+      "author": "braetschit",
+      "url": "https://pixabay.com/photos/porridge-cereal-breakfast-vegan-2073645/"
     },
     {
       "id": "smoothie-triple-berry",

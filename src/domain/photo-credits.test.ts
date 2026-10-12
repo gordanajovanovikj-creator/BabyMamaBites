@@ -40,7 +40,7 @@ describe('bundled photo credits', () => {
     const md = readFileSync(join(__dirname, '../../docs/photo-credits.md'), 'utf8');
     const stock = md
       .split('\n')
-      .filter((l) => l.startsWith('| ') && /\| (Pixabay|Pexels)\s+\||Dreamstime|Magnific/.test(l))
+      .filter((l) => l.startsWith('| ') && /\| (Pixabay|Pexels)[\s,]|Dreamstime|Magnific/.test(l))
       .map((l) => l.split('|')[1].trim());
     const ids = new Set(photoCredits.map((c) => c.id));
     expect(stock.filter((id) => !ids.has(id))).toEqual([]);
