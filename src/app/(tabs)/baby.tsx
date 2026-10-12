@@ -149,6 +149,10 @@ export default function BabyScreen() {
 
             <WeekMenu />
 
+            <FreezerCard />
+
+            <AllergenTracker progress={allergenProgress(entries)} />
+
             {finished ? (
               <Notice
                 title="You've finished the 26-week plan"
@@ -157,14 +161,8 @@ export default function BabyScreen() {
             ) : null}
 
             {week ? <WeekCard week={week} totalWeeks={planWeeks.length} /> : null}
-          </View>
 
-          <ArticlesRow />
-
-          <View className="gap-4 px-5">
             <Button label="Log a food" onPress={() => router.push('/solids/log')} />
-
-            <AllergenTracker progress={allergenProgress(entries)} />
 
             <Card className="gap-1">
               <View className="flex-row items-baseline justify-between">
@@ -191,9 +189,11 @@ export default function BabyScreen() {
                 </AppText>
               ) : null}
             </Card>
+          </View>
 
-            <FreezerCard />
+          <ArticlesRow />
 
+          <View className="gap-4 px-5">
             <Card
               tone="accent"
               className="gap-1"
