@@ -2266,6 +2266,606 @@
       "tips": ["Check BBQ sauce labels: some contain fish (in Worcestershire sauce) or honey."],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-strawberry-banana-oat-smoothie",
+      "title": "Strawberry banana oat smoothie",
+      "summary": "[PLACEHOLDER - needs expert review] Oats, flax and fruit blended thick and creamy.",
+      "icon": "takeoutbag.and.cup.and.straw.fill",
+      "emoji": "🍓",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["nourish-while-nursing", "smoothies", "breakfast", "one-hand"],
+      "tags": ["five-minute", "no-cook", "one-handed"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1/2 cup milk of choice",
+        "1/4 cup rolled oats",
+        "1 tsp brewer's yeast (optional)",
+        "1 tsp ground flaxseed",
+        "8 frozen strawberries",
+        "1 ripe banana",
+        "1/2 tsp vanilla extract",
+        "1 tbsp honey"
+      ],
+      "steps": [
+        "Add the milk, oats, brewer's yeast and flaxseed to the blender first.",
+        "Add the strawberries, banana, vanilla and honey.",
+        "Blend on high for about 60 seconds until completely smooth."
+      ],
+      "tips": [
+        "Honey is fine for you, but never give honey to a baby under 12 months.",
+        "Use oat or soy milk to make it dairy-free."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-almond-butter-shake",
+      "title": "Almond butter power shake",
+      "summary": "[PLACEHOLDER - needs expert review] Almond butter, chia and oats for a filling, frothy shake.",
+      "icon": "mug.fill",
+      "emoji": "🥜",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["nourish-while-nursing", "smoothies", "snack-smart", "one-hand"],
+      "tags": ["five-minute", "no-cook", "one-handed"],
+      "energy": "low",
+      "allergens": ["tree-nuts"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 cup unsweetened almond milk",
+        "1/4 cup water",
+        "1/4 cup rolled oats",
+        "1 tbsp chia seeds",
+        "1 tbsp almond butter",
+        "1 ripe banana",
+        "A handful of ice"
+      ],
+      "steps": [
+        "Pour the almond milk and water into the blender.",
+        "Add the oats, chia seeds and almond butter, then the banana and ice.",
+        "Blend on high for 45 to 60 seconds until smooth and frothy."
+      ],
+      "tips": ["For gluten-free, choose oats labeled gluten-free."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-green-mango-smoothie",
+      "title": "Green mango avocado smoothie",
+      "summary": "[PLACEHOLDER - needs expert review] Spinach, mango and avocado blended silky smooth.",
+      "icon": "leaf.fill",
+      "emoji": "🥭",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["nourish-while-nursing", "smoothies", "breakfast"],
+      "tags": ["five-minute", "no-cook", "one-handed"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 cup coconut water or oat milk",
+        "1 cup fresh baby spinach",
+        "1/2 cup frozen mango",
+        "1/2 avocado"
+      ],
+      "steps": [
+        "Pour the coconut water or oat milk into the blender, add the spinach and blend until smooth.",
+        "Add the mango and avocado.",
+        "Blend on high for about 45 seconds until silky."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-chocolate-pb-shake",
+      "title": "Chocolate peanut butter shake",
+      "summary": "[PLACEHOLDER - needs expert review] Rich and milkshake-like, made with oat milk and a frozen banana.",
+      "icon": "mug.fill",
+      "emoji": "🍫",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["nourish-while-nursing", "smoothies", "snack-smart", "one-hand"],
+      "tags": ["five-minute", "no-cook", "one-handed"],
+      "energy": "low",
+      "allergens": ["peanut"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 cup oat milk",
+        "2 tbsp natural peanut butter",
+        "1 tbsp rolled oats",
+        "1 tsp brewer's yeast (optional)",
+        "1 tbsp cacao powder",
+        "1 frozen banana"
+      ],
+      "steps": [
+        "Add the oat milk, peanut butter, cacao powder, brewer's yeast and oats to the blender.",
+        "Add the frozen banana.",
+        "Blend on high for about 60 seconds until thick and creamy."
+      ],
+      "tips": [
+        "Cocoa contains a small amount of caffeine; leave it out if you're keeping caffeine low."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-chocolate-chip-bites",
+      "title": "Chocolate chip oat bites",
+      "summary": "[PLACEHOLDER - needs expert review] No-bake bites to keep in the fridge for one-handed snacking.",
+      "icon": "carrot.fill",
+      "emoji": "🍪",
+      "tone": "muted",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 20,
+      "categories": ["nourish-while-nursing", "snack-smart", "one-hand", "busy-moms"],
+      "tags": ["batch-cook", "no-cook", "one-handed", "freezer-friendly"],
+      "energy": "low",
+      "allergens": ["peanut", "tree-nuts", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 cup rolled oats",
+        "1/2 cup natural peanut butter or almond butter",
+        "1/3 cup honey or maple syrup",
+        "2 tbsp ground flaxseed",
+        "1 tbsp brewer's yeast (optional)",
+        "1/3 cup mini chocolate chips",
+        "1 tsp vanilla extract"
+      ],
+      "steps": [
+        "In a medium bowl, mix the nut butter, honey and vanilla well.",
+        "Stir in the oats, flaxseed and brewer's yeast until a dough forms.",
+        "Fold in the chocolate chips.",
+        "Roll into 1-inch balls and keep in the fridge for up to a week."
+      ],
+      "tips": [
+        "Honey is fine for you, but never give honey to a baby under 12 months.",
+        "Not for babies or young children: whole bites and chunks of nut butter are choking hazards."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-no-bake-granola-bars",
+      "title": "No-bake oat granola bars",
+      "summary": "[PLACEHOLDER - needs expert review] Press, chill and slice. Snack bars ready for the week.",
+      "icon": "carrot.fill",
+      "emoji": "🍫",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 40,
+      "servings": 12,
+      "categories": [
+        "nourish-while-nursing",
+        "snack-smart",
+        "one-hand",
+        "busy-moms",
+        "prep-ahead-breakfast"
+      ],
+      "tags": ["batch-cook", "no-cook", "one-handed", "freezer-friendly"],
+      "energy": "low",
+      "allergens": ["tree-nuts"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 1/2 cups rolled oats",
+        "1/2 cup almond butter",
+        "1/3 cup maple syrup",
+        "2 tbsp ground flaxseed",
+        "1/4 cup chia seeds",
+        "1/4 cup dairy-free dark chocolate chips"
+      ],
+      "steps": [
+        "Line an 8x8-inch pan with parchment paper.",
+        "In a large bowl, mix the almond butter and maple syrup until smooth.",
+        "Stir in the oats, flaxseed and chia seeds.",
+        "Press the mixture firmly and evenly into the pan, then press the chocolate chips into the top.",
+        "Freeze for 30 minutes, then slice into bars."
+      ],
+      "tips": [
+        "Keep the bars in the fridge for up to a week, or freeze them.",
+        "Not for babies or young children: chunky bars are a choking hazard."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-oatmeal-chocolate-chip-cookies",
+      "title": "Oatmeal chocolate chip cookies",
+      "summary": "[PLACEHOLDER - needs expert review] A big batch of classic chewy oat cookies with flax and brewer's yeast.",
+      "icon": "carrot.fill",
+      "emoji": "🍪",
+      "tone": "accent",
+      "activeMinutes": 20,
+      "totalMinutes": 35,
+      "servings": 36,
+      "categories": ["nourish-while-nursing", "snack-smart", "busy-moms"],
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "medium",
+      "allergens": ["milk", "egg", "wheat"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 cup butter, softened",
+        "1 cup cane sugar",
+        "2 large eggs",
+        "2 tbsp ground flaxseed mixed with 2 tbsp water (let sit 3 minutes)",
+        "1 1/2 cups unbleached all-purpose flour",
+        "2 tbsp brewer's yeast (optional)",
+        "1 tsp baking soda",
+        "3 cups old-fashioned rolled oats",
+        "1 cup chocolate chips"
+      ],
+      "steps": [
+        "Heat the oven to 350°F (175°C).",
+        "Beat the butter and sugar until creamy, then beat in the eggs and the flaxseed mixture.",
+        "In another bowl, whisk the flour, brewer's yeast and baking soda, then mix it into the butter mixture.",
+        "Stir in the oats and chocolate chips.",
+        "Scoop rounded tablespoons onto a baking sheet and bake for 10 to 12 minutes, until the edges are golden."
+      ],
+      "tips": [
+        "Don't eat the raw dough: it contains raw eggs and raw flour.",
+        "Freeze the extra cookies and take out a few at a time."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-brown-sugar-oats",
+      "title": "Brown sugar oats with banana",
+      "summary": "[PLACEHOLDER - needs expert review] Warm, creamy oats cooked in oat milk with a caramel-like finish.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🥣",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 2,
+      "categories": ["nourish-while-nursing", "breakfast", "top-breakfasts"],
+      "tags": ["one-handed"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 cup rolled oats",
+        "2 cups oat milk",
+        "1 tbsp brown sugar or coconut sugar",
+        "1 tbsp ground flaxseed",
+        "1 banana, sliced",
+        "Cacao nibs for topping"
+      ],
+      "steps": [
+        "Bring the oat milk to a gentle simmer in a small pot.",
+        "Stir in the oats and turn the heat down to medium-low.",
+        "Cook for 5 to 7 minutes, stirring now and then, until creamy.",
+        "Stir in the sugar and flaxseed, then top with banana and cacao nibs."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-flax-blueberry-yogurt-bowl",
+      "title": "Blueberry flax yogurt bowl",
+      "summary": "[PLACEHOLDER - needs expert review] Greek yogurt, blueberries and flax with a drizzle of honey.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🫐",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["nourish-while-nursing", "breakfast", "high-protein", "snack-smart"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 cup plain Greek yogurt",
+        "2 tbsp ground flaxseed",
+        "1/2 cup fresh or dried wild blueberries",
+        "1 tsp honey"
+      ],
+      "steps": [
+        "Spoon the yogurt into a bowl.",
+        "Sprinkle the flaxseed on one side and pile the blueberries on the other.",
+        "Drizzle with honey and eat right away."
+      ],
+      "tips": ["Honey is fine for you, but never give honey to a baby under 12 months."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-chia-pudding",
+      "title": "Overnight oat milk chia pudding",
+      "summary": "[PLACEHOLDER - needs expert review] Stir it tonight and wake up to a thick, creamy pudding.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🍮",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 240,
+      "servings": 2,
+      "categories": ["nourish-while-nursing", "breakfast", "prep-ahead-breakfast"],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/3 cup chia seeds",
+        "1 cup oat milk",
+        "1/2 tsp vanilla extract",
+        "1 tbsp maple syrup",
+        "Fresh raspberries for topping"
+      ],
+      "steps": [
+        "In a jar, whisk the oat milk, chia seeds, vanilla and maple syrup.",
+        "Cover and refrigerate for at least 4 hours or overnight, until thick.",
+        "Top with raspberries before serving."
+      ],
+      "tips": [
+        "Keeps in the fridge for up to 3 days.",
+        "For gluten-free, choose an oat milk labeled gluten-free."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-avocado-toast",
+      "title": "Avocado toast with brewer's yeast",
+      "summary": "[PLACEHOLDER - needs expert review] Crisp sourdough, thick smashed avocado and a savory sprinkle.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🥑",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["nourish-while-nursing", "breakfast", "busy-moms", "one-hand"],
+      "tags": ["five-minute", "one-handed"],
+      "energy": "low",
+      "allergens": ["wheat"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "2 slices whole-grain sourdough bread",
+        "1 ripe avocado",
+        "1 tsp brewer's yeast (optional)",
+        "Pinch of sea salt",
+        "Black pepper",
+        "Red pepper flakes"
+      ],
+      "steps": [
+        "Toast the bread until golden and crisp.",
+        "Mash the avocado with salt and pepper and spread it thickly on the toast.",
+        "Dust lightly with brewer's yeast and finish with red pepper flakes."
+      ],
+      "tips": [],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-sweet-potato-coconut-stew",
+      "title": "Sweet potato coconut stew",
+      "summary": "[PLACEHOLDER - needs expert review] A warm, gently spiced one-pot stew with spinach.",
+      "icon": "frying.pan.fill",
+      "emoji": "🍠",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": ["nourish-while-nursing", "one-pot", "dinner", "nourished"],
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "2 sweet potatoes, diced",
+        "1 can (13.5 oz) full-fat coconut milk",
+        "3 cups vegetable broth",
+        "1 onion, diced",
+        "2 cloves garlic, minced",
+        "1 tbsp grated fresh ginger",
+        "2 cups baby spinach",
+        "A drizzle of oil"
+      ],
+      "steps": [
+        "Soften the onion, garlic and ginger in a little oil in a large pot.",
+        "Add the sweet potatoes, broth and coconut milk.",
+        "Simmer for about 15 minutes, until the sweet potatoes are tender.",
+        "Stir in the spinach until wilted and serve warm."
+      ],
+      "tips": [
+        "Sharing with a baby? Mash some sweet potato with a little of the broth.",
+        "Refrigerate leftovers for 3 to 4 days, or freeze portions."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-barley-milk-soup",
+      "title": "Moroccan barley milk soup (hssoua)",
+      "summary": "[PLACEHOLDER - needs expert review] A traditional warm, creamy barley soup scented with anise.",
+      "icon": "mug.fill",
+      "emoji": "🥣",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 30,
+      "servings": 4,
+      "categories": ["nourish-while-nursing", "breakfast", "one-pot"],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 cup cracked barley (belboula)",
+        "4 cups water",
+        "2 cups milk (dairy or plant-based)",
+        "1 tbsp olive oil",
+        "1/2 tsp anise seeds or cumin",
+        "Salt to taste"
+      ],
+      "steps": [
+        "Rinse the barley well.",
+        "In a pot, combine the barley, water, anise seeds and olive oil.",
+        "Bring to a boil, then simmer for about 20 minutes until the barley is soft.",
+        "Stir in the milk and simmer gently for 5 more minutes. Season and serve warm."
+      ],
+      "tips": ["Barley contains gluten.", "Use oat or soy milk to make it dairy-free."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-bone-broth-soup",
+      "title": "Chicken and vegetable bone broth soup",
+      "summary": "[PLACEHOLDER - needs expert review] A simple, warming broth soup with carrots, ginger and chicken.",
+      "icon": "mug.fill",
+      "emoji": "🍲",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 30,
+      "servings": 4,
+      "categories": ["nourish-while-nursing", "one-pot", "lunch", "dinner"],
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["gluten-free"],
+      "ingredients": [
+        "4 cups chicken or beef bone broth",
+        "1 onion, chopped",
+        "2 carrots, sliced",
+        "1 celery stalk, sliced",
+        "1 piece fresh ginger",
+        "2 cups cooked shredded chicken",
+        "Salt and pepper"
+      ],
+      "steps": [
+        "Add the broth, onion, carrots, celery and ginger to a pot.",
+        "Bring to a boil, then simmer for about 20 minutes until the vegetables are tender.",
+        "Add the chicken, heat through, and season lightly."
+      ],
+      "tips": [
+        "Store-bought broth can be salty; choose a low-sodium one if sharing with little ones.",
+        "Reheat leftovers until steaming hot. Refrigerate for 3 to 4 days."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-salmon-quinoa-bowl",
+      "title": "Salmon, arugula and quinoa bowl",
+      "summary": "[PLACEHOLDER - needs expert review] Baked salmon on quinoa and peppery greens with lemon.",
+      "icon": "fork.knife",
+      "emoji": "🐟",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 20,
+      "servings": 1,
+      "categories": [
+        "nourish-while-nursing",
+        "lunch",
+        "dinner",
+        "high-protein-dinner",
+        "high-protein"
+      ],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["fish"],
+      "diets": ["pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 salmon fillet",
+        "1 cup cooked quinoa",
+        "2 cups arugula",
+        "1/2 avocado, sliced",
+        "Olive oil",
+        "Lemon juice"
+      ],
+      "steps": [
+        "Bake the salmon at 400°F (200°C) for about 12 minutes, until it reaches 145°F.",
+        "Layer the quinoa and arugula in a bowl.",
+        "Top with the salmon and avocado, then drizzle with olive oil and lemon."
+      ],
+      "tips": [
+        "Salmon is on the FDA's \"Best Choices\" list. While breastfeeding, the FDA advises 2 to 3 servings (4 oz each) a week from that list."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-methi-chicken-curry",
+      "title": "Chicken curry with fenugreek leaves (methi murgh)",
+      "summary": "[PLACEHOLDER - needs expert review] A fragrant home-style curry with fresh or dried methi leaves.",
+      "icon": "flame.fill",
+      "emoji": "🍛",
+      "tone": "accent",
+      "activeMinutes": 15,
+      "totalMinutes": 40,
+      "servings": 4,
+      "categories": ["nourish-while-nursing", "dinner", "high-protein-dinner", "family-friendly"],
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["gluten-free"],
+      "ingredients": [
+        "1 lb chicken pieces",
+        "2 cups fresh fenugreek (methi) leaves, chopped, or 2 tbsp dried",
+        "1 onion, chopped",
+        "2 tomatoes, blended",
+        "3 cloves garlic",
+        "1 inch fresh ginger",
+        "1 tsp turmeric",
+        "1 tsp cumin",
+        "Oil for cooking"
+      ],
+      "steps": [
+        "Cook the onion, garlic and ginger in oil until golden.",
+        "Add the turmeric and cumin, then the blended tomatoes, and cook until the oil separates.",
+        "Add the chicken and fenugreek leaves, cover and simmer for about 20 minutes, until the chicken reaches 165°F."
+      ],
+      "tips": [
+        "Fenugreek is in the same plant family as peanuts and chickpeas. If you're allergic to either, check with your doctor first.",
+        "Sharing with a baby or toddler? Shred the chicken finely."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "nursing-spinach-pear-quinoa-salad",
+      "title": "Spinach, pear and quinoa salad",
+      "summary": "[PLACEHOLDER - needs expert review] Sweet pear, crunchy seeds and greens with balsamic dressing.",
+      "icon": "leaf.fill",
+      "emoji": "🍐",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 10,
+      "servings": 2,
+      "categories": ["nourish-while-nursing", "lunch", "nourished"],
+      "tags": ["no-cook"],
+      "energy": "low",
+      "allergens": ["tree-nuts"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "3 cups baby spinach",
+        "1 ripe pear, sliced",
+        "1/2 cup cooked quinoa",
+        "2 tbsp pistachios or pumpkin seeds",
+        "A handful of dried cranberries",
+        "Balsamic vinaigrette"
+      ],
+      "steps": [
+        "Toss the spinach and quinoa in a large bowl.",
+        "Top with the pear, pistachios and cranberries.",
+        "Drizzle lightly with vinaigrette before serving."
+      ],
+      "tips": ["Use pumpkin seeds instead of pistachios to keep it nut-free."],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
     }
   ]
 }

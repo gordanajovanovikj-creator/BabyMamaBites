@@ -66,67 +66,84 @@ owner must hold the rights and model releases to use them in the app and App Sto
 Bundled in `assets/images/insights/` and registered in
 `src/features/library/library-photos.ts`.
 
-| Article id                        | Source                    | Photographer       | Link                                                                   | License                 | Added      |
-| --------------------------------- | ------------------------- | ------------------ | ---------------------------------------------------------------------- | ----------------------- | ---------- |
-| newborn-snack-basket              | Pixabay                   | sweetlouise        | https://pixabay.com/photos/dried-fruit-nuts-coconut-mango-3164835/     | Pixabay Content License | 2026-10-09 |
-| newborn-overnight-oats            | Pixabay                   | devansee           | https://pixabay.com/photos/breakfast-healthy-yogurt-mason-jar-655894/  | Pixabay Content License | 2026-10-09 |
-| solids-purees-first               | Pixabay                   | Ben_Kerckx         | https://pixabay.com/photos/child-vegetable-pap-power-supply-818432/    | Pixabay Content License | 2026-10-09 |
-| food-refusal                      | Pixabay                   | timkraaijvanger    | https://pixabay.com/photos/toddler-girl-laugh-blue-eyes-cute-2675884/  | Pixabay Content License | 2026-10-09 |
-| solids-freezer-cubes              | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| homemade-baby-food                | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| hunger-cues                       | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| high-chair                        | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| gagging-vs-choking                | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| ready                             | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| first-foods                       | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| purees-vs-finger-foods            | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| allergens                         | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| toddler-picky-phases              | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| cups-and-drinks                   | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| solids-choking                    | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| foods-to-avoid                    | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| newborn-meal-help                 | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| newborn-rest                      | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| newborn-water                     | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| cows-milk                         | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| feeling-low                       | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
-| toddler-share-plate               | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-10 |
-| solids-two-textures               | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-10 |
-| smoothie-tropical-green           | Pixabay                   | NatureFriend       | https://pixabay.com/photos/green-smoothie-leafy-greens-422995/         | Pixabay Content License | 2026-10-12 |
-| smoothie-avocado-green            | Pixabay                   | dmarr515           | https://pixabay.com/photos/smoothie-avocado-blueberry-fruit-5160684/   | Pixabay Content License | 2026-10-12 |
-| smoothie-cucumber-ginger          | Pixabay                   | Smacznadietetyka   | https://pixabay.com/photos/cocktail-smoothie-food-vegetables-7213414/  | Pixabay Content License | 2026-10-12 |
-| smoothie-matcha-green             | Pixabay                   | dungthuyvunguyen   | https://pixabay.com/photos/matcha-latte-latte-matcha-drink-2356772/    | Pixabay Content License | 2026-10-12 |
-| smoothie-triple-berry             | Pixabay                   | blandinejoannic    | https://pixabay.com/photos/smoothie-breakfast-berries-5154447/         | Pixabay Content License | 2026-10-12 |
-| smoothie-wild-blueberry           | Pixabay                   | kaboompics         | https://pixabay.com/photos/blueberry-yogurt-yoghurt-health-791564/     | Pixabay Content License | 2026-10-12 |
-| smoothie-pomegranate-acai         | Pixabay                   | HealthyFoodImages  | https://pixabay.com/photos/smoothie-turmix-raspberry-fitness-463331/   | Pixabay Content License | 2026-10-12 |
-| smoothie-pb-banana-protein        | Pixabay                   | 2SIF               | https://pixabay.com/photos/fig-milk-shake-milk-shake-smoothie-7267991/ | Pixabay Content License | 2026-10-12 |
-| smoothie-chocolate-hemp           | Pixabay                   | stevepb            | https://pixabay.com/photos/chocolate-smoothie-milkshake-1058191/       | Pixabay Content License | 2026-10-12 |
-| smoothie-greek-yogurt-berry       | Pixabay                   | robertasriabovas   | https://pixabay.com/photos/berries-cocktail-milkshake-drink-4944590/   | Pixabay Content License | 2026-10-12 |
-| smoothie-salted-caramel           | Pixabay                   | MorningbirdPhoto   | https://pixabay.com/photos/coffee-milkshake-drink-food-cream-540653/   | Pixabay Content License | 2026-10-12 |
-| smoothie-citrus-sunshine          | Pixabay                   | tehzeebhud         | https://pixabay.com/photos/mango-smoothie-glass-straw-10449416/        | Pixabay Content License | 2026-10-12 |
-| smoothie-ginger-turmeric          | Pixabay                   | TesaPhotography    | https://pixabay.com/photos/smoothie-milkshake-pineapple-2566825/       | Pixabay Content License | 2026-10-12 |
-| smoothie-golden-tropical          | Pixabay                   | Imoflow            | https://pixabay.com/photos/mango-drink-fruits-diet-healthy-3380631/    | Pixabay Content License | 2026-10-12 |
-| smoothie-papaya-mint              | Pixabay                   | photosforyou       | https://pixabay.com/photos/smoothie-fruit-mango-pear-apple-790711/     | Pixabay Content License | 2026-10-12 |
-| smoothie-pear-cinnamon            | Pixabay                   | dmarr515           | https://pixabay.com/photos/smoothie-blueberry-healthy-food-5127118/    | Pixabay Content License | 2026-10-12 |
-| smoothie-kiwi-lime                | Pixabay                   | milivigerova       | https://pixabay.com/photos/smoothie-fruit-blend-glass-drink-729923/    | Pixabay Content License | 2026-10-12 |
-| smoothie-blueberry-oatmeal        | Pixabay                   | bubithebear        | https://pixabay.com/photos/smoothie-smoothies-purple-food-3401697/     | Pixabay Content License | 2026-10-12 |
-| smoothie-almond-fig               | Pixabay                   | World_of_Plants    | https://pixabay.com/photos/blueberries-breakfast-drinks-table-4211525/ | Pixabay Content License | 2026-10-12 |
-| smoothie-tahini-date              | Pixabay                   | dbreen             | https://pixabay.com/photos/milkshake-milk-dairy-drink-glass-1085004/   | Pixabay Content License | 2026-10-12 |
-| turkey-taco-skillet               | Pixabay                   | Yezmin             | https://pixabay.com/photos/tacos-pastor-tacos-tacos-mexico-4505032/    | Pixabay Content License | 2026-10-12 |
-| lemon-herb-chicken-asparagus      | Pixabay                   | tookapic           | https://pixabay.com/photos/food-chicken-asparagus-meal-meat-932348/    | Pixabay Content License | 2026-10-12 |
-| spinach-tomato-gnocchi            | Pixabay                   | JCdesignproduction | https://pixabay.com/photos/food-gnocchi-plate-fresh-pasta-4770756/     | Pixabay Content License | 2026-10-12 |
-| beef-broccoli-stir-fry            | Pixabay                   | LAWJR              | https://pixabay.com/photos/beef-broccoli-onion-nutrition-4484899/      | Pixabay Content License | 2026-10-12 |
-| tomato-tortellini-soup            | Pixabay                   | MyHomeSelection    | https://pixabay.com/photos/tomato-soup-tomato-cream-soup-6785776/      | Pixabay Content License | 2026-10-12 |
-| black-bean-sweet-potato-chili     | Pixabay                   | kalhh              | https://pixabay.com/photos/chili-con-carne-key-plate-meal-325587/      | Pixabay Content License | 2026-10-12 |
-| coconut-curry-chickpea-soup       | Pixabay                   | kumarsu6745_       | https://pixabay.com/photos/bature-bhatore-bhatura-bhature-10217334/    | Pixabay Content License | 2026-10-12 |
-| sheet-pan-sausage-hash            | Pixabay                   | pixel1             | https://pixabay.com/photos/roasted-chicken-peppers-potato-food-842304/ | Pixabay Content License | 2026-10-12 |
-| honey-mustard-chicken-green-beans | Pixabay                   | KALAITZAKISGEORGE  | https://pixabay.com/photos/food-wine-gourmet-salad-1977289/            | Pixabay Content License | 2026-10-12 |
-| mediterranean-tuna-pita           | Pixabay                   | Blackyfedora       | https://pixabay.com/photos/gyros-restaurant-meal-yummy-cook-674425/    | Pixabay Content License | 2026-10-12 |
-| teriyaki-chicken-bowls            | Pixabay                   | PerfectLinks       | https://pixabay.com/photos/teriyaki-chicken-japan-cuisine-3765240/     | Pixabay Content License | 2026-10-12 |
-| garlic-butter-shrimp-pasta        | Pixabay                   | busanienne         | https://pixabay.com/photos/pasta-food-spaghetti-dining-bowl-7576357/   | Pixabay Content License | 2026-10-12 |
-| creamy-mushroom-pasta             | Pixabay                   | ailinder           | https://pixabay.com/photos/pasta-mushroom-food-dinner-italian-1330541/ | Pixabay Content License | 2026-10-12 |
-| pesto-chicken-penne               | Pixabay                   | Andy333            | https://pixabay.com/photos/pasta-sleep-noodles-food-meal-1033216/      | Pixabay Content License | 2026-10-12 |
-| spinach-feta-frittata             | Pixabay                   | hurdiantonia0      | https://pixabay.com/photos/tortilla-spanish-omelette-food-622974/      | Pixabay Content License | 2026-10-12 |
-| huevos-rancheros-bowls            | Pixabay                   | StockSnap          | https://pixabay.com/photos/restaurant-food-gourmet-egg-2570685/        | Pixabay Content License | 2026-10-12 |
-| naan-margherita-pizzas            | Pixabay                   | Engin_Akyurt       | https://pixabay.com/photos/pizza-food-meat-bacon-pastry-2776469/       | Pixabay Content License | 2026-10-12 |
-| bbq-chicken-flatbread             | Pixabay                   | guvo59             | https://pixabay.com/photos/tomatoes-pizza-food-meal-cheese-8278168/    | Pixabay Content License | 2026-10-12 |
+| Article id                             | Source                    | Photographer       | Link                                                                   | License                 | Added      |
+| -------------------------------------- | ------------------------- | ------------------ | ---------------------------------------------------------------------- | ----------------------- | ---------- |
+| newborn-snack-basket                   | Pixabay                   | sweetlouise        | https://pixabay.com/photos/dried-fruit-nuts-coconut-mango-3164835/     | Pixabay Content License | 2026-10-09 |
+| newborn-overnight-oats                 | Pixabay                   | devansee           | https://pixabay.com/photos/breakfast-healthy-yogurt-mason-jar-655894/  | Pixabay Content License | 2026-10-09 |
+| solids-purees-first                    | Pixabay                   | Ben_Kerckx         | https://pixabay.com/photos/child-vegetable-pap-power-supply-818432/    | Pixabay Content License | 2026-10-09 |
+| food-refusal                           | Pixabay                   | timkraaijvanger    | https://pixabay.com/photos/toddler-girl-laugh-blue-eyes-cute-2675884/  | Pixabay Content License | 2026-10-09 |
+| solids-freezer-cubes                   | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| homemade-baby-food                     | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| hunger-cues                            | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| high-chair                             | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| gagging-vs-choking                     | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| ready                                  | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| first-foods                            | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| purees-vs-finger-foods                 | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| allergens                              | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| toddler-picky-phases                   | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| cups-and-drinks                        | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| solids-choking                         | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| foods-to-avoid                         | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| newborn-meal-help                      | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| newborn-rest                           | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| newborn-water                          | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| cows-milk                              | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| feeling-low                            | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-09 |
+| toddler-share-plate                    | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-10 |
+| solids-two-textures                    | Supplied by the app owner | —                  | —                                                                      | Owner-supplied          | 2026-10-10 |
+| smoothie-tropical-green                | Pixabay                   | NatureFriend       | https://pixabay.com/photos/green-smoothie-leafy-greens-422995/         | Pixabay Content License | 2026-10-12 |
+| smoothie-avocado-green                 | Pixabay                   | dmarr515           | https://pixabay.com/photos/smoothie-avocado-blueberry-fruit-5160684/   | Pixabay Content License | 2026-10-12 |
+| smoothie-cucumber-ginger               | Pixabay                   | Smacznadietetyka   | https://pixabay.com/photos/cocktail-smoothie-food-vegetables-7213414/  | Pixabay Content License | 2026-10-12 |
+| smoothie-matcha-green                  | Pixabay                   | dungthuyvunguyen   | https://pixabay.com/photos/matcha-latte-latte-matcha-drink-2356772/    | Pixabay Content License | 2026-10-12 |
+| smoothie-triple-berry                  | Pixabay                   | blandinejoannic    | https://pixabay.com/photos/smoothie-breakfast-berries-5154447/         | Pixabay Content License | 2026-10-12 |
+| smoothie-wild-blueberry                | Pixabay                   | kaboompics         | https://pixabay.com/photos/blueberry-yogurt-yoghurt-health-791564/     | Pixabay Content License | 2026-10-12 |
+| smoothie-pomegranate-acai              | Pixabay                   | HealthyFoodImages  | https://pixabay.com/photos/smoothie-turmix-raspberry-fitness-463331/   | Pixabay Content License | 2026-10-12 |
+| smoothie-pb-banana-protein             | Pixabay                   | 2SIF               | https://pixabay.com/photos/fig-milk-shake-milk-shake-smoothie-7267991/ | Pixabay Content License | 2026-10-12 |
+| smoothie-chocolate-hemp                | Pixabay                   | stevepb            | https://pixabay.com/photos/chocolate-smoothie-milkshake-1058191/       | Pixabay Content License | 2026-10-12 |
+| smoothie-greek-yogurt-berry            | Pixabay                   | robertasriabovas   | https://pixabay.com/photos/berries-cocktail-milkshake-drink-4944590/   | Pixabay Content License | 2026-10-12 |
+| smoothie-salted-caramel                | Pixabay                   | MorningbirdPhoto   | https://pixabay.com/photos/coffee-milkshake-drink-food-cream-540653/   | Pixabay Content License | 2026-10-12 |
+| smoothie-citrus-sunshine               | Pixabay                   | tehzeebhud         | https://pixabay.com/photos/mango-smoothie-glass-straw-10449416/        | Pixabay Content License | 2026-10-12 |
+| smoothie-ginger-turmeric               | Pixabay                   | TesaPhotography    | https://pixabay.com/photos/smoothie-milkshake-pineapple-2566825/       | Pixabay Content License | 2026-10-12 |
+| smoothie-golden-tropical               | Pixabay                   | Imoflow            | https://pixabay.com/photos/mango-drink-fruits-diet-healthy-3380631/    | Pixabay Content License | 2026-10-12 |
+| smoothie-papaya-mint                   | Pixabay                   | photosforyou       | https://pixabay.com/photos/smoothie-fruit-mango-pear-apple-790711/     | Pixabay Content License | 2026-10-12 |
+| smoothie-pear-cinnamon                 | Pixabay                   | dmarr515           | https://pixabay.com/photos/smoothie-blueberry-healthy-food-5127118/    | Pixabay Content License | 2026-10-12 |
+| smoothie-kiwi-lime                     | Pixabay                   | milivigerova       | https://pixabay.com/photos/smoothie-fruit-blend-glass-drink-729923/    | Pixabay Content License | 2026-10-12 |
+| smoothie-blueberry-oatmeal             | Pixabay                   | bubithebear        | https://pixabay.com/photos/smoothie-smoothies-purple-food-3401697/     | Pixabay Content License | 2026-10-12 |
+| smoothie-almond-fig                    | Pixabay                   | World_of_Plants    | https://pixabay.com/photos/blueberries-breakfast-drinks-table-4211525/ | Pixabay Content License | 2026-10-12 |
+| smoothie-tahini-date                   | Pixabay                   | dbreen             | https://pixabay.com/photos/milkshake-milk-dairy-drink-glass-1085004/   | Pixabay Content License | 2026-10-12 |
+| turkey-taco-skillet                    | Pixabay                   | Yezmin             | https://pixabay.com/photos/tacos-pastor-tacos-tacos-mexico-4505032/    | Pixabay Content License | 2026-10-12 |
+| lemon-herb-chicken-asparagus           | Pixabay                   | tookapic           | https://pixabay.com/photos/food-chicken-asparagus-meal-meat-932348/    | Pixabay Content License | 2026-10-12 |
+| spinach-tomato-gnocchi                 | Pixabay                   | JCdesignproduction | https://pixabay.com/photos/food-gnocchi-plate-fresh-pasta-4770756/     | Pixabay Content License | 2026-10-12 |
+| beef-broccoli-stir-fry                 | Pixabay                   | LAWJR              | https://pixabay.com/photos/beef-broccoli-onion-nutrition-4484899/      | Pixabay Content License | 2026-10-12 |
+| tomato-tortellini-soup                 | Pixabay                   | MyHomeSelection    | https://pixabay.com/photos/tomato-soup-tomato-cream-soup-6785776/      | Pixabay Content License | 2026-10-12 |
+| black-bean-sweet-potato-chili          | Pixabay                   | kalhh              | https://pixabay.com/photos/chili-con-carne-key-plate-meal-325587/      | Pixabay Content License | 2026-10-12 |
+| coconut-curry-chickpea-soup            | Pixabay                   | kumarsu6745_       | https://pixabay.com/photos/bature-bhatore-bhatura-bhature-10217334/    | Pixabay Content License | 2026-10-12 |
+| sheet-pan-sausage-hash                 | Pixabay                   | pixel1             | https://pixabay.com/photos/roasted-chicken-peppers-potato-food-842304/ | Pixabay Content License | 2026-10-12 |
+| honey-mustard-chicken-green-beans      | Pixabay                   | KALAITZAKISGEORGE  | https://pixabay.com/photos/food-wine-gourmet-salad-1977289/            | Pixabay Content License | 2026-10-12 |
+| mediterranean-tuna-pita                | Pixabay                   | Blackyfedora       | https://pixabay.com/photos/gyros-restaurant-meal-yummy-cook-674425/    | Pixabay Content License | 2026-10-12 |
+| teriyaki-chicken-bowls                 | Pixabay                   | PerfectLinks       | https://pixabay.com/photos/teriyaki-chicken-japan-cuisine-3765240/     | Pixabay Content License | 2026-10-12 |
+| garlic-butter-shrimp-pasta             | Pixabay                   | busanienne         | https://pixabay.com/photos/pasta-food-spaghetti-dining-bowl-7576357/   | Pixabay Content License | 2026-10-12 |
+| creamy-mushroom-pasta                  | Pixabay                   | ailinder           | https://pixabay.com/photos/pasta-mushroom-food-dinner-italian-1330541/ | Pixabay Content License | 2026-10-12 |
+| pesto-chicken-penne                    | Pixabay                   | Andy333            | https://pixabay.com/photos/pasta-sleep-noodles-food-meal-1033216/      | Pixabay Content License | 2026-10-12 |
+| spinach-feta-frittata                  | Pixabay                   | hurdiantonia0      | https://pixabay.com/photos/tortilla-spanish-omelette-food-622974/      | Pixabay Content License | 2026-10-12 |
+| huevos-rancheros-bowls                 | Pixabay                   | StockSnap          | https://pixabay.com/photos/restaurant-food-gourmet-egg-2570685/        | Pixabay Content License | 2026-10-12 |
+| naan-margherita-pizzas                 | Pixabay                   | Engin_Akyurt       | https://pixabay.com/photos/pizza-food-meat-bacon-pastry-2776469/       | Pixabay Content License | 2026-10-12 |
+| bbq-chicken-flatbread                  | Pixabay                   | guvo59             | https://pixabay.com/photos/tomatoes-pizza-food-meal-cheese-8278168/    | Pixabay Content License | 2026-10-12 |
+| nursing-strawberry-banana-oat-smoothie | Pixabay                   | Couleur            | https://pixabay.com/photos/drink-fruity-fruit-raspberry-red-2471550/   | Pixabay Content License | 2026-10-12 |
+| nursing-almond-butter-shake            | Pixabay                   | mtomicphotography  | https://pixabay.com/photos/food-smoothie-protein-shake-5227756/        | Pixabay Content License | 2026-10-12 |
+| nursing-green-mango-smoothie           | Pixabay                   | JugosLocos         | https://pixabay.com/photos/smoothie-basil-green-apple-herb-6303042/    | Pixabay Content License | 2026-10-12 |
+| nursing-chocolate-pb-shake             | Pixabay                   | maitemara          | https://pixabay.com/photos/ice-chocolate-drink-coffee-shop-245475/     | Pixabay Content License | 2026-10-12 |
+| nursing-chocolate-chip-bites           | Pixabay                   | Monfocus           | https://pixabay.com/photos/energy-ball-fruit-dry-fruit-seeds-3973460/  | Pixabay Content License | 2026-10-12 |
+| nursing-no-bake-granola-bars           | Pixabay                   | WikimediaImages    | https://pixabay.com/photos/food-eat-diet-chewy-granola-bar-2202344/    | Pixabay Content License | 2026-10-12 |
+| nursing-oatmeal-chocolate-chip-cookies | Pixabay                   | StockSnap          | https://pixabay.com/photos/chocolate-chip-cookies-food-sweets-2562000/ | Pixabay Content License | 2026-10-12 |
+| nursing-brown-sugar-oats               | Pixabay                   | tehzeebkazmii      | https://pixabay.com/photos/oatmeal-banana-breakfast-cinnamon-10379125/ | Pixabay Content License | 2026-10-12 |
+| nursing-flax-blueberry-yogurt-bowl     | Pixabay                   | RitaE              | https://pixabay.com/photos/yogurt-berry-blueberries-dessert-1612787/   | Pixabay Content License | 2026-10-12 |
+| nursing-chia-pudding                   | Pixabay                   | Be_Stasya          | https://pixabay.com/photos/berries-chia-pudding-breakfast-6514670/     | Pixabay Content License | 2026-10-12 |
+| nursing-avocado-toast                  | Pixabay                   | wyattbing          | https://pixabay.com/photos/toast-avocado-food-healthy-6607782/         | Pixabay Content License | 2026-10-12 |
+| nursing-sweet-potato-coconut-stew      | Pixabay                   | catceeq            | https://pixabay.com/photos/soup-food-butternut-squash-soup-4730872/    | Pixabay Content License | 2026-10-12 |
+| nursing-barley-milk-soup               | Pixabay                   | TheAndrasBarta     | https://pixabay.com/photos/soup-bread-food-italian-italy-1262885/      | Pixabay Content License | 2026-10-12 |
+| nursing-bone-broth-soup                | Pixabay                   | mygraphx           | https://pixabay.com/photos/chicken-soup-soup-food-dinner-3061166/      | Pixabay Content License | 2026-10-12 |
+| nursing-salmon-quinoa-bowl             | Pixabay                   | hcdeharder         | https://pixabay.com/photos/ceviche-quinoa-appetizer-food-855176/       | Pixabay Content License | 2026-10-12 |
+| nursing-methi-chicken-curry            | Pixabay                   | Kirtip             | https://pixabay.com/photos/chicken-kabab-curry-cuisine-spicy-6465555/  | Pixabay Content License | 2026-10-12 |
+| nursing-spinach-pear-quinoa-salad      | Pixabay                   | yana_tik           | https://pixabay.com/photos/salad-food-proper-nutrition-3889910/        | Pixabay Content License | 2026-10-12 |

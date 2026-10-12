@@ -84,6 +84,23 @@ const photos: Record<string, ImageSource> = {
   'huevos-rancheros-bowls': require('@/assets/images/recipes/huevos-rancheros-bowls.jpg'),
   'naan-margherita-pizzas': require('@/assets/images/recipes/naan-margherita-pizzas.jpg'),
   'bbq-chicken-flatbread': require('@/assets/images/recipes/bbq-chicken-flatbread.jpg'),
+  'nursing-strawberry-banana-oat-smoothie': require('@/assets/images/recipes/nursing-strawberry-banana-oat-smoothie.jpg'),
+  'nursing-almond-butter-shake': require('@/assets/images/recipes/nursing-almond-butter-shake.jpg'),
+  'nursing-green-mango-smoothie': require('@/assets/images/recipes/nursing-green-mango-smoothie.jpg'),
+  'nursing-chocolate-pb-shake': require('@/assets/images/recipes/nursing-chocolate-pb-shake.jpg'),
+  'nursing-chocolate-chip-bites': require('@/assets/images/recipes/nursing-chocolate-chip-bites.jpg'),
+  'nursing-no-bake-granola-bars': require('@/assets/images/recipes/nursing-no-bake-granola-bars.jpg'),
+  'nursing-oatmeal-chocolate-chip-cookies': require('@/assets/images/recipes/nursing-oatmeal-chocolate-chip-cookies.jpg'),
+  'nursing-brown-sugar-oats': require('@/assets/images/recipes/nursing-brown-sugar-oats.jpg'),
+  'nursing-flax-blueberry-yogurt-bowl': require('@/assets/images/recipes/nursing-flax-blueberry-yogurt-bowl.jpg'),
+  'nursing-chia-pudding': require('@/assets/images/recipes/nursing-chia-pudding.jpg'),
+  'nursing-avocado-toast': require('@/assets/images/recipes/nursing-avocado-toast.jpg'),
+  'nursing-sweet-potato-coconut-stew': require('@/assets/images/recipes/nursing-sweet-potato-coconut-stew.jpg'),
+  'nursing-barley-milk-soup': require('@/assets/images/recipes/nursing-barley-milk-soup.jpg'),
+  'nursing-bone-broth-soup': require('@/assets/images/recipes/nursing-bone-broth-soup.jpg'),
+  'nursing-salmon-quinoa-bowl': require('@/assets/images/recipes/nursing-salmon-quinoa-bowl.jpg'),
+  'nursing-methi-chicken-curry': require('@/assets/images/recipes/nursing-methi-chicken-curry.jpg'),
+  'nursing-spinach-pear-quinoa-salad': require('@/assets/images/recipes/nursing-spinach-pear-quinoa-salad.jpg'),
 };
 
 export function recipePhoto(recipeId: string): ImageSource | undefined {
