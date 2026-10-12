@@ -131,24 +131,6 @@
       "allergens": [],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
-    },
-    {
-      "id": "toddler-picky-phases",
-      "category": "happy-eaters",
-      "stages": ["toddler"],
-      "kind": "self-care",
-      "tone": "accent",
-      "icon": "face.smiling.fill",
-      "emoji": "🙂",
-      "illustration": "toddler-face",
-      "title": "Picky phases",
-      "summary": "You're doing better than you think.",
-      "body": [
-        "[PLACEHOLDER - needs expert review] Gentle, practical ideas for picky phases are coming soon, written and reviewed by a pediatric dietitian."
-      ],
-      "allergens": [],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric dietitian"
     }
   ]
 }

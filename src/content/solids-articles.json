@@ -575,6 +575,81 @@
       "reviewer": "pediatric dietitian"
     },
     {
+      "id": "toddler-picky-phases",
+      "category": "happy-eaters",
+      "title": "Picky phases: finding peace at the table",
+      "summary": "[PLACEHOLDER - needs expert review] Picky eating is a normal stage. Why it happens, and calm, practical ways to handle it without mealtime battles.",
+      "fromMonths": 12,
+      "toMonths": 48,
+      "icon": "face.smiling.fill",
+      "emoji": "🙂",
+      "illustration": "toddler-face",
+      "tone": "accent",
+      "readMinutes": 5,
+      "sections": [
+        {
+          "heading": "Welcome to the picky phase",
+          "paragraphs": [
+            "If your once-enthusiastic eater suddenly turns their nose up at broccoli, refuses whole food groups, or wants the same plain meal three days in a row, take a deep breath. You’ve reached the picky eating years.",
+            "Picky eating is a normal part of development. It’s rarely about your parenting or your cooking, and the CDC notes it often fades by around age 5. Knowing why it happens, and how to respond without turning meals into a battle, can change everything."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Why it happens",
+          "paragraphs": [
+            "Starting somewhere between about 12 and 18 months, a few big things change:"
+          ],
+          "bullets": [
+            "Growth slows down: babies grow very fast in their first year, roughly tripling their birth weight. In the toddler years growth slows, so appetite naturally dips and toddlers often need less food than you expect.",
+            "Caution about new foods: many toddlers are wary of anything unfamiliar. This is called food neophobia, and it’s a normal stage, not a sign that something is wrong.",
+            "A wish for control: toddlers have little say over their day, but they do control what goes in their mouth. Refusing food is often a normal way of testing independence."
+          ]
+        },
+        {
+          "heading": "Share the job",
+          "paragraphs": [
+            "A helpful approach is the Division of Responsibility, from feeding expert Ellyn Satter. It splits mealtime jobs between you and your child:"
+          ],
+          "bullets": [
+            "Your job: you decide what food is served, when it’s served and where it’s eaten. Include at least one “safe” food you know your child usually eats.",
+            "Your child’s job: your child decides whether to eat, and how much.",
+            "When you stop pushing, bribing or begging for “just one more bite,” the power struggle tends to fade, and meals get calmer for everyone."
+          ]
+        },
+        {
+          "heading": "Ways to build a curious eater",
+          "paragraphs": [
+            "You can’t make a child love vegetables, but you can make the table a place where trying new foods feels safe."
+          ],
+          "bullets": [
+            "Eat together, family style: put the dishes on the table and let your child serve themselves, with help. Seeing you enjoy the same food is one of the most powerful things you can do.",
+            "Skip the short-order cooking: don’t make a separate meal when they refuse. Just make sure one part of the meal is something they’re comfortable with, like rice, bread or fruit, and let them fill up on that if they choose.",
+            "Keep foods separate: many picky eaters don’t like foods touching. Try serving casseroles, stews or sandwiches taken apart, with the meat, rice and vegetables in separate piles.",
+            "Offer again, with no pressure: it can take 8 to 10 tries, or more, before a child is willing to eat a new food. Wait a few days and try again. Touching, smelling or licking a food counts as progress, so celebrate the small steps.",
+            "Make it playful: arrange food into a funny face, or let your child choose between two vegetables."
+          ]
+        },
+        {
+          "heading": "When to check in",
+          "paragraphs": [
+            "Talk to your pediatrician if your child is losing weight or not growing as expected, eats only a handful of foods, gags or vomits often at meals, or if mealtimes are causing you a lot of worry."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "A long-term journey",
+          "paragraphs": [
+            "Learning to eat takes years. By staying calm, setting clear routines and trusting your child’s hunger and fullness cues, you’re helping them build a healthy, positive relationship with food that lasts."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["cdc-picky", "aap-1yo", "aap-2yo", "cdc-hungry"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
       "id": "cows-milk",
       "category": "happy-eaters",
       "title": "Moving to cow's milk",
