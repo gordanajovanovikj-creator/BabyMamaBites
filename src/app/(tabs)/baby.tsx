@@ -18,6 +18,7 @@ import { ArticlesRow } from '@/features/solids/articles-row';
 import { BabyRecipesView } from '@/features/solids/baby-recipes-view';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { LogEntryRow } from '@/features/solids/log-entry-row';
+import { MakeAheadCard } from '@/features/solids/make-ahead-card';
 import { WeekCard } from '@/features/solids/week-card';
 import { WeekStrip } from '@/features/solids/week-strip';
 import { AppText, Button, Card, Notice, Screen, SearchButton, SegmentedTabs } from '@/ui';
@@ -194,24 +195,7 @@ export default function BabyScreen() {
           <ArticlesRow />
 
           <View className="gap-4 px-5">
-            <Card
-              tone="accent"
-              className="gap-1"
-              onPress={() =>
-                router.push({
-                  pathname: '/solids/article/[id]',
-                  params: { id: 'homemade-baby-food' },
-                })
-              }
-              accessibilityLabel="Make-ahead baby food: a few hours of prep can stock your freezer for weeks. Opens the guide."
-            >
-              <AppText variant="heading" color="on-accent">
-                Make-ahead baby food
-              </AppText>
-              <AppText color="on-accent">
-                A few hours of prep can stock your freezer for weeks. See how ›
-              </AppText>
-            </Card>
+            <MakeAheadCard />
 
             <Card
               tone="muted"
