@@ -510,6 +510,471 @@
       "reviewer": "pediatric dietitian"
     },
     {
+      "id": "baby-apple-pear-cinnamon",
+      "title": "Steamed apple and pear with cinnamon",
+      "summary": "[PLACEHOLDER - needs expert review] Naturally sweet and gentle, with a tiny pinch of cinnamon.",
+      "icon": "drop.fill",
+      "emoji": "🍐",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 4,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "apple-cinnamon-porridge",
+        "note": "Steam extra apple to stir into your own cinnamon porridge."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 small apple, peeled, cored and chopped",
+        "1 ripe pear, peeled, cored and chopped",
+        "A tiny pinch of cinnamon",
+        "Water for steaming"
+      ],
+      "steps": [
+        "Steam the apple and pear in a covered steamer basket over boiling water for 8 to 10 minutes, until completely fork-tender.",
+        "Blend with the cinnamon until smooth, or mash with a fork if your baby is practicing textures.",
+        "Let it cool before serving."
+      ],
+      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-sweet-potato-carrot-mash",
+      "title": "Sweet potato and carrot mash with olive oil",
+      "summary": "[PLACEHOLDER - needs expert review] A thick, creamy mash full of beta-carotene, with a little olive oil.",
+      "icon": "carrot.fill",
+      "emoji": "🥕",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "sweet-potato-spinach-hash",
+        "note": "Steam a little extra sweet potato for your breakfast hash."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 small sweet potato, peeled and diced",
+        "1 medium carrot, peeled and sliced",
+        "1/2 tsp extra-virgin olive oil"
+      ],
+      "steps": [
+        "Steam or boil the sweet potato and carrot for 12 to 15 minutes, until very tender.",
+        "Drain and transfer to a bowl.",
+        "Add the olive oil and mash until smooth and creamy. Let it cool before serving."
+      ],
+      "tips": [
+        "Thin with a little water, breast milk or formula if it’s too thick.",
+        "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-oatmeal-blueberry",
+      "title": "Oatmeal and blueberry porridge",
+      "summary": "[PLACEHOLDER - needs expert review] Soft oats with warm mashed blueberries.",
+      "icon": "drop.fill",
+      "emoji": "🫐",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 1,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "overnight-oats",
+        "note": "Make a jar of berry overnight oats for yourself tomorrow."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "2 tbsp quick or rolled oats (ground a little for a smoother texture)",
+        "1/4 cup water, breast milk or formula",
+        "2 tbsp fresh or frozen blueberries"
+      ],
+      "steps": [
+        "Cook the oats in the water in a small pot over medium-low heat for 3 to 5 minutes, stirring often, until thick and soft.",
+        "Warm the blueberries gently until soft, then mash them well with a fork so no whole berries are left.",
+        "Stir the blueberries into the oatmeal. If you’re using breast milk or formula, stir it in now, off the heat. Let it cool before serving."
+      ],
+      "tips": [
+        "Whole blueberries are a choking hazard; always mash or flatten them.",
+        "If you warm the berries in the microwave, stir well and check for hot spots.",
+        "Some oats are processed with wheat; check the label if you avoid gluten.",
+        "Make it fresh, and throw away what your baby doesn’t eat."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-zucchini-potato-mash",
+      "title": "Zucchini and potato mash",
+      "summary": "[PLACEHOLDER - needs expert review] A soft, mild first green vegetable, mashed with potato.",
+      "icon": "leaf.fill",
+      "emoji": "🥒",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 3,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "turkey-meatball-zoodle-box",
+        "note": "Steam a little zucchini for baby while you make your zucchini noodles."
+      },
+      "tags": ["batch-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 small yellow or white potato, peeled and diced",
+        "1 small zucchini, ends trimmed and diced",
+        "A tiny pinch of mild cumin or nutritional yeast (optional)"
+      ],
+      "steps": [
+        "Steam the potato and zucchini together for about 10 minutes, until both are completely tender.",
+        "Mash together with a fork.",
+        "Stir in a tiny pinch of cumin or nutritional yeast if you like. Serve lukewarm."
+      ],
+      "tips": ["Refrigerate for up to 3 days. Potato can turn grainy when frozen."],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-squash-apple-puree",
+      "title": "Butternut squash and apple puree",
+      "summary": "[PLACEHOLDER - needs expert review] Squash and sweet apple, steamed and blended smooth or mashed.",
+      "icon": "drop.fill",
+      "emoji": "🎃",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "nursing-sweet-potato-coconut-stew",
+        "note": "Steam extra squash to add to your own stew or soup."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 cup peeled, cubed butternut squash",
+        "1 small sweet apple, peeled, cored and chopped",
+        "Water for steaming"
+      ],
+      "steps": [
+        "Steam the squash and apple for 12 to 15 minutes, until fork-tender.",
+        "Blend, or mash well with a fork for a chunkier texture, adding a little of the steaming water as needed. Let it cool before serving."
+      ],
+      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-broccoli-potato-mash",
+      "title": "Steamed broccoli and potato mash",
+      "summary": "[PLACEHOLDER - needs expert review] A gentle introduction to green vegetables, mashed until creamy.",
+      "icon": "leaf.fill",
+      "emoji": "🥦",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 3,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "beef-broccoli-stir-fry",
+        "note": "Steam a few extra broccoli florets for baby before you stir-fry the rest."
+      },
+      "tags": ["batch-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 small potato, peeled and diced",
+        "1/2 cup small broccoli florets",
+        "1 tsp breast milk, formula or water"
+      ],
+      "steps": [
+        "Steam the potato and broccoli together for 10 to 12 minutes, until very tender.",
+        "Mash with the breast milk, formula or water until smooth and creamy. Let it cool before serving."
+      ],
+      "tips": [
+        "Broccoli is a good source of vitamin C, which helps your baby absorb iron from other foods.",
+        "Once your baby has had dairy, you can stir in 1 tsp unsalted butter instead; it contains milk.",
+        "Refrigerate for up to 3 days."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-pumpkin-oatmeal",
+      "title": "Creamy pumpkin and cinnamon oatmeal",
+      "summary": "[PLACEHOLDER - needs expert review] Soft oats with pumpkin and a tiny pinch of cinnamon.",
+      "icon": "drop.fill",
+      "emoji": "🎃",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 1,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "apple-cinnamon-porridge",
+        "note": "Make a pot of cinnamon porridge for yourself at the same time."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "2 tbsp rolled oats",
+        "1/4 cup canned pure pumpkin (not pumpkin pie filling)",
+        "1/3 cup water, breast milk or formula",
+        "A tiny pinch of cinnamon"
+      ],
+      "steps": [
+        "Cook the oats in the water in a small pot over medium-low heat for about 4 minutes, until thick. If you’re using breast milk or formula, stir it in off the heat.",
+        "Stir in the pumpkin and cinnamon until warm and well mixed. Let it cool before serving."
+      ],
+      "tips": [
+        "Check the can says 100% pumpkin; pie filling has added sugar and spices.",
+        "Some oats are processed with wheat; check the label if you avoid gluten.",
+        "Make it fresh, and throw away what your baby doesn’t eat."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-pear-chia-mash",
+      "title": "Ripe pear and chia mash",
+      "summary": "[PLACEHOLDER - needs expert review] Soft pear with a little soaked chia for healthy fats.",
+      "icon": "drop.fill",
+      "emoji": "🍐",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 20,
+      "servings": 1,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "nursing-chia-pudding",
+        "note": "Stir up a chia pudding for yourself tonight."
+      },
+      "tags": [],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": ["1 ripe, soft pear, peeled and cored", "1/2 tsp ground chia seeds"],
+      "steps": [
+        "Chop the pear. Steam it for about 5 minutes if it’s firm, or use it raw if it’s very ripe and soft.",
+        "Mash the pear well with a fork and stir in the chia.",
+        "Let it sit for about 15 minutes so the chia softens completely before serving."
+      ],
+      "tips": [
+        "Use ground chia, or whole chia soaked until fully gel-like. Dry chia seeds swell with liquid and can clump.",
+        "Make it fresh, and throw away what your baby doesn’t eat."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-mango-yogurt",
+      "title": "Mango and Greek yogurt bowl",
+      "summary": "[PLACEHOLDER - needs expert review] Creamy yogurt swirled with smooth mango.",
+      "icon": "drop.fill",
+      "emoji": "🥭",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 5,
+      "servings": 1,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "yogurt-parfait",
+        "note": "Make yourself a yogurt parfait with the rest of the mango."
+      },
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/4 cup ripe mango chunks, fresh or thawed frozen",
+        "1/4 cup plain whole-milk Greek yogurt"
+      ],
+      "steps": [
+        "Mash the mango with a fork until smooth, or blend it.",
+        "Stir the mango into the yogurt until creamy. Serve cold or at room temperature."
+      ],
+      "tips": [
+        "Yogurt adds protein and calcium. Choose plain yogurt with no added sugar.",
+        "Contains milk: offer yogurt once your baby has had dairy without a reaction."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-banana-oatmeal",
+      "title": "Mashed banana and oatmeal",
+      "summary": "[PLACEHOLDER - needs expert review] Soft oats sweetened only with ripe banana.",
+      "icon": "drop.fill",
+      "emoji": "🍌",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 1,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "pb-banana-baked-oatmeal-cups",
+        "note": "Bake a tray of banana oatmeal cups for your own breakfasts."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "2 tbsp rolled oats",
+        "1/3 cup water, breast milk or formula",
+        "1/4 ripe banana"
+      ],
+      "steps": [
+        "Cook the oats in the water in a small pot for 3 to 5 minutes, until soft. If you’re using breast milk or formula, stir it in off the heat.",
+        "Mash the banana with a fork and stir it into the warm oatmeal until smooth."
+      ],
+      "tips": [
+        "Some oats are processed with wheat; check the label if you avoid gluten.",
+        "Make it fresh, and throw away what your baby doesn’t eat."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-zucchini-white-bean-mash",
+      "title": "Zucchini and white bean mash",
+      "summary": "[PLACEHOLDER - needs expert review] Creamy white beans and soft zucchini for plant protein and fiber.",
+      "icon": "leaf.fill",
+      "emoji": "🫘",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 3,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "lemon-herb-quinoa-chickpea-salad",
+        "note": "Toss the rest of the beans into your own salad for lunch."
+      },
+      "tags": ["five-minute"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/2 cup canned cannellini beans (no salt added), rinsed and drained well",
+        "1 small zucchini, chopped",
+        "A splash of water or olive oil"
+      ],
+      "steps": [
+        "Steam the zucchini for 6 to 8 minutes, until tender.",
+        "Add the zucchini and beans to a bowl with a splash of water or olive oil, and mash until smooth and creamy, with no whole beans left."
+      ],
+      "tips": [
+        "Whole beans are a choking hazard; mash every bean well.",
+        "Choose canned beans with no salt added, and rinse them well.",
+        "Refrigerate for up to 3 days."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-apple-spinach-puree",
+      "title": "Steamed apple and spinach puree",
+      "summary": "[PLACEHOLDER - needs expert review] Spinach blended with sweet apple into a smooth green puree.",
+      "icon": "leaf.fill",
+      "emoji": "🍏",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 10,
+      "servings": 3,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "nursing-spinach-pear-quinoa-salad",
+        "note": "Save some baby spinach for your own salad."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 small apple, peeled, cored and chopped",
+        "1 handful fresh baby spinach",
+        "Water for steaming"
+      ],
+      "steps": [
+        "Steam the apple for 6 minutes, then add the spinach for the last 2 minutes until wilted.",
+        "Blend until smooth. Let it cool before serving."
+      ],
+      "tips": [
+        "Spinach adds iron and folate; the vitamin C in apple helps your baby absorb the iron.",
+        "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-sweet-potato-peach-mash",
+      "title": "Sweet potato and peach mash",
+      "summary": "[PLACEHOLDER - needs expert review] Sweet potato and ripe peach, mashed together until smooth.",
+      "icon": "drop.fill",
+      "emoji": "🍑",
+      "tone": "accent",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 3,
+      "categories": ["baby-7m"],
+      "fromMonths": 7,
+      "familyMeal": {
+        "recipeId": "sweet-potato-black-bean-quinoa-bowls",
+        "note": "Roast extra sweet potato for your own quinoa bowls."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "vegan", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/2 small sweet potato, peeled and diced",
+        "1 ripe peach, pitted and chopped, or thawed frozen peach slices"
+      ],
+      "steps": [
+        "Steam the sweet potato for 10 minutes, then add the peach for the last 3 minutes so it softens.",
+        "Mash together with a fork until smooth. Let it cool before serving."
+      ],
+      "tips": [
+        "Peel the peach first if the skin is tough.",
+        "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
       "id": "baby-salmon-sweet-potato",
       "title": "Salmon and sweet potato mash",
       "summary": "[PLACEHOLDER - needs expert review] Flaked salmon folded into a lumpy mash.",

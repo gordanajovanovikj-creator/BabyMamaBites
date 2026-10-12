@@ -118,6 +118,19 @@ const photos: Record<string, ImageSource> = {
   'baby-sweet-potato-apple-mash': require('@/assets/images/recipes/baby-sweet-potato-apple-mash.jpg'),
   'baby-squash-chicken-puree': require('@/assets/images/recipes/baby-squash-chicken-puree.jpg'),
   'baby-apple-cinnamon-oatmeal': require('@/assets/images/recipes/baby-apple-cinnamon-oatmeal.jpg'),
+  'baby-apple-pear-cinnamon': require('@/assets/images/recipes/baby-apple-pear-cinnamon.jpg'),
+  'baby-sweet-potato-carrot-mash': require('@/assets/images/recipes/baby-sweet-potato-carrot-mash.jpg'),
+  'baby-oatmeal-blueberry': require('@/assets/images/recipes/baby-oatmeal-blueberry.jpg'),
+  'baby-zucchini-potato-mash': require('@/assets/images/recipes/baby-zucchini-potato-mash.jpg'),
+  'baby-squash-apple-puree': require('@/assets/images/recipes/baby-squash-apple-puree.jpg'),
+  'baby-broccoli-potato-mash': require('@/assets/images/recipes/baby-broccoli-potato-mash.jpg'),
+  'baby-pumpkin-oatmeal': require('@/assets/images/recipes/baby-pumpkin-oatmeal.jpg'),
+  'baby-pear-chia-mash': require('@/assets/images/recipes/baby-pear-chia-mash.jpg'),
+  'baby-mango-yogurt': require('@/assets/images/recipes/baby-mango-yogurt.jpg'),
+  'baby-banana-oatmeal': require('@/assets/images/recipes/baby-banana-oatmeal.jpg'),
+  'baby-zucchini-white-bean-mash': require('@/assets/images/recipes/baby-zucchini-white-bean-mash.jpg'),
+  'baby-apple-spinach-puree': require('@/assets/images/recipes/baby-apple-spinach-puree.jpg'),
+  'baby-sweet-potato-peach-mash': require('@/assets/images/recipes/baby-sweet-potato-peach-mash.jpg'),
 };
 
 export function recipePhoto(recipeId: string): ImageSource | undefined {

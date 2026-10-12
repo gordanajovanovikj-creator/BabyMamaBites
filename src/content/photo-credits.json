@@ -443,6 +443,13 @@
       "url": "https://pixabay.com/photos/oatmeal-banana-breakfast-cinnamon-10379125/"
     },
     {
+      "id": "baby-squash-apple-puree",
+      "usedOn": "Butternut squash and apple puree",
+      "source": "pixabay",
+      "author": "StockSnap",
+      "url": "https://pixabay.com/photos/food-cooking-cook-leaves-utensils-2593083/"
+    },
+    {
       "id": "baby-squash-chicken-puree",
       "usedOn": "Butternut squash and chicken puree",
       "source": "pixabay",
@@ -555,6 +562,13 @@
       "url": "https://pixabay.com/photos/porridge-banana-baby-food-meal-7951848/"
     },
     {
+      "id": "baby-pumpkin-oatmeal",
+      "usedOn": "Creamy pumpkin and cinnamon oatmeal",
+      "source": "pixabay",
+      "author": "kkppwoshizhu",
+      "url": "https://pixabay.com/photos/pumpkin-porridge-food-diet-328922/"
+    },
+    {
       "id": "spinach-tomato-gnocchi",
       "usedOn": "Creamy spinach and tomato gnocchi",
       "source": "pixabay",
@@ -653,6 +667,20 @@
       "url": "https://pixabay.com/photos/quinoa-salad-tomatoes-lime-rocket-1822176/"
     },
     {
+      "id": "baby-mango-yogurt",
+      "usedOn": "Mango and Greek yogurt bowl",
+      "source": "pixabay",
+      "author": "Monfocus",
+      "url": "https://pixabay.com/photos/chia-chia-seeds-healthy-yummy-meal-3297309/"
+    },
+    {
+      "id": "baby-banana-oatmeal",
+      "usedOn": "Mashed banana and oatmeal",
+      "source": "pixabay",
+      "author": "tehzeebkazmii",
+      "url": "https://pixabay.com/photos/oatmeal-porridge-breakfast-bowl-10379112/"
+    },
+    {
       "id": "smoothie-matcha-green",
       "usedOn": "Matcha green tea smoothie",
       "source": "pixabay",
@@ -707,6 +735,13 @@
       "source": "pixabay",
       "author": "Layenday",
       "url": "https://pixabay.com/photos/tea-teacup-flowers-vase-warm-tea-6405249/"
+    },
+    {
+      "id": "baby-oatmeal-blueberry",
+      "usedOn": "Oatmeal and blueberry porridge",
+      "source": "pixabay",
+      "author": "bubithebear",
+      "url": "https://pixabay.com/photos/oats-overnight-oats-porridge-sweet-3272113/"
     },
     {
       "id": "nursing-oatmeal-chocolate-chip-cookies",
@@ -835,6 +870,13 @@
       "url": "https://pixabay.com/photos/woman-nap-bedtime-mattress-room-8121473/"
     },
     {
+      "id": "baby-pear-chia-mash",
+      "usedOn": "Ripe pear and chia mash",
+      "source": "pixabay",
+      "author": "JillWellington",
+      "url": "https://pixabay.com/photos/pears-cutting-slicing-fruit-food-8396722/"
+    },
+    {
       "id": "baby-sweet-potato-apple-mash",
       "usedOn": "Roasted sweet potato and apple mash",
       "source": "pixabay",
@@ -905,6 +947,27 @@
       "url": "https://pixabay.com/photos/tortilla-spanish-omelette-food-622974/"
     },
     {
+      "id": "baby-apple-pear-cinnamon",
+      "usedOn": "Steamed apple and pear with cinnamon",
+      "source": "pixabay",
+      "author": "Taken",
+      "url": "https://pixabay.com/photos/apple-sauce-chunky-applesauce-bowl-544676/"
+    },
+    {
+      "id": "baby-apple-spinach-puree",
+      "usedOn": "Steamed apple and spinach puree",
+      "source": "pixabay",
+      "author": "Kost9n4",
+      "url": "https://pixabay.com/photos/top-view-basil-herbs-bowl-closeup-1248955/"
+    },
+    {
+      "id": "baby-broccoli-potato-mash",
+      "usedOn": "Steamed broccoli and potato mash",
+      "source": "pixabay",
+      "author": "congerdesign",
+      "url": "https://pixabay.com/photos/broccoli-vegetables-healthy-cook-1974801/"
+    },
+    {
       "id": "nursing-strawberry-banana-oat-smoothie",
       "usedOn": "Strawberry banana oat smoothie",
       "source": "pixabay",
@@ -917,6 +980,20 @@
       "source": "pixabay",
       "author": "SFcrooner",
       "url": "https://pixabay.com/photos/quinoa-salad-beans-food-vegetarian-4749131/"
+    },
+    {
+      "id": "baby-sweet-potato-carrot-mash",
+      "usedOn": "Sweet potato and carrot mash with olive oil",
+      "source": "pixabay",
+      "author": "Anestiev",
+      "url": "https://pixabay.com/photos/carrots-soup-fresh-soup-food-soup-2157198/"
+    },
+    {
+      "id": "baby-sweet-potato-peach-mash",
+      "usedOn": "Sweet potato and peach mash",
+      "source": "pixabay",
+      "author": "stevepb",
+      "url": "https://pixabay.com/photos/peach-fruit-food-slices-produce-1074997/"
     },
     {
       "id": "sweet-potato-spinach-hash",
@@ -1008,6 +1085,20 @@
       "source": "pixabay",
       "author": "Ben_Kerckx",
       "url": "https://pixabay.com/photos/child-vegetable-pap-power-supply-818432/"
+    },
+    {
+      "id": "baby-zucchini-potato-mash",
+      "usedOn": "Zucchini and potato mash",
+      "source": "pixabay",
+      "author": "422737",
+      "url": "https://pixabay.com/photos/mashed-potatoes-potatoes-meal-food-439984/"
+    },
+    {
+      "id": "baby-zucchini-white-bean-mash",
+      "usedOn": "Zucchini and white bean mash",
+      "source": "pixabay",
+      "author": "5558721",
+      "url": "https://pixabay.com/photos/bean-white-beans-legumes-food-8451254/"
     }
   ]
 }
