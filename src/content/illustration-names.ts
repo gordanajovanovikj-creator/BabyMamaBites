@@ -28,5 +28,6 @@ export const illustrationNames = [
   'bottle',
   'sprout',
   'diaper-bag',
+  'blocks',
 ] as const;
 export type IllustrationName = (typeof illustrationNames)[number];

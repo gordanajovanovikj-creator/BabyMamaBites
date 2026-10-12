@@ -626,4 +626,18 @@ export const drawings: Record<IllustrationName, Drawing> = {
       <Ellipse cx={84} cy={106} rx={40} ry={6} fill={c.lavender} />
     </G>
   ),
+
+  blocks: (c) => (
+    <G>
+      <Rect x={50} y={70} width={30} height={30} rx={6} fill={c.sky} />
+      <Rect x={82} y={70} width={30} height={30} rx={6} fill={c.butter} />
+      <Rect x={66} y={38} width={30} height={30} rx={6} fill={c.rose} />
+      <Path d={heart(81, 53, 6)} fill={c.white} />
+      <Circle cx={65} cy={85} r={5} fill={c.white} opacity={0.8} />
+      <Path d="M92 80 L102 80 L97 90 Z" fill={c.white} opacity={0.8} />
+      <Path d={sparkle(122, 40, 7)} fill={c.mint} />
+      <Path d={sparkle(36, 52, 5)} fill={c.lavender} />
+      <Ellipse cx={81} cy={104} rx={40} ry={6} fill={c.lavender} />
+    </G>
+  ),
 };

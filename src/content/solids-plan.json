@@ -985,6 +985,42 @@
       "publisher": "AAP (HealthyChildren.org)",
       "title": "Sun Safety",
       "url": "https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Sun-Safety.aspx"
+    },
+    {
+      "id": "cdc-milestones",
+      "publisher": "CDC",
+      "title": "CDC's Developmental Milestones",
+      "url": "https://www.cdc.gov/act-early/milestones/index.html"
+    },
+    {
+      "id": "cdc-milestones-2mo",
+      "publisher": "CDC",
+      "title": "Important Milestones: Your Baby By Two Months",
+      "url": "https://www.cdc.gov/act-early/milestones/2-months.html"
+    },
+    {
+      "id": "cdc-milestones-4mo",
+      "publisher": "CDC",
+      "title": "Important Milestones: Your Baby By Four Months",
+      "url": "https://www.cdc.gov/act-early/milestones/4-months.html"
+    },
+    {
+      "id": "cdc-milestones-6mo",
+      "publisher": "CDC",
+      "title": "Important Milestones: Your Baby By Six Months",
+      "url": "https://www.cdc.gov/act-early/milestones/6-months.html"
+    },
+    {
+      "id": "aap-tummy-time",
+      "publisher": "AAP (HealthyChildren.org)",
+      "title": "Back to Sleep, Tummy to Play",
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/Back-to-Sleep-Tummy-to-Play.aspx"
+    },
+    {
+      "id": "aap-fussy-baby",
+      "publisher": "AAP (HealthyChildren.org)",
+      "title": "Calming a Fussy Baby",
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/crying-colic/Pages/Calming-A-Fussy-Baby.aspx"
     }
   ]
 }
