@@ -49,14 +49,6 @@ export default function ArticleScreen() {
       />
 
       <View className="gap-6 px-5 pt-6">
-        {article.reviewStatus === 'placeholder' ? (
-          <Notice
-            tone="caution"
-            title="Draft from official sources"
-            body={`Summarized from US guidance read on ${articlesAccessed}. Not yet reviewed by a ${article.reviewer}, and not medical advice. Follow your ${forMom ? 'doctor' : 'pediatrician'}'s advice, and call 911 in an emergency.`}
-          />
-        ) : null}
-
         {article.sections.map((section) => (
           <View key={section.heading} className="gap-3">
             <AppText variant="heading" size="2xl">
@@ -77,6 +69,14 @@ export default function ArticleScreen() {
         ))}
 
         <SourceLinks sources={solidsSourcesFor(article.sources)} />
+
+        {article.reviewStatus === 'placeholder' ? (
+          <Notice
+            tone="caution"
+            title="Draft from official sources"
+            body={`Summarized from US guidance read on ${articlesAccessed}. Not yet reviewed by a ${article.reviewer}, and not medical advice. Follow your ${forMom ? 'doctor' : 'pediatrician'}'s advice, and call 911 in an emergency.`}
+          />
+        ) : null}
       </View>
     </Screen>
   );
