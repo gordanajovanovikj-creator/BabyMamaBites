@@ -136,6 +136,11 @@ export default function SettingsScreen() {
         detail="Your details stay on this phone"
         onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'privacy' } })}
       />
+      <LinkRow
+        label="Photo credits"
+        detail="The photographers behind our food photos"
+        onPress={() => router.push('/credits')}
+      />
     </Screen>
   );
 }

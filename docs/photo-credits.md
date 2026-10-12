@@ -5,6 +5,11 @@ Photos bundled in `assets/images/recipes/` and registered in
 [Pixabay Content License](https://pixabay.com/service/license-summary/)
 (free for commercial use, no attribution required); we credit them here anyway.
 
+Stock photo credits are also shown in the app (Settings > Photo credits), read from
+`src/content/photo-credits.json`. When you add a Pixabay, Dreamstime or Magnific photo,
+add it to both; a test checks they match. Free Magnific images require the visible
+"Designed by Magnific" credit, which that screen provides.
+
 | Recipe id                    | Source                                             | Photographer                         | Link                                                                                                                                                     | License                                        | Added      |
 | ---------------------------- | -------------------------------------------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------- |
 | banana-oat-smoothie          | Supplied by the app owner                          | —                                    | —                                                                                                                                                        | Owner-supplied                                 | 2026-10    |
