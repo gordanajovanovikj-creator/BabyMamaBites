@@ -105,6 +105,15 @@ const photos: Record<string, ImageSource> = {
   'almond-butter-chia-pudding': require('@/assets/images/recipes/almond-butter-chia-pudding.jpg'),
   'sweet-potato-spinach-hash': require('@/assets/images/recipes/sweet-potato-spinach-hash.jpg'),
   'apple-cinnamon-porridge': require('@/assets/images/recipes/apple-cinnamon-porridge.jpg'),
+  'lemon-herb-quinoa-chickpea-salad': require('@/assets/images/recipes/lemon-herb-quinoa-chickpea-salad.jpg'),
+  'greek-chicken-salad-jars': require('@/assets/images/recipes/greek-chicken-salad-jars.jpg'),
+  'chicken-salad-lettuce-wraps': require('@/assets/images/recipes/chicken-salad-lettuce-wraps.jpg'),
+  'high-protein-bento-box': require('@/assets/images/recipes/high-protein-bento-box.jpg'),
+  'cold-soba-peanut-edamame': require('@/assets/images/recipes/cold-soba-peanut-edamame.jpg'),
+  'sheet-pan-chicken-fajita-bowls': require('@/assets/images/recipes/sheet-pan-chicken-fajita-bowls.jpg'),
+  'pesto-chicken-pasta-salad': require('@/assets/images/recipes/pesto-chicken-pasta-salad.jpg'),
+  'sweet-potato-black-bean-quinoa-bowls': require('@/assets/images/recipes/sweet-potato-black-bean-quinoa-bowls.jpg'),
+  'turkey-meatball-zoodle-box': require('@/assets/images/recipes/turkey-meatball-zoodle-box.jpg'),
 };
 
 export function recipePhoto(recipeId: string): ImageSource | undefined {

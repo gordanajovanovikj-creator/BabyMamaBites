@@ -1965,7 +1965,7 @@
       "activeMinutes": 15,
       "totalMinutes": 15,
       "servings": 2,
-      "categories": ["dinner-in-30", "dinner", "lunch", "high-protein"],
+      "categories": ["dinner-in-30", "dinner", "lunch", "high-protein", "prep-ahead-lunch"],
       "tags": ["no-cook"],
       "energy": "low",
       "allergens": ["fish", "milk", "wheat"],
@@ -1984,7 +1984,7 @@
         "Flake the tuna in a medium bowl with a fork.",
         "Stir in the yogurt, olive oil, salt and pepper until creamy.",
         "Fold in the cucumber, tomatoes and feta.",
-        "Stuff into warmed pita pockets."
+        "Store the tuna salad in an airtight container in the fridge for up to 3 days. Spoon into warmed pita pockets just before eating."
       ],
       "tips": [
         "Canned light tuna is on the FDA's \"Best Choices\" list. Albacore (white) tuna is a \"Good Choice\": have no more than 1 serving a week."
@@ -3032,6 +3032,327 @@
       "tips": [
         "Use coconut oil instead of butter to make it dairy-free.",
         "Sharing with a baby? Leave off the walnuts; whole and chopped nuts are a choking hazard."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "lemon-herb-quinoa-chickpea-salad",
+      "title": "Lemon herb quinoa and chickpea salad",
+      "summary": "[PLACEHOLDER - needs expert review] High in protein and fiber, and it stays fresh for days without getting soggy.",
+      "icon": "leaf.fill",
+      "emoji": "🥗",
+      "tone": "sky",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 4,
+      "categories": ["prep-ahead-lunch", "lunch", "nourished", "high-protein"],
+      "tags": ["batch-cook", "no-cook"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 1/2 cups cooked quinoa, cooled",
+        "1 can (15 oz) chickpeas, rinsed and drained",
+        "1 cup cherry tomatoes, halved",
+        "1 cucumber, diced",
+        "1/4 cup crumbled feta",
+        "3 tbsp olive oil",
+        "Juice of 1 lemon",
+        "Salt and pepper"
+      ],
+      "steps": [
+        "In a large bowl, whisk the olive oil, lemon juice, salt and pepper.",
+        "Add the quinoa, chickpeas, tomatoes, cucumber and feta and toss well.",
+        "Divide into containers and refrigerate for up to 4 days."
+      ],
+      "tips": [
+        "Leave out the feta to make it dairy-free.",
+        "Sharing with a baby or toddler? Quarter the tomatoes and mash the chickpeas; whole ones are a choking hazard."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "greek-chicken-salad-jars",
+      "title": "Greek chicken salad jars",
+      "summary": "[PLACEHOLDER - needs expert review] Layered so the greens stay crisp until you shake it into a bowl.",
+      "icon": "takeoutbag.and.cup.and.straw.fill",
+      "emoji": "🫙",
+      "tone": "accent",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["prep-ahead-lunch", "lunch", "high-protein"],
+      "tags": ["no-cook"],
+      "energy": "low",
+      "allergens": ["milk"],
+      "diets": ["gluten-free"],
+      "ingredients": [
+        "2 cups cooked shredded chicken (rotisserie works great)",
+        "1 cup sliced bell peppers",
+        "1/2 cup sliced kalamata olives",
+        "1/2 cup diced cucumber",
+        "2 cups baby spinach or mixed greens",
+        "3 tbsp tzatziki or Greek yogurt dressing"
+      ],
+      "steps": [
+        "Spoon the dressing into the bottom of 2 mason jars or airtight containers.",
+        "Layer the cucumber, olives and peppers next.",
+        "Add the chicken, then pack the greens tightly on top.",
+        "Refrigerate for up to 3 days. To eat, tip into a bowl and toss."
+      ],
+      "tips": [
+        "Halal and kosher depend on the chicken you buy; check the label.",
+        "Store rotisserie chicken in the fridge within 2 hours of buying it and use within 3 to 4 days."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "chicken-salad-lettuce-wraps",
+      "title": "Creamy chicken salad lettuce wraps",
+      "summary": "[PLACEHOLDER - needs expert review] A light, crunchy chicken salad you scoop into crisp lettuce leaves.",
+      "icon": "leaf.fill",
+      "emoji": "🥬",
+      "tone": "muted",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 4,
+      "categories": ["prep-ahead-lunch", "lunch", "high-protein"],
+      "tags": ["no-cook"],
+      "energy": "low",
+      "allergens": ["milk", "tree-nuts"],
+      "diets": ["gluten-free"],
+      "ingredients": [
+        "2 cups cooked chicken breast, diced or shredded",
+        "1/3 cup plain Greek yogurt",
+        "1 tbsp Dijon mustard",
+        "1/4 cup dried cranberries",
+        "1/4 cup chopped pecans or walnuts",
+        "Salt and pepper",
+        "Large crisp lettuce leaves (romaine or butter lettuce)"
+      ],
+      "steps": [
+        "In a bowl, mix the chicken, yogurt, mustard, cranberries and nuts.",
+        "Season with a pinch of salt and pepper.",
+        "Refrigerate in a sealed container for up to 4 days.",
+        "Scoop into lettuce leaves when ready to eat."
+      ],
+      "tips": [
+        "Halal and kosher depend on the chicken you buy; check the label.",
+        "Leave out the nuts to make it nut-free, and when sharing with little ones; nuts are a choking hazard."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "high-protein-bento-box",
+      "title": "High-protein bento box",
+      "summary": "[PLACEHOLDER - needs expert review] No cooking, just packing: turkey, eggs, hummus, veggies and crunch.",
+      "icon": "takeoutbag.and.cup.and.straw.fill",
+      "emoji": "🍱",
+      "tone": "sky",
+      "activeMinutes": 15,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["prep-ahead-lunch", "lunch", "high-protein", "snack-smart"],
+      "tags": ["no-cook"],
+      "energy": "low",
+      "allergens": ["egg", "tree-nuts", "sesame", "wheat"],
+      "diets": [],
+      "ingredients": [
+        "8 slices deli turkey breast",
+        "2 hard-boiled eggs, peeled",
+        "1 cup baby carrots",
+        "1/2 cup hummus",
+        "1/4 cup mixed nuts (almonds or cashews)",
+        "A handful of crackers or whole-grain pita slices"
+      ],
+      "steps": [
+        "Roll up the turkey slices and put them in one section of a divided container.",
+        "Add the halved eggs and crackers to another, the carrots and hummus to the center, and the nuts to the last.",
+        "Seal and refrigerate for up to 3 days."
+      ],
+      "tips": [
+        "Opened deli meat keeps 3 to 5 days in the fridge; check the date on the pack.",
+        "Whole nuts and baby carrots are choking hazards for babies and young children."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "cold-soba-peanut-edamame",
+      "title": "Cold soba noodles with peanut sauce and edamame",
+      "summary": "[PLACEHOLDER - needs expert review] Plant-based protein and cold noodles that taste even better the next day.",
+      "icon": "takeoutbag.and.cup.and.straw.fill",
+      "emoji": "🍜",
+      "tone": "accent",
+      "activeMinutes": 20,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": ["prep-ahead-lunch", "lunch", "high-protein", "nourished"],
+      "tags": ["batch-cook"],
+      "energy": "low",
+      "allergens": ["peanut", "soy", "wheat", "sesame"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "8 oz soba noodles",
+        "1 cup shelled edamame",
+        "1 carrot, shredded",
+        "3 tbsp natural peanut butter",
+        "1 1/2 tbsp soy sauce",
+        "1 tsp sesame oil",
+        "1 tbsp maple syrup",
+        "1 tbsp warm water"
+      ],
+      "steps": [
+        "Cook the soba noodles according to the package, then rinse under cold water. Steam the edamame.",
+        "Whisk the peanut butter, soy sauce, sesame oil, maple syrup and warm water into a sauce.",
+        "Toss the noodles, edamame and carrot in the sauce.",
+        "Divide into containers and refrigerate for up to 4 days."
+      ],
+      "tips": [
+        "Most soba noodles contain wheat as well as buckwheat. For wheat-free, look for 100% buckwheat soba and gluten-free tamari."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "sheet-pan-chicken-fajita-bowls",
+      "title": "Sheet-pan chicken fajita bowls",
+      "summary": "[PLACEHOLDER - needs expert review] Spiced chicken and peppers roasted on one pan, over rice or quinoa.",
+      "icon": "flame.fill",
+      "emoji": "🌶️",
+      "tone": "accent",
+      "activeMinutes": 15,
+      "totalMinutes": 35,
+      "servings": 4,
+      "categories": ["prep-ahead-lunch", "lunch", "high-protein", "dinner", "family-friendly"],
+      "tags": ["batch-cook"],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["gluten-free"],
+      "ingredients": [
+        "2 chicken breasts, sliced into strips",
+        "2 bell peppers, sliced",
+        "1 red onion, sliced",
+        "2 tbsp olive oil",
+        "1 packet low-sodium fajita seasoning",
+        "2 cups cooked brown rice or quinoa"
+      ],
+      "steps": [
+        "Heat the oven to 400°F (200°C).",
+        "Toss the chicken, peppers and onion with the oil and seasoning on a large baking sheet.",
+        "Roast for 18 to 20 minutes, until the chicken reaches 165°F.",
+        "Divide the rice and fajita mix among 4 containers. Refrigerate for up to 4 days and eat cold or reheated until steaming."
+      ],
+      "tips": [
+        "Halal and kosher depend on the chicken you buy; check the label.",
+        "Some seasoning mixes contain wheat; check the label if you need gluten-free."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "pesto-chicken-pasta-salad",
+      "title": "Pesto chicken and veggie pasta salad",
+      "summary": "[PLACEHOLDER - needs expert review] A cold pasta salad that packs well and keeps you full.",
+      "icon": "fork.knife",
+      "emoji": "🍝",
+      "tone": "muted",
+      "activeMinutes": 15,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": ["prep-ahead-lunch", "lunch", "high-protein", "family-friendly"],
+      "tags": ["batch-cook"],
+      "energy": "low",
+      "allergens": ["milk", "wheat", "tree-nuts"],
+      "diets": [],
+      "ingredients": [
+        "8 oz penne or rotini",
+        "2 cups cooked chicken, shredded or diced",
+        "1/3 cup basil pesto",
+        "1 cup cherry tomatoes, halved",
+        "1 cup baby spinach",
+        "1/4 cup grated parmesan"
+      ],
+      "steps": [
+        "Cook the pasta according to the package, drain and rinse under cold water.",
+        "In a large bowl, toss the cooled pasta with the pesto, chicken, tomatoes, spinach and parmesan.",
+        "Refrigerate in an airtight container for up to 4 days."
+      ],
+      "tips": [
+        "Many pestos contain pine nuts, other nuts and cheese; check the label.",
+        "Halal and kosher depend on the chicken you buy; check the label."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "sweet-potato-black-bean-quinoa-bowls",
+      "title": "Sweet potato and black bean quinoa bowls",
+      "summary": "[PLACEHOLDER - needs expert review] Fiber-rich vegetarian bowls that hold up all week.",
+      "icon": "leaf.fill",
+      "emoji": "🍠",
+      "tone": "sky",
+      "activeMinutes": 15,
+      "totalMinutes": 35,
+      "servings": 4,
+      "categories": ["prep-ahead-lunch", "lunch", "nourished", "family-friendly"],
+      "tags": ["batch-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 large sweet potato, peeled and diced",
+        "1 can (15 oz) black beans, rinsed and drained",
+        "1 1/2 cups cooked quinoa",
+        "1 cup corn",
+        "2 tbsp olive oil",
+        "1 tsp cumin",
+        "Lime juice for drizzling"
+      ],
+      "steps": [
+        "Heat the oven to 400°F (200°C). Toss the sweet potato with the oil and cumin and roast for about 20 minutes, until tender.",
+        "Divide the quinoa among containers, then top with the sweet potato, beans and corn.",
+        "Drizzle with lime juice, seal and refrigerate for up to 4 days."
+      ],
+      "tips": [
+        "Sharing with a baby or toddler? Mash the beans and sweet potato; whole beans and corn kernels are a choking hazard."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "turkey-meatball-zoodle-box",
+      "title": "Turkey meatball and zucchini noodle box",
+      "summary": "[PLACEHOLDER - needs expert review] Comfort food that reheats in two minutes.",
+      "icon": "frying.pan.fill",
+      "emoji": "🍝",
+      "tone": "accent",
+      "activeMinutes": 15,
+      "totalMinutes": 20,
+      "servings": 4,
+      "categories": ["prep-ahead-lunch", "lunch", "high-protein", "dinner"],
+      "tags": ["batch-cook"],
+      "energy": "low",
+      "allergens": ["milk", "egg", "wheat"],
+      "diets": [],
+      "ingredients": [
+        "12 pre-made baked turkey meatballs",
+        "3 medium zucchini, spiralized, or 2 cups cooked whole-wheat spaghetti",
+        "1 1/2 cups marinara sauce",
+        "1/4 cup grated parmesan"
+      ],
+      "steps": [
+        "Divide the zucchini noodles or spaghetti among 4 containers.",
+        "Top each with 3 meatballs and a scoop of marinara, then sprinkle with parmesan.",
+        "Seal and refrigerate for up to 3 days. Microwave about 2 minutes, until steaming hot (165°F), before eating."
+      ],
+      "tips": [
+        "Pre-made meatballs often contain egg, wheat and milk; check the label.",
+        "Zucchini noodles release water as they sit; keep them in a separate container if you prefer them firmer."
       ],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
