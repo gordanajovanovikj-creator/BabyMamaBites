@@ -119,3 +119,37 @@ const photos: Record<string, ImageSource> = {
 export function recipePhoto(recipeId: string): ImageSource | undefined {
   return photos[recipeId];
 }
+
+/** The recipe whose photo heads each collection page, so covers don't repeat. */
+const categoryCovers: Record<string, string> = {
+  'nourish-while-nursing': 'nursing-brown-sugar-oats',
+  smoothies: 'smoothie-ginger-turmeric',
+  'busy-moms': 'nursing-chocolate-chip-bites',
+  'one-hand': 'pb-banana-shake',
+  'dinner-in-30': 'turkey-taco-skillet',
+  'one-pot': 'one-pot-pasta',
+  'top-breakfasts': 'almond-butter-chia-pudding',
+  'prep-ahead-breakfast': 'overnight-oats',
+  'prep-ahead-lunch': 'chicken-quinoa-jars',
+  'high-protein-dinner': 'nursing-salmon-quinoa-bowl',
+  'high-protein': 'high-protein-bento-box',
+  'snack-smart': 'nursing-no-bake-granola-bars',
+  'family-friendly': 'naan-margherita-pizzas',
+  nourished: 'sweet-potato-black-bean-quinoa-bowls',
+  breakfast: 'avocado-egg-toast',
+  lunch: 'white-bean-tuna-salad',
+  dinner: 'teriyaki-chicken-bowls',
+};
+
+/** Cover photo for a collection: its chosen recipe, else the first recipe in it with a photo. */
+export function categoryPhoto(
+  categoryId: string,
+  recipes: readonly { id: string; categories: string[] }[],
+): ImageSource | undefined {
+  const cover = categoryCovers[categoryId];
+  if (cover && photos[cover]) return photos[cover];
+  const first = recipes.find((r) => r.categories.includes(categoryId) && photos[r.id]);
+  return first ? photos[first.id] : undefined;
+}
+
+export const categoryCoverIds: Readonly<Record<string, string>> = categoryCovers;
