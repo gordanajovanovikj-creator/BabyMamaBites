@@ -116,6 +116,14 @@ const mealKickers: [string, string][] = [
   ['nourish-while-nursing', 'Drink & snack'],
 ];
 
+/**
+ * Common allergens to flag on a baby recipe's picture. Empty for grown-up recipes, which
+ * list their allergens on the recipe page instead.
+ */
+export function babyAllergenWarning(recipe: Recipe): Recipe['allergens'] {
+  return recipe.fromMonths !== undefined ? recipe.allergens : [];
+}
+
 /** Short label shown above a recipe title, e.g. "Breakfast", "Snack" or "From 9 months". */
 export function recipeKicker(recipe: Recipe): string {
   if (recipe.fromMonths !== undefined) return `From ${recipe.fromMonths} months`;

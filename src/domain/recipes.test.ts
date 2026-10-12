@@ -2,6 +2,7 @@ import { recipeCategories, recipes as bundled, type Recipe } from '@/content/rec
 
 import { allergens } from './profile';
 import {
+  babyAllergenWarning,
   findRecipes,
   foodsToTryToday,
   fitsCookingTime,
@@ -124,7 +125,8 @@ const allergenSignals: Record<(typeof allergens)[number], RegExp> = {
   shellfish: /\b(shrimp|crab|lobster|scallops?|clams?|mussels?)\b/i,
 };
 /** Ingredient phrases that look like an allergen but aren't. */
-const notAllergen = /\b((coconut|oat|plant|almond|soy|rice|hemp) milk|corn tortillas?|peanut-free|dairy-free)\b/i;
+const notAllergen =
+  /\b((coconut|oat|plant|almond|soy|rice|hemp) milk|corn tortillas?|peanut-free|dairy-free)\b/i;
 
 describe('bundled recipes', () => {
   it('declare every allergen their ingredients suggest', () => {
@@ -222,6 +224,14 @@ describe('recipeSections', () => {
   it('limits recipes per section', () => {
     const many = Array.from({ length: 15 }, (_, i) => make(`r${i}`, { categories: ['lunch'] }));
     expect(recipeSections(cats, many, household, 10)[0].recipes).toHaveLength(10);
+  });
+});
+
+describe('babyAllergenWarning', () => {
+  it('flags allergens on baby recipes only', () => {
+    expect(babyAllergenWarning(make('b', { fromMonths: 6, allergens: ['egg'] }))).toEqual(['egg']);
+    expect(babyAllergenWarning(make('b', { fromMonths: 6 }))).toEqual([]);
+    expect(babyAllergenWarning(make('m', { allergens: ['egg'] }))).toEqual([]);
   });
 });
 

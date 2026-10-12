@@ -2,10 +2,12 @@ import { router } from 'expo-router';
 import { Pressable, View } from 'react-native';
 
 import type { Recipe } from '@/content/recipes';
-import { recipeKicker, recipeMeta } from '@/domain/recipes';
+import { allergenLabels } from '@/domain/profile-labels';
+import { babyAllergenWarning, recipeKicker, recipeMeta } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { AppText, HeartButton } from '@/ui';
 
+import { AllergenBadge } from './allergen-badge';
 import { RecipeImage } from './recipe-image';
 
 export const RECIPE_TILE_WIDTH = 240;
@@ -21,12 +23,16 @@ export function RecipeTile({
 }) {
   const { isFavorite, toggle } = useFavorites();
   const saved = isFavorite(recipe.id);
+  const allergens = babyAllergenWarning(recipe);
+  const allergenNote = allergens.length
+    ? ` Contains common allergens: ${allergens.map((a) => allergenLabels[a]).join(', ')}.`
+    : '';
 
   return (
     <View style={{ width }} className="gap-2">
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel={`${recipe.title}. ${recipeKicker(recipe)}. ${recipeMeta(recipe)}.`}
+        accessibilityLabel={`${recipe.title}. ${recipeKicker(recipe)}. ${recipeMeta(recipe)}.${allergenNote}`}
         onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
         className="gap-2 active:opacity-80"
       >
@@ -48,6 +54,7 @@ export function RecipeTile({
           </AppText>
         </View>
       </Pressable>
+      {allergens.length ? <AllergenBadge className="absolute left-3 top-3" /> : null}
       <HeartButton
         saved={saved}
         onPress={() => toggle(recipe.id)}

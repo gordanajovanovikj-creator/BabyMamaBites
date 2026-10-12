@@ -2,21 +2,30 @@ import { router } from 'expo-router';
 import { Pressable, View } from 'react-native';
 
 import type { Recipe } from '@/content/recipes';
-import { recipeKicker, recipeMeta } from '@/domain/recipes';
+import { allergenLabels } from '@/domain/profile-labels';
+import { babyAllergenWarning, recipeKicker, recipeMeta } from '@/domain/recipes';
 import { AppText } from '@/ui';
 
+import { AllergenBadge } from './allergen-badge';
 import { RecipeImage } from './recipe-image';
 
 /** Sweat-style list row: thumbnail, meal label, title, time and servings, chevron. */
 export function RecipeRow({ recipe, fitsTime }: { recipe: Recipe; fitsTime: boolean }) {
+  const allergens = babyAllergenWarning(recipe);
+  const allergenNote = allergens.length
+    ? ` Contains common allergens: ${allergens.map((a) => allergenLabels[a]).join(', ')}.`
+    : '';
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${recipe.title}. ${recipeKicker(recipe)}. ${recipeMeta(recipe)}.${fitsTime ? ' Fits your time.' : ''}`}
+      accessibilityLabel={`${recipe.title}. ${recipeKicker(recipe)}. ${recipeMeta(recipe)}.${fitsTime ? ' Fits your time.' : ''}${allergenNote}`}
       onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
       className="flex-row items-center gap-4 border-b border-border px-5 py-4 active:bg-surface-muted"
     >
-      <RecipeImage recipe={recipe} className="h-24 w-28 rounded-2xl" iconSize={36} />
+      <View>
+        <RecipeImage recipe={recipe} className="h-24 w-28 rounded-2xl" iconSize={36} />
+        {allergens.length ? <AllergenBadge compact className="absolute left-1.5 top-1.5" /> : null}
+      </View>
       <View className="flex-1 gap-0.5">
         <AppText
           variant="label"
