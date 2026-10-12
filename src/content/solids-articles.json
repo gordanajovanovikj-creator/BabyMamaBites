@@ -1107,6 +1107,79 @@
       "reviewer": "registered dietitian"
     },
     {
+      "id": "newborn-snack-basket",
+      "category": "nourishing-you",
+      "title": "A snack basket by your feeding chair",
+      "summary": "[PLACEHOLDER - needs expert review] A small basket of one-handed snacks and a big bottle of water, right where you feed, for those long sessions on the couch.",
+      "fromMonths": 0,
+      "toMonths": 12,
+      "icon": "basket.fill",
+      "emoji": "🧺",
+      "illustration": "snack-basket",
+      "tone": "surface",
+      "readMinutes": 4,
+      "sections": [
+        {
+          "heading": "Why you get so hungry",
+          "paragraphs": [
+            "Ask any experienced mom about the surprises of the newborn weeks and you’ll likely hear this one: breastfeeding and pumping can make you very hungry and thirsty.",
+            "Making milk takes energy. The CDC says breastfeeding moms need about 330 to 400 extra calories a day. And cluster feeding often means long stretches stuck on the couch or glider, unable to get up without waking a sleeping baby. That’s where a snack basket comes in."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "What it is",
+          "paragraphs": [
+            "Just a small basket, caddy or rolling cart kept right next to your feeding chair, stocked with easy snacks and a drink. It turns your feeding spot into a little refueling station."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Why it helps",
+          "paragraphs": [],
+          "bullets": [
+            "No interruptions during cluster feeding: during growth spurts, babies may want to feed constantly. With food in arm’s reach, you can eat without disturbing your baby.",
+            "Steadier energy: sleep loss makes it easy to skip meals. Snacks with protein and fiber keep you full longer and help you avoid the mid-afternoon slump.",
+            "Water within reach: breastfeeding can make you very thirsty. You don’t need to force extra fluids; just keep a big bottle nearby and drink whenever you feel thirsty."
+          ]
+        },
+        {
+          "heading": "What to put in it",
+          "paragraphs": [
+            "The golden rule: one-handed, mess-free and nourishing. Skip very crumbly foods that fall on your baby, and sticky ones that send you to the sink."
+          ],
+          "bullets": [
+            "Energy bites: no-bake balls made with oats, flaxseed and peanut butter.",
+            "Trail mix and roasted nuts: almonds, walnuts, cashews and pumpkin seeds for healthy fats and staying power.",
+            "Whole-grain crackers with single-serve nut butter packets, or cheese sticks kept cold in a small insulated bag.",
+            "Dried fruit: apricots, dates, figs or raisins for a quick sweet bite.",
+            "Granola or protein bars: look for ones with fiber, oats and protein that don’t crumble everywhere.",
+            "A large insulated water bottle: fill it with ice water every evening so it stays cold all night."
+          ]
+        },
+        {
+          "heading": "Setting up your station",
+          "paragraphs": [],
+          "bullets": [
+            "Keep a small trash can next to the chair, so wrappers and peels don’t pile up.",
+            "Restock daily: ask your partner or a helper to refill the basket every evening.",
+            "Add lip balm and hand cream; frequent handwashing is hard on your skin.",
+            "Keep it safe: nuts, seeds and dried fruit are choking hazards for babies and toddlers, so keep the basket out of little hands as your baby gets older. Avoid hot drinks while you’re holding your baby, and put cheese sticks back in the fridge within 2 hours."
+          ]
+        },
+        {
+          "heading": "Taking care of you, too",
+          "paragraphs": [
+            "Motherhood asks a lot of you. A simple snack basket is a small, loving act of self-care, and a reminder during the 3 a.m. feed: I’m taking care of my baby, and I’m taking care of me, too."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": ["cdc-maternal-diet", "cdc-choking"],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
       "id": "milestones-without-anxiety",
       "category": "newborn-days",
       "title": "Growth and milestones, without the anxiety",

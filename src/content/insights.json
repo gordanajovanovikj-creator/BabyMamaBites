@@ -2,25 +2,6 @@
   "version": 1,
   "insights": [
     {
-      "id": "newborn-snack-basket",
-      "category": "nourishing-you",
-      "stages": ["newborn"],
-      "kind": "tip",
-      "tone": "surface",
-      "icon": "basket.fill",
-      "emoji": "🧺",
-      "illustration": "snack-basket",
-      "title": "A snack basket by your feeding chair",
-      "summary": "Food you can reach with one hand.",
-      "body": [
-        "[PLACEHOLDER - needs expert review] Feeds can be long and frequent. A small basket next to the place you usually sit means a snack and a drink are always within reach.",
-        "Pick things you can open and eat with one hand, and refill the basket when you make a cup of tea."
-      ],
-      "allergens": [],
-      "reviewStatus": "placeholder",
-      "reviewer": "dietitian"
-    },
-    {
       "id": "newborn-overnight-oats",
       "category": "nourishing-you",
       "stages": ["newborn", "solids"],
