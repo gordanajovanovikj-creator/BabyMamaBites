@@ -18,12 +18,17 @@ import { ArticlesRow } from '@/features/solids/articles-row';
 import { BabyRecipesView } from '@/features/solids/baby-recipes-view';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { LogEntryRow } from '@/features/solids/log-entry-row';
-import { MakeAheadCard } from '@/features/solids/make-ahead-card';
+import { PhotoLinkCard } from '@/features/solids/photo-link-card';
 import { WeekCard } from '@/features/solids/week-card';
 import { WeekStrip } from '@/features/solids/week-strip';
 import { AppText, Button, Card, Notice, Screen, SearchButton, SegmentedTabs } from '@/ui';
 
 const RECENT = 5;
+
+const planPhotos = {
+  makeAhead: require('@/assets/images/plan/make-ahead.jpg'),
+  choking: require('@/assets/images/plan/choking.jpg'),
+};
 
 type Tab = 'plan' | 'recipes' | 'favorites';
 
@@ -191,19 +196,27 @@ export default function BabyScreen() {
 
             <Button label="Log a food" onPress={() => router.push('/solids/log')} />
 
-            <MakeAheadCard />
+            <PhotoLinkCard
+              photo={planPhotos.makeAhead}
+              title="Make-ahead baby food"
+              body="A few hours of prep can stock your freezer for weeks."
+              accessibilityLabel="Make-ahead baby food: a few hours of prep can stock your freezer for weeks. Opens the guide."
+              onPress={() =>
+                router.push({
+                  pathname: '/solids/article/[id]',
+                  params: { id: 'homemade-baby-food' },
+                })
+              }
+            />
 
-            <Card
-              tone="muted"
-              className="gap-1"
-              onPress={() => router.push('/solids/choking')}
+            <PhotoLinkCard
+              photo={planPhotos.choking}
+              title="Choking and gagging"
+              body="Foods to avoid or change by age, and how to tell gagging from choking."
+              cta="Learn more"
               accessibilityLabel="Choking and gagging: what to know. Opens the safety guide."
-            >
-              <AppText variant="heading">Choking and gagging</AppText>
-              <AppText variant="caption">
-                Foods to avoid or change by age, and how to tell gagging from choking.
-              </AppText>
-            </Card>
+              onPress={() => router.push('/solids/choking')}
+            />
           </View>
 
           <ArticlesRow />

@@ -1,21 +1,34 @@
-import { Image } from 'expo-image';
-import { router } from 'expo-router';
+import { Image, type ImageSource } from 'expo-image';
 import { Pressable, View } from 'react-native';
 
 import { shadows } from '@/theme/colors';
 import { AppText } from '@/ui';
 
-const photo = require('@/assets/images/plan/make-ahead.jpg');
+export type PhotoLinkCardProps = {
+  photo: ImageSource;
+  title: string;
+  body: string;
+  /** Link text under the body. */
+  cta?: string;
+  /** Read by VoiceOver, e.g. "Make-ahead baby food. Opens the guide." */
+  accessibilityLabel: string;
+  onPress(): void;
+};
 
-/** Photo card for the make-ahead guide: a tray of frozen purees with the text underneath. */
-export function MakeAheadCard() {
+/** Wide photo with a title, a line of text and a link underneath; opens a guide. */
+export function PhotoLinkCard({
+  photo,
+  title,
+  body,
+  cta = 'See how',
+  accessibilityLabel,
+  onPress,
+}: PhotoLinkCardProps) {
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel="Make-ahead baby food: a few hours of prep can stock your freezer for weeks. Opens the guide."
-      onPress={() =>
-        router.push({ pathname: '/solids/article/[id]', params: { id: 'homemade-baby-food' } })
-      }
+      accessibilityLabel={accessibilityLabel}
+      onPress={onPress}
       className="gap-3 active:opacity-90"
     >
       <View className="rounded-xl bg-surface" style={{ height: 220, boxShadow: shadows.card }}>
@@ -29,11 +42,11 @@ export function MakeAheadCard() {
       </View>
       <View className="gap-1">
         <AppText variant="heading" size="xl">
-          Make-ahead baby food
+          {title}
         </AppText>
-        <AppText color="muted">A few hours of prep can stock your freezer for weeks.</AppText>
+        <AppText color="muted">{body}</AppText>
         <AppText variant="label" color="primary" className="pt-1 font-bold">
-          See how ›
+          {cta} ›
         </AppText>
       </View>
     </Pressable>
