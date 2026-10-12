@@ -529,7 +529,7 @@
     },
     {
       "id": "chicken-quinoa-jars",
-      "title": "Chicken and quinoa salad jars",
+      "title": "Chicken and quinoa salad",
       "summary": "[PLACEHOLDER - needs expert review] Four lunches made at once, ready to grab from the fridge.",
       "icon": "takeoutbag.and.cup.and.straw.fill",
       "emoji": "🥗",
@@ -553,9 +553,9 @@
       ],
       "steps": [
         "Cook the quinoa according to the package and let it cool.",
-        "Whisk the olive oil, lemon juice and pepper in each jar's bottom.",
-        "Layer the chickpeas, vegetables, quinoa and chicken on top.",
-        "Seal and refrigerate for 3 to 4 days (salads like this don't freeze well). Shake into a bowl to eat."
+        "Divide the quinoa among 4 containers.",
+        "Add the chickpeas, vegetables and chicken. Whisk the olive oil, lemon juice and pepper and keep it in a small separate pot or jar.",
+        "Seal and refrigerate for 3 to 4 days (salads like this don't freeze well). Pour on the dressing just before eating."
       ],
       "tips": ["Halal and kosher depend on the chicken you buy; check the label."],
       "reviewStatus": "placeholder",
