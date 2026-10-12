@@ -135,7 +135,7 @@ people, so the app owner must hold the rights to use them in the app and App Sto
 | family-kitchen   | "We've got you, mama" screen          | Supplied by the app owner                          | —                                                                                         | Owner-supplied                                 | 2026-10-09 |
 | welcome-mom-baby | Month 1 guide                         | Supplied by the app owner                          | —                                                                                         | Owner-supplied                                 | 2026-10-09 |
 | make-ahead       | Baby tab: make-ahead card             | Dreamstime (ID 5826918), © Monkey Business Images  | —                                                                                         | Dreamstime license (supplied by the app owner) | 2026-10-12 |
-| choking          | Baby tab: choking card                | Supplied by the app owner                          | —                                                                                         | Owner-supplied                                 | 2026-10-09 |
+| choking          | Baby tab: choking card                | Dreamstime (ID 204669953), © Wellphotos            | —                                                                                         | Dreamstime license (supplied by the app owner) | 2026-10-12 |
 
 ## Insights article photos
 
