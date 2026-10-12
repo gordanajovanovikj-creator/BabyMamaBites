@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 import creditsJson from './photo-credits.json';
 
-export const photoSources = ['magnific', 'dreamstime', 'pixabay'] as const;
+export const photoSources = ['magnific', 'dreamstime', 'pexels', 'pixabay'] as const;
 export type PhotoSource = (typeof photoSources)[number];
 
 const creditSchema = z.object({

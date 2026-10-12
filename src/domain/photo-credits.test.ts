@@ -18,6 +18,7 @@ describe('creditLine', () => {
   it('formats each source', () => {
     expect(creditLine(credit({ source: 'dreamstime' }))).toBe('© Ann | Dreamstime.com');
     expect(creditLine(credit({ source: 'pixabay' }))).toBe('Ann on Pixabay');
+    expect(creditLine(credit({ source: 'pexels' }))).toBe('Photo by Ann on Pexels');
     expect(creditLine(credit({ source: 'magnific', author: null }))).toBe('Designed by Magnific');
   });
 });
@@ -39,7 +40,7 @@ describe('bundled photo credits', () => {
     const md = readFileSync(join(__dirname, '../../docs/photo-credits.md'), 'utf8');
     const stock = md
       .split('\n')
-      .filter((l) => l.startsWith('| ') && /\| Pixabay\s+\||Dreamstime|Magnific/.test(l))
+      .filter((l) => l.startsWith('| ') && /\| (Pixabay|Pexels)\s+\||Dreamstime|Magnific/.test(l))
       .map((l) => l.split('|')[1].trim());
     const ids = new Set(photoCredits.map((c) => c.id));
     expect(stock.filter((id) => !ids.has(id))).toEqual([]);

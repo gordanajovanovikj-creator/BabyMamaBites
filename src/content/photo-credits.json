@@ -2,13 +2,6 @@
   "version": 1,
   "credits": [
     {
-      "id": "almond-butter-chia-pudding",
-      "usedOn": "Almond butter chia pudding",
-      "source": "magnific",
-      "author": null,
-      "url": null
-    },
-    {
       "id": "bbq-chicken-flatbread",
       "usedOn": "BBQ chicken flatbread",
       "source": "magnific",
@@ -112,6 +105,13 @@
       "source": "dreamstime",
       "author": "Nelly Kovalchuk",
       "url": "https://www.dreamstime.com/stock-photo-tuna-salad-white-beans-red-onions-bowl-basil-leaves-old-wooden-background-freshly-made-bean-image84788222"
+    },
+    {
+      "id": "almond-butter-chia-pudding",
+      "usedOn": "Almond butter chia pudding",
+      "source": "pexels",
+      "author": "Alisha Mishra",
+      "url": "https://www.pexels.com/photo/brown-wooden-ladle-1346295/"
     },
     {
       "id": "newborn-snack-basket",

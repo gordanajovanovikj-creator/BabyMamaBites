@@ -11,6 +11,11 @@ export const photoSourceInfo: Record<PhotoSource, { name: string; url: string; n
     url: 'https://www.dreamstime.com',
     note: 'Licensed from Dreamstime.com',
   },
+  pexels: {
+    name: 'Pexels',
+    url: 'https://www.pexels.com',
+    note: 'Free under the Pexels License',
+  },
   pixabay: {
     name: 'Pixabay',
     url: 'https://pixabay.com',
@@ -18,11 +23,13 @@ export const photoSourceInfo: Record<PhotoSource, { name: string; url: string; n
   },
 };
 
-/** "© Author | Dreamstime.com", "Author on Pixabay", "Designed by Magnific". */
+/** "© Author | Dreamstime.com", "Photo by Author on Pexels", "Author on Pixabay", "Designed by Magnific". */
 export function creditLine(credit: PhotoCredit): string {
   switch (credit.source) {
     case 'dreamstime':
       return credit.author ? `© ${credit.author} | Dreamstime.com` : 'Dreamstime.com';
+    case 'pexels':
+      return credit.author ? `Photo by ${credit.author} on Pexels` : 'Pexels';
     case 'pixabay':
       return credit.author ? `${credit.author} on Pixabay` : 'Pixabay';
     case 'magnific':

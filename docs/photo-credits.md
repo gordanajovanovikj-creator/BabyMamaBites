@@ -6,7 +6,7 @@ Photos bundled in `assets/images/recipes/` and registered in
 (free for commercial use, no attribution required); we credit them here anyway.
 
 Stock photo credits are also shown in the app (Settings > Photo credits), read from
-`src/content/photo-credits.json`. When you add a Pixabay, Dreamstime or Magnific photo,
+`src/content/photo-credits.json`. When you add a Pixabay, Pexels, Dreamstime or Magnific photo,
 add it to both; a test checks they match. Free Magnific images require the visible
 "Designed by Magnific" credit, which that screen provides.
 
@@ -153,7 +153,7 @@ Bundled in `assets/images/insights/` and registered in
 | nursing-methi-chicken-curry            | Dreamstime (ID 222488742)                          | © Shafqat A, Dreamstime.com         | https://www.dreamstime.com/chiken-curry-green-chillies-corinder-leaves-cuisine-chicken-curry-green-chilli-coriander-leaves-image222488742                   | Dreamstime license (supplied by the app owner) | 2026-10-12 |
 | nursing-spinach-pear-quinoa-salad      | Pixabay                                            | yana_tik                            | https://pixabay.com/photos/salad-food-proper-nutrition-3889910/                                                                                             | Pixabay Content License                        | 2026-10-12 |
 | pb-banana-baked-oatmeal-cups           | Pixabay                                            | shannonlee                          | https://pixabay.com/photos/oatmeal-muffins-cakes-healthy-287760/                                                                                            | Pixabay Content License                        | 2026-10-12 |
-| almond-butter-chia-pudding             | Magnific (magnific.com), supplied by the app owner | —                                   | —                                                                                                                                                           | Magnific license (held by the app owner)       | 2026-10-12 |
+| almond-butter-chia-pudding             | Pexels                                             | Alisha Mishra                       | https://www.pexels.com/photo/brown-wooden-ladle-1346295/                                                                                                    | Pexels License                                 | 2026-10-12 |
 | sweet-potato-spinach-hash              | Pixabay                                            | Mondgesicht                         | https://pixabay.com/photos/sweet-potatoes-potatoes-cook-meal-8295778/                                                                                       | Pixabay Content License                        | 2026-10-12 |
 | apple-cinnamon-porridge                | Pixabay                                            | RitaE                               | https://pixabay.com/photos/cereal-porridge-breakfast-healthy-3186256/                                                                                       | Pixabay Content License                        | 2026-10-12 |
 | lemon-herb-quinoa-chickpea-salad       | Pixabay                                            | Einladung_zum_Essen                 | https://pixabay.com/photos/quinoa-salad-tomatoes-lime-rocket-1822176/                                                                                       | Pixabay Content License                        | 2026-10-12 |
