@@ -13,7 +13,7 @@ import { useFavorites } from '@/features/favorites/favorites-context';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
 import { FamilyMealCard } from '@/features/recipes/family-meal-card';
-import { PictureHero } from '@/features/recipes/picture-hero';
+import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { recipePhoto } from '@/features/recipes/recipe-photos';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
@@ -55,19 +55,27 @@ export default function RecipeScreen() {
   const tags = [energyLabels[recipe.energy], ...recipe.tags.map((t) => recipeTagLabels[t])];
 
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-0">
+    <Screen
+      padded={false}
+      edgeToEdgeTop
+      className="gap-0"
+      overlay={
+        <HeroTopBar
+          right={
+            <HeartButton
+              saved={isFavorite(recipe.id)}
+              onPress={() => toggle(recipe.id)}
+              label={recipe.title}
+            />
+          }
+        />
+      }
+    >
       <PictureHero
         tone={recipe.tone}
         icon={recipe.icon}
         emoji={recipe.emoji}
         photo={recipePhoto(recipe.id)}
-        right={
-          <HeartButton
-            saved={isFavorite(recipe.id)}
-            onPress={() => toggle(recipe.id)}
-            label={recipe.title}
-          />
-        }
       />
 
       <DetailHeader kicker={recipeKicker(recipe)} title={recipe.title}>

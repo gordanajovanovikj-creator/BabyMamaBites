@@ -6,7 +6,7 @@ import { splitReviewMarker } from '@/content/schemas';
 import { adjacentGuides } from '@/domain/monthly-guides';
 import { guidePhoto } from '@/features/guides/guide-photos';
 import { GuideSectionView } from '@/features/guides/guide-section-view';
-import { PictureHero } from '@/features/recipes/picture-hero';
+import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { AppText, Button, Screen } from '@/ui';
@@ -28,7 +28,7 @@ export default function GuideScreen() {
 
   return (
     // keyed so switching months starts at the top
-    <Screen key={guide.id} padded={false} edgeToEdgeTop className="gap-0">
+    <Screen key={guide.id} padded={false} edgeToEdgeTop className="gap-0" overlay={<HeroTopBar />}>
       <PictureHero tone="muted" icon="calendar" emoji="📅" photo={guidePhoto(guide.id)} />
 
       <DetailHeader

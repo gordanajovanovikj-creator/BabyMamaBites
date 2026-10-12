@@ -19,6 +19,8 @@ export type ScreenProps = {
    * `edgeToEdgeTop` it must add the top safe-area inset itself.
    */
   stickyHeader?: ReactNode;
+  /** Floats over the content and doesn't scroll, e.g. a back button over a hero photo. */
+  overlay?: ReactNode;
   className?: string;
 };
 
@@ -29,6 +31,7 @@ export function Screen({
   padded = true,
   edgeToEdgeTop = false,
   stickyHeader,
+  overlay,
   className,
 }: ScreenProps) {
   // A hairline under the pinned header once content slides beneath it.
@@ -40,7 +43,7 @@ export function Screen({
   if (!scroll) {
     return <View className={cn('flex-1 bg-canvas', padded && 'px-5', className)}>{children}</View>;
   }
-  return (
+  const scrollView = (
     <ScrollView
       className="flex-1 bg-canvas"
       contentInsetAdjustmentBehavior={edgeToEdgeTop ? 'never' : 'automatic'}
@@ -56,5 +59,14 @@ export function Screen({
       ) : null}
       {children}
     </ScrollView>
+  );
+  if (!overlay) return scrollView;
+  return (
+    <View className="flex-1 bg-canvas">
+      {scrollView}
+      <View pointerEvents="box-none" style={{ position: 'absolute', top: 0, left: 0, right: 0 }}>
+        {overlay}
+      </View>
+    </View>
   );
 }

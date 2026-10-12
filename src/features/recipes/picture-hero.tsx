@@ -11,8 +11,6 @@ export type PictureHeroProps = {
   icon: string;
   emoji: string;
   height?: number;
-  /** Extra button shown top-right (e.g. a heart). */
-  right?: ReactNode;
   /** Artwork shown instead of the icon (e.g. a vector illustration). */
   art?: ReactNode;
   /** A full-bleed photo; takes the place of the color block and icon. */
@@ -20,10 +18,11 @@ export type PictureHeroProps = {
 };
 
 /**
- * Full-width picture area at the top of a page with a floating back button.
+ * Full-width picture area at the top of a page. Pair it with `HeroTopBar` as
+ * the Screen's `overlay` so the back button stays put while the page scrolls.
  * Shows a large icon on a soft color when there is no photo.
  */
-export function PictureHero({ tone, icon, emoji, height, right, art, photo }: PictureHeroProps) {
+export function PictureHero({ tone, icon, emoji, height, art, photo }: PictureHeroProps) {
   const insets = useSafeAreaInsets();
   const h = height ?? (photo ? 360 : 300);
   return (
@@ -42,18 +41,26 @@ export function PictureHero({ tone, icon, emoji, height, right, art, photo }: Pi
       ) : (
         (art ?? <SymbolIcon icon={icon} emoji={emoji} size={96} />)
       )}
-      <View
-        className="absolute left-5 right-5 flex-row justify-between"
-        style={{ top: insets.top + 8 }}
-      >
-        <RoundIconButton
-          symbol="chevron.left"
-          fallback="‹"
-          accessibilityLabel="Back"
-          onPress={() => router.back()}
-        />
-        {right ?? null}
-      </View>
+    </View>
+  );
+}
+
+/** Back button (and an optional right-hand button) that float over a hero and don't scroll. */
+export function HeroTopBar({ right }: { right?: ReactNode }) {
+  const insets = useSafeAreaInsets();
+  return (
+    <View
+      pointerEvents="box-none"
+      className="flex-row justify-between px-5"
+      style={{ paddingTop: insets.top + 8 }}
+    >
+      <RoundIconButton
+        symbol="chevron.left"
+        fallback="‹"
+        accessibilityLabel="Back"
+        onPress={() => router.back()}
+      />
+      {right ?? null}
     </View>
   );
 }

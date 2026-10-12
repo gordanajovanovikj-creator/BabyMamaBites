@@ -7,7 +7,7 @@ import { solidsSourcesFor } from '@/content/solids-plan';
 import { ageRangeLabel } from '@/domain/articles';
 import { libraryPhoto } from '@/features/library/library-photos';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
-import { PictureHero } from '@/features/recipes/picture-hero';
+import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { SourceLinks } from '@/features/shared/source-links';
 import { AppText, Button, Illustration, Screen } from '@/ui';
@@ -26,7 +26,7 @@ export default function ArticleScreen() {
   }
 
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-0">
+    <Screen padded={false} edgeToEdgeTop className="gap-0" overlay={<HeroTopBar />}>
       <PictureHero
         tone={article.tone}
         icon={article.icon}

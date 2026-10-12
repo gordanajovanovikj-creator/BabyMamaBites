@@ -1,6 +1,7 @@
 import { SymbolView } from 'expo-symbols';
 import { Pressable, Text } from 'react-native';
 
+import { shadows } from '@/theme/colors';
 import { usePalette } from '@/theme/use-palette';
 
 import { cn } from './cn';
@@ -24,9 +25,10 @@ export function HeartButton({ saved, onPress, label, className }: HeartButtonPro
       onPress={onPress}
       hitSlop={8}
       className={cn(
-        'h-11 w-11 items-center justify-center rounded-full bg-surface active:opacity-70',
+        'h-12 w-12 items-center justify-center rounded-full bg-surface active:opacity-70',
         className,
       )}
+      style={{ boxShadow: shadows.floatTight }}
     >
       <SymbolView
         name={saved ? 'heart.fill' : 'heart'}

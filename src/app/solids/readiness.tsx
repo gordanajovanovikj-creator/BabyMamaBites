@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import { splitReviewMarker } from '@/content/schemas';
 import { readiness, solidsSourcesFor } from '@/content/solids-plan';
 import { libraryPhoto } from '@/features/library/library-photos';
-import { PictureHero } from '@/features/recipes/picture-hero';
+import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { SourceLinks } from '@/features/shared/source-links';
@@ -12,7 +12,7 @@ import { AppText, Notice, Screen } from '@/ui';
 /** "Is your baby ready to start solids?": the readiness signs, opened from the Plan tab. */
 export default function ReadinessScreen() {
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-0">
+    <Screen padded={false} edgeToEdgeTop className="gap-0" overlay={<HeroTopBar />}>
       <PictureHero
         tone="accent"
         icon="figure.seated.side"

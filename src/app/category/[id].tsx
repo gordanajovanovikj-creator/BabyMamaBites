@@ -8,7 +8,7 @@ import { recipeTagLabels } from '@/domain/recipe-labels';
 import { findRecipes, fitsCookingTime } from '@/domain/recipes';
 import { useHousehold } from '@/features/profile/use-household';
 import { HouseholdNote } from '@/features/recipes/household-note';
-import { PictureHero } from '@/features/recipes/picture-hero';
+import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { RecipeRow } from '@/features/recipes/recipe-row';
 import { AppText, Button, Chip, Notice, Screen } from '@/ui';
 
@@ -35,7 +35,7 @@ export default function CategoryScreen() {
   });
 
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-0">
+    <Screen padded={false} edgeToEdgeTop className="gap-0" overlay={<HeroTopBar />}>
       <PictureHero tone={category.tone} icon={category.icon} emoji={category.emoji} />
 
       <View className="gap-2 px-5 pb-4 pt-8">
