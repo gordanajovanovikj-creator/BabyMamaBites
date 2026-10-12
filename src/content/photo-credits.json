@@ -37,6 +37,13 @@
       "url": null
     },
     {
+      "id": "welcome-kitchen",
+      "usedOn": "Welcome screen",
+      "source": "magnific",
+      "author": null,
+      "url": "https://www.magnific.com/free-photo/lifestyle-woman-going-through-motherhood_94964571.htm"
+    },
+    {
       "id": "chicken-quinoa-jars",
       "usedOn": "Chicken and quinoa salad",
       "source": "dreamstime",
