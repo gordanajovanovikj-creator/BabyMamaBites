@@ -38,6 +38,10 @@ function RootStack() {
       <Stack.Protected guard={!!profile}>
         <Stack.Screen name="(tabs)" />
         <Stack.Screen
+          name="disclaimer"
+          options={{ presentation: 'modal', headerShown: true, title: 'Disclaimer' }}
+        />
+        <Stack.Screen
           name="about"
           options={{ presentation: 'modal', headerShown: true, title: 'About & safety' }}
         />

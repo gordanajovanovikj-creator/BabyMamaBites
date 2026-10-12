@@ -8,6 +8,7 @@ import { guidePhoto } from '@/features/guides/guide-photos';
 import { GuideSectionView } from '@/features/guides/guide-section-view';
 import { PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { AppText, Button, Notice, Screen } from '@/ui';
 
 export default function GuideScreen() {
@@ -70,6 +71,7 @@ export default function GuideScreen() {
           ) : null}
         </View>
         <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
+        <HealthDisclaimerNote />
       </View>
     </Screen>
   );

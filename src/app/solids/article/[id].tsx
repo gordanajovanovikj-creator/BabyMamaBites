@@ -7,6 +7,7 @@ import { articlesAccessed, getArticle } from '@/content/solids-articles';
 import { solidsSourcesFor } from '@/content/solids-plan';
 import { ageRangeLabel } from '@/domain/articles';
 import { libraryPhoto } from '@/features/library/library-photos';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { SourceLinks } from '@/features/shared/source-links';
@@ -77,6 +78,8 @@ export default function ArticleScreen() {
             body={`Summarized from US guidance read on ${articlesAccessed}. Not yet reviewed by a ${article.reviewer}, and not medical advice. Follow your ${forMom ? 'doctor' : 'pediatrician'}'s advice, and call 911 in an emergency.`}
           />
         ) : null}
+
+        <HealthDisclaimerNote />
       </View>
     </Screen>
   );

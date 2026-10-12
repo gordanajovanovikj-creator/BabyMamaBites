@@ -7,6 +7,7 @@ import { insightKindLabel } from '@/features/insights/insight-style';
 import { libraryPhoto } from '@/features/library/library-photos';
 import { PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
 
 export default function InsightScreen() {
@@ -61,6 +62,7 @@ export default function InsightScreen() {
           />
         ) : null}
         <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
+        <HealthDisclaimerNote />
       </View>
     </Screen>
   );

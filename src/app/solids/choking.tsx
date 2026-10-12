@@ -3,6 +3,7 @@ import { Linking, View } from 'react-native';
 import { splitReviewMarker } from '@/content/schemas';
 import { chokingGuide, solidsAccessed, solidsSourcesFor } from '@/content/solids-plan';
 import { SourceLinks } from '@/features/shared/source-links';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { AppText, Button, Card, Notice, Screen } from '@/ui';
 
 function Bullets({ items, color }: { items: string[]; color?: 'danger' }) {
@@ -48,6 +49,7 @@ export default function ChokingScreen() {
         title="Draft from official sources"
         body={`Summarized from CDC and AAP guidance read on ${solidsAccessed}. Not yet reviewed by a health professional, and not medical advice.`}
       />
+      <HealthDisclaimerNote />
     </Screen>
   );
 }

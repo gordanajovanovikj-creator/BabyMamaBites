@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "blocks": [
+    {
+      "id": "educational",
+      "title": "Educational purposes only",
+      "body": "[PLACEHOLDER - needs expert review] All articles, recipes, guides, tips and chat answers in MamaBabyBites are for general information and education only. They are not medical, pediatric or nutritional advice, and they don't replace care from a qualified professional.",
+      "reviewStatus": "placeholder",
+      "reviewer": "legal"
+    },
+    {
+      "id": "no-relationship",
+      "title": "No doctor-patient relationship",
+      "body": "[PLACEHOLDER - needs expert review] Using this app does not create a doctor-patient, dietitian-client or any other professional healthcare relationship between you and MamaBabyBites or anyone involved in making it.",
+      "reviewStatus": "placeholder",
+      "reviewer": "legal"
+    },
+    {
+      "id": "consult",
+      "title": "Talk to a professional",
+      "body": "[PLACEHOLDER - needs expert review] Every baby and every mom is different. Always ask your pediatrician, family doctor or a registered dietitian about your child's health, growth, development, allergies or medical history, and your OB-GYN, midwife or doctor about your own health, before making changes based on anything you read here.",
+      "reviewStatus": "placeholder",
+      "reviewer": "legal"
+    },
+    {
+      "id": "allergy-safety",
+      "title": "Allergies and food safety",
+      "body": "[PLACEHOLDER - needs expert review] Follow safe food preparation guidelines, offer foods in shapes and textures that suit your baby's age, and always stay with your baby while they eat. Watch for signs of an allergic reaction after offering a new food. If your baby has severe eczema, a known food allergy, or a family history of food allergies, talk to your pediatrician or an allergist before introducing peanut, egg or other common allergens.",
+      "reviewStatus": "placeholder",
+      "reviewer": "legal"
+    },
+    {
+      "id": "emergency",
+      "title": "In an emergency",
+      "body": "[PLACEHOLDER - needs expert review] If you think your child is having a severe allergic reaction or any medical emergency, call 911 or go to the nearest emergency room right away. If you're having thoughts of harming yourself or your baby, call or text 988, or call 911.",
+      "reviewStatus": "placeholder",
+      "reviewer": "legal"
+    },
+    {
+      "id": "article-note",
+      "title": "Disclaimer",
+      "body": "[PLACEHOLDER - needs expert review] The content in this app is for informational and educational purposes only and is not medical, pediatric or nutritional advice. Every baby and mom is unique. Always talk to your pediatrician or healthcare provider before making significant changes to your baby's diet, introducing major allergens, or managing postpartum health concerns. If you think your child is having a medical or allergic emergency, call 911 right away.",
+      "reviewStatus": "placeholder",
+      "reviewer": "legal"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import { tryFoodsHeading } from '@/domain/food-log';
 import { allergenLabels } from '@/domain/profile-labels';
 import { useProfile } from '@/features/profile/profile-context';
 import { SourceLinks } from '@/features/shared/source-links';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { AppText, Button, Card, Notice, Screen } from '@/ui';
 
 function Bullets({ items }: { items: string[] }) {
@@ -172,6 +173,7 @@ export default function PlanWeekScreen() {
         variant="quiet"
         onPress={() => router.push('/solids/choking')}
       />
+      <HealthDisclaimerNote />
     </Screen>
   );
 }

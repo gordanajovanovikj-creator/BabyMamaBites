@@ -5,6 +5,7 @@ import { readiness, solidsSourcesFor } from '@/content/solids-plan';
 import { libraryPhoto } from '@/features/library/library-photos';
 import { PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { SourceLinks } from '@/features/shared/source-links';
 import { AppText, Notice, Screen } from '@/ui';
 
@@ -44,6 +45,7 @@ export default function ReadinessScreen() {
         />
 
         <SourceLinks sources={solidsSourcesFor(readiness.sources)} />
+        <HealthDisclaimerNote />
       </View>
     </Screen>
   );

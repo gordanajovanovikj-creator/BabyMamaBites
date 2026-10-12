@@ -1,6 +1,8 @@
+import { router } from 'expo-router';
+
 import { disclaimers } from '@/content/copy';
 import { splitReviewMarker } from '@/content/schemas';
-import { AppText, Notice, Screen } from '@/ui';
+import { AppText, Button, Notice, Screen } from '@/ui';
 
 export default function AboutScreen() {
   return (
@@ -8,6 +10,11 @@ export default function AboutScreen() {
       <AppText variant="caption">
         Your information stays on this phone. We don&apos;t create accounts or track you.
       </AppText>
+      <Button
+        label="Medical disclaimer"
+        variant="secondary"
+        onPress={() => router.push('/disclaimer')}
+      />
       {disclaimers.map((block) => (
         <Notice
           key={block.id}

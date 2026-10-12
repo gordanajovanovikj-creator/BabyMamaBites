@@ -21,6 +21,7 @@ import { LogEntryRow } from '@/features/solids/log-entry-row';
 import { PhotoLinkCard } from '@/features/solids/photo-link-card';
 import { WeekCard } from '@/features/solids/week-card';
 import { WeekStrip } from '@/features/solids/week-strip';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { AppText, Button, Card, Notice, Screen, SearchButton, SegmentedTabs } from '@/ui';
 
 const RECENT = 5;
@@ -227,6 +228,7 @@ export default function BabyScreen() {
               title="Draft from official sources"
               body="This plan is summarized from CDC and AAP guidance and hasn't been reviewed by a health professional yet. It's not medical advice: follow your pediatrician's advice, and call 911 in an emergency."
             />
+            <HealthDisclaimerNote />
           </View>
         </>
       )}

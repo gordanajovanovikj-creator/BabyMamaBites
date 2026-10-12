@@ -121,6 +121,11 @@ export default function SettingsScreen() {
         detail="How we use guidance, and when to call for help"
         onPress={() => router.push('/about')}
       />
+      <LinkRow
+        label="Medical disclaimer"
+        detail="Educational information only, not medical advice"
+        onPress={() => router.push('/disclaimer')}
+      />
     </Screen>
   );
 }

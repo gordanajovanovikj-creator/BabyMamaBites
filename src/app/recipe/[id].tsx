@@ -15,6 +15,7 @@ import { useHousehold } from '@/features/profile/use-household';
 import { PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { recipePhoto } from '@/features/recipes/recipe-photos';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { AppText, Button, cn, HeartButton, Notice, Screen } from '@/ui';
 
 function SectionTitle({ children }: { children: string }) {
@@ -216,6 +217,7 @@ export default function RecipeScreen() {
           This recipe is for general information only and isn&apos;t health or nutrition advice.
           Nutrition information will be added once it has been calculated and reviewed.
         </AppText>
+        <HealthDisclaimerNote />
       </View>
     </Screen>
   );
