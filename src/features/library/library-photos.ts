@@ -25,6 +25,7 @@ const photos: Record<string, ImageSource> = {
   'newborn-meal-help': require('@/assets/images/insights/newborn-meal-help.jpg'),
   'newborn-rest': require('@/assets/images/insights/newborn-rest.jpg'),
   'newborn-sleep-feeding': require('@/assets/images/insights/newborn-sleep-feeding.jpg'),
+  'emotional-wellbeing': require('@/assets/images/insights/emotional-wellbeing.jpg'),
   'postpartum-recovery': require('@/assets/images/insights/postpartum-recovery.jpg'),
   'newborn-water': require('@/assets/images/insights/newborn-water.jpg'),
   'cows-milk': require('@/assets/images/insights/cows-milk.jpg'),

@@ -827,6 +827,94 @@
       ],
       "reviewStatus": "placeholder",
       "reviewer": "pediatrician"
+    },
+    {
+      "id": "emotional-wellbeing",
+      "category": "your-wellbeing",
+      "title": "Mental health and emotional wellbeing",
+      "summary": "[PLACEHOLDER - needs expert review] Giving words and grace to the invisible emotional load of new motherhood, and knowing when to reach out.",
+      "fromMonths": 0,
+      "toMonths": 12,
+      "icon": "heart.circle.fill",
+      "emoji": "🫶",
+      "illustration": "sprout",
+      "tone": "deep",
+      "readMinutes": 7,
+      "sections": [
+        {
+          "heading": "You're not alone, and it's not your fault",
+          "paragraphs": [
+            "Becoming a mom changes everything at once: your body, your sleep, your relationships and how you see yourself. Big feelings are part of that, and they deserve care too.",
+            "If you're struggling, it's not because you did something wrong. Perinatal mental health conditions are medical conditions, they're common, and treatment and support work."
+          ],
+          "bullets": [
+            "National Maternal Mental Health Hotline: call or text 1-833-TLC-MAMA (1-833-852-6262), free, 24/7.",
+            "If you're thinking about hurting yourself or your baby, call or text 988 now.",
+            "If you or your baby are in danger, call 911.",
+            "If you're experiencing domestic violence: National Domestic Violence Hotline, 1-800-799-7233."
+          ]
+        },
+        {
+          "heading": "Beyond postpartum depression",
+          "paragraphs": [
+            "In the first two weeks, many moms have the baby blues: mood swings, tears and worry that pass on their own. If feelings last longer than 2 weeks, or feel very intense, talk to your provider. Postpartum depression usually doesn't get better without treatment.",
+            "Depression isn't the only condition after birth, and it doesn't always look like sadness. Feeling angry, irritable or moody can be a sign too."
+          ],
+          "bullets": [
+            "Anxiety: constant worry, a feeling that something bad is about to happen, racing thoughts, trouble sitting still, or physical symptoms like dizziness, hot flashes or nausea.",
+            "Postpartum OCD: upsetting thoughts or images about your baby that keep coming back, and urges to clean, check or count to calm them. Moms with OCD are disturbed by these thoughts and are very unlikely to act on them, and treatment helps.",
+            "Postpartum psychosis is rare and an emergency: seeing or hearing things that aren't there, strange beliefs, or confusion. Call 911 or go to the nearest emergency room."
+          ]
+        },
+        {
+          "heading": "How treatment can help",
+          "paragraphs": [
+            "Talk therapy, medicine, or both can help. Ask your provider which options fit you, including if you're breastfeeding. Your OB-GYN, midwife, your baby's pediatrician or your own doctor can help you find care. You can bring it up at any visit, including your baby's checkups.",
+            "It can help to tell one trusted person how you're really doing, and to write down what you're feeling to share with your provider."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Who am I now? The identity shift",
+          "paragraphs": [
+            "Many moms feel a quiet grief for the person they were before the baby: their freedom, their body, their work, their time. Some people call this transition matrescence.",
+            "You can love your baby deeply and still miss your old life. Both can be true at the same time.",
+            "Your new self is still being built. Small things that feel like you, like a walk, a song, a call with a friend or ten quiet minutes, can help you find your way back to yourself."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Boundaries with well-meaning family",
+          "paragraphs": [
+            "Visitors and advice usually come from love, but you're allowed to protect your rest, your recovery and your baby. A short, kind script makes it easier to say no."
+          ],
+          "bullets": [
+            "\"We're not having visitors yet. We'll let you know when we're ready.\"",
+            "\"Thanks for the tip. We're following our pediatrician's advice on that.\"",
+            "\"It would really help if you could bring dinner or fold some laundry while you're here.\"",
+            "\"Please wash your hands before you hold the baby.\"",
+            "\"We'd love a short visit. Can we say an hour?\"",
+            "Ask your partner to pass on the message to their side of the family, so you don't have to."
+          ]
+        },
+        {
+          "heading": "You and your partner",
+          "paragraphs": [
+            "Most couples find the first months hard. Less sleep, new roles and an uneven load can lead to resentment, even in strong relationships.",
+            "Talk about the work, not just the feelings. Make the invisible tasks visible, like booking appointments, buying diapers or planning meals, and split them in a way that feels fair to both of you."
+          ],
+          "bullets": [
+            "Take sleep shifts so each of you gets one longer stretch of rest.",
+            "Check in for five minutes a day: \"What was hardest today? What do you need tomorrow?\"",
+            "Name small things you appreciate in each other.",
+            "Partners can have postpartum depression and anxiety too. Encourage each other to get support.",
+            "If the stress feels like too much, a couples or family therapist can help."
+          ]
+        }
+      ],
+      "sources": ["owh-pmhc", "nimh-perinatal", "owh-ppd", "cdc-hearher"],
+      "reviewStatus": "placeholder",
+      "reviewer": "perinatal mental health professional"
     }
   ]
 }

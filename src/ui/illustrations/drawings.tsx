@@ -594,4 +594,17 @@ export const drawings: Record<IllustrationName, Drawing> = {
       <Ellipse cx={80} cy={106} rx={30} ry={6} fill={c.lavender} />
     </G>
   ),
+
+  sprout: (c) => (
+    <G>
+      <Rect x={60} y={78} width={40} height={26} rx={8} fill={c.carrot} />
+      <Rect x={56} y={72} width={48} height={10} rx={5} fill={c.carrot} opacity={0.8} />
+      <Path d="M80 72 C80 60 80 50 80 42" stroke={c.leaf} strokeWidth={5} strokeLinecap="round" />
+      <Path d="M80 54 C66 54 56 44 56 32 C70 32 80 42 80 54 Z" fill={c.leaf} />
+      <Path d="M80 46 C94 46 104 36 104 24 C90 24 80 34 80 46 Z" fill={c.mint} />
+      <Path d={heart(122, 44, 9)} fill={c.rose} />
+      <Path d={heart(38, 60, 6)} fill={c.roseSoft} />
+      <Path d={sparkle(118, 82, 6)} fill={c.butter} />
+    </G>
+  ),
 };
