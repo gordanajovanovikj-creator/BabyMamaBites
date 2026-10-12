@@ -24,5 +24,6 @@ export const illustrationNames = [
   'blender',
   'toddler-face',
   'phone',
+  'tulip',
 ] as const;
 export type IllustrationName = (typeof illustrationNames)[number];

@@ -587,6 +587,124 @@
       "sources": ["cdc-cowsmilk"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "postpartum-recovery",
+      "category": "your-wellbeing",
+      "title": "Physical healing and postpartum recovery",
+      "summary": "[PLACEHOLDER - needs expert review] Beyond the 6-week checkup: what's happening in your body, how to look after it, and when to get help.",
+      "fromMonths": 0,
+      "toMonths": 12,
+      "icon": "heart.text.square.fill",
+      "emoji": "🌷",
+      "illustration": "tulip",
+      "tone": "sky",
+      "readMinutes": 7,
+      "sections": [
+        {
+          "heading": "Healing takes longer than 6 weeks",
+          "paragraphs": [
+            "Many moms feel they should be back to normal by the 6-week checkup. In reality, your body keeps healing for months after birth, and that's expected. Go easy on yourself.",
+            "Your postpartum visit is a good time to bring up anything that still hurts, leaks or worries you. You don't have to wait for it: if something feels wrong, call your OB-GYN or midwife.",
+            "Get medical care right away, or call 911, if you have any of these warning signs in the year after birth:"
+          ],
+          "bullets": [
+            "Heavy bleeding: soaking through one or more pads in an hour, or passing clots bigger than an egg",
+            "A fever of 100.4°F (38°C) or higher",
+            "A headache that won't go away or gets worse, or changes in your vision",
+            "Trouble breathing, chest pain, or a racing heartbeat",
+            "Swelling, redness or pain in one leg or arm",
+            "Severe belly pain that doesn't go away",
+            "Thoughts of harming yourself or your baby"
+          ]
+        },
+        {
+          "heading": "Pelvic floor and core",
+          "paragraphs": [
+            "Pregnancy and birth stretch the muscles that support your bladder, uterus and bowel (your pelvic floor), and the muscles down the middle of your belly. They usually get stronger again with time and gentle exercise.",
+            "Pelvic floor exercises (Kegels) can usually start soon after birth. To do one, squeeze the muscles you use to hold in pee, hold for a moment, then relax.",
+            "After an uncomplicated vaginal birth, many moms can start gentle activity like walking as soon as they feel able. After a C-section, full activity usually comes back around 4 to 6 weeks if there are no complications. Check with your provider before you start, and build up slowly.",
+            "Some moms notice a gap or a ridge down the middle of the belly when they sit up. This is called diastasis recti and is common after pregnancy. Ask your provider or a pelvic floor physical therapist which exercises are right for you."
+          ],
+          "bullets": [
+            "See your provider if you feel pressure or heaviness in your pelvis or vagina, or feel something bulging at the vaginal opening. These can be signs of prolapse.",
+            "Leaking pee, low back ache, or symptoms that get worse when you stand or lift are worth mentioning too.",
+            "Ask for a referral to a pelvic floor physical therapist if you have any of these, or if you're not sure you're doing the exercises right."
+          ]
+        },
+        {
+          "heading": "The hormonal rollercoaster",
+          "paragraphs": [
+            "Your hormones shift quickly after birth. Many moms have night sweats in the first weeks, and skin changes from pregnancy often fade slowly over the following months.",
+            "Hair shedding is common too. It usually peaks about 4 months after birth, and most moms have their normal hair growth back by their child's first birthday.",
+            "In the first few days after birth, many moms have mood swings, sadness, anxiety, crying spells or trouble sleeping. This is often called the baby blues, and it usually passes within a few days.",
+            "Postpartum depression is different: it's stronger and lasts longer than 2 weeks. About 1 in 8 new moms have symptoms in the year after birth. It's common, it's not your fault, and it can be treated."
+          ],
+          "bullets": [
+            "Talk to your provider if low mood, worry or tiredness lasts longer than 2 weeks or makes it hard to care for yourself or your baby.",
+            "National Maternal Mental Health Hotline: call or text 1-833-TLC-MAMA (1-833-852-6262), free, 24/7.",
+            "In a crisis, call or text 988. If you or your baby are in danger, call 911."
+          ]
+        },
+        {
+          "heading": "Caring for a tear or stitches",
+          "paragraphs": [
+            "A tear or an episiotomy can take many weeks to heal. Stitches usually dissolve on their own.",
+            "Wait 6 weeks before using tampons or having sex, unless your provider tells you otherwise."
+          ],
+          "bullets": [
+            "Ice packs help with pain and swelling in the first 24 hours.",
+            "After 24 hours, warm sitz baths can soothe the area.",
+            "After you pee or poop, spray warm water over the area and pat it dry.",
+            "Change pads every 2 to 4 hours.",
+            "Drink plenty of water and eat high-fiber foods to keep stools soft. Ask about a stool softener if you need one.",
+            "Ask your provider which pain relievers are safe for you, especially if you're breastfeeding."
+          ]
+        },
+        {
+          "heading": "Caring for a C-section incision",
+          "paragraphs": [
+            "A C-section is major surgery, so give yourself time. Many moms need several weeks before they feel like themselves again.",
+            "Once your incision has fully closed, ask your provider or a physical therapist whether scar massage is right for you."
+          ],
+          "bullets": [
+            "Don't lift anything heavier than your baby for the first 6 to 8 weeks.",
+            "Care for the dressing the way your care team showed you.",
+            "Showers are usually fine. Wait for your provider's OK before soaking in a bath or hot tub, or swimming.",
+            "Call your provider if the incision gets red, warm, swollen or starts to drain, smells bad, or opens, or if your pain gets worse."
+          ]
+        },
+        {
+          "heading": "Food for recovery",
+          "paragraphs": [
+            "Your body is healing and, if you're breastfeeding, making milk too. Regular meals with a mix of foods help you keep going. Breastfeeding moms need about 330 to 400 extra calories a day.",
+            "Your needs for some nutrients, like iodine and choline, go up while you breastfeed. Eggs, dairy, meat and low-mercury fish are good sources.",
+            "Ask your provider whether you should keep taking a prenatal vitamin or another supplement. If you lost a lot of blood at birth, ask whether you need extra iron.",
+            "If cooking feels like too much, that's normal. Simple, one-handed meals count."
+          ],
+          "bullets": [
+            "Eggs, yogurt and cheese",
+            "Beans, lentils and whole grains for fiber",
+            "Lots of fruits and vegetables",
+            "Lean meat and poultry",
+            "Low-mercury fish like salmon, 2 to 3 servings a week",
+            "Water within reach whenever you sit down"
+          ]
+        }
+      ],
+      "sources": [
+        "cdc-hearher",
+        "acog-postpartum-exercise",
+        "medline-prolapse",
+        "aad-postpartum-hair",
+        "owh-ppd",
+        "medline-episiotomy",
+        "medline-csection",
+        "cdc-maternal-diet",
+        "fda-fish"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "women's health professional"
     }
   ]
 }

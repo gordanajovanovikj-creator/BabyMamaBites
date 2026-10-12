@@ -567,4 +567,17 @@ export const drawings: Record<IllustrationName, Drawing> = {
       <Path d={sparkle(38, 44, 6)} fill={c.butter} />
     </G>
   ),
+
+  tulip: (c) => (
+    <G>
+      <Path d="M80 58 C80 74 80 88 80 100" stroke={c.leaf} strokeWidth={5} strokeLinecap="round" />
+      <Path d="M80 92 C66 88 58 76 58 66 C70 68 78 78 80 92 Z" fill={c.leaf} />
+      <Path d="M80 86 C94 82 102 70 102 60 C90 62 82 72 80 86 Z" fill={c.mint} />
+      <Path d="M62 30 C62 50 70 60 80 60 C90 60 98 50 98 30 L89 40 L80 26 L71 40 Z" fill={c.rose} />
+      <Path d="M71 40 L80 26 L89 40 C86 50 74 50 71 40 Z" fill={c.roseSoft} />
+      <Ellipse cx={80} cy={104} rx={30} ry={6} fill={c.lavender} />
+      <Path d={heart(122, 40, 8)} fill={c.roseSoft} />
+      <Path d={sparkle(38, 46, 6)} fill={c.butter} />
+    </G>
+  ),
 };

@@ -1,6 +1,7 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
+import { getInsightCategory } from '@/content/insight-categories';
 import { splitReviewMarker } from '@/content/schemas';
 import { articlesAccessed, getArticle } from '@/content/solids-articles';
 import { solidsSourcesFor } from '@/content/solids-plan';
@@ -14,6 +15,7 @@ import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
 export default function ArticleScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const article = getArticle(id);
+  const forMom = article ? getInsightCategory(article.category)?.audience === 'mom' : false;
 
   if (!article) {
     return (
@@ -51,7 +53,7 @@ export default function ArticleScreen() {
           <Notice
             tone="caution"
             title="Draft from official sources"
-            body={`Summarized from US guidance read on ${articlesAccessed}. Not yet reviewed by a ${article.reviewer}, and not medical advice. Follow your pediatrician's advice, and call 911 in an emergency.`}
+            body={`Summarized from US guidance read on ${articlesAccessed}. Not yet reviewed by a ${article.reviewer}, and not medical advice. Follow your ${forMom ? 'doctor' : 'pediatrician'}'s advice, and call 911 in an emergency.`}
           />
         ) : null}
 

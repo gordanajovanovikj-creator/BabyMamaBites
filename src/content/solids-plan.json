@@ -877,6 +877,48 @@
       "publisher": "FDA",
       "title": "Advice about Eating Fish",
       "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish"
+    },
+    {
+      "id": "cdc-hearher",
+      "publisher": "CDC",
+      "title": "Urgent Maternal Warning Signs",
+      "url": "https://www.cdc.gov/hearher/maternal-warning-signs/index.html"
+    },
+    {
+      "id": "owh-ppd",
+      "publisher": "HHS Office on Women's Health",
+      "title": "Postpartum depression",
+      "url": "https://www.womenshealth.gov/mental-health/mental-health-conditions/postpartum-depression"
+    },
+    {
+      "id": "acog-postpartum-exercise",
+      "publisher": "ACOG",
+      "title": "Physical Activity and Exercise During Pregnancy and the Postpartum Period",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period"
+    },
+    {
+      "id": "medline-episiotomy",
+      "publisher": "MedlinePlus (NIH)",
+      "title": "Episiotomy - aftercare",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000483.htm"
+    },
+    {
+      "id": "medline-csection",
+      "publisher": "MedlinePlus (NIH)",
+      "title": "Going home after a C-section",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000624.htm"
+    },
+    {
+      "id": "medline-prolapse",
+      "publisher": "MedlinePlus (NIH)",
+      "title": "Uterine prolapse",
+      "url": "https://medlineplus.gov/ency/article/001508.htm"
+    },
+    {
+      "id": "aad-postpartum-hair",
+      "publisher": "American Academy of Dermatology",
+      "title": "Hair loss in new moms",
+      "url": "https://www.aad.org/public/diseases/hair-loss/insider/new-moms"
     }
   ]
 }
