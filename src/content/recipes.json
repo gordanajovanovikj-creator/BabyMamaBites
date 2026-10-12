@@ -2866,6 +2866,175 @@
       "tips": ["Use pumpkin seeds instead of pistachios to keep it nut-free."],
       "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
+    },
+    {
+      "id": "pb-banana-baked-oatmeal-cups",
+      "title": "Peanut butter banana baked oatmeal cups",
+      "summary": "[PLACEHOLDER - needs expert review] Grab-and-go oatmeal cups to bake once and eat all week.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🧁",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 35,
+      "servings": 12,
+      "categories": [
+        "nourish-while-nursing",
+        "top-breakfasts",
+        "breakfast",
+        "prep-ahead-breakfast",
+        "one-hand",
+        "busy-moms"
+      ],
+      "tags": ["batch-cook", "freezer-friendly", "one-handed"],
+      "energy": "medium",
+      "allergens": ["peanut", "egg", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "2 cups rolled oats",
+        "1/3 cup natural peanut butter",
+        "1/3 cup maple syrup",
+        "1 1/2 cups milk of choice",
+        "2 large eggs",
+        "2 tbsp ground flaxseed",
+        "1 tsp cinnamon",
+        "1 ripe banana, mashed",
+        "1 banana, sliced, for topping"
+      ],
+      "steps": [
+        "Heat the oven to 350°F (175°C) and grease a 12-cup muffin tin.",
+        "In a large bowl, whisk the milk, peanut butter, maple syrup, eggs, mashed banana and cinnamon.",
+        "Stir in the oats and flaxseed.",
+        "Divide among the muffin cups and top each with a banana slice.",
+        "Bake for 20 to 25 minutes, until set and golden."
+      ],
+      "tips": [
+        "Keep in the fridge for up to 4 days, or freeze and warm one in the microwave.",
+        "Use oat or soy milk to make them dairy-free."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "almond-butter-chia-pudding",
+      "title": "Almond butter chia pudding",
+      "summary": "[PLACEHOLDER - needs expert review] Creamy, nutty chia pudding that sets overnight in the fridge.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🍮",
+      "tone": "sky",
+      "activeMinutes": 5,
+      "totalMinutes": 240,
+      "servings": 2,
+      "categories": [
+        "nourish-while-nursing",
+        "top-breakfasts",
+        "breakfast",
+        "prep-ahead-breakfast"
+      ],
+      "tags": ["five-minute", "no-cook"],
+      "energy": "low",
+      "allergens": ["tree-nuts"],
+      "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1/3 cup chia seeds",
+        "1 cup oat milk or almond milk",
+        "1 1/2 tbsp almond butter",
+        "1 tbsp maple syrup",
+        "1/2 tsp vanilla extract",
+        "Sliced almonds or fresh berries for topping"
+      ],
+      "steps": [
+        "In a jar or bowl, whisk the milk, almond butter, maple syrup and vanilla until mostly smooth.",
+        "Stir in the chia seeds.",
+        "Cover and refrigerate for at least 4 hours or overnight.",
+        "Stir well and top with sliced almonds or berries."
+      ],
+      "tips": [
+        "Keeps in the fridge for up to 3 days.",
+        "For gluten-free, choose an oat milk labeled gluten-free."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "sweet-potato-spinach-hash",
+      "title": "Sweet potato and spinach breakfast hash",
+      "summary": "[PLACEHOLDER - needs expert review] A one-pan hash with tender sweet potato, greens and eggs.",
+      "icon": "frying.pan.fill",
+      "emoji": "🍳",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 20,
+      "servings": 1,
+      "categories": [
+        "nourish-while-nursing",
+        "top-breakfasts",
+        "breakfast",
+        "one-pot",
+        "high-protein"
+      ],
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["egg"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "1 medium sweet potato, peeled and diced small",
+        "2 cups baby spinach",
+        "1/4 onion, diced",
+        "2 large eggs",
+        "1 tbsp olive oil",
+        "Salt, pepper and garlic powder"
+      ],
+      "steps": [
+        "Heat the oil in a skillet over medium heat.",
+        "Add the sweet potato and onion, cover, and cook for 8 to 10 minutes, stirring now and then, until tender and lightly browned.",
+        "Stir in the spinach until it wilts.",
+        "Make two small wells, crack an egg into each, cover, and cook until the whites are set and the yolks are firm, about 4 to 5 minutes.",
+        "Season with salt, pepper and garlic powder."
+      ],
+      "tips": [
+        "The FDA advises cooking eggs until both the yolk and white are firm.",
+        "Sharing with a baby? Mash some sweet potato and finely chop a little of the firm egg."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
+    },
+    {
+      "id": "apple-cinnamon-porridge",
+      "title": "Warm apple cinnamon porridge",
+      "summary": "[PLACEHOLDER - needs expert review] Soft cooked apples and cinnamon stirred into creamy oats.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🍎",
+      "tone": "muted",
+      "activeMinutes": 5,
+      "totalMinutes": 15,
+      "servings": 2,
+      "categories": ["nourish-while-nursing", "top-breakfasts", "breakfast"],
+      "tags": [],
+      "energy": "low",
+      "allergens": ["tree-nuts", "milk"],
+      "diets": ["vegetarian", "pescatarian", "halal", "kosher"],
+      "ingredients": [
+        "1 cup rolled oats",
+        "2 cups oat milk",
+        "1 apple, peeled and diced",
+        "1 tbsp butter or coconut oil",
+        "1 tsp cinnamon",
+        "1 tbsp brewer's yeast (optional)",
+        "1 tbsp chopped walnuts"
+      ],
+      "steps": [
+        "Melt the butter in a small pot over medium heat, add the apple and cinnamon, and cook for about 4 minutes until soft.",
+        "Pour in the oat milk and bring to a gentle simmer.",
+        "Stir in the oats and brewer's yeast and turn the heat to medium-low.",
+        "Cook for 5 to 7 minutes, stirring often, until creamy.",
+        "Top with the walnuts."
+      ],
+      "tips": [
+        "Use coconut oil instead of butter to make it dairy-free.",
+        "Sharing with a baby? Leave off the walnuts; whole and chopped nuts are a choking hazard."
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "registered dietitian"
     }
   ]
 }
