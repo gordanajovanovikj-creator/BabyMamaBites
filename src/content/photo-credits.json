@@ -37,6 +37,13 @@
       "url": null
     },
     {
+      "id": "baby-pear-puree",
+      "usedOn": "Ripe pear puree",
+      "source": "magnific",
+      "author": null,
+      "url": "https://www.magnific.com/free-photo/delicious-food-children-jar-high-angle_29298377.htm"
+    },
+    {
       "id": "baby-chicken-puree",
       "usedOn": "Smooth chicken puree",
       "source": "magnific",
@@ -812,13 +819,6 @@
       "source": "pixabay",
       "author": "slaapwijsheid",
       "url": "https://pixabay.com/photos/woman-nap-bedtime-mattress-room-8121473/"
-    },
-    {
-      "id": "baby-pear-puree",
-      "usedOn": "Ripe pear puree",
-      "source": "pixabay",
-      "author": "Taken",
-      "url": "https://pixabay.com/photos/apple-sauce-chunky-applesauce-bowl-544676/"
     },
     {
       "id": "baby-salmon-sweet-potato",
