@@ -4,10 +4,10 @@ import { AppText, cn } from '@/ui';
 
 export type PlanCardProps = {
   name: string;
-  /** The amount actually billed, e.g. "$66.00/year". Shown most prominently. */
+  /** The amount actually billed, e.g. "$79.99/year". Shown most prominently. */
   price: string;
   detail: string;
-  /** Short emphasized note, e.g. "Save 57%". */
+  /** Short emphasized note, e.g. "Save 48%". */
   highlight?: string;
   badge?: string;
   selected: boolean;

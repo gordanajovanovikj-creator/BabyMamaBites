@@ -27,7 +27,7 @@ export const plans: Record<PlanId, Plan> = {
   yearly: {
     id: 'yearly',
     productId: 'mamababybites.premium.yearly',
-    priceCents: 6600,
+    priceCents: 7999,
     period: 'year',
     trialDays: TRIAL_DAYS,
   },

@@ -12,9 +12,9 @@ describe('subscription plans', () => {
     expect(monthlyEquivalentCents(plans.monthly)).toBe(1299);
   });
 
-  it('prices yearly at $66.00, which works out to $5.50 a month', () => {
-    expect(formatUsd(plans.yearly.priceCents)).toBe('$66.00');
-    expect(formatUsd(monthlyEquivalentCents(plans.yearly))).toBe('$5.50');
+  it('prices yearly at $79.99, which works out to $6.66 a month', () => {
+    expect(formatUsd(plans.yearly.priceCents)).toBe('$79.99');
+    expect(formatUsd(monthlyEquivalentCents(plans.yearly))).toBe('$6.66');
   });
 
   it('rounds the monthly figure down, never up', () => {
@@ -23,8 +23,8 @@ describe('subscription plans', () => {
   });
 
   it('reports the yearly saving without overstating it', () => {
-    // $66.00 vs 12 × $12.99 = $155.88 → 57.66% → 57%
-    expect(yearlySavingsPercent(plans.monthly, plans.yearly)).toBe(57);
+    // $79.99 vs 12 × $12.99 = $155.88 → 48.68% → 48%
+    expect(yearlySavingsPercent(plans.monthly, plans.yearly)).toBe(48);
   });
 
   it('gives both plans a 7-day free trial', () => {
