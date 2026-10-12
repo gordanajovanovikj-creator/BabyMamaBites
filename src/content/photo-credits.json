@@ -58,6 +58,13 @@
       "url": "https://www.magnific.com/free-photo/bowl-with-baby-puree_8643055.htm"
     },
     {
+      "id": "baby-sweet-potato-puree",
+      "usedOn": "Sweet potato puree",
+      "source": "magnific",
+      "author": null,
+      "url": "https://www.magnific.com/free-photo/top-view-baby-food-with-cloth-arrangement_8805315.htm"
+    },
+    {
       "id": "teriyaki-chicken-bowls",
       "usedOn": "Teriyaki chicken rice bowls",
       "source": "magnific",
@@ -314,13 +321,6 @@
       "usedOn": "Soft veggie fingers",
       "source": "dreamstime",
       "author": "Heike Rau",
-      "url": null
-    },
-    {
-      "id": "baby-sweet-potato-puree",
-      "usedOn": "Sweet potato puree",
-      "source": "dreamstime",
-      "author": "Monkey Business Images",
       "url": null
     },
     {
