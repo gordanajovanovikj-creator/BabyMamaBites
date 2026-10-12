@@ -580,4 +580,18 @@ export const drawings: Record<IllustrationName, Drawing> = {
       <Path d={sparkle(38, 46, 6)} fill={c.butter} />
     </G>
   ),
+
+  bottle: (c) => (
+    <G>
+      <Rect x={64} y={44} width={32} height={58} rx={12} fill={c.white} opacity={0.95} />
+      <Rect x={68} y={62} width={24} height={36} rx={8} fill={c.butter} />
+      <Rect x={62} y={36} width={36} height={12} rx={5} fill={c.sky} />
+      <Path d="M72 36 C72 26 76 18 80 16 C84 18 88 26 88 36 Z" fill={c.roseSoft} />
+      <Rect x={70} y={70} width={10} height={3} rx={1.5} fill={c.white} />
+      <Rect x={70} y={80} width={10} height={3} rx={1.5} fill={c.white} />
+      <Path d="M122 30 A16 16 0 1 0 134 56 A12 12 0 1 1 122 30 Z" fill={c.butter} />
+      <Path d={sparkle(38, 44, 6)} fill={c.lavender} />
+      <Ellipse cx={80} cy={106} rx={30} ry={6} fill={c.lavender} />
+    </G>
+  ),
 };

@@ -919,6 +919,42 @@
       "publisher": "American Academy of Dermatology",
       "title": "Hair loss in new moms",
       "url": "https://www.aad.org/public/diseases/hair-loss/insider/new-moms"
+    },
+    {
+      "id": "cdc-safe-sleep",
+      "publisher": "CDC",
+      "title": "Providing Care for Babies to Sleep Safely",
+      "url": "https://www.cdc.gov/sudden-infant-death/sleep-safely/index.html"
+    },
+    {
+      "id": "aap-safe-sleep",
+      "publisher": "AAP (HealthyChildren.org)",
+      "title": "How to Keep Your Sleeping Baby Safe: AAP Policy Explained",
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx"
+    },
+    {
+      "id": "aap-baby-sleep",
+      "publisher": "AAP (HealthyChildren.org)",
+      "title": "Getting Your Baby to Sleep",
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/Getting-Your-Baby-to-Sleep.aspx"
+    },
+    {
+      "id": "cdc-milk-storage",
+      "publisher": "CDC",
+      "title": "Breast Milk Storage and Preparation",
+      "url": "https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html"
+    },
+    {
+      "id": "cdc-choosing-formula",
+      "publisher": "CDC",
+      "title": "Choosing an Infant Formula",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/choosing-a-formula.html"
+    },
+    {
+      "id": "fda-formula-dos",
+      "publisher": "FDA",
+      "title": "Infant Formula: Safety Do's and Don'ts",
+      "url": "https://www.fda.gov/consumers/consumer-updates/infant-formula-safety-dos-and-donts"
     }
   ]
 }

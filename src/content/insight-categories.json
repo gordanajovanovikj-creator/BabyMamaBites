@@ -2,6 +2,15 @@
   "version": 1,
   "categories": [
     {
+      "id": "newborn-days",
+      "label": "Newborn days",
+      "icon": "moon.stars.fill",
+      "emoji": "🌙",
+      "tone": "sky",
+      "audience": "baby",
+      "description": "Feeding, sleep and safe sleep in the first months."
+    },
+    {
       "id": "starting-solids",
       "label": "Starting solids",
       "icon": "carrot.fill",

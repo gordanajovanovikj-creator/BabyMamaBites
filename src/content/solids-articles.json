@@ -705,6 +705,128 @@
       ],
       "reviewStatus": "placeholder",
       "reviewer": "women's health professional"
+    },
+    {
+      "id": "newborn-sleep-feeding",
+      "category": "newborn-days",
+      "title": "Infant sleep and feeding realities",
+      "summary": "[PLACEHOLDER - needs expert review] Survival strategies for the first months: feeding your way, what newborn sleep really looks like, and how to keep sleep safe.",
+      "fromMonths": 0,
+      "toMonths": 6,
+      "icon": "moon.stars.fill",
+      "emoji": "🍼",
+      "illustration": "bottle",
+      "tone": "sky",
+      "readMinutes": 8,
+      "sections": [
+        {
+          "heading": "Feeding your baby, your way",
+          "paragraphs": [
+            "Breast milk, formula or both: a fed, loved baby is the goal. Whatever you choose, and however it changes over time, you deserve support, not judgment.",
+            "Newborns feed often. Most feed 8 to 12 times in 24 hours, as often as every 1 to 3 hours, including at night. That's tiring, and it's normal."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Breastfeeding (or chestfeeding) realities",
+          "paragraphs": [
+            "A good latch is key. Your baby should take in most of the darker skin around the nipple (the areola), not just the nipple. If it hurts or your baby is only on the nipple, slide a clean finger into the corner of their mouth to break the suction and try again.",
+            "In the first days your breasts may feel very full, hard or sore (engorgement). It usually eases as your body adjusts. Feeding often, hand expressing or pumping a little to soften the breast before a feed, and cold packs between feeds can help.",
+            "Pain is a sign to get help early, not to push through. A breastfeeding specialist (look for an IBCLC), your pediatrician or your OB-GYN can check the latch and look at things like tongue tie. Ask them before deciding on any treatment."
+          ],
+          "bullets": [
+            "Call your doctor if part of your breast is red, warm or painful and you have a fever or flu-like aches. These can be signs of mastitis, a breast infection.",
+            "Get care right away for red streaks on the breast, pus or blood in your milk, both breasts affected, or symptoms that suddenly get much worse.",
+            "Also call if you don't feel better within 24 hours, or if feeding stays painful."
+          ]
+        },
+        {
+          "heading": "Weaning or switching to formula",
+          "paragraphs": [
+            "Moving to formula, combining, or stopping breastfeeding can bring up big feelings: relief, guilt, sadness, or all three at once. Those feelings are common, and none of them mean you've failed.",
+            "Cutting back slowly is usually more comfortable for your body. A breastfeeding specialist can help you make a plan.",
+            "If low mood, worry or guilt lasts longer than 2 weeks, talk to your provider, or call or text the National Maternal Mental Health Hotline at 1-833-TLC-MAMA (1-833-852-6262)."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Formula feeding and combo feeding",
+          "paragraphs": [
+            "All infant formula sold legally in the US is reviewed by the FDA to make sure it meets nutrition and safety requirements. No brand is best, and store brands are held to the same rules. Iron-fortified formula is recommended.",
+            "Combo feeding, giving both breast milk and formula, is a real option that works for many families. Talk with your pediatrician about how to fit it together for your baby."
+          ],
+          "bullets": [
+            "Mix formula exactly as the label says. Never add extra water to stretch it.",
+            "Don't make homemade formula, and don't use formula labeled for toddlers before 12 months.",
+            "Check that cans aren't expired, dented, puffy or leaking.",
+            "Ask your pediatrician before switching brands or types, especially for special formulas."
+          ]
+        },
+        {
+          "heading": "A pumping routine you can live with",
+          "paragraphs": [
+            "There's no single right pumping schedule. Fit it around your baby's feeds, your work and your sleep, and ask a breastfeeding specialist to help you make it manageable.",
+            "Storing milk safely takes the pressure off. These are the CDC's guidelines for freshly pumped milk:"
+          ],
+          "bullets": [
+            "Room temperature (77°F or cooler): up to 4 hours",
+            "Refrigerator (40°F or colder): up to 4 days",
+            "Freezer (0°F or colder): best within 6 months, up to 12 months",
+            "Thawed milk: use within 24 hours, and never refreeze it",
+            "Leftovers from a feeding: use within 2 hours, then throw them away",
+            "Freeze in small portions, about 2 to 4 oz, to waste less"
+          ]
+        },
+        {
+          "heading": "What newborn sleep really looks like",
+          "paragraphs": [
+            "Newborns sleep about 16 to 17 hours a day, but often only 1 or 2 hours at a time. They wake often because they need to eat, day and night.",
+            "Babies don't have regular sleep cycles until about 4 months. Longer stretches come gradually, and every baby gets there on their own timeline.",
+            "Strict wake-window charts and programs promising a newborn will sleep through the night aren't part of official US guidance. Be wary of anything that makes you feel your baby is broken: frequent waking is what newborns are built to do.",
+            "Things that can help: keep days bright and playful and nights calm, quiet and dim. From around 4 months, try putting your baby down drowsy but awake."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Safe sleep, every sleep",
+          "paragraphs": [
+            "These steps lower the risk of SIDS and other sleep-related deaths. They apply to naps and nighttime alike."
+          ],
+          "bullets": [
+            "Always place your baby on their back to sleep.",
+            "Use a firm, flat surface that isn't inclined, like a crib or bassinet with a fitted sheet.",
+            "Keep the sleep space empty: no pillows, blankets, bumpers or soft toys.",
+            "Share a room, not a bed, for at least the first 6 months.",
+            "Never sleep with your baby on a couch or armchair. It's far riskier than any other place.",
+            "If your baby falls asleep in a car seat, swing or carrier, move them to a firm, flat sleep surface on their back as soon as you can.",
+            "Swaddling doesn't lower the risk of SIDS. If you swaddle, stop as soon as your baby shows signs of trying to roll, often around 3 to 4 months.",
+            "Don't use weighted sleep sacks, swaddles or blankets.",
+            "Offering a pacifier at naps and bedtime can help. If you're breastfeeding, you can wait until feeding is going well.",
+            "Keep your baby from getting too hot, keep their head uncovered, and keep smoke and nicotine away from them."
+          ]
+        },
+        {
+          "heading": "When to call",
+          "paragraphs": [
+            "Call your pediatrician if your baby seems hard to wake, isn't feeding well, has fewer wet diapers than usual, or you're worried. Trust your gut. In an emergency, call 911."
+          ],
+          "bullets": []
+        }
+      ],
+      "sources": [
+        "cdc-bf-howmuch",
+        "owh-challenges",
+        "cdc-bf-expect",
+        "cdc-choosing-formula",
+        "fda-formula-dos",
+        "cdc-milk-storage",
+        "aap-baby-sleep",
+        "cdc-safe-sleep",
+        "aap-safe-sleep",
+        "owh-ppd"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatrician"
     }
   ]
 }
