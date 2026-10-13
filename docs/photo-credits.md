@@ -245,7 +245,7 @@ app owner's paid Magnific (formerly Freepik) account and fetched with its API.
 | food-kale | Magnific (magnific.com), via API | kufotos | https://www.magnific.com/premium-photo/fresh-cale-lettuce-leaf-white-isolated-background-vegetarian-dietary-healthy-food-product_24766655.htm | Magnific Premium license | 2026-10-13 |
 | food-parsnips | Magnific (magnific.com), via API | picturepartners | https://www.magnific.com/premium-photo/whole-fresh-parsnips-pastinaca-sativa-isolated-white-background_53376391.htm | Magnific Premium license | 2026-10-13 |
 | food-haricots-verts | Magnific (magnific.com), via API | AI Artwork | https://www.magnific.com/premium-photo/fresh-green-beans-thin-green-isolated-white-background_250224627.htm | Magnific Premium license | 2026-10-13 |
-| food-avocado | Magnific (magnific.com), via API | galusikua | https://www.magnific.com/premium-photo/fresh-avocado-cut-half-white-background_364469911.htm | Magnific Premium license | 2026-10-13 |
+| food-avocado | Magnific (magnific.com), via API | filistimlyanin | https://www.magnific.com/premium-photo/collection-avocados-isolated-white-background_51104783.htm | Magnific Premium license | 2026-10-13 |
 | food-banana | Magnific (magnific.com), via API | photolink1 | https://www.magnific.com/premium-photo/bananas_387553670.htm | Magnific Premium license | 2026-10-13 |
 | food-apple | Magnific (magnific.com), via API | dwianggastocks | https://www.magnific.com/premium-photo/fresh-organic-red-apple-delicious-fruit-side-view-isolated-white-background-clipping-path_138953129.htm | Magnific Premium license | 2026-10-13 |
 | food-pear | Magnific (magnific.com), via API | pixel-shot.com | https://www.magnific.com/premium-photo/ripe-pear-isolated-white_37377564.htm | Magnific Premium license | 2026-10-13 |
@@ -257,7 +257,7 @@ app owner's paid Magnific (formerly Freepik) account and fetched with its API.
 | food-prunes | Magnific (magnific.com), via API | pakhnyushchyy | https://www.magnific.com/premium-photo/dried-plum_39222936.htm | Magnific Premium license | 2026-10-13 |
 | food-egg | Magnific (magnific.com), via API | driashkin | https://www.magnific.com/premium-photo/four-chicken-eggs-white-background-largly_25925793.htm | Magnific Premium license | 2026-10-13 |
 | food-chicken | Magnific (magnific.com), via API | super | https://www.magnific.com/premium-photo/raw-chicken-fillet-isolated-white-background-perfectly-retouched-full-depth-field-photo-top-view-flat-lay_25765086.htm | Magnific Premium license | 2026-10-13 |
-| food-beef | Magnific (magnific.com), via API | da-ga | https://www.magnific.com/premium-photo/fresh-raw-beef-minced-meat-isolated-white-background_27177642.htm | Magnific Premium license | 2026-10-13 |
+| food-beef | Magnific (magnific.com), via API | Twenty20 | https://www.magnific.com/premium-photo/raw-beef-meat_35555577.htm | Magnific Premium license | 2026-10-13 |
 | food-turkey | Magnific (magnific.com), via API | user6170755 | https://www.magnific.com/premium-photo/raw-whole-big-turkey-breast-fillet-high-quality-isolate-white-background_63024100.htm | Magnific Premium license | 2026-10-13 |
 | food-salmon | Magnific (magnific.com), via API | stokkete | https://www.magnific.com/premium-photo/close-up-salmon-fillet_35865645.htm | Magnific Premium license | 2026-10-13 |
 | food-shrimp | Magnific (magnific.com), via API | user25234940 | https://www.magnific.com/premium-photo/fresh-shrimp-prawn-isolated-white-background_26304187.htm | Magnific Premium license | 2026-10-13 |
@@ -268,7 +268,7 @@ app owner's paid Magnific (formerly Freepik) account and fetched with its API.
 | food-almond-butter | Magnific (magnific.com), via API | nugrahithaaditya | https://www.magnific.com/premium-photo/almond-butter-photo-white-isolated-background-ar-32-style-raw-v-6-job-id-d99d08bf58054929abcb26dd_270330255.htm | Magnific Premium license | 2026-10-13 |
 | food-tahini | Magnific (magnific.com), via API | AI Artwork | https://www.magnific.com/premium-photo/yummy-tahini-isolated-white-background_301388773.htm | Magnific Premium license | 2026-10-13 |
 | food-red-lentils | Magnific (magnific.com), via API | fernatiroman | https://www.magnific.com/premium-photo/small-pile-red-lentils-white-background_433510006.htm | Magnific Premium license | 2026-10-13 |
-| food-infant-cereal | Magnific (magnific.com), via API | BillionPhotos | https://www.magnific.com/premium-photo/bowl-oats-porridge-isolated-white-background_48013703.htm | Magnific Premium license | 2026-10-13 |
+| food-infant-cereal | Magnific (magnific.com), via API | atlascompany | https://www.magnific.com/premium-photo/concept-baby-food-isolated-white-background_16652388.htm | Magnific Premium license | 2026-10-13 |
 | food-oats | Magnific (magnific.com), via API | Twenty20 | https://www.magnific.com/premium-photo/oatmeal-flakes_35436975.htm | Magnific Premium license | 2026-10-13 |
 | food-rice | Magnific (magnific.com), via API | user25234940 | https://www.magnific.com/premium-photo/bowl-full-rice-isolated-white-background_19017643.htm | Magnific Premium license | 2026-10-13 |
 | food-pasta | Magnific (magnific.com), via API | bokodi | https://www.magnific.com/premium-photo/penne-raw-pasta-isolated-white_27760809.htm | Magnific Premium license | 2026-10-13 |
