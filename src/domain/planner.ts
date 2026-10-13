@@ -52,8 +52,21 @@ export function isMealSlot(value: string): value is MealSlot {
   return (mealSlots as readonly string[]).includes(value);
 }
 
-// A planned slot holds a recipe id, or a food the parent typed in, stored as "custom:<name>".
+// A planned slot holds a recipe id, a single food from the food guide stored as
+// "food:<id>", or a food the parent typed in, stored as "custom:<name>".
 const CUSTOM_PREFIX = 'custom:';
+const FOOD_PREFIX = 'food:';
+
+/** The stored id for a single food from the food guide. */
+export function foodMealId(foodId: string): string {
+  return `${FOOD_PREFIX}${foodId}`;
+}
+
+/** The food guide id for a planned single food, or null for anything else. */
+export function foodMealFoodId(id: string): string | null {
+  if (!id.startsWith(FOOD_PREFIX)) return null;
+  return id.slice(FOOD_PREFIX.length) || null;
+}
 export const CUSTOM_MEAL_MAX_LENGTH = 60;
 
 /** The stored id for a food the parent typed in, or null if the name is blank. */

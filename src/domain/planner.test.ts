@@ -3,6 +3,8 @@ import {
   mealsPlanned,
   customMealId,
   customMealName,
+  foodMealFoodId,
+  foodMealId,
   plannedMeals,
   normalizePlan,
   planKey,
@@ -123,5 +125,19 @@ describe('custom meals', () => {
 
   it('trims long names', () => {
     expect(customMealName(customMealId('a'.repeat(100))!)).toHaveLength(60);
+  });
+});
+
+describe('single foods', () => {
+  it('stores a food guide id and reads it back', () => {
+    expect(foodMealId('sweet-potato')).toBe('food:sweet-potato');
+    expect(foodMealFoodId(foodMealId('sweet-potato'))).toBe('sweet-potato');
+  });
+
+  it('is told apart from recipes and typed-in foods', () => {
+    expect(foodMealFoodId('baby-pear-puree')).toBeNull();
+    expect(foodMealFoodId('custom:Pear')).toBeNull();
+    expect(customMealName(foodMealId('pear'))).toBeNull();
+    expect(foodMealFoodId('food:')).toBeNull();
   });
 });

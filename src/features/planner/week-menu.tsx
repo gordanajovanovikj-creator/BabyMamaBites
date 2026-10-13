@@ -1,7 +1,9 @@
+import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
 
+import type { Food } from '@/content/foods';
 import { allRecipes, getRecipe } from '@/content/recipes';
 import { addDays, today, type IsoDate } from '@/domain/dates';
 import {
@@ -17,10 +19,12 @@ import {
   type MealSlot,
 } from '@/domain/planner';
 import { familyMealFor } from '@/domain/recipes';
+import { foodPhoto } from '@/features/foods/food-photos';
 import { useHousehold } from '@/features/profile/use-household';
 import { FamilyMealCard } from '@/features/recipes/family-meal-card';
 import { AppText, Card, cn } from '@/ui';
 
+import { plannedMeal } from './planned-meal';
 import { usePlanner } from './planner-context';
 
 function RoundButton({ label, glyph, onPress }: { label: string; glyph: string; onPress(): void }) {
@@ -96,12 +100,36 @@ function DayPill({
   );
 }
 
+/** Small white photo tile for a single food. Decorative. */
+function FoodThumb({ food }: { food: Food }) {
+  const photo = foodPhoto(food.id);
+  return (
+    <View
+      className="h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface"
+      importantForAccessibility="no-hide-descendants"
+      accessibilityElementsHidden
+    >
+      {photo ? (
+        <Image
+          source={photo}
+          contentFit="cover"
+          style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+        />
+      ) : (
+        <AppText size="2xl">{food.emoji}</AppText>
+      )}
+    </View>
+  );
+}
+
 function SlotCard({ date, slot }: { date: IsoDate; slot: MealSlot }) {
   const { plan } = usePlanner();
   const household = useHousehold();
   const id = plan[planKey(date, slot)];
   const recipe = id ? getRecipe(id) : undefined;
   const own = id ? customMealName(id) : null;
+  const meal = plannedMeal(id);
+  const food = meal?.kind === 'food' ? meal.food : null;
   const family = recipe ? familyMealFor(recipe, allRecipes, household) : null;
   const pick = () => router.push({ pathname: '/planner/pick', params: { date, slot } });
 
@@ -110,7 +138,37 @@ function SlotCard({ date, slot }: { date: IsoDate; slot: MealSlot }) {
       <AppText variant="caption" size="xs" className="font-bold uppercase tracking-wider">
         {mealSlotLabels[slot]}
       </AppText>
-      {own ? (
+      {food ? (
+        <>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={`Baby's ${mealSlotLabels[slot].toLowerCase()}: ${food.name}. Opens the food guide.`}
+            onPress={() => router.push({ pathname: '/food/[id]', params: { id: food.id } })}
+            className="min-h-12 flex-row items-center gap-3 active:opacity-70"
+          >
+            <FoodThumb food={food} />
+            <View className="flex-1">
+              <AppText variant="caption" size="xs">
+                Single food
+              </AppText>
+              <AppText variant="label" size="lg" className="font-bold">
+                {food.name}
+              </AppText>
+            </View>
+          </Pressable>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={`Change ${mealSlotLabels[slot].toLowerCase()}`}
+            onPress={pick}
+            hitSlop={6}
+            className="min-h-11 justify-center self-start active:opacity-60"
+          >
+            <AppText variant="label" color="primary" className="font-bold">
+              Change
+            </AppText>
+          </Pressable>
+        </>
+      ) : own ? (
         <>
           <View className="min-h-12 flex-row items-center gap-3">
             <AppText size="2xl">🍽️</AppText>

@@ -1,9 +1,12 @@
+import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { Pressable, ScrollView, View } from 'react-native';
 
+import type { Food } from '@/content/foods';
 import type { Recipe } from '@/content/recipes';
 import { recipeMeta } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
+import { foodPhoto } from '@/features/foods/food-photos';
 import { RecipeImage } from '@/features/recipes/recipe-image';
 import { shadows } from '@/theme/colors';
 import { AppText, HeartButton } from '@/ui';
@@ -94,12 +97,61 @@ function OwnFoodCard({ name, kicker }: { name: string; kicker: string }) {
   );
 }
 
+/** A planned single food: its white photo, opening the food guide. */
+function SingleFoodCard({ food, kicker }: { food: Food; kicker: string }) {
+  const photo = foodPhoto(food.id);
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={`${kicker}: ${food.name}, a single food. Opens the food guide.`}
+      onPress={() => router.push({ pathname: '/food/[id]', params: { id: food.id } })}
+      style={{ width: CARD_WIDTH }}
+      className="gap-2 active:opacity-90"
+    >
+      <View
+        className="items-center justify-center overflow-hidden rounded-xl border border-border bg-surface"
+        style={{ height: PHOTO_HEIGHT, boxShadow: shadows.card }}
+        importantForAccessibility="no-hide-descendants"
+        accessibilityElementsHidden
+      >
+        {photo ? (
+          <Image
+            source={photo}
+            contentFit="contain"
+            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+          />
+        ) : (
+          <AppText style={{ fontSize: 72, lineHeight: 86 }}>{food.emoji}</AppText>
+        )}
+      </View>
+      <View className="gap-0.5 pr-2">
+        <AppText
+          variant="label"
+          size="xs"
+          color="on-accent"
+          className="font-bold uppercase tracking-wider"
+        >
+          {kicker}
+        </AppText>
+        <AppText variant="heading" size="xl" numberOfLines={2}>
+          {food.name}
+        </AppText>
+        <AppText variant="caption" size="sm">
+          Single food
+        </AppText>
+      </View>
+    </Pressable>
+  );
+}
+
 function openPlanner() {
   router.navigate({ pathname: '/baby', params: { tab: 'plan', at: String(Date.now()) } });
 }
 
 /** One planned meal for today: a recipe, or a food the parent typed in. */
-export type PlannedFood = { label: string } & ({ recipe: Recipe } | { own: string });
+export type PlannedFood = { label: string } & (
+  { recipe: Recipe } | { food: Food } | { own: string }
+);
 
 export type FoodsToTryProps = {
   babyName: string | null;
@@ -184,6 +236,8 @@ export function FoodsToTry({
         {cards.map((c) =>
           'recipe' in c ? (
             <FeatureCard key={`${c.label}-${c.recipe.id}`} recipe={c.recipe} kicker={c.label} />
+          ) : 'food' in c ? (
+            <SingleFoodCard key={`${c.label}-${c.food.id}`} food={c.food} kicker={c.label} />
           ) : (
             <OwnFoodCard key={`${c.label}-${c.own}`} name={c.own} kicker={c.label} />
           ),

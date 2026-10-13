@@ -5,7 +5,13 @@ import { PLACEHOLDER_MARKER } from '@/content/schemas';
 import type { FoodLogEntry } from './food-log';
 import { babyRecipes } from '@/content/recipes';
 
-import { filterFoods, foodHadReaction, foodTriedOn, recipesWithFood } from './foods';
+import {
+  filterFoods,
+  foodHadReaction,
+  foodsForHousehold,
+  foodTriedOn,
+  recipesWithFood,
+} from './foods';
 
 const entry = (food: string, date: string, over: Partial<FoodLogEntry> = {}): FoodLogEntry => ({
   id: `${food}-${date}`,
@@ -60,6 +66,15 @@ describe('recipesWithFood', () => {
   it("doesn't match inside other words", () => {
     const peas = recipesWithFood(babyRecipes, find('peas'));
     expect(peas.every((r) => /\bpeas?\b/i.test([r.title, ...r.ingredients].join(' ')))).toBe(true);
+  });
+});
+
+describe('foodsForHousehold', () => {
+  it('leaves out foods with an allergen the household avoids', () => {
+    const safe = foodsForHousehold(foods, ['egg', 'fish']);
+    expect(safe.some((f) => f.allergen === 'egg' || f.allergen === 'fish')).toBe(false);
+    expect(safe.some((f) => f.id === 'banana')).toBe(true);
+    expect(foodsForHousehold(foods, [])).toHaveLength(foods.length);
   });
 });
 

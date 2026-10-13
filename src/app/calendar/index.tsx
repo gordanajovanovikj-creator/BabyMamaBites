@@ -2,7 +2,6 @@ import { router } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 
-import { getRecipe } from '@/content/recipes';
 import {
   calendarKindLabels,
   entriesOn,
@@ -11,8 +10,9 @@ import {
   monthStart,
 } from '@/domain/calendar';
 import { addMonths, fromIsoDate, today, type IsoDate } from '@/domain/dates';
-import { customMealName, mealSlotLabels, mealSlots, mealsPlanned, planKey } from '@/domain/planner';
+import { mealSlotLabels, mealSlots, mealsPlanned, planKey } from '@/domain/planner';
 import { useCalendar } from '@/features/calendar/calendar-context';
+import { plannedMeal } from '@/features/planner/planned-meal';
 import { usePlanner } from '@/features/planner/planner-context';
 import { AppText, Button, Card, cn, Screen } from '@/ui';
 
@@ -139,7 +139,7 @@ export default function CalendarScreen() {
         <AppText variant="heading">Baby&apos;s meals</AppText>
         {mealSlots.map((slot) => {
           const id = plan[planKey(selected, slot)];
-          const title = id ? (getRecipe(id)?.title ?? customMealName(id)) : null;
+          const title = plannedMeal(id)?.title ?? null;
           return (
             <Pressable
               key={slot}

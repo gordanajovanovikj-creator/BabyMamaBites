@@ -3,6 +3,7 @@ import type { Recipe } from '@/content/recipes';
 
 import type { IsoDate } from './dates';
 import type { FoodLogEntry } from './food-log';
+import type { Allergen } from './profile';
 
 /** Foods matching a search (name, case-insensitive) and an optional category, A to Z. */
 export function filterFoods(foods: Food[], query: string, category: FoodCategory | null): Food[] {
@@ -60,4 +61,9 @@ export function recipesWithFood(recipes: Recipe[], food: FoodWords): Recipe[] {
 /** Whether a logged reaction mentions this food. */
 export function foodHadReaction(entries: FoodLogEntry[], food: FoodWords): boolean {
   return entries.some((e) => e.reaction !== 'none' && foodTriedOn([e], food) !== null);
+}
+
+/** Foods safe for a household: none of the allergens it avoids. */
+export function foodsForHousehold(foods: Food[], avoid: readonly Allergen[]): Food[] {
+  return foods.filter((f) => !f.allergen || !avoid.includes(f.allergen));
 }

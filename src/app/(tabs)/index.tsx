@@ -3,16 +3,17 @@ import { useState } from 'react';
 import { insightCategories } from '@/content/insight-categories';
 import { insights } from '@/content/insights';
 import { monthlyGuides } from '@/content/monthly-guides';
-import { babyRecipes, getRecipe } from '@/content/recipes';
+import { babyRecipes } from '@/content/recipes';
 import { solidsArticles } from '@/content/solids-articles';
 import { today } from '@/domain/dates';
 import { pickDailyInsights } from '@/domain/insights';
 import { forMom, libraryItems, todayRow } from '@/domain/library';
 import { guideForMonths } from '@/domain/monthly-guides';
-import { customMealName, mealSlotLabels, plannedMeals } from '@/domain/planner';
+import { mealSlotLabels, plannedMeals } from '@/domain/planner';
 import { foodsToTryToday } from '@/domain/recipes';
 import { babyAge, babyStage, currentMonthChoice, monthChoices } from '@/domain/stage';
 import { InsightsRow } from '@/features/insights/insights-row';
+import { plannedMeal } from '@/features/planner/planned-meal';
 import { usePlanner } from '@/features/planner/planner-context';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
@@ -52,10 +53,11 @@ export default function TodayScreen() {
     ? []
     : plannedMeals(plan, now).flatMap(({ slot, recipeId }): PlannedFood[] => {
         const label = mealSlotLabels[slot];
-        const recipe = getRecipe(recipeId);
-        if (recipe) return [{ label, recipe }];
-        const own = customMealName(recipeId);
-        return own ? [{ label, own }] : [];
+        const meal = plannedMeal(recipeId);
+        if (!meal) return [];
+        if (meal.kind === 'recipe') return [{ label, recipe: meal.recipe }];
+        if (meal.kind === 'food') return [{ label, food: meal.food }];
+        return [{ label, own: meal.title }];
       });
 
   return (
