@@ -19,7 +19,6 @@ import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
 import { AgeHero } from '@/features/today/age-hero';
 import { FoodsToTry, type PlannedFood } from '@/features/today/foods-to-try';
-import { ForYouRow } from '@/features/today/for-you-row';
 import { HelpCard } from '@/features/today/help-card';
 import { Screen } from '@/ui';
 
@@ -44,7 +43,7 @@ export default function TodayScreen() {
     libraryItems(solidsArticles, insights, profile.allergens),
     insightCategories,
   );
-  // Mom's items get their own "For you" row, so the daily row stays about the baby.
+  // Home's daily row stays about the baby, so mom-focused items are left out.
   const momIds = new Set(momItems.map((i) => i.id));
   const row = todayRow(daily, solidsArticles, ageMonths).filter((i) => !momIds.has(i.id));
   const foods = foodsToTryToday(babyRecipes, viewMonth ?? ageMonths, household, now);
@@ -79,7 +78,6 @@ export default function TodayScreen() {
         }
       />
       <InsightsRow items={row} ageMonths={ageMonths} />
-      <ForYouRow items={momItems} ageMonths={ageMonths} />
       <HelpCard />
     </Screen>
   );
