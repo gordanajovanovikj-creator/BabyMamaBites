@@ -268,7 +268,7 @@ app owner's paid Magnific (formerly Freepik) account and fetched with its API.
 | food-almond-butter | Magnific (magnific.com), via API | nugrahithaaditya | https://www.magnific.com/premium-photo/almond-butter-photo-white-isolated-background-ar-32-style-raw-v-6-job-id-d99d08bf58054929abcb26dd_270330255.htm | Magnific Premium license | 2026-10-13 |
 | food-tahini | Magnific (magnific.com), via API | AI Artwork | https://www.magnific.com/premium-photo/yummy-tahini-isolated-white-background_301388773.htm | Magnific Premium license | 2026-10-13 |
 | food-red-lentils | Magnific (magnific.com), via API | fernatiroman | https://www.magnific.com/premium-photo/small-pile-red-lentils-white-background_433510006.htm | Magnific Premium license | 2026-10-13 |
-| food-infant-cereal | Magnific (magnific.com), via API | atlascompany | https://www.magnific.com/premium-photo/concept-baby-food-isolated-white-background_16652388.htm | Magnific Premium license | 2026-10-13 |
+| food-infant-cereal | Magnific (magnific.com), via API | pixel-shot.com | https://www.magnific.com/premium-photo/bowl-with-baby-food-white-background_423593301.htm | Magnific Premium license | 2026-10-13 |
 | food-oats | Magnific (magnific.com), via API | Twenty20 | https://www.magnific.com/premium-photo/oatmeal-flakes_35436975.htm | Magnific Premium license | 2026-10-13 |
 | food-rice | Magnific (magnific.com), via API | user25234940 | https://www.magnific.com/premium-photo/bowl-full-rice-isolated-white-background_19017643.htm | Magnific Premium license | 2026-10-13 |
 | food-pasta | Magnific (magnific.com), via API | bokodi | https://www.magnific.com/premium-photo/penne-raw-pasta-isolated-white_27760809.htm | Magnific Premium license | 2026-10-13 |
