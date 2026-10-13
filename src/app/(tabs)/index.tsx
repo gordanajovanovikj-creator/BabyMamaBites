@@ -5,27 +5,25 @@ import { insights } from '@/content/insights';
 import { monthlyGuides } from '@/content/monthly-guides';
 import { babyRecipes } from '@/content/recipes';
 import { solidsArticles } from '@/content/solids-articles';
+import { getPlanWeek, planWeeks } from '@/content/solids-plan';
 import { today } from '@/domain/dates';
 import { pickDailyInsights } from '@/domain/insights';
 import { forMom, libraryItems, todayRow } from '@/domain/library';
 import { guideForMonths } from '@/domain/monthly-guides';
-import { mealSlotLabels, plannedMeals } from '@/domain/planner';
 import { foodsToTryToday } from '@/domain/recipes';
-import { babyAge, babyStage, currentMonthChoice, monthChoices } from '@/domain/stage';
+import { babyAge, babyStage, currentMonthChoice, monthChoices, solidsWeek } from '@/domain/stage';
 import { InsightsRow } from '@/features/insights/insights-row';
-import { plannedMeal } from '@/features/planner/planned-meal';
-import { usePlanner } from '@/features/planner/planner-context';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
 import { AgeHero } from '@/features/today/age-hero';
-import { FoodsToTry, type PlannedFood } from '@/features/today/foods-to-try';
+import { FoodsToTry } from '@/features/today/foods-to-try';
 import { HelpCard } from '@/features/today/help-card';
+import { ThisWeekCard } from '@/features/today/this-week-card';
 import { Screen } from '@/ui';
 
 export default function TodayScreen() {
   const { profile } = useProfile();
   const household = useHousehold();
-  const { plan } = usePlanner();
   // The month bubble the parent tapped; until then, the baby's own age.
   const [picked, setPicked] = useState<number | undefined>(undefined);
   if (!profile) return null;
@@ -34,6 +32,12 @@ export default function TodayScreen() {
   const stage = babyStage(profile, now);
   const daily = pickDailyInsights(insights, stage, profile.allergens, now);
   const ageMonths = babyAge(profile, now).months;
+  // This week's focus from the solids plan, only while the baby is in it.
+  const rawWeek = solidsWeek(profile, now);
+  const planWeek =
+    rawWeek !== null && rawWeek >= 1 && rawWeek <= planWeeks.length
+      ? getPlanWeek(rawWeek)
+      : undefined;
   const currentMonth = currentMonthChoice(ageMonths);
   const viewMonth = picked ?? currentMonth;
   const browsing = viewMonth !== undefined && viewMonth !== currentMonth;
@@ -47,17 +51,6 @@ export default function TodayScreen() {
   const momIds = new Set(momItems.map((i) => i.id));
   const row = todayRow(daily, solidsArticles, ageMonths).filter((i) => !momIds.has(i.id));
   const foods = foodsToTryToday(babyRecipes, viewMonth ?? ageMonths, household, now);
-  // Today's planned meals only make sense for the baby's own age.
-  const planned = browsing
-    ? []
-    : plannedMeals(plan, now).flatMap(({ slot, recipeId }): PlannedFood[] => {
-        const label = mealSlotLabels[slot];
-        const meal = plannedMeal(recipeId);
-        if (!meal) return [];
-        if (meal.kind === 'recipe') return [{ label, recipe: meal.recipe }];
-        if (meal.kind === 'food') return [{ label, food: meal.food }];
-        return [{ label, own: meal.title }];
-      });
 
   return (
     <Screen padded={false} edgeToEdgeTop className="gap-7">
@@ -68,11 +61,11 @@ export default function TodayScreen() {
         currentMonth={currentMonth}
         onSelectMonth={setPicked}
       />
+      <ThisWeekCard now={now} planWeek={planWeek} />
       <FoodsToTry
         babyName={profile.babyName}
         recipes={foods.recipes}
         readAhead={foods.readAhead}
-        planned={planned}
         browsingLabel={
           browsing ? monthChoices().find((c) => c.months === viewMonth)?.label : undefined
         }

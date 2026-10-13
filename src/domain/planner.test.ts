@@ -14,6 +14,7 @@ import {
   makeFreezerItem,
   sortFreezer,
   totalCubes,
+  useSoonItems,
   bestBefore,
   weekDates,
   weekRangeLabel,
@@ -159,5 +160,20 @@ describe('quick planning', () => {
       [planKey(d, 'dinner')]: 'z',
     };
     expect(firstOpenSlot(full, d)).toBe('dinner');
+  });
+});
+
+describe('useSoonItems', () => {
+  it('lists only items close to their use-by date, soonest first', () => {
+    const item = (name: string, frozenOn: string, cubes = 4) =>
+      makeFreezerItem({ name, cubes, frozenOn }, name);
+    const items = [
+      item('fresh', '2026-10-01'),
+      item('pear', '2026-07-20'),
+      item('apple', '2026-07-15'),
+      item('gone', '2026-07-15', 0),
+      item('old', '2026-05-01'),
+    ];
+    expect(useSoonItems(items, '2026-10-13').map((i) => i.name)).toEqual(['apple', 'pear']);
   });
 });

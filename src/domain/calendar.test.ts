@@ -5,6 +5,7 @@ import {
   makeCalendarEntry,
   monthGrid,
   monthStart,
+  nextEvent,
   type CalendarEntry,
 } from './calendar';
 
@@ -120,5 +121,21 @@ describe('calendarReminders', () => {
       remind: true,
     } as CalendarEntry;
     expect(calendarReminders([note], now)).toEqual([]);
+  });
+});
+
+describe('nextEvent', () => {
+  const e = (date: string, kind: 'event' | 'note', time: string | null, text = date) =>
+    makeCalendarEntry({ date, kind, text, time }, `${date}-${text}`);
+  it('finds the soonest event within the window, earliest time first', () => {
+    const entries = [
+      e('2026-10-20', 'event', null, 'later'),
+      e('2026-10-14', 'event', null, 'all day'),
+      e('2026-10-14', 'event', '09:00', 'morning'),
+      e('2026-10-13', 'note', null, 'a note'),
+      e('2026-10-12', 'event', '10:00', 'yesterday'),
+    ];
+    expect(nextEvent(entries, '2026-10-13', 7)?.text).toBe('morning');
+    expect(nextEvent(entries, '2026-10-15', 3)).toBeNull();
   });
 });

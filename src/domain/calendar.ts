@@ -51,6 +51,22 @@ export function entriesOn(entries: CalendarEntry[], date: IsoDate): CalendarEntr
     .sort((a, b) => rank(a) - rank(b) || (a.time ?? '').localeCompare(b.time ?? ''));
 }
 
+/** The next event from `from` (inclusive) within `days` days: soonest day, then earliest time. */
+export function nextEvent(
+  entries: CalendarEntry[],
+  from: IsoDate,
+  days: number,
+): CalendarEntry | null {
+  const until = addDays(from, days);
+  const upcoming = entries
+    .filter((e) => e.kind === 'event' && e.date >= from && e.date < until)
+    .sort(
+      (a, b) =>
+        a.date.localeCompare(b.date) || (a.time ?? '99:99').localeCompare(b.time ?? '99:99'),
+    );
+  return upcoming[0] ?? null;
+}
+
 /** First day of the month containing `date`. */
 export function monthStart(date: IsoDate): IsoDate {
   return `${date.slice(0, 7)}-01`;

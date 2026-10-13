@@ -43,18 +43,21 @@ function RoundButton({ label, glyph, onPress }: { label: string; glyph: string; 
   );
 }
 
-function DayPill({
+export function DayPill({
   date,
   selected,
   isToday,
   planned,
   onPress,
+  compact = false,
 }: {
   date: IsoDate;
   selected: boolean;
   isToday: boolean;
   planned: number;
   onPress(): void;
+  /** Shares a fixed-width row (Home) instead of scrolling. */
+  compact?: boolean;
 }) {
   const { weekday, day } = dayLabel(date);
   return (
@@ -64,7 +67,8 @@ function DayPill({
       accessibilityLabel={`${weekday} ${day}${isToday ? ', today' : ''}, ${planned} of 3 meals planned`}
       onPress={onPress}
       className={cn(
-        'min-h-16 w-14 items-center justify-center gap-0.5 rounded-2xl active:opacity-80',
+        'min-h-16 items-center justify-center gap-0.5 rounded-2xl active:opacity-80',
+        compact ? 'flex-1' : 'w-14',
         selected ? 'bg-primary' : 'bg-surface-muted',
       )}
     >

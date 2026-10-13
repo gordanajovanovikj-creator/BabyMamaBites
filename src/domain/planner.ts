@@ -159,6 +159,11 @@ export function sortFreezer(items: FreezerItem[]): FreezerItem[] {
   });
 }
 
+/** Freezer items to use soon (within two weeks of their use-by date), soonest first. */
+export function useSoonItems(items: FreezerItem[], onDate: IsoDate): FreezerItem[] {
+  return sortFreezer(items).filter((i) => freezerStatus(i, onDate) === 'use-soon');
+}
+
 export function totalCubes(items: FreezerItem[]): number {
   return items.reduce((sum, i) => sum + i.cubes, 0);
 }
