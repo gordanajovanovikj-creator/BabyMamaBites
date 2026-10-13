@@ -3,8 +3,10 @@ import type { AgeRules } from '@/content/age-rules';
 import {
   babyAge,
   babyStage,
+  currentMonthChoice,
   formatAge,
   formatAgeHeadline,
+  monthChoices,
   showsReadinessPrompt,
   solidsStartDate,
   solidsWeek,
@@ -145,5 +147,19 @@ describe('showsReadinessPrompt', () => {
     expect(showsReadinessPrompt(6)).toBe(true);
     expect(showsReadinessPrompt(7)).toBe(true);
     expect(showsReadinessPrompt(8)).toBe(false);
+  });
+});
+
+describe('month bubbles', () => {
+  it('run from 6 months to 24+', () => {
+    const c = monthChoices();
+    expect(c[0]).toEqual({ months: 6, label: '6 months' });
+    expect(c.at(-1)).toEqual({ months: 24, label: '24+ months' });
+    expect(c).toHaveLength(19);
+  });
+  it("select the baby's current age, if any", () => {
+    expect(currentMonthChoice(4)).toBeUndefined();
+    expect(currentMonthChoice(9)).toBe(9);
+    expect(currentMonthChoice(30)).toBe(24);
   });
 });

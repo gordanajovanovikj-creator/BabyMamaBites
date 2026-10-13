@@ -125,3 +125,22 @@ export const READINESS_PROMPT_MONTHS = { from: 6, to: 7 } as const;
 export function showsReadinessPrompt(months: number): boolean {
   return months >= READINESS_PROMPT_MONTHS.from && months <= READINESS_PROMPT_MONTHS.to;
 }
+
+/** Month bubbles on Today: 6 months through 23 months, then "24+ months". */
+export const MONTH_PICKER = { first: 6, last: 24 } as const;
+
+export type MonthChoice = { months: number; label: string };
+
+export function monthChoices(): MonthChoice[] {
+  const out: MonthChoice[] = [];
+  for (let m = MONTH_PICKER.first; m < MONTH_PICKER.last; m++)
+    out.push({ months: m, label: `${m} months` });
+  out.push({ months: MONTH_PICKER.last, label: `${MONTH_PICKER.last}+ months` });
+  return out;
+}
+
+/** The bubble matching the baby's age, or undefined before the first bubble (under 6 months). */
+export function currentMonthChoice(ageMonths: number): number | undefined {
+  if (ageMonths < MONTH_PICKER.first) return undefined;
+  return Math.min(ageMonths, MONTH_PICKER.last);
+}

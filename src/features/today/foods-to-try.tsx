@@ -108,13 +108,21 @@ export type FoodsToTryProps = {
   readAhead: boolean;
   /** Today's meals from the planner. When there are any, they replace the suggestions. */
   planned?: PlannedFood[];
+  /** Set when the parent is browsing another month, e.g. "9 months". */
+  browsingLabel?: string;
 };
 
 /**
  * Today's baby food: the meals planned for today if there are any, otherwise
  * "Foods to try today" (meals for the baby's age, changing every day).
  */
-export function FoodsToTry({ babyName, recipes, readAhead, planned = [] }: FoodsToTryProps) {
+export function FoodsToTry({
+  babyName,
+  recipes,
+  readAhead,
+  planned = [],
+  browsingLabel,
+}: FoodsToTryProps) {
   const who = babyName ?? 'your baby';
   const hasPlan = planned.length > 0;
   const cards: PlannedFood[] = hasPlan
@@ -123,14 +131,18 @@ export function FoodsToTry({ babyName, recipes, readAhead, planned = [] }: Foods
   if (!cards.length) return null;
   const title = hasPlan
     ? 'Your food for today'
-    : readAhead
-      ? 'First foods to look forward to'
-      : 'Foods to try today';
+    : browsingLabel
+      ? `Foods for ${browsingLabel}`
+      : readAhead
+        ? 'First foods to look forward to'
+        : 'Foods to try today';
   const subtitle = hasPlan
     ? `What you planned for ${who}`
-    : readAhead
-      ? 'Solids usually start around 6 months. Read ahead for now.'
-      : `Meals that fit ${who}'s age`;
+    : browsingLabel
+      ? 'Meals suited to this age'
+      : readAhead
+        ? 'Solids usually start around 6 months. Read ahead for now.'
+        : `Meals that fit ${who}'s age`;
   return (
     <View className="gap-3">
       <View className="flex-row items-center justify-between px-5">

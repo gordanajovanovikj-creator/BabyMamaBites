@@ -11,6 +11,8 @@ import { shadows } from '@/theme/colors';
 import { usePalette } from '@/theme/use-palette';
 import { AppText, SymbolIcon } from '@/ui';
 
+import { MonthBubbles } from './month-bubbles';
+
 function formatToday(): string {
   return new Date().toLocaleDateString('en-US', {
     weekday: 'long',
@@ -31,9 +33,26 @@ export function initialsFor(name: string | null): string {
 /**
  * Top of Today (Apple-style): a big greeting, a white pill with the baby's name and age
  * (opens details) and the initials avatar (opens settings); the date underneath opens the
- * calendar; then a soft banner that opens this month's guide for baby and mom.
+ * calendar; month bubbles (6 months … 24+); then a soft banner that opens the chosen
+ * month's guide for baby and mom.
  */
-export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyGuide }) {
+export type AgeHeroProps = {
+  profile: Profile;
+  /** The guide for the month being viewed. */
+  guide?: MonthlyGuide;
+  /** Month bubble state: which one is highlighted, which matches the baby's age now. */
+  selectedMonth?: number;
+  currentMonth?: number;
+  onSelectMonth(months: number): void;
+};
+
+export function AgeHero({
+  profile,
+  guide,
+  selectedMonth,
+  currentMonth,
+  onSelectMonth,
+}: AgeHeroProps) {
   const insets = useSafeAreaInsets();
   const palette = usePalette();
   const now = today();
@@ -112,6 +131,8 @@ export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyG
         </Pressable>
       </View>
 
+      <MonthBubbles selected={selectedMonth} current={currentMonth} onSelect={onSelectMonth} />
+
       {guide ? (
         <Pressable
           accessibilityRole="button"
@@ -138,7 +159,7 @@ export function AgeHero({ profile, guide }: { profile: Profile; guide?: MonthlyG
               {guide.summary}
             </AppText>
             <AppText variant="label" color="primary" className="pt-1 font-bold">
-              Read this month&apos;s guide ›
+              Read the guide ›
             </AppText>
           </View>
         </Pressable>
