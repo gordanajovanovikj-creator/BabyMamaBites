@@ -59,7 +59,7 @@ export function FoodCard({ food, width, tried }: FoodCardProps) {
           </View>
         ) : null}
       </View>
-      <View className="gap-1.5 border-t border-border px-3 pb-3 pt-2.5">
+      <View className="gap-1.5 px-3 pb-3 pt-1">
         <AppText
           variant="label"
           size="lg"

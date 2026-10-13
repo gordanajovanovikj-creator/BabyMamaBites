@@ -228,43 +228,52 @@ Bundled in `assets/images/insights/` and registered in
 ## Food guide photos
 
 Bundled in `assets/images/foods/` and registered in
-`src/features/foods/food-photos.ts`.
+`src/features/foods/food-photos.ts`. Single foods on white, licensed through the
+app owner's paid Magnific (formerly Freepik) account and fetched with its API.
 
 | Photo | Source | Author | Link | License | Added |
 | ----- | ------ | ------ | ---- | ------- | ----- |
-| food-sweet-potato | Pixabay | Hans | https://pixabay.com/photos/sweet-potato-ipomoea-batatas-batate-2895514/ | Pixabay Content License | 2026-10-13 |
-| food-carrot | Pixabay | MuhammadHammad7788 | https://pixabay.com/photos/carrot-orange-organic-vegetable-10154986/ | Pixabay Content License | 2026-10-13 |
-| food-broccoli | Pixabay | Shutterbug26 | https://pixabay.com/photos/broccoli-vegetable-food-1238250/ | Pixabay Content License | 2026-10-13 |
-| food-peas | Pixabay | garten-gg | https://pixabay.com/photos/vegetables-peas-harvest-food-green-852990/ | Pixabay Content License | 2026-10-13 |
-| food-spinach | Pixabay | 3638148 | https://pixabay.com/photos/spinach-vegetables-green-1799266/ | Pixabay Content License | 2026-10-13 |
-| food-zucchini | Pixabay | wandawolke | https://pixabay.com/photos/vegetables-zucchini-green-food-2356861/ | Pixabay Content License | 2026-10-13 |
-| food-butternut-squash | Pixabay | stevepb | https://pixabay.com/photos/butternut-squash-fresh-vegetable-399415/ | Pixabay Content License | 2026-10-13 |
-| food-green-beans | Pixabay | Couleur | https://pixabay.com/photos/bush-beans-vegetable-harvest-beans-3702999/ | Pixabay Content License | 2026-10-13 |
-| food-cauliflower | Pixabay | matthiasboeckel | https://pixabay.com/photos/cauliflower-carrots-vegetables-6993499/ | Pixabay Content License | 2026-10-13 |
-| food-avocado | Pixabay | Shutterbug26 | https://pixabay.com/photos/appetite-avacado-avo-avocado-1238256/ | Pixabay Content License | 2026-10-13 |
-| food-banana | Pixabay | marker_photography | https://pixabay.com/photos/banana-good-food-healthy-fruit-1949166/ | Pixabay Content License | 2026-10-13 |
-| food-apple | Pixabay | julenka | https://pixabay.com/photos/nice-apples-green-eating-healthy-214170/ | Pixabay Content License | 2026-10-13 |
-| food-pear | Pixabay | PublicDomainPictures | https://pixabay.com/photos/food-fresh-fruit-green-isolated-2280/ | Pixabay Content License | 2026-10-13 |
-| food-blueberries | Pixabay | azzurrodesign | https://pixabay.com/photos/blueberry-blueberries-fruit-food-873785/ | Pixabay Content License | 2026-10-13 |
-| food-strawberries | Pixabay | Shutterbug26 | https://pixabay.com/photos/berry-food-fresh-fruit-green-red-1239306/ | Pixabay Content License | 2026-10-13 |
-| food-mango | Pixabay | mayapujiati | https://pixabay.com/photos/mango-fruit-food-896189/ | Pixabay Content License | 2026-10-13 |
-| food-peach | Pixabay | maja7777 | https://pixabay.com/photos/nectarines-isolated-nature-fruit-2281808/ | Pixabay Content License | 2026-10-13 |
-| food-egg | Pixabay | Peggychoucair | https://pixabay.com/photos/easter-eggs-eggs-easter-food-6035549/ | Pixabay Content License | 2026-10-13 |
-| food-chicken | Pixabay | kakyusei | https://pixabay.com/photos/chicken-breast-food-ingredients-279848/ | Pixabay Content License | 2026-10-13 |
-| food-beef | Pixabay | Pexels | https://pixabay.com/photos/beef-bowl-cooking-cuisine-1846030/ | Pixabay Content License | 2026-10-13 |
-| food-salmon | Pixabay | webandi | https://pixabay.com/photos/salmon-fish-fillet-food-1123286/ | Pixabay Content License | 2026-10-13 |
-| food-shrimp | Pixabay | focusonpc | https://pixabay.com/photos/food-foodie-seafood-vegetable-3160189/ | Pixabay Content License | 2026-10-13 |
-| food-lentils | Pixabay | burakyamanlica | https://pixabay.com/photos/lentils-food-beans-healthy-7772450/ | Pixabay Content License | 2026-10-13 |
-| food-black-beans | Pixabay | MYCCF | https://pixabay.com/photos/bean-black-bean-bud-grow-black-6077944/ | Pixabay Content License | 2026-10-13 |
-| food-peanut-butter | Pixabay | natic_ua | https://pixabay.com/photos/peanut-oil-peanut-butter-strawberry-1771672/ | Pixabay Content License | 2026-10-13 |
-| food-almond-butter | Pixabay | Pexels | https://pixabay.com/photos/almond-blue-cook-cooking-egg-fat-1850615/ | Pixabay Content License | 2026-10-13 |
-| food-tahini | Pixabay | Veganamente | https://pixabay.com/photos/babaganoush-pate-vegetable-4941452/ | Pixabay Content License | 2026-10-13 |
-| food-oats | Pixabay | dessuil | https://pixabay.com/photos/oats-oat-breakfast-healthy-701299/ | Pixabay Content License | 2026-10-13 |
-| food-rice | Pixabay | mikuratv | https://pixabay.com/photos/usd-rice-food-china-bowl-67411/ | Pixabay Content License | 2026-10-13 |
-| food-pasta | Pixabay | PublicDomainPictures | https://pixabay.com/photos/pasta-rotini-raw-uncooked-2093/ | Pixabay Content License | 2026-10-13 |
-| food-bread | Pixabay | Alexas_Fotos | https://pixabay.com/photos/bread-baked-loaf-bakery-4183225/ | Pixabay Content License | 2026-10-13 |
-| food-yogurt | Pixabay | ponce_photography | https://pixabay.com/photos/yogurt-strawberries-food-fruit-1442034/ | Pixabay Content License | 2026-10-13 |
-| food-cheese | Pixabay | 8618939 | https://pixabay.com/photos/cheese-cheddar-food-aged-cheddar-6377663/ | Pixabay Content License | 2026-10-13 |
-| food-turkey | Pixabay | lindaroisum | https://pixabay.com/photos/turkey-breast-thanksgiving-autumn-7574011/ | Pixabay Content License | 2026-10-13 |
-| food-tofu | Pixabay | 621hjmit | https://pixabay.com/photos/tofu-korean-korean-food-597228/ | Pixabay Content License | 2026-10-13 |
-| food-infant-cereal | Pixabay | Pexels | https://pixabay.com/photos/oatmeal-cereals-strawberries-1839515/ | Pixabay Content License | 2026-10-13 |
+| food-sweet-potato | Magnific (magnific.com), via API | New Africa | https://www.magnific.com/premium-photo/fresh-raw-sweet-potato-isolated-white_416907908.htm | Magnific Premium license | 2026-10-13 |
+| food-carrot | Magnific (magnific.com), via API | rakibofficealbd | https://www.magnific.com/premium-photo/single-fresh-orange-carrot-isolated-white-background-healthy-food-photography_429212493.htm | Magnific Premium license | 2026-10-13 |
+| food-broccoli | Magnific (magnific.com), via API | irinafischer | https://www.magnific.com/premium-photo/broccoli-green-florets-photography-isolated-white-background-clipping-path-original-shadowxa_374081813.htm | Magnific Premium license | 2026-10-13 |
+| food-peas | Magnific (magnific.com), via API | pakhnyushchyy | https://www.magnific.com/premium-photo/peas_36433158.htm | Magnific Premium license | 2026-10-13 |
+| food-spinach | Magnific (magnific.com), via API | pixel-shot.com | https://www.magnific.com/premium-photo/fresh-spinach-leaves-white-background_38929601.htm | Magnific Premium license | 2026-10-13 |
+| food-zucchini | Magnific (magnific.com), via API | pakhnyushchyy | https://www.magnific.com/premium-photo/cheap-restaurant_37488885.htm | Magnific Premium license | 2026-10-13 |
+| food-butternut-squash | Magnific (magnific.com), via API | gorielov | https://www.magnific.com/premium-photo/pumpkin_40350147.htm | Magnific Premium license | 2026-10-13 |
+| food-green-beans | Magnific (magnific.com), via API | pixel-shot.com | https://www.magnific.com/premium-photo/french-beans-isolated-white_88016321.htm | Magnific Premium license | 2026-10-13 |
+| food-cauliflower | Magnific (magnific.com), via API | mrshing08 | https://www.magnific.com/premium-photo/part-cauliflower-white-background_38225066.htm | Magnific Premium license | 2026-10-13 |
+| food-kale | Magnific (magnific.com), via API | kufotos | https://www.magnific.com/premium-photo/fresh-cale-lettuce-leaf-white-isolated-background-vegetarian-dietary-healthy-food-product_24766655.htm | Magnific Premium license | 2026-10-13 |
+| food-parsnips | Magnific (magnific.com), via API | picturepartners | https://www.magnific.com/premium-photo/whole-fresh-parsnips-pastinaca-sativa-isolated-white-background_53376391.htm | Magnific Premium license | 2026-10-13 |
+| food-haricots-verts | Magnific (magnific.com), via API | AI Artwork | https://www.magnific.com/premium-photo/fresh-green-beans-thin-green-isolated-white-background_250224627.htm | Magnific Premium license | 2026-10-13 |
+| food-avocado | Magnific (magnific.com), via API | galusikua | https://www.magnific.com/premium-photo/fresh-avocado-cut-half-white-background_364469911.htm | Magnific Premium license | 2026-10-13 |
+| food-banana | Magnific (magnific.com), via API | photolink1 | https://www.magnific.com/premium-photo/bananas_387553670.htm | Magnific Premium license | 2026-10-13 |
+| food-apple | Magnific (magnific.com), via API | dwianggastocks | https://www.magnific.com/premium-photo/fresh-organic-red-apple-delicious-fruit-side-view-isolated-white-background-clipping-path_138953129.htm | Magnific Premium license | 2026-10-13 |
+| food-pear | Magnific (magnific.com), via API | pixel-shot.com | https://www.magnific.com/premium-photo/ripe-pear-isolated-white_37377564.htm | Magnific Premium license | 2026-10-13 |
+| food-blueberries | Magnific (magnific.com), via API | meimanlifestore | https://www.magnific.com/premium-photo/blueberries-isolated-white-background_366319791.htm | Magnific Premium license | 2026-10-13 |
+| food-strawberries | Magnific (magnific.com), via API | a_a_88 | https://www.magnific.com/premium-photo/bunch-tasty-juicy-red-strawberries-amount-four-pieces-white-background_254496117.htm | Magnific Premium license | 2026-10-13 |
+| food-mango | Magnific (magnific.com), via API | Twenty20 | https://www.magnific.com/premium-photo/mango_35376035.htm | Magnific Premium license | 2026-10-13 |
+| food-peach | Magnific (magnific.com), via API | Azur | https://www.magnific.com/premium-photo/whole-pitted-peach-with-bright-surface-white-background_272929017.htm | Magnific Premium license | 2026-10-13 |
+| food-cherries | Magnific (magnific.com), via API | photolink1 | https://www.magnific.com/premium-photo/sweet-cherry-isolated-white_22342948.htm | Magnific Premium license | 2026-10-13 |
+| food-prunes | Magnific (magnific.com), via API | pakhnyushchyy | https://www.magnific.com/premium-photo/dried-plum_39222936.htm | Magnific Premium license | 2026-10-13 |
+| food-egg | Magnific (magnific.com), via API | driashkin | https://www.magnific.com/premium-photo/four-chicken-eggs-white-background-largly_25925793.htm | Magnific Premium license | 2026-10-13 |
+| food-chicken | Magnific (magnific.com), via API | super | https://www.magnific.com/premium-photo/raw-chicken-fillet-isolated-white-background-perfectly-retouched-full-depth-field-photo-top-view-flat-lay_25765086.htm | Magnific Premium license | 2026-10-13 |
+| food-beef | Magnific (magnific.com), via API | da-ga | https://www.magnific.com/premium-photo/fresh-raw-beef-minced-meat-isolated-white-background_27177642.htm | Magnific Premium license | 2026-10-13 |
+| food-turkey | Magnific (magnific.com), via API | user6170755 | https://www.magnific.com/premium-photo/raw-whole-big-turkey-breast-fillet-high-quality-isolate-white-background_63024100.htm | Magnific Premium license | 2026-10-13 |
+| food-salmon | Magnific (magnific.com), via API | stokkete | https://www.magnific.com/premium-photo/close-up-salmon-fillet_35865645.htm | Magnific Premium license | 2026-10-13 |
+| food-shrimp | Magnific (magnific.com), via API | user25234940 | https://www.magnific.com/premium-photo/fresh-shrimp-prawn-isolated-white-background_26304187.htm | Magnific Premium license | 2026-10-13 |
+| food-lentils | Magnific (magnific.com), via API | AndreyStar | https://www.magnific.com/premium-photo/lentils-isolated-white-background_33230725.htm | Magnific Premium license | 2026-10-13 |
+| food-black-beans | Magnific (magnific.com), via API | da-ga | https://www.magnific.com/premium-photo/black-beans-isolated-white-background_28852402.htm | Magnific Premium license | 2026-10-13 |
+| food-tofu | Magnific (magnific.com), via API | maryrkoch | https://www.magnific.com/premium-photo/high-quality-tofu-block-with-small-cubes-isolated-white-background-perfect-vegan-veget_341404472.htm | Magnific Premium license | 2026-10-13 |
+| food-peanut-butter | Magnific (magnific.com), via API | KSerg | https://www.magnific.com/premium-photo/small-bowl-filled-with-smooth-peanut-butter-spread-isolated-white-background-highlighting_401110400.htm | Magnific Premium license | 2026-10-13 |
+| food-almond-butter | Magnific (magnific.com), via API | nugrahithaaditya | https://www.magnific.com/premium-photo/almond-butter-photo-white-isolated-background-ar-32-style-raw-v-6-job-id-d99d08bf58054929abcb26dd_270330255.htm | Magnific Premium license | 2026-10-13 |
+| food-tahini | Magnific (magnific.com), via API | AI Artwork | https://www.magnific.com/premium-photo/yummy-tahini-isolated-white-background_301388773.htm | Magnific Premium license | 2026-10-13 |
+| food-red-lentils | Magnific (magnific.com), via API | fernatiroman | https://www.magnific.com/premium-photo/small-pile-red-lentils-white-background_433510006.htm | Magnific Premium license | 2026-10-13 |
+| food-infant-cereal | Magnific (magnific.com), via API | BillionPhotos | https://www.magnific.com/premium-photo/bowl-oats-porridge-isolated-white-background_48013703.htm | Magnific Premium license | 2026-10-13 |
+| food-oats | Magnific (magnific.com), via API | Twenty20 | https://www.magnific.com/premium-photo/oatmeal-flakes_35436975.htm | Magnific Premium license | 2026-10-13 |
+| food-rice | Magnific (magnific.com), via API | user25234940 | https://www.magnific.com/premium-photo/bowl-full-rice-isolated-white-background_19017643.htm | Magnific Premium license | 2026-10-13 |
+| food-pasta | Magnific (magnific.com), via API | bokodi | https://www.magnific.com/premium-photo/penne-raw-pasta-isolated-white_27760809.htm | Magnific Premium license | 2026-10-13 |
+| food-bread | Magnific (magnific.com), via API | valkantina | https://www.magnific.com/premium-photo/loaf-bread-isolated-white-background-piece-homemade-wheat-bread_248932962.htm | Magnific Premium license | 2026-10-13 |
+| food-brown-rice | Magnific (magnific.com), via API | Hashmi3 | https://www.magnific.com/premium-photo/delicious-bowl-cooked-brown-rice-white-background_294580597.htm | Magnific Premium license | 2026-10-13 |
+| food-quinoa | Magnific (magnific.com), via API | voyager_human | https://www.magnific.com/premium-photo/heap-organic-white-quinoa-healthy-eating-concept-top-view-isolated-white-background_238574260.htm | Magnific Premium license | 2026-10-13 |
+| food-yogurt | Magnific (magnific.com), via API | auyobmasih-1 | https://www.magnific.com/premium-photo/bowl-creamy-white-yogurt-isolated-white-background_425866054.htm | Magnific Premium license | 2026-10-13 |
+| food-cheese | Magnific (magnific.com), via API | mureli | https://www.magnific.com/premium-photo/cheddar-cheese-white-background-ai-generated_41959263.htm | Magnific Premium license | 2026-10-13 |
