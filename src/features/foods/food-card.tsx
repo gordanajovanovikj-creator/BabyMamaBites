@@ -6,7 +6,7 @@ import { foodCategoryLabels, type Food } from '@/content/foods';
 import { allergenLabels } from '@/domain/profile-labels';
 import { AllergenBadge } from '@/features/recipes/allergen-badge';
 import { shadows } from '@/theme/colors';
-import { AppText, cn } from '@/ui';
+import { AppText } from '@/ui';
 
 import { foodPhoto } from './food-photos';
 
@@ -27,13 +27,10 @@ export function FoodCard({ food, width, tried }: FoodCardProps) {
       accessibilityLabel={`${food.name}. ${foodCategoryLabels[food.category]}, from ${food.fromMonths} months.${allergen}${tried ? ' Tried.' : ''}`}
       onPress={() => router.push({ pathname: '/food/[id]', params: { id: food.id } })}
       style={{ width, boxShadow: shadows.card }}
-      className="overflow-hidden rounded-3xl border border-border bg-surface active:opacity-80"
+      className="gap-1 rounded-3xl border border-border bg-surface p-2 active:opacity-80"
     >
       <View
-        className={cn(
-          'h-36 items-center justify-center',
-          photo ? 'bg-surface' : 'bg-surface-muted',
-        )}
+        className="h-36 items-center justify-center overflow-hidden rounded-2xl bg-surface-muted"
         importantForAccessibility="no-hide-descendants"
         accessibilityElementsHidden
       >
@@ -59,7 +56,7 @@ export function FoodCard({ food, width, tried }: FoodCardProps) {
           </View>
         ) : null}
       </View>
-      <View className="gap-1.5 px-3 pb-3 pt-1">
+      <View className="gap-1.5 px-1.5 pb-1.5 pt-1">
         <AppText
           variant="label"
           size="lg"

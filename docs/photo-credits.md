@@ -241,7 +241,7 @@ app owner's paid Magnific (formerly Freepik) account and fetched with its API.
 | food-zucchini | Magnific (magnific.com), via API | pakhnyushchyy | https://www.magnific.com/premium-photo/cheap-restaurant_37488885.htm | Magnific Premium license | 2026-10-13 |
 | food-butternut-squash | Magnific (magnific.com), via API | gorielov | https://www.magnific.com/premium-photo/pumpkin_40350147.htm | Magnific Premium license | 2026-10-13 |
 | food-green-beans | Magnific (magnific.com), via API | pixel-shot.com | https://www.magnific.com/premium-photo/french-beans-isolated-white_88016321.htm | Magnific Premium license | 2026-10-13 |
-| food-cauliflower | Magnific (magnific.com), via API | mrshing08 | https://www.magnific.com/premium-photo/part-cauliflower-white-background_38225066.htm | Magnific Premium license | 2026-10-13 |
+| food-cauliflower | Magnific (magnific.com), via API | pixel-shot.com | https://www.magnific.com/premium-photo/fresh-cauliflower-isolated-white_423805386.htm | Magnific Premium license | 2026-10-13 |
 | food-kale | Magnific (magnific.com), via API | kufotos | https://www.magnific.com/premium-photo/fresh-cale-lettuce-leaf-white-isolated-background-vegetarian-dietary-healthy-food-product_24766655.htm | Magnific Premium license | 2026-10-13 |
 | food-parsnips | Magnific (magnific.com), via API | picturepartners | https://www.magnific.com/premium-photo/whole-fresh-parsnips-pastinaca-sativa-isolated-white-background_53376391.htm | Magnific Premium license | 2026-10-13 |
 | food-haricots-verts | Magnific (magnific.com), via API | AI Artwork | https://www.magnific.com/premium-photo/fresh-green-beans-thin-green-isolated-white-background_250224627.htm | Magnific Premium license | 2026-10-13 |
