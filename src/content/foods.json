@@ -414,6 +414,9 @@
     {
       "id": "apple",
       "name": "Apple",
+      "alsoMatches": [
+        "applesauce"
+      ],
       "category": "fruits",
       "fromMonths": 6,
       "allergen": null,
@@ -637,6 +640,10 @@
     {
       "id": "egg",
       "name": "Egg",
+      "alsoMatches": [
+        "omelet",
+        "frittata"
+      ],
       "category": "proteins",
       "fromMonths": 6,
       "allergen": "egg",
@@ -1040,6 +1047,9 @@
     {
       "id": "tahini",
       "name": "Tahini",
+      "alsoMatches": [
+        "sesame"
+      ],
       "category": "proteins",
       "fromMonths": 6,
       "allergen": "sesame",
@@ -1076,6 +1086,10 @@
     {
       "id": "infant-cereal",
       "name": "Iron-fortified infant cereal",
+      "alsoMatches": [
+        "infant cereal",
+        "baby cereal"
+      ],
       "category": "grains",
       "fromMonths": 6,
       "allergen": null,
@@ -1293,6 +1307,12 @@
     {
       "id": "cheese",
       "name": "Cheese",
+      "alsoMatches": [
+        "cheddar",
+        "mozzarella",
+        "ricotta",
+        "cream cheese"
+      ],
       "category": "dairy",
       "fromMonths": 6,
       "allergen": "milk",

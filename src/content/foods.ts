@@ -22,6 +22,8 @@ export type ChokingRisk = (typeof chokingRisks)[number];
 const foodSchema = z.object({
   id: z.string().min(1),
   name: z.string().min(1),
+  /** Other words for this food in recipes and the food log, e.g. "cheddar" for cheese. */
+  alsoMatches: z.array(z.string().min(1)).optional(),
   category: z.enum(foodCategories),
   fromMonths: z.number().int().min(6),
   allergen: z.enum(allergens).nullable(),

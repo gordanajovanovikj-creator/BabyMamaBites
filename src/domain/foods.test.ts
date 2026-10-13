@@ -3,7 +3,9 @@ import { getSolidsSource } from '@/content/solids-plan';
 import { PLACEHOLDER_MARKER } from '@/content/schemas';
 
 import type { FoodLogEntry } from './food-log';
-import { filterFoods, foodHadReaction, foodTriedOn } from './foods';
+import { babyRecipes } from '@/content/recipes';
+
+import { filterFoods, foodHadReaction, foodTriedOn, recipesWithFood } from './foods';
 
 const entry = (food: string, date: string, over: Partial<FoodLogEntry> = {}): FoodLogEntry => ({
   id: `${food}-${date}`,
@@ -41,6 +43,23 @@ describe('foodTriedOn', () => {
       foodHadReaction([entry('Egg', '2026-01-02', { reaction: 'mild' })], { name: 'Egg' }),
     ).toBe(true);
     expect(foodHadReaction([entry('Egg', '2026-01-02')], { name: 'Egg' })).toBe(false);
+  });
+});
+
+describe('recipesWithFood', () => {
+  const find = (id: string) => foods.find((f) => f.id === id)!;
+  it('finds baby recipes by name, plural or other words, youngest first', () => {
+    const eggs = recipesWithFood(babyRecipes, find('egg'));
+    expect(eggs.length).toBeGreaterThan(0);
+    expect(eggs.map((r) => r.fromMonths ?? 0)).toEqual(
+      [...eggs.map((r) => r.fromMonths ?? 0)].sort((a, b) => a - b),
+    );
+    expect(recipesWithFood(babyRecipes, find('infant-cereal')).length).toBeGreaterThan(0);
+    expect(recipesWithFood(babyRecipes, find('cheese')).length).toBeGreaterThan(0);
+  });
+  it("doesn't match inside other words", () => {
+    const peas = recipesWithFood(babyRecipes, find('peas'));
+    expect(peas.every((r) => /\bpeas?\b/i.test([r.title, ...r.ingredients].join(' ')))).toBe(true);
   });
 });
 

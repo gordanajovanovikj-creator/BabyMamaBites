@@ -4,12 +4,16 @@ import { ScrollView, View } from 'react-native';
 
 import { foodCategoryLabels, getFood, type ChokingRisk } from '@/content/foods';
 import { splitReviewMarker } from '@/content/schemas';
+import { babyRecipes } from '@/content/recipes';
 import { solidsSourcesFor } from '@/content/solids-plan';
 import { fromIsoDate } from '@/domain/dates';
-import { foodHadReaction, foodTriedOn } from '@/domain/foods';
+import { foodHadReaction, foodTriedOn, recipesWithFood } from '@/domain/foods';
+import { findRecipes } from '@/domain/recipes';
 import { allergenLabels } from '@/domain/profile-labels';
 import { foodPhoto } from '@/features/foods/food-photos';
+import { useHousehold } from '@/features/profile/use-household';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
+import { RECIPE_TILE_WIDTH, RecipeTile } from '@/features/recipes/recipe-tile';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { SourceLinks } from '@/features/shared/source-links';
@@ -41,6 +45,7 @@ export default function FoodScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const food = getFood(id);
   const { entries } = useFoodLog();
+  const household = useHousehold();
   const [section, setSection] = useState<Section>('serve');
 
   if (!food) {
@@ -61,6 +66,7 @@ export default function FoodScreen() {
     ...(food.allergenNote ? [{ id: 'allergens' as const, label: 'Allergens' }] : []),
     ...(food.tips.length ? [{ id: 'tips' as const, label: 'Tips' }] : []),
   ];
+  const mealIdeas = recipesWithFood(findRecipes(babyRecipes, household).recipes, food);
   const logParams = { food: food.name, ...(food.allergen ? { allergen: food.allergen } : {}) };
 
   return (
@@ -167,6 +173,30 @@ export default function FoodScreen() {
         ) : null}
         {section === 'tips' ? food.tips.map((t) => <AppText key={t}>• {t}</AppText>) : null}
       </View>
+
+      {mealIdeas.length ? (
+        <View className="gap-3 pt-10">
+          <View className="px-5">
+            <AppText variant="heading" size="2xl">
+              Meal ideas with this ingredient
+            </AppText>
+            <AppText variant="caption" size="sm">
+              From the baby menu
+            </AppText>
+          </View>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            decelerationRate="fast"
+            snapToInterval={RECIPE_TILE_WIDTH + 16}
+            contentContainerClassName="gap-4 px-5"
+          >
+            {mealIdeas.map((r) => (
+              <RecipeTile key={r.id} recipe={r} />
+            ))}
+          </ScrollView>
+        </View>
+      ) : null}
 
       <View className="gap-3 px-5 pb-6 pt-8">
         <SourceLinks sources={solidsSourcesFor(food.sources)} />
