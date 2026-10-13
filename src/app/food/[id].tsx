@@ -9,7 +9,9 @@ import { solidsSourcesFor } from '@/content/solids-plan';
 import { fromIsoDate } from '@/domain/dates';
 import { foodHadReaction, foodTriedOn, recipesWithFood } from '@/domain/foods';
 import { findRecipes } from '@/domain/recipes';
+import { foodFavoriteId } from '@/domain/favorites';
 import { allergenLabels } from '@/domain/profile-labels';
+import { useFavorites } from '@/features/favorites/favorites-context';
 import { foodPhoto } from '@/features/foods/food-photos';
 import { useHousehold } from '@/features/profile/use-household';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
@@ -18,7 +20,7 @@ import { DetailHeader } from '@/features/shared/detail-header';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { SourceLinks } from '@/features/shared/source-links';
 import { useFoodLog } from '@/features/solids/food-log-context';
-import { AppText, Button, Card, Chip, Notice, Screen } from '@/ui';
+import { AppText, Button, Card, Chip, HeartButton, Notice, Screen } from '@/ui';
 
 type Section = 'serve' | 'choking' | 'allergens' | 'tips';
 
@@ -46,6 +48,7 @@ export default function FoodScreen() {
   const food = getFood(id);
   const { entries } = useFoodLog();
   const household = useHousehold();
+  const { isFavorite, toggle } = useFavorites();
   const [section, setSection] = useState<Section>('serve');
 
   if (!food) {
@@ -70,7 +73,22 @@ export default function FoodScreen() {
   const logParams = { food: food.name, ...(food.allergen ? { allergen: food.allergen } : {}) };
 
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-0" overlay={<HeroTopBar />}>
+    <Screen
+      padded={false}
+      edgeToEdgeTop
+      className="gap-0"
+      overlay={
+        <HeroTopBar
+          right={
+            <HeartButton
+              saved={isFavorite(foodFavoriteId(food.id))}
+              onPress={() => toggle(foodFavoriteId(food.id))}
+              label={food.name}
+            />
+          }
+        />
+      }
+    >
       <PictureHero tone="muted" icon="fork.knife" emoji={food.emoji} photo={foodPhoto(food.id)} />
 
       <DetailHeader

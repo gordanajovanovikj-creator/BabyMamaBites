@@ -3,9 +3,11 @@ import { useState } from 'react';
 import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { getFood } from '@/content/foods';
 import { babyRecipes } from '@/content/recipes';
 import { getPlanWeek, planWeeks } from '@/content/solids-plan';
 import { fromIsoDate, today } from '@/domain/dates';
+import { favoriteFoodIds } from '@/domain/favorites';
 import { allergenProgress, foodsTriedCount, planWeekFor } from '@/domain/food-log';
 import { babyAge, showsReadinessPrompt, solidsStartDate, solidsWeek } from '@/domain/stage';
 import { useFavorites } from '@/features/favorites/favorites-context';
@@ -48,6 +50,9 @@ export default function BabyScreen() {
   const favorites = favoriteIds
     .map((id) => babyRecipes.find((r) => r.id === id))
     .filter((r) => r !== undefined);
+  const favoriteFoods = favoriteFoodIds(favoriteIds)
+    .map(getFood)
+    .filter((f) => f !== undefined);
   const now = today();
   const ageMonths = babyAge(profile, now).months;
   const rawWeek = solidsWeek(profile, now);
@@ -87,10 +92,7 @@ export default function BabyScreen() {
               { id: 'recipes', label: 'Recipes' },
               { id: 'foods', label: 'Foods' },
               { id: 'plan', label: 'Plan' },
-              {
-                id: 'favorites',
-                label: `Favorites${favorites.length ? ` (${favorites.length})` : ''}`,
-              },
+              { id: 'favorites', label: 'Favorites' },
             ]}
             selected={tab}
             onSelect={(t) => {
@@ -104,7 +106,8 @@ export default function BabyScreen() {
       {tab === 'favorites' ? (
         <FavoritesList
           recipes={favorites}
-          emptyHint={`Tap the heart on a recipe ${profile.babyName ?? 'your baby'} loved to save it here.`}
+          foods={favoriteFoods}
+          emptyHint={`Tap the heart on a recipe or food ${profile.babyName ?? 'your baby'} loved to save it here.`}
         />
       ) : tab === 'foods' ? (
         <FoodsView searchOpen={searchOpen} />
