@@ -339,6 +339,122 @@
       "reviewer": "pediatric dietitian"
     },
     {
+      "id": "kale",
+      "name": "Kale",
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": true,
+      "emoji": "🥬",
+      "intro": "[PLACEHOLDER - needs expert review] A sturdy dark leafy green. The CDC lists dark green leafy vegetables as a plant source of iron.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Remove the tough stems, steam until very soft, then puree well and mix into other purees."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Chop cooked kale finely and stir it into eggs, pasta or mashes."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve cooked and finely chopped in family meals."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Raw kale is tough and hard to chew. Cook it soft and chop it finely or puree it.",
+      "allergenNote": null,
+      "tips": [
+        "Plant iron is absorbed better with vitamin C foods, like berries or sweet potato."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking",
+        "cdc-iron"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "parsnips",
+      "name": "Parsnips",
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🥕",
+      "intro": "[PLACEHOLDER - needs expert review] A naturally sweet root vegetable, a lot like carrot, that turns creamy once cooked.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Peel, then steam, boil or roast until very soft and puree or mash. Or offer cooked sticks soft enough to squash easily between your thumb and finger."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Mash, or offer small, soft-cooked pieces."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft-cooked pieces from the family meal, without added salt."
+        }
+      ],
+      "chokingRisk": "high",
+      "choking": "Raw parsnip is hard, like raw carrot. Always cook it until soft, and never serve hard raw pieces.",
+      "allergenNote": null,
+      "tips": [
+        "Roast parsnips with carrots and freeze extra puree in cubes."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "haricots-verts",
+      "name": "Haricots verts",
+      "alsoMatches": [
+        "french beans",
+        "french green beans"
+      ],
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🫛",
+      "intro": "[PLACEHOLDER - needs expert review] Thin, tender French green beans that cook quickly.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Steam until very soft and puree, or offer whole cooked beans soft enough to squash easily between your thumb and finger."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Cut soft-cooked beans into small pieces."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft-cooked, cut into small pieces."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Cook until soft; firm or raw beans are hard to chew.",
+      "allergenNote": null,
+      "tips": [
+        "They cook faster than regular green beans, so check for softness early."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
       "id": "avocado",
       "name": "Avocado",
       "category": "fruits",
@@ -628,6 +744,83 @@
       "allergenNote": null,
       "tips": [
         "Choose canned peaches packed in water or juice, not syrup."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "cherries",
+      "name": "Cherries",
+      "category": "fruits",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🍒",
+      "intro": "[PLACEHOLDER - needs expert review] Sweet, juicy summer fruit. The pits must always come out first.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Remove the stems and pits, then puree or mash."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Remove the pits and cut cherries into quarters or small pieces."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Pit and quarter cherries until your child chews well."
+        }
+      ],
+      "chokingRisk": "high",
+      "choking": "Whole cherries and cherry pits are choking hazards. Always remove the pits and stems, and mash or cut the fruit.",
+      "allergenNote": null,
+      "tips": [
+        "A cherry pitter makes prep much quicker. Frozen pitted cherries work too."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "prunes",
+      "name": "Prunes",
+      "alsoMatches": [
+        "prune"
+      ],
+      "category": "fruits",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🫐",
+      "intro": "[PLACEHOLDER - needs expert review] Dried plums with a deep, sweet flavor. Stewed and pureed, they mix well into oatmeal and yogurt.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Simmer pitted prunes in water until very soft, then puree until smooth."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Stir prune puree into oatmeal, yogurt or other fruit purees."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Offer stewed prunes chopped into small pieces, or keep using the puree."
+        }
+      ],
+      "chokingRisk": "high",
+      "choking": "Dried fruit is sticky and can be a choking hazard. Serve prunes stewed and pureed or finely chopped, never whole or dried.",
+      "allergenNote": null,
+      "tips": [
+        "Choose prunes with no added sugar. If your baby seems constipated, check with your pediatrician."
       ],
       "sources": [
         "cdc-solids",
@@ -1084,6 +1277,43 @@
       "reviewer": "pediatric dietitian"
     },
     {
+      "id": "red-lentils",
+      "name": "Red lentils",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": true,
+      "emoji": "🫘",
+      "intro": "[PLACEHOLDER - needs expert review] Quick-cooking split lentils that turn soft and creamy. The CDC lists beans and lentils as plant sources of iron.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Simmer until very soft, then mash or puree."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer thick, mashed red lentils your baby can scoop, or mix into vegetable mashes."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft red lentils in family meals like dal or soup."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when cooked very soft and mashed.",
+      "allergenNote": null,
+      "tips": [
+        "Red lentils need no soaking and cook in about 15 to 20 minutes.",
+        "Pair with vitamin C foods like sweet potato or tomatoes to help iron absorption."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-iron"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
       "id": "infant-cereal",
       "name": "Iron-fortified infant cereal",
       "alsoMatches": [
@@ -1263,6 +1493,76 @@
       "sources": [
         "cdc-choking",
         "aap-allergens"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "brown-rice",
+      "name": "Brown rice",
+      "category": "grains",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🍚",
+      "intro": "[PLACEHOLDER - needs expert review] A whole-grain rice with a nutty taste and a little more texture than white rice.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Cook very soft and blend with a puree."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Serve soft, well-cooked brown rice your baby can pick up, or press it into small balls."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft brown rice from family meals."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when cooked very soft.",
+      "allergenNote": null,
+      "tips": [
+        "Vary your baby’s grains rather than serving rice every day."
+      ],
+      "sources": [
+        "cdc-solids"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "quinoa",
+      "name": "Quinoa",
+      "category": "grains",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🌾",
+      "intro": "[PLACEHOLDER - needs expert review] A small, quick-cooking seed that’s eaten like a grain.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Rinse well, cook until very soft, then blend or stir into purees."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Serve soft quinoa mixed into mashes, or pressed into small patties."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft quinoa in family meals, like bowls and salads."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when cooked soft.",
+      "allergenNote": null,
+      "tips": [
+        "Rinsing quinoa before cooking removes its bitter coating."
+      ],
+      "sources": [
+        "cdc-solids"
       ],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
