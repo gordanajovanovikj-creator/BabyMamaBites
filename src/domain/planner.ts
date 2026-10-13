@@ -81,6 +81,16 @@ export function customMealName(id: string): string | null {
   return id.slice(CUSTOM_PREFIX.length) || null;
 }
 
+/** `count` days starting on `from` (today first), for quick day pickers. */
+export function upcomingDays(from: IsoDate, count: number): IsoDate[] {
+  return Array.from({ length: count }, (_, i) => addDays(from, i));
+}
+
+/** The first meal not planned yet on a day, or dinner when the day is full. */
+export function firstOpenSlot(plan: MealPlan, date: IsoDate): MealSlot {
+  return mealSlots.find((slot) => !plan[planKey(date, slot)]) ?? 'dinner';
+}
+
 /** How many meals are planned on a day (0 to 3). */
 export function mealsPlanned(plan: MealPlan, date: IsoDate): number {
   return mealSlots.filter((slot) => plan[planKey(date, slot)]).length;

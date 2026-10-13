@@ -111,6 +111,11 @@ export default function FoodScreen() {
           onPress={() => router.push({ pathname: '/solids/log', params: logParams })}
         />
         <Button
+          label="Add to meal plan"
+          variant="secondary"
+          onPress={() => router.push({ pathname: '/planner/add-food', params: { food: food.id } })}
+        />
+        <Button
           label="Log a reaction"
           variant="secondary"
           onPress={() =>

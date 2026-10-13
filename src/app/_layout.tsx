@@ -62,6 +62,10 @@ function RootStack() {
           options={{ presentation: 'modal', headerShown: true, title: 'Choose a meal' }}
         />
         <Stack.Screen
+          name="planner/add-food"
+          options={{ presentation: 'modal', headerShown: true, title: 'Plan a food' }}
+        />
+        <Stack.Screen
           name="planner/freezer-add"
           options={{ presentation: 'modal', headerShown: true, title: 'Add to freezer' }}
         />

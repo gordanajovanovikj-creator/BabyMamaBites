@@ -5,6 +5,8 @@ import {
   customMealName,
   foodMealFoodId,
   foodMealId,
+  firstOpenSlot,
+  upcomingDays,
   plannedMeals,
   normalizePlan,
   planKey,
@@ -139,5 +141,23 @@ describe('single foods', () => {
     expect(foodMealFoodId('custom:Pear')).toBeNull();
     expect(customMealName(foodMealId('pear'))).toBeNull();
     expect(foodMealFoodId('food:')).toBeNull();
+  });
+});
+
+describe('quick planning', () => {
+  it('lists days from today', () => {
+    expect(upcomingDays('2026-10-30', 3)).toEqual(['2026-10-30', '2026-10-31', '2026-11-01']);
+  });
+
+  it('picks the first open meal of the day', () => {
+    const d = '2026-10-13';
+    expect(firstOpenSlot({}, d)).toBe('breakfast');
+    expect(firstOpenSlot({ [planKey(d, 'breakfast')]: 'x' }, d)).toBe('lunch');
+    const full = {
+      [planKey(d, 'breakfast')]: 'x',
+      [planKey(d, 'lunch')]: 'y',
+      [planKey(d, 'dinner')]: 'z',
+    };
+    expect(firstOpenSlot(full, d)).toBe('dinner');
   });
 });
