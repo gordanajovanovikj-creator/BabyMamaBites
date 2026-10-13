@@ -58,25 +58,6 @@
       "reviewer": "editorial"
     },
     {
-      "id": "feeling-low",
-      "category": "your-wellbeing",
-      "stages": ["newborn", "solids"],
-      "kind": "when-to-call",
-      "tone": "deep",
-      "icon": "heart.fill",
-      "emoji": "💗",
-      "illustration": "hearts",
-      "title": "Not feeling like yourself?",
-      "summary": "You don't have to carry it alone.",
-      "body": [
-        "[PLACEHOLDER - needs expert review] If you have felt sad, anxious, numb or not yourself most days, please talk to your doctor, OB-GYN or midwife. Asking for help is a strong thing to do.",
-        "If you ever have thoughts of harming yourself or your baby, call your doctor right away, or call or text 988; in an emergency, call 911."
-      ],
-      "allergens": [],
-      "reviewStatus": "placeholder",
-      "reviewer": "clinician"
-    },
-    {
       "id": "solids-two-textures",
       "category": "cooking-for-baby",
       "stages": ["solids"],

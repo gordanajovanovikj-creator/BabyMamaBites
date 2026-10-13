@@ -25,13 +25,11 @@ const photos: Record<string, ImageSource> = {
   'newborn-meal-help': require('@/assets/images/insights/newborn-meal-help.jpg'),
   'newborn-rest': require('@/assets/images/insights/newborn-rest.jpg'),
   'newborn-sleep-feeding': require('@/assets/images/insights/newborn-sleep-feeding.jpg'),
-  'emotional-wellbeing': require('@/assets/images/insights/emotional-wellbeing.jpg'),
   'milestones-without-anxiety': require('@/assets/images/insights/milestones-without-anxiety.jpg'),
   'mom-hacks': require('@/assets/images/insights/mom-hacks.jpg'),
   'postpartum-recovery': require('@/assets/images/insights/postpartum-recovery.jpg'),
   'newborn-water': require('@/assets/images/insights/newborn-water.jpg'),
   'cows-milk': require('@/assets/images/insights/cows-milk.jpg'),
-  'feeling-low': require('@/assets/images/insights/feeling-low.jpg'),
   'toddler-share-plate': require('@/assets/images/insights/toddler-share-plate.jpg'),
   'solids-two-textures': require('@/assets/images/insights/solids-two-textures.jpg'),
 };
