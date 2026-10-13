@@ -118,7 +118,7 @@ export default function BabyScreen() {
         <>
           <View className="gap-2">
             <AppText variant="heading" className="px-5">
-              Your baby, week by week
+              Eating solids, week by week
             </AppText>
             <WeekStrip weeks={planWeeks} current={current} />
           </View>
