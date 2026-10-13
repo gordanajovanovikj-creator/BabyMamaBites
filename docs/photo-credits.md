@@ -224,3 +224,47 @@ Bundled in `assets/images/insights/` and registered in
 | cows-milk              | Dreamstime (ID 472162590)                          | © Oleksandra Osadcha, Dreamstime.com     | —                                                                                                                                                                             | Dreamstime license (supplied by the app owner) | 2026-10-12 |
 | toddler-share-plate    | Dreamstime (ID 110574813)                          | © Rimma Bondarenko, Dreamstime.com       | —                                                                                                                                                                             | Dreamstime license (supplied by the app owner) | 2026-10-12 |
 | solids-two-textures    | Pixabay                                            | MapleHorizons                            | https://pixabay.com/photos/food-healthy-diet-nutrients-3245382/                                                                                                               | Pixabay Content License                        | 2026-10-12 |
+
+## Food guide photos
+
+Bundled in `assets/images/foods/` and registered in
+`src/features/foods/food-photos.ts`.
+
+| Photo | Source | Author | Link | License | Added |
+| ----- | ------ | ------ | ---- | ------- | ----- |
+| food-sweet-potato | Pixabay | Hans | https://pixabay.com/photos/sweet-potato-ipomoea-batatas-batate-2895514/ | Pixabay Content License | 2026-10-13 |
+| food-carrot | Pixabay | MuhammadHammad7788 | https://pixabay.com/photos/carrot-orange-organic-vegetable-10154986/ | Pixabay Content License | 2026-10-13 |
+| food-broccoli | Pixabay | Shutterbug26 | https://pixabay.com/photos/broccoli-vegetable-food-1238250/ | Pixabay Content License | 2026-10-13 |
+| food-peas | Pixabay | garten-gg | https://pixabay.com/photos/vegetables-peas-harvest-food-green-852990/ | Pixabay Content License | 2026-10-13 |
+| food-spinach | Pixabay | 3638148 | https://pixabay.com/photos/spinach-vegetables-green-1799266/ | Pixabay Content License | 2026-10-13 |
+| food-zucchini | Pixabay | wandawolke | https://pixabay.com/photos/vegetables-zucchini-green-food-2356861/ | Pixabay Content License | 2026-10-13 |
+| food-butternut-squash | Pixabay | stevepb | https://pixabay.com/photos/butternut-squash-fresh-vegetable-399415/ | Pixabay Content License | 2026-10-13 |
+| food-green-beans | Pixabay | Couleur | https://pixabay.com/photos/bush-beans-vegetable-harvest-beans-3702999/ | Pixabay Content License | 2026-10-13 |
+| food-cauliflower | Pixabay | matthiasboeckel | https://pixabay.com/photos/cauliflower-carrots-vegetables-6993499/ | Pixabay Content License | 2026-10-13 |
+| food-avocado | Pixabay | Shutterbug26 | https://pixabay.com/photos/appetite-avacado-avo-avocado-1238256/ | Pixabay Content License | 2026-10-13 |
+| food-banana | Pixabay | marker_photography | https://pixabay.com/photos/banana-good-food-healthy-fruit-1949166/ | Pixabay Content License | 2026-10-13 |
+| food-apple | Pixabay | julenka | https://pixabay.com/photos/nice-apples-green-eating-healthy-214170/ | Pixabay Content License | 2026-10-13 |
+| food-pear | Pixabay | PublicDomainPictures | https://pixabay.com/photos/food-fresh-fruit-green-isolated-2280/ | Pixabay Content License | 2026-10-13 |
+| food-blueberries | Pixabay | azzurrodesign | https://pixabay.com/photos/blueberry-blueberries-fruit-food-873785/ | Pixabay Content License | 2026-10-13 |
+| food-strawberries | Pixabay | Shutterbug26 | https://pixabay.com/photos/berry-food-fresh-fruit-green-red-1239306/ | Pixabay Content License | 2026-10-13 |
+| food-mango | Pixabay | mayapujiati | https://pixabay.com/photos/mango-fruit-food-896189/ | Pixabay Content License | 2026-10-13 |
+| food-peach | Pixabay | maja7777 | https://pixabay.com/photos/nectarines-isolated-nature-fruit-2281808/ | Pixabay Content License | 2026-10-13 |
+| food-egg | Pixabay | Peggychoucair | https://pixabay.com/photos/easter-eggs-eggs-easter-food-6035549/ | Pixabay Content License | 2026-10-13 |
+| food-chicken | Pixabay | kakyusei | https://pixabay.com/photos/chicken-breast-food-ingredients-279848/ | Pixabay Content License | 2026-10-13 |
+| food-beef | Pixabay | Pexels | https://pixabay.com/photos/beef-bowl-cooking-cuisine-1846030/ | Pixabay Content License | 2026-10-13 |
+| food-salmon | Pixabay | webandi | https://pixabay.com/photos/salmon-fish-fillet-food-1123286/ | Pixabay Content License | 2026-10-13 |
+| food-shrimp | Pixabay | focusonpc | https://pixabay.com/photos/food-foodie-seafood-vegetable-3160189/ | Pixabay Content License | 2026-10-13 |
+| food-lentils | Pixabay | burakyamanlica | https://pixabay.com/photos/lentils-food-beans-healthy-7772450/ | Pixabay Content License | 2026-10-13 |
+| food-black-beans | Pixabay | MYCCF | https://pixabay.com/photos/bean-black-bean-bud-grow-black-6077944/ | Pixabay Content License | 2026-10-13 |
+| food-peanut-butter | Pixabay | natic_ua | https://pixabay.com/photos/peanut-oil-peanut-butter-strawberry-1771672/ | Pixabay Content License | 2026-10-13 |
+| food-almond-butter | Pixabay | Pexels | https://pixabay.com/photos/almond-blue-cook-cooking-egg-fat-1850615/ | Pixabay Content License | 2026-10-13 |
+| food-tahini | Pixabay | Veganamente | https://pixabay.com/photos/babaganoush-pate-vegetable-4941452/ | Pixabay Content License | 2026-10-13 |
+| food-oats | Pixabay | dessuil | https://pixabay.com/photos/oats-oat-breakfast-healthy-701299/ | Pixabay Content License | 2026-10-13 |
+| food-rice | Pixabay | mikuratv | https://pixabay.com/photos/usd-rice-food-china-bowl-67411/ | Pixabay Content License | 2026-10-13 |
+| food-pasta | Pixabay | PublicDomainPictures | https://pixabay.com/photos/pasta-rotini-raw-uncooked-2093/ | Pixabay Content License | 2026-10-13 |
+| food-bread | Pixabay | Alexas_Fotos | https://pixabay.com/photos/bread-baked-loaf-bakery-4183225/ | Pixabay Content License | 2026-10-13 |
+| food-yogurt | Pixabay | ponce_photography | https://pixabay.com/photos/yogurt-strawberries-food-fruit-1442034/ | Pixabay Content License | 2026-10-13 |
+| food-cheese | Pixabay | 8618939 | https://pixabay.com/photos/cheese-cheddar-food-aged-cheddar-6377663/ | Pixabay Content License | 2026-10-13 |
+| food-turkey | Pixabay | lindaroisum | https://pixabay.com/photos/turkey-breast-thanksgiving-autumn-7574011/ | Pixabay Content License | 2026-10-13 |
+| food-tofu | Pixabay | 621hjmit | https://pixabay.com/photos/tofu-korean-korean-food-597228/ | Pixabay Content License | 2026-10-13 |
+| food-infant-cereal | Pixabay | Pexels | https://pixabay.com/photos/oatmeal-cereals-strawberries-1839515/ | Pixabay Content License | 2026-10-13 |

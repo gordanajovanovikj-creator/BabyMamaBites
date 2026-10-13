@@ -10,6 +10,7 @@ import { allergenProgress, foodsTriedCount, planWeekFor } from '@/domain/food-lo
 import { babyAge, showsReadinessPrompt, solidsStartDate, solidsWeek } from '@/domain/stage';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { FavoritesList } from '@/features/favorites/favorites-list';
+import { FoodsView } from '@/features/foods/foods-view';
 import { FreezerCard } from '@/features/planner/freezer-card';
 import { WeekMenu } from '@/features/planner/week-menu';
 import { useProfile } from '@/features/profile/profile-context';
@@ -25,7 +26,8 @@ import { AppText, Button, Card, Notice, Screen, SearchButton, SegmentedTabs } fr
 
 const RECENT = 5;
 
-type Tab = 'plan' | 'recipes' | 'favorites';
+type Tab = 'recipes' | 'foods' | 'plan' | 'favorites';
+const tabIds: readonly string[] = ['recipes', 'foods', 'plan', 'favorites'];
 
 export default function BabyScreen() {
   const insets = useSafeAreaInsets();
@@ -38,9 +40,7 @@ export default function BabyScreen() {
   const [seenAt, setSeenAt] = useState<string | undefined>(undefined);
   if (params.at && params.at !== seenAt) {
     setSeenAt(params.at);
-    if (params.tab === 'plan' || params.tab === 'recipes' || params.tab === 'favorites') {
-      setTab(params.tab);
-    }
+    if (params.tab && tabIds.includes(params.tab)) setTab(params.tab as Tab);
   }
   const [searchOpen, setSearchOpen] = useState(false);
   if (!profile) return null;
@@ -69,11 +69,11 @@ export default function BabyScreen() {
         <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
           <View className="flex-row items-center justify-between gap-3">
             <AppText variant="display">Baby</AppText>
-            {tab === 'recipes' ? (
+            {tab === 'recipes' || tab === 'foods' ? (
               <SearchButton
                 open={searchOpen}
                 onPress={() => setSearchOpen((open) => !open)}
-                subject="baby recipes"
+                subject={tab === 'foods' ? 'foods' : 'baby recipes'}
               />
             ) : null}
           </View>
@@ -85,6 +85,7 @@ export default function BabyScreen() {
           <SegmentedTabs<Tab>
             tabs={[
               { id: 'recipes', label: 'Recipes' },
+              { id: 'foods', label: 'Foods' },
               { id: 'plan', label: 'Plan' },
               {
                 id: 'favorites',
@@ -92,7 +93,10 @@ export default function BabyScreen() {
               },
             ]}
             selected={tab}
-            onSelect={setTab}
+            onSelect={(t) => {
+              setTab(t);
+              setSearchOpen(false);
+            }}
           />
         </View>
       }
@@ -102,6 +106,8 @@ export default function BabyScreen() {
           recipes={favorites}
           emptyHint={`Tap the heart on a recipe ${profile.babyName ?? 'your baby'} loved to save it here.`}
         />
+      ) : tab === 'foods' ? (
+        <FoodsView searchOpen={searchOpen} />
       ) : tab === 'recipes' ? (
         <BabyRecipesView
           babyName={profile.babyName}

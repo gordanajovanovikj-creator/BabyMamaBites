@@ -5,7 +5,7 @@ import { Alert, View } from 'react-native';
 import { reactionAdvice } from '@/content/reactions';
 import { quickFoods } from '@/content/solids-plan';
 import { today, type IsoDate } from '@/domain/dates';
-import { makeEntry, type Reaction } from '@/domain/food-log';
+import { makeEntry, reactions, type Reaction } from '@/domain/food-log';
 import { allergens, type Allergen } from '@/domain/profile';
 import { allergenLabels } from '@/domain/profile-labels';
 import { useFoodLog } from '@/features/solids/food-log-context';
@@ -30,18 +30,24 @@ function isAllergen(value: string | undefined): value is Allergen {
   return !!value && (allergens as readonly string[]).includes(value);
 }
 
+function isReaction(value: string | undefined): value is Reaction {
+  return !!value && (reactions as readonly string[]).includes(value);
+}
+
 export default function LogFoodScreen() {
-  const params = useLocalSearchParams<{ allergen?: string }>();
+  const params = useLocalSearchParams<{ allergen?: string; food?: string; reaction?: string }>();
   const { add } = useFoodLog();
   const preset = isAllergen(params.allergen) ? params.allergen : null;
   const presetFood = preset ? quickFoods.find((f) => f.allergen === preset) : undefined;
 
   const now = today();
-  const [food, setFood] = useState(presetFood?.label ?? '');
+  const [food, setFood] = useState(params.food?.slice(0, 80) ?? presetFood?.label ?? '');
   const [allergen, setAllergen] = useState<Allergen | null>(preset);
   const [date, setDate] = useState<IsoDate>(now);
   const [isNew, setIsNew] = useState(true);
-  const [reaction, setReaction] = useState<Reaction>('none');
+  const [reaction, setReaction] = useState<Reaction>(
+    isReaction(params.reaction) ? params.reaction : 'none',
+  );
   const [notes, setNotes] = useState('');
   const [saving, setSaving] = useState(false);
 

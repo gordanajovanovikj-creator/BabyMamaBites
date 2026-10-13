@@ -1,8 +1,10 @@
+import { foods } from '@/content/foods';
 import { insightCategories } from '@/content/insight-categories';
 import { insights } from '@/content/insights';
 import { monthlyGuides } from '@/content/monthly-guides';
 import { allRecipes, babyRecipeCategories, recipeCategories } from '@/content/recipes';
 import { solidsArticles } from '@/content/solids-articles';
+import { foodPhoto } from '@/features/foods/food-photos';
 import { guidePhoto } from '@/features/guides/guide-photos';
 import { libraryPhoto } from '@/features/library/library-photos';
 import { categoryCoverIds, categoryPhoto, recipePhoto } from '@/features/recipes/recipe-photos';
@@ -27,6 +29,9 @@ describe('content photos', () => {
     for (const [categoryId, recipeId] of Object.entries(categoryCoverIds)) {
       expect(allRecipes.find((r) => r.id === recipeId)?.categories).toContain(categoryId);
     }
+  });
+  it('every food in the food guide has a photo', () => {
+    expect(foods.filter((f) => !foodPhoto(f.id)).map((f) => f.id)).toEqual([]);
   });
   it('every monthly guide has a photo', () => {
     expect(monthlyGuides.filter((g) => !guidePhoto(g.id)).map((g) => g.id)).toEqual([]);

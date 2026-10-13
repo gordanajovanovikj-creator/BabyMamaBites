@@ -1,0 +1,1332 @@
+{
+  "version": 1,
+  "region": "US",
+  "foods": [
+    {
+      "id": "sweet-potato",
+      "name": "Sweet potato",
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🍠",
+      "intro": "[PLACEHOLDER - needs expert review] A naturally sweet, soft first vegetable. It’s one of the foods the CDC lists as high in vitamin C, which helps your baby absorb iron.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Steam, bake or roast until very soft, then puree or mash. Or offer thick wedges, peeled and soft enough to squash easily between your thumb and finger."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Mash with a fork, or offer soft, bite-sized cubes."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft cubes or wedges from the family meal, without added salt."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when it’s cooked very soft. Avoid hard, undercooked pieces.",
+      "allergenNote": null,
+      "tips": [
+        "Roast a whole tray and freeze extra puree in cubes."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking",
+        "cdc-iron"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "carrot",
+      "name": "Carrot",
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🥕",
+      "intro": "[PLACEHOLDER - needs expert review] A sweet, mild vegetable that purees smoothly once it’s cooked soft.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Steam or boil until very soft, then puree or mash. Or offer whole cooked sticks soft enough to squash easily between your thumb and finger."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Mash, or offer small, soft-cooked pieces."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft-cooked pieces or thin shreds. Keep raw carrot sticks away until your child chews well."
+        }
+      ],
+      "chokingRisk": "high",
+      "choking": "Raw carrot is a choking hazard (CDC). Always cook carrot until soft, and never serve hard raw pieces or coins.",
+      "allergenNote": null,
+      "tips": [
+        "Grated carrot cooked into oatmeal or muffins is an easy way to add it."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "broccoli",
+      "name": "Broccoli",
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🥦",
+      "intro": "[PLACEHOLDER - needs expert review] A green vegetable the CDC lists as high in vitamin C, which helps your baby absorb iron from other foods.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Steam until very soft and puree, or offer large florets with a stalk “handle” that are soft enough to squash easily between your thumb and finger."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer small, soft florets or chop finely and mix into other foods."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft, bite-sized florets from the family meal."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Steam until soft. Raw or firm broccoli is hard to chew.",
+      "allergenNote": null,
+      "tips": [
+        "Pair with iron-rich foods like beans, lentils or meat."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking",
+        "cdc-iron"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "peas",
+      "name": "Peas",
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🫛",
+      "intro": "[PLACEHOLDER - needs expert review] Small, sweet and easy to keep in the freezer.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Cook until soft and puree, or mash well."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Flatten each pea with a fork, or mash, so they aren’t whole and round."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Flatten or lightly mash peas until your child is chewing well."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Whole, round peas can block a small airway. Mash or flatten them.",
+      "allergenNote": null,
+      "tips": [
+        "Frozen peas cook in a few minutes and are just as nutritious as fresh."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "spinach",
+      "name": "Spinach",
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": true,
+      "emoji": "🥬",
+      "intro": "[PLACEHOLDER - needs expert review] A dark leafy green. The CDC lists dark green leafy vegetables as a plant source of iron.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Steam or wilt, then puree well and mix into other purees."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Chop cooked spinach finely and stir it into eggs, pasta or mashes."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve finely chopped in family meals."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when cooked and finely chopped or pureed. Large raw leaves can be hard to manage.",
+      "allergenNote": null,
+      "tips": [
+        "Plant iron is absorbed better with vitamin C foods, like berries or sweet potato."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking",
+        "cdc-iron"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "zucchini",
+      "name": "Zucchini",
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🥒",
+      "intro": "[PLACEHOLDER - needs expert review] A mild, watery vegetable that cooks quickly.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Steam until soft and puree, or offer thick spears soft enough to squash easily between your thumb and finger."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer soft-cooked half-moons or small pieces."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft-cooked pieces from family meals."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when cooked soft.",
+      "allergenNote": null,
+      "tips": [
+        "Grated zucchini mixes easily into muffins, pancakes and eggs."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "butternut-squash",
+      "name": "Butternut squash",
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🎃",
+      "intro": "[PLACEHOLDER - needs expert review] A sweet, velvety squash that purees beautifully.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Steam or roast until very soft, then puree or mash. Or offer soft wedges."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Mash, or offer soft, bite-sized cubes."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft cubes from family meals."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when cooked very soft.",
+      "allergenNote": null,
+      "tips": [
+        "Freeze extra puree in cubes for up to 3 months."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "green-beans",
+      "name": "Green beans",
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🫘",
+      "intro": "[PLACEHOLDER - needs expert review] Long, easy-to-hold beans that turn soft when cooked.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Steam until very soft and puree, or offer whole cooked beans soft enough to squash easily between your thumb and finger."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Cut soft-cooked beans into small pieces."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft-cooked, cut into small pieces."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Cook until soft; firm or raw green beans are hard to chew.",
+      "allergenNote": null,
+      "tips": [
+        "Whole cooked beans are easy for younger babies to hold."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "cauliflower",
+      "name": "Cauliflower",
+      "category": "vegetables",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🥦",
+      "intro": "[PLACEHOLDER - needs expert review] A mild vegetable that mashes into a smooth, creamy texture.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Steam until very soft and puree, or offer large soft florets."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Mash, or offer small, soft florets."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft, bite-sized florets."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Steam until soft. Raw florets are hard to chew.",
+      "allergenNote": null,
+      "tips": [
+        "Mash with a little olive oil for extra healthy fat."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "avocado",
+      "name": "Avocado",
+      "category": "fruits",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🥑",
+      "intro": "[PLACEHOLDER - needs expert review] Creamy, no-cook and full of healthy fats.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Mash or puree until smooth, or offer thick spears of ripe avocado."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer mashed avocado or small, soft cubes."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve cubes, slices or spread on toast."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when ripe and soft.",
+      "allergenNote": null,
+      "tips": [
+        "Rolling slippery spears in a little infant cereal makes them easier to hold.",
+        "Cut avocado browns quickly; serve it fresh."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "banana",
+      "name": "Banana",
+      "category": "fruits",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🍌",
+      "intro": "[PLACEHOLDER - needs expert review] Sweet, soft and needs no cooking.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Mash until smooth, or offer half a banana with some peel left on as a handle."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer small, soft pieces or slices."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve slices or pieces."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when ripe. Cut into pieces rather than offering large chunks once your baby bites off pieces.",
+      "allergenNote": null,
+      "tips": [
+        "Ripe bananas with brown spots are softest and sweetest."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "category": "fruits",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🍎",
+      "intro": "[PLACEHOLDER - needs expert review] A sweet fruit that’s easy to steam and puree.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Peel, steam or bake until very soft, then puree. Or offer soft-cooked wedges."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer soft-cooked pieces or grated raw apple."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Offer thin slices or grated apple. Wait until your child chews well before offering raw pieces."
+        }
+      ],
+      "chokingRisk": "high",
+      "choking": "Raw, hard apple pieces are a choking hazard (CDC). Cook apple soft, or grate it, for babies and young toddlers.",
+      "allergenNote": null,
+      "tips": [
+        "Unsweetened applesauce is a handy shortcut."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "pear",
+      "name": "Pear",
+      "category": "fruits",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🍐",
+      "intro": "[PLACEHOLDER - needs expert review] Soft, juicy and naturally sweet.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Puree or mash ripe pear; steam it first if it’s firm."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer small pieces of very ripe or soft-cooked pear."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft slices or pieces."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Firm, unripe pear is hard to chew. Use very ripe pear or cook it soft.",
+      "allergenNote": null,
+      "tips": [
+        "Peel firm pears and steam them for a few minutes."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "blueberries",
+      "name": "Blueberries",
+      "category": "fruits",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🫐",
+      "intro": "[PLACEHOLDER - needs expert review] Small, sweet berries. The CDC lists berries as high in vitamin C.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Mash or puree, or stir smashed berries into yogurt or oatmeal."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Flatten each berry between your fingers, or quarter them."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Quarter or flatten berries until your child chews well."
+        }
+      ],
+      "chokingRisk": "high",
+      "choking": "Whole blueberries are a choking hazard (CDC). Always mash, flatten or cut them.",
+      "allergenNote": null,
+      "tips": [
+        "Frozen berries thaw quickly and are easy to mash."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking",
+        "cdc-iron"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "strawberries",
+      "name": "Strawberries",
+      "category": "fruits",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🍓",
+      "intro": "[PLACEHOLDER - needs expert review] A sweet berry that’s high in vitamin C.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Mash or puree ripe strawberries, or offer a very large, ripe berry to hold."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Cut into small pieces or thin slices."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Cut into small pieces."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Small whole berries can block an airway. Mash or cut them into small pieces.",
+      "allergenNote": null,
+      "tips": [
+        "Strawberries aren’t a common allergen, but some babies get a mild rash around the mouth from acidic fruits."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking",
+        "cdc-iron"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "mango",
+      "name": "Mango",
+      "category": "fruits",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🥭",
+      "intro": "[PLACEHOLDER - needs expert review] Sweet, juicy and soft when ripe.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Mash or puree ripe mango, or offer a large peeled strip."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer small, soft pieces."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve small pieces or slices."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when ripe and soft. Avoid giving the slippery pit to suck on.",
+      "allergenNote": null,
+      "tips": [
+        "Frozen mango chunks thaw into a soft mash."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "peach",
+      "name": "Peach",
+      "category": "fruits",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🍑",
+      "intro": "[PLACEHOLDER - needs expert review] A soft, sweet stone fruit.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Peel and mash or puree ripe peach, or offer a large, ripe peeled slice."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer small, soft pieces."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve small pieces or slices."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Remove the pit, and cut canned peaches into small pieces (CDC).",
+      "allergenNote": null,
+      "tips": [
+        "Choose canned peaches packed in water or juice, not syrup."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-textures",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "egg",
+      "name": "Egg",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": "egg",
+      "ironRich": true,
+      "emoji": "🥚",
+      "intro": "[PLACEHOLDER - needs expert review] An easy, inexpensive protein. The CDC lists eggs among foods with iron.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Hard-boil and mash the egg, or serve thin strips of a fully cooked omelet."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer small pieces of hard-boiled egg or scrambled egg."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve fully cooked eggs in small pieces."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when soft and in small pieces. Always cook until both the yolk and white are firm.",
+      "allergenNote": "Egg is one of the most common food allergens. Introduce it early, around 6 months, once your baby has had a few other first foods. Start with a small amount, offer only one new allergen at a time, and watch for a reaction. Once your baby tolerates it, keep offering it regularly. If your baby has severe eczema or another food allergy, talk to your pediatrician first. Call 911 right away for swelling of the lips or face, trouble breathing, or repeated vomiting.",
+      "tips": [
+        "Try a fully cooked omelet cut into strips for easy holding."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-iron",
+        "aap-allergens"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "chicken",
+      "name": "Chicken",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": true,
+      "emoji": "🍗",
+      "intro": "[PLACEHOLDER - needs expert review] A mild protein. The CDC lists poultry as a source of easily absorbed iron.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Puree cooked chicken with a little water, breast milk or formula until smooth, or offer large, shredded strips."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer finely shredded or minced chicken."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve small, tender pieces."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Tough or large chunks of meat are a choking hazard (CDC). Shred finely or puree, and cook to 165°F.",
+      "allergenNote": null,
+      "tips": [
+        "Chicken thigh is softer and has more iron than breast."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-iron",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "beef",
+      "name": "Beef",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": true,
+      "emoji": "🥩",
+      "intro": "[PLACEHOLDER - needs expert review] Red meat is one of the richest sources of easily absorbed iron (CDC).",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Puree cooked beef until smooth, or offer soft, slow-cooked strips to suck on."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer finely minced or ground beef, or soft meatballs cut small."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve small, tender pieces or ground beef."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Tough or large chunks of meat are a choking hazard (CDC). Cook ground beef to 160°F.",
+      "allergenNote": null,
+      "tips": [
+        "Slow-cooked or ground beef is easiest for babies to manage."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-iron",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "turkey",
+      "name": "Turkey",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": true,
+      "emoji": "🦃",
+      "intro": "[PLACEHOLDER - needs expert review] A mild poultry that’s a good source of iron (CDC).",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Puree cooked turkey until smooth, or offer large, soft shredded pieces."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer finely shredded or ground turkey."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve small, tender pieces."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Shred finely and cook to 165°F. Avoid deli meat sticks and hot dogs (CDC).",
+      "allergenNote": null,
+      "tips": [
+        "Ground turkey makes soft, easy meatballs or patties."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-iron",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "salmon",
+      "name": "Salmon",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": "fish",
+      "ironRich": true,
+      "emoji": "🐟",
+      "intro": "[PLACEHOLDER - needs expert review] A fatty fish the FDA lists as a “Best Choice” for children because it’s low in mercury.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Flake cooked salmon and mash it with a little puree, checking carefully for bones."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer soft flakes your baby can pick up."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve flaked salmon or soft fish cakes."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Remove every bone (CDC). Cook to 145°F, until it flakes easily.",
+      "allergenNote": "Fish is a common food allergen. Introduce it early, around 6 months, once your baby has had a few other first foods. Start with a small amount, offer only one new allergen at a time, and watch for a reaction. Once your baby tolerates it, keep offering it regularly. If your baby has severe eczema or another food allergy, talk to your pediatrician first. Call 911 right away for swelling of the lips or face, trouble breathing, or repeated vomiting.",
+      "tips": [
+        "Canned salmon is a quick option; mash any soft bones well or remove them."
+      ],
+      "sources": [
+        "fda-fish",
+        "cdc-iron",
+        "cdc-choking",
+        "aap-allergens"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "shrimp",
+      "name": "Shrimp",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": "shellfish",
+      "ironRich": true,
+      "emoji": "🦐",
+      "intro": "[PLACEHOLDER - needs expert review] A shellfish the FDA lists as a “Best Choice” for children because it’s low in mercury.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Puree or mince cooked shrimp very finely and mix into a puree."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Chop cooked shrimp into very small pieces."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Cut into small pieces."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Whole shrimp are firm and round; chop finely. Cook until opaque.",
+      "allergenNote": "Shellfish is a common food allergen. Introduce it early, around 6 months, once your baby has had a few other first foods. Start with a small amount, offer only one new allergen at a time, and watch for a reaction. Once your baby tolerates it, keep offering it regularly. If your baby has severe eczema or another food allergy, talk to your pediatrician first. Call 911 right away for swelling of the lips or face, trouble breathing, or repeated vomiting.",
+      "tips": [
+        "Mix minced shrimp into rice or pasta."
+      ],
+      "sources": [
+        "fda-fish",
+        "cdc-iron",
+        "aap-allergens"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "lentils",
+      "name": "Lentils",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": true,
+      "emoji": "🫘",
+      "intro": "[PLACEHOLDER - needs expert review] An affordable plant protein. The CDC lists beans and lentils as plant sources of iron.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Cook red lentils until very soft and mash or puree."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer thick, mashed lentils your baby can scoop."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft lentils in family meals."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when cooked very soft and mashed.",
+      "allergenNote": null,
+      "tips": [
+        "Pair with vitamin C foods like sweet potato or tomatoes to help iron absorption."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-iron"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "black-beans",
+      "name": "Black beans",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": true,
+      "emoji": "🫘",
+      "intro": "[PLACEHOLDER - needs expert review] Beans are a plant source of iron and protein (CDC).",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Cook until very soft and mash or puree, with no whole beans left."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Mash or flatten each bean."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Flatten or mash beans until your child chews well."
+        }
+      ],
+      "chokingRisk": "high",
+      "choking": "Whole beans are a choking hazard (CDC). Always mash or flatten them.",
+      "allergenNote": null,
+      "tips": [
+        "Choose canned beans with no salt added, and rinse them well."
+      ],
+      "sources": [
+        "cdc-iron",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "tofu",
+      "name": "Tofu",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": "soy",
+      "ironRich": true,
+      "emoji": "🧈",
+      "intro": "[PLACEHOLDER - needs expert review] A soft, mild plant protein. The CDC lists tofu as a plant source of iron.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Mash soft tofu, or offer finger-sized strips of firm tofu that are soft enough to squash easily between your thumb and finger."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer small cubes."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve small cubes or crumbles."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when soft.",
+      "allergenNote": "Soy is a common food allergen. Introduce it early, around 6 months, once your baby has had a few other first foods. Start with a small amount, offer only one new allergen at a time, and watch for a reaction. Once your baby tolerates it, keep offering it regularly. If your baby has severe eczema or another food allergy, talk to your pediatrician first. Call 911 right away for swelling of the lips or face, trouble breathing, or repeated vomiting.",
+      "tips": [
+        "Pan-fry strips lightly to make them easier to hold."
+      ],
+      "sources": [
+        "cdc-iron",
+        "aap-allergens"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "peanut-butter",
+      "name": "Peanut butter",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": "peanut",
+      "ironRich": false,
+      "emoji": "🥜",
+      "intro": "[PLACEHOLDER - needs expert review] Introducing peanut early can help lower the chance of a peanut allergy (AAP).",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Thin smooth peanut butter with warm water, breast milk or formula, or stir a little into oatmeal or a fruit puree."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Spread very thinly on toast strips, or keep stirring into foods."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Spread thinly on toast or crackers."
+        }
+      ],
+      "chokingRisk": "high",
+      "choking": "Never give spoonfuls or chunks of peanut butter, or whole or chopped peanuts (CDC). Always thin it or spread it thinly.",
+      "allergenNote": "Peanut is one of the most common food allergens. Introduce it early, around 6 months, once your baby has had a few other first foods. Start with a small amount, offer only one new allergen at a time, and watch for a reaction. Once your baby tolerates it, keep offering it regularly. If your baby has severe eczema or another food allergy, talk to your pediatrician first. If your baby has severe eczema or an egg allergy, your pediatrician may suggest testing first. Call 911 right away for swelling of the lips or face, trouble breathing, or repeated vomiting.",
+      "tips": [
+        "Choose smooth peanut butter with no added salt or sweeteners."
+      ],
+      "sources": [
+        "aap-allergens",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "almond-butter",
+      "name": "Almond butter",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": "tree-nuts",
+      "ironRich": false,
+      "emoji": "🌰",
+      "intro": "[PLACEHOLDER - needs expert review] A smooth nut butter that’s an easy way to introduce tree nuts.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Thin with warm water, breast milk or formula, or stir into oatmeal or a puree."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Spread very thinly on toast strips."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Spread thinly on toast or crackers."
+        }
+      ],
+      "chokingRisk": "high",
+      "choking": "Never give spoonfuls or chunks of nut butter, or whole or chopped nuts (CDC).",
+      "allergenNote": "Tree nuts are a common food allergen. Introduce it early, around 6 months, once your baby has had a few other first foods. Start with a small amount, offer only one new allergen at a time, and watch for a reaction. Once your baby tolerates it, keep offering it regularly. If your baby has severe eczema or another food allergy, talk to your pediatrician first. Call 911 right away for swelling of the lips or face, trouble breathing, or repeated vomiting.",
+      "tips": [
+        "Choose smooth almond butter with no added salt or sweeteners."
+      ],
+      "sources": [
+        "aap-allergens",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "tahini",
+      "name": "Tahini",
+      "category": "proteins",
+      "fromMonths": 6,
+      "allergen": "sesame",
+      "ironRich": false,
+      "emoji": "🫙",
+      "intro": "[PLACEHOLDER - needs expert review] Smooth sesame seed paste, an easy way to introduce sesame.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Stir a little into a puree, yogurt or oatmeal."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Swirl into foods or spread very thinly on toast strips."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Spread thinly, or use in hummus."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Thin tahini or spread it thinly. Avoid whole seeds and spoonfuls of seed butter (CDC).",
+      "allergenNote": "Sesame is a common food allergen. Introduce it early, around 6 months, once your baby has had a few other first foods. Start with a small amount, offer only one new allergen at a time, and watch for a reaction. Once your baby tolerates it, keep offering it regularly. If your baby has severe eczema or another food allergy, talk to your pediatrician first. Call 911 right away for swelling of the lips or face, trouble breathing, or repeated vomiting.",
+      "tips": [
+        "Hummus contains tahini, so it also counts as sesame."
+      ],
+      "sources": [
+        "aap-allergens",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "infant-cereal",
+      "name": "Iron-fortified infant cereal",
+      "category": "grains",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": true,
+      "emoji": "🥣",
+      "intro": "[PLACEHOLDER - needs expert review] Iron-fortified infant cereal is an easy way to add iron (CDC).",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Mix with breast milk, formula or water into a smooth, thin cereal, and thicken it as your baby gets used to it."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Make it thicker, or mix into fruit purees."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Keep using it in oatmeal, pancakes or muffins."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk. Never put cereal in a bottle.",
+      "allergenNote": null,
+      "tips": [
+        "Vary oat, barley and multigrain cereals rather than only rice cereal."
+      ],
+      "sources": [
+        "cdc-iron",
+        "cdc-solids"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "oats",
+      "name": "Oats",
+      "category": "grains",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🌾",
+      "intro": "[PLACEHOLDER - needs expert review] A warm, filling whole grain.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Grind rolled oats into a fine powder and cook into smooth oatmeal."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Serve thicker oatmeal, or soft baked oatmeal fingers."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve oatmeal or baked oat bars."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when cooked soft. Avoid granola bars and dry oat snacks (CDC).",
+      "allergenNote": null,
+      "tips": [
+        "Plain oats aren’t fortified with iron; iron-fortified infant oat cereal is.",
+        "Some oats are processed with wheat; check the label if you avoid gluten."
+      ],
+      "sources": [
+        "cdc-solids",
+        "cdc-choking"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "rice",
+      "name": "Rice",
+      "category": "grains",
+      "fromMonths": 6,
+      "allergen": null,
+      "ironRich": false,
+      "emoji": "🍚",
+      "intro": "[PLACEHOLDER - needs expert review] A soft grain that works in many family meals.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Cook very soft and blend with a puree."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Serve soft, sticky rice your baby can pick up, or press into small balls."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft rice from family meals."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when cooked soft.",
+      "allergenNote": null,
+      "tips": [
+        "Vary your baby’s grains rather than serving rice every day."
+      ],
+      "sources": [
+        "cdc-solids"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta",
+      "category": "grains",
+      "fromMonths": 6,
+      "allergen": "wheat",
+      "ironRich": false,
+      "emoji": "🍝",
+      "intro": "[PLACEHOLDER - needs expert review] Soft-cooked pasta is easy to hold and fun to eat.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Cook large shapes until very soft, like fusilli or penne, so your baby can hold them."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer small, soft shapes."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve soft pasta from family meals."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk when cooked soft.",
+      "allergenNote": "Wheat is a common food allergen. Introduce it early, around 6 months, once your baby has had a few other first foods. Start with a small amount, offer only one new allergen at a time, and watch for a reaction. Once your baby tolerates it, keep offering it regularly. If your baby has severe eczema or another food allergy, talk to your pediatrician first. Call 911 right away for swelling of the lips or face, trouble breathing, or repeated vomiting.",
+      "tips": [
+        "Cook in unsalted water."
+      ],
+      "sources": [
+        "cdc-solids",
+        "aap-allergens"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "bread",
+      "name": "Bread",
+      "category": "grains",
+      "fromMonths": 6,
+      "allergen": "wheat",
+      "ironRich": false,
+      "emoji": "🍞",
+      "intro": "[PLACEHOLDER - needs expert review] Lightly toasted bread strips are an easy first finger food.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Offer lightly toasted bread strips with a thin spread, like mashed avocado."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer small pieces of lightly toasted bread."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve small pieces or sandwich squares."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Soft, doughy bread can form a sticky ball. Lightly toast it. Avoid breads with seeds, nut pieces or whole grain kernels (CDC).",
+      "allergenNote": "Wheat is a common food allergen. Introduce it early, around 6 months, once your baby has had a few other first foods. Start with a small amount, offer only one new allergen at a time, and watch for a reaction. Once your baby tolerates it, keep offering it regularly. If your baby has severe eczema or another food allergy, talk to your pediatrician first. Call 911 right away for swelling of the lips or face, trouble breathing, or repeated vomiting.",
+      "tips": [
+        "Choose lower-sodium breads."
+      ],
+      "sources": [
+        "cdc-choking",
+        "aap-allergens"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "yogurt",
+      "name": "Yogurt",
+      "category": "dairy",
+      "fromMonths": 6,
+      "allergen": "milk",
+      "ironRich": false,
+      "emoji": "🥛",
+      "intro": "[PLACEHOLDER - needs expert review] Plain whole-milk yogurt can be offered from about 6 months (CDC).",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Serve plain whole-milk yogurt on a spoon, or swirl in fruit puree."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Serve plain yogurt with mashed fruit."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve plain yogurt; cow’s milk as a drink can start now too."
+        }
+      ],
+      "chokingRisk": "low",
+      "choking": "Low risk.",
+      "allergenNote": "Milk is one of the most common food allergens. Introduce it early, around 6 months, once your baby has had a few other first foods. Start with a small amount, offer only one new allergen at a time, and watch for a reaction. Once your baby tolerates it, keep offering it regularly. If your baby has severe eczema or another food allergy, talk to your pediatrician first. Call 911 right away for swelling of the lips or face, trouble breathing, or repeated vomiting.",
+      "tips": [
+        "Choose plain yogurt with no added sweeteners.",
+        "Cow’s milk as a drink waits until 12 months."
+      ],
+      "sources": [
+        "cdc-cowsmilk",
+        "aap-allergens"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "cheese",
+      "name": "Cheese",
+      "category": "dairy",
+      "fromMonths": 6,
+      "allergen": "milk",
+      "ironRich": false,
+      "emoji": "🧀",
+      "intro": "[PLACEHOLDER - needs expert review] Pasteurized cheese can be offered from about 6 months.",
+      "serving": [
+        {
+          "age": "6 to 8 months",
+          "text": "Offer finely shredded cheese, or thin, flat slices."
+        },
+        {
+          "age": "9 to 11 months",
+          "text": "Offer shredded cheese or small, thin pieces."
+        },
+        {
+          "age": "12 months and up",
+          "text": "Serve shredded cheese or small pieces."
+        }
+      ],
+      "chokingRisk": "medium",
+      "choking": "Large chunks of cheese, especially string cheese, are a choking hazard (CDC). Shred or cut it thin.",
+      "allergenNote": "Milk is one of the most common food allergens. Introduce it early, around 6 months, once your baby has had a few other first foods. Start with a small amount, offer only one new allergen at a time, and watch for a reaction. Once your baby tolerates it, keep offering it regularly. If your baby has severe eczema or another food allergy, talk to your pediatrician first. Call 911 right away for swelling of the lips or face, trouble breathing, or repeated vomiting.",
+      "tips": [
+        "Cheese can be salty; choose lower-sodium options like mozzarella or Swiss.",
+        "Use pasteurized cheese only."
+      ],
+      "sources": [
+        "cdc-choking",
+        "cdc-cowsmilk",
+        "aap-allergens"
+      ],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
+    }
+  ]
+}

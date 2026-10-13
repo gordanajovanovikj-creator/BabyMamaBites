@@ -1,0 +1,78 @@
+import { foods, type Food } from '@/content/foods';
+import { getSolidsSource } from '@/content/solids-plan';
+import { PLACEHOLDER_MARKER } from '@/content/schemas';
+
+import type { FoodLogEntry } from './food-log';
+import { filterFoods, foodHadReaction, foodTriedOn } from './foods';
+
+const entry = (food: string, date: string, over: Partial<FoodLogEntry> = {}): FoodLogEntry => ({
+  id: `${food}-${date}`,
+  date,
+  food,
+  allergen: null,
+  isNew: true,
+  reaction: 'none',
+  notes: null,
+  ...over,
+});
+
+describe('filterFoods', () => {
+  it('filters by category and name, A to Z', () => {
+    const fruit = filterFoods(foods, '', 'fruits');
+    expect(fruit.every((f) => f.category === 'fruits')).toBe(true);
+    expect(fruit.map((f) => f.name)).toEqual([...fruit.map((f) => f.name)].sort());
+    expect(filterFoods(foods, 'BROC', null).map((f) => f.id)).toEqual(['broccoli']);
+    expect(filterFoods(foods, 'broc', 'fruits')).toEqual([]);
+  });
+});
+
+describe('foodTriedOn', () => {
+  const peas = { name: 'Peas' } as Pick<Food, 'name'>;
+  it('matches whole words, singular or plural, and returns the latest date', () => {
+    const log = [entry('Pea puree', '2026-01-02'), entry('peas and mint', '2026-01-05')];
+    expect(foodTriedOn(log, peas)).toBe('2026-01-05');
+    expect(foodTriedOn([entry('Peach slices', '2026-01-02')], peas)).toBeNull();
+    expect(foodTriedOn([entry('Mashed strawberry', '2026-01-02')], { name: 'Strawberries' })).toBe(
+      '2026-01-02',
+    );
+  });
+  it('flags a logged reaction', () => {
+    expect(
+      foodHadReaction([entry('Egg', '2026-01-02', { reaction: 'mild' })], { name: 'Egg' }),
+    ).toBe(true);
+    expect(foodHadReaction([entry('Egg', '2026-01-02')], { name: 'Egg' })).toBe(false);
+  });
+});
+
+describe('food guide content', () => {
+  const text = (f: Food) =>
+    [f.intro, f.choking, f.allergenNote ?? '', ...f.tips, ...f.serving.map((s) => s.text)].join(
+      ' ',
+    );
+
+  it('has unique ids and is marked for expert review', () => {
+    expect(new Set(foods.map((f) => f.id)).size).toBe(foods.length);
+    for (const f of foods) {
+      expect({
+        id: f.id,
+        ok: f.reviewStatus === 'placeholder' && f.intro.startsWith(PLACEHOLDER_MARKER),
+      }).toEqual({ id: f.id, ok: true });
+    }
+  });
+  it('cites known sources', () => {
+    const missing = foods.flatMap((f) => f.sources.filter((s) => !getSolidsSource(s)));
+    expect(missing).toEqual([]);
+  });
+  it('explains every common allergen, and only those', () => {
+    for (const f of foods) {
+      expect({ id: f.id, note: f.allergenNote !== null }).toEqual({
+        id: f.id,
+        note: f.allergen !== null,
+      });
+    }
+  });
+  it('never claims foods change milk supply or uses honey', () => {
+    const banned = /milk supply|lactation|galactagogue|boost|\bhoney\b/i;
+    expect(foods.filter((f) => banned.test(text(f))).map((f) => f.id)).toEqual([]);
+  });
+});
