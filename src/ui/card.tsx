@@ -2,7 +2,7 @@ import { Pressable, View, type ViewProps } from 'react-native';
 
 import { cn } from './cn';
 
-export type CardTone = 'surface' | 'muted' | 'primary' | 'accent' | 'sky' | 'deep';
+export type CardTone = 'surface' | 'muted' | 'primary' | 'accent' | 'sky' | 'deep' | 'danger';
 
 const toneClasses: Record<CardTone, string> = {
   surface: 'bg-surface border border-border',
@@ -11,6 +11,7 @@ const toneClasses: Record<CardTone, string> = {
   accent: 'bg-accent',
   sky: 'bg-sky',
   deep: 'bg-deep',
+  danger: 'bg-danger-bg',
 };
 
 /** Background class for a tone, for views that aren't Cards (e.g. icon tiles). */

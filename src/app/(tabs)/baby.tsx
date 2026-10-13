@@ -20,6 +20,7 @@ import { LogEntryRow } from '@/features/solids/log-entry-row';
 import { WeekCard } from '@/features/solids/week-card';
 import { WeekStrip } from '@/features/solids/week-strip';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { shadows } from '@/theme/colors';
 import { AppText, Button, Card, Notice, Screen, SearchButton, SegmentedTabs } from '@/ui';
 
 const RECENT = 5;
@@ -193,6 +194,7 @@ export default function BabyScreen() {
             <Card
               tone="accent"
               className="gap-1"
+              style={{ boxShadow: shadows.card }}
               onPress={() =>
                 router.push({
                   pathname: '/solids/article/[id]',
@@ -210,15 +212,26 @@ export default function BabyScreen() {
             </Card>
 
             <Card
-              tone="muted"
-              className="gap-1"
+              tone="danger"
+              className="flex-row items-center gap-4"
+              style={{ boxShadow: shadows.card }}
               onPress={() => router.push('/solids/choking')}
               accessibilityLabel="Choking and gagging: what to know. Opens the safety guide."
             >
-              <AppText variant="heading">Choking and gagging</AppText>
-              <AppText variant="caption">
-                Foods to avoid or change by age, and how to tell gagging from choking. Learn more ›
-              </AppText>
+              <View className="h-12 w-12 items-center justify-center rounded-full bg-danger-ink">
+                <AppText variant="title" color="on-deep" className="leading-8">
+                  !
+                </AppText>
+              </View>
+              <View className="flex-1 gap-1">
+                <AppText variant="heading" color="danger">
+                  Choking and gagging
+                </AppText>
+                <AppText color="danger">
+                  Foods to avoid or change by age, and how to tell gagging from choking. Learn more
+                  ›
+                </AppText>
+              </View>
             </Card>
           </View>
 
