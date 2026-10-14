@@ -368,7 +368,8 @@
             "After a new food, watch for signs like a rash, vomiting or diarrhea. If you see them, stop the food and call your pediatrician. Call 911 for trouble breathing, swelling of the lips or tongue, repeated vomiting, or unusual sleepiness.",
             "Most egg allergies are caused by proteins in the egg white, but the yolk can cause reactions too."
           ],
-          "bullets": []
+          "bullets": [],
+          "callout": "urgent"
         }
       ],
       "sources": ["aap-allergens", "aap-anaphylaxis", "cdc-solids", "acaai-egg", "cdc-choking"],
@@ -426,7 +427,8 @@
           "bullets": [
             "What it looks like: your baby can’t cry, cough, breathe or make a sound; may be gasping or wheezing; may look panicked; or their skin, lips or face turn pale, blue or dusky.",
             "What to do: act right away and call 911. This is a medical emergency."
-          ]
+          ],
+          "callout": "urgent"
         },
         {
           "heading": "Lower the risk",
@@ -453,7 +455,8 @@
             "Only remove an object you can see. Never sweep your finger blindly in your baby’s mouth.",
             "If your baby stops responding: start infant CPR. If no one has called 911 yet, call after about 2 minutes of CPR.",
             "Even if your baby seems fine afterward, call your pediatrician to get them checked."
-          ]
+          ],
+          "callout": "urgent"
         },
         {
           "heading": "Be ready before you need it",
@@ -836,7 +839,8 @@
           "paragraphs": [
             "Talk to your pediatrician if your child is losing weight or not growing as expected, eats only a handful of foods, gags or vomits often at meals, or if mealtimes are causing you a lot of worry."
           ],
-          "bullets": []
+          "bullets": [],
+          "callout": "support"
         },
         {
           "heading": "A long-term journey",
@@ -920,7 +924,13 @@
           "heading": "Healing takes longer than 6 weeks",
           "paragraphs": [
             "Many moms feel they should be back to normal by the 6-week checkup. In reality, your body keeps healing for months after birth, and that's expected. Go easy on yourself.",
-            "Your postpartum visit is a good time to bring up anything that still hurts, leaks or worries you. You don't have to wait for it: if something feels wrong, call your OB-GYN or midwife.",
+            "Your postpartum visit is a good time to bring up anything that still hurts, leaks or worries you. You don't have to wait for it: if something feels wrong, call your OB-GYN or midwife."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Warning signs: get care right away",
+          "paragraphs": [
             "Get medical care right away, or call 911, if you have any of these warning signs in the year after birth:"
           ],
           "bullets": [
@@ -931,7 +941,8 @@
             "Swelling, redness or pain in one leg or arm",
             "Severe belly pain that doesn't go away",
             "Thoughts of harming yourself or your baby"
-          ]
+          ],
+          "callout": "urgent"
         },
         {
           "heading": "Pelvic floor and core",
@@ -959,7 +970,8 @@
             "Talk to your provider if low mood, worry or tiredness lasts longer than 2 weeks or makes it hard to care for yourself or your baby.",
             "National Maternal Mental Health Hotline: call or text 1-833-TLC-MAMA (1-833-852-6262), free, 24/7.",
             "In a crisis, call or text 988. If you or your baby are in danger, call 911."
-          ]
+          ],
+          "callout": "support"
         },
         {
           "heading": "Caring for a tear or stitches",
@@ -1130,7 +1142,8 @@
           "paragraphs": [
             "Call your pediatrician if your baby seems hard to wake, isn't feeding well, has fewer wet diapers than usual, or you're worried. Trust your gut. In an emergency, call 911."
           ],
-          "bullets": []
+          "bullets": [],
+          "callout": "urgent"
         }
       ],
       "sources": [
@@ -1516,7 +1529,8 @@
             "It's okay to need a break. If nothing works and you feel overwhelmed, put your baby on their back in a safe crib with nothing else in it, step away for 10 to 15 minutes, and calm yourself. Call a friend or listen to music, then check on your baby.",
             "Never shake, throw or jerk a baby, however frustrated you feel. If you're struggling, call or text 1-833-TLC-MAMA (1-833-852-6262) or 988."
           ],
-          "bullets": []
+          "bullets": [],
+          "callout": "urgent"
         },
         {
           "heading": "When to call your pediatrician",
@@ -1528,7 +1542,8 @@
             "Your baby loses a skill they used to have.",
             "You're worried about how your baby moves, plays, sees, hears or communicates. Don't wait: you can also contact your state's early intervention program.",
             "In an emergency, call 911."
-          ]
+          ],
+          "callout": "urgent"
         }
       ],
       "sources": [
@@ -1938,7 +1953,8 @@
           "paragraphs": [
             "Swelling of the lips, face or tongue; wheezing, coughing or trouble breathing or swallowing; repeated vomiting; pale or blue skin; or sudden sleepiness or floppiness."
           ],
-          "bullets": ["Call 911 right away. Use epinephrine if your baby has been prescribed it."]
+          "bullets": ["Call 911 right away. Use epinephrine if your baby has been prescribed it."],
+          "callout": "urgent"
         },
         {
           "heading": "Log it",

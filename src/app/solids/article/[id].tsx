@@ -5,8 +5,10 @@ import { splitReviewMarker } from '@/content/schemas';
 import { getArticle } from '@/content/solids-articles';
 import { solidsSourcesFor } from '@/content/solids-plan';
 import { ageRangeLabel } from '@/domain/articles';
+import { helplinesIn } from '@/domain/helplines';
 import { libraryPhoto } from '@/features/library/library-photos';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { HelplineButtons } from '@/features/shared/helpline-buttons';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { SourceLinks } from '@/features/shared/source-links';
@@ -63,24 +65,55 @@ export default function ArticleScreen() {
             ))}
           </Card>
         ) : null}
-        {article.sections.map((section) => (
-          <View key={section.heading} className="gap-3">
-            <AppText variant="heading" size="2xl">
-              {section.heading}
-            </AppText>
-            {section.paragraphs.map((p) => (
-              <AppText key={p}>{p}</AppText>
-            ))}
-            {section.bullets.map((b) => (
-              <View key={b} className="flex-row gap-3">
-                <AppText color="primary" className="font-bold">
-                  •
+        {article.sections.map((section) => {
+          const urgent = section.callout === 'urgent';
+          const textColor = urgent ? 'danger' : undefined;
+          const body = (
+            <>
+              <AppText variant="heading" size="2xl" color={textColor}>
+                {urgent ? `⚠️ ${section.heading}` : section.heading}
+              </AppText>
+              {section.paragraphs.map((p) => (
+                <AppText key={p} color={textColor}>
+                  {p}
                 </AppText>
-                <AppText className="flex-1">{b}</AppText>
+              ))}
+              {section.bullets.map((b) => (
+                <View key={b} className="flex-row gap-3">
+                  <AppText color={urgent ? 'danger' : 'primary'} className="font-bold">
+                    •
+                  </AppText>
+                  <AppText className="flex-1" color={textColor}>
+                    {b}
+                  </AppText>
+                </View>
+              ))}
+            </>
+          );
+          if (!section.callout) {
+            return (
+              <View key={section.heading} className="gap-3">
+                {body}
               </View>
-            ))}
-          </View>
-        ))}
+            );
+          }
+          const found = helplinesIn([...section.paragraphs, ...section.bullets].join(' '));
+          // Support callouts lead with the crisis and maternal mental health lines; 911 stays last.
+          const lines = urgent
+            ? found
+            : [...found.filter((l) => l !== '911'), ...found.filter((l) => l === '911')];
+          return (
+            <Card
+              key={section.heading}
+              tone={urgent ? 'danger' : 'sky'}
+              className="gap-3"
+              accessibilityRole={urgent ? 'alert' : undefined}
+            >
+              {body}
+              <HelplineButtons lines={lines} />
+            </Card>
+          );
+        })}
 
         <SourceLinks sources={solidsSourcesFor(article.sources)} />
 

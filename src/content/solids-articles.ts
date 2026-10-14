@@ -9,6 +9,12 @@ const sectionSchema = z.object({
   heading: z.string().min(1),
   paragraphs: z.array(z.string().min(1)),
   bullets: z.array(z.string().min(1)),
+  /**
+   * "urgent": a red-flag section (when to call 911 or the pediatrician), shown as a
+   * red callout. "support": a calm callout for helplines. Either gets call buttons
+   * for the numbers it mentions.
+   */
+  callout: z.enum(['urgent', 'support']).optional(),
 });
 
 export const articleSchema = z

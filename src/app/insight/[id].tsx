@@ -9,6 +9,7 @@ import { libraryPhoto } from '@/features/library/library-photos';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { HelplineButtons } from '@/features/shared/helpline-buttons';
 import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
 
 /** One line of an insight: a heading, a bullet, a numbered step or a paragraph. */
@@ -86,6 +87,7 @@ export default function InsightScreen() {
             body="Your doctor, OB-GYN or midwife is there to help. In an emergency, call 911."
           />
         ) : null}
+        {insight.kind === 'when-to-call' ? <HelplineButtons lines={['911']} /> : null}
         <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
         <HealthDisclaimerNote
           draftReviewer={insight.reviewStatus === 'placeholder' ? 'health professional' : undefined}
