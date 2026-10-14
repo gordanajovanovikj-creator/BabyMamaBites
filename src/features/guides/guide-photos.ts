@@ -13,7 +13,7 @@ const photos: Record<string, ImageSource> = {
   'month-6': require('@/assets/images/insights/first-foods.jpg'),
   'month-7': require('@/assets/images/insights/solids-purees-first.jpg'),
   'month-8': require('@/assets/images/recipes/baby-lentil-carrot-mash.jpg'),
-  'month-9': require('@/assets/images/insights/purees-vs-finger-foods.jpg'),
+  'month-9': require('@/assets/images/insights/learning-to-chew.jpg'),
   'month-10': require('@/assets/images/recipes/baby-soft-veg-fingers.jpg'),
   'month-11': require('@/assets/images/insights/high-chair.jpg'),
   'month-12': require('@/assets/images/recipes/baby-banana-oat-pancakes.jpg'),
