@@ -135,6 +135,10 @@ const photos: Record<string, ImageSource> = {
   'baby-carrot-zucchini-fries': require('@/assets/images/recipes/baby-carrot-zucchini-fries.jpg'),
   'baby-broccoli-quinoa-bites': require('@/assets/images/recipes/baby-broccoli-quinoa-bites.jpg'),
   'baby-avocado-egg-soldiers': require('@/assets/images/recipes/baby-avocado-egg-soldiers.jpg'),
+  'baby-two-textures-salmon': require('@/assets/images/recipes/baby-two-textures-salmon.jpg'),
+  'baby-two-textures-chili': require('@/assets/images/recipes/baby-two-textures-chili.jpg'),
+  // Shares the avocado toast photo with the egg soldiers recipe.
+  'baby-two-textures-avocado': require('@/assets/images/recipes/baby-avocado-egg-soldiers.jpg'),
   'baby-squash-chicken-risotto': require('@/assets/images/recipes/baby-squash-chicken-risotto.jpg'),
   'baby-sweet-potato-bean-quesadilla': require('@/assets/images/recipes/baby-sweet-potato-bean-quesadilla.jpg'),
   'baby-berry-baked-oatmeal': require('@/assets/images/recipes/baby-berry-baked-oatmeal.jpg'),

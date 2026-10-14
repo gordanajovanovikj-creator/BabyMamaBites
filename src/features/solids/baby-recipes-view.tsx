@@ -86,8 +86,9 @@ export function BabyRecipesView({ babyName, ageMonths, searchOpen }: BabyRecipes
         <>
           {sections.map((s) => {
             const from = s.category.fromMonths ?? 0;
-            const subtitle =
-              s.category.id === current
+            const subtitle = s.category.theme
+              ? s.category.description
+              : s.category.id === current
                 ? `For ${babyName ?? 'your baby'} now · from ${from} months`
                 : from > ageMonths
                   ? `Coming up · from ${from} months`

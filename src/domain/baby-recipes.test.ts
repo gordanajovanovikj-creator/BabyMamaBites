@@ -13,7 +13,19 @@ describe('babyCollectionsFor', () => {
   it('puts the current age group first, then the rest by age', () => {
     const { ordered, current } = babyCollectionsFor(babyRecipeCategories, 9);
     expect(current).toBe('baby-9m');
-    expect(ordered.map((c) => c.id)).toEqual(['baby-9m', 'baby-6m', 'baby-7m', 'baby-12m']);
+    expect(ordered.map((c) => c.id)).toEqual([
+      'baby-9m',
+      'baby-two-textures',
+      'baby-6m',
+      'baby-7m',
+      'baby-12m',
+    ]);
+  });
+
+  it('never treats a themed collection as the current age group', () => {
+    expect(babyCollectionsFor(babyRecipeCategories, 6).current).toBe('baby-6m');
+    const early = babyCollectionsFor(babyRecipeCategories, 4).ordered.map((c) => c.id);
+    expect(early.at(-1)).toBe('baby-two-textures');
   });
 
   it('has no current group before 6 months', () => {
