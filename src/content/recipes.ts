@@ -31,6 +31,8 @@ export const recipeCategorySchema = z.object({
   description: z.string().min(1),
   /** Baby collections only: the age group starts at this many months. */
   fromMonths: z.number().int().nonnegative().optional(),
+  /** Baby collections only: a themed collection (e.g. family meals) rather than an age group. */
+  theme: z.boolean().optional(),
 });
 export type RecipeCategory = z.infer<typeof recipeCategorySchema>;
 

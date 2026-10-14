@@ -148,16 +148,21 @@ export function recipeTimings(recipe: Recipe): string {
  * Baby age-group collections, the one matching the baby's age first, then the rest in
  * age order. `current` is the id of the group the baby is in now (null before 6 months).
  */
-export function babyCollectionsFor<C extends { id: string; fromMonths?: number }>(
+export function babyCollectionsFor<C extends { id: string; fromMonths?: number; theme?: boolean }>(
   categories: C[],
   ageMonths: number,
 ): { ordered: C[]; current: string | null } {
-  const byAge = [...categories].sort((a, b) => (a.fromMonths ?? 0) - (b.fromMonths ?? 0));
+  // Themed collections (like family meals) aren't age groups: they never count as
+  // "now" and are listed right after the baby's current group.
+  const themes = categories.filter((c) => c.theme);
+  const byAge = categories
+    .filter((c) => !c.theme)
+    .sort((a, b) => (a.fromMonths ?? 0) - (b.fromMonths ?? 0));
   const reached = byAge.filter((c) => (c.fromMonths ?? 0) <= ageMonths);
   const current = reached.at(-1)?.id ?? null;
   const ordered = current
-    ? [byAge.find((c) => c.id === current)!, ...byAge.filter((c) => c.id !== current)]
-    : byAge;
+    ? [byAge.find((c) => c.id === current)!, ...themes, ...byAge.filter((c) => c.id !== current)]
+    : [...byAge, ...themes];
   return { ordered, current };
 }
 
