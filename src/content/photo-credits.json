@@ -79,6 +79,13 @@
       "url": null
     },
     {
+      "id": "toddler-bean-quesadilla",
+      "usedOn": "Bean and cheese quesadilla strips",
+      "source": "magnific",
+      "author": "sarahjgualtieri1",
+      "url": "https://www.magnific.com/free-photo/tasty-cooked-food_9034923.htm"
+    },
+    {
       "id": "food-beef",
       "usedOn": "Beef",
       "source": "magnific",
@@ -1155,13 +1162,6 @@
       "source": "pixabay",
       "author": "blandinejoannic",
       "url": "https://pixabay.com/photos/french-toast-food-flatlay-breakfast-5763429/"
-    },
-    {
-      "id": "toddler-bean-quesadilla",
-      "usedOn": "Bean and cheese quesadilla strips",
-      "source": "pixabay",
-      "author": "Nayuta",
-      "url": "https://pixabay.com/photos/quesadilla-vegan-food-mexican-2297036/"
     },
     {
       "id": "yogurt-parfait",
