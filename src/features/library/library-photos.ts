@@ -37,7 +37,7 @@ const photos: Record<string, ImageSource> = {
   'spoon-skills': require('@/assets/images/insights/first-foods.jpg'),
   'food-prep-textures': require('@/assets/images/insights/homemade-baby-food.jpg'),
   'allergic-reaction-signs': require('@/assets/images/insights/foods-to-avoid.jpg'),
-  'learning-to-chew': require('@/assets/images/insights/purees-vs-finger-foods.jpg'),
+  'learning-to-chew': require('@/assets/images/insights/learning-to-chew.jpg'),
   'brushing-baby-teeth': require('@/assets/images/insights/milestones-without-anxiety.jpg'),
 };
 
