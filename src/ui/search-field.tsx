@@ -15,6 +15,8 @@ export type SearchFieldProps = {
   autoFocus?: boolean;
 };
 
+const inputText = { fontSize: 18 };
+
 /** Rounded search box with a clear button, 48pt tall. */
 export function SearchField({
   value,
@@ -38,9 +40,10 @@ export function SearchField({
         returnKeyType="search"
         autoCorrect={false}
         clearButtonMode="never"
-        className="min-h-11 min-w-0 flex-1 text-lg text-ink"
+        className="min-h-11 min-w-0 flex-1 text-ink"
+        // Font size only: a line height (as `text-lg` sets) pushes typed text off-center on iOS.
         // The pill is the focus indicator; hide the browser's own outline in the web preview.
-        style={Platform.OS === 'web' ? ({ outlineStyle: 'none' } as object) : undefined}
+        style={[inputText, Platform.OS === 'web' ? ({ outlineStyle: 'none' } as object) : null]}
       />
       {value ? (
         <Pressable

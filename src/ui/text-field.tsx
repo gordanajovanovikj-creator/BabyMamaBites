@@ -11,6 +11,8 @@ export type TextFieldProps = Omit<TextInputProps, 'onChange' | 'value'> & {
   hint?: string;
 };
 
+const inputText = { fontSize: 18 };
+
 /** Labelled single-line text input, 56pt tall. */
 export function TextField({ label, hint, value, onChangeText, ...rest }: TextFieldProps) {
   const palette = usePalette();
@@ -23,7 +25,9 @@ export function TextField({ label, hint, value, onChangeText, ...rest }: TextFie
         value={value}
         onChangeText={onChangeText}
         placeholderTextColor={palette.inkMuted}
-        className="min-h-14 rounded-2xl border-2 border-border bg-surface px-5 text-lg text-ink"
+        className="min-h-14 rounded-2xl border-2 border-border bg-surface px-5 text-ink"
+        // Font size only: a line height (as `text-lg` sets) pushes typed text off-center on iOS.
+        style={inputText}
         {...rest}
       />
       {hint ? <AppText variant="caption">{hint}</AppText> : null}
