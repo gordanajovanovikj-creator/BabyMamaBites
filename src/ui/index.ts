@@ -4,6 +4,7 @@ export { Card, toneBackground, type CardTone } from './card';
 export { Chip } from './chip';
 export { cn } from './cn';
 export { DateField } from './date-field';
+export { haptics } from './haptics';
 export { HeartButton } from './heart-button';
 export { IconButton } from './icon-button';
 export { Illustration } from './illustrations/illustration';

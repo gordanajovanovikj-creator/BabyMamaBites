@@ -10,7 +10,17 @@ import { allergens, type Allergen } from '@/domain/profile';
 import { allergenLabels } from '@/domain/profile-labels';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { ReactionAdviceView } from '@/features/solids/reaction-advice-view';
-import { AppText, Button, Chip, DateField, OptionCard, Screen, SwitchRow, TextField } from '@/ui';
+import {
+  AppText,
+  Button,
+  Chip,
+  DateField,
+  haptics,
+  OptionCard,
+  Screen,
+  SwitchRow,
+  TextField,
+} from '@/ui';
 
 const reactionOptions: { id: Reaction; title: string; detail: string }[] = [
   { id: 'none', title: 'No reaction', detail: 'All good so far' },
@@ -57,6 +67,7 @@ export default function LogFoodScreen() {
     setSaving(true);
     try {
       await add(makeEntry({ date, food, allergen, isNew, reaction, notes }));
+      haptics.success();
       router.back();
     } catch {
       setSaving(false);

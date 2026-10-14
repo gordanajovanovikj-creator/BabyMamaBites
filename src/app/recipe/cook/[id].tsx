@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { View } from 'react-native';
 
 import { getRecipe } from '@/content/recipes';
-import { AppText, Button, Screen } from '@/ui';
+import { AppText, Button, haptics, Screen } from '@/ui';
 
 /**
  * Cook mode: one step at a time in large text, with the screen kept awake so it
@@ -42,7 +42,15 @@ export default function CookModeScreen() {
           <Button
             label={last ? 'Done' : 'Next step'}
             className="flex-1"
-            onPress={() => (last ? router.back() : setStep((s) => s + 1))}
+            onPress={() => {
+              if (last) {
+                haptics.success();
+                router.back();
+              } else {
+                haptics.tap();
+                setStep((s) => s + 1);
+              }
+            }}
           />
         </>
       }

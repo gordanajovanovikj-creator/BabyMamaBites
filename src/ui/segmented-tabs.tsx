@@ -2,6 +2,7 @@ import { Pressable, View } from 'react-native';
 
 import { AppText } from './app-text';
 import { cn } from './cn';
+import { haptics } from './haptics';
 
 export type SegmentedTabsProps<T extends string> = {
   tabs: { id: T; label: string }[];
@@ -24,7 +25,10 @@ export function SegmentedTabs<T extends string>({
             key={t.id}
             accessibilityRole="tab"
             accessibilityState={{ selected: active }}
-            onPress={() => onSelect(t.id)}
+            onPress={() => {
+              if (!active) haptics.select();
+              onSelect(t.id);
+            }}
             className={cn(
               'min-h-12 flex-1 items-center justify-center border-b-[3px]',
               active ? 'border-primary' : 'border-transparent',

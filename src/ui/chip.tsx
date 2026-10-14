@@ -4,6 +4,7 @@ import { shadows } from '@/theme/colors';
 
 import { AppText } from './app-text';
 import { cn } from './cn';
+import { haptics } from './haptics';
 
 export type ChipProps = {
   label: string;
@@ -31,7 +32,14 @@ export function Chip({
       accessibilityRole={onPress ? 'button' : 'text'}
       accessibilityState={{ selected }}
       accessibilityLabel={label}
-      onPress={onPress}
+      onPress={
+        onPress
+          ? () => {
+              if (!selected) haptics.select();
+              onPress();
+            }
+          : undefined
+      }
       hitSlop={4}
       className={cn(
         'min-h-12 items-center justify-center rounded-full px-5 py-2 active:opacity-80',

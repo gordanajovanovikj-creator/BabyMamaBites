@@ -17,7 +17,7 @@ import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { recipePhoto } from '@/features/recipes/recipe-photos';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
-import { AppText, Button, cn, HeartButton, Notice, Screen } from '@/ui';
+import { AppText, Button, cn, haptics, HeartButton, Notice, Screen } from '@/ui';
 
 function SectionTitle({ children }: { children: string }) {
   return (
@@ -50,8 +50,10 @@ export default function RecipeScreen() {
   const ahead = ageMonths !== null && isAheadOfAge(recipe, ageMonths);
   const babyName = profile?.babyName ?? 'Your baby';
   const family = familyMealFor(recipe, allRecipes, household);
-  const toggleIngredient = (i: number) =>
+  const toggleIngredient = (i: number) => {
+    haptics.select();
     setChecked((c) => (c.includes(i) ? c.filter((x) => x !== i) : [...c, i]));
+  };
   const tags = [energyLabels[recipe.energy], ...recipe.tags.map((t) => recipeTagLabels[t])];
 
   return (

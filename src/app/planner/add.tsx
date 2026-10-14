@@ -16,7 +16,7 @@ import {
 } from '@/domain/planner';
 import { plannedMeal } from '@/features/planner/planned-meal';
 import { usePlanner } from '@/features/planner/planner-context';
-import { AppText, Button, Chip, Notice, Screen } from '@/ui';
+import { AppText, Button, Chip, haptics, Notice, Screen } from '@/ui';
 
 const DAYS = 7;
 
@@ -58,6 +58,7 @@ export default function AddToPlanScreen() {
     setSaving(true);
     try {
       await setMeal(date, slot, id);
+      haptics.success();
       router.back();
     } catch {
       setSaving(false);
