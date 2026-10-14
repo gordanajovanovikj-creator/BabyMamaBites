@@ -38,7 +38,7 @@ const photos: Record<string, ImageSource> = {
   'food-prep-textures': require('@/assets/images/insights/homemade-baby-food.jpg'),
   'allergic-reaction-signs': require('@/assets/images/insights/allergic-reaction-signs.jpg'),
   'learning-to-chew': require('@/assets/images/insights/learning-to-chew.jpg'),
-  'brushing-baby-teeth': require('@/assets/images/insights/milestones-without-anxiety.jpg'),
+  'brushing-baby-teeth': require('@/assets/images/insights/brushing-baby-teeth.jpg'),
 };
 
 export function libraryPhoto(id: string): ImageSource | undefined {
