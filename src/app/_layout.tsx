@@ -10,6 +10,7 @@ import { CalendarProvider } from '@/features/calendar/calendar-context';
 import { FavoritesProvider } from '@/features/favorites/favorites-context';
 import { headerBackButton } from '@/features/navigation/header-back-button';
 import { PlannerProvider } from '@/features/planner/planner-context';
+import { useTodayWidgetSync } from '@/features/planner/use-today-widget-sync';
 import { ProfileProvider, useProfile } from '@/features/profile/profile-context';
 import { RemindersProvider } from '@/features/reminders/reminders-context';
 import { FoodLogProvider } from '@/features/solids/food-log-context';
@@ -19,6 +20,7 @@ SplashScreen.preventAutoHideAsync().catch(() => {});
 
 function RootStack() {
   const { ready, profile } = useProfile();
+  useTodayWidgetSync();
 
   useEffect(() => {
     if (ready) SplashScreen.hideAsync().catch(() => {});

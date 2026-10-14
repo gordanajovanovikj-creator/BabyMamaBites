@@ -46,7 +46,22 @@
           "color": "#487549"
         }
       ],
-      "@react-native-community/datetimepicker"
+      "@react-native-community/datetimepicker",
+      [
+        "expo-widgets",
+        {
+          "widgets": [
+            {
+              "name": "TodayMeals",
+              "displayName": "Today's meals",
+              "description": "Your baby's breakfast, lunch and dinner from the meal plan.",
+              "ios": {
+                "supportedFamilies": ["systemSmall", "systemMedium"]
+              }
+            }
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
