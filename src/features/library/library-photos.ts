@@ -35,7 +35,7 @@ const photos: Record<string, ImageSource> = {
   // New articles reuse existing photos until their own are added.
   'cluster-feeding': require('@/assets/images/insights/newborn-sleep-feeding.jpg'),
   'spoon-skills': require('@/assets/images/insights/spoon-skills.jpg'),
-  'food-prep-textures': require('@/assets/images/insights/homemade-baby-food.jpg'),
+  'food-prep-textures': require('@/assets/images/insights/food-prep-textures.jpg'),
   'allergic-reaction-signs': require('@/assets/images/insights/allergic-reaction-signs.jpg'),
   'learning-to-chew': require('@/assets/images/insights/learning-to-chew.jpg'),
   'brushing-baby-teeth': require('@/assets/images/insights/brushing-baby-teeth.jpg'),
