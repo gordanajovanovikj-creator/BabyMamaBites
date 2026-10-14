@@ -9,12 +9,12 @@
       "title": "Is my baby ready for solids?",
       "summary": "[PLACEHOLDER - needs expert review] The signs to look for, and why about 6 months is the usual start.",
       "fromMonths": 4,
-      "toMonths": 7,
+      "toMonths": 9,
       "icon": "checklist",
       "emoji": "✅",
       "illustration": "checklist",
       "tone": "accent",
-      "readMinutes": 3,
+      "readMinutes": 4,
       "sections": [
         {
           "heading": "When to start",
@@ -51,9 +51,18 @@
             "If your baby was born early, ask your pediatrician when to start. This app counts your baby's age from their due date (corrected age) where that applies."
           ],
           "bullets": []
+        },
+        {
+          "heading": "Making first meals go smoothly",
+          "paragraphs": [],
+          "bullets": [
+            "Milk first: breast milk or formula is still the main food. Some parents offer a milk feed 30 to 60 minutes before solids; at 6 to 9 months, solids add to milk rather than replace it.",
+            "Pick a calm time: when your baby is rested and alert, like mid-morning, rather than late evening when they’re overtired.",
+            "Limit distractions: turn off screens and make mealtime calm and focused."
+          ]
         }
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-howmuch-food"],
+      "sources": ["cdc-solids", "aap-solids", "cdc-howmuch-food", "aap-bf-solids"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatrician"
     },
@@ -68,7 +77,7 @@
       "emoji": "🪑",
       "illustration": "high-chair",
       "tone": "sky",
-      "readMinutes": 3,
+      "readMinutes": 4,
       "sections": [
         {
           "heading": "Why it matters",
@@ -105,9 +114,21 @@
             "A chair that hooks onto a table isn't a good substitute for a freestanding one. If you use one when eating out or traveling, choose one that locks onto the table, make sure the table is heavy enough not to tip, and check that your child's feet can't push against a table support."
           ],
           "bullets": []
+        },
+        {
+          "heading": "Good posture helps safe eating",
+          "paragraphs": [
+            "When a baby has to work to hold their body steady, they have less control for chewing and swallowing."
+          ],
+          "bullets": [
+            "Head up, chin level with the floor, and back upright.",
+            "The 90-90-90 rule: about a 90-degree bend at the hips, knees and ankles.",
+            "A firm footrest: when feet dangle, the body is less stable, and so are the tongue and jaw.",
+            "Upright, never reclined: don’t feed your baby in a reclined seat, car seat or stroller."
+          ]
         }
       ],
-      "sources": ["aap-hc", "cpsc-hc"],
+      "sources": ["aap-hc", "cpsc-hc", "aap-choking"],
       "reviewStatus": "placeholder",
       "reviewer": "child safety specialist"
     },
@@ -117,12 +138,12 @@
       "title": "Purees or finger foods?",
       "summary": "[PLACEHOLDER - needs expert review] How textures build up, and how spoon-feeding and finger foods fit together.",
       "fromMonths": 5,
-      "toMonths": 10,
+      "toMonths": 12,
       "icon": "hand.raised.fill",
       "emoji": "🥄",
       "illustration": "bowl-and-spoon",
       "tone": "muted",
-      "readMinutes": 4,
+      "readMinutes": 6,
       "sections": [
         {
           "heading": "Start smooth",
@@ -171,9 +192,35 @@
             "Sit your baby upright, and stay with them the whole meal.",
             "Keep meals calm and unhurried."
           ]
+        },
+        {
+          "heading": "What is baby-led weaning?",
+          "paragraphs": [
+            "Baby-led weaning (BLW) skips spoon-fed purees: babies feed themselves soft, whole finger foods from the start. Your baby decides what goes into their mouth, how fast they eat and when they stop."
+          ],
+          "bullets": [
+            "Listening to appetite: putting your baby in charge supports their own hunger and fullness cues.",
+            "Hands-on learning: holding foods of different shapes and textures builds grasping skills and comfort with new textures.",
+            "Family meals: eating the same foods alongside you helps your baby learn by watching."
+          ]
+        },
+        {
+          "heading": "Choking and iron with BLW",
+          "paragraphs": [
+            "Research, including the BLISS study, found that babies offered appropriately prepared finger foods did not choke more often than spoon-fed babies. Prepare foods to be soft and the right size, and stay with your baby while they eat.",
+            "Iron needs planning: purees can easily include iron-fortified cereal, while self-fed meals need iron-rich foods like soft meats, beans or lentils offered on purpose."
+          ],
+          "bullets": []
         }
       ],
-      "sources": ["cdc-textures", "cdc-solids", "aap-solids", "cdc-utensils", "cdc-choking"],
+      "sources": [
+        "cdc-textures",
+        "cdc-solids",
+        "aap-solids",
+        "cdc-utensils",
+        "cdc-choking",
+        "cdc-iron"
+      ],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
@@ -183,12 +230,12 @@
       "title": "What to offer first",
       "summary": "[PLACEHOLDER - needs expert review] There's no set order, but iron-rich foods matter from the start.",
       "fromMonths": 5,
-      "toMonths": 9,
+      "toMonths": 24,
       "icon": "carrot.fill",
       "emoji": "🥕",
       "illustration": "veggies",
       "tone": "accent",
-      "readMinutes": 3,
+      "readMinutes": 4,
       "sections": [
         {
           "heading": "Any order works",
@@ -223,9 +270,20 @@
             "If you use infant cereal, rotate oat, barley and multigrain rather than only rice cereal, which can raise arsenic exposure."
           ],
           "bullets": []
+        },
+        {
+          "heading": "Two types of iron",
+          "paragraphs": [
+            "Full-term babies are born with iron stores that run low by about 6 months, while their fast-growing brain needs plenty of iron."
+          ],
+          "bullets": [
+            "Iron from animal foods (heme iron) is easier to absorb: meat such as beef and turkey, and fish.",
+            "Iron from plant foods and eggs (non-heme iron) is absorbed less easily: beans, lentils, tofu, spinach, egg yolk and iron-fortified infant cereal.",
+            "Your baby absorbs plant iron better with a vitamin C food, like lentils with tomatoes, or spinach with strawberries or a squeeze of lemon."
+          ]
         }
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-iron"],
+      "sources": ["cdc-solids", "aap-solids", "cdc-iron", "cdc-encourage"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
@@ -234,18 +292,19 @@
       "category": "starting-solids",
       "title": "Introducing common allergens",
       "summary": "[PLACEHOLDER - needs expert review] Why offering egg, peanut and other allergens early can help, and how to do it.",
-      "fromMonths": 5,
+      "fromMonths": 4,
       "toMonths": 12,
       "icon": "shield.lefthalf.filled",
       "emoji": "🥜",
       "illustration": "egg-and-peanut",
       "tone": "sky",
-      "readMinutes": 4,
+      "readMinutes": 6,
       "sections": [
         {
           "heading": "Early can help",
           "paragraphs": [
-            "Experts used to suggest waiting. Newer research found no benefit to delaying allergens, and offering peanut early, then regularly, helped prevent peanut allergy in babies at high risk."
+            "In the US, nine foods cause about 90% of food allergy reactions: milk (dairy), egg, peanut, tree nuts, wheat, soy, sesame, fish and shellfish.",
+            "Families used to be told to wait until age 2 or 3. Newer research found no benefit to delaying allergens. The LEAP study found that offering peanut foods early, starting between 4 and 11 months, and then regularly, greatly lowered the chance of peanut allergy in babies at high risk."
           ],
           "bullets": []
         },
@@ -256,8 +315,18 @@
             "Start with a few low-allergy foods first, like infant cereal or pureed fruit.",
             "Then offer the common allergens one at a time: egg, peanut, dairy (like yogurt), wheat, soy, sesame, fish, shellfish and tree nuts.",
             "Start with a small taste. If there's no reaction, gradually offer more.",
+            "Offer a new allergen early in the day, like at breakfast or lunch, so you can watch your baby for the rest of the day, and wait 3 to 5 days before the next one.",
             "Once a food is tolerated, keep it in the diet regularly.",
             "Always use a safe form: peanut and nut butters thinned, never chunks or whole nuts; egg fully cooked."
+          ]
+        },
+        {
+          "heading": "Practical ways to prepare them",
+          "paragraphs": [],
+          "bullets": [
+            "Peanut: mix 1 teaspoon of smooth, unsalted peanut butter with 2 teaspoons of warm water, breast milk, formula or puree. Never give peanut butter straight off a spoon, and never whole peanuts.",
+            "Egg: cook it well, as a fully set scramble or a hard-boiled egg, and mash it well.",
+            "Tree nuts: stir finely ground nut flour (like almond flour) or a thinned smooth nut butter into warm oatmeal or fruit puree."
           ]
         },
         {
@@ -277,7 +346,7 @@
           "bullets": []
         }
       ],
-      "sources": ["aap-allergens", "aap-anaphylaxis", "cdc-solids", "acaai-egg"],
+      "sources": ["aap-allergens", "aap-anaphylaxis", "cdc-solids", "acaai-egg", "cdc-choking"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric allergist"
     },
@@ -311,6 +380,13 @@
             "What it looks like: watery eyes, a red or pink face, coughing, gagging or retching sounds, and leaning forward a little.",
             "What to do: stay calm and keep your baby sitting upright. Don’t put your fingers in their mouth; that can push food further back. Reassure them calmly, for example, \"You’re okay, you’re working it out,\" and let them clear it themselves."
           ]
+        },
+        {
+          "heading": "Why babies gag",
+          "paragraphs": [
+            "In babies, the gag reflex starts near the middle to front of the tongue and moves farther back as they grow. Gagging helps keep food from reaching the airway before it has been chewed enough. Gagging is loud and red; choking is silent."
+          ],
+          "bullets": []
         },
         {
           "heading": "Choking is an emergency",
@@ -372,7 +448,7 @@
       "emoji": "👋",
       "illustration": "bib",
       "tone": "accent",
-      "readMinutes": 2,
+      "readMinutes": 3,
       "sections": [
         {
           "heading": "Signs of hunger",
@@ -381,7 +457,8 @@
             "Reach for or point to food",
             "Open their mouth when offered a spoon or food",
             "Get excited when they see food",
-            "Use hand motions or sounds to say they want more"
+            "Use hand motions or sounds to say they want more",
+            "Lean toward the spoon or wave their arms with excitement"
           ]
         },
         {
@@ -391,7 +468,8 @@
             "Push food away",
             "Close their mouth when food is offered",
             "Turn their head away",
-            "Use hand motions or sounds to say they're done"
+            "Use hand motions or sounds to say they're done",
+            "Arch their back or get distracted"
           ]
         },
         {
@@ -400,9 +478,16 @@
             "Your baby doesn't need to finish the jar or the plate. Food works best when it isn't used as a reward or punishment. If you're worried about how much your baby eats, talk to your pediatrician."
           ],
           "bullets": []
+        },
+        {
+          "heading": "Is my baby eating enough?",
+          "paragraphs": [
+            "Portions at 6 to 12 months vary a lot from meal to meal and day to day, so trust your baby’s appetite. The best signs of enough nutrition are steady growth along their curve at checkups and regular wet diapers. If you’re worried, talk to your pediatrician."
+          ],
+          "bullets": []
         }
       ],
-      "sources": ["cdc-hungry"],
+      "sources": ["cdc-hungry", "cdc-howmuch-food"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
@@ -412,12 +497,12 @@
       "title": "Cups, water and juice",
       "summary": "[PLACEHOLDER - needs expert review] When to offer a cup, how much water, and why juice can wait.",
       "fromMonths": 6,
-      "toMonths": 14,
+      "toMonths": 18,
       "icon": "cup.and.saucer.fill",
       "emoji": "🥤",
       "illustration": "cups",
       "tone": "sky",
-      "readMinutes": 2,
+      "readMinutes": 4,
       "sections": [
         {
           "heading": "A first cup",
@@ -443,6 +528,23 @@
         {
           "heading": "Cow's milk",
           "paragraphs": ["Plain cow's milk as a drink waits until 12 months."],
+          "bullets": []
+        },
+        {
+          "heading": "Open cups and straw cups",
+          "paragraphs": [
+            "Drinking from a cup takes different skills from a bottle or breast: rounding the lips, lifting the tongue and holding the jaw steady. Many speech-language pathologists and pediatric dentists suggest open cups and straw cups over hard-spout sippy cups, which keep the tongue low in the mouth."
+          ],
+          "bullets": [
+            "Open cups: small, shot-glass-sized silicone or rimmed cups teach your baby to lift the tip of the tongue, steady the jaw and close the lips to keep from spilling.",
+            "Straw cups: straw drinking works the cheek muscles and keeps the tongue back in the mouth. Weighted straws let your baby drink at any angle, and straw cups are handy on the go."
+          ]
+        },
+        {
+          "heading": "Embrace the mess",
+          "paragraphs": [
+            "Spills are part of learning. Let your baby explore the cup without treating spills as mistakes. At this age the goal is learning the skill; breast milk or formula still meets your baby’s fluid needs."
+          ],
           "bullets": []
         }
       ],
@@ -493,12 +595,12 @@
       "title": "Foods to skip in the first year",
       "summary": "[PLACEHOLDER - needs expert review] Honey, added sugar and a few others that wait until later.",
       "fromMonths": 5,
-      "toMonths": 12,
+      "toMonths": 24,
       "icon": "xmark.octagon.fill",
       "emoji": "🚫",
       "illustration": "no-honey",
       "tone": "accent",
-      "readMinutes": 3,
+      "readMinutes": 5,
       "sections": [
         {
           "heading": "Not before 12 months",
@@ -525,9 +627,29 @@
             "Some foods are only safe once changed: whole grapes, nuts, chunks of nut butter, raw hard vegetables and more. See the choking guide in this tab."
           ],
           "bullets": []
+        },
+        {
+          "heading": "Why salt is limited",
+          "paragraphs": [
+            "Babies’ kidneys are still maturing and can’t handle much sodium. Don’t add salt to your baby’s food. Food without salt doesn’t have to be bland:"
+          ],
+          "bullets": [
+            "Warm spices: cinnamon, nutmeg and cardamom in oatmeal or yogurt.",
+            "Savory herbs: garlic powder, cumin, coriander, oregano and basil on roasted vegetables and meats.",
+            "Citrus: a squeeze of lemon or lime adds brightness without sodium."
+          ]
+        },
+        {
+          "heading": "Why skip added sugar before age 2",
+          "paragraphs": [],
+          "bullets": [
+            "Taste habits: early exposure to very sweet foods can build a preference for sweet tastes over vegetables and beans.",
+            "Tooth decay: sugar feeds the mouth bacteria that cause cavities.",
+            "Crowding out nutrients: sugary foods fill little tummies without the nutrients needed for growth."
+          ]
         }
       ],
-      "sources": ["cdc-avoid", "cdc-cowsmilk", "aap-solids"],
+      "sources": ["cdc-avoid", "cdc-cowsmilk", "aap-solids", "cdc-textures"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
@@ -536,14 +658,21 @@
       "category": "happy-eaters",
       "title": "When your baby refuses food",
       "summary": "[PLACEHOLDER - needs expert review] Refusing new foods is normal. Here's how to keep offering.",
-      "fromMonths": 8,
-      "toMonths": 24,
+      "fromMonths": 6,
+      "toMonths": 36,
       "icon": "face.smiling",
       "emoji": "🙂",
       "illustration": "smiley-plate",
       "tone": "sky",
-      "readMinutes": 2,
+      "readMinutes": 3,
       "sections": [
+        {
+          "heading": "Refusal is normal",
+          "paragraphs": [
+            "When your baby turns their head, pushes the plate away or keeps their mouth shut, it’s easy to feel worried or frustrated. Food refusal is usually a healthy sign of independence and of your baby listening to their appetite. Refusing a food often means it’s unfamiliar, not that they dislike it."
+          ],
+          "bullets": []
+        },
         {
           "heading": "It takes time",
           "paragraphs": [
@@ -559,7 +688,9 @@
             "Mix the new food with one your baby already likes.",
             "Eat the food yourself first; babies learn by watching.",
             "Give a simple choice between two foods.",
-            "Freeze small portions so repeat tries don't waste food."
+            "Freeze small portions so repeat tries don't waste food.",
+            "Always put one familiar food your baby likes next to a new or previously refused food.",
+            "Keep your tone calm and even: skip big cheers for a bite and disappointment when they don’t, so food doesn’t become about approval."
           ]
         },
         {
@@ -568,9 +699,19 @@
             "Toddlers may suddenly refuse foods they used to love, or not want foods to touch. These phases often pass by about age 5. Talk to your pediatrician if you're worried about growth."
           ],
           "bullets": []
+        },
+        {
+          "heading": "Who decides what",
+          "paragraphs": [
+            "A widely used approach (from the Ellyn Satter Institute) splits mealtime jobs:"
+          ],
+          "bullets": [
+            "You decide what food is served, when and where.",
+            "Your baby decides whether to eat and how much."
+          ]
         }
       ],
-      "sources": ["cdc-picky", "cdc-hungry"],
+      "sources": ["cdc-picky", "cdc-hungry", "cdc-textures"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
@@ -654,20 +795,24 @@
       "category": "happy-eaters",
       "title": "Moving to cow's milk",
       "summary": "[PLACEHOLDER - needs expert review] What changes at 12 months, and how much is enough.",
-      "fromMonths": 11,
-      "toMonths": 18,
+      "fromMonths": 10,
+      "toMonths": 24,
       "icon": "drop.fill",
       "emoji": "🥛",
       "illustration": "milk",
       "tone": "muted",
-      "readMinutes": 2,
+      "readMinutes": 3,
       "sections": [
         {
           "heading": "Why wait until 12 months",
           "paragraphs": [
-            "Before 12 months, cow's milk as a drink may cause intestinal bleeding, has too much protein and minerals for a baby's kidneys, and lacks the right nutrients."
+            "Before 12 months, plain cow’s milk shouldn’t replace breast milk or formula."
           ],
-          "bullets": []
+          "bullets": [
+            "Hard on young kidneys: cow’s milk has more protein, sodium and potassium than babies’ kidneys can easily handle.",
+            "Iron loss: the proteins in cow’s milk can cause tiny amounts of bleeding in a young baby’s gut, which can add to iron-deficiency anemia.",
+            "Missing nutrients: cow’s milk doesn’t have enough iron, vitamin E or essential fatty acids for the first year."
+          ]
         },
         {
           "heading": "What to offer",
@@ -684,7 +829,7 @@
           "bullets": []
         }
       ],
-      "sources": ["cdc-cowsmilk"],
+      "sources": ["cdc-cowsmilk", "aap-1yo"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
@@ -1500,95 +1645,6 @@
       "reviewer": "pediatric dietitian"
     },
     {
-      "id": "cups-for-babies",
-      "category": "happy-eaters",
-      "title": "The science of drinking: choosing the best cups for babies",
-      "summary": "[PLACEHOLDER - needs expert review] Why open cups and straw cups help your baby build drinking skills, and how to get started around 6 months.",
-      "fromMonths": 6,
-      "toMonths": 18,
-      "icon": "cup.and.saucer.fill",
-      "emoji": "🥤",
-      "illustration": "cups",
-      "tone": "sky",
-      "readMinutes": 4,
-      "sections": [
-        {
-          "heading": "Oral-motor development and cup mechanics",
-          "paragraphs": [
-            "Moving from a bottle or breast to a cup is more than swapping containers; it’s a big step for the muscles of the mouth. Infant swallowing relies on a suckle reflex: the tongue moves front to back while the jaw pumps. Drinking from a cup takes a different set of skills: rounding the lips, lifting the tongue and holding the jaw steady.",
-            "Hard-spout “sippy cups” were long marketed as the natural next step after bottles. Many speech-language pathologists and pediatric dentists now suggest skipping hard spouts. They keep the tongue low in the mouth, which can reinforce an immature suck-swallow pattern."
-          ],
-          "bullets": []
-        },
-        {
-          "heading": "Two cups to start with",
-          "paragraphs": [
-            "Around 6 months, when solid foods begin, you can introduce open cups and straw cups."
-          ],
-          "bullets": [
-            "Open cups: small, shot-glass-sized silicone or rimmed cups. Drinking from an open cup teaches your baby to lift the tip of the tongue, steady the jaw and close the lips to keep from spilling. It also builds hand-eye control.",
-            "Straw cups: drinking through a straw works the cheek muscles and keeps the tongue back in the mouth rather than pushing forward. Weighted straws let your baby drink at any angle, and straw cups are handy on the go."
-          ]
-        },
-        {
-          "heading": "Tips for success",
-          "paragraphs": [],
-          "bullets": [
-            "Keep amounts small: offer just a few sips to 1 to 2 ounces of water with meals. From 6 to 12 months the goal is learning the skill, not hydration; breast milk or formula still meets your baby’s fluid needs.",
-            "Embrace the mess: spills are part of learning. Let your baby explore the cup without treating spills as mistakes."
-          ]
-        }
-      ],
-      "sources": ["cdc-utensils", "cdc-encourage"],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric speech-language pathologist"
-    },
-    {
-      "id": "baby-led-weaning",
-      "category": "starting-solids",
-      "title": "What is baby-led weaning?",
-      "summary": "[PLACEHOLDER - needs expert review] How baby-led weaning works, why families choose it, and what to watch for with choking and iron.",
-      "fromMonths": 5,
-      "toMonths": 12,
-      "icon": "hand.raised.fill",
-      "emoji": "🥦",
-      "illustration": "bowl-and-spoon",
-      "tone": "accent",
-      "readMinutes": 4,
-      "sections": [
-        {
-          "heading": "Understanding the approach",
-          "paragraphs": [
-            "Baby-led weaning (BLW) is a way of starting solids where babies feed themselves soft, whole finger foods instead of being spoon-fed purees. It shifts mealtime from a parent-led model to a responsive one: your baby decides what goes into their mouth, how fast they eat and when they stop."
-          ],
-          "bullets": [
-            "Traditional purees: you spoon-feed the puree, your baby swallows, and you set the pace.",
-            "Baby-led weaning: your baby reaches and grasps, explores and chews, and decides how much to eat."
-          ]
-        },
-        {
-          "heading": "Benefits",
-          "paragraphs": [],
-          "bullets": [
-            "Listening to appetite: putting your baby in charge supports their own hunger and fullness cues. Responsive feeding is linked with a lower risk of overfeeding.",
-            "Fine motor and sensory skills: holding foods of different shapes, temperatures and textures builds grasping skills and comfort with new textures.",
-            "Family meals: eating the same foods alongside you helps your baby learn by watching and become more open to new flavors and textures."
-          ]
-        },
-        {
-          "heading": "Choking and iron",
-          "paragraphs": [
-            "Choking is a common worry. Research, including the BLISS study, found that babies offered appropriately prepared finger foods did not choke more often than spoon-fed babies. Always prepare foods to be soft and the right size, and stay with your baby while they eat.",
-            "Iron needs planning: purees can easily include iron-fortified cereal, while self-fed meals need iron-rich foods like soft meats, beans or lentils offered on purpose."
-          ],
-          "bullets": []
-        }
-      ],
-      "sources": ["cdc-solids", "cdc-textures", "cdc-choking", "cdc-iron"],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric dietitian"
-    },
-    {
       "id": "cluster-feeding",
       "category": "newborn-days",
       "title": "Decoding cluster feeding",
@@ -1625,45 +1681,6 @@
       "sources": ["cdc-bf-howmuch", "cdc-bf-expect", "aap-fussy-baby"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatrician"
-    },
-    {
-      "id": "starting-solids-tips",
-      "category": "starting-solids",
-      "title": "Essential tips for starting solids",
-      "summary": "[PLACEHOLDER - needs expert review] Readiness signs matter more than the calendar. How to tell your baby is ready, and how to make first meals go smoothly.",
-      "fromMonths": 4,
-      "toMonths": 9,
-      "icon": "checklist",
-      "emoji": "✅",
-      "illustration": "checklist",
-      "tone": "accent",
-      "readMinutes": 4,
-      "sections": [
-        {
-          "heading": "Readiness matters more than age",
-          "paragraphs": [
-            "Guidelines recommend starting solid foods around 6 months, but readiness depends on your baby’s development, not just the calendar."
-          ],
-          "bullets": [
-            "Steady sitting: sitting upright in a high chair with little slumping helps protect the airway.",
-            "Tongue-thrust fades: the reflex that pushes food out of the mouth has to fade so your baby can move food back to swallow.",
-            "Hand-to-mouth: bringing objects to their mouth shows the coordination feeding needs.",
-            "Curiosity: watching you eat and reaching for food are signs your baby is interested."
-          ]
-        },
-        {
-          "heading": "Step by step",
-          "paragraphs": [],
-          "bullets": [
-            "Milk first: breast milk or formula is still the main food. Some parents offer a milk feed 30 to 60 minutes before solids; at 6 to 9 months, solids add to milk rather than replace it.",
-            "Pick a calm time: choose a time when your baby is rested and alert, like mid-morning, rather than late evening when they’re overtired.",
-            "Limit distractions: turn off screens and make mealtime a calm, focused time."
-          ]
-        }
-      ],
-      "sources": ["cdc-solids", "aap-solids", "aap-bf-solids"],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric dietitian"
     },
     {
       "id": "spoon-skills",
@@ -1707,93 +1724,6 @@
       "reviewer": "pediatric occupational therapist"
     },
     {
-      "id": "high-chair-setup",
-      "category": "safety",
-      "title": "High chair setup for safe eating",
-      "summary": "[PLACEHOLDER - needs expert review] How good posture at the high chair helps your baby chew and swallow safely: the 90-90-90 rule and a firm footrest.",
-      "fromMonths": 5,
-      "toMonths": 24,
-      "icon": "chair.fill",
-      "emoji": "🪑",
-      "illustration": "high-chair",
-      "tone": "muted",
-      "readMinutes": 3,
-      "sections": [
-        {
-          "heading": "Why posture matters",
-          "paragraphs": [
-            "Good posture helps keep your baby safe while eating. When a baby has to work to hold their body steady, they have less control for chewing and swallowing."
-          ],
-          "bullets": []
-        },
-        {
-          "heading": "What a safe setup looks like",
-          "paragraphs": [],
-          "bullets": [
-            "Head up, chin level with the floor, and back upright.",
-            "The 90-90-90 rule: about a 90-degree bend at the hips, knees and ankles.",
-            "A firm footrest: an adjustable footrest matters. When feet dangle, the body is less stable, and so are the tongue and jaw.",
-            "Upright, never reclined: don’t feed your baby in a reclined seat, car seat or stroller. Sitting upright helps if your baby gags.",
-            "Always use the safety straps, and stay with your baby while they eat."
-          ]
-        }
-      ],
-      "sources": ["aap-hc", "cpsc-hc", "aap-choking"],
-      "reviewStatus": "placeholder",
-      "reviewer": "child safety specialist"
-    },
-    {
-      "id": "gagging-choking-hazards",
-      "category": "safety",
-      "title": "Gagging vs. choking and high-risk foods",
-      "summary": "[PLACEHOLDER - needs expert review] How to tell gagging (loud and red) from choking (silent), and how to prepare common high-risk foods safely.",
-      "fromMonths": 5,
-      "toMonths": 24,
-      "icon": "exclamationmark.triangle.fill",
-      "emoji": "⚠️",
-      "illustration": "first-aid",
-      "tone": "deep",
-      "readMinutes": 4,
-      "sections": [
-        {
-          "heading": "The difference",
-          "paragraphs": [
-            "Gagging is a protective reflex. Choking is a blocked airway and an emergency."
-          ],
-          "bullets": [
-            "Gagging is loud and red: coughing, sputtering or retching, a red face, and food pushed forward on the tongue. Stay calm, stay close and watch.",
-            "Choking is silent: no sound, unable to cry, cough or breathe, and skin turning pale or blue. Call 911. For a baby under 1, give back blows and chest thrusts; don’t use abdominal thrusts (the Heimlich maneuver) on infants."
-          ]
-        },
-        {
-          "heading": "Why babies gag",
-          "paragraphs": [
-            "In babies, the gag reflex starts near the middle to front of the tongue and moves farther back as they grow. Gagging helps keep food from reaching the airway before it has been chewed enough."
-          ],
-          "bullets": []
-        },
-        {
-          "heading": "High-risk foods and how to prepare them",
-          "paragraphs": [],
-          "bullets": [
-            "Whole round foods: cut grapes, cherry tomatoes and similar foods into quarters lengthwise. Hot dogs are a choking hazard; if you serve them, cut them lengthwise into thin strips.",
-            "Hard, raw produce: steam apples and carrots until soft, or grate them finely.",
-            "Sticky foods: spoonfuls of nut butter can block the airway. Spread it thinly on toast, or thin it with water, breast milk or formula."
-          ]
-        },
-        {
-          "heading": "Be prepared",
-          "paragraphs": [
-            "Consider taking an infant CPR and first-aid class so you know what to do in an emergency."
-          ],
-          "bullets": []
-        }
-      ],
-      "sources": ["cdc-choking", "aap-choking", "medline-choking-infant"],
-      "reviewStatus": "placeholder",
-      "reviewer": "child safety specialist"
-    },
-    {
       "id": "food-prep-textures",
       "category": "cooking-for-baby",
       "title": "Safe serving sizes and textures by age",
@@ -1827,128 +1757,6 @@
       "sources": ["cdc-textures", "cdc-choking"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
-    },
-    {
-      "id": "food-refusal-psychology",
-      "category": "happy-eaters",
-      "title": "The psychology of food refusal",
-      "summary": "[PLACEHOLDER - needs expert review] Why babies turn away from food, the division of responsibility at meals, and calm ways to keep offering new foods.",
-      "fromMonths": 6,
-      "toMonths": 36,
-      "icon": "face.smiling",
-      "emoji": "🙈",
-      "illustration": "toddler-face",
-      "tone": "muted",
-      "readMinutes": 4,
-      "sections": [
-        {
-          "heading": "Refusal is normal",
-          "paragraphs": [
-            "When your baby turns their head, pushes the plate away or keeps their mouth shut, it’s easy to feel worried or frustrated. Food refusal is usually a healthy sign of independence and of your baby listening to their appetite."
-          ],
-          "bullets": []
-        },
-        {
-          "heading": "Division of responsibility",
-          "paragraphs": [
-            "A widely used approach (from the Ellyn Satter Institute) splits mealtime jobs:"
-          ],
-          "bullets": [
-            "You decide what food is served, when and where.",
-            "Your baby decides whether to eat and how much."
-          ]
-        },
-        {
-          "heading": "What helps",
-          "paragraphs": [],
-          "bullets": [
-            "Keep offering: children often need 10 to 15 tries of a food before they accept it. Refusing a food usually means it’s unfamiliar, not that they dislike it.",
-            "Include a safe food: always put at least one familiar food your baby likes next to a new or previously refused food.",
-            "Stay neutral: keep your tone calm and even. Skip big cheers when they take a bite and disappointment when they don’t, so food doesn’t become about approval."
-          ]
-        }
-      ],
-      "sources": ["cdc-picky", "cdc-hungry", "cdc-textures"],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric dietitian"
-    },
-    {
-      "id": "big-9-allergens",
-      "category": "starting-solids",
-      "title": "The big 9: common food allergens",
-      "summary": "[PLACEHOLDER - needs expert review] The nine major food allergens in the US, and why experts now recommend introducing them early rather than waiting.",
-      "fromMonths": 4,
-      "toMonths": 12,
-      "icon": "allergens",
-      "emoji": "🥜",
-      "illustration": "egg-and-peanut",
-      "tone": "accent",
-      "readMinutes": 3,
-      "sections": [
-        {
-          "heading": "The nine major allergens",
-          "paragraphs": [
-            "In the US, nine foods cause about 90% of food allergy reactions. Knowing them helps you introduce them on purpose and safely:"
-          ],
-          "bullets": [
-            "Milk (dairy), egg, peanut, tree nuts, wheat, soy, sesame, fish and shellfish."
-          ]
-        },
-        {
-          "heading": "How the advice has changed",
-          "paragraphs": [
-            "Families used to be told to wait to offer allergenic foods until age 2 or 3. Research changed that. The LEAP study found that giving peanut foods early, starting between 4 and 11 months, greatly lowered the chance of peanut allergy in babies at high risk.",
-            "Today, the AAP says there’s no reason to delay common allergens, and offering them around the time solids start may help prevent food allergies. If your baby has severe eczema or an egg allergy, talk to your pediatrician before introducing peanut."
-          ],
-          "bullets": []
-        }
-      ],
-      "sources": ["aap-allergens", "cdc-solids"],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric allergist"
-    },
-    {
-      "id": "introducing-allergens",
-      "category": "starting-solids",
-      "title": "Early and often: how to introduce allergens safely",
-      "summary": "[PLACEHOLDER - needs expert review] Three simple rules for introducing common allergens, with practical ways to prepare peanut, egg and tree nuts.",
-      "fromMonths": 5,
-      "toMonths": 12,
-      "icon": "allergens",
-      "emoji": "🥚",
-      "illustration": "sprout",
-      "tone": "sky",
-      "readMinutes": 3,
-      "sections": [
-        {
-          "heading": "Three rules",
-          "paragraphs": [],
-          "bullets": [
-            "One at a time: introduce one new allergen at a time and wait 3 to 5 days before the next.",
-            "Offer it early in the day: serve new allergens at breakfast or lunch so you can watch your baby for the rest of the day.",
-            "Keep it going: once your baby tolerates an allergen, keep offering it regularly, such as once or twice a week."
-          ]
-        },
-        {
-          "heading": "Practical ways to prepare them",
-          "paragraphs": [],
-          "bullets": [
-            "Peanut: mix 1 teaspoon of smooth, unsalted peanut butter with 2 teaspoons of warm water, breast milk, formula or puree. Never give peanut butter straight off a spoon, and never whole peanuts.",
-            "Egg: cook it well, as a fully set scramble or a hard-boiled egg, and mash it well.",
-            "Tree nuts: stir finely ground nut flour (like almond flour) or a thinned smooth nut butter into warm oatmeal or fruit puree."
-          ]
-        },
-        {
-          "heading": "If you’re unsure",
-          "paragraphs": [
-            "If your baby has severe eczema or a known food allergy, talk to your pediatrician before introducing allergens."
-          ],
-          "bullets": []
-        }
-      ],
-      "sources": ["aap-allergens", "cdc-choking"],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric allergist"
     },
     {
       "id": "allergic-reaction-signs",
@@ -1995,188 +1803,6 @@
       "sources": ["aap-allergens", "aap-anaphylaxis"],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric allergist"
-    },
-    {
-      "id": "iron-rich-foods",
-      "category": "starting-solids",
-      "title": "Iron-rich foods for growing babies",
-      "summary": "[PLACEHOLDER - needs expert review] Why iron matters from 6 months, the difference between animal and plant iron, and how vitamin C helps your baby absorb it.",
-      "fromMonths": 6,
-      "toMonths": 24,
-      "icon": "drop.fill",
-      "emoji": "🥩",
-      "illustration": "casserole",
-      "tone": "accent",
-      "readMinutes": 3,
-      "sections": [
-        {
-          "heading": "Why iron matters around 6 months",
-          "paragraphs": [
-            "Full-term babies are born with iron stores built up before birth. By about 6 months these stores run low, while your baby’s fast-growing brain needs plenty of iron."
-          ],
-          "bullets": []
-        },
-        {
-          "heading": "Two types of iron",
-          "paragraphs": [],
-          "bullets": [
-            "Iron from animal foods (heme iron) is easier to absorb: meat such as beef and turkey, and fish.",
-            "Iron from plant foods and eggs (non-heme iron) is absorbed less easily: beans, lentils, tofu, spinach, egg yolk and iron-fortified infant cereal."
-          ]
-        },
-        {
-          "heading": "A helpful pairing",
-          "paragraphs": [
-            "Your baby absorbs plant iron better when it’s served with a food high in vitamin C, like lentils with tomatoes, or spinach with strawberries or a squeeze of lemon."
-          ],
-          "bullets": []
-        }
-      ],
-      "sources": ["cdc-iron", "cdc-encourage"],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric dietitian"
-    },
-    {
-      "id": "cows-milk-transition",
-      "category": "happy-eaters",
-      "title": "The great milk transition: when and how to introduce cow’s milk",
-      "summary": "[PLACEHOLDER - needs expert review] Why whole cow’s milk waits until 12 months, and how much to offer once your toddler starts drinking it.",
-      "fromMonths": 10,
-      "toMonths": 24,
-      "icon": "drop.fill",
-      "emoji": "🥛",
-      "illustration": "milk",
-      "tone": "sky",
-      "readMinutes": 3,
-      "sections": [
-        {
-          "heading": "Why cow’s milk waits until 12 months",
-          "paragraphs": [
-            "Before 12 months, plain cow’s milk shouldn’t replace breast milk or formula."
-          ],
-          "bullets": [
-            "Hard on young kidneys: cow’s milk has more protein, sodium and potassium than babies’ kidneys can easily handle.",
-            "Iron loss: the proteins in cow’s milk can cause tiny amounts of bleeding in a young baby’s gut, which can add to iron-deficiency anemia.",
-            "Missing nutrients: cow’s milk doesn’t have enough iron, vitamin E or essential fatty acids for the first year."
-          ]
-        },
-        {
-          "heading": "After 12 months",
-          "paragraphs": [],
-          "bullets": [
-            "Offer plain whole milk in a cup, about 16 to 24 ounces a day. More than that can fill your toddler up and crowd out iron-rich foods.",
-            "Whole milk’s fat supports your toddler’s growing brain."
-          ]
-        }
-      ],
-      "sources": ["cdc-cowsmilk", "aap-1yo"],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric dietitian"
-    },
-    {
-      "id": "responsive-feeding",
-      "category": "happy-eaters",
-      "title": "Responsive feeding: is my baby eating enough?",
-      "summary": "[PLACEHOLDER - needs expert review] How to read your baby’s hunger and fullness cues, and the signs that tell you they’re getting enough.",
-      "fromMonths": 6,
-      "toMonths": 24,
-      "icon": "heart.fill",
-      "emoji": "👶",
-      "illustration": "hearts",
-      "tone": "muted",
-      "readMinutes": 3,
-      "sections": [
-        {
-          "heading": "Reading the cues",
-          "paragraphs": [
-            "Responsive feeding means learning to read and respect your baby’s signals."
-          ],
-          "bullets": [
-            "Hungry: leaning toward the spoon, opening the mouth eagerly, reaching for food or utensils, excited arm movements.",
-            "Full: turning the head away, closing the lips, pushing the bowl or spoon away, arching the back or getting distracted."
-          ]
-        },
-        {
-          "heading": "Signs your baby is getting enough",
-          "paragraphs": [
-            "Portions at 6 to 12 months vary a lot from meal to meal and day to day. Trust your baby’s appetite. The best signs of enough nutrition are steady growth along their curve at checkups and regular wet diapers. If you’re worried, talk to your pediatrician."
-          ],
-          "bullets": []
-        }
-      ],
-      "sources": ["cdc-hungry", "cdc-howmuch-food"],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric dietitian"
-    },
-    {
-      "id": "salt-and-babies",
-      "category": "safety",
-      "title": "Why salt is limited for babies",
-      "summary": "[PLACEHOLDER - needs expert review] Why babies’ kidneys can’t handle much salt, and how to add flavor with herbs, spices and citrus instead.",
-      "fromMonths": 6,
-      "toMonths": 24,
-      "icon": "leaf.fill",
-      "emoji": "🧂",
-      "illustration": "no-honey",
-      "tone": "muted",
-      "readMinutes": 3,
-      "sections": [
-        {
-          "heading": "Young kidneys",
-          "paragraphs": [
-            "Babies’ kidneys are still maturing and can’t handle much sodium. Too much salt makes them work harder. Don’t add salt to your baby’s food, and limit salty foods like processed meats, chips and many packaged snacks."
-          ],
-          "bullets": []
-        },
-        {
-          "heading": "Flavor without salt",
-          "paragraphs": [
-            "Food without salt doesn’t have to be bland. Herbs and spices help your baby discover new flavors:"
-          ],
-          "bullets": [
-            "Warm spices: cinnamon, nutmeg and cardamom in oatmeal or yogurt.",
-            "Savory herbs: garlic powder, cumin, coriander, oregano and basil on roasted vegetables and meats.",
-            "Citrus: a squeeze of lemon or lime adds brightness without sodium."
-          ]
-        }
-      ],
-      "sources": ["cdc-avoid", "cdc-textures"],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric dietitian"
-    },
-    {
-      "id": "added-sugar-and-honey",
-      "category": "safety",
-      "title": "Protecting the infant palate: added sugar and honey",
-      "summary": "[PLACEHOLDER - needs expert review] Why added sugar is best avoided before age 2, and why honey is never safe before 12 months.",
-      "fromMonths": 6,
-      "toMonths": 24,
-      "icon": "exclamationmark.octagon.fill",
-      "emoji": "🍯",
-      "illustration": "no-honey",
-      "tone": "deep",
-      "readMinutes": 3,
-      "sections": [
-        {
-          "heading": "Why skip added sugar before age 2",
-          "paragraphs": [],
-          "bullets": [
-            "Taste habits: early exposure to very sweet foods can build a preference for sweet tastes over vegetables and beans.",
-            "Tooth decay: sugar feeds the mouth bacteria that cause cavities.",
-            "Crowding out nutrients: sugary foods fill little tummies without the nutrients needed for growth."
-          ]
-        },
-        {
-          "heading": "Never give honey before 12 months",
-          "paragraphs": [
-            "Honey, raw or cooked, can carry spores that cause infant botulism, a serious illness. Don’t give honey, or foods made with it, to babies under 12 months."
-          ],
-          "bullets": []
-        }
-      ],
-      "sources": ["cdc-avoid"],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric dietitian"
     },
     {
       "id": "learning-to-chew",
