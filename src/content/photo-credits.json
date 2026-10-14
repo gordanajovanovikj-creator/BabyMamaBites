@@ -324,6 +324,13 @@
       "url": "https://www.magnific.com/premium-photo/bowl-with-baby-food-white-background_423593301.htm"
     },
     {
+      "id": "baby-oat-cereal",
+      "usedOn": "Iron-fortified oat cereal",
+      "source": "magnific",
+      "author": null,
+      "url": "https://www.magnific.com/free-photo/bowl-with-yougurt-table_8642901.htm"
+    },
+    {
       "id": "food-kale",
       "usedOn": "Kale",
       "source": "magnific",
@@ -958,13 +965,6 @@
       "usedOn": "Hungry or full?",
       "source": "dreamstime",
       "author": "Monkey Business Images",
-      "url": null
-    },
-    {
-      "id": "baby-oat-cereal",
-      "usedOn": "Iron-fortified oat cereal",
-      "source": "dreamstime",
-      "author": "Chernetskaya",
       "url": null
     },
     {
