@@ -16,7 +16,7 @@ import {
 } from '@/domain/planner';
 import { plannedMeal } from '@/features/planner/planned-meal';
 import { usePlanner } from '@/features/planner/planner-context';
-import { AppText, Button, Chip, haptics, Notice, Screen } from '@/ui';
+import { AppText, Button, Chip, haptics, Notice, RoundIconButton, Screen } from '@/ui';
 
 const DAYS = 7;
 
@@ -83,11 +83,19 @@ export default function AddToPlanScreen() {
         />
       }
     >
-      <View className="gap-1">
-        <AppText variant="caption" size="sm" className="font-bold uppercase tracking-wider">
-          Add to meal plan
-        </AppText>
-        <AppText variant="title">{item.name}</AppText>
+      <View className="flex-row items-start gap-3 pt-4">
+        <View className="flex-1 gap-1">
+          <AppText variant="caption" size="sm" className="font-bold uppercase tracking-wider">
+            Add to meal plan
+          </AppText>
+          <AppText variant="title">{item.name}</AppText>
+        </View>
+        <RoundIconButton
+          symbol="xmark"
+          fallback="✕"
+          accessibilityLabel="Close"
+          onPress={() => router.back()}
+        />
       </View>
 
       <View className="gap-2">

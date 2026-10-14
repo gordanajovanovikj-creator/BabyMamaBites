@@ -67,7 +67,14 @@ function RootStack() {
         />
         <Stack.Screen
           name="planner/add"
-          options={{ presentation: 'modal', headerShown: true, title: 'Add to meal plan' }}
+          options={{
+            // A bottom sheet over the food or recipe, so you never lose your place.
+            presentation: 'formSheet',
+            sheetAllowedDetents: [0.6, 1],
+            sheetGrabberVisible: true,
+            sheetCornerRadius: 28,
+            headerShown: false,
+          }}
         />
         <Stack.Screen
           name="planner/freezer-add"
