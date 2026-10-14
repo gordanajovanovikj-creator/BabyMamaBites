@@ -38,7 +38,11 @@ export function SegmentedTabs<T extends string>({
               variant="label"
               size="lg"
               color={active ? 'ink' : 'muted'}
-              className="font-bold"
+              className="px-1 font-bold"
+              // With very large text, shrink the label to fit its tab instead of colliding.
+              numberOfLines={1}
+              adjustsFontSizeToFit
+              minimumFontScale={0.6}
             >
               {t.label}
             </AppText>

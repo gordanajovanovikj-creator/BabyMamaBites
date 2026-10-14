@@ -1,5 +1,11 @@
 import { useState, type ReactNode } from 'react';
-import { ScrollView, View, type NativeSyntheticEvent, type NativeScrollEvent } from 'react-native';
+import {
+  ScrollView,
+  useWindowDimensions,
+  View,
+  type NativeSyntheticEvent,
+  type NativeScrollEvent,
+} from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { cn } from './cn';
@@ -42,6 +48,8 @@ export function Screen({
   className,
 }: ScreenProps) {
   const insets = useSafeAreaInsets();
+  // With large Dynamic Type, side-by-side footer buttons get cramped, so stack them.
+  const stackFooter = useWindowDimensions().fontScale >= 1.3;
   // A hairline under the pinned header once content slides beneath it.
   const [scrolled, setScrolled] = useState(false);
   const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
@@ -74,7 +82,10 @@ export function Screen({
       {scrollView}
       {footer ? (
         <View
-          className="flex-row gap-3 border-t border-border bg-canvas px-5 pt-3"
+          className={cn(
+            'gap-3 border-t border-border bg-canvas px-5 pt-3',
+            stackFooter ? 'flex-col-reverse' : 'flex-row',
+          )}
           style={{ paddingBottom: Math.max(insets.bottom, 12) }}
         >
           {footer}
