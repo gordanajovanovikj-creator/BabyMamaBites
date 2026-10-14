@@ -60,11 +60,21 @@ export default function RecipeScreen() {
       edgeToEdgeTop
       className="gap-0"
       footer={
-        <Button
-          label="Add to meal plan"
-          className="flex-1"
-          onPress={() => router.push({ pathname: '/planner/add', params: { recipe: recipe.id } })}
-        />
+        <>
+          <Button
+            label="Add to plan"
+            variant="secondary"
+            className="flex-1"
+            onPress={() => router.push({ pathname: '/planner/add', params: { recipe: recipe.id } })}
+          />
+          <Button
+            label="Start cooking"
+            className="flex-1"
+            onPress={() =>
+              router.push({ pathname: '/recipe/cook/[id]', params: { id: recipe.id } })
+            }
+          />
+        </>
       }
       overlay={
         <HeroTopBar

@@ -48,6 +48,10 @@ function RootStack() {
         <Stack.Screen name="insight/[id]" />
         <Stack.Screen name="guide/[id]" />
         <Stack.Screen name="recipe/[id]" />
+        <Stack.Screen
+          name="recipe/cook/[id]"
+          options={{ presentation: 'fullScreenModal', headerShown: true, title: 'Cook mode' }}
+        />
         <Stack.Screen name="food/[id]" />
         <Stack.Screen name="category/[id]" />
         <Stack.Screen name="solids/week/[n]" options={{ headerShown: true, title: '' }} />
