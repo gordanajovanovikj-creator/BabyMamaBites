@@ -1454,6 +1454,50 @@
       ],
       "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "solids-two-textures",
+      "category": "cooking-for-baby",
+      "title": "One meal, two textures: how to feed yourself and your baby from the same pot",
+      "summary": "[PLACEHOLDER - needs expert review] Cook one base meal, set aside your baby’s portion before seasoning, and change the texture so you both eat the same food.",
+      "fromMonths": 6,
+      "toMonths": 24,
+      "icon": "fork.knife",
+      "emoji": "🍽️",
+      "illustration": "two-textures",
+      "tone": "surface",
+      "readMinutes": 3,
+      "sections": [
+        {
+          "heading": "One pot, two eaters",
+          "paragraphs": [
+            "Feeding a baby who is moving on to solid foods is an exciting milestone, but making separate meals for adults and babies can quickly lead to kitchen burnout.",
+            "The secret to simpler mealtimes, without giving up flavor for adults or safety for little ones, is “one meal, two textures.” Take a single base meal, remove your baby’s portion before you add high-sodium or spicy ingredients, and change its texture. That way you can feed yourself and your baby with the exact same ingredients."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Why “one meal, two textures” works",
+          "paragraphs": [],
+          "bullets": [
+            "Saves time and energy: you only cook once, with less prep and fewer dishes.",
+            "Encourages healthy eating: babies learn by watching. When they see you eating the same colorful, nutrient-dense foods, they are more likely to accept new flavors.",
+            "Builds eating skills: changing textures gradually lets your baby develop chewing skills safely as they grow."
+          ]
+        },
+        {
+          "heading": "Golden rules of family cooking with a baby",
+          "paragraphs": [],
+          "bullets": [
+            "Hold the salt and sugar: babies’ kidneys can’t handle much sodium, and added sugars should be avoided in infancy. Cook the base meal without added salt or sugar; adults can season their own plates at the table.",
+            "Watch common allergens: introduce top allergens (like peanut butter, eggs, dairy and sesame) one at a time first, before mixing them into family meals.",
+            "Mind choking hazards: whole nuts, whole grapes, raw hard vegetables and large chunks of meat are choking risks. Make sure your baby’s portion is soft, mashable, or cut into age-appropriate strips."
+          ]
+        }
+      ],
+      "sources": ["cdc-avoid", "aap-allergens", "cdc-choking"],
+      "reviewStatus": "placeholder",
+      "reviewer": "pediatric dietitian"
     }
   ]
 }

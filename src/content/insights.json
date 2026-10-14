@@ -58,25 +58,6 @@
       "reviewer": "editorial"
     },
     {
-      "id": "solids-two-textures",
-      "category": "cooking-for-baby",
-      "stages": ["solids"],
-      "kind": "recipe",
-      "tone": "surface",
-      "icon": "fork.knife",
-      "emoji": "🍽️",
-      "illustration": "two-textures",
-      "title": "One meal, two textures",
-      "summary": "Cook once for the family and baby.",
-      "body": [
-        "[PLACEHOLDER - needs expert review] When you cook a family meal, set aside a plain portion for baby before seasoning, then mash or purée it to the texture they're used to.",
-        "Matching family meals for each week of the baby menu are coming soon."
-      ],
-      "allergens": [],
-      "reviewStatus": "placeholder",
-      "reviewer": "pediatric dietitian"
-    },
-    {
       "id": "solids-choking",
       "category": "safety",
       "stages": ["solids", "toddler"],
