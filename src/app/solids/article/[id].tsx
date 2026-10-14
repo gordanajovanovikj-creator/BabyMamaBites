@@ -10,7 +10,7 @@ import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { SourceLinks } from '@/features/shared/source-links';
-import { AppText, Button, Illustration, Screen } from '@/ui';
+import { AppText, Button, Card, Illustration, Screen } from '@/ui';
 
 export default function ArticleScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -48,6 +48,21 @@ export default function ArticleScreen() {
       />
 
       <View className="gap-6 px-5 pt-6">
+        {article.keyPoints ? (
+          <Card tone="muted" className="gap-3">
+            <AppText variant="label" size="sm" color="primary" className="font-bold uppercase">
+              In short
+            </AppText>
+            {article.keyPoints.map((point) => (
+              <View key={point} className="flex-row gap-3">
+                <AppText color="primary" className="font-bold">
+                  ✓
+                </AppText>
+                <AppText className="flex-1 font-semibold">{point}</AppText>
+              </View>
+            ))}
+          </Card>
+        ) : null}
         {article.sections.map((section) => (
           <View key={section.heading} className="gap-3">
             <AppText variant="heading" size="2xl">

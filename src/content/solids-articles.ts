@@ -18,6 +18,8 @@ export const articleSchema = z
     category: z.string().min(1),
     title: z.string().min(1),
     summary: z.string().min(1),
+    /** "In short": 2 or 3 one-line takeaways shown at the top, drawn from the article itself. */
+    keyPoints: z.array(z.string().min(1)).min(2).max(3).optional(),
     /** Most relevant from this age in months (corrected age where it applies)… */
     fromMonths: z.number().int().nonnegative(),
     /** …up to and including this age. */
