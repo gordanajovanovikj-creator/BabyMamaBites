@@ -18,7 +18,8 @@ export function RecipeSection({
   subtitle?: string;
 }) {
   return (
-    <View className="gap-3">
+    // mt-4 on top of the screen's gap-6 gives each category room to breathe.
+    <View className="mt-4 gap-3">
       <View className="flex-row items-center justify-between px-5">
         <View className="flex-1">
           <AppText variant="heading" size="2xl">

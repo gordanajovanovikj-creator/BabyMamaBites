@@ -102,7 +102,7 @@ export function BabyRecipesView({ babyName, ageMonths, searchOpen }: BabyRecipes
               />
             );
           })}
-          <View className="gap-3">
+          <View className="mt-4 gap-3">
             <View className="px-5">
               <AppText variant="heading" size="2xl">
                 Make again
