@@ -8,7 +8,7 @@ import { allergenLabels } from '@/domain/profile-labels';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { AllergenBadge } from '@/features/recipes/allergen-badge';
 import { shadows } from '@/theme/colors';
-import { AppText, HeartButton } from '@/ui';
+import { AppText, cn, HeartButton } from '@/ui';
 
 import { foodPhoto } from './food-photos';
 
@@ -35,7 +35,10 @@ export function FoodCard({ food, width, tried }: FoodCardProps) {
         className="gap-1 rounded-3xl border border-border bg-surface p-2 active:opacity-80"
       >
         <View
-          className="h-36 items-center justify-center overflow-hidden rounded-2xl bg-surface-muted"
+          className={cn(
+            'h-36 items-center justify-center overflow-hidden rounded-2xl',
+            photo ? 'bg-surface' : 'bg-surface-muted',
+          )}
           importantForAccessibility="no-hide-descendants"
           accessibilityElementsHidden
         >
