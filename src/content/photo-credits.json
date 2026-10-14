@@ -37,6 +37,13 @@
       "url": "https://www.magnific.com/premium-photo/muffins-with-cucumber-cucumber-plate_378896076.htm"
     },
     {
+      "id": "toddler-apple-oat-pancakes",
+      "usedOn": "Apple cinnamon oat pancakes",
+      "source": "magnific",
+      "author": "yuliak91",
+      "url": "https://www.magnific.com/premium-photo/apple-fritters-plate_7306416.htm"
+    },
+    {
       "id": "food-avocado",
       "usedOn": "Avocado",
       "source": "magnific",
@@ -1113,13 +1120,6 @@
       "source": "pixabay",
       "author": "sweetlouise",
       "url": "https://pixabay.com/photos/dried-fruit-nuts-coconut-mango-3164835/"
-    },
-    {
-      "id": "toddler-apple-oat-pancakes",
-      "usedOn": "Apple cinnamon oat pancakes",
-      "source": "pixabay",
-      "author": "RitaE",
-      "url": "https://pixabay.com/photos/pancakes-schaumomelette-omelette-1984716/"
     },
     {
       "id": "apple-pb",
