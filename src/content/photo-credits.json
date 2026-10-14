@@ -457,6 +457,13 @@
       "url": "https://www.magnific.com/premium-photo/banana-muffins-with-buckwheat-flour-poppy-seeds_48401045.htm"
     },
     {
+      "id": "baby-peanut-oatmeal",
+      "usedOn": "Peanut oat cereal",
+      "source": "magnific",
+      "author": "dellbone",
+      "url": "https://www.magnific.com/premium-photo/mushroom-cream-soup-wooden-surface_5814788.htm"
+    },
+    {
       "id": "food-pear",
       "usedOn": "Pear",
       "source": "magnific",
@@ -1491,13 +1498,6 @@
       "source": "pixabay",
       "author": "2SIF",
       "url": "https://pixabay.com/photos/fig-milk-shake-milk-shake-smoothie-7267991/"
-    },
-    {
-      "id": "baby-peanut-oatmeal",
-      "usedOn": "Peanut oat cereal",
-      "source": "pixabay",
-      "author": "FlitsArt",
-      "url": "https://pixabay.com/photos/chocolate-oatmeal-food-sweet-3477519/"
     },
     {
       "id": "pesto-chicken-penne",
