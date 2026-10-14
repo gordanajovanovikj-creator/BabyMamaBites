@@ -92,6 +92,7 @@ export function librarySections(
   ageMonths: number,
 ): LibrarySection[] {
   return categories
+    .filter((c) => c.hideFromMonths === undefined || ageMonths < c.hideFromMonths)
     .map((category) => ({
       category,
       items: articlesForAge(

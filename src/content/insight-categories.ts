@@ -12,6 +12,8 @@ export const insightCategorySchema = z.object({
   tone: z.enum(['surface', 'muted', 'accent', 'sky', 'deep']),
   /** Whether the category is about mom or about the baby. */
   audience: z.enum(['mom', 'baby']),
+  /** Hide the category once the baby is this many months old (e.g. newborn topics at 6). */
+  hideFromMonths: z.number().int().positive().optional(),
   description: z.string().min(1),
 });
 export type InsightCategory = z.infer<typeof insightCategorySchema>;

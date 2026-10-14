@@ -60,6 +60,14 @@ describe('librarySections and pickedForAge', () => {
     expect(solids.items[0].id).toBe('ready');
   });
 
+  it('hides Newborn days once the baby is 6 months old', () => {
+    const ids = (months: number) =>
+      librarySections(insightCategories, items, months).map((s) => s.category.id);
+    expect(ids(5)).toContain('newborn-days');
+    expect(ids(6)).not.toContain('newborn-days');
+    expect(ids(12)).not.toContain('newborn-days');
+  });
+
   it('picks only items relevant now, articles first', () => {
     const picked = pickedForAge(items, 8);
     expect(picked.length).toBeGreaterThan(0);

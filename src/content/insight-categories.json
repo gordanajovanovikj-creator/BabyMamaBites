@@ -8,6 +8,7 @@
       "emoji": "🌙",
       "tone": "sky",
       "audience": "baby",
+      "hideFromMonths": 6,
       "description": "Feeding, sleep, growth and safe sleep in the first months."
     },
     {
