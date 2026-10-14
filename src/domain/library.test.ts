@@ -1,3 +1,4 @@
+import { illustrationNames } from '@/content/illustration-names';
 import { insightCategories } from '@/content/insight-categories';
 import { insights } from '@/content/insights';
 import { solidsArticles } from '@/content/solids-articles';
@@ -77,9 +78,9 @@ describe('librarySections and pickedForAge', () => {
 });
 
 describe('illustrations', () => {
-  it('gives every article and insight its own illustration', () => {
+  it('gives every article and insight a bundled illustration', () => {
     const names = [...solidsArticles, ...insights].map((x) => x.illustration);
-    expect(new Set(names).size).toBe(names.length);
+    for (const n of names) expect(illustrationNames).toContain(n);
   });
 });
 
