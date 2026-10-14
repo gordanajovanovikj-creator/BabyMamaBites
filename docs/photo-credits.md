@@ -181,7 +181,6 @@ add it to both; a test checks they match. Free Magnific images require the visib
 | baby-homemade-oatmeal | Magnific (magnific.com), via API | atlascompany | https://www.magnific.com/premium-photo/composition-with-baby-food-white-wooden-background_8836660.htm | Magnific Premium license | 2026-10-14 |
 | baby-pear-banana-blend | Magnific (magnific.com), via API | syda_productions | https://www.magnific.com/premium-photo/baby-food-healthy-eating-nutrition-concept-glass-jar-with-apple-pear-banana-fruit-puree-wooden-board_86153174.htm | Magnific Premium license | 2026-10-14 |
 | baby-carrot-squash-puree | Magnific (magnific.com), via API | chandlervid85 | https://www.magnific.com/free-photo/bowl-with-baby-food-vegetable-puree-wooden-table_414313313.htm | Magnific free license (credit required) | 2026-10-14 |
-| baby-zucchini-sweet-potato-puree       | Pixabay                                            | RitaE                                 | https://pixabay.com/photos/potato-soup-potato-soup-wild-garlic-2152254/                                                                                     | Pixabay Content License                        | 2026-10-12 |
 
 ## Welcome (onboarding) photos
 

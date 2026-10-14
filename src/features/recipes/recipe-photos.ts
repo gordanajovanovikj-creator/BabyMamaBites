@@ -188,7 +188,8 @@ const photos: Record<string, ImageSource> = {
   'baby-homemade-oatmeal': require('@/assets/images/recipes/baby-homemade-oatmeal.jpg'),
   'baby-pear-banana-blend': require('@/assets/images/recipes/baby-pear-banana-blend.jpg'),
   'baby-carrot-squash-puree': require('@/assets/images/recipes/baby-carrot-squash-puree.jpg'),
-  'baby-zucchini-sweet-potato-puree': require('@/assets/images/recipes/baby-zucchini-sweet-potato-puree.jpg'),
+  // Shares the carrot and butternut squash puree photo.
+  'baby-zucchini-sweet-potato-puree': require('@/assets/images/recipes/baby-carrot-squash-puree.jpg'),
 };
 
 export function recipePhoto(recipeId: string): ImageSource | undefined {
