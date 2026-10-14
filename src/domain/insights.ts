@@ -33,3 +33,26 @@ export function pickDailyInsights(
 
   return [...rotated.slice(0, 2), ...safety, ...rotated.slice(2)].slice(0, count);
 }
+
+export type InsightBlock =
+  | { kind: 'heading'; text: string }
+  | { kind: 'bullet'; text: string }
+  | { kind: 'step'; number: number; text: string }
+  | { kind: 'paragraph'; text: string };
+
+/**
+ * Turns an insight's body lines into blocks for layout: "• " lines are bullets,
+ * "1. " lines are numbered steps, and a short line with no closing punctuation
+ * (like "Ingredients") is a heading. Everything else is a paragraph.
+ */
+export function insightBlocks(body: string[]): InsightBlock[] {
+  return body.map((line): InsightBlock => {
+    const text = line.trim();
+    const bullet = /^•\s*(.+)$/.exec(text);
+    if (bullet) return { kind: 'bullet', text: bullet[1] };
+    const step = /^(\d+)\.\s+(.+)$/.exec(text);
+    if (step) return { kind: 'step', number: Number(step[1]), text: step[2] };
+    if (text.length <= 60 && !/[.!?:,;”"')]$/.test(text)) return { kind: 'heading', text };
+    return { kind: 'paragraph', text };
+  });
+}

@@ -4,7 +4,7 @@ import { join } from 'path';
 import type { Insight } from '@/content/insights';
 import { insights as bundled } from '@/content/insights';
 
-import { pickDailyInsights } from './insights';
+import { insightBlocks, pickDailyInsights } from './insights';
 
 function make(id: string, extra: Partial<Insight> = {}): Insight {
   return {
@@ -99,5 +99,34 @@ describe('bundled insights', () => {
     ]) {
       expect(text).not.toContain(banned);
     }
+  });
+});
+
+describe('insightBlocks', () => {
+  it('finds headings, bullets, numbered steps and paragraphs', () => {
+    expect(
+      insightBlocks([
+        'Makes 1 serving. Enjoy it cold.',
+        'Ingredients',
+        '• 1/2 cup rolled oats',
+        'How to make it',
+        '1. Layer the jar: add the oats.',
+        '12. Eat it.',
+        'Honey is fine for you, but never for babies under 12 months.',
+      ]),
+    ).toEqual([
+      { kind: 'paragraph', text: 'Makes 1 serving. Enjoy it cold.' },
+      { kind: 'heading', text: 'Ingredients' },
+      { kind: 'bullet', text: '1/2 cup rolled oats' },
+      { kind: 'heading', text: 'How to make it' },
+      { kind: 'step', number: 1, text: 'Layer the jar: add the oats.' },
+      { kind: 'step', number: 12, text: 'Eat it.' },
+      { kind: 'paragraph', text: 'Honey is fine for you, but never for babies under 12 months.' },
+    ]);
+  });
+
+  it('never treats a sentence as a heading', () => {
+    expect(insightBlocks(['Rest counts, too.'])[0].kind).toBe('paragraph');
+    expect(insightBlocks(['A'.repeat(61)])[0].kind).toBe('paragraph');
   });
 });
