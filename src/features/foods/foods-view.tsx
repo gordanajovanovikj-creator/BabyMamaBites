@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { ScrollView, useWindowDimensions, View } from 'react-native';
 
 import { foodCategories, foodCategoryLabels, foods, type FoodCategory } from '@/content/foods';
-import { filterFoods, foodTriedOn } from '@/domain/foods';
+import { filterFoods, foodProgress, foodTriedOn } from '@/domain/foods';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { AppText, Chip, SearchField } from '@/ui';
 
 import { FoodCard } from './food-card';
+import { FoodProgressCard } from './food-progress-card';
 
 const GAP = 12;
 const SIDE = 20;
@@ -21,7 +22,13 @@ const categoryEmoji: Record<FoodCategory, string> = {
 };
 
 /** First foods A to Z, with how to serve each one safely by age. */
-export function FoodsView({ searchOpen }: { searchOpen: boolean }) {
+export function FoodsView({
+  searchOpen,
+  babyName,
+}: {
+  searchOpen: boolean;
+  babyName: string | null;
+}) {
   const { entries } = useFoodLog();
   const { width } = useWindowDimensions();
   const cell = Math.floor((Math.min(width, 640) - SIDE * 2 - GAP) / 2);
@@ -34,7 +41,7 @@ export function FoodsView({ searchOpen }: { searchOpen: boolean }) {
     if (!searchOpen) setQuery('');
   }
   const shown = filterFoods(foods, searchOpen ? query : '', category);
-  const triedCount = foods.filter((f) => foodTriedOn(entries, f) !== null).length;
+  const progress = foodProgress(entries, foods);
 
   return (
     <>
@@ -71,13 +78,14 @@ export function FoodsView({ searchOpen }: { searchOpen: boolean }) {
         ))}
       </ScrollView>
       <View className="gap-4 px-5">
+        {!searchOpen && !category ? (
+          <FoodProgressCard progress={progress} name={babyName ?? 'Your baby'} />
+        ) : null}
         <View className="gap-1">
           <AppText variant="heading" size="2xl">
             {category ? foodCategoryLabels[category] : 'First foods'}
           </AppText>
-          <AppText variant="caption">
-            {`How to serve each food by age · ${triedCount} of ${foods.length} tried`}
-          </AppText>
+          <AppText variant="caption">How to serve each food by age</AppText>
         </View>
         {shown.length ? (
           <View className="flex-row flex-wrap" style={{ gap: GAP }}>

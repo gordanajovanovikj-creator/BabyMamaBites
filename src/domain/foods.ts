@@ -67,3 +67,40 @@ export function foodHadReaction(entries: FoodLogEntry[], food: FoodWords): boole
 export function foodsForHousehold(foods: Food[], avoid: readonly Allergen[]): Food[] {
   return foods.filter((f) => !f.allergen || !avoid.includes(f.allergen));
 }
+
+/** Food counts worth a small celebration on the Foods tab. */
+export const FOOD_MILESTONES = [1, 5, 10, 20, 30] as const;
+
+export type FoodProgress = {
+  tried: number;
+  total: number;
+  /** The last milestone reached, or `total` once every food has been tried. */
+  milestone: number | null;
+  /** How many more foods until the next milestone (null when all are tried). */
+  toNext: number | null;
+  byCategory: { category: FoodCategory; tried: number; total: number }[];
+};
+
+/** How many of the guide's foods the baby has tried, overall and per category. */
+export function foodProgress(entries: FoodLogEntry[], all: Food[]): FoodProgress {
+  const triedIds = new Set(all.filter((f) => foodTriedOn(entries, f) !== null).map((f) => f.id));
+  const tried = triedIds.size;
+  const total = all.length;
+  const reached = FOOD_MILESTONES.filter((m) => m <= tried && m < total);
+  const next = FOOD_MILESTONES.find((m) => m > tried && m < total) ?? total;
+  const categories = [...new Set(all.map((f) => f.category))];
+  return {
+    tried,
+    total,
+    milestone: tried === total && total > 0 ? total : (reached.at(-1) ?? null),
+    toNext: tried >= total ? null : next - tried,
+    byCategory: categories.map((category) => {
+      const inCategory = all.filter((f) => f.category === category);
+      return {
+        category,
+        tried: inCategory.filter((f) => triedIds.has(f.id)).length,
+        total: inCategory.length,
+      };
+    }),
+  };
+}

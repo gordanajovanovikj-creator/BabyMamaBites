@@ -8,6 +8,7 @@ import { babyRecipes } from '@/content/recipes';
 import {
   filterFoods,
   foodHadReaction,
+  foodProgress,
   foodsForHousehold,
   foodTriedOn,
   recipesWithFood,
@@ -108,5 +109,34 @@ describe('food guide content', () => {
   it('never claims foods change milk supply or uses honey', () => {
     const banned = /milk supply|lactation|galactagogue|boost|\bhoney\b/i;
     expect(foods.filter((f) => banned.test(text(f))).map((f) => f.id)).toEqual([]);
+  });
+});
+
+describe('foodProgress', () => {
+  const byName = (n: string) => foods.find((f) => f.name === n)!;
+  const names = foods.map((f) => f.name);
+
+  it('counts tried foods overall and per category', () => {
+    const p = foodProgress([entry(names[0], '2026-10-01'), entry(names[0], '2026-10-02')], foods);
+    expect(p.tried).toBe(1);
+    expect(p.total).toBe(foods.length);
+    const cat = p.byCategory.find((c) => c.category === byName(names[0]).category)!;
+    expect(cat.tried).toBe(1);
+    expect(p.byCategory.reduce((n, c) => n + c.total, 0)).toBe(foods.length);
+  });
+
+  it('tracks the last milestone and the distance to the next', () => {
+    expect(foodProgress([], foods)).toMatchObject({ tried: 0, milestone: null, toNext: 1 });
+    const six = names.slice(0, 6).map((n) => entry(n, '2026-10-01'));
+    expect(foodProgress(six, foods)).toMatchObject({ tried: 6, milestone: 5, toNext: 4 });
+  });
+
+  it('celebrates trying every food', () => {
+    const all = names.map((n) => entry(n, '2026-10-01'));
+    expect(foodProgress(all, foods)).toMatchObject({
+      tried: foods.length,
+      milestone: foods.length,
+      toNext: null,
+    });
   });
 });

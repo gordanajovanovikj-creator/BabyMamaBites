@@ -110,7 +110,7 @@ export default function BabyScreen() {
           emptyHint={`Tap the heart on a recipe or food ${profile.babyName ?? 'your baby'} loved to save it here.`}
         />
       ) : tab === 'foods' ? (
-        <FoodsView searchOpen={searchOpen} />
+        <FoodsView searchOpen={searchOpen} babyName={profile?.babyName ?? null} />
       ) : tab === 'recipes' ? (
         <BabyRecipesView
           babyName={profile.babyName}
