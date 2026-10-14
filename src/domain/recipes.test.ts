@@ -251,8 +251,26 @@ describe('recipeTimings', () => {
     expect(recipeTimings(make('a', { activeMinutes: 10, totalMinutes: 35, servings: 4 }))).toBe(
       'Prep 10 min · Cook 25 min · Serves 4',
     );
+  });
+
+  it('leaves out the cook time when everything is hands-on', () => {
     expect(recipeTimings(make('a', { activeMinutes: 5, totalMinutes: 5, servings: 1 }))).toBe(
-      'Prep 5 min · Cook 0 min · Serves 1',
+      'Prep 5 min · Serves 1',
+    );
+  });
+
+  it('calls the waiting time "Chill" or "Soak" for no-cook recipes', () => {
+    const noCook = {
+      activeMinutes: 10,
+      totalMinutes: 40,
+      servings: 12,
+      tags: ['no-cook' as const],
+    };
+    expect(recipeTimings(make('a', { ...noCook, steps: ['Press into a pan and freeze.'] }))).toBe(
+      'Prep 10 min · Chill 30 min · Serves 12',
+    );
+    expect(recipeTimings(make('a', { ...noCook, steps: ['Soak the figs in warm water.'] }))).toBe(
+      'Prep 10 min · Soak 30 min · Serves 12',
     );
   });
 });

@@ -138,10 +138,24 @@ export function recipeMeta(recipe: Recipe): string {
   return `${formatMinutes(recipe.totalMinutes)} · Serves ${recipe.servings}`;
 }
 
-/** "Prep 10 min · Cook 15 min · Serves 4" (cook time is everything that isn't hands-on). */
+/**
+ * "Prep 10 min · Cook 15 min · Serves 4". The second part is everything that isn't
+ * hands-on: left out when there's none, and called "Chill" (or "Soak") for no-cook
+ * recipes, which spend that time in the fridge rather than on the stove.
+ */
 export function recipeTimings(recipe: Recipe): string {
-  const cook = Math.max(0, recipe.totalMinutes - recipe.activeMinutes);
-  return `Prep ${formatMinutes(recipe.activeMinutes)} · Cook ${cook ? formatMinutes(cook) : '0 min'} · Serves ${recipe.servings}`;
+  const waiting = Math.max(0, recipe.totalMinutes - recipe.activeMinutes);
+  const parts = [`Prep ${formatMinutes(recipe.activeMinutes)}`];
+  if (waiting) {
+    const label = !recipe.tags.includes('no-cook')
+      ? 'Cook'
+      : recipe.steps.some((s) => /\bsoak/i.test(s))
+        ? 'Soak'
+        : 'Chill';
+    parts.push(`${label} ${formatMinutes(waiting)}`);
+  }
+  parts.push(`Serves ${recipe.servings}`);
+  return parts.join(' · ');
 }
 
 /**
