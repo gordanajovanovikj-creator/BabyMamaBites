@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from 'react';
 import { ScrollView, View, type NativeSyntheticEvent, type NativeScrollEvent } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { cn } from './cn';
 
@@ -21,6 +22,11 @@ export type ScreenProps = {
   stickyHeader?: ReactNode;
   /** Floats over the content and doesn't scroll, e.g. a back button over a hero photo. */
   overlay?: ReactNode;
+  /**
+   * Pinned to the bottom, in thumb reach, for the screen's main actions (e.g.
+   * "Add to meal plan"). Sits above the home indicator; content scrolls behind it.
+   */
+  footer?: ReactNode;
   className?: string;
 };
 
@@ -32,8 +38,10 @@ export function Screen({
   edgeToEdgeTop = false,
   stickyHeader,
   overlay,
+  footer,
   className,
 }: ScreenProps) {
+  const insets = useSafeAreaInsets();
   // A hairline under the pinned header once content slides beneath it.
   const [scrolled, setScrolled] = useState(false);
   const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
@@ -60,13 +68,23 @@ export function Screen({
       {children}
     </ScrollView>
   );
-  if (!overlay) return scrollView;
+  if (!overlay && !footer) return scrollView;
   return (
     <View className="flex-1 bg-canvas">
       {scrollView}
-      <View pointerEvents="box-none" style={{ position: 'absolute', top: 0, left: 0, right: 0 }}>
-        {overlay}
-      </View>
+      {footer ? (
+        <View
+          className="flex-row gap-3 border-t border-border bg-canvas px-5 pt-3"
+          style={{ paddingBottom: Math.max(insets.bottom, 12) }}
+        >
+          {footer}
+        </View>
+      ) : null}
+      {overlay ? (
+        <View pointerEvents="box-none" style={{ position: 'absolute', top: 0, left: 0, right: 0 }}>
+          {overlay}
+        </View>
+      ) : null}
     </View>
   );
 }

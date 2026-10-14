@@ -77,6 +77,21 @@ export default function FoodScreen() {
       padded={false}
       edgeToEdgeTop
       className="gap-0"
+      footer={
+        <>
+          <Button
+            label="Add to plan"
+            variant="secondary"
+            className="flex-1"
+            onPress={() => router.push({ pathname: '/planner/add', params: { food: food.id } })}
+          />
+          <Button
+            label={triedOn ? 'Log again' : 'Mark as tried'}
+            className="flex-1"
+            onPress={() => router.push({ pathname: '/solids/log', params: logParams })}
+          />
+        </>
+      }
       overlay={
         <HeroTopBar
           right={
@@ -124,15 +139,6 @@ export default function FoodScreen() {
             ? `Tried · last logged ${fromIsoDate(triedOn).toLocaleDateString(undefined, { month: 'long', day: 'numeric' })}`
             : 'Not tried yet'}
         </AppText>
-        <Button
-          label={triedOn ? 'Log it again' : 'Mark as tried'}
-          onPress={() => router.push({ pathname: '/solids/log', params: logParams })}
-        />
-        <Button
-          label="Add to meal plan"
-          variant="secondary"
-          onPress={() => router.push({ pathname: '/planner/add-food', params: { food: food.id } })}
-        />
         <Button
           label="Log a reaction"
           variant="secondary"

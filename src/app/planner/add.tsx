@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Alert, ScrollView, View } from 'react-native';
 
 import { getFood } from '@/content/foods';
+import { getRecipe } from '@/content/recipes';
 import { fromIsoDate, today, type IsoDate } from '@/domain/dates';
 import {
   firstOpenSlot,
@@ -24,27 +25,33 @@ function dayChipLabel(date: IsoDate, now: IsoDate): string {
   return fromIsoDate(date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric' });
 }
 
-/** Adds one food from the food guide to a day and meal of the planner. */
-export default function AddFoodToPlanScreen() {
-  const { food: foodId } = useLocalSearchParams<{ food: string }>();
-  const food = foodId ? getFood(foodId) : undefined;
+/** Adds one recipe, or one food from the food guide, to a day and meal of the planner. */
+export default function AddToPlanScreen() {
+  const params = useLocalSearchParams<{ food?: string; recipe?: string }>();
+  const food = params.food ? getFood(params.food) : undefined;
+  const recipe = params.recipe ? getRecipe(params.recipe) : undefined;
+  const item = recipe
+    ? { id: recipe.id, name: recipe.title }
+    : food
+      ? { id: foodMealId(food.id), name: food.name }
+      : undefined;
   const { plan, setMeal } = usePlanner();
   const now = today();
   const [date, setDate] = useState<IsoDate>(now);
   const [slot, setSlot] = useState<MealSlot>(() => firstOpenSlot(plan, now));
   const [saving, setSaving] = useState(false);
 
-  if (!food) {
+  if (!item) {
     return (
       <Screen>
-        <AppText variant="title">Food not found</AppText>
+        <AppText variant="title">Not found</AppText>
         <Button label="Back" onPress={() => router.back()} />
       </Screen>
     );
   }
 
   const current = plannedMeal(plan[planKey(date, slot)]);
-  const id = foodMealId(food.id);
+  const id = item.id;
   const already = plan[planKey(date, slot)] === id;
 
   async function save() {
@@ -59,12 +66,27 @@ export default function AddFoodToPlanScreen() {
   }
 
   return (
-    <Screen>
+    <Screen
+      footer={
+        <Button
+          className="flex-1"
+          label={
+            already
+              ? 'Already planned'
+              : current
+                ? `Replace with ${item.name}`
+                : `Add to ${mealSlotLabels[slot].toLowerCase()}`
+          }
+          disabled={already || saving}
+          onPress={save}
+        />
+      }
+    >
       <View className="gap-1">
         <AppText variant="caption" size="sm" className="font-bold uppercase tracking-wider">
           Add to meal plan
         </AppText>
-        <AppText variant="title">{food.name}</AppText>
+        <AppText variant="title">{item.name}</AppText>
       </View>
 
       <View className="gap-2">
@@ -105,21 +127,9 @@ export default function AddFoodToPlanScreen() {
       {current && !already ? (
         <Notice
           title={`${mealSlotLabels[slot]} already has ${current.title}`}
-          body={`Adding ${food.name} will replace it.`}
+          body={`Adding ${item.name} will replace it.`}
         />
       ) : null}
-
-      <Button
-        label={
-          already
-            ? 'Already planned'
-            : current
-              ? `Replace with ${food.name}`
-              : `Add to ${mealSlotLabels[slot].toLowerCase()}`
-        }
-        disabled={already || saving}
-        onPress={save}
-      />
     </Screen>
   );
 }
