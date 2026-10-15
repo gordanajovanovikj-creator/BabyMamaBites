@@ -53,24 +53,24 @@ All 201 recipe and article photos, checked against this guide. Ordered by priori
 
 ### 1. Safety (replace first)
 
-| Photo | Issue |
-| --- | --- |
-| baby-carrot-zucchini-fries | Raw carrot and cucumber sticks in cups: raw hard carrot is a choking hazard for babies. The recipe steams them soft. |
-| baby-oatmeal-blueberry | Whole blueberries and strawberries next to a pink, smoothie-like bowl; the recipe mashes the berries. |
+| Photo                      | Issue                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------- |
+| baby-carrot-zucchini-fries | Fixed October 15: now soft roasted carrot spears with a yogurt dip. (Was raw carrot and cucumber sticks.) |
+| baby-oatmeal-blueberry     | Whole blueberries and strawberries next to a pink, smoothie-like bowl; the recipe mashes the berries.     |
 
 ### 2. Doesn't match the recipe or article
 
-| Photo | Shows | Recipe or article |
-| --- | --- | --- |
-| newborn-overnight-oats | Yogurt jar topped with pineapple | Peanut butter banana overnight oats |
-| sweet-potato-spinach-hash | Eggs in tomato sauce (shakshuka) | Sweet potato and spinach hash |
-| nursing-chocolate-chip-bites | Baked cookies | No-bake oat bites (balls) |
-| baby-salmon-potato-mash | Grown-up plate with peppers | Flaked salmon and cream cheese mash |
-| baby-pear-chia-mash | Hand cutting a whole pear | Pear and chia mash |
-| toddler-yogurt-berry-bark | Bowl of yogurt and berries | Frozen yogurt bark pieces |
-| food-prep-textures | Banana rounds | Article recommends finger-length strips for 6 to 8 months |
-| One pot for family and baby (13 recipes) | Photos borrowed from similar recipes | Each needs its own photo |
-| cluster-feeding | Borrowed from another article | Needs its own photo |
+| Photo                                    | Shows                                                    | Recipe or article                                         |
+| ---------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------- |
+| newborn-overnight-oats                   | Fixed October 15 (was: yogurt jar topped with pineapple) | Peanut butter banana overnight oats                       |
+| sweet-potato-spinach-hash                | Fixed October 15 (was: eggs in tomato sauce (shakshuka)) | Sweet potato and spinach hash                             |
+| nursing-chocolate-chip-bites             | Fixed October 15 (was: baked cookies)                    | No-bake oat bites (balls)                                 |
+| baby-salmon-potato-mash                  | Grown-up plate with peppers                              | Flaked salmon and cream cheese mash                       |
+| baby-pear-chia-mash                      | Hand cutting a whole pear                                | Pear and chia mash                                        |
+| toddler-yogurt-berry-bark                | Bowl of yogurt and berries                               | Frozen yogurt bark pieces                                 |
+| food-prep-textures                       | Banana rounds                                            | Article recommends finger-length strips for 6 to 8 months |
+| One pot for family and baby (13 recipes) | Photos borrowed from similar recipes                     | Each needs its own photo                                  |
+| cluster-feeding                          | Borrowed from another article                            | Needs its own photo                                       |
 
 ### 3. Too dark for the app's bright look (brightness under 90)
 
