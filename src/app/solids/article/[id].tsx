@@ -118,13 +118,16 @@ export default function ArticleScreen() {
         })}
 
         <SourceLinks sources={solidsSourcesFor(article.sources)} />
+      </View>
 
+      <ReadMore current={articleItem(article)} />
+
+      {/* The disclaimer always closes the page. */}
+      <View className="px-5 pt-6">
         <HealthDisclaimerNote
           draftReviewer={article.reviewStatus === 'placeholder' ? article.reviewer : undefined}
         />
       </View>
-
-      <ReadMore current={articleItem(article)} />
     </Screen>
   );
 }

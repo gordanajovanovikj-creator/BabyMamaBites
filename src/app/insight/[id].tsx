@@ -91,12 +91,16 @@ export default function InsightScreen() {
         ) : null}
         {insight.kind === 'when-to-call' ? <HelplineButtons lines={['911']} /> : null}
         <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
+      </View>
+
+      <ReadMore current={insightItem(insight)} />
+
+      {/* The disclaimer always closes the page. */}
+      <View className="px-5 pt-6">
         <HealthDisclaimerNote
           draftReviewer={insight.reviewStatus === 'placeholder' ? 'health professional' : undefined}
         />
       </View>
-
-      <ReadMore current={insightItem(insight)} />
     </Screen>
   );
 }
