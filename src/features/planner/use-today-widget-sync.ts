@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { today } from '@/domain/dates';
 import { todayWidgetEntries } from '@/domain/widget';
 import { useProfile } from '@/features/profile/profile-context';
-import { todayMealsWidget } from '@/widgets/today-meals';
 
 import { plannedMeal } from './planned-meal';
 import { usePlanner } from './planner-context';
@@ -18,11 +17,16 @@ export function useTodayWidgetSync() {
   const name = profile?.babyName ?? null;
   useEffect(() => {
     try {
+      // Loaded lazily: the widget's native module isn't in Expo Go, and importing it
+      // there throws, so a top-level import would crash the app on start.
+      const { todayMealsWidget } =
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
+        require('@/widgets/today-meals') as typeof import('@/widgets/today-meals');
       todayMealsWidget.updateTimeline(
         todayWidgetEntries(plan, today(), name, (id) => plannedMeal(id)?.title ?? null),
       );
     } catch {
-      // A widget that can't update (for example in Expo Go) must never break the app.
+      // No widget support here (Expo Go, Android, web): nothing to update.
     }
   }, [plan, name]);
 }
