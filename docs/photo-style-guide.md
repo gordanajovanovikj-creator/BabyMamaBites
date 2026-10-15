@@ -56,21 +56,21 @@ All 201 recipe and article photos, checked against this guide. Ordered by priori
 | Photo                      | Issue                                                                                                     |
 | -------------------------- | --------------------------------------------------------------------------------------------------------- |
 | baby-carrot-zucchini-fries | Fixed October 15: now soft roasted carrot spears with a yogurt dip. (Was raw carrot and cucumber sticks.) |
-| baby-oatmeal-blueberry     | Whole blueberries and strawberries next to a pink, smoothie-like bowl; the recipe mashes the berries.     |
+| baby-oatmeal-blueberry     | Fixed October 15: a smooth blueberry puree in a wooden bowl, cropped to the bowl.                         |
 
 ### 2. Doesn't match the recipe or article
 
-| Photo                                    | Shows                                                    | Recipe or article                                         |
-| ---------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------- |
-| newborn-overnight-oats                   | Fixed October 15 (was: yogurt jar topped with pineapple) | Peanut butter banana overnight oats                       |
-| sweet-potato-spinach-hash                | Fixed October 15 (was: eggs in tomato sauce (shakshuka)) | Sweet potato and spinach hash                             |
-| nursing-chocolate-chip-bites             | Fixed October 15 (was: baked cookies)                    | No-bake oat bites (balls)                                 |
-| baby-salmon-potato-mash                  | Grown-up plate with peppers                              | Flaked salmon and cream cheese mash                       |
-| baby-pear-chia-mash                      | Hand cutting a whole pear                                | Pear and chia mash                                        |
-| toddler-yogurt-berry-bark                | Fixed October 15 (was: bowl of yogurt and berries)       | Frozen yogurt bark pieces                                 |
-| food-prep-textures                       | Banana rounds                                            | Article recommends finger-length strips for 6 to 8 months |
-| One pot for family and baby (13 recipes) | Photos borrowed from similar recipes                     | Each needs its own photo                                  |
-| cluster-feeding                          | Fixed October 15 (was: borrowed from another article)    | Needs its own photo                                       |
+| Photo                                    | Shows                                                        | Recipe or article                                         |
+| ---------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
+| newborn-overnight-oats                   | Fixed October 15 (was: yogurt jar topped with pineapple)     | Peanut butter banana overnight oats                       |
+| sweet-potato-spinach-hash                | Fixed October 15 (was: eggs in tomato sauce (shakshuka))     | Sweet potato and spinach hash                             |
+| nursing-chocolate-chip-bites             | Fixed October 15 (was: baked cookies)                        | No-bake oat bites (balls)                                 |
+| baby-salmon-potato-mash                  | Grown-up plate with peppers                                  | Flaked salmon and cream cheese mash                       |
+| baby-pear-chia-mash                      | Hand cutting a whole pear                                    | Pear and chia mash                                        |
+| toddler-yogurt-berry-bark                | Fixed October 15 (was: bowl of yogurt and berries)           | Frozen yogurt bark pieces                                 |
+| food-prep-textures                       | Banana rounds                                                | Article recommends finger-length strips for 6 to 8 months |
+| One pot for family and baby (13 recipes) | Fixed October 15 (was: photos borrowed from similar recipes) | Each needs its own photo                                  |
+| cluster-feeding                          | Fixed October 15 (was: borrowed from another article)        | Needs its own photo                                       |
 
 ### 3. Too dark for the app's bright look (brightness under 90)
 
