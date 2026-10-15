@@ -67,16 +67,17 @@ All 201 recipe and article photos, checked against this guide. Ordered by priori
 | nursing-chocolate-chip-bites             | Fixed October 15 (was: baked cookies)                    | No-bake oat bites (balls)                                 |
 | baby-salmon-potato-mash                  | Grown-up plate with peppers                              | Flaked salmon and cream cheese mash                       |
 | baby-pear-chia-mash                      | Hand cutting a whole pear                                | Pear and chia mash                                        |
-| toddler-yogurt-berry-bark                | Bowl of yogurt and berries                               | Frozen yogurt bark pieces                                 |
+| toddler-yogurt-berry-bark                | Fixed October 15 (was: bowl of yogurt and berries)       | Frozen yogurt bark pieces                                 |
 | food-prep-textures                       | Banana rounds                                            | Article recommends finger-length strips for 6 to 8 months |
 | One pot for family and baby (13 recipes) | Photos borrowed from similar recipes                     | Each needs its own photo                                  |
-| cluster-feeding                          | Borrowed from another article                            | Needs its own photo                                       |
+| cluster-feeding                          | Fixed October 15 (was: borrowed from another article)    | Needs its own photo                                       |
 
 ### 3. Too dark for the app's bright look (brightness under 90)
 
-Ordered darkest first: smoothie-citrus-sunshine (42), nursing-oatmeal-chocolate-chip-cookies,
-smoothie-cucumber-ginger, smoothie-greek-yogurt-berry, smoothie-tropical-green,
-nursing-barley-milk-soup, nursing-flax-blueberry-yogurt-bowl, baby-broccoli-potato-mash,
+Fixed October 15 with bright photos: smoothie-citrus-sunshine, nursing-oatmeal-chocolate-chip-cookies,
+smoothie-cucumber-ginger, smoothie-greek-yogurt-berry, smoothie-tropical-green.
+
+Still to do, darkest first: nursing-barley-milk-soup, nursing-flax-blueberry-yogurt-bowl, baby-broccoli-potato-mash,
 baby-squash-chicken-risotto, toddler-broccoli-potato-tots, pb-banana-baked-oatmeal-cups,
 solids-choking (article), honey-mustard-chicken-green-beans, black-bean-sweet-potato-chili,
 smoothie-matcha-green, nursing-brown-sugar-oats, apple-cinnamon-porridge,

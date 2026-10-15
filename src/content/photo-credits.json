@@ -250,8 +250,8 @@
       "id": "smoothie-tropical-green",
       "usedOn": "Classic tropical green",
       "source": "magnific",
-      "author": "JHstock",
-      "url": "https://www.magnific.com/premium-photo/mango-spinach-smoothie-with-added-protein-powder_172535098.htm"
+      "author": "wirestock_creators",
+      "url": "https://www.magnific.com/premium-photo/vertical-shot-green-healthy-milkshake-glass-mug-white-surface_258966446.htm"
     },
     {
       "id": "cold-soba-peanut-edamame",
@@ -1292,9 +1292,9 @@
     {
       "id": "smoothie-citrus-sunshine",
       "usedOn": "Citrus sunshine",
-      "source": "pixabay",
-      "author": "tehzeebhud",
-      "url": "https://pixabay.com/photos/mango-smoothie-glass-straw-10449416/"
+      "source": "magnific",
+      "author": "k.noxcystudio",
+      "url": "https://www.magnific.com/premium-photo/fresh-mango-juice-ice-cubes-transparent-glass-with-some-pieces-mango-background_424647980.htm"
     },
     {
       "id": "chickpea-curry",
@@ -1348,9 +1348,9 @@
     {
       "id": "smoothie-cucumber-ginger",
       "usedOn": "Cucumber ginger green",
-      "source": "pixabay",
-      "author": "Smacznadietetyka",
-      "url": "https://pixabay.com/photos/cocktail-smoothie-food-vegetables-7213414/"
+      "source": "magnific",
+      "author": "atlascompany",
+      "url": "https://www.magnific.com/premium-photo/glass-green-smoothie-cucumber-white-table_13354577.htm"
     },
     {
       "id": "baby-salmon-potato-mash",
@@ -1369,9 +1369,9 @@
     {
       "id": "toddler-yogurt-berry-bark",
       "usedOn": "Frozen berry yogurt bark",
-      "source": "pixabay",
-      "author": "DagnyWalter",
-      "url": "https://pixabay.com/photos/breakfast-dessert-yoghurt-delicious-3928800/"
+      "source": "magnific",
+      "author": "a_a_88",
+      "url": "https://www.magnific.com/premium-photo/strawberries-sour-cream-ripe-strawberries_281605609.htm"
     },
     {
       "id": "garlic-butter-shrimp-pasta",
@@ -1397,9 +1397,9 @@
     {
       "id": "smoothie-greek-yogurt-berry",
       "usedOn": "Greek yogurt berry",
-      "source": "pixabay",
-      "author": "robertasriabovas",
-      "url": "https://pixabay.com/photos/berries-cocktail-milkshake-drink-4944590/"
+      "source": "magnific",
+      "author": "alhor",
+      "url": "https://www.magnific.com/premium-photo/glass-with-lassi-drink-with-raspberries-mint-bamboo-tube-light-background-horizontal-orientation-side-view-indian-traditional-refreshing-drink_17343519.htm"
     },
     {
       "id": "high-protein-bento-box",
@@ -1488,9 +1488,9 @@
     {
       "id": "nursing-oatmeal-chocolate-chip-cookies",
       "usedOn": "Oatmeal chocolate chip cookies",
-      "source": "pixabay",
-      "author": "StockSnap",
-      "url": "https://pixabay.com/photos/chocolate-chip-cookies-food-sweets-2562000/"
+      "source": "pexels",
+      "author": "Angela Khebou",
+      "url": "https://www.pexels.com/photo/cookies-on-tray-13184916/"
     },
     {
       "id": "family-kitchen",
@@ -1722,6 +1722,13 @@
       "source": "pixabay",
       "author": "181381",
       "url": "https://pixabay.com/photos/spring-rolls-korean-asian-food-281883/"
+    },
+    {
+      "id": "cluster-feeding",
+      "usedOn": "Decoding cluster feeding",
+      "source": "magnific",
+      "author": "Drazen Zigic",
+      "url": "https://www.magnific.com/premium-photo/mother-baby-enjoying-sofa-living-room_25623734.htm"
     }
   ]
 }
