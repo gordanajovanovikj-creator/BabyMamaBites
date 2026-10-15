@@ -6,11 +6,13 @@ import { solidsArticles } from '@/content/solids-articles';
 import {
   forMom,
   insightItem,
-  librarySections,
   libraryItems,
+  librarySections,
   pickedForAge,
   readingMinutes,
+  relatedItems,
   todayRow,
+  type LibraryItem,
 } from './library';
 
 describe('library content', () => {
@@ -143,5 +145,38 @@ describe('forMom', () => {
     expect(mom.map((i) => momIds.indexOf(i.category))).toEqual(
       [...mom.map((i) => momIds.indexOf(i.category))].sort((a, b) => a - b),
     );
+  });
+});
+
+describe('relatedItems', () => {
+  const item = (id: string, category: string, from: number, to: number): LibraryItem => ({
+    id,
+    source: 'article',
+    category,
+    title: id,
+    summary: id,
+    tone: 'surface',
+    icon: 'leaf',
+    emoji: '🍃',
+    illustration: illustrationNames[0],
+    fromMonths: from,
+    toMonths: to,
+    readMinutes: 3,
+  });
+  const all = [
+    item('a', 'starting-solids', 6, 9),
+    item('b', 'starting-solids', 6, 12),
+    item('c', 'safety', 6, 12),
+    item('d', 'safety', 24, 36),
+    item('e', 'starting-solids', 9, 12),
+  ];
+
+  it('lists the same category first, then overlapping ages, never itself', () => {
+    const ids = relatedItems(all[0], all, 7).map((i) => i.id);
+    expect(ids).toEqual(['b', 'e', 'c']);
+  });
+
+  it('respects the count', () => {
+    expect(relatedItems(all[0], all, 7, 2)).toHaveLength(2);
   });
 });

@@ -6,7 +6,9 @@ import { getArticle } from '@/content/solids-articles';
 import { solidsSourcesFor } from '@/content/solids-plan';
 import { ageRangeLabel } from '@/domain/articles';
 import { helplinesIn } from '@/domain/helplines';
+import { articleItem } from '@/domain/library';
 import { libraryPhoto } from '@/features/library/library-photos';
+import { ReadMore } from '@/features/library/read-more';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { HelplineButtons } from '@/features/shared/helpline-buttons';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
@@ -121,6 +123,8 @@ export default function ArticleScreen() {
           draftReviewer={article.reviewStatus === 'placeholder' ? article.reviewer : undefined}
         />
       </View>
+
+      <ReadMore current={articleItem(article)} />
     </Screen>
   );
 }

@@ -4,8 +4,10 @@ import { View } from 'react-native';
 import { getInsight } from '@/content/insights';
 import { splitReviewMarker } from '@/content/schemas';
 import { insightBlocks, type InsightBlock } from '@/domain/insights';
+import { insightItem } from '@/domain/library';
 import { insightKindLabel } from '@/features/insights/insight-style';
 import { libraryPhoto } from '@/features/library/library-photos';
+import { ReadMore } from '@/features/library/read-more';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
@@ -93,6 +95,8 @@ export default function InsightScreen() {
           draftReviewer={insight.reviewStatus === 'placeholder' ? 'health professional' : undefined}
         />
       </View>
+
+      <ReadMore current={insightItem(insight)} />
     </Screen>
   );
 }

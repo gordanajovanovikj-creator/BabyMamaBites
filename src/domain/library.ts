@@ -131,3 +131,31 @@ export function forMom(items: LibraryItem[], categories: InsightCategory[]): Lib
   const momCategories = categories.filter((c) => c.audience === 'mom').map((c) => c.id);
   return momCategories.flatMap((id) => items.filter((i) => i.category === id));
 }
+
+/**
+ * "Read more" at the end of an article or tip: others from the same category first
+ * (best for the baby's age first), then ones for an overlapping age range, never the
+ * item itself.
+ */
+export function relatedItems(
+  current: Pick<LibraryItem, 'id' | 'source' | 'category' | 'fromMonths' | 'toMonths'>,
+  items: LibraryItem[],
+  ageMonths: number,
+  count = 6,
+): LibraryItem[] {
+  const others = items.filter((i) => !(i.id === current.id && i.source === current.source));
+  const same = articlesForAge(
+    others.filter((i) => i.category === current.category),
+    ageMonths,
+  );
+  const overlapping = articlesForAge(
+    others.filter(
+      (i) =>
+        i.category !== current.category &&
+        i.fromMonths <= current.toMonths &&
+        i.toMonths >= current.fromMonths,
+    ),
+    ageMonths,
+  );
+  return [...same, ...overlapping].slice(0, count);
+}
