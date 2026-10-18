@@ -5,7 +5,6 @@ import type { Recipe } from '@/content/recipes';
 import { recipeMeta } from '@/domain/recipes';
 import { useFavorites } from '@/features/favorites/favorites-context';
 import { RecipeImage } from '@/features/recipes/recipe-image';
-import { shadows } from '@/theme/colors';
 import { AppText, HeartButton } from '@/ui';
 
 const CARD_WIDTH = 280;
@@ -22,15 +21,12 @@ function FeatureCard({ recipe, kicker }: { recipe: Recipe; kicker: string }) {
         onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
         className="gap-2 active:opacity-90"
       >
-        {/* The shadow sits on a wrapper: the rounded photo clips its own edges. */}
-        <View className="rounded-xl bg-surface" style={{ boxShadow: shadows.card }}>
-          <RecipeImage
-            recipe={recipe}
-            className="rounded-xl"
-            iconSize={96}
-            style={{ height: PHOTO_HEIGHT }}
-          />
-        </View>
+        <RecipeImage
+          recipe={recipe}
+          className="rounded-2xl"
+          iconSize={96}
+          style={{ height: PHOTO_HEIGHT }}
+        />
         <View className="gap-0.5 pr-2">
           <AppText
             variant="label"

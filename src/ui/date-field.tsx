@@ -51,7 +51,7 @@ export function DateField({
             onValueChange: (_event, date) => onChange(toIsoDate(date)),
           })
         }
-        className="min-h-14 justify-center rounded-2xl border-2 border-border bg-surface px-5 active:opacity-80"
+        className="min-h-14 justify-center rounded-2xl bg-surface-muted px-5 active:opacity-80"
       >
         <AppText variant="caption">{label}</AppText>
         <AppText variant="label">{formatLong(value)}</AppText>

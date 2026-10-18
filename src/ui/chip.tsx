@@ -1,7 +1,5 @@
 import { Pressable } from 'react-native';
 
-import { shadows } from '@/theme/colors';
-
 import { AppText } from './app-text';
 import { cn } from './cn';
 import { haptics } from './haptics';
@@ -39,11 +37,10 @@ export function Chip({
       }
       hitSlop={4}
       className={cn(
-        'min-h-12 items-center justify-center rounded-full border px-5 py-2 active:opacity-80',
-        selected ? 'border-primary bg-primary' : 'border-border bg-surface',
+        'min-h-12 items-center justify-center rounded-full px-5 py-2 active:opacity-80',
+        selected ? 'bg-primary' : 'bg-surface-muted',
         className,
       )}
-      style={{ boxShadow: shadows.chip }}
     >
       <AppText variant="label" color={selected ? 'on-primary' : 'ink'} className="font-bold">
         {label}

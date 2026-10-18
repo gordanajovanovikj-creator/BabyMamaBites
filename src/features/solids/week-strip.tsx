@@ -2,7 +2,6 @@ import { router } from 'expo-router';
 import { Pressable, ScrollView } from 'react-native';
 
 import type { PlanWeek } from '@/content/solids-plan';
-import { shadows } from '@/theme/colors';
 import { AppText, cn } from '@/ui';
 
 export type WeekStripProps = {
@@ -12,7 +11,7 @@ export type WeekStripProps = {
 };
 
 /**
- * Horizontally scrolling week numbers as white floating tiles (this week in green);
+ * Horizontally scrolling week numbers as soft cream tiles like the planner's day pills (this week in green);
  * any week can be opened to read ahead or look back.
  */
 export function WeekStrip({ weeks, current }: WeekStripProps) {
@@ -20,8 +19,7 @@ export function WeekStrip({ weeks, current }: WeekStripProps) {
     <ScrollView
       horizontal
       showsHorizontalScrollIndicator={false}
-      // Room above and below so the shadows aren't clipped.
-      contentContainerClassName="gap-3 px-5 pb-6 pt-3"
+      contentContainerClassName="gap-2 px-5 py-1"
     >
       {weeks.map((w) => {
         const active = w.week === current;
@@ -35,10 +33,10 @@ export function WeekStrip({ weeks, current }: WeekStripProps) {
               router.push({ pathname: '/solids/week/[n]', params: { n: String(w.week) } })
             }
             className={cn(
-              'min-h-16 min-w-16 items-center justify-center rounded-2xl px-3 active:opacity-80',
-              active ? 'bg-primary' : 'bg-surface',
+              'min-h-16 w-14 items-center justify-center gap-0.5 rounded-2xl active:opacity-80',
+              active ? 'bg-primary' : 'bg-surface-muted',
             )}
-            style={{ borderCurve: 'continuous', boxShadow: shadows.floatTight }}
+            style={{ borderCurve: 'continuous' }}
           >
             <AppText variant="caption" size="xs" color={active ? 'on-primary' : 'muted'}>
               Week

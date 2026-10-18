@@ -27,7 +27,7 @@ export function SearchField({
 }: SearchFieldProps) {
   const palette = usePalette();
   return (
-    <View className="min-h-12 flex-row items-center gap-2 rounded-full border-2 border-border bg-surface pl-4 pr-1">
+    <View className="min-h-12 flex-row items-center gap-2 rounded-full bg-surface-muted pl-4 pr-1">
       <SymbolIcon icon="magnifyingglass" emoji="🔍" size={18} />
       <TextInput
         accessibilityLabel={label}

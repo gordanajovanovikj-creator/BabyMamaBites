@@ -23,7 +23,6 @@ import { LogEntryRow } from '@/features/solids/log-entry-row';
 import { WeekCard } from '@/features/solids/week-card';
 import { WeekStrip } from '@/features/solids/week-strip';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
-import { shadows } from '@/theme/colors';
 import { AppText, Button, Card, Notice, Screen, SegmentedTabs } from '@/ui';
 
 const RECENT = 5;
@@ -103,7 +102,7 @@ export default function BabyScreen() {
       ) : (
         <>
           <View className="gap-2">
-            <AppText variant="heading" className="px-5">
+            <AppText variant="heading" size="2xl" className="px-5">
               Eating solids, week by week
             </AppText>
             <WeekStrip weeks={planWeeks} current={current} />
@@ -186,7 +185,6 @@ export default function BabyScreen() {
             <Card
               tone="accent"
               className="gap-1"
-              style={{ boxShadow: shadows.card }}
               onPress={() =>
                 router.push({
                   pathname: '/solids/article/[id]',
@@ -206,7 +204,6 @@ export default function BabyScreen() {
             <Card
               tone="danger"
               className="flex-row items-center gap-4"
-              style={{ boxShadow: shadows.card }}
               onPress={() => router.push('/solids/choking')}
               accessibilityLabel="Choking and gagging: what to know. Opens the safety guide."
             >

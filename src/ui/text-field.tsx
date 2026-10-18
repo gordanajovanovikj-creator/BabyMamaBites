@@ -25,7 +25,7 @@ export function TextField({ label, hint, value, onChangeText, ...rest }: TextFie
         value={value}
         onChangeText={onChangeText}
         placeholderTextColor={palette.inkMuted}
-        className="min-h-14 rounded-2xl border-2 border-border bg-surface px-5 text-ink"
+        className="min-h-14 rounded-2xl bg-surface-muted px-5 text-ink"
         // Font size only: a line height (as `text-lg` sets) pushes typed text off-center on iOS.
         style={inputText}
         {...rest}

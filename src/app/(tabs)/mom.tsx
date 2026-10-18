@@ -11,7 +11,7 @@ import { FavoritesList } from '@/features/favorites/favorites-list';
 import { ALL_SORTS, allergenOptions, recipeTagOptions } from '@/features/filters/filter-options';
 import { SearchFilterBar } from '@/features/filters/search-filter-bar';
 import { useHousehold } from '@/features/profile/use-household';
-import { HouseholdNote } from '@/features/recipes/household-note';
+import { hasHouseholdNote, HouseholdNote } from '@/features/recipes/household-note';
 import { RecipeGrid } from '@/features/recipes/recipe-grid';
 import { NoMatches } from '@/features/filters/no-matches';
 import { RecipeSection } from '@/features/recipes/recipe-section';
@@ -86,9 +86,11 @@ export default function MomScreen() {
               flags: recipeTagOptions,
             }}
           />
-          <View className="px-5">
-            <HouseholdNote household={household} hidden={hidden} />
-          </View>
+          {hasHouseholdNote(household) ? (
+            <View className="px-5">
+              <HouseholdNote household={household} hidden={hidden} />
+            </View>
+          ) : null}
           {!filtering ? (
             sections.map((s) => (
               <RecipeSection key={s.category.id} category={s.category} recipes={s.recipes} />

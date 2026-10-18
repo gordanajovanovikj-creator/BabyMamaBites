@@ -2,7 +2,6 @@ import { router } from 'expo-router';
 import { Pressable, View } from 'react-native';
 
 import { quickFoods, type PlanWeek } from '@/content/solids-plan';
-import { shadows } from '@/theme/colors';
 import { AppText } from '@/ui';
 
 /**
@@ -18,10 +17,7 @@ export function TodayFocus({ planWeek }: { planWeek: PlanWeek }) {
 
   return (
     <View className="px-5">
-      <View
-        className="flex-row items-center gap-3 rounded-3xl border border-border bg-surface p-3"
-        style={{ boxShadow: shadows.card }}
-      >
+      <View className="flex-row items-center gap-3 rounded-3xl border border-border bg-surface p-3">
         <Pressable
           accessibilityRole="link"
           accessibilityLabel={`Today's focus, week ${planWeek.week} of solids: ${headline}. Opens week ${planWeek.week}.`}
@@ -44,7 +40,9 @@ export function TodayFocus({ planWeek }: { planWeek: PlanWeek }) {
           <Pressable
             accessibilityRole="button"
             accessibilityLabel={`Log ${allergen.label.toLowerCase()}`}
-            onPress={() => router.push({ pathname: '/solids/log', params: { allergen: allergen.id } })}
+            onPress={() =>
+              router.push({ pathname: '/solids/log', params: { allergen: allergen.id } })
+            }
             className="min-h-12 items-center justify-center rounded-full bg-primary px-5 active:opacity-80"
           >
             <AppText variant="label" color="on-primary" className="font-bold">

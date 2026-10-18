@@ -10,12 +10,13 @@ export type FilterButtonProps = {
 };
 
 /** Three lines, shortest at the bottom: the usual "filter" mark, drawn so it looks the same everywhere. */
-function FilterMark() {
+function FilterMark({ on }: { on: boolean }) {
+  const line = on ? 'bg-on-primary' : 'bg-ink';
   return (
     <View className="items-center gap-1">
-      <View className="h-0.5 w-5 rounded-full bg-ink" />
-      <View className="h-0.5 w-3.5 rounded-full bg-ink" />
-      <View className="h-0.5 w-2 rounded-full bg-ink" />
+      <View className={cn('h-0.5 w-5 rounded-full', line)} />
+      <View className={cn('h-0.5 w-3.5 rounded-full', line)} />
+      <View className={cn('h-0.5 w-2 rounded-full', line)} />
     </View>
   );
 }
@@ -29,18 +30,18 @@ export function FilterButton({ count, onPress }: FilterButtonProps) {
       onPress={onPress}
       hitSlop={4}
       className={cn(
-        'h-12 w-12 items-center justify-center rounded-full border-2 active:opacity-70',
-        count ? 'border-primary bg-surface' : 'border-border bg-surface',
+        'h-12 w-12 items-center justify-center rounded-full active:opacity-70',
+        count ? 'bg-primary' : 'bg-surface-muted',
       )}
     >
-      <FilterMark />
+      <FilterMark on={count > 0} />
       {count ? (
         <View
-          className="absolute -right-1 -top-1 h-6 min-w-6 items-center justify-center rounded-full bg-primary px-1"
+          className="absolute -right-1 -top-1 h-6 min-w-6 items-center justify-center rounded-full border-2 border-primary bg-surface px-1"
           importantForAccessibility="no-hide-descendants"
           accessibilityElementsHidden
         >
-          <AppText size="xs" color="on-primary" className="font-bold">
+          <AppText size="xs" color="primary" className="font-bold">
             {String(count)}
           </AppText>
         </View>

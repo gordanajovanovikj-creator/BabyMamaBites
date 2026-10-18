@@ -31,7 +31,6 @@ export function FoodCard({ food, width, tried }: FoodCardProps) {
         accessibilityRole="button"
         accessibilityLabel={`${food.name}. ${foodCategoryLabels[food.category]}, from ${food.fromMonths} months.${allergen}${tried ? ' Tried.' : ''}`}
         onPress={() => router.push({ pathname: '/food/[id]', params: { id: food.id } })}
-        style={{ boxShadow: shadows.card }}
         className="gap-1 rounded-3xl border border-border bg-surface p-2 active:opacity-80"
       >
         <View

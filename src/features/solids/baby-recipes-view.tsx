@@ -15,7 +15,7 @@ import {
 import { NoMatches } from '@/features/filters/no-matches';
 import { SearchFilterBar } from '@/features/filters/search-filter-bar';
 import { useHousehold } from '@/features/profile/use-household';
-import { HouseholdNote } from '@/features/recipes/household-note';
+import { hasHouseholdNote, HouseholdNote } from '@/features/recipes/household-note';
 import { RecipeGrid } from '@/features/recipes/recipe-grid';
 import { RecipeSection } from '@/features/recipes/recipe-section';
 import { RECIPE_TILE_WIDTH, RecipeTile } from '@/features/recipes/recipe-tile';
@@ -68,15 +68,17 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
           flags: recipeTagOptions,
         }}
       />
-      <View className="gap-3 px-5">
-        {current === null ? (
-          <Notice
-            title="Solids start at about 6 months"
-            body={`These recipes are here so you can read ahead. Most babies are ready around 6 months; check the readiness signs on the Plan tab.`}
-          />
-        ) : null}
-        <HouseholdNote household={household} hidden={hidden} />
-      </View>
+      {current === null || hasHouseholdNote(household) ? (
+        <View className="gap-3 px-5">
+          {current === null ? (
+            <Notice
+              title="Solids start at about 6 months"
+              body={`These recipes are here so you can read ahead. Most babies are ready around 6 months; check the readiness signs on the Plan tab.`}
+            />
+          ) : null}
+          <HouseholdNote household={household} hidden={hidden} />
+        </View>
+      ) : null}
       {filtering ? (
         shown.length ? (
           <RecipeGrid

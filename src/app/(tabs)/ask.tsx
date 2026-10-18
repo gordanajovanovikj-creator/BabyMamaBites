@@ -170,7 +170,7 @@ export default function AskScreen() {
           placeholderTextColor={palette.inkMuted}
           multiline
           maxLength={CHAT_LIMITS.maxChars}
-          className="max-h-32 min-h-12 flex-1 rounded-3xl border-2 border-border bg-surface px-4 py-3 text-lg text-ink"
+          className="max-h-32 min-h-12 flex-1 rounded-3xl bg-surface-muted px-4 py-3 text-lg text-ink"
         />
         <Pressable
           accessibilityRole="button"

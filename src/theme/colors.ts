@@ -23,12 +23,11 @@ export const colors = { light, dark: light } as const;
 export type ColorScheme = keyof typeof colors;
 export type Palette = typeof light;
 
-/** Soft, warm drop shadows (CSS box-shadow syntax) for raised white cards. */
+/**
+ * The one drop shadow: only for small buttons and badges that float over photos
+ * (back, heart, allergen pill), so they stay readable. Cards and controls don't
+ * use shadows; see docs/design-system.md.
+ */
 export const shadows = {
-  card: '0 1px 2px rgba(44, 42, 37, 0.06), 0 6px 16px rgba(44, 42, 37, 0.08)',
-  /** Wide, airy glow for floating pills (like the iOS Library header). */
-  float: '0 6px 24px rgba(44, 42, 37, 0.10), 0 1px 3px rgba(44, 42, 37, 0.04)',
-  /** The float look, tighter, so it fits inside a sideways-scrolling row without clipping. */
   floatTight: '0 4px 14px rgba(44, 42, 37, 0.10), 0 1px 3px rgba(44, 42, 37, 0.04)',
-  chip: '0 1px 2px rgba(44, 42, 37, 0.06), 0 3px 8px rgba(44, 42, 37, 0.07)',
 } as const;

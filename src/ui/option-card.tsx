@@ -1,7 +1,5 @@
 import { Pressable, View } from 'react-native';
 
-import { shadows } from '@/theme/colors';
-
 import { AppText } from './app-text';
 import { cn } from './cn';
 
@@ -15,8 +13,8 @@ export type OptionCardProps = {
 };
 
 /**
- * Large, full-width answer card for one-tap choices: a raised white card with
- * a soft shadow and an iOS-style check on the right.
+ * Large, full-width answer card for one-tap choices: a soft cream card (sage with
+ * a green outline once picked) and an iOS-style check on the right.
  */
 export function OptionCard({ title, detail, selected, onPress, kind = 'radio' }: OptionCardProps) {
   return (
@@ -26,10 +24,10 @@ export function OptionCard({ title, detail, selected, onPress, kind = 'radio' }:
       accessibilityLabel={detail ? `${title}. ${detail}` : title}
       onPress={onPress}
       className={cn(
-        'min-h-16 flex-row items-center gap-4 rounded-2xl border-2 bg-surface px-5 py-4 active:opacity-70',
-        selected ? 'border-primary' : 'border-surface',
+        'min-h-16 flex-row items-center gap-4 rounded-2xl border-2 px-5 py-4 active:opacity-70',
+        selected ? 'border-primary bg-sky' : 'border-transparent bg-surface-muted',
       )}
-      style={{ borderCurve: 'continuous', boxShadow: shadows.card }}
+      style={{ borderCurve: 'continuous' }}
     >
       <View className="flex-1 gap-0.5">
         <AppText variant="label" size="lg">
@@ -41,7 +39,7 @@ export function OptionCard({ title, detail, selected, onPress, kind = 'radio' }:
         className={cn(
           'h-7 w-7 items-center justify-center',
           kind === 'radio' ? 'rounded-full' : 'rounded-lg',
-          selected ? 'bg-primary' : 'border-2 border-border',
+          selected ? 'bg-primary' : 'border-2 border-border bg-surface',
         )}
       >
         {selected ? (

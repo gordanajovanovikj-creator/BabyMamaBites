@@ -22,7 +22,6 @@ import { plannedMeal } from '@/features/planner/planned-meal';
 import { usePlanner } from '@/features/planner/planner-context';
 import { DayPill } from '@/features/planner/week-menu';
 import { RecipeImage } from '@/features/recipes/recipe-image';
-import { shadows } from '@/theme/colors';
 import { AppText, cn } from '@/ui';
 
 /** How far ahead "coming up" looks for a calendar event. */
@@ -194,10 +193,7 @@ export function ThisWeekCard({ now }: ThisWeekCardProps) {
         </Pressable>
       </View>
 
-      <View
-        className="gap-3 rounded-3xl border border-border bg-surface p-2.5"
-        style={{ boxShadow: shadows.card }}
-      >
+      <View className="gap-3 rounded-3xl border border-border bg-surface p-2.5">
         <View className="flex-row gap-1" accessibilityRole="tablist">
           {days.map((d) => (
             <DayPill
@@ -237,7 +233,6 @@ export function ThisWeekCard({ now }: ThisWeekCardProps) {
           />
         ) : null}
       </View>
-
     </View>
   );
 }
