@@ -7,6 +7,7 @@ import { babyRecipes } from '@/content/recipes';
 import { solidsArticles } from '@/content/solids-articles';
 import { getPlanWeek, planWeeks } from '@/content/solids-plan';
 import { today } from '@/domain/dates';
+import { allergenProgress } from '@/domain/food-log';
 import { pickDailyInsights } from '@/domain/insights';
 import { forMom, libraryItems, pickedForAge, todayRow } from '@/domain/library';
 import { guideForMonths } from '@/domain/monthly-guides';
@@ -15,7 +16,9 @@ import { babyAge, babyStage, currentMonthChoice, monthChoices, solidsWeek } from
 import { InsightsRow } from '@/features/insights/insights-row';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
+import { useFoodLog } from '@/features/solids/food-log-context';
 import { AgeHero } from '@/features/today/age-hero';
+import { AllergensIntroduced } from '@/features/today/allergens-introduced';
 import { FoodsToTry } from '@/features/today/foods-to-try';
 import { HelpCard } from '@/features/today/help-card';
 import { ThisWeekCard } from '@/features/today/this-week-card';
@@ -24,6 +27,7 @@ import { Screen } from '@/ui';
 export default function TodayScreen() {
   const { profile } = useProfile();
   const household = useHousehold();
+  const { entries } = useFoodLog();
   // The month bubble the parent tapped; until then, the baby's own age.
   const [picked, setPicked] = useState<number | undefined>(undefined);
   if (!profile) return null;
@@ -61,6 +65,10 @@ export default function TodayScreen() {
         onSelectMonth={setPicked}
       />
       <ThisWeekCard now={now} planWeek={planWeek} />
+      {/* Allergens matter once solids start (or once any is logged). */}
+      {rawWeek !== null || entries.some((e) => e.allergen) ? (
+        <AllergensIntroduced progress={allergenProgress(entries)} />
+      ) : null}
       <FoodsToTry
         babyName={profile.babyName}
         recipes={foods.recipes}
