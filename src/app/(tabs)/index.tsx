@@ -22,6 +22,7 @@ import { AllergensIntroduced } from '@/features/today/allergens-introduced';
 import { FoodsToTry } from '@/features/today/foods-to-try';
 import { HelpCard } from '@/features/today/help-card';
 import { ThisWeekCard } from '@/features/today/this-week-card';
+import { TodayFocus } from '@/features/today/today-focus';
 import { Screen } from '@/ui';
 
 export default function TodayScreen() {
@@ -64,7 +65,8 @@ export default function TodayScreen() {
         currentMonth={currentMonth}
         onSelectMonth={setPicked}
       />
-      <ThisWeekCard now={now} planWeek={planWeek} />
+      {planWeek ? <TodayFocus planWeek={planWeek} /> : null}
+      <ThisWeekCard now={now} />
       {/* Allergens matter once solids start (or once any is logged). */}
       {rawWeek !== null || entries.some((e) => e.allergen) ? (
         <AllergensIntroduced progress={allergenProgress(entries)} />

@@ -3,7 +3,6 @@ import { router } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 
-import { quickFoods, type PlanWeek } from '@/content/solids-plan';
 import { formatTime, nextEvent } from '@/domain/calendar';
 import { addDays, fromIsoDate, type IsoDate } from '@/domain/dates';
 import {
@@ -152,16 +151,13 @@ function ComingUp({
 
 export type ThisWeekCardProps = {
   now: IsoDate;
-  /** The solids plan week the baby is on, or undefined before solids or after the plan. */
-  planWeek?: PlanWeek;
 };
 
 /**
  * Home's planner snapshot: this week's days with meal dots, the chosen day's
- * three meals, the next calendar event, a freezer item to use soon, and this
- * week's focus from the solids plan.
+ * three meals, the next calendar event and a freezer item to use soon.
  */
-export function ThisWeekCard({ now, planWeek }: ThisWeekCardProps) {
+export function ThisWeekCard({ now }: ThisWeekCardProps) {
   const { plan, freezer } = usePlanner();
   const { entries } = useCalendar();
   const [selected, setSelected] = useState<IsoDate>(now);
@@ -172,14 +168,6 @@ export function ThisWeekCard({ now, planWeek }: ThisWeekCardProps) {
   const freezerItem = useSoonItems(freezer, now)[0];
   const openPlanner = () =>
     router.navigate({ pathname: '/baby', params: { tab: 'plan', at: String(Date.now()) } });
-  const focus = planWeek
-    ? planWeek.allergen
-      ? `Week ${planWeek.week} of solids: try ${planWeek.allergen.label.toLowerCase()}`
-      : `Week ${planWeek.week} of solids: ${planWeek.title.toLowerCase()}`
-    : null;
-  const focusEmoji =
-    (planWeek?.allergen && quickFoods.find((f) => f.allergen === planWeek.allergen?.id)?.emoji) ??
-    '🥄';
   const cubes = (n: number) => `${n} ${n === 1 ? 'cube' : 'cubes'}`;
 
   return (
@@ -250,21 +238,6 @@ export function ThisWeekCard({ now, planWeek }: ThisWeekCardProps) {
         ) : null}
       </View>
 
-      {focus && planWeek ? (
-        <Pressable
-          accessibilityRole="link"
-          accessibilityLabel={`${focus}. Opens week ${planWeek.week}.`}
-          onPress={() =>
-            router.push({ pathname: '/solids/week/[n]', params: { n: String(planWeek.week) } })
-          }
-          className="min-h-12 flex-row items-center gap-2 self-start rounded-full bg-sky px-4 py-2 active:opacity-70"
-        >
-          <AppText size="lg">{focusEmoji}</AppText>
-          <AppText variant="label" color="on-sky" className="font-bold">
-            {`${focus} ›`}
-          </AppText>
-        </Pressable>
-      ) : null}
     </View>
   );
 }

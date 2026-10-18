@@ -1,4 +1,5 @@
 import { LinearGradient } from 'expo-linear-gradient';
+import { SymbolView } from 'expo-symbols';
 import { router } from 'expo-router';
 import { Pressable, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -6,12 +7,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import type { MonthlyGuide } from '@/content/monthly-guides';
 import { today } from '@/domain/dates';
 import type { Profile } from '@/domain/profile';
-import { babyAge, formatAge } from '@/domain/stage';
-import { shadows } from '@/theme/colors';
+import { babyAge, formatAgeHeadline, monthChoices } from '@/domain/stage';
 import { usePalette } from '@/theme/use-palette';
-import { AppText, SymbolIcon } from '@/ui';
-
-import { MonthBubbles } from './month-bubbles';
+import { AppText, cn } from '@/ui';
 
 function formatToday(): string {
   return new Date().toLocaleDateString('en-US', {
@@ -31,20 +29,55 @@ export function initialsFor(name: string | null): string {
 }
 
 /**
- * Top of Today (Apple-style): a big greeting, a white pill with the baby's name and age
- * (opens details) and the initials avatar (opens settings); the date underneath opens the
- * calendar; month bubbles (6 months … 24+); then a soft banner that opens the chosen
- * month's guide for baby and mom.
+ * Top of Today: the date (opens the calendar), a short greeting with the baby's age, one
+ * round avatar (opens settings and details), then the month's guide card with ‹ › arrows
+ * to look at other months.
  */
 export type AgeHeroProps = {
   profile: Profile;
   /** The guide for the month being viewed. */
   guide?: MonthlyGuide;
-  /** Month bubble state: which one is highlighted, which matches the baby's age now. */
+  /** The month being viewed, and the one that matches the baby's age now. */
   selectedMonth?: number;
   currentMonth?: number;
   onSelectMonth(months: number): void;
 };
+
+function ArrowButton({
+  label,
+  symbol,
+  fallback,
+  onPress,
+}: {
+  label: string;
+  symbol: 'chevron.left' | 'chevron.right';
+  fallback: string;
+  onPress?: () => void;
+}) {
+  const palette = usePalette();
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      accessibilityState={{ disabled: !onPress }}
+      disabled={!onPress}
+      onPress={onPress}
+      hitSlop={4}
+      className={cn(
+        'h-12 w-12 items-center justify-center rounded-full bg-surface active:opacity-70',
+        !onPress && 'opacity-40',
+      )}
+    >
+      <SymbolView
+        name={symbol}
+        size={16}
+        weight="bold"
+        tintColor={palette.ink}
+        fallback={<AppText className="font-bold">{fallback}</AppText>}
+      />
+    </Pressable>
+  );
+}
 
 export function AgeHero({
   profile,
@@ -57,54 +90,43 @@ export function AgeHero({
   const palette = usePalette();
   const now = today();
   const age = babyAge(profile, now);
-  const shortAge = formatAge(age);
   const name = profile.babyName ?? 'Your baby';
   const initials = initialsFor(profile.babyName);
   const hour = new Date().getHours();
-  const greeting = hour < 12 ? 'Good morning!' : hour < 18 ? 'Good afternoon!' : 'Good evening!';
+  const greeting = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
+  const ageLine = `${name} is ${formatAgeHeadline(age.countedFrom, now)} old${age.corrected ? ' (adjusted)' : ''}`;
+
+  const choices = monthChoices();
+  const index = choices.findIndex((c) => c.months === selectedMonth);
+  const prev = index > 0 ? choices[index - 1] : undefined;
+  const next = index < 0 ? choices[0] : choices[index + 1];
+  const kicker =
+    selectedMonth === undefined || selectedMonth === currentMonth
+      ? 'This month'
+      : currentMonth !== undefined && selectedMonth < currentMonth
+        ? 'Looking back'
+        : 'Coming up';
 
   return (
-    <View className="gap-5 px-5" style={{ paddingTop: insets.top + 12 }}>
+    <View className="gap-5 px-5" style={{ paddingTop: insets.top + 8 }}>
       <View className="gap-1">
-        {/* Apple-style large title row: greeting, a white pill with the baby, the avatar. */}
-        <View className="flex-row items-center gap-3">
-          <AppText
-            variant="display"
-            size="3xl"
-            className="flex-1"
-            numberOfLines={2}
-            adjustsFontSizeToFit
-            minimumFontScale={0.75}
-            accessibilityRole="header"
-          >
-            {greeting}
-          </AppText>
+        <View className="flex-row items-center justify-between gap-3">
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel={`${name}, ${shortAge}${age.corrected ? ', adjusted age' : ''}. Update details.`}
-            onPress={() => router.push('/onboarding')}
-            className="min-h-12 max-w-[40%] justify-center rounded-full bg-surface px-5 py-1.5 active:opacity-70"
-            style={{ boxShadow: shadows.float }}
+            accessibilityLabel={`${formatToday()}. Opens your calendar.`}
+            onPress={() => router.push('/calendar')}
+            hitSlop={6}
+            className="min-h-12 flex-1 justify-center active:opacity-70"
           >
-            <AppText variant="label" numberOfLines={1} className="text-center">
-              {name}
-            </AppText>
-            <AppText
-              variant="caption"
-              size="xs"
-              color="primary"
-              numberOfLines={1}
-              className="text-center"
-            >
-              {shortAge}
-              {age.corrected ? ' · adjusted' : ''}
+            <AppText variant="label" size="sm" color="muted" className="uppercase tracking-wider">
+              {`${formatToday()} ›`}
             </AppText>
           </Pressable>
           <Pressable
             accessibilityRole="button"
-            accessibilityLabel="Settings, reminders and your details"
+            accessibilityLabel={`${name}'s details, reminders and settings`}
             onPress={() => router.push('/settings')}
-            className="h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-primary active:opacity-80"
+            className="h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-primary active:opacity-80"
           >
             <LinearGradient
               colors={[palette.primaryLight, palette.primary]}
@@ -117,43 +139,51 @@ export function AgeHero({
             </AppText>
           </Pressable>
         </View>
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={`${formatToday()}. Opens your calendar.`}
-          onPress={() => router.push('/calendar')}
-          hitSlop={6}
-          className="min-h-11 flex-row items-center gap-2 self-start active:opacity-70"
-        >
-          <SymbolIcon icon="calendar" emoji="📅" size={18} />
-          <AppText variant="body" color="primary" className="font-semibold">
-            {formatToday()}
-          </AppText>
-        </Pressable>
+        <AppText variant="display" size="3xl" accessibilityRole="header">
+          {`${greeting}, mama`}
+        </AppText>
+        <AppText variant="body" color="muted">
+          {ageLine}
+        </AppText>
       </View>
 
-      <MonthBubbles selected={selectedMonth} current={currentMonth} onSelect={onSelectMonth} />
-
       {guide ? (
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={`${guide.title} with ${name}. ${guide.summary} Opens the guide.`}
-          onPress={() => router.push({ pathname: '/guide/[id]', params: { id: guide.id } })}
-          className="overflow-hidden rounded-3xl bg-sky px-5 py-6 active:opacity-90"
-        >
+        <View className="overflow-hidden rounded-3xl bg-sky">
           {/* Soft decorative shapes in the app's earthy accents. */}
           <View className="absolute -left-8 -top-10 h-28 w-28 rounded-full bg-deep opacity-15" />
           <View className="absolute -bottom-12 -right-6 h-40 w-40 rounded-full bg-accent" />
-          <View className="gap-2">
+          <View className="flex-row items-center justify-between gap-2 px-5 pt-4">
             <AppText
               variant="caption"
               size="xs"
               color="on-sky"
-              className="font-bold uppercase tracking-wider"
+              className="flex-1 font-bold uppercase tracking-wider"
             >
-              {guide.ageLabel}
+              {kicker}
             </AppText>
+            <View className="flex-row gap-2">
+              <ArrowButton
+                label={prev ? `Show ${prev.label}` : 'No earlier month'}
+                symbol="chevron.left"
+                fallback="‹"
+                onPress={prev ? () => onSelectMonth(prev.months) : undefined}
+              />
+              <ArrowButton
+                label={next ? `Show ${next.label}` : 'No later month'}
+                symbol="chevron.right"
+                fallback="›"
+                onPress={next ? () => onSelectMonth(next.months) : undefined}
+              />
+            </View>
+          </View>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={`${guide.title} with ${name}. ${guide.summary} Opens the guide.`}
+            onPress={() => router.push({ pathname: '/guide/[id]', params: { id: guide.id } })}
+            className="gap-2 px-5 pb-6 pt-1 active:opacity-90"
+          >
             <AppText variant="title" size="2xl" color="on-sky">
-              {guide.title} with {name}
+              {`${guide.title} with ${name}`}
             </AppText>
             <AppText variant="body" color="on-sky">
               {guide.summary}
@@ -161,8 +191,8 @@ export function AgeHero({
             <AppText variant="label" color="primary" className="pt-1 font-bold">
               Read the guide ›
             </AppText>
-          </View>
-        </Pressable>
+          </Pressable>
+        </View>
       ) : null}
     </View>
   );
