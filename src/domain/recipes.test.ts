@@ -4,6 +4,7 @@ import { allergens } from './profile';
 import {
   babyAllergenWarning,
   findRecipes,
+  babyOnlyRecipes,
   foodsToTryToday,
   fitsCookingTime,
   formatMinutes,
@@ -272,6 +273,17 @@ describe('recipeTimings', () => {
     expect(recipeTimings(make('a', { ...noCook, steps: ['Soak the figs in warm water.'] }))).toBe(
       'Prep 10 min · Soak 30 min · Serves 12',
     );
+  });
+});
+
+describe('babyOnlyRecipes', () => {
+  it('leaves out family meals from themed collections', () => {
+    const categories = [{ id: 'baby-6m' }, { id: 'baby-one-pot', theme: true }];
+    const list = [
+      make('puree', { categories: ['baby-6m'] }),
+      make('dahl', { categories: ['baby-one-pot'] }),
+    ];
+    expect(babyOnlyRecipes(list, categories).map((r) => r.id)).toEqual(['puree']);
   });
 });
 

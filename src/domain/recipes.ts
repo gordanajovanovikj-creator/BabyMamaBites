@@ -200,6 +200,18 @@ export function familyMealFor(
   return { recipe, note: babyRecipe.familyMeal.note };
 }
 
+/**
+ * Recipes made just for the baby: leaves out themed collections such as "One pot for
+ * family and baby", which are family meals with a baby portion.
+ */
+export function babyOnlyRecipes<C extends { id: string; theme?: boolean }>(
+  all: Recipe[],
+  categories: C[],
+): Recipe[] {
+  const themed = new Set(categories.filter((c) => c.theme).map((c) => c.id));
+  return all.filter((r) => !r.categories.some((c) => themed.has(c)));
+}
+
 const ROTATION_EPOCH = '2026-01-01';
 /** First foods are offered from about 6 months (AAP/CDC). */
 export const SOLIDS_START_MONTHS = 6;

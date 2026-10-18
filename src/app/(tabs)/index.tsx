@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { insightCategories } from '@/content/insight-categories';
 import { insights } from '@/content/insights';
 import { monthlyGuides } from '@/content/monthly-guides';
-import { babyRecipes } from '@/content/recipes';
+import { babyRecipeCategories, babyRecipes } from '@/content/recipes';
 import { solidsArticles } from '@/content/solids-articles';
 import { getPlanWeek, planWeeks } from '@/content/solids-plan';
 import { today } from '@/domain/dates';
@@ -11,7 +11,7 @@ import { allergenProgress } from '@/domain/food-log';
 import { pickDailyInsights } from '@/domain/insights';
 import { forMom, libraryItems, pickedForAge, todayRow } from '@/domain/library';
 import { guideForMonths } from '@/domain/monthly-guides';
-import { foodsToTryToday } from '@/domain/recipes';
+import { babyOnlyRecipes, foodsToTryToday } from '@/domain/recipes';
 import { babyAge, babyStage, currentMonthChoice, monthChoices, solidsWeek } from '@/domain/stage';
 import { InsightsRow } from '@/features/insights/insights-row';
 import { useProfile } from '@/features/profile/profile-context';
@@ -54,7 +54,13 @@ export default function TodayScreen() {
   const momIds = new Set(momItems.map((i) => i.id));
   // What used to be "Picked for your baby's age" on Insights now lives in this row.
   const row = todayRow(daily, pickedForAge(library, ageMonths)).filter((i) => !momIds.has(i.id));
-  const foods = foodsToTryToday(babyRecipes, viewMonth ?? ageMonths, household, now);
+  // Baby meals only; the family one-pot meals stay in their own collection.
+  const foods = foodsToTryToday(
+    babyOnlyRecipes(babyRecipes, babyRecipeCategories),
+    viewMonth ?? ageMonths,
+    household,
+    now,
+  );
 
   return (
     <Screen padded={false} edgeToEdgeTop className="gap-7">
