@@ -24,7 +24,7 @@ import { WeekCard } from '@/features/solids/week-card';
 import { WeekStrip } from '@/features/solids/week-strip';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { shadows } from '@/theme/colors';
-import { AppText, Button, Card, Notice, Screen, SearchButton, SegmentedTabs } from '@/ui';
+import { AppText, Button, Card, Notice, Screen, SegmentedTabs } from '@/ui';
 
 const RECENT = 5;
 
@@ -44,7 +44,6 @@ export default function BabyScreen() {
     setSeenAt(params.at);
     if (params.tab && tabIds.includes(params.tab)) setTab(params.tab as Tab);
   }
-  const [searchOpen, setSearchOpen] = useState(false);
   if (!profile) return null;
 
   const favorites = favoriteIds
@@ -72,16 +71,7 @@ export default function BabyScreen() {
       className="gap-6"
       stickyHeader={
         <View className="gap-1 px-5" style={{ paddingTop: insets.top + 16 }}>
-          <View className="flex-row items-center justify-between gap-3">
-            <AppText variant="display">Baby</AppText>
-            {tab === 'recipes' || tab === 'foods' ? (
-              <SearchButton
-                open={searchOpen}
-                onPress={() => setSearchOpen((open) => !open)}
-                subject={tab === 'foods' ? 'foods' : 'baby recipes'}
-              />
-            ) : null}
-          </View>
+          <AppText variant="display">Baby</AppText>
           <AppText variant="caption">
             {current === null
               ? `${name}'s starting-solids plan begins around ${startsOn}.`
@@ -95,10 +85,7 @@ export default function BabyScreen() {
               { id: 'favorites', label: 'Favorites' },
             ]}
             selected={tab}
-            onSelect={(t) => {
-              setTab(t);
-              setSearchOpen(false);
-            }}
+            onSelect={setTab}
           />
         </View>
       }
@@ -110,13 +97,9 @@ export default function BabyScreen() {
           emptyHint={`Tap the heart on a recipe or food ${profile.babyName ?? 'your baby'} loved to save it here.`}
         />
       ) : tab === 'foods' ? (
-        <FoodsView searchOpen={searchOpen} babyName={profile?.babyName ?? null} />
+        <FoodsView babyName={profile.babyName} />
       ) : tab === 'recipes' ? (
-        <BabyRecipesView
-          babyName={profile.babyName}
-          ageMonths={ageMonths}
-          searchOpen={searchOpen}
-        />
+        <BabyRecipesView babyName={profile.babyName} ageMonths={ageMonths} />
       ) : (
         <>
           <View className="gap-2">

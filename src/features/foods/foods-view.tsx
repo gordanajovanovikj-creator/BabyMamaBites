@@ -1,11 +1,21 @@
 import { useState } from 'react';
-import { ScrollView, useWindowDimensions, View } from 'react-native';
+import { useWindowDimensions, View } from 'react-native';
 
-import { foodCategories, foodCategoryLabels, foods, type FoodCategory } from '@/content/foods';
+import {
+  foodCategories,
+  foodCategoryLabels,
+  foods,
+  type Food,
+  type FoodCategory,
+} from '@/content/foods';
+import { applyFilters, filtersChangeList, foodFacts, NO_FILTERS } from '@/domain/filters';
 import { filterFoods, foodProgress, foodTriedOn } from '@/domain/foods';
+import { ALL_SORTS, allergenOptions } from '@/features/filters/filter-options';
+import { NoMatches } from '@/features/filters/no-matches';
+import { SearchFilterBar } from '@/features/filters/search-filter-bar';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { useFoodLog } from '@/features/solids/food-log-context';
-import { AppText, Chip, SearchField } from '@/ui';
+import { AppText } from '@/ui';
 
 import { FoodCard } from './food-card';
 import { FoodProgressCard } from './food-progress-card';
@@ -22,79 +32,72 @@ const categoryEmoji: Record<FoodCategory, string> = {
 };
 
 /** First foods A to Z, with how to serve each one safely by age. */
-export function FoodsView({
-  searchOpen,
-  babyName,
-}: {
-  searchOpen: boolean;
-  babyName: string | null;
-}) {
+export function FoodsView({ babyName }: { babyName: string | null }) {
   const { entries } = useFoodLog();
   const { width } = useWindowDimensions();
   const cell = Math.floor((Math.min(width, 640) - SIDE * 2 - GAP) / 2);
-  const [category, setCategory] = useState<FoodCategory | null>(null);
   const [query, setQuery] = useState('');
-  // Closing the box clears the search.
-  const [wasOpen, setWasOpen] = useState(searchOpen);
-  if (wasOpen !== searchOpen) {
-    setWasOpen(searchOpen);
-    if (!searchOpen) setQuery('');
-  }
-  const shown = filterFoods(foods, searchOpen ? query : '', category);
+  const [filters, setFilters] = useState(NO_FILTERS);
+  const filtering = query.trim().length > 0 || filtersChangeList(filters);
+  const isTried = (f: Food) => foodTriedOn(entries, f) !== null;
+  // A to Z is the recommended order for foods.
+  const shown = applyFilters(filterFoods(foods, query, null), filters, foodFacts(foods, isTried));
   const progress = foodProgress(entries, foods);
+  const oneType =
+    filters.categories.length === 1 ? (filters.categories[0] as FoodCategory) : undefined;
+  const heading = oneType
+    ? foodCategoryLabels[oneType]
+    : filtering
+      ? `${shown.length} ${shown.length === 1 ? 'food' : 'foods'} found`
+      : 'First foods';
 
   return (
     <>
-      {searchOpen ? (
-        <View className="px-5">
-          <SearchField
-            label="Search foods"
-            placeholder="Search foods"
-            value={query}
-            onChangeText={setQuery}
-            autoFocus
-          />
-        </View>
-      ) : null}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerClassName="gap-2 px-5 pb-3 pt-3"
-      >
-        <Chip
-          borderless
-          label="All"
-          selected={category === null}
-          onPress={() => setCategory(null)}
-        />
-        {foodCategories.map((c) => (
-          <Chip
-            borderless
-            key={c}
-            label={`${categoryEmoji[c]} ${foodCategoryLabels[c]}`}
-            selected={category === c}
-            onPress={() => setCategory(c)}
-          />
-        ))}
-      </ScrollView>
+      <SearchFilterBar
+        label="Search foods"
+        placeholder="Food name"
+        query={query}
+        onQueryChange={setQuery}
+        filters={filters}
+        onFiltersChange={setFilters}
+        config={{
+          sorts: ALL_SORTS,
+          categories: {
+            title: 'Food type',
+            options: foodCategories.map((c) => ({
+              id: c,
+              label: `${categoryEmoji[c]} ${foodCategoryLabels[c]}`,
+            })),
+          },
+          allergens: allergenOptions,
+          tracked: true,
+          flags: [{ id: 'iron-rich', label: 'Iron-rich' }],
+        }}
+      />
       <View className="gap-4 px-5">
-        {!searchOpen && !category ? (
+        {!filtering ? (
           <FoodProgressCard progress={progress} name={babyName ?? 'Your baby'} />
         ) : null}
         <View className="gap-1">
           <AppText variant="heading" size="2xl">
-            {category ? foodCategoryLabels[category] : 'First foods'}
+            {heading}
           </AppText>
           <AppText variant="caption">How to serve each food by age</AppText>
         </View>
         {shown.length ? (
           <View className="flex-row flex-wrap" style={{ gap: GAP }}>
             {shown.map((f) => (
-              <FoodCard key={f.id} food={f} width={cell} tried={foodTriedOn(entries, f) !== null} />
+              <FoodCard key={f.id} food={f} width={cell} tried={isTried(f)} />
             ))}
           </View>
         ) : (
-          <AppText color="muted">No foods match that search yet.</AppText>
+          <NoMatches
+            query={query}
+            onReset={() => {
+              setQuery('');
+              setFilters(NO_FILTERS);
+            }}
+          />
         )}
         <HealthDisclaimerNote draftReviewer="pediatric dietitian" />
       </View>

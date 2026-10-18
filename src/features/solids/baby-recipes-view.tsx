@@ -2,69 +2,72 @@ import { useState } from 'react';
 import { ScrollView, View } from 'react-native';
 
 import { babyRecipeCategories, babyRecipes } from '@/content/recipes';
+import { applyFilters, filtersChangeList, NO_FILTERS, recipeFacts } from '@/domain/filters';
 import { babyCollectionsFor, findRecipes, recipeSections } from '@/domain/recipes';
+import { searchRecipes } from '@/domain/search';
 import { useFavorites } from '@/features/favorites/favorites-context';
+import {
+  ALL_SORTS,
+  allergenOptions,
+  babyRecipeAges,
+  recipeTagOptions,
+} from '@/features/filters/filter-options';
+import { NoMatches } from '@/features/filters/no-matches';
+import { SearchFilterBar } from '@/features/filters/search-filter-bar';
 import { useHousehold } from '@/features/profile/use-household';
-import { CategoryChips } from '@/features/recipes/category-chips';
 import { HouseholdNote } from '@/features/recipes/household-note';
 import { RecipeGrid } from '@/features/recipes/recipe-grid';
-import { RecipeSearchResults } from '@/features/recipes/recipe-search-results';
 import { RecipeSection } from '@/features/recipes/recipe-section';
 import { RECIPE_TILE_WIDTH, RecipeTile } from '@/features/recipes/recipe-tile';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
-import { AppText, Card, Notice, SearchField, SymbolIcon } from '@/ui';
+import { AppText, Card, Notice, SymbolIcon } from '@/ui';
 
 export type BabyRecipesViewProps = {
   babyName: string | null;
   /** Age used for feeding (corrected where it applies). */
   ageMonths: number;
-  /** Whether the search box is showing (toggled from the page header). */
-  searchOpen: boolean;
 };
 
 /** Baby and toddler recipes grouped by age, the baby's current group first (Mom-tab style). */
-export function BabyRecipesView({ babyName, ageMonths, searchOpen }: BabyRecipesViewProps) {
+export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
   const household = useHousehold();
   const { ids: favoriteIds } = useFavorites();
   const makeAgain = favoriteIds
     .map((id) => babyRecipes.find((r) => r.id === id))
     .filter((r) => r !== undefined);
   const { ordered, current } = babyCollectionsFor(babyRecipeCategories, ageMonths);
-  const byAge = [...babyRecipeCategories].sort((a, b) => (a.fromMonths ?? 0) - (b.fromMonths ?? 0));
   const sections = recipeSections(ordered, babyRecipes, household);
   const hidden = findRecipes(babyRecipes, household).hiddenForSafety;
-  const [categoryId, setCategoryId] = useState<string | null>(null);
   const [query, setQuery] = useState('');
-  const searching = searchOpen && query.trim().length > 0;
-  // Closing the box clears the search.
-  const [wasOpen, setWasOpen] = useState(searchOpen);
-  if (wasOpen !== searchOpen) {
-    setWasOpen(searchOpen);
-    if (!searchOpen) setQuery('');
-  }
-  // Filter chips run youngest to oldest; only age groups with recipes for this household.
-  const chips = byAge.filter((c) => sections.some((s) => s.category.id === c.id));
-  const selected = chips.find((c) => c.id === categoryId);
-  const selectedRecipes = selected
-    ? findRecipes(babyRecipes, household, { categoryId: selected.id }).recipes
+  const [filters, setFilters] = useState(NO_FILTERS);
+  const searching = query.trim().length > 0;
+  const filtering = searching || filtersChangeList(filters);
+  const safe = findRecipes(babyRecipes, household).recipes;
+  const shown = filtering
+    ? applyFilters(
+        searching ? searchRecipes(safe, query) : safe,
+        filters,
+        recipeFacts(babyRecipes),
+        babyRecipeAges,
+      )
     : [];
 
   return (
     <>
-      {searchOpen ? (
-        <View className="px-5">
-          <SearchField
-            label="Search baby recipes"
-            placeholder="Search recipes or ingredients"
-            value={query}
-            onChangeText={setQuery}
-            autoFocus
-          />
-        </View>
-      ) : null}
-      {!searching ? (
-        <CategoryChips categories={chips} selectedId={categoryId} onSelect={setCategoryId} />
-      ) : null}
+      <SearchFilterBar
+        label="Search baby recipes"
+        placeholder="Search recipes"
+        query={query}
+        onQueryChange={setQuery}
+        filters={filters}
+        onFiltersChange={setFilters}
+        config={{
+          sorts: ALL_SORTS,
+          ages: babyRecipeAges,
+          allergens: allergenOptions,
+          flags: recipeTagOptions,
+        }}
+      />
       <View className="gap-3 px-5">
         {current === null ? (
           <Notice
@@ -74,14 +77,21 @@ export function BabyRecipesView({ babyName, ageMonths, searchOpen }: BabyRecipes
         ) : null}
         <HouseholdNote household={household} hidden={hidden} />
       </View>
-      {searching ? (
-        <RecipeSearchResults recipes={findRecipes(babyRecipes, household).recipes} query={query} />
-      ) : selected ? (
-        <RecipeGrid
-          title={selected.label}
-          subtitle={`From ${selected.fromMonths ?? 0} months · ${selected.description}`}
-          recipes={selectedRecipes}
-        />
+      {filtering ? (
+        shown.length ? (
+          <RecipeGrid
+            title={`${shown.length} ${shown.length === 1 ? 'recipe' : 'recipes'} found`}
+            recipes={shown}
+          />
+        ) : (
+          <NoMatches
+            query={query}
+            onReset={() => {
+              setQuery('');
+              setFilters(NO_FILTERS);
+            }}
+          />
+        )
       ) : (
         <>
           {sections.map((s) => {
