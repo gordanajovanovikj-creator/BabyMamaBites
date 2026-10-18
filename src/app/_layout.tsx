@@ -52,7 +52,8 @@ function RootStack() {
         <Stack.Screen name="recipe/[id]" />
         <Stack.Screen
           name="recipe/cook/[id]"
-          options={{ presentation: 'fullScreenModal', headerShown: true, title: 'Cook mode' }}
+          // Its own ✕ button closes it: a full-screen modal has no back gesture or header back.
+          options={{ presentation: 'fullScreenModal' }}
         />
         <Stack.Screen name="food/[id]" />
         <Stack.Screen name="category/[id]" />

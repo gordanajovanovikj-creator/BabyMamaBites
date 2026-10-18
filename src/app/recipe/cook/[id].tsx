@@ -2,19 +2,22 @@ import { useKeepAwake } from 'expo-keep-awake';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { getRecipe } from '@/content/recipes';
-import { AppText, Button, haptics, Screen } from '@/ui';
+import { AppText, Button, haptics, RoundIconButton, Screen } from '@/ui';
 
 /**
  * Cook mode: one step at a time in large text, with the screen kept awake so it
  * doesn't lock while hands are busy. Big buttons sit at the bottom, in thumb reach.
  */
 export default function CookModeScreen() {
-  useKeepAwake();
+  // If the wake lock never turned on (Low Power Mode, browsers), leaving must not throw.
+  useKeepAwake(undefined, { suppressDeactivateWarnings: true });
   const { id } = useLocalSearchParams<{ id: string }>();
   const recipe = getRecipe(id);
   const [step, setStep] = useState(0);
+  const insets = useSafeAreaInsets();
 
   if (!recipe) {
     return (
@@ -55,13 +58,21 @@ export default function CookModeScreen() {
         </>
       }
     >
-      <View className="gap-1">
-        <AppText variant="caption" size="sm" className="font-bold uppercase tracking-wider">
-          {recipe.title}
-        </AppText>
-        <AppText variant="label" color="primary" accessibilityRole="header">
-          {`Step ${step + 1} of ${total}`}
-        </AppText>
+      <View className="flex-row items-start gap-3" style={{ paddingTop: insets.top }}>
+        <View className="flex-1 gap-1">
+          <AppText variant="caption" size="sm" className="font-bold uppercase tracking-wider">
+            {recipe.title}
+          </AppText>
+          <AppText variant="label" color="primary" accessibilityRole="header">
+            {`Step ${step + 1} of ${total}`}
+          </AppText>
+        </View>
+        <RoundIconButton
+          symbol="xmark"
+          fallback="✕"
+          accessibilityLabel="Close cook mode"
+          onPress={() => router.back()}
+        />
       </View>
 
       <View
