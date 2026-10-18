@@ -16,9 +16,9 @@ import { babyAge, babyStage, currentMonthChoice, monthChoices, solidsWeek } from
 import { InsightsRow } from '@/features/insights/insights-row';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
+import { AllergenTracker } from '@/features/solids/allergen-tracker';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { AgeHero } from '@/features/today/age-hero';
-import { AllergensIntroduced } from '@/features/today/allergens-introduced';
 import { FoodsToTry } from '@/features/today/foods-to-try';
 import { HelpCard } from '@/features/today/help-card';
 import { ThisWeekCard } from '@/features/today/this-week-card';
@@ -69,7 +69,7 @@ export default function TodayScreen() {
       <ThisWeekCard now={now} />
       {/* Allergens matter once solids start (or once any is logged). */}
       {rawWeek !== null || entries.some((e) => e.allergen) ? (
-        <AllergensIntroduced progress={allergenProgress(entries)} />
+        <AllergenTracker progress={allergenProgress(entries)} linkToPlan padded compact />
       ) : null}
       <FoodsToTry
         babyName={profile.babyName}
