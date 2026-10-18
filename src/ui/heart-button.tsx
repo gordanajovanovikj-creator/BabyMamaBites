@@ -13,6 +13,7 @@ import { shadows } from '@/theme/colors';
 import { usePalette } from '@/theme/use-palette';
 
 import { cn } from './cn';
+import { useFlatButtons } from './flat-buttons';
 import { haptics } from './haptics';
 
 export type HeartButtonProps = {
@@ -26,6 +27,7 @@ export type HeartButtonProps = {
 /** Round 44pt save/unsave button. Saving gives a soft tap and a little "pop". */
 export function HeartButton({ saved, onPress, label, className }: HeartButtonProps) {
   const palette = usePalette();
+  const flat = useFlatButtons();
   const reduceMotion = useReducedMotion();
   const scale = useSharedValue(1);
   const heartStyle = useAnimatedStyle(() => ({ transform: [{ scale: scale.get() }] }));
@@ -56,7 +58,7 @@ export function HeartButton({ saved, onPress, label, className }: HeartButtonPro
         'h-12 w-12 items-center justify-center rounded-full bg-surface active:opacity-70',
         className,
       )}
-      style={{ boxShadow: shadows.floatTight }}
+      style={flat ? undefined : { boxShadow: shadows.floatTight }}
     >
       <Animated.View style={heartStyle}>
         <SymbolView

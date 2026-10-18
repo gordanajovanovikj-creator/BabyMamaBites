@@ -5,6 +5,7 @@ import { shadows } from '@/theme/colors';
 import { usePalette } from '@/theme/use-palette';
 
 import { cn } from './cn';
+import { useFlatButtons } from './flat-buttons';
 
 export type RoundIconButtonProps = {
   symbol: SymbolViewProps['name'];
@@ -27,6 +28,7 @@ export function RoundIconButton({
   className,
 }: RoundIconButtonProps) {
   const palette = usePalette();
+  const flat = useFlatButtons();
   return (
     <Pressable
       accessibilityRole="button"
@@ -37,7 +39,7 @@ export function RoundIconButton({
         'h-12 w-12 items-center justify-center rounded-full bg-surface active:opacity-70',
         className,
       )}
-      style={{ boxShadow: shadows.floatTight }}
+      style={flat ? undefined : { boxShadow: shadows.floatTight }}
     >
       <SymbolView
         name={symbol}
