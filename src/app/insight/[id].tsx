@@ -109,6 +109,7 @@ export default function InsightScreen() {
       {/* The disclaimer always closes the page. */}
       <View className="px-5 pt-6">
         <HealthDisclaimerNote
+          short={notices.bottom.length > 0}
           draftReviewer={insight.reviewStatus === 'placeholder' ? 'health professional' : undefined}
         />
       </View>

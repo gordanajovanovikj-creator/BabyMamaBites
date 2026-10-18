@@ -136,6 +136,7 @@ export default function ArticleScreen() {
       {/* The disclaimer always closes the page. */}
       <View className="px-5 pt-6">
         <HealthDisclaimerNote
+          short={notices.bottom.length > 0}
           draftReviewer={article.reviewStatus === 'placeholder' ? article.reviewer : undefined}
         />
       </View>

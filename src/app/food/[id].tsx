@@ -237,7 +237,7 @@ export default function FoodScreen() {
             ? `Draft guide, awaiting review by a ${food.reviewer}.`
             : `Reviewed by a ${food.reviewer}.`}
         </AppText>
-        <HealthDisclaimerNote />
+        <HealthDisclaimerNote short />
       </View>
     </Screen>
   );

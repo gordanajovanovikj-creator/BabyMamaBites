@@ -16,8 +16,6 @@ export type NoticePlacement = { top: SafetyNoticeId[]; bottom: SafetyNoticeId[] 
 
 /** Shown before the article body: things a worried parent must see first. */
 const topById: Record<string, SafetyNoticeId[]> = {
-  allergens: ['allergy-safety'],
-  'allergic-reaction-signs': ['allergy-safety'],
   'gagging-vs-choking': ['choking-emergency'],
   'solids-choking': ['choking-emergency'],
   'cows-milk': ['milk-juice'],

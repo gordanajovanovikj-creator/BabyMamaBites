@@ -234,7 +234,7 @@ export default function RecipeScreen() {
           This recipe is for general information only and isn&apos;t health or nutrition advice.
           Nutrition information will be added once it has been calculated and reviewed.
         </AppText>
-        <HealthDisclaimerNote />
+        <HealthDisclaimerNote short />
       </View>
     </Screen>
   );

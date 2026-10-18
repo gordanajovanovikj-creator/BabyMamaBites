@@ -4,13 +4,13 @@ import { solidsArticles } from '@/content/solids-articles';
 import { noticesFor } from './safety-notices';
 
 describe('noticesFor', () => {
-  it('puts the emergency and allergy notices at the top of choking and allergy articles', () => {
+  it('puts the emergency notice first on choking articles, the allergy one after allergy articles', () => {
     expect(noticesFor({ id: 'gagging-vs-choking', category: 'safety' }).top).toEqual([
       'choking-emergency',
     ]);
     const allergy = noticesFor({ id: 'allergens', category: 'starting-solids' });
-    expect(allergy.top).toEqual(['allergy-safety']);
-    expect(allergy.bottom).toContain('allergy-safety');
+    expect(allergy.top).toEqual([]);
+    expect(allergy.bottom).toEqual(['allergy-safety']);
   });
 
   it("gives every mom article and tip the maternal health notice", () => {
