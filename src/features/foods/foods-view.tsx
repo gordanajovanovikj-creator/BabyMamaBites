@@ -13,8 +13,6 @@ import { filterFoods, foodProgress, foodTriedOn } from '@/domain/foods';
 import { ALL_SORTS, allergenOptions } from '@/features/filters/filter-options';
 import { NoMatches } from '@/features/filters/no-matches';
 import { SearchFilterBar } from '@/features/filters/search-filter-bar';
-import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
-import { SafetyNotice } from '@/features/shared/safety-notice';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { AppText } from '@/ui';
 
@@ -100,8 +98,6 @@ export function FoodsView({ babyName }: { babyName: string | null }) {
             }}
           />
         )}
-        <SafetyNotice id="food-safety" />
-        <HealthDisclaimerNote draftReviewer="pediatric dietitian" />
       </View>
     </>
   );

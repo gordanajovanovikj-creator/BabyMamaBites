@@ -19,7 +19,6 @@ import { hasHouseholdNote, HouseholdNote } from '@/features/recipes/household-no
 import { RecipeGrid } from '@/features/recipes/recipe-grid';
 import { RecipeSection } from '@/features/recipes/recipe-section';
 import { RECIPE_TILE_WIDTH, RecipeTile } from '@/features/recipes/recipe-tile';
-import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { SafetyNotice } from '@/features/shared/safety-notice';
 import { AppText, Card, Notice, SymbolIcon } from '@/ui';
 
@@ -150,9 +149,8 @@ export function BabyRecipesView({ babyName, ageMonths }: BabyRecipesViewProps) {
         </>
       )}
 
-      <View className="gap-4 px-5">
+      <View className="px-5">
         <SafetyNotice id="age-guidelines" />
-        <HealthDisclaimerNote draftReviewer="pediatric dietitian" />
       </View>
     </>
   );

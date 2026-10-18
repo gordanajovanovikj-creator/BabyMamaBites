@@ -12,7 +12,6 @@ import { SearchFilterBar } from '@/features/filters/search-filter-bar';
 import { LibraryCarousel } from '@/features/library/library-carousel';
 import { LibraryTile } from '@/features/library/library-tile';
 import { useLibrary } from '@/features/library/use-library';
-import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { AppText, Screen } from '@/ui';
 
 const GAP = 12;
@@ -118,10 +117,6 @@ export default function InsightsScreen() {
           ))}
         </>
       )}
-
-      <View className="px-5">
-        <HealthDisclaimerNote draftReviewer="health professional" />
-      </View>
     </Screen>
   );
 }
