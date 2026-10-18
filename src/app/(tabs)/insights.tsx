@@ -4,7 +4,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { insightCategories } from '@/content/insight-categories';
 import { applyFilters, filtersChangeList, libraryFacts, NO_FILTERS } from '@/domain/filters';
-import { librarySections, pickedForAge } from '@/domain/library';
+import { librarySections } from '@/domain/library';
 import { searchLibrary } from '@/domain/search';
 import { ALL_SORTS, libraryAges } from '@/features/filters/filter-options';
 import { NoMatches } from '@/features/filters/no-matches';
@@ -43,7 +43,6 @@ export default function InsightsScreen() {
     : [];
 
   const sections = librarySections(insightCategories, items, ageMonths);
-  const picked = pickedForAge(items, ageMonths);
   const cell = Math.floor((Math.min(width, 640) - SIDE * 2 - GAP) / 2);
   const name = babyName ?? 'your baby';
 
@@ -107,14 +106,6 @@ export default function InsightsScreen() {
         )
       ) : (
         <>
-          {picked.length ? (
-            <LibraryCarousel
-              title={`Picked for ${name}'s age`}
-              subtitle="What matters most right now"
-              items={picked}
-              ageMonths={ageMonths}
-            />
-          ) : null}
           {sections.map((s) => (
             <LibraryCarousel
               key={s.category.id}

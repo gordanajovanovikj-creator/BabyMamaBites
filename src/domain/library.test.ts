@@ -104,34 +104,16 @@ describe('todayRow', () => {
       reviewStatus: 'placeholder',
       reviewer: 'x',
     }) as unknown as Parameters<typeof todayRow>[0][number];
-  const article = (id: string, fromMonths: number, toMonths: number) =>
-    ({
-      id,
-      category: 'starting-solids',
-      title: id,
-      summary: 's',
-      fromMonths,
-      toMonths,
-      icon: 'i',
-      emoji: 'e',
-      illustration: 'bowl',
-      tone: 'muted',
-      readMinutes: 3,
-      sections: [],
-      sources: [],
-      reviewStatus: 'placeholder',
-      reviewer: 'x',
-    }) as unknown as Parameters<typeof todayRow>[1][number];
-
-  it('puts two tips first, then age-ordered articles, then the other tips', () => {
-    const row = todayRow(
-      [tip('t1'), tip('t2'), tip('t3')],
-      [article('later', 9, 12), article('now', 5, 8), article('soon', 7, 9)],
-      6,
-      2,
-    );
-    expect(row.map((i) => i.id)).toEqual(['t1', 't2', 'now', 'soon', 't3']);
+  it('puts two tips first, then the picked items, then the other tips', () => {
+    const picked = libraryItems(solidsArticles, [], []).slice(0, 2);
+    const row = todayRow([tip('t1'), tip('t2'), tip('t3')], picked);
+    expect(row.map((i) => i.id)).toEqual(['t1', 't2', picked[0].id, picked[1].id, 't3']);
     expect(row[2].source).toBe('article');
+  });
+
+  it('shows a daily tip only once', () => {
+    const row = todayRow([tip('t1')], libraryItems([], [tip('t1')], []));
+    expect(row.map((i) => i.id)).toEqual(['t1']);
   });
 });
 

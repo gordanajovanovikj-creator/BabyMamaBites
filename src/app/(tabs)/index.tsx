@@ -8,7 +8,7 @@ import { solidsArticles } from '@/content/solids-articles';
 import { getPlanWeek, planWeeks } from '@/content/solids-plan';
 import { today } from '@/domain/dates';
 import { pickDailyInsights } from '@/domain/insights';
-import { forMom, libraryItems, todayRow } from '@/domain/library';
+import { forMom, libraryItems, pickedForAge, todayRow } from '@/domain/library';
 import { guideForMonths } from '@/domain/monthly-guides';
 import { foodsToTryToday } from '@/domain/recipes';
 import { babyAge, babyStage, currentMonthChoice, monthChoices, solidsWeek } from '@/domain/stage';
@@ -43,13 +43,12 @@ export default function TodayScreen() {
   const browsing = viewMonth !== undefined && viewMonth !== currentMonth;
   // Under 6 months nothing is picked yet, so the guide and foods follow the baby's real age.
   const guide = guideForMonths(monthlyGuides, viewMonth ?? ageMonths);
-  const momItems = forMom(
-    libraryItems(solidsArticles, insights, profile.allergens),
-    insightCategories,
-  );
+  const library = libraryItems(solidsArticles, insights, profile.allergens);
+  const momItems = forMom(library, insightCategories);
   // Home's daily row stays about the baby, so mom-focused items are left out.
   const momIds = new Set(momItems.map((i) => i.id));
-  const row = todayRow(daily, solidsArticles, ageMonths).filter((i) => !momIds.has(i.id));
+  // What used to be "Picked for your baby's age" on Insights now lives in this row.
+  const row = todayRow(daily, pickedForAge(library, ageMonths)).filter((i) => !momIds.has(i.id));
   const foods = foodsToTryToday(babyRecipes, viewMonth ?? ageMonths, household, now);
 
   return (

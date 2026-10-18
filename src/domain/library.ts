@@ -112,17 +112,13 @@ export function pickedForAge(items: LibraryItem[], ageMonths: number, count = 8)
 }
 
 /**
- * The "My daily insights" row on Today: the first two daily insights, then articles
- * for the baby's age (relevant now, then coming up), then the rest of the daily insights.
+ * The "My daily insights" row on Today: the first two daily insights, then what's picked
+ * for the baby's age (see `pickedForAge`), then the rest of the daily insights.
  */
-export function todayRow(
-  daily: Insight[],
-  articles: Article[],
-  ageMonths: number,
-  articleCount = 4,
-): LibraryItem[] {
+export function todayRow(daily: Insight[], picked: LibraryItem[]): LibraryItem[] {
   const tips = daily.map(insightItem);
-  const reads = articlesForAge(articles, ageMonths).slice(0, articleCount).map(articleItem);
+  const tipIds = new Set(tips.map((t) => t.id));
+  const reads = picked.filter((i) => !tipIds.has(i.id));
   return [...tips.slice(0, 2), ...reads, ...tips.slice(2)];
 }
 
