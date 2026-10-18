@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from 'react';
+import { createContext, useContext, useState, type ReactNode } from 'react';
 import {
   ScrollView,
   useWindowDimensions,
@@ -36,6 +36,18 @@ export type ScreenProps = {
   className?: string;
 };
 
+/** How far down the page (pt) the overlay counts as "past the hero picture". */
+const PAST_HERO_AT = 260;
+const PastHeroContext = createContext(false);
+
+/**
+ * True once the page has scrolled past its hero picture. Read it inside a Screen
+ * `overlay` (e.g. to show the title in a solid top bar).
+ */
+export function useScrolledPastHero(): boolean {
+  return useContext(PastHeroContext);
+}
+
 /** Standard screen container: warm background, comfortable padding, safe-area aware. */
 export function Screen({
   children,
@@ -52,9 +64,15 @@ export function Screen({
   const stackFooter = useWindowDimensions().fontScale >= 1.3;
   // A hairline under the pinned header once content slides beneath it.
   const [scrolled, setScrolled] = useState(false);
+  // For an overlay over a hero picture: whether the picture has scrolled away.
+  const [pastHero, setPastHero] = useState(false);
+  const tracksScroll = !!stickyHeader || !!overlay;
   const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    const next = e.nativeEvent.contentOffset.y > 4;
+    const y = e.nativeEvent.contentOffset.y;
+    const next = y > 4;
     if (next !== scrolled) setScrolled(next);
+    const past = y > PAST_HERO_AT;
+    if (past !== pastHero) setPastHero(past);
   };
   if (!scroll) {
     return <View className={cn('flex-1 bg-canvas', padded && 'px-5', className)}>{children}</View>;
@@ -65,8 +83,8 @@ export function Screen({
       contentInsetAdjustmentBehavior={edgeToEdgeTop ? 'never' : 'automatic'}
       contentContainerClassName={cn('gap-4 pb-12', padded && 'px-5 pt-4', className)}
       stickyHeaderIndices={stickyHeader ? [0] : undefined}
-      onScroll={stickyHeader ? onScroll : undefined}
-      scrollEventThrottle={stickyHeader ? 16 : undefined}
+      onScroll={tracksScroll ? onScroll : undefined}
+      scrollEventThrottle={tracksScroll ? 16 : undefined}
     >
       {stickyHeader ? (
         <View className={cn('bg-canvas pb-3', scrolled && 'border-b border-border')}>
@@ -93,7 +111,7 @@ export function Screen({
       ) : null}
       {overlay ? (
         <View pointerEvents="box-none" style={{ position: 'absolute', top: 0, left: 0, right: 0 }}>
-          {overlay}
+          <PastHeroContext.Provider value={pastHero}>{overlay}</PastHeroContext.Provider>
         </View>
       ) : null}
     </View>

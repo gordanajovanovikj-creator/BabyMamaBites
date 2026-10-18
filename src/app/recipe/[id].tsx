@@ -80,6 +80,7 @@ export default function RecipeScreen() {
       }
       overlay={
         <HeroTopBar
+          title={recipe.title}
           right={
             <HeartButton
               saved={isFavorite(recipe.id)}

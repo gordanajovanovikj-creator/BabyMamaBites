@@ -4,7 +4,15 @@ import type { ReactNode } from 'react';
 import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { cn, RoundIconButton, SymbolIcon, toneBackground, type CardTone } from '@/ui';
+import {
+  AppText,
+  cn,
+  RoundIconButton,
+  SymbolIcon,
+  toneBackground,
+  useScrolledPastHero,
+  type CardTone,
+} from '@/ui';
 
 export type PictureHeroProps = {
   tone: CardTone;
@@ -45,13 +53,21 @@ export function PictureHero({ tone, icon, emoji, height, art, photo }: PictureHe
   );
 }
 
-/** Back button (and an optional right-hand button) that float over a hero and don't scroll. */
-export function HeroTopBar({ right }: { right?: ReactNode }) {
+/**
+ * Back button (and an optional right-hand button) that float over a hero and don't
+ * scroll. Once the picture scrolls away, the bar turns solid white and shows `title`,
+ * so you always know which page you're on.
+ */
+export function HeroTopBar({ right, title }: { right?: ReactNode; title?: string }) {
   const insets = useSafeAreaInsets();
+  const solid = useScrolledPastHero() && !!title;
   return (
     <View
       pointerEvents="box-none"
-      className="flex-row justify-between px-5"
+      className={cn(
+        'flex-row items-center justify-between gap-3 px-5 pb-2',
+        solid && 'border-b border-border bg-canvas',
+      )}
       style={{ paddingTop: insets.top + 8 }}
     >
       <RoundIconButton
@@ -60,7 +76,18 @@ export function HeroTopBar({ right }: { right?: ReactNode }) {
         accessibilityLabel="Back"
         onPress={() => router.back()}
       />
-      {right ?? null}
+      {solid ? (
+        <AppText
+          variant="label"
+          size="lg"
+          numberOfLines={1}
+          className="flex-1 text-center font-bold"
+          accessibilityRole="header"
+        >
+          {title}
+        </AppText>
+      ) : null}
+      {right ?? (solid ? <View className="w-12" /> : null)}
     </View>
   );
 }

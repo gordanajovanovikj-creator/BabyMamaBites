@@ -36,7 +36,12 @@ export default function CategoryScreen() {
   });
 
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-0" overlay={<HeroTopBar />}>
+    <Screen
+      padded={false}
+      edgeToEdgeTop
+      className="gap-0"
+      overlay={<HeroTopBar title={category.label} />}
+    >
       <PictureHero
         tone={category.tone}
         icon={category.icon}

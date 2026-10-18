@@ -30,7 +30,12 @@ export default function ArticleScreen() {
   }
 
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-0" overlay={<HeroTopBar />}>
+    <Screen
+      padded={false}
+      edgeToEdgeTop
+      className="gap-0"
+      overlay={<HeroTopBar title={article.title} />}
+    >
       <PictureHero
         tone={article.tone}
         icon={article.icon}

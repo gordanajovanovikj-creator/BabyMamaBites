@@ -11,7 +11,7 @@ export { Illustration } from './illustrations/illustration';
 export { Notice } from './notice';
 export { OptionCard } from './option-card';
 export { RoundIconButton } from './round-icon-button';
-export { Screen } from './screen';
+export { Screen, useScrolledPastHero } from './screen';
 export { SearchButton } from './search-button';
 export { SearchField } from './search-field';
 export { SegmentedTabs } from './segmented-tabs';

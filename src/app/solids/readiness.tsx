@@ -12,7 +12,12 @@ import { AppText, Notice, Screen } from '@/ui';
 /** "Is your baby ready to start solids?": the readiness signs, opened from the Plan tab. */
 export default function ReadinessScreen() {
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-0" overlay={<HeroTopBar />}>
+    <Screen
+      padded={false}
+      edgeToEdgeTop
+      className="gap-0"
+      overlay={<HeroTopBar title="Is your baby ready to start solids?" />}
+    >
       <PictureHero
         tone="accent"
         icon="figure.seated.side"

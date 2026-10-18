@@ -94,6 +94,7 @@ export default function FoodScreen() {
       }
       overlay={
         <HeroTopBar
+          title={food.name}
           right={
             <HeartButton
               saved={isFavorite(foodFavoriteId(food.id))}

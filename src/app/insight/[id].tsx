@@ -58,7 +58,12 @@ export default function InsightScreen() {
   }
 
   return (
-    <Screen padded={false} edgeToEdgeTop className="gap-0" overlay={<HeroTopBar />}>
+    <Screen
+      padded={false}
+      edgeToEdgeTop
+      className="gap-0"
+      overlay={<HeroTopBar title={insight.title} />}
+    >
       <PictureHero
         tone={insight.tone}
         icon={insight.icon}

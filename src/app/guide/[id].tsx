@@ -28,7 +28,13 @@ export default function GuideScreen() {
 
   return (
     // keyed so switching months starts at the top
-    <Screen key={guide.id} padded={false} edgeToEdgeTop className="gap-0" overlay={<HeroTopBar />}>
+    <Screen
+      key={guide.id}
+      padded={false}
+      edgeToEdgeTop
+      className="gap-0"
+      overlay={<HeroTopBar title={guide.title} />}
+    >
       <PictureHero tone="muted" icon="calendar" emoji="📅" photo={guidePhoto(guide.id)} />
 
       <DetailHeader
