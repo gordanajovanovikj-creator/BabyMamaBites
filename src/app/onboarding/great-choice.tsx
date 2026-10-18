@@ -35,14 +35,14 @@ const content: Record<SolidsApproach, Choice> = {
   },
   both: {
     photo: onboardingPhotos.family,
-    label: 'Mom and dad in the kitchen watching their baby eat in a high chair',
+    label: 'A mom in the kitchen feeding her baby from a spoon',
     position: 'center',
     title: "We've got you, mama",
     subtitle: "We're here to guide you every step of the way.",
   },
   'not-sure': {
     photo: onboardingPhotos.family,
-    label: 'Mom and dad in the kitchen watching their baby eat in a high chair',
+    label: 'A mom in the kitchen feeding her baby from a spoon',
     position: 'center',
     title: "We've got you, mama",
     subtitle: "We're here to guide you every step of the way.",
