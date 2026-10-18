@@ -1,7 +1,7 @@
 import { router } from 'expo-router';
 import { Linking, View } from 'react-native';
 
-import { chokingDisclaimer } from '@/content/copy';
+import { chokingDisclaimer, safetyNotice } from '@/content/copy';
 import { splitReviewMarker } from '@/content/schemas';
 import { chokingGuide, solidsSourcesFor } from '@/content/solids-plan';
 import { SourceLinks } from '@/features/shared/source-links';
@@ -26,17 +26,30 @@ function Bullets({ items, color }: { items: string[]; color?: 'danger' }) {
 }
 
 export default function ChokingScreen() {
+  const emergency = safetyNotice('choking-emergency');
   return (
     <Screen>
-      <AppText color="muted">{splitReviewMarker(chokingGuide.intro).text}</AppText>
-
+      {/* The emergency comes first, before anything to read. */}
       <View accessibilityRole="alert" className="gap-3 rounded-3xl bg-danger-bg p-5">
         <AppText variant="heading" color="danger">
+          {`⚠️ ${emergency.title}`}
+        </AppText>
+        <AppText color="danger" className="font-semibold">
+          {splitReviewMarker(emergency.body).text}
+        </AppText>
+        <AppText variant="label" color="danger">
           Call 911 if your baby is choking and:
         </AppText>
         <Bullets items={chokingGuide.signs} color="danger" />
         <Button label="Call 911" onPress={() => Linking.openURL('tel:911').catch(() => {})} />
+        <Button
+          label="Emergency & resources"
+          variant="quiet"
+          onPress={() => router.push('/emergency')}
+        />
       </View>
+
+      <AppText color="muted">{splitReviewMarker(chokingGuide.intro).text}</AppText>
 
       <Button
         label="Read: Choking vs. gagging guide"

@@ -12,6 +12,8 @@ import { ALL_SORTS, allergenOptions, recipeTagOptions } from '@/features/filters
 import { SearchFilterBar } from '@/features/filters/search-filter-bar';
 import { useHousehold } from '@/features/profile/use-household';
 import { hasHouseholdNote, HouseholdNote } from '@/features/recipes/household-note';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { SafetyNotice } from '@/features/shared/safety-notice';
 import { RecipeGrid } from '@/features/recipes/recipe-grid';
 import { NoMatches } from '@/features/filters/no-matches';
 import { RecipeSection } from '@/features/recipes/recipe-section';
@@ -113,6 +115,10 @@ export default function MomScreen() {
       ) : (
         <FavoritesList recipes={favorites} />
       )}
+      <View className="gap-4 px-5">
+        <SafetyNotice id="family-nutrition" />
+        <HealthDisclaimerNote draftReviewer="registered dietitian" />
+      </View>
     </Screen>
   );
 }

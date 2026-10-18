@@ -17,6 +17,7 @@ import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { recipePhoto } from '@/features/recipes/recipe-photos';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { SafetyNotice } from '@/features/shared/safety-notice';
 import { AppText, Button, cn, haptics, HeartButton, Notice, Screen } from '@/ui';
 
 function SectionTitle({ children }: { children: string }) {
@@ -219,6 +220,11 @@ export default function RecipeScreen() {
 
       <SectionTitle>Review</SectionTitle>
       <View className="gap-2 px-5 pb-6 pt-2">
+        {/* Baby recipes get the feeding safety note; grown-up recipes the family one. */}
+        <SafetyNotice
+          id={recipe.fromMonths !== undefined ? 'feeding-safety' : 'family-nutrition'}
+          className="pb-2"
+        />
         <AppText variant="label">
           {summary.isDraft
             ? `Draft recipe, awaiting review by a ${recipe.reviewer}.`

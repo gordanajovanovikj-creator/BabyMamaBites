@@ -85,7 +85,7 @@ export default function GreatChoiceScreen() {
         bounces={false}
       >
         <QuestionHeader title={c.title} subtitle={c.subtitle} />
-        <Button label="Continue" onPress={() => router.push('/onboarding/notifications')} />
+        <Button label="Continue" onPress={() => router.push('/onboarding/agree')} />
       </ScrollView>
 
       <View className="absolute left-5" style={{ top: insets.top + 8 }}>

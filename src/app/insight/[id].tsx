@@ -5,6 +5,7 @@ import { getInsight } from '@/content/insights';
 import { splitReviewMarker } from '@/content/schemas';
 import { insightBlocks, type InsightBlock } from '@/domain/insights';
 import { insightItem } from '@/domain/library';
+import { noticesFor } from '@/domain/safety-notices';
 import { insightKindLabel } from '@/features/insights/insight-style';
 import { libraryPhoto } from '@/features/library/library-photos';
 import { ReadMore } from '@/features/library/read-more';
@@ -12,6 +13,7 @@ import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { HelplineButtons } from '@/features/shared/helpline-buttons';
+import { SafetyNotices } from '@/features/shared/safety-notice';
 import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
 
 /** One line of an insight: a heading, a bullet, a numbered step or a paragraph. */
@@ -57,6 +59,8 @@ export default function InsightScreen() {
     );
   }
 
+  const notices = noticesFor(insight);
+
   return (
     <Screen
       padded={false}
@@ -79,6 +83,7 @@ export default function InsightScreen() {
       />
 
       <View className="gap-6 px-5 pt-6">
+        <SafetyNotices ids={notices.top} />
         <View className="gap-3">
           {insightBlocks(insight.body.map((line) => splitReviewMarker(line).text)).map(
             (block, i) => (
@@ -87,6 +92,7 @@ export default function InsightScreen() {
           )}
         </View>
 
+        <SafetyNotices ids={notices.bottom} />
         {insight.kind === 'when-to-call' ? (
           <Notice
             tone="urgent"

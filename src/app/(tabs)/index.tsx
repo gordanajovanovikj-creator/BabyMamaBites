@@ -16,6 +16,7 @@ import { babyAge, babyStage, currentMonthChoice, monthChoices, solidsWeek } from
 import { InsightsRow } from '@/features/insights/insights-row';
 import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
+import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { AllergenTracker } from '@/features/solids/allergen-tracker';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { AgeHero } from '@/features/today/age-hero';
@@ -23,6 +24,8 @@ import { FoodsToTry } from '@/features/today/foods-to-try';
 import { HelpCard } from '@/features/today/help-card';
 import { ThisWeekCard } from '@/features/today/this-week-card';
 import { TodayFocus } from '@/features/today/today-focus';
+import { View } from 'react-native';
+
 import { Screen } from '@/ui';
 
 export default function TodayScreen() {
@@ -87,6 +90,9 @@ export default function TodayScreen() {
       />
       <InsightsRow items={row} ageMonths={ageMonths} />
       <HelpCard />
+      <View className="px-5">
+        <HealthDisclaimerNote />
+      </View>
     </Screen>
   );
 }

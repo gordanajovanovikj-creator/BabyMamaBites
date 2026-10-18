@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import { StorageProvider } from '@/data/storage-provider';
 import { CalendarProvider } from '@/features/calendar/calendar-context';
 import { FavoritesProvider } from '@/features/favorites/favorites-context';
+import { DisclaimerProvider, useDisclaimer } from '@/features/legal/disclaimer-context';
 import { headerBackButton } from '@/features/navigation/header-back-button';
 import { PlannerProvider } from '@/features/planner/planner-context';
 import { useTodayWidgetSync } from '@/features/planner/use-today-widget-sync';
@@ -19,7 +20,9 @@ import { colors } from '@/theme/colors';
 SplashScreen.preventAutoHideAsync().catch(() => {});
 
 function RootStack() {
-  const { ready, profile } = useProfile();
+  const { ready: profileReady, profile } = useProfile();
+  const { ready: disclaimerReady, acceptedOn } = useDisclaimer();
+  const ready = profileReady && disclaimerReady;
   useTodayWidgetSync();
 
   useEffect(() => {
@@ -27,6 +30,8 @@ function RootStack() {
   }, [ready]);
 
   if (!ready) return null;
+  // The app opens only once the medical disclaimer has been accepted on this phone.
+  const accepted = acceptedOn !== null;
 
   return (
     <Stack
@@ -37,12 +42,8 @@ function RootStack() {
         headerLeft: headerBackButton,
       }}
     >
-      <Stack.Protected guard={!!profile}>
+      <Stack.Protected guard={!!profile && accepted}>
         <Stack.Screen name="(tabs)" />
-        <Stack.Screen
-          name="disclaimer"
-          options={{ presentation: 'modal', headerShown: true, title: 'Disclaimer' }}
-        />
         <Stack.Screen
           name="about"
           options={{ presentation: 'modal', headerShown: true, title: 'About & safety' }}
@@ -96,12 +97,24 @@ function RootStack() {
           options={{ presentation: 'modal', headerShown: true, title: 'Choking and gagging' }}
         />
       </Stack.Protected>
+      {/* Set up before the disclaimer step existed: accept it once to continue. */}
+      <Stack.Protected guard={!!profile && !accepted}>
+        <Stack.Screen name="agree" />
+      </Stack.Protected>
       <Stack.Screen name="onboarding" options={{ presentation: profile ? 'modal' : 'card' }} />
-      {/* Open before setup too: the subscription screen links here. Listed after
-          onboarding so a fresh install still starts at the welcome screen. */}
+      {/* Open before setup too: the subscription and disclaimer screens link here.
+          Listed after onboarding so a fresh install still starts at the welcome screen. */}
       <Stack.Screen
         name="legal/[doc]"
         options={{ presentation: 'modal', headerShown: true, title: '' }}
+      />
+      <Stack.Screen
+        name="disclaimer"
+        options={{ presentation: 'modal', headerShown: true, title: 'Disclaimers & Terms' }}
+      />
+      <Stack.Screen
+        name="emergency"
+        options={{ presentation: 'modal', headerShown: true, title: 'Emergency & resources' }}
       />
     </Stack>
   );
@@ -128,19 +141,21 @@ export default function RootLayout() {
     >
       <StatusBar style="dark" />
       <StorageProvider>
-        <ProfileProvider>
-          <FavoritesProvider>
-            <FoodLogProvider>
-              <PlannerProvider>
-                <CalendarProvider>
-                  <RemindersProvider>
-                    <RootStack />
-                  </RemindersProvider>
-                </CalendarProvider>
-              </PlannerProvider>
-            </FoodLogProvider>
-          </FavoritesProvider>
-        </ProfileProvider>
+        <DisclaimerProvider>
+          <ProfileProvider>
+            <FavoritesProvider>
+              <FoodLogProvider>
+                <PlannerProvider>
+                  <CalendarProvider>
+                    <RemindersProvider>
+                      <RootStack />
+                    </RemindersProvider>
+                  </CalendarProvider>
+                </PlannerProvider>
+              </FoodLogProvider>
+            </FavoritesProvider>
+          </ProfileProvider>
+        </DisclaimerProvider>
       </StorageProvider>
     </ThemeProvider>
   );

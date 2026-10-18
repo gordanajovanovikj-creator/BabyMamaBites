@@ -9,6 +9,7 @@ import {
 import type { SettingsStore } from './settings-store';
 
 const REMINDERS = 'reminders';
+const DISCLAIMER = 'disclaimer-accepted';
 
 export function parseReminders(raw: string | null | undefined): ReminderSettings {
   if (!raw) return defaultReminderSettings;
@@ -35,6 +36,21 @@ export function createSqliteSettingsStore(db: SQLiteDatabase): SettingsStore {
          ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
         REMINDERS,
         JSON.stringify(settings),
+      );
+    },
+    async loadDisclaimerAccepted() {
+      const row = await db.getFirstAsync<{ value: string }>(
+        'SELECT value FROM app_setting WHERE key = ?',
+        DISCLAIMER,
+      );
+      return row?.value ?? null;
+    },
+    async saveDisclaimerAccepted(onDate) {
+      await db.runAsync(
+        `INSERT INTO app_setting (key, value) VALUES (?, ?)
+         ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
+        DISCLAIMER,
+        onDate,
       );
     },
   };

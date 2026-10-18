@@ -294,7 +294,7 @@
       "stage": "chopped",
       "focus": [
         "[PLACEHOLDER - needs expert review] Your baby can begin eating finely chopped or ground foods as their skills grow. Keep pieces small and soft enough to mash between your fingers.",
-        "Whole grain kernels such as barley, wheat berries or brown rice should be cooked and finely ground or mashed."
+        "Whole grain kernels such as barley, wheat berries or brown rice are safest cooked and finely ground or mashed."
       ],
       "tryFoods": [
         "Finely chopped chicken",
@@ -440,7 +440,7 @@
       "stage": "family",
       "focus": [
         "[PLACEHOLDER - needs expert review] Shape matters as much as texture. Cut round foods like grapes, cherries and cherry tomatoes into small pieces, and cut long foods like hot dogs, sausages and string cheese into short, thin strips.",
-        "Avoid popcorn, nuts, hard candy, chips, and raw hard fruits or vegetables. Your baby should always eat sitting upright and supervised."
+        "Avoid popcorn, nuts, hard candy, chips, and raw hard fruits or vegetables. The CDC advises that babies always eat sitting upright, with an adult watching."
       ],
       "tryFoods": ["Quartered grapes", "Soft-cooked apple slices", "Finely chopped meatballs"],
       "allergen": null,

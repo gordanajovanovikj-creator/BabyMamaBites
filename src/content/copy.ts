@@ -1,5 +1,6 @@
 import disclaimersJson from './copy/disclaimers.json';
 import medicalDisclaimerJson from './copy/medical-disclaimer.json';
+import safetyNoticesJson from './copy/safety-notices.json';
 import { copyCollectionSchema, type CopyBlock } from './schemas';
 
 // Parsed at import time so malformed content fails loudly in tests and dev.
@@ -21,3 +22,15 @@ export const articleDisclaimerNote: CopyBlock = medical.find((b) => b.id === 'ar
 
 /** The longer disclaimer at the bottom of the choking and gagging page. */
 export const chokingDisclaimer: CopyBlock = medical.find((b) => b.id === 'choking')!;
+
+const safety = copyCollectionSchema.parse(safetyNoticesJson).blocks;
+
+/**
+ * Safety notices shown on content pages (feeding safety, allergy safety, maternal health…)
+ * plus the onboarding disclaimer and the "where our guidance comes from" text.
+ */
+export function safetyNotice(id: string): CopyBlock {
+  const block = safety.find((b) => b.id === id);
+  if (!block) throw new Error(`Unknown safety notice: ${id}`);
+  return block;
+}

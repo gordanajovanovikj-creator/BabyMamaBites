@@ -8,6 +8,7 @@ import { recipeTagLabels } from '@/domain/recipe-labels';
 import { findRecipes, fitsCookingTime } from '@/domain/recipes';
 import { useHousehold } from '@/features/profile/use-household';
 import { HouseholdNote } from '@/features/recipes/household-note';
+import { SafetyNotice } from '@/features/shared/safety-notice';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { categoryPhoto } from '@/features/recipes/recipe-photos';
 import { RecipeRow } from '@/features/recipes/recipe-row';
@@ -80,7 +81,7 @@ export default function CategoryScreen() {
 
       {category.fromMonths !== undefined ? (
         <View className="px-5 pb-3">
-          <Notice body="Ages are a guide. Go at your baby's pace, always stay with them while they eat, and follow your pediatrician's advice." />
+          <SafetyNotice id="age-guidelines" />
         </View>
       ) : null}
 

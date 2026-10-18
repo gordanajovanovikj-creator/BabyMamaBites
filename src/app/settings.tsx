@@ -117,14 +117,28 @@ export default function SettingsScreen() {
         onPress={() => router.push('/onboarding')}
       />
       <LinkRow
-        label="About & safety"
-        detail="How we use guidance, and when to call for help"
-        onPress={() => router.push('/about')}
+        label="Photo credits"
+        detail="The photographers behind our food photos"
+        onPress={() => router.push('/credits')}
+      />
+
+      <AppText variant="heading" size="2xl" className="pt-4">
+        Safety and legal
+      </AppText>
+      <LinkRow
+        label="Emergency & resources"
+        detail="911, Poison Control, crisis and support lines"
+        onPress={() => router.push('/emergency')}
       />
       <LinkRow
-        label="Medical disclaimer"
+        label="Disclaimers & Terms"
         detail="Educational information only, not medical advice"
         onPress={() => router.push('/disclaimer')}
+      />
+      <LinkRow
+        label="About & safety"
+        detail="Where our guidance comes from, and when to call for help"
+        onPress={() => router.push('/about')}
       />
       <LinkRow
         label="Terms of Use"
@@ -135,11 +149,6 @@ export default function SettingsScreen() {
         label="Privacy Policy"
         detail="Your details stay on this phone"
         onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'privacy' } })}
-      />
-      <LinkRow
-        label="Photo credits"
-        detail="The photographers behind our food photos"
-        onPress={() => router.push('/credits')}
       />
     </Screen>
   );

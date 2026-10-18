@@ -160,6 +160,7 @@ const localPlanner: PlannerStore = {
 };
 
 const REMINDERS_KEY = 'mamababybites.reminders';
+const DISCLAIMER_KEY = 'mamababybites.disclaimer-accepted';
 
 const localSettings: SettingsStore = {
   async loadReminders() {
@@ -171,6 +172,16 @@ const localSettings: SettingsStore = {
   },
   async saveReminders(settings) {
     globalThis.localStorage?.setItem(REMINDERS_KEY, JSON.stringify(settings));
+  },
+  async loadDisclaimerAccepted() {
+    try {
+      return globalThis.localStorage?.getItem(DISCLAIMER_KEY) ?? null;
+    } catch {
+      return null;
+    }
+  },
+  async saveDisclaimerAccepted(onDate) {
+    globalThis.localStorage?.setItem(DISCLAIMER_KEY, onDate);
   },
 };
 

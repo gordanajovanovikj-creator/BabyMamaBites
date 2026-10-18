@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "reviewStatus": "placeholder",
+  "reviewer": "legal",
+  "intro": "[PLACEHOLDER - needs expert review] Help is one tap away. These are free US services. If you think it's an emergency, don't wait: call 911.",
+  "groups": [
+    {
+      "id": "baby",
+      "title": "Baby emergencies",
+      "body": "If your baby is choking, having trouble breathing, turning blue, unresponsive, or showing signs of a severe allergic reaction (swelling of the lips or tongue, trouble breathing, hives all over), call 911 right away. Give epinephrine first if it has been prescribed.",
+      "lines": ["911"],
+      "urgent": true
+    },
+    {
+      "id": "poison",
+      "title": "Poison Control",
+      "body": "If your baby swallowed something that might be harmful (medicine, cleaning products, a button battery, a plant), call Poison Control at 1-800-222-1222, free and open 24/7. If your baby isn't breathing or is unresponsive, call 911.",
+      "lines": ["poison"],
+      "urgent": false
+    },
+    {
+      "id": "crisis",
+      "title": "If you're in crisis",
+      "body": "If you're having thoughts of harming yourself or your baby, call or text 988, the Suicide & Crisis Lifeline, free and confidential, 24/7. If you or your baby are in immediate danger, call 911.",
+      "lines": ["988", "911"],
+      "urgent": true
+    },
+    {
+      "id": "maternal",
+      "title": "Support for moms",
+      "body": "Feeling overwhelmed, anxious or low after having a baby is common, and help works. The National Maternal Mental Health Hotline is free, confidential and open 24/7: call or text 1-833-TLC-MAMA (1-833-852-6262). Postpartum Support International's HelpLine (1-800-944-4773) connects you with local support; it isn't a crisis line.",
+      "lines": ["tlc-mama", "psi"],
+      "urgent": false
+    }
+  ],
+  "resources": [
+    {
+      "label": "AAP HealthyChildren.org",
+      "detail": "Parenting and health information from the American Academy of Pediatrics",
+      "url": "https://www.healthychildren.org"
+    },
+    {
+      "label": "CDC: Infant and toddler nutrition",
+      "detail": "Feeding guidance from the Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/"
+    },
+    {
+      "label": "FARE: Food Allergy Research & Education",
+      "detail": "Food allergy information and support",
+      "url": "https://www.foodallergy.org"
+    },
+    {
+      "label": "Postpartum Support International",
+      "detail": "Support groups and resources for perinatal mental health",
+      "url": "https://postpartum.net"
+    },
+    {
+      "label": "American Red Cross: infant CPR classes",
+      "detail": "Find an infant CPR and first aid class near you",
+      "url": "https://www.redcross.org/take-a-class/cpr"
+    }
+  ]
+}

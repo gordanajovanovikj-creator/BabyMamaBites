@@ -9,6 +9,13 @@ describe('helplinesIn', () => {
     expect(helplinesIn('Hotline: 1-833-TLC-MAMA (1-833-852-6262)')).toEqual(['tlc-mama']);
   });
 
+  it('finds Postpartum Support International and Poison Control', () => {
+    expect(helplinesIn('PSI at 1-800-944-4773 or Poison Control at 1-800-222-1222')).toEqual([
+      'psi',
+      'poison',
+    ]);
+  });
+
   it('ignores numbers inside other numbers', () => {
     expect(helplinesIn('About 9110 steps and 19880 calories')).toEqual([]);
   });

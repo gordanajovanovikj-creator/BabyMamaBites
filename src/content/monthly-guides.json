@@ -190,7 +190,7 @@
             "[PLACEHOLDER - needs expert review] Breast milk or infant formula is all your baby needs now. No water, juice or solid food.",
             "Breastfeeding: in the first days your breasts make colostrum, a small amount of thick, yellowish milk full of nutrients and immune support. Thinner, whiter milk usually comes in about 3 days after birth (sometimes later for first-time moms). Expect to feed 8 to 12 times in 24 hours, as often as every 1 to 3 hours, including at night.",
             "Formula feeding: start with about 1 to 2 oz every 2 to 3 hours in the first days, and offer more if your baby still seems hungry. Most newborns feed 8 to 12 times in 24 hours.",
-            "It's normal for breastfed babies to lose some weight in the first week. They should be back to their birth weight by day 10 to 14."
+            "It's normal for breastfed babies to lose some weight in the first week. Most are back to their birth weight by day 10 to 14; your pediatrician will check."
           ],
           "bullets": [
             "Early hunger signs: hands to mouth, turning toward the breast or bottle, puckering or licking lips, clenched hands. Crying is a late sign.",
@@ -773,7 +773,7 @@
           "bullets": [
             "Cook vegetables and hard fruits (like carrots and apples) until soft enough to mash with a fork.",
             "Thin cereals and purees with breast milk, formula or water.",
-            "Ripe banana can be mashed raw; most other fruits and vegetables should be cooked until soft.",
+            "Ripe banana can be mashed raw; most other fruits and vegetables are usually cooked until soft.",
             "Use a spoon for purees and cereal, never a bottle."
           ],
           "sources": ["cdc-textures", "cdc-solids", "aap-solids", "cdc-utensils"],
@@ -928,7 +928,7 @@
           ],
           "bullets": [
             "Finger food ideas: small pieces of banana, scrambled egg, well-cooked pasta, finely chopped well-cooked chicken, cooked potatoes or peas, small pieces of bread, and soft-cooked vegetables.",
-            "Everything should be soft, easy to swallow and cut into small pieces."
+            "Pediatric guidance suggests foods that are soft, easy to swallow and cut into small pieces."
           ],
           "sources": ["cdc-textures", "aap-solids", "cdc-utensils"],
           "reviewer": "pediatric dietitian"
@@ -1502,7 +1502,7 @@
           "paragraphs": [
             "[PLACEHOLDER - needs expert review] Your toddler can eat more of what the family eats, in toddler-sized portions and without heavy salt, butter, spice or sugar.",
             "Plan on about 3 meals and 2 snacks a day, with foods from all the groups: vegetables, fruits, whole grains, protein and dairy.",
-            "Don't cut back on fat: about half of a young toddler's calories should come from fat, which is important for growth and brain development."
+            "Don't cut back on fat: the AAP notes that about half of a young toddler's calories come from fat, which is important for growth and brain development."
           ],
           "bullets": [
             "Offer fish from the FDA \"Best Choices\" list twice a week; a serving for ages 1 to 3 is about 1 oz.",
@@ -1634,7 +1634,7 @@
           "paragraphs": [
             "[PLACEHOLDER - needs expert review] Your toddler can eat more of what the family eats, in toddler-sized portions and without heavy salt, butter, spice or sugar.",
             "Plan on about 3 meals and 2 snacks a day, with foods from all the groups: vegetables, fruits, whole grains, protein and dairy.",
-            "Don't cut back on fat: about half of a young toddler's calories should come from fat, which is important for growth and brain development."
+            "Don't cut back on fat: the AAP notes that about half of a young toddler's calories come from fat, which is important for growth and brain development."
           ],
           "bullets": [
             "Offer fish from the FDA \"Best Choices\" list twice a week; a serving for ages 1 to 3 is about 1 oz.",
@@ -1716,7 +1716,7 @@
           "id": "portions",
           "title": "Meals, milk and portions",
           "paragraphs": [
-            "[PLACEHOLDER - needs expert review] Two-year-olds can eat the same food as the rest of the family: 3 meals a day plus 1 or 2 snacks. They should no longer be drinking from a bottle.",
+            "[PLACEHOLDER - needs expert review] Two-year-olds can eat the same food as the rest of the family: 3 meals a day plus 1 or 2 snacks. The AAP suggests moving from bottles to cups by now; ask your pediatrician if you need help with the switch.",
             "Try not to focus on amounts. Offering a variety of healthy foods lets your child balance their diet over time.",
             "Milk: children usually stay on whole milk until age 2. After that, many pediatricians suggest moving gradually to lower-fat milk (about 16 oz a day), unless your pediatrician advises otherwise."
           ],
