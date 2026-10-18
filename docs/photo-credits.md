@@ -206,7 +206,7 @@ people, so the app owner must hold the rights to use them in the app and App Sto
 | baby-led-weaning | "Baby-led weaning is a great choice!" | Magnific (magnific.com), supplied by the app owner | https://www.magnific.com/free-photo/happy-baby-highchair-choosing-what-fruit-eat_10952478.htm | Magnific free license (credit required) | 2026-10-12 |
 | spoon-feeding    | "Spoon feeding is a great choice!"    | Pixabay, by 5686750                                | https://pixabay.com/photos/baby-eating-firsts-food-child-2423896/                             | Pixabay Content License                 | 2026-10-12 |
 | family-kitchen | "We've got you, mama" screen | Magnific (magnific.com), by zavalishina, chosen by the app owner (cropped) | https://www.magnific.com/premium-photo/happy-family-home-mother-feeding-her-baby-girl-from-spoon-kitchen-little-toddler-child-with_133409689.htm | Magnific Premium license | 2026-10-18 |
-| welcome-mom-baby | Month 1 guide                         | Pixabay, by BabyAayansh                            | https://pixabay.com/photos/baby-cute-portrait-child-indian-7318667/                           | Pixabay Content License                 | 2026-10-12 |
+| welcome-mom-baby | Newborn days guide                    | Pixabay, by BabyAayansh                            | https://pixabay.com/photos/baby-cute-portrait-child-indian-7318667/                           | Pixabay Content License                 | 2026-10-12 |
 
 ## Insights article photos
 

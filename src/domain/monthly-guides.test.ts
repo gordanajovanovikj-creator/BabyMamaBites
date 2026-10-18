@@ -13,9 +13,11 @@ describe('guideForMonths', () => {
     }
   });
 
-  it('has a separate guide for each month of the first year', () => {
-    for (let m = 0; m < 12; m++) {
-      expect(guideForMonths(monthlyGuides, m)?.title).toBe(`Month ${m + 1}`);
+  it('has a separate guide for each month of the first year, named by age like the month chips', () => {
+    expect(guideForMonths(monthlyGuides, 0)?.title).toBe('Newborn days');
+    expect(guideForMonths(monthlyGuides, 1)?.title).toBe('1 month');
+    for (let m = 2; m < 12; m++) {
+      expect(guideForMonths(monthlyGuides, m)?.title).toBe(`${m} months`);
     }
   });
 
