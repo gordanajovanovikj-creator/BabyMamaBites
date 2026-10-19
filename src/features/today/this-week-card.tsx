@@ -1,7 +1,7 @@
 import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 
 import { formatTime, nextEvent } from '@/domain/calendar';
 import { addDays, fromIsoDate, type IsoDate } from '@/domain/dates';
@@ -169,9 +169,7 @@ function ComingUp({
     >
       <AppText size="xl">{emoji}</AppText>
       <AppText size="sm" className="flex-1" numberOfLines={2}>
-        <AppText size="sm" className="font-bold">
-          {strong}
-        </AppText>
+        <Text className="font-bold">{strong}</Text>
         {` · ${text}`}
       </AppText>
     </Pressable>

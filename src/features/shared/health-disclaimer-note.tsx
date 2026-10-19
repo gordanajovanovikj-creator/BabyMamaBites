@@ -1,5 +1,5 @@
 import { router } from 'expo-router';
-import { Pressable, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 
 import { articleDisclaimerNote } from '@/content/copy';
 import { splitReviewMarker } from '@/content/schemas';
@@ -22,9 +22,7 @@ export function HealthDisclaimerNote({ short = false }: HealthDisclaimerNoteProp
     <View className="gap-2">
       {short ? null : (
         <AppText variant="caption" size="sm" className="italic">
-          <AppText variant="caption" size="sm" className="font-bold italic">
-            {articleDisclaimerNote.title}:{' '}
-          </AppText>
+          <Text className="font-bold">{`${articleDisclaimerNote.title}: `}</Text>
           {splitReviewMarker(articleDisclaimerNote.body).text}
         </AppText>
       )}

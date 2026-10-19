@@ -1,5 +1,5 @@
 import { router } from 'expo-router';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 
 import { getStageInfo, type PlanWeek } from '@/content/solids-plan';
 import { splitReviewMarker } from '@/content/schemas';
@@ -51,7 +51,7 @@ export function WeekCard({ week, totalWeeks }: WeekCardProps) {
       </View>
       {week.allergen ? (
         <AppText variant="label">
-          New allergen this week: <AppText className="font-bold">{week.allergen.label}</AppText>
+          New allergen this week: <Text className="font-bold">{week.allergen.label}</Text>
         </AppText>
       ) : null}
       <View className="flex-row items-center justify-between rounded-full bg-surface-muted px-5 py-3">
