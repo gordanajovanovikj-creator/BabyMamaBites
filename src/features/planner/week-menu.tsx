@@ -16,7 +16,6 @@ import {
   mealSlots,
   mealsPlanned,
   planKey,
-  suggestedMealsPerDay,
   visibleMealSlots,
   weekDates,
   weekRangeLabel,
@@ -24,13 +23,12 @@ import {
   type MealSlot,
 } from '@/domain/planner';
 import { foodPhoto } from '@/features/foods/food-photos';
-import { babyAge, solidsWeek } from '@/domain/stage';
-import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
 import { RecipeImage } from '@/features/recipes/recipe-image';
 import { AppText, Card, cn } from '@/ui';
 
 import { plannedMeal } from './planned-meal';
+import { useMealsPerDay } from './use-meals-per-day';
 import { usePlanner } from './planner-context';
 
 function RoundButton({ label, glyph, onPress }: { label: string; glyph: string; onPress(): void }) {
@@ -345,7 +343,6 @@ function SlotRow({ date, slot }: { date: IsoDate; slot: MealSlot }) {
  */
 export function WeekMenu() {
   const { plan } = usePlanner();
-  const { profile } = useProfile();
   const now = today();
   const [offset, setOffset] = useState(0);
   const [selected, setSelected] = useState<IsoDate>(now);
@@ -354,9 +351,7 @@ export function WeekMenu() {
   const days = weekDates(monday);
   const day = days.includes(selected) ? selected : days[0];
   const planned = days.reduce((n, d) => n + mealsPlanned(plan, d), 0);
-  const perDay = profile
-    ? suggestedMealsPerDay(mealsPerDayGuide, solidsWeek(profile, day), babyAge(profile, day).months)
-    : mealSlots.length;
+  const perDay = useMealsPerDay(day);
   const slots = visibleMealSlots(plan, day, Math.min(mealSlots.length, perDay + extra));
   const mealsWord = planned === 1 ? 'meal' : 'meals';
 

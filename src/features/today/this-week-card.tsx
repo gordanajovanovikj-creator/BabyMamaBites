@@ -8,9 +8,9 @@ import { addDays, fromIsoDate, type IsoDate } from '@/domain/dates';
 import {
   bestBefore,
   mealSlotLabels,
-  mealSlots,
   mealsPlanned,
   planKey,
+  visibleMealSlots,
   useSoonItems,
   weekDates,
   weekStart,
@@ -20,6 +20,7 @@ import { useCalendar } from '@/features/calendar/calendar-context';
 import { foodPhoto } from '@/features/foods/food-photos';
 import { plannedMeal } from '@/features/planner/planned-meal';
 import { usePlanner } from '@/features/planner/planner-context';
+import { useMealsPerDay } from '@/features/planner/use-meals-per-day';
 import { DayPill } from '@/features/planner/week-menu';
 import { RecipeImage } from '@/features/recipes/recipe-image';
 import { AppText, cn } from '@/ui';
@@ -153,8 +154,9 @@ export type ThisWeekCardProps = {
 };
 
 /**
- * Home's planner snapshot: this week's days with meal dots, the chosen day's
- * three meals, the next calendar event and a freezer item to use soon.
+ * Home's planner snapshot: this week's days with meal dots, the chosen day's meals
+ * (as many as suit the baby's stage, like the planner), the next calendar event and a
+ * freezer item to use soon.
  */
 export function ThisWeekCard({ now }: ThisWeekCardProps) {
   const { plan, freezer } = usePlanner();
@@ -163,6 +165,7 @@ export function ThisWeekCard({ now }: ThisWeekCardProps) {
   const days = weekDates(weekStart(now));
   const day = days.includes(selected) ? selected : now;
   const planned = days.reduce((n, d) => n + mealsPlanned(plan, d), 0);
+  const perDay = useMealsPerDay(day);
   const event = nextEvent(entries, now, EVENT_DAYS);
   const freezerItem = useSoonItems(freezer, now)[0];
   const openPlanner = () =>
@@ -177,7 +180,7 @@ export function ThisWeekCard({ now }: ThisWeekCardProps) {
             This week
           </AppText>
           <AppText variant="caption" size="sm">
-            {`${planned} of 21 meals planned`}
+            {`${planned} ${planned === 1 ? 'meal' : 'meals'} planned`}
           </AppText>
         </View>
         <Pressable
@@ -202,13 +205,14 @@ export function ThisWeekCard({ now }: ThisWeekCardProps) {
               selected={d === day}
               isToday={d === now}
               planned={mealsPlanned(plan, d)}
+              total={perDay}
               onPress={() => setSelected(d)}
               compact
             />
           ))}
         </View>
         <View className="flex-row gap-2">
-          {mealSlots.map((slot) => (
+          {visibleMealSlots(plan, day, perDay).map((slot) => (
             <MealTile key={slot} date={day} slot={slot} />
           ))}
         </View>
