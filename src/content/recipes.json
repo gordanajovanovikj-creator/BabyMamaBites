@@ -179,7 +179,6 @@
       "tips": [
         "Warming it up? Spoon it into a microwave-safe bowl first, since not every jar is microwave-safe, and stir before eating.",
         "Top with chopped nuts, a drizzle of peanut butter or extra fruit just before eating. Nuts and peanut butter add common allergens.",
-        "Honey is fine for you, but never give honey to a baby under 12 months.",
         "Make 3 or 4 jars at once; they keep in the fridge for up to 3 days.",
         "Any milk works, including almond or soy milk (these add tree nut or soy). For dairy-free, use a plant milk and a dairy-free yogurt."
       ],
@@ -351,10 +350,7 @@
         "Bake for 20 to 25 minutes, until the eggs are firm and fully set in the middle, with no runny egg.",
         "Cool, then refrigerate for 3 to 4 days, or freeze and use within 2 to 3 months for best quality."
       ],
-      "tips": [
-        "Reheat in the microwave for about 30 seconds until hot all the way through.",
-        "Leave out added salt if you'll share these with your baby, and cut a baby's portion into small pieces or thin slices."
-      ],
+      "tips": ["Reheat in the microwave for about 30 seconds until hot all the way through."],
       "reviewer": "registered dietitian"
     },
     {
@@ -620,9 +616,7 @@
         "Melt a little butter in a large skillet over medium heat. Cook the quesadillas for 2 to 3 minutes per side, until golden and the cheese is melted.",
         "Cut into triangles and serve with sour cream or guacamole."
       ],
-      "tips": [
-        "Sharing with a baby or toddler? Whole corn kernels are a choking hazard; mash them with the beans or leave them out."
-      ],
+      "tips": [],
       "reviewer": "registered dietitian"
     },
     {
@@ -658,7 +652,8 @@
         "Cool, then refrigerate for 3 to 4 days, or freeze in portions and use within 2 to 3 months for best quality."
       ],
       "tips": [
-        "Use low-sodium or no-salt-added broth and tomatoes, and blend a plain portion if you're sharing with your baby."
+        "For baby: scoop out baby's portion before adding salt, and blend or mash it to suit their stage. Use low-sodium or no-salt-added broth and tomatoes.",
+        "Choking hazards: cook the carrots until very soft; hard, raw or undercooked vegetables are a choking hazard."
       ],
       "reviewer": "registered dietitian"
     },
@@ -694,8 +689,9 @@
         "Serve with rice. Refrigerate leftovers for 3 to 4 days, or freeze portions and use within 2 to 3 months for best quality."
       ],
       "tips": [
-        "Halal depends on the turkey you buy; check the label.",
-        "Sharing with a baby or toddler? Mash the beans (whole beans are a choking hazard) and choose low-sodium or no-salt-added canned beans and tomatoes."
+        "For baby: spoon out baby's portion before adding chili powder or salt, and choose low-sodium or no-salt-added canned beans and tomatoes.",
+        "Choking hazards: mash the beans (whole beans are a choking hazard) and break the turkey into fine crumbles.",
+        "Halal depends on the turkey you buy; check the label."
       ],
       "reviewer": "registered dietitian"
     },
@@ -738,7 +734,6 @@
       ],
       "tips": [
         "Salmon is on the FDA's \"Best Choices\" list. While breastfeeding, the FDA advises 2 to 3 servings (4 oz each) a week from that list.",
-        "Sharing with a baby or toddler? Remove the skin, check carefully for bones, and flake the fish into small pieces.",
         "Refrigerate leftovers and eat within 3 to 4 days."
       ],
       "reviewer": "registered dietitian"
@@ -809,6 +804,8 @@
         "Stir in the spinach until wilted, then the Parmesan."
       ],
       "tips": [
+        "For baby: set aside baby's portion before adding Parmesan or salt, and cook the pasta until soft.",
+        "Choking hazards: cut the pasta into pieces that suit your baby's stage, or choose a larger shape they can hold.",
         "Some Parmesan isn't vegetarian, halal or kosher (it may contain animal rennet); check the label."
       ],
       "reviewer": "registered dietitian"
@@ -844,7 +841,8 @@
         "Stir in the spinach until wilted. Serve with rice."
       ],
       "tips": [
-        "Sharing with a baby or toddler? Mash the chickpeas; whole beans are a choking hazard.",
+        "For baby: scoop out baby's portion before adding salt, use a mild curry powder, and mash it with a little sauce.",
+        "Choking hazards: mash the chickpeas; whole beans are a choking hazard.",
         "Refrigerate leftovers for 3 to 4 days, or freeze portions and use within 2 to 3 months for best quality."
       ],
       "reviewer": "registered dietitian"
@@ -882,10 +880,7 @@
         "Pour in the broth, cover and cook on low for 4 hours, until the chicken reaches 165°F.",
         "Shred with two forks. Use in wraps, rice bowls or salads. Refrigerate for 3 to 4 days, or freeze portions and use within 2 to 6 months for best quality."
       ],
-      "tips": [
-        "Halal depends on the chicken you buy; check the label.",
-        "For a baby or toddler, shred the chicken finely; tough or large chunks of meat are a choking hazard."
-      ],
+      "tips": ["Halal depends on the chicken you buy; check the label."],
       "reviewer": "registered dietitian"
     },
     {
@@ -921,9 +916,7 @@
         "Roll into 16 balls.",
         "Refrigerate for up to a week, or freeze."
       ],
-      "tips": [
-        "Not for babies or young children: whole bites and chunks of nut butter are choking hazards."
-      ],
+      "tips": [],
       "reviewer": "registered dietitian"
     },
     {
@@ -943,9 +936,7 @@
       "diets": ["vegan", "vegetarian", "pescatarian", "halal", "kosher", "gluten-free"],
       "ingredients": ["1 apple", "1 to 2 tbsp peanut butter"],
       "steps": ["Core and slice the apple.", "Dip or spread with peanut butter."],
-      "tips": [
-        "Not for babies or young children as is: raw apple pieces and thick peanut butter are choking hazards."
-      ],
+      "tips": [],
       "reviewer": "registered dietitian"
     },
     {
@@ -970,9 +961,7 @@
         "A few baby carrots"
       ],
       "steps": ["Arrange everything on a plate or in a container with sections."],
-      "tips": [
-        "Sharing with a toddler? Cut grapes into small pieces, slice cheese thinly instead of serving chunks, swap raw carrots for cooked soft ones, and skip crackers with seeds or whole grain kernels."
-      ],
+      "tips": [],
       "reviewer": "registered dietitian"
     },
     {
@@ -1279,7 +1268,7 @@
         "Add the berries.",
         "Pulse 3 or 4 times to crush the berries, then blend on high for about 45 seconds, until smooth."
       ],
-      "tips": ["Never give honey to a baby under 12 months, even a taste."],
+      "tips": [],
       "reviewer": "registered dietitian"
     },
     {
@@ -1621,9 +1610,10 @@
         "Serve with avocado or whole-wheat tortillas."
       ],
       "tips": [
+        "For baby: set aside baby's turkey and beans before adding the taco seasoning.",
+        "Choking hazards: mash the beans and the corn or leave the corn out; whole beans and corn kernels are choking hazards. Crumble the turkey finely.",
         "Cook chicken and turkey to 165°F.",
-        "Check the taco seasoning label if you avoid gluten.",
-        "Sharing with a baby or toddler? Whole corn kernels are a choking hazard; mash them or leave them out."
+        "Check the taco seasoning label if you avoid gluten."
       ],
       "reviewer": "registered dietitian"
     },
@@ -1728,11 +1718,7 @@
         "Whisk the soy sauce, honey and cornstarch mixture, pour it in, and stir for 2 minutes until thick and glossy.",
         "Drizzle with sesame oil. Serve over rice or cauliflower rice."
       ],
-      "tips": [
-        "Cook ground beef to 160°F.",
-        "Use tamari labeled gluten-free if you avoid wheat.",
-        "Sharing with a baby? Never give honey to a baby under 12 months."
-      ],
+      "tips": ["Cook ground beef to 160°F.", "Use tamari labeled gluten-free if you avoid wheat."],
       "reviewer": "registered dietitian"
     },
     {
@@ -1766,7 +1752,11 @@
         "Reduce the heat to low and stir in the cream and spinach until the spinach wilts.",
         "Ladle into bowls and top with parmesan."
       ],
-      "tips": ["Use vegetable broth to keep it vegetarian."],
+      "tips": [
+        "For baby: scoop out baby's portion before adding salt or Parmesan, and use low-sodium broth. Egg, dairy and wheat are common allergens; introduce each one on its own first.",
+        "Choking hazards: cut the tortellini into small pieces or mash them.",
+        "Use vegetable broth to keep it vegetarian."
+      ],
       "reviewer": "registered dietitian"
     },
     {
@@ -1799,7 +1789,11 @@
         "Add the chili powder and cumin and stir for 1 minute until fragrant.",
         "Add the beans, tomatoes and broth. Bring to a boil, then cover and simmer for 15 minutes, until the sweet potato is fork-tender."
       ],
-      "tips": ["Freeze leftovers in portions for up to 3 months."],
+      "tips": [
+        "For baby: scoop out baby's portion before adding chili powder, and use low-sodium broth.",
+        "Choking hazards: mash the black beans and sweet potato; whole beans are a choking hazard.",
+        "Freeze leftovers in portions for up to 3 months."
+      ],
       "reviewer": "registered dietitian"
     },
     {
@@ -1834,7 +1828,10 @@
         "Add the chickpeas, coconut milk and broth. Bring to a gentle boil, then simmer for 10 minutes.",
         "Stir in the spinach just before serving, until wilted."
       ],
-      "tips": [],
+      "tips": [
+        "For baby: scoop out baby's portion before adding curry powder or salt, and blend or mash it to suit their stage.",
+        "Choking hazards: mash the chickpeas; whole beans are a choking hazard."
+      ],
       "reviewer": "registered dietitian"
     },
     {
@@ -1867,8 +1864,9 @@
         "Bake for 15 to 18 minutes, until the chicken is cooked through and the beans are tender-crisp."
       ],
       "tips": [
-        "Cook chicken and turkey to 165°F.",
-        "Sharing with a baby? Never give honey to a baby under 12 months."
+        "For baby: set aside baby's chicken and green beans before adding the honey mustard. Never give honey to a baby under 12 months.",
+        "Choking hazards: shred the chicken finely (tough or large chunks of meat are a choking hazard) and cook the green beans until very soft.",
+        "Cook chicken and turkey to 165°F."
       ],
       "reviewer": "registered dietitian"
     },
@@ -2109,7 +2107,7 @@
         "In the same skillet, fry the eggs in a little oil.",
         "Put a tortilla in each bowl and top with beans, salsa, avocado and a fried egg."
       ],
-      "tips": ["Sharing with a baby or toddler? Cook their egg until the white and yolk are firm."],
+      "tips": [],
       "reviewer": "registered dietitian"
     },
     {
@@ -2205,10 +2203,7 @@
         "Add the strawberries, banana, vanilla and honey.",
         "Blend on high for about 60 seconds until completely smooth."
       ],
-      "tips": [
-        "Honey is fine for you, but never give honey to a baby under 12 months.",
-        "Use oat or soy milk to make it dairy-free."
-      ],
+      "tips": ["Use oat or soy milk to make it dairy-free."],
       "reviewer": "registered dietitian"
     },
     {
@@ -2335,10 +2330,7 @@
         "Fold in the chocolate chips.",
         "Roll into 1-inch balls and keep in the fridge for up to a week."
       ],
-      "tips": [
-        "Honey is fine for you, but never give honey to a baby under 12 months.",
-        "Not for babies or young children: whole bites and chunks of nut butter are choking hazards."
-      ],
+      "tips": [],
       "reviewer": "registered dietitian"
     },
     {
@@ -2377,10 +2369,7 @@
         "Press the mixture firmly and evenly into the pan, then press the chocolate chips into the top.",
         "Freeze for 30 minutes, then slice into bars."
       ],
-      "tips": [
-        "Keep the bars in the fridge for up to a week, or freeze them.",
-        "Not for babies or young children: chunky bars are a choking hazard."
-      ],
+      "tips": ["Keep the bars in the fridge for up to a week, or freeze them."],
       "reviewer": "registered dietitian"
     },
     {
@@ -2480,7 +2469,7 @@
         "Sprinkle the flaxseed on one side and pile the blueberries on the other.",
         "Drizzle with honey and eat right away."
       ],
-      "tips": ["Honey is fine for you, but never give honey to a baby under 12 months."],
+      "tips": [],
       "reviewer": "registered dietitian"
     },
     {
@@ -2579,7 +2568,8 @@
         "Stir in the spinach until wilted and serve warm."
       ],
       "tips": [
-        "Sharing with a baby? Mash some sweet potato with a little of the broth.",
+        "For baby: scoop out baby's portion before seasoning, and mash some sweet potato with a little of the broth.",
+        "Choking hazards: cook the sweet potato until it squishes easily; hard pieces are a choking hazard.",
         "Refrigerate leftovers for 3 to 4 days, or freeze portions."
       ],
       "reviewer": "registered dietitian"
@@ -2613,7 +2603,12 @@
         "Bring to a boil, then simmer for about 20 minutes until the barley is soft.",
         "Stir in the milk and simmer gently for 5 more minutes. Season and serve warm."
       ],
-      "tips": ["Barley contains gluten.", "Use oat or soy milk to make it dairy-free."],
+      "tips": [
+        "For baby: set aside baby's portion before adding salt. Cow's milk as a drink waits until 12 months; check with your pediatrician about milk in baby's food.",
+        "Choking hazards: cook the barley until very soft.",
+        "Barley contains gluten.",
+        "Use oat or soy milk to make it dairy-free."
+      ],
       "reviewer": "registered dietitian"
     },
     {
@@ -2646,7 +2641,8 @@
         "Add the chicken, heat through, and season lightly."
       ],
       "tips": [
-        "Store-bought broth can be salty; choose a low-sodium one if sharing with little ones.",
+        "For baby: scoop out baby's portion before adding salt, choose a low-sodium broth, and keep baby's broth to a little for moistening.",
+        "Choking hazards: shred the chicken finely and cook the carrots and celery until very soft; celery strings can be hard for babies.",
         "Reheat leftovers until steaming hot. Refrigerate for 3 to 4 days."
       ],
       "reviewer": "registered dietitian"
@@ -2722,8 +2718,7 @@
         "Add the chicken and fenugreek leaves, cover and simmer for about 20 minutes, until the chicken reaches 165°F."
       ],
       "tips": [
-        "Fenugreek is in the same plant family as peanuts and chickpeas. If you're allergic to either, check with your doctor first.",
-        "Sharing with a baby or toddler? Shred the chicken finely."
+        "Fenugreek is in the same plant family as peanuts and chickpeas. If you're allergic to either, check with your doctor first."
       ],
       "reviewer": "registered dietitian"
     },
@@ -2881,8 +2876,9 @@
         "Season with salt, pepper and garlic powder."
       ],
       "tips": [
-        "The FDA advises cooking eggs until both the yolk and white are firm.",
-        "Sharing with a baby? Mash some sweet potato and finely chop a little of the firm egg."
+        "For baby: set aside baby's portion before adding salt, pepper or garlic powder; mash some sweet potato and finely chop a little of the firm egg.",
+        "Choking hazards: dice the sweet potato small and cook it until it squishes easily.",
+        "The FDA advises cooking eggs until both the yolk and white are firm."
       ],
       "reviewer": "registered dietitian"
     },
@@ -2917,10 +2913,7 @@
         "Cook for 5 to 7 minutes, stirring often, until creamy.",
         "Top with the walnuts."
       ],
-      "tips": [
-        "Use coconut oil instead of butter to make it dairy-free.",
-        "Sharing with a baby? Leave off the walnuts; whole and chopped nuts are a choking hazard."
-      ],
+      "tips": ["Use coconut oil instead of butter to make it dairy-free."],
       "reviewer": "registered dietitian"
     },
     {
@@ -2953,10 +2946,7 @@
         "Add the quinoa, chickpeas, tomatoes, cucumber and feta and toss well.",
         "Divide into containers and refrigerate for up to 4 days."
       ],
-      "tips": [
-        "Leave out the feta to make it dairy-free.",
-        "Sharing with a baby or toddler? Quarter the tomatoes and mash the chickpeas; whole ones are a choking hazard."
-      ],
+      "tips": ["Leave out the feta to make it dairy-free."],
       "reviewer": "registered dietitian"
     },
     {
@@ -3026,7 +3016,7 @@
       ],
       "tips": [
         "Halal and kosher depend on the chicken you buy; check the label.",
-        "Leave out the nuts to make it nut-free. When sharing with little ones, leave out the nuts and the dried cranberries; nuts and dried fruit are choking hazards."
+        "Leave out the nuts to make it nut-free."
       ],
       "reviewer": "registered dietitian"
     },
@@ -3058,10 +3048,7 @@
         "Add the halved eggs and crackers to another, the carrots and hummus to the center, and the nuts to the last.",
         "Seal and refrigerate for up to 3 days."
       ],
-      "tips": [
-        "Opened deli meat keeps 3 to 5 days in the fridge; check the date on the pack.",
-        "Whole nuts and baby carrots are choking hazards for babies and young children."
-      ],
+      "tips": ["Opened deli meat keeps 3 to 5 days in the fridge; check the date on the pack."],
       "reviewer": "registered dietitian"
     },
     {
@@ -3198,9 +3185,7 @@
         "Divide the quinoa among containers, then top with the sweet potato, beans and corn.",
         "Drizzle with lime juice, seal and refrigerate for up to 4 days."
       ],
-      "tips": [
-        "Sharing with a baby or toddler? Mash the beans and sweet potato; whole beans and corn kernels are a choking hazard."
-      ],
+      "tips": [],
       "reviewer": "registered dietitian"
     },
     {
@@ -3272,7 +3257,8 @@
       ],
       "tips": [
         "Egg is a common allergen. Introduce each one on its own first before combining them in family meals.",
-        "Finger-squish test: many parents check that any vegetable or protein served as finger food squishes easily between their thumb and index finger."
+        "Finger-squish test: many parents check that any vegetable or protein served as finger food squishes easily between their thumb and index finger.",
+        "Choking hazards: serve baby's egg in soft, wide strips rather than small, firm chunks."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3312,7 +3298,7 @@
         "Finish the grown-up bowls with milk, maple, walnuts and whole blueberries."
       ],
       "tips": [
-        "Mash blueberries well for babies: whole blueberries are a choking risk.",
+        "Choking hazards: mash blueberries well for babies; whole blueberries are a choking risk.",
         "Keep honey out of baby’s bowl until after the first birthday."
       ],
       "reviewer": "pediatric dietitian"
@@ -3354,7 +3340,8 @@
       ],
       "tips": [
         "Egg, dairy and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
-        "Pancakes freeze well: cool, stack with parchment and reheat in the toaster."
+        "Pancakes freeze well: cool, stack with parchment and reheat in the toaster.",
+        "Choking hazards: serve pancake in soft strips, not small dry chunks, and skip nut toppings on baby's plate."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3393,7 +3380,7 @@
         "Season the grown-up plates with salt and pepper at the table."
       ],
       "tips": [
-        "Always double-check flaked fish for small bones.",
+        "Choking hazards: always double-check flaked fish for small bones, and cook the broccoli until soft.",
         "Fish is a common allergen. Introduce each one on its own first before combining them in family meals."
       ],
       "reviewer": "pediatric dietitian"
@@ -3431,7 +3418,7 @@
         "Toss the rest with the tomatoes, cucumber, feta, olive oil, lemon, salt and pepper for the grown-ups."
       ],
       "tips": [
-        "Flatten each bean between your fingers before serving: whole beans can be hard for new eaters to manage.",
+        "Choking hazards: flatten each bean between your fingers before serving; whole beans are a choking hazard.",
         "Halve or quarter cherry tomatoes for older kids; keep them off baby’s plate whole."
       ],
       "reviewer": "pediatric dietitian"
@@ -3475,7 +3462,8 @@
       ],
       "tips": [
         "Lentils are a plant source of iron.",
-        "Scoop before seasoning: take baby’s portion out before adding salt, soy sauce, hot pepper or other spicy seasoning."
+        "Scoop before seasoning: take baby’s portion out before adding salt, soy sauce, hot pepper or other spicy seasoning.",
+        "Choking hazards: cook the carrots until very soft and mash them with the lentils."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3515,7 +3503,7 @@
         "Season the grown-up bowls with salt, pepper and parsley."
       ],
       "tips": [
-        "Keep celery for the grown-ups or blend it well: its strings can be hard for babies.",
+        "Choking hazards: keep celery for the grown-ups or blend it well (its strings can be hard for babies), and shred the chicken finely.",
         "Even low-sodium broth has some salt, so keep baby’s broth to a little for moistening."
       ],
       "reviewer": "pediatric dietitian"
@@ -3559,7 +3547,8 @@
       ],
       "tips": [
         "Lentils and turkey are sources of iron.",
-        "Cool baby’s portion before serving, and freeze extra in small containers."
+        "Cool baby’s portion before serving, and freeze extra in small containers.",
+        "Choking hazards: break the turkey into fine crumbles; tough or large chunks of meat are a choking hazard."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3600,7 +3589,7 @@
         "Season the grown-up portions with sea salt."
       ],
       "tips": [
-        "Remove chicken skin and any bones before serving baby.",
+        "Choking hazards: remove chicken skin and any bones, and shred the meat finely before serving baby.",
         "Finger-squish test: many parents check that any vegetable or protein served as finger food squishes easily between their thumb and index finger."
       ],
       "reviewer": "pediatric dietitian"
@@ -3641,7 +3630,11 @@
         "For a mash: mash potato, carrot and shredded beef with a spoonful of warm broth.",
         "Let the grown-ups season their bowls with salt and pepper at the table."
       ],
-      "tips": ["Beef is a source of iron.", "Remove the rosemary sprig before serving baby."],
+      "tips": [
+        "Beef is a source of iron.",
+        "Remove the rosemary sprig before serving baby.",
+        "Choking hazards: shred the beef very finely; tough or large chunks of meat are a choking hazard."
+      ],
       "reviewer": "pediatric dietitian"
     },
     {
@@ -3681,7 +3674,7 @@
       ],
       "tips": [
         "Dairy and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
-        "Large pasta shapes like rigatoni are easier for little hands than small ones."
+        "Choking hazards: cook the pasta until soft; large shapes like rigatoni are easier for little hands than small ones."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3720,7 +3713,7 @@
         "Make the grown-up mash with garlic, parmesan, butter and salt, and finish the fish with lemon butter and dill."
       ],
       "tips": [
-        "Always double-check flaked fish for small bones.",
+        "Choking hazards: always double-check flaked fish for small bones.",
         "Fish is a common allergen. Introduce each one on its own first before combining them in family meals."
       ],
       "reviewer": "pediatric dietitian"
@@ -3764,7 +3757,7 @@
         "Season the rest and serve over brown rice."
       ],
       "tips": [
-        "Mash or flatten peas for babies: whole peas can be a choking risk.",
+        "Choking hazards: mash or flatten peas for babies; whole peas can be a choking risk.",
         "Scoop before seasoning: take baby’s portion out before adding salt, soy sauce, hot pepper or other spicy seasoning."
       ],
       "reviewer": "pediatric dietitian"
@@ -3807,7 +3800,7 @@
       ],
       "tips": [
         "Egg and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
-        "Shape baby’s portion into small logs instead of balls for easier, safer grabbing."
+        "Choking hazards: never serve whole round meatballs to a young baby; shape baby's portion into small logs or cut meatballs into strips."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3848,7 +3841,7 @@
       ],
       "tips": [
         "Peanut, sesame, soy and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
-        "Always thin nut and seed butters: a thick spoonful is a choking risk."
+        "Choking hazards: always thin nut and seed butters; a thick spoonful is a choking risk."
       ],
       "reviewer": "pediatric dietitian"
     }
