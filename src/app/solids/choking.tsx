@@ -78,7 +78,7 @@ export default function ChokingScreen() {
             </AppText>
           ))}
       </View>
-      <HealthDisclaimerNote draftReviewer="health professional" />
+      <HealthDisclaimerNote />
     </Screen>
   );
 }

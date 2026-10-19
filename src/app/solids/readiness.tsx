@@ -46,7 +46,7 @@ export default function ReadinessScreen() {
         <Notice
           tone="caution"
           title="Talk to your pediatrician"
-          body="Ask about when to start, especially if your baby was born early. This is a draft summary of US guidance, not yet reviewed by a health professional, and not medical advice."
+          body="Ask about when to start, especially if your baby was born early. This is a summary of US guidance for general information, not medical advice."
         />
 
         <SourceLinks sources={solidsSourcesFor(readiness.sources)} />

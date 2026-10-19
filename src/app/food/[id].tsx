@@ -233,11 +233,6 @@ export default function FoodScreen() {
       <View className="gap-3 px-5 pb-6 pt-8">
         <SafetyNotice id="food-safety" />
         <SourceLinks sources={solidsSourcesFor(food.sources)} />
-        <AppText variant="caption" size="sm">
-          {intro.isDraft
-            ? `Draft guide, awaiting review by a ${food.reviewer}.`
-            : `Reviewed by a ${food.reviewer}.`}
-        </AppText>
         <HealthDisclaimerNote short />
       </View>
     </Screen>

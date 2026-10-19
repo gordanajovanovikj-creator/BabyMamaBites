@@ -69,9 +69,7 @@ export default function GuideScreen() {
           ) : null}
         </View>
         <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
-        <HealthDisclaimerNote
-          draftReviewer={guide.reviewStatus === 'placeholder' ? 'health professional' : undefined}
-        />
+        <HealthDisclaimerNote />
       </View>
     </Screen>
   );

@@ -64,17 +64,20 @@ export function TipCard({ tips }: { tips: string[] }) {
 
 /**
  * Tips one at a time on a soft sage card: a "Tip!" label with a count (2/3), the
- * tip, and ‹ › to move between them. "Skip" tucks the card away for this visit.
+ * tip, and ‹ › to move between them.
  */
 function TipCarousel({ tips }: { tips: string[] }) {
   const [index, setIndex] = useState(0);
-  const [skipped, setSkipped] = useState(false);
-  if (!tips.length || skipped) return null;
+  if (!tips.length) return null;
   const i = Math.min(index, tips.length - 1);
   const many = tips.length > 1;
 
   return (
-    <View className="gap-2 rounded-3xl bg-sky px-5 pb-2 pt-4">
+    <View
+      className={
+        many ? 'gap-2 rounded-3xl bg-sky px-5 pb-2 pt-4' : 'gap-2 rounded-3xl bg-sky px-5 py-4'
+      }
+    >
       <View className="flex-row items-center justify-between">
         <View className="flex-row items-center gap-2" accessibilityRole="header">
           <SymbolIcon icon="lightbulb" emoji="💡" size={20} />
@@ -95,33 +98,20 @@ function TipCarousel({ tips }: { tips: string[] }) {
       <AppText color="on-sky" accessibilityLiveRegion="polite">
         {tips[i]}
       </AppText>
-      <View className="flex-row items-center justify-end">
-        {many ? (
-          <View className="flex-1 flex-row justify-center gap-4">
-            <Arrow
-              label="Previous tip"
-              glyph="‹"
-              onPress={i > 0 ? () => setIndex(i - 1) : undefined}
-            />
-            <Arrow
-              label="Next tip"
-              glyph="›"
-              onPress={i < tips.length - 1 ? () => setIndex(i + 1) : undefined}
-            />
-          </View>
-        ) : null}
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel="Skip tips"
-          onPress={() => setSkipped(true)}
-          hitSlop={4}
-          className="min-h-12 justify-center px-2 active:opacity-60"
-        >
-          <AppText variant="label" color="on-sky" className="font-semibold">
-            Skip
-          </AppText>
-        </Pressable>
-      </View>
+      {many ? (
+        <View className="flex-row items-center justify-center gap-4">
+          <Arrow
+            label="Previous tip"
+            glyph="‹"
+            onPress={i > 0 ? () => setIndex(i - 1) : undefined}
+          />
+          <Arrow
+            label="Next tip"
+            glyph="›"
+            onPress={i < tips.length - 1 ? () => setIndex(i + 1) : undefined}
+          />
+        </View>
+      ) : null}
     </View>
   );
 }

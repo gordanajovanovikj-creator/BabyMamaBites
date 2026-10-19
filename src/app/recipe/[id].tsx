@@ -218,18 +218,13 @@ export default function RecipeScreen() {
         </>
       ) : null}
 
-      <SectionTitle>Review</SectionTitle>
-      <View className="gap-2 px-5 pb-6 pt-2">
+      <View className="gap-2 px-5 pb-6 pt-8">
         {/* Baby recipes get the feeding safety note; grown-up recipes the family one. */}
         <SafetyNotice
           id={recipe.fromMonths !== undefined ? 'feeding-safety' : 'family-nutrition'}
+          hideTitle={recipe.fromMonths === undefined}
           className="pb-2"
         />
-        <AppText variant="label">
-          {summary.isDraft
-            ? `Draft recipe, awaiting review by a ${recipe.reviewer}.`
-            : `Reviewed by a ${recipe.reviewer}.`}
-        </AppText>
         <AppText variant="caption" size="sm">
           This recipe is for general information only and isn&apos;t health or nutrition advice.
         </AppText>

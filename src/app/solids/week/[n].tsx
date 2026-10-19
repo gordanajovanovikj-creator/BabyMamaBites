@@ -155,9 +155,7 @@ export default function PlanWeekScreen() {
         variant="quiet"
         onPress={() => router.push('/solids/choking')}
       />
-      <HealthDisclaimerNote
-        draftReviewer={week.reviewStatus === 'placeholder' ? week.reviewer : undefined}
-      />
+      <HealthDisclaimerNote />
     </Screen>
   );
 }

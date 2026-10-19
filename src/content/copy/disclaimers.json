@@ -14,13 +14,6 @@
       "body": "[PLACEHOLDER - needs expert review] If you are worried about your baby's health or your own, please contact your doctor or healthcare provider. In an emergency, call 911.",
       "reviewStatus": "placeholder",
       "reviewer": "pediatrician"
-    },
-    {
-      "id": "content-review",
-      "title": "About our content",
-      "body": "[PLACEHOLDER - needs expert review] Recipes and feeding guidance in this version are early drafts and are being reviewed by qualified professionals. Look for the \"draft\" label on content that has not been reviewed yet.",
-      "reviewStatus": "placeholder",
-      "reviewer": "legal"
     }
   ]
 }

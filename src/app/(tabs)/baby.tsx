@@ -225,7 +225,7 @@ export default function BabyScreen() {
           </View>
 
           <View className="px-5">
-            <HealthDisclaimerNote draftReviewer="health professional" />
+            <HealthDisclaimerNote />
           </View>
         </>
       )}

@@ -12,11 +12,20 @@ import { HelplineButtons } from './helpline-buttons';
 const urgent: SafetyNoticeId[] = ['choking-emergency', 'allergy-safety'];
 
 /** A safety notice from src/content/copy/safety-notices.json, styled by how urgent it is. */
-export function SafetyNotice({ id, className }: { id: SafetyNoticeId; className?: string }) {
+export function SafetyNotice({
+  id,
+  className,
+  hideTitle = false,
+}: {
+  id: SafetyNoticeId;
+  className?: string;
+  /** Show only the text, without the notice's title. */
+  hideTitle?: boolean;
+}) {
   const block = safetyNotice(id);
   const body = splitReviewMarker(block.body).text;
   if (!urgent.includes(id)) {
-    return <Notice title={block.title} body={body} className={className} />;
+    return <Notice title={hideTitle ? undefined : block.title} body={body} className={className} />;
   }
   return (
     <View className={className}>
