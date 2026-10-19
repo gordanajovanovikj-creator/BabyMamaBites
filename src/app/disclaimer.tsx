@@ -2,7 +2,6 @@ import { router } from 'expo-router';
 import { View } from 'react-native';
 
 import { medicalDisclaimer, safetyNotice } from '@/content/copy';
-import { splitReviewMarker } from '@/content/schemas';
 import { AppText, Button, Screen } from '@/ui';
 
 /** Safety notes repeated here so every disclaimer is in one place. */
@@ -22,7 +21,7 @@ export default function DisclaimerScreen() {
       {[...medicalDisclaimer, ...extraNotes.map(safetyNotice)].map((block) => (
         <View key={block.id} className="gap-2">
           <AppText variant="heading">{block.title}</AppText>
-          <AppText>{splitReviewMarker(block.body).text}</AppText>
+          <AppText>{block.body}</AppText>
         </View>
       ))}
       <View className="gap-3">

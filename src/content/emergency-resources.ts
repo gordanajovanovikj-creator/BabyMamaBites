@@ -6,7 +6,6 @@ const helpline = z.enum(['911', '988', 'tlc-mama', 'psi', 'poison']);
 
 const fileSchema = z.object({
   version: z.number(),
-  reviewer: z.string().min(1),
   intro: z.string().min(1),
   groups: z
     .array(

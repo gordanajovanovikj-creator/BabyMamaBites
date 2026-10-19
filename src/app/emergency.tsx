@@ -1,7 +1,6 @@
 import { Linking, Pressable, View } from 'react-native';
 
 import { emergencyResources } from '@/content/emergency-resources';
-import { splitReviewMarker } from '@/content/schemas';
 import { HelplineButtons } from '@/features/shared/helpline-buttons';
 import { AppText, Card, Screen } from '@/ui';
 
@@ -14,7 +13,7 @@ export default function EmergencyScreen() {
   const { intro, groups, resources } = emergencyResources;
   return (
     <Screen>
-      <AppText color="muted">{splitReviewMarker(intro).text}</AppText>
+      <AppText color="muted">{intro}</AppText>
 
       {groups.map((g) => (
         <Card

@@ -1,7 +1,6 @@
 import { View } from 'react-native';
 
 import { getGuideSource, type GuideSection } from '@/content/monthly-guides';
-import { splitReviewMarker } from '@/content/schemas';
 import { SourceLinks } from '@/features/shared/source-links';
 import { AppText, Card, Notice } from '@/ui';
 
@@ -25,7 +24,7 @@ function Bullets({ items, urgent }: { items: string[]; urgent: boolean }) {
 /** One section of a monthly guide: text, bullets, a "guidance differs" note and its sources. */
 export function GuideSectionView({ section }: { section: GuideSection }) {
   const urgent = section.id === 'when-to-call';
-  const paragraphs = section.paragraphs.map((p) => splitReviewMarker(p).text);
+  const paragraphs = section.paragraphs.map((p) => p);
 
   return (
     <Card tone={urgent ? 'muted' : 'surface'} className="gap-3">

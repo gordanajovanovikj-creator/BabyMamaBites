@@ -2,7 +2,6 @@ import { router } from 'expo-router';
 import { Pressable, View } from 'react-native';
 
 import { safetyNotice } from '@/content/copy';
-import { splitReviewMarker } from '@/content/schemas';
 import { AppText, Button, Screen } from '@/ui';
 
 import { useDisclaimer } from './disclaimer-context';
@@ -36,15 +35,15 @@ export function DisclaimerAgreement({ onAccepted }: { onAccepted(): void }) {
       </View>
       <View className="gap-3 rounded-3xl bg-surface-muted p-5">
         <AppText variant="heading">{block.title}</AppText>
-        <AppText>{splitReviewMarker(block.body).text}</AppText>
+        <AppText>{block.body}</AppText>
       </View>
       <View className="gap-3 rounded-3xl bg-danger-bg p-5" accessibilityRole="alert">
         <AppText variant="heading" color="danger">
           In an emergency
         </AppText>
         <AppText color="danger">
-          If your baby is choking, can&apos;t breathe or shows signs of a severe allergic
-          reaction, call 911. If you&apos;re in crisis, call or text 988.
+          If your baby is choking, can&apos;t breathe or shows signs of a severe allergic reaction,
+          call 911. If you&apos;re in crisis, call or text 988.
         </AppText>
       </View>
       <View className="gap-1">

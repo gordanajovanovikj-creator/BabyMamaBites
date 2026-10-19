@@ -5,7 +5,6 @@ import { Pressable, ScrollView, View } from 'react-native';
 
 import type { Food } from '@/content/foods';
 import { allRecipes, getRecipe, recipes } from '@/content/recipes';
-import { splitReviewMarker } from '@/content/schemas';
 import { mealsPerDayGuide } from '@/content/solids-plan';
 import { addDays, today, type IsoDate } from '@/domain/dates';
 import { familyMealOptions, plannedFamilyMeal } from '@/domain/family-meals';
@@ -407,7 +406,7 @@ export function WeekMenu() {
           />
         ) : null}
         <AppText variant="caption" size="sm">
-          {splitReviewMarker(mealsPerDayGuide.note).text}
+          {mealsPerDayGuide.note}
         </AppText>
       </View>
     </Card>

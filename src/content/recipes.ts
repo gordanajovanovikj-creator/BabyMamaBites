@@ -65,7 +65,6 @@ export const recipeSchema = z.object({
   ingredients: z.array(z.string().min(1)).min(1),
   steps: z.array(z.string().min(1)).min(1),
   tips: z.array(z.string().min(1)),
-  reviewer: z.string().min(1),
 });
 export type Recipe = z.infer<typeof recipeSchema>;
 

@@ -4,14 +4,12 @@
     {
       "id": "general",
       "title": "General information, not medical advice",
-      "body": "MamaBabyBites shares general information about food and feeding. It is not medical advice and does not replace your pediatrician, OB-GYN, midwife, registered dietitian or lactation consultant. Every mom and baby is different.",
-      "reviewer": "legal"
+      "body": "MamaBabyBites shares general information about food and feeding. It is not medical advice and does not replace your pediatrician, OB-GYN, midwife, registered dietitian or lactation consultant. Every mom and baby is different."
     },
     {
       "id": "worried",
       "title": "If you're worried",
-      "body": "If you are worried about your baby's health or your own, please contact your doctor or healthcare provider. In an emergency, call 911.",
-      "reviewer": "pediatrician"
+      "body": "If you are worried about your baby's health or your own, please contact your doctor or healthcare provider. In an emergency, call 911."
     }
   ]
 }

@@ -19,7 +19,6 @@ export const guideSectionSchema = z.object({
   note: z.string().min(1).optional(),
   /** Ids into the `sources` list. */
   sources: z.array(z.string().min(1)).min(1),
-  reviewer: z.string().min(1),
 });
 export type GuideSection = z.infer<typeof guideSectionSchema>;
 

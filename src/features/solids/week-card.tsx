@@ -2,7 +2,6 @@ import { router } from 'expo-router';
 import { Text, View } from 'react-native';
 
 import { getStageInfo, type PlanWeek } from '@/content/solids-plan';
-import { splitReviewMarker } from '@/content/schemas';
 import { tryFoodsHeading } from '@/domain/food-log';
 import { AppText, Card } from '@/ui';
 
@@ -14,7 +13,7 @@ export type WeekCardProps = {
 /** This week's plan at a glance; opens the full week. */
 export function WeekCard({ week, totalWeeks }: WeekCardProps) {
   const stage = getStageInfo(week.stage);
-  const focus = splitReviewMarker(week.focus[0]).text;
+  const focus = week.focus[0];
 
   return (
     <Card

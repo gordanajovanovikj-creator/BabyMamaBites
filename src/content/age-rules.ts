@@ -4,7 +4,6 @@ import ageRulesJson from './config/age-rules.json';
 
 export const ageRulesSchema = z.object({
   version: z.number().int().positive(),
-  reviewer: z.string().min(1),
   note: z.string(),
   stageStartMonths: z.object({
     solids: z.number().int().positive(),

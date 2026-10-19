@@ -1,7 +1,6 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
-import { splitReviewMarker } from '@/content/schemas';
 import { getArticle } from '@/content/solids-articles';
 import { solidsSourcesFor } from '@/content/solids-plan';
 import { ageRangeLabel } from '@/domain/articles';
@@ -57,7 +56,7 @@ export default function ArticleScreen() {
       <DetailHeader
         kicker={`${ageRangeLabel(article)} · ${article.readMinutes} min read`}
         title={article.title}
-        summary={splitReviewMarker(article.summary).text}
+        summary={article.summary}
       />
 
       <View className="gap-6 px-5 pt-6">

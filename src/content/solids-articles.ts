@@ -37,7 +37,6 @@ export const articleSchema = z
     readMinutes: z.number().int().positive(),
     sections: z.array(sectionSchema).min(1),
     sources: z.array(z.string().min(1)).min(1),
-    reviewer: z.string().min(1),
   })
   .refine((a) => a.toMonths >= a.fromMonths, 'toMonths must not be before fromMonths');
 export type Article = z.infer<typeof articleSchema>;

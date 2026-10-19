@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { ScrollView, View } from 'react-native';
 
 import { foodCategoryLabels, getFood, type ChokingRisk } from '@/content/foods';
-import { splitReviewMarker } from '@/content/schemas';
 import { babyRecipes } from '@/content/recipes';
 import { solidsSourcesFor } from '@/content/solids-plan';
 import { fromIsoDate } from '@/domain/dates';
@@ -62,7 +61,7 @@ export default function FoodScreen() {
     );
   }
 
-  const intro = splitReviewMarker(food.intro);
+  const intro = food.intro;
   const triedOn = foodTriedOn(entries, food);
   const reaction = foodHadReaction(entries, food);
   const sections: { id: Section; label: string }[] = [
@@ -114,7 +113,7 @@ export default function FoodScreen() {
         title={food.name}
       >
         <AppText color="muted" className="pt-1">
-          {intro.text}
+          {intro}
         </AppText>
       </DetailHeader>
 

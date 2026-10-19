@@ -2,7 +2,6 @@ import { router } from 'expo-router';
 import { View } from 'react-native';
 
 import { safetyNotice } from '@/content/copy';
-import { splitReviewMarker } from '@/content/schemas';
 import type { SafetyNoticeId } from '@/domain/safety-notices';
 import { AppText, Button, cn, Notice } from '@/ui';
 
@@ -17,7 +16,7 @@ const urgent: SafetyNoticeId[] = ['choking-emergency', 'allergy-safety'];
  */
 export function SafetyNotice({ id, className }: { id: SafetyNoticeId; className?: string }) {
   const block = safetyNotice(id);
-  const body = splitReviewMarker(block.body).text;
+  const body = block.body;
   if (!urgent.includes(id)) {
     // Disclaimers read as pale fine print, set apart from the page's actual content.
     return (

@@ -71,8 +71,7 @@
         "Never put cereal in a bottle.",
         "Rotate oat, barley and multigrain cereals rather than only rice cereal.",
         "Some oat cereals are processed with wheat; check the label if you avoid gluten."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-sweet-potato-puree",
@@ -104,8 +103,7 @@
         "No salt, sugar or seasoning needed.",
         "Freeze extra in ice-cube trays, then move the cubes to labeled, dated bags and use within 3 months.",
         "Refrigerate leftovers promptly, and check for signs of spoilage before serving."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-chicken-puree",
@@ -140,8 +138,7 @@
         "Mix with a vegetable puree your baby already eats if the texture is too thick on its own.",
         "Refrigerate for 3 to 4 days, or freeze in cubes and use within 2 to 6 months for best quality.",
         "Halal and kosher depend on the chicken you buy; check the label."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-pear-puree",
@@ -172,8 +169,7 @@
       "tips": [
         "Freeze extra in ice-cube trays, then move the cubes to labeled, dated bags and use within 3 months.",
         "Refrigerate leftovers promptly, and check for signs of spoilage before serving."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-avocado-pear-mash",
@@ -210,8 +206,7 @@
         "Offer each food on its own a few times before you mix them together.",
         "Serve fresh. Avocado browns once cut; store leftovers in an airtight container in the fridge and use within a day.",
         "Freeze the pear puree in cubes on its own, and mix in fresh avocado on the day."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-sweet-potato-apple-mash",
@@ -248,8 +243,7 @@
       "tips": [
         "Offer each food on its own a few times before you mix them together.",
         "Freeze in cubes and use within 3 months; refrigerate for up to 3 days."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-squash-chicken-puree",
@@ -287,8 +281,7 @@
         "Chicken thigh has more iron than breast, so it’s a good choice if you have it.",
         "Freeze in cubes and use within 2 to 6 months for best quality; refrigerate for 3 to 4 days.",
         "Halal and kosher depend on the chicken you buy; check the label."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-apple-cinnamon-oatmeal",
@@ -325,8 +318,7 @@
         "Make it fresh each time, and throw away what your baby doesn’t eat.",
         "Never put cereal in a bottle.",
         "Some oat cereals are processed with wheat; check the label if you avoid gluten."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-avocado-puree",
@@ -355,8 +347,7 @@
       ],
       "tips": [
         "Serve fresh; cut avocado turns brown quickly. Keep leftovers covered in the fridge and use within a day."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-carrot-puree",
@@ -384,8 +375,7 @@
         "Steam for 10 to 12 minutes, until very soft.",
         "Blend until completely smooth. Thin with a little water, breast milk or formula until runny and smooth."
       ],
-      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."],
-      "reviewer": "pediatric dietitian"
+      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."]
     },
     {
       "id": "baby-banana-mash",
@@ -415,8 +405,7 @@
         "Peel the banana and mash it well with a fork until no lumps remain.",
         "Thin with a little breast milk, formula or water if needed."
       ],
-      "tips": ["Serve fresh; mashed banana browns quickly."],
-      "reviewer": "pediatric dietitian"
+      "tips": ["Serve fresh; mashed banana browns quickly."]
     },
     {
       "id": "baby-apple-puree",
@@ -444,8 +433,7 @@
         "Steam for 8 to 10 minutes, until tender.",
         "Blend until completely smooth, adding a little of the steaming water as needed."
       ],
-      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."],
-      "reviewer": "pediatric dietitian"
+      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."]
     },
     {
       "id": "baby-squash-puree",
@@ -475,8 +463,7 @@
         "Steam the squash for 12 to 15 minutes, until very soft.",
         "Blend until completely smooth. Thin with a little water, breast milk or formula until runny and smooth."
       ],
-      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."],
-      "reviewer": "pediatric dietitian"
+      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."]
     },
     {
       "id": "baby-pumpkin-puree",
@@ -506,8 +493,7 @@
       "tips": [
         "Check the can says 100% pumpkin; pumpkin pie filling has added sweeteners and spices.",
         "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-zucchini-puree",
@@ -538,8 +524,7 @@
       "tips": [
         "Zucchini is watery; if the puree is too runny, stir in a little infant cereal to thicken it.",
         "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-homemade-oatmeal",
@@ -575,8 +560,7 @@
         "Homemade oats don’t have added iron. Iron-fortified infant cereal is an easy way to add iron at this age.",
         "Some oats are processed with wheat; check the label if you avoid gluten.",
         "Make it fresh, and throw away what your baby doesn’t eat."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-pear-banana-blend",
@@ -606,8 +590,7 @@
       "tips": [
         "Offer each food on its own a few times before you mix them together.",
         "Serve fresh; banana browns quickly."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-carrot-squash-puree",
@@ -642,8 +625,7 @@
       "tips": [
         "Offer each food on its own a few times before you mix them together.",
         "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-zucchini-sweet-potato-puree",
@@ -674,8 +656,7 @@
       "tips": [
         "Offer each food on its own a few times before you mix them together.",
         "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-avocado-banana-mash",
@@ -705,8 +686,7 @@
       "tips": [
         "Make it fresh; avocado browns quickly.",
         "Offer each fruit on its own first, a few days apart, before combining."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-lentil-carrot-mash",
@@ -740,8 +720,7 @@
       "tips": [
         "No salt or stock cubes; they add sodium.",
         "Refrigerate for 3 to 4 days, or freeze portions and use within 2 to 3 months for best quality."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-egg-mash",
@@ -772,8 +751,7 @@
         "Offer egg on a day with no other new foods, and watch for any reaction.",
         "Once tolerated, keep egg in the diet regularly. About 1/3 of an egg is a typical portion.",
         "If you're worried about egg allergy, talk to your pediatrician first."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-peanut-oatmeal",
@@ -808,8 +786,7 @@
         "Never offer chunks or spoonfuls of peanut butter; they're a choking hazard.",
         "If your baby has severe eczema or an egg allergy, talk to your pediatrician before offering peanut.",
         "Some oat cereals are processed with wheat; check the label if you avoid gluten."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-yogurt-berry-swirl",
@@ -842,8 +819,7 @@
       "tips": [
         "Whole blueberries are a choking hazard at this age; always mash or cook them down.",
         "Yogurt is fine before 12 months, but cow's milk as a drink waits until then."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-apple-pear-cinnamon",
@@ -876,8 +852,7 @@
         "Blend with the cinnamon until smooth, or mash with a fork if your baby is practicing textures.",
         "Let it cool before serving."
       ],
-      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."],
-      "reviewer": "pediatric dietitian"
+      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."]
     },
     {
       "id": "baby-sweet-potato-carrot-mash",
@@ -912,8 +887,7 @@
       "tips": [
         "Thin with a little water, breast milk or formula if it’s too thick.",
         "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-oatmeal-blueberry",
@@ -950,8 +924,7 @@
         "If you warm the berries in the microwave, stir well and check for hot spots.",
         "Some oats are processed with wheat; check the label if you avoid gluten.",
         "Make it fresh, and throw away what your baby doesn’t eat."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-zucchini-potato-mash",
@@ -983,8 +956,7 @@
         "Mash together with a fork.",
         "Stir in a tiny pinch of cumin or nutritional yeast if you like. Serve lukewarm."
       ],
-      "tips": ["Refrigerate for up to 3 days. Potato can turn grainy when frozen."],
-      "reviewer": "pediatric dietitian"
+      "tips": ["Refrigerate for up to 3 days. Potato can turn grainy when frozen."]
     },
     {
       "id": "baby-squash-apple-puree",
@@ -1015,8 +987,7 @@
         "Steam the squash and apple for 12 to 15 minutes, until fork-tender.",
         "Blend, or mash well with a fork for a chunkier texture, adding a little of the steaming water as needed. Let it cool before serving."
       ],
-      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."],
-      "reviewer": "pediatric dietitian"
+      "tips": ["Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."]
     },
     {
       "id": "baby-broccoli-potato-mash",
@@ -1051,8 +1022,7 @@
         "Broccoli is a good source of vitamin C, which helps your baby absorb iron from other foods.",
         "Once your baby has had dairy, you can stir in 1 tsp unsalted butter instead; it contains milk.",
         "Refrigerate for up to 3 days."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-pumpkin-oatmeal",
@@ -1089,8 +1059,7 @@
         "Check the can says 100% pumpkin; pie filling has added sugar and spices.",
         "Some oats are processed with wheat; check the label if you avoid gluten.",
         "Make it fresh, and throw away what your baby doesn’t eat."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-pear-chia-mash",
@@ -1121,8 +1090,7 @@
       "tips": [
         "Use ground chia, or whole chia soaked until fully gel-like. Dry chia seeds swell with liquid and can clump.",
         "Make it fresh, and throw away what your baby doesn’t eat."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-mango-yogurt",
@@ -1155,8 +1123,7 @@
       "tips": [
         "Yogurt adds protein and calcium. Choose plain yogurt with no added sugar.",
         "Contains milk: offer yogurt once your baby has had dairy without a reaction."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-banana-oatmeal",
@@ -1190,8 +1157,7 @@
       "tips": [
         "Some oats are processed with wheat; check the label if you avoid gluten.",
         "Make it fresh, and throw away what your baby doesn’t eat."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-zucchini-white-bean-mash",
@@ -1226,8 +1192,7 @@
         "Whole beans are a choking hazard; mash every bean well.",
         "Choose canned beans with no salt added, and rinse them well.",
         "Refrigerate for up to 3 days."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-apple-spinach-puree",
@@ -1261,8 +1226,7 @@
       "tips": [
         "Spinach adds iron and folate; the vitamin C in apple helps your baby absorb the iron.",
         "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-sweet-potato-peach-mash",
@@ -1295,8 +1259,7 @@
       "tips": [
         "Peel the peach first if the skin is tough.",
         "Refrigerate for up to 3 days, or freeze in cubes and use within 3 months."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-salmon-sweet-potato",
@@ -1327,8 +1290,7 @@
       "tips": [
         "Salmon is on the FDA's \"Best Choices\" list for low mercury.",
         "Refrigerate leftovers promptly, and check for signs of spoilage before serving."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-soft-veg-fingers",
@@ -1359,8 +1321,7 @@
       "tips": [
         "Raw carrot is a choking hazard; always cook it until soft.",
         "Stay with your baby while they eat."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-banana-oat-pancakes",
@@ -1392,8 +1353,7 @@
         "Ripe banana sweetens them; no sugar or honey needed.",
         "Oats may be processed with wheat; check the label if you avoid gluten.",
         "Finger-squish test: many parents check that any vegetable or protein served as finger food squishes easily between their thumb and index finger."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-lentil-pasta",
@@ -1429,8 +1389,7 @@
       "tips": [
         "Choose canned tomatoes labeled no salt added.",
         "Refrigerate leftovers promptly, and check for signs of spoilage before serving."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-salmon-potato-mash",
@@ -1465,8 +1424,7 @@
         "Cook salmon to 145°F, until it flakes easily.",
         "Salmon is on the FDA’s \"Best Choices\" list for children.",
         "Refrigerate for up to 2 days."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-carrot-zucchini-fries",
@@ -1503,8 +1461,7 @@
         "Pediatric guidance suggests finger foods soft enough to squash easily between your thumb and finger.",
         "Raw or firm carrot is a choking hazard; always cook it soft.",
         "Always stay with your baby while they eat, and have them sit upright."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-broccoli-quinoa-bites",
@@ -1542,8 +1499,7 @@
         "Cheese can be salty; choose lower-sodium options like fresh mozzarella, ricotta or Swiss when you can.",
         "Freeze extras and thaw in the fridge overnight.",
         "Finger-squish test: many parents check that any vegetable or protein served as finger food squishes easily between their thumb and index finger."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-avocado-egg-soldiers",
@@ -1576,8 +1532,7 @@
         "Cook eggs until both the yolk and white are firm.",
         "Lightly toasted bread is easier for babies to manage than soft, gummy bread.",
         "Always stay with your baby while they eat, and have them sit upright."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-squash-chicken-risotto",
@@ -1613,8 +1568,7 @@
       "tips": [
         "We use water instead of broth; even low-sodium broth adds salt babies don’t need.",
         "Refrigerate for up to 2 days."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-sweet-potato-bean-quesadilla",
@@ -1652,8 +1606,7 @@
       "tips": [
         "Mash every bean well; whole beans are a choking hazard.",
         "Cheese can be salty; choose lower-sodium options like fresh mozzarella, ricotta or Swiss when you can."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-berry-baked-oatmeal",
@@ -1691,8 +1644,7 @@
       "tips": [
         "Never serve whole blueberries; mash or quarter them.",
         "Some oats are processed with wheat; check the label if you avoid gluten."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-lentil-cottage-pie",
@@ -1727,8 +1679,7 @@
       "tips": [
         "Mash or flatten peas so they aren’t whole.",
         "If you microwave it, stir and check for hot spots."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-apple-oatmeal-fingers",
@@ -1764,8 +1715,7 @@
       "tips": [
         "Some oats are processed with wheat; check the label if you avoid gluten.",
         "Refrigerate for up to 2 days."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-apple-zucchini-muffins",
@@ -1804,8 +1754,7 @@
         "Some oats are processed with wheat; check the label if you avoid gluten.",
         "Freeze extras and thaw in the fridge overnight.",
         "Finger-squish test: many parents check that any vegetable or protein served as finger food squishes easily between their thumb and index finger."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-spinach-ricotta-shells",
@@ -1842,8 +1791,7 @@
         "Cook pasta in unsalted water.",
         "Ricotta is one of the lower-sodium cheeses.",
         "Choose small shells, or flatten or cut them so they suit your baby's chewing skills."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-chicken-sweet-potato-bites",
@@ -1881,8 +1829,7 @@
         "Logs and patties are easier for babies to hold, and safer than small round balls.",
         "Aim for pieces soft enough to squash between your fingers.",
         "Halal and kosher depend on the chicken you buy; check the label."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-cauliflower-bean-mash",
@@ -1918,8 +1865,7 @@
       "tips": [
         "Mash every bean well; whole beans are a choking hazard.",
         "Cheese can be salty; choose lower-sodium options like fresh mozzarella, ricotta or Swiss when you can."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-pear-cottage-cheese",
@@ -1955,8 +1901,7 @@
       "tips": [
         "Cottage cheese is often salty; look for a low-sodium one.",
         "If you use the microwave, stir and check for hot spots."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "baby-zucchini-egg-strips",
@@ -1993,8 +1938,7 @@
       "tips": [
         "Cook eggs until both the yolk and white are firm.",
         "Once your baby has had dairy, you can cook it in a little unsalted butter."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-turkey-meatballs",
@@ -2031,8 +1975,7 @@
       "tips": [
         "Skip added salt; season the adults' portions at the table.",
         "Refrigerate for 3 to 4 days, or freeze and use within 2 to 6 months for best quality."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-cheesy-broccoli-rice",
@@ -2067,8 +2010,7 @@
       "tips": [
         "Cheese adds salt, so a little goes a long way.",
         "Refrigerate leftovers promptly, and check for signs of spoilage before serving."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-bean-quesadilla",
@@ -2101,8 +2043,7 @@
         "Cook in a dry pan for 2 to 3 minutes per side, until the cheese melts.",
         "Cool and cut into thin strips."
       ],
-      "tips": ["Check tortilla labels; some contain extra allergens."],
-      "reviewer": "pediatric dietitian"
+      "tips": ["Check tortilla labels; some contain extra allergens."]
     },
     {
       "id": "toddler-overnight-oats",
@@ -2133,11 +2074,7 @@
         "Stir the oats, milk and fruit together.",
         "Cover and refrigerate overnight, or for at least 4 hours."
       ],
-      "tips": [
-        "From 12 months, plain whole cow's milk is fine.",
-        "No added sugar or honey needed."
-      ],
-      "reviewer": "pediatric dietitian"
+      "tips": ["From 12 months, plain whole cow's milk is fine.", "No added sugar or honey needed."]
     },
     {
       "id": "toddler-french-toast-sticks",
@@ -2176,8 +2113,7 @@
       "tips": [
         "Cook eggs until both the yolk and white are firm.",
         "Quarter berries like blueberries and cut strawberries small."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-apple-oat-pancakes",
@@ -2216,8 +2152,7 @@
       "tips": [
         "Some oats are processed with wheat; check the label if you avoid gluten.",
         "Freeze extras between sheets of parchment and reheat in the toaster."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-spinach-cheese-omelets",
@@ -2254,8 +2189,7 @@
       "tips": [
         "Cook eggs until both the yolk and white are firm.",
         "Cheese can be salty; choose lower-sodium options like mozzarella or Swiss when you can."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-nut-butter-rice-cake",
@@ -2292,8 +2226,7 @@
         "If you use almond butter, the snack contains tree nuts instead of peanuts.",
         "Offer rice cakes as an occasional snack, and vary your toddler’s grains.",
         "Always stay with your toddler while they eat, and have them sit down."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-chicken-avocado-pinwheels",
@@ -2328,8 +2261,7 @@
       "tips": [
         "Use chicken cooked to 165°F, with no added salt.",
         "Halal and kosher depend on the chicken you buy; check the label."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-turkey-veggie-quesadilla",
@@ -2365,8 +2297,7 @@
       "tips": [
         "Choose plain cooked turkey rather than deli meat, which is salty.",
         "Halal and kosher depend on the turkey you buy; check the label."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-tuna-cucumber-bites",
@@ -2401,8 +2332,7 @@
       "tips": [
         "Canned light tuna is on the FDA’s \"Best Choices\" list. For toddlers 1 to 3, a serving is about 1 oz, 2 to 3 times a week.",
         "Thick, firm cucumber rounds can be hard to chew; thin, peeled slices are safer."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-chickpea-salad-sandwich",
@@ -2438,8 +2368,7 @@
       "tips": [
         "Whole chickpeas are a choking hazard; mash them well.",
         "You can use mayonnaise instead of yogurt; it contains egg."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-beef-veggie-meatballs",
@@ -2477,8 +2406,7 @@
         "Cut your toddler’s portion into pieces no bigger than about 1/2 inch.",
         "Skip added salt; season the grown-ups’ portions at the table.",
         "Halal and kosher depend on the beef you buy; check the label."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-sweet-potato-mac",
@@ -2511,8 +2439,7 @@
         "Stir in the pasta and parmesan until coated.",
         "Let it cool before serving."
       ],
-      "tips": ["Parmesan is salty, so a little goes a long way."],
-      "reviewer": "pediatric dietitian"
+      "tips": ["Parmesan is salty, so a little goes a long way."]
     },
     {
       "id": "toddler-salmon-rice-patties",
@@ -2550,8 +2477,7 @@
       "tips": [
         "Check the salmon carefully for bones.",
         "Salmon is on the FDA’s \"Best Choices\" list for children."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-chicken-coconut-curry",
@@ -2588,8 +2514,7 @@
       "tips": [
         "Use chicken cooked to 165°F.",
         "Halal and kosher depend on the chicken you buy; check the label."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-yogurt-berry-bark",
@@ -2625,8 +2550,7 @@
       "tips": [
         "Health experts advise skipping added sweeteners before age 2; ripe fruit adds natural sweetness.",
         "Chop berries small; whole blueberries are a choking hazard."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-baked-apple-slices",
@@ -2657,8 +2581,7 @@
       ],
       "tips": [
         "Crunchy apple chips and raw apple pieces are choking hazards for young children; soft-baked slices are safer."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-pb-banana-oat-bites",
@@ -2696,8 +2619,7 @@
         "Thin the mixture with a little more banana if it’s very thick and sticky.",
         "Some oats are processed with wheat; check the label if you avoid gluten.",
         "Always stay with your toddler while they eat, and have them sit down."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "toddler-broccoli-potato-tots",
@@ -2734,8 +2656,7 @@
       "tips": [
         "Cheese can be salty; choose lower-sodium options like mozzarella or Swiss when you can.",
         "Freeze extras and reheat in the oven."
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     }
   ]
 }

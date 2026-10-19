@@ -2,7 +2,6 @@ import { router } from 'expo-router';
 import { Linking, View } from 'react-native';
 
 import { chokingDisclaimer, safetyNotice } from '@/content/copy';
-import { splitReviewMarker } from '@/content/schemas';
 import { chokingGuide, solidsSourcesFor } from '@/content/solids-plan';
 import { SourceLinks } from '@/features/shared/source-links';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
@@ -35,7 +34,7 @@ export default function ChokingScreen() {
           {`⚠️ ${emergency.title}`}
         </AppText>
         <AppText color="danger" className="font-semibold">
-          {splitReviewMarker(emergency.body).text}
+          {emergency.body}
         </AppText>
         <AppText variant="label" color="danger">
           Call 911 if your baby is choking and:
@@ -49,7 +48,7 @@ export default function ChokingScreen() {
         />
       </View>
 
-      <AppText color="muted">{splitReviewMarker(chokingGuide.intro).text}</AppText>
+      <AppText color="muted">{chokingGuide.intro}</AppText>
 
       <Button
         label="Read: Choking vs. gagging guide"
@@ -70,13 +69,11 @@ export default function ChokingScreen() {
 
       <View className="gap-2 pt-2">
         <AppText variant="heading">{chokingDisclaimer.title}</AppText>
-        {splitReviewMarker(chokingDisclaimer.body)
-          .text.split('\n\n')
-          .map((p) => (
-            <AppText key={p} variant="caption">
-              {p}
-            </AppText>
-          ))}
+        {chokingDisclaimer.body.split('\n\n').map((p) => (
+          <AppText key={p} variant="caption">
+            {p}
+          </AppText>
+        ))}
       </View>
       <HealthDisclaimerNote />
     </Screen>

@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 
 import { allRecipes, getRecipe } from '@/content/recipes';
-import { splitReviewMarker } from '@/content/schemas';
 import { allergenLabels, dietLabels } from '@/domain/profile-labels';
 import { energyLabels, recipeTagLabels } from '@/domain/recipe-labels';
 import { today } from '@/domain/dates';
@@ -47,7 +46,7 @@ export default function RecipeScreen() {
     );
   }
 
-  const summary = splitReviewMarker(recipe.summary);
+  const summary = recipe.summary;
   const clashes = recipe.allergens.filter((a) => profile?.allergens.includes(a));
   const ageMonths = profile ? babyAge(profile, today()).months : null;
   const ahead = ageMonths !== null && isAheadOfAge(recipe, ageMonths);
@@ -104,7 +103,7 @@ export default function RecipeScreen() {
       <DetailHeader kicker={recipeKicker(recipe)} title={recipe.title}>
         <AppText variant="caption">{recipeTimings(recipe)}</AppText>
         <AppText color="muted" className="pt-1">
-          {summary.text}
+          {summary}
         </AppText>
         <View className="flex-row flex-wrap gap-2 pt-2">
           {tags.map((t) => (

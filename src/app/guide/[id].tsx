@@ -2,7 +2,6 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
 import { monthlyGuides } from '@/content/monthly-guides';
-import { splitReviewMarker } from '@/content/schemas';
 import { adjacentGuides } from '@/domain/monthly-guides';
 import { guidePhoto } from '@/features/guides/guide-photos';
 import { GuideSectionView } from '@/features/guides/guide-section-view';
@@ -37,11 +36,7 @@ export default function GuideScreen() {
     >
       <PictureHero tone="muted" icon="calendar" emoji="📅" photo={guidePhoto(guide.id)} />
 
-      <DetailHeader
-        kicker={guide.ageLabel}
-        title={guide.title}
-        summary={splitReviewMarker(guide.intro).text}
-      />
+      <DetailHeader kicker={guide.ageLabel} title={guide.title} summary={guide.intro} />
 
       <View className="gap-6 px-5 pt-6">
         {guide.sections.map((section) => (

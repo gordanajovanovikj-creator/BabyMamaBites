@@ -2,7 +2,6 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
 import { getInsight } from '@/content/insights';
-import { splitReviewMarker } from '@/content/schemas';
 import { insightBlocks, type InsightBlock } from '@/domain/insights';
 import { insightItem } from '@/domain/library';
 import { noticesFor } from '@/domain/safety-notices';
@@ -79,17 +78,15 @@ export default function InsightScreen() {
       <DetailHeader
         kicker={insightKindLabel[insight.kind]}
         title={insight.title}
-        summary={splitReviewMarker(insight.summary).text}
+        summary={insight.summary}
       />
 
       <View className="gap-6 px-5 pt-6">
         <SafetyNotices ids={notices.top} />
         <View className="gap-3">
-          {insightBlocks(insight.body.map((line) => splitReviewMarker(line).text)).map(
-            (block, i) => (
-              <BodyBlock key={i} block={block} first={i === 0} />
-            ),
-          )}
+          {insightBlocks(insight.body.map((line) => line)).map((block, i) => (
+            <BodyBlock key={i} block={block} first={i === 0} />
+          ))}
         </View>
 
         {insight.kind === 'when-to-call' ? (

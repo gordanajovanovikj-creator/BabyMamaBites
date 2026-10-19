@@ -32,8 +32,7 @@
         "Tip for busy moms: make three or four jars at once on a Sunday, or while your partner is on baby duty. They keep in the fridge for up to 4 days, so a nourishing breakfast is ready the second hunger strikes.",
         "Honey is fine for you, but never give honey to a baby under 12 months."
       ],
-      "allergens": ["milk", "peanut"],
-      "reviewer": "dietitian"
+      "allergens": ["milk", "peanut"]
     },
     {
       "id": "newborn-water",
@@ -61,8 +60,7 @@
         "One bottle isn’t enough: bottles get lost, knocked over or left in another room. Aim for three: one by your feeding chair, one by your bed for night wake-ups, and one in the diaper bag for when you’re out.",
         "When you’re busy growing and feeding a tiny human, taking care of yourself can start with something as simple as a glass of water. What’s your go-to water bottle?"
       ],
-      "allergens": [],
-      "reviewer": "dietitian"
+      "allergens": []
     },
     {
       "id": "newborn-rest",
@@ -78,8 +76,7 @@
       "body": [
         "You don't need to fill every quiet moment. If the baby is settled and someone is around, it's okay to put your feet up, even for a few minutes."
       ],
-      "allergens": [],
-      "reviewer": "editorial"
+      "allergens": []
     },
     {
       "id": "solids-choking",
@@ -96,8 +93,7 @@
         "The Choking and gagging guide shows which foods to avoid or change at each age, and how to tell gagging from choking. A baby first-aid and CPR course is a good way to feel prepared.",
         "If your baby is choking and cannot breathe, cry or make a sound, call 911 right away."
       ],
-      "allergens": [],
-      "reviewer": "pediatrician"
+      "allergens": []
     },
     {
       "id": "toddler-share-plate",
@@ -113,8 +109,7 @@
       "body": [
         "Serve the family meal in toddler-friendly pieces: soft, bite-size and easy to pick up, with the salt added only to the grown-up portions."
       ],
-      "allergens": [],
-      "reviewer": "pediatric dietitian"
+      "allergens": []
     }
   ]
 }

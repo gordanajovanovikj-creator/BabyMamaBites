@@ -24,7 +24,6 @@ export const insightSchema = z.object({
   body: z.array(z.string().min(1)).min(1),
   /** Allergens the insight's food contains; hidden for households avoiding them. */
   allergens: z.array(z.enum(allergens)),
-  reviewer: z.string().min(1),
 });
 export type Insight = z.infer<typeof insightSchema>;
 export type InsightTone = Insight['tone'];

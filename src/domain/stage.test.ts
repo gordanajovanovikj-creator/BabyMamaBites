@@ -15,7 +15,6 @@ import {
 
 const rules: AgeRules = {
   version: 1,
-  reviewer: 'test',
   note: '',
   stageStartMonths: { solids: 6, toddler: 12 },
   correctedAge: { minDaysEarly: 21, useUntilMonths: 24 },

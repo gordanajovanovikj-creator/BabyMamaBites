@@ -1,7 +1,6 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
-import { splitReviewMarker } from '@/content/schemas';
 import { getPlanWeek, getStageInfo, planWeeks, solidsSourcesFor } from '@/content/solids-plan';
 import { tryFoodsHeading } from '@/domain/food-log';
 import { allergenLabels } from '@/domain/profile-labels';
@@ -57,7 +56,7 @@ export default function PlanWeekScreen() {
 
       <Card className="gap-3">
         {week.focus.map((p) => (
-          <AppText key={p}>{splitReviewMarker(p).text}</AppText>
+          <AppText key={p}>{p}</AppText>
         ))}
       </Card>
 

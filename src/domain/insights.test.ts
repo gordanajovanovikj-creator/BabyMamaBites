@@ -21,7 +21,6 @@ function make(id: string, extra: Partial<Insight> = {}): Insight {
     summary: id,
     body: ['[PLACEHOLDER - needs expert review] text'],
     allergens: [],
-    reviewer: 'test',
     ...extra,
   };
 }

@@ -26,7 +26,6 @@ export const planWeekSchema = z.object({
     .nullable(),
   tips: z.array(z.string().min(1)),
   sources: z.array(z.string().min(1)).min(1),
-  reviewer: z.string().min(1),
 });
 export type PlanWeek = z.infer<typeof planWeekSchema>;
 

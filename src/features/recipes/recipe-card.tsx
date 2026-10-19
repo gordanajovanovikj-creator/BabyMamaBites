@@ -2,7 +2,6 @@ import { router } from 'expo-router';
 import { View } from 'react-native';
 
 import type { Recipe } from '@/content/recipes';
-import { splitReviewMarker } from '@/content/schemas';
 import { allergenLabels } from '@/domain/profile-labels';
 import { energyLabels } from '@/domain/recipe-labels';
 import { formatMinutes } from '@/domain/recipes';
@@ -18,7 +17,7 @@ export type RecipeCardProps = {
 
 export function RecipeCard({ recipe, fitsTime }: RecipeCardProps) {
   const { isFavorite, toggle } = useFavorites();
-  const summary = splitReviewMarker(recipe.summary).text;
+  const summary = recipe.summary;
   const contains = recipe.allergens.map((a) => allergenLabels[a]).join(', ');
   const meta = `${formatMinutes(recipe.activeMinutes)} hands-on · ${energyLabels[recipe.energy]}`;
 

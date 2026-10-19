@@ -36,8 +36,7 @@
         "cdc-textures",
         "cdc-choking",
         "cdc-iron"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "carrot",
@@ -72,8 +71,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "broccoli",
@@ -109,8 +107,7 @@
         "cdc-textures",
         "cdc-choking",
         "cdc-iron"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "peas",
@@ -145,8 +142,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "spinach",
@@ -182,8 +178,7 @@
         "cdc-textures",
         "cdc-choking",
         "cdc-iron"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "zucchini",
@@ -218,8 +213,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "butternut-squash",
@@ -254,8 +248,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "green-beans",
@@ -290,8 +283,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "cauliflower",
@@ -326,8 +318,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "kale",
@@ -363,8 +354,7 @@
         "cdc-textures",
         "cdc-choking",
         "cdc-iron"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "parsnips",
@@ -399,8 +389,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "haricots-verts",
@@ -439,8 +428,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "avocado",
@@ -475,8 +463,7 @@
       "sources": [
         "cdc-solids",
         "cdc-textures"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "banana",
@@ -510,8 +497,7 @@
       "sources": [
         "cdc-solids",
         "cdc-textures"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "apple",
@@ -549,8 +535,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "pear",
@@ -585,8 +570,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "blueberries",
@@ -622,8 +606,7 @@
         "cdc-textures",
         "cdc-choking",
         "cdc-iron"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "strawberries",
@@ -659,8 +642,7 @@
         "cdc-textures",
         "cdc-choking",
         "cdc-iron"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "mango",
@@ -694,8 +676,7 @@
       "sources": [
         "cdc-solids",
         "cdc-textures"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "peach",
@@ -730,8 +711,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "cherries",
@@ -766,8 +746,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "prunes",
@@ -805,8 +784,7 @@
         "cdc-solids",
         "cdc-textures",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "egg",
@@ -845,8 +823,7 @@
         "cdc-solids",
         "cdc-iron",
         "aap-allergens"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "chicken",
@@ -881,8 +858,7 @@
         "cdc-solids",
         "cdc-iron",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "beef",
@@ -917,8 +893,7 @@
         "cdc-solids",
         "cdc-iron",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "turkey",
@@ -953,8 +928,7 @@
         "cdc-solids",
         "cdc-iron",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "salmon",
@@ -990,8 +964,7 @@
         "cdc-iron",
         "cdc-choking",
         "aap-allergens"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "shrimp",
@@ -1026,8 +999,7 @@
         "fda-fish",
         "cdc-iron",
         "aap-allergens"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "lentils",
@@ -1061,8 +1033,7 @@
       "sources": [
         "cdc-solids",
         "cdc-iron"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "black-beans",
@@ -1096,8 +1067,7 @@
       "sources": [
         "cdc-iron",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "tofu",
@@ -1131,8 +1101,7 @@
       "sources": [
         "cdc-iron",
         "aap-allergens"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "peanut-butter",
@@ -1166,8 +1135,7 @@
       "sources": [
         "aap-allergens",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "almond-butter",
@@ -1201,8 +1169,7 @@
       "sources": [
         "aap-allergens",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "tahini",
@@ -1239,8 +1206,7 @@
       "sources": [
         "aap-allergens",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "red-lentils",
@@ -1275,8 +1241,7 @@
       "sources": [
         "cdc-solids",
         "cdc-iron"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "infant-cereal",
@@ -1314,8 +1279,7 @@
       "sources": [
         "cdc-iron",
         "cdc-solids"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "oats",
@@ -1350,8 +1314,7 @@
       "sources": [
         "cdc-solids",
         "cdc-choking"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "rice",
@@ -1384,8 +1347,7 @@
       ],
       "sources": [
         "cdc-solids"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "pasta",
@@ -1419,8 +1381,7 @@
       "sources": [
         "cdc-solids",
         "aap-allergens"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "bread",
@@ -1454,8 +1415,7 @@
       "sources": [
         "cdc-choking",
         "aap-allergens"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "brown-rice",
@@ -1488,8 +1448,7 @@
       ],
       "sources": [
         "cdc-solids"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "quinoa",
@@ -1522,8 +1481,7 @@
       ],
       "sources": [
         "cdc-solids"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "yogurt",
@@ -1558,8 +1516,7 @@
       "sources": [
         "cdc-cowsmilk",
         "aap-allergens"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     },
     {
       "id": "cheese",
@@ -1601,8 +1558,7 @@
         "cdc-choking",
         "cdc-cowsmilk",
         "aap-allergens"
-      ],
-      "reviewer": "pediatric dietitian"
+      ]
     }
   ]
 }

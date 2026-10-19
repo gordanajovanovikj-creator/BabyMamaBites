@@ -1,7 +1,6 @@
 import { Linking, View } from 'react-native';
 
 import type { ReactionAdvice } from '@/content/reactions';
-import { splitReviewMarker } from '@/content/schemas';
 import { solidsSourcesFor } from '@/content/solids-plan';
 import { SourceLinks } from '@/features/shared/source-links';
 import { AppText, Button, cn } from '@/ui';
@@ -22,7 +21,7 @@ export function ReactionAdviceView({ advice, urgent }: ReactionAdviceViewProps) 
       <AppText variant="heading" color={color}>
         {advice.title}
       </AppText>
-      <AppText color={color}>{splitReviewMarker(advice.intro).text}</AppText>
+      <AppText color={color}>{advice.intro}</AppText>
       {advice.signs.map((sign) => (
         <View key={sign} className="flex-row gap-3">
           <AppText color={color} className="font-bold">

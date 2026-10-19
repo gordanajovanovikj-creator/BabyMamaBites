@@ -205,8 +205,7 @@
             "cdc-formula-howmuch",
             "cdc-hungry",
             "who-iycf"
-          ],
-          "reviewer": "IBCLC lactation consultant"
+          ]
         },
         {
           "id": "vitamins",
@@ -217,8 +216,7 @@
             "Iron: standard iron-fortified formula covers a baby's iron needs. If your baby is breastfed or was born early, ask your pediatrician whether they need iron drops before 6 months."
           ],
           "bullets": [],
-          "sources": ["cdc-vitd", "cdc-bf-howmuch", "cdc-formula-howmuch", "cdc-iron"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-vitd", "cdc-bf-howmuch", "cdc-formula-howmuch", "cdc-iron"]
         },
         {
           "id": "for-you",
@@ -233,8 +231,7 @@
             "If you formula feed, a healthy, varied diet supports your recovery too.",
             "Ask your doctor whether a multivitamin makes sense for you."
           ],
-          "sources": ["cdc-maternal-diet", "owh-challenges"],
-          "reviewer": "registered dietitian"
+          "sources": ["cdc-maternal-diet", "owh-challenges"]
         },
         {
           "id": "rest",
@@ -248,8 +245,7 @@
             "The first step is to talk to your doctor, who can refer you to a mental health professional.",
             "You can usually keep breastfeeding during treatment. Tell your doctor you're breastfeeding so you can choose a treatment together."
           ],
-          "sources": ["cdc-ppd", "cdc-bf-expect"],
-          "reviewer": "perinatal mental health clinician"
+          "sources": ["cdc-ppd", "cdc-bf-expect"]
         },
         {
           "id": "when-to-call",
@@ -267,8 +263,7 @@
             "You feel low, anxious or not like yourself, or have any thoughts of harming yourself or your baby (get help right away).",
             "In an emergency, call 911. If you're in crisis, call or text 988 (Suicide and Crisis Lifeline), or call or text the National Maternal Mental Health Hotline at 1-833-TLC-MAMA (1-833-852-6262)."
           ],
-          "sources": ["cdc-bf-newborn", "cdc-bf-howmuch", "cdc-bf-expect", "cdc-ppd"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-bf-newborn", "cdc-bf-howmuch", "cdc-bf-expect", "cdc-ppd"]
         }
       ]
     },
@@ -302,8 +297,7 @@
             "cdc-hungry",
             "cdc-bf-newborn",
             "aap-solids"
-          ],
-          "reviewer": "IBCLC lactation consultant"
+          ]
         },
         {
           "id": "vitamins",
@@ -314,8 +308,7 @@
             "Iron: standard iron-fortified formula covers a baby's iron needs. If your baby is breastfed or was born early, ask your pediatrician whether they need iron drops before 6 months."
           ],
           "bullets": [],
-          "sources": ["cdc-vitd", "cdc-bf-howmuch", "cdc-formula-howmuch", "cdc-iron"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-vitd", "cdc-bf-howmuch", "cdc-formula-howmuch", "cdc-iron"]
         },
         {
           "id": "for-you",
@@ -330,8 +323,7 @@
             "Avoid king mackerel, marlin, orange roughy, shark, swordfish, Gulf of Mexico tilefish and bigeye tuna.",
             "Fish caught by family or friends: check local advisories; if there isn't one, eat only one serving that week."
           ],
-          "sources": ["cdc-maternal-diet", "fda-fish"],
-          "reviewer": "registered dietitian"
+          "sources": ["cdc-maternal-diet", "fda-fish"]
         },
         {
           "id": "rest",
@@ -344,8 +336,7 @@
             "The first step is to talk to your doctor, who can refer you to a mental health professional.",
             "You can usually keep breastfeeding during treatment. Tell your doctor you're breastfeeding so you can choose a treatment together."
           ],
-          "sources": ["cdc-ppd", "cdc-bf-expect"],
-          "reviewer": "perinatal mental health clinician"
+          "sources": ["cdc-ppd", "cdc-bf-expect"]
         },
         {
           "id": "when-to-call",
@@ -366,8 +357,7 @@
             "cdc-iron",
             "cdc-bf-expect",
             "cdc-ppd"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -401,8 +391,7 @@
             "cdc-hungry",
             "cdc-bf-newborn",
             "aap-solids"
-          ],
-          "reviewer": "IBCLC lactation consultant"
+          ]
         },
         {
           "id": "for-you",
@@ -415,8 +404,7 @@
             "Pair beans, lentils, tofu and greens with vitamin C foods like oranges, berries, broccoli or tomatoes to help absorb iron.",
             "Choose plant milks fortified with calcium and vitamin D."
           ],
-          "sources": ["cdc-maternal-diet", "cdc-iron"],
-          "reviewer": "registered dietitian"
+          "sources": ["cdc-maternal-diet", "cdc-iron"]
         },
         {
           "id": "rest",
@@ -429,8 +417,7 @@
             "The first step is to talk to your doctor, who can refer you to a mental health professional.",
             "You can usually keep breastfeeding during treatment. Tell your doctor you're breastfeeding so you can choose a treatment together."
           ],
-          "sources": ["cdc-ppd", "cdc-bf-expect"],
-          "reviewer": "perinatal mental health clinician"
+          "sources": ["cdc-ppd", "cdc-bf-expect"]
         },
         {
           "id": "when-to-call",
@@ -451,8 +438,7 @@
             "cdc-iron",
             "cdc-bf-expect",
             "cdc-ppd"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -478,8 +464,7 @@
             "Keep following hunger and fullness cues.",
             "Once breastfeeding is well established, offering a pacifier at naps and bedtime can help reduce the risk of SIDS."
           ],
-          "sources": ["cdc-bf-expect", "cdc-hungry", "aap-solids"],
-          "reviewer": "IBCLC lactation consultant"
+          "sources": ["cdc-bf-expect", "cdc-hungry", "aap-solids"]
         },
         {
           "id": "vitamins",
@@ -490,8 +475,7 @@
             "Iron: standard iron-fortified formula covers a baby's iron needs. If your baby is breastfed or was born early, ask your pediatrician whether they need iron drops before 6 months."
           ],
           "bullets": [],
-          "sources": ["cdc-vitd", "cdc-bf-howmuch", "cdc-formula-howmuch", "cdc-iron"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-vitd", "cdc-bf-howmuch", "cdc-formula-howmuch", "cdc-iron"]
         },
         {
           "id": "for-you",
@@ -504,8 +488,7 @@
             "Caffeine is in coffee, tea, soda, energy drinks and chocolate.",
             "If your baby seems unusually fussy after you've had a lot of caffeine, try cutting back."
           ],
-          "sources": ["cdc-maternal-diet"],
-          "reviewer": "registered dietitian"
+          "sources": ["cdc-maternal-diet"]
         },
         {
           "id": "rest",
@@ -518,8 +501,7 @@
             "The first step is to talk to your doctor, who can refer you to a mental health professional.",
             "You can usually keep breastfeeding during treatment. Tell your doctor you're breastfeeding so you can choose a treatment together."
           ],
-          "sources": ["cdc-ppd", "cdc-bf-expect"],
-          "reviewer": "perinatal mental health clinician"
+          "sources": ["cdc-ppd", "cdc-bf-expect"]
         },
         {
           "id": "when-to-call",
@@ -540,8 +522,7 @@
             "cdc-iron",
             "cdc-bf-expect",
             "cdc-ppd"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -567,8 +548,7 @@
             "Keep following hunger and fullness cues.",
             "Once breastfeeding is well established, offering a pacifier at naps and bedtime can help reduce the risk of SIDS."
           ],
-          "sources": ["cdc-bf-expect", "cdc-hungry", "aap-solids"],
-          "reviewer": "IBCLC lactation consultant"
+          "sources": ["cdc-bf-expect", "cdc-hungry", "aap-solids"]
         },
         {
           "id": "getting-ready",
@@ -579,7 +559,6 @@
           ],
           "bullets": [],
           "sources": ["cdc-solids", "aap-solids", "aap-allergens", "who-iycf"],
-          "reviewer": "pediatric dietitian",
           "note": "If your baby was born early, ask your pediatrician when to start solids."
         },
         {
@@ -595,8 +574,7 @@
             "Avoid king mackerel, marlin, orange roughy, shark, swordfish, Gulf of Mexico tilefish and bigeye tuna.",
             "Fish caught by family or friends: check local advisories; if there isn't one, eat only one serving that week."
           ],
-          "sources": ["cdc-maternal-diet", "fda-fish"],
-          "reviewer": "registered dietitian"
+          "sources": ["cdc-maternal-diet", "fda-fish"]
         },
         {
           "id": "rest",
@@ -609,8 +587,7 @@
             "The first step is to talk to your doctor, who can refer you to a mental health professional.",
             "You can usually keep breastfeeding during treatment. Tell your doctor you're breastfeeding so you can choose a treatment together."
           ],
-          "sources": ["cdc-ppd", "cdc-bf-expect"],
-          "reviewer": "perinatal mental health clinician"
+          "sources": ["cdc-ppd", "cdc-bf-expect"]
         },
         {
           "id": "when-to-call",
@@ -631,8 +608,7 @@
             "cdc-iron",
             "cdc-bf-expect",
             "cdc-ppd"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -656,8 +632,7 @@
             "Swallows food rather than pushing it back out onto their chin.",
             "Brings toys or food to their mouth and tries to grasp small objects."
           ],
-          "sources": ["cdc-solids", "aap-solids", "aap-bf-solids"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-solids", "aap-solids", "aap-bf-solids"]
         },
         {
           "id": "getting-ready",
@@ -668,7 +643,6 @@
           ],
           "bullets": [],
           "sources": ["cdc-solids", "aap-solids", "aap-allergens", "who-iycf"],
-          "reviewer": "pediatric dietitian",
           "note": "If your baby was born early, ask your pediatrician when to start solids."
         },
         {
@@ -682,8 +656,7 @@
             "Ice-cube trays or small containers for freezing small portions.",
             "Consider an infant CPR and first-aid class (for example through the American Red Cross or American Heart Association)."
           ],
-          "sources": ["cdc-choking", "cdc-utensils", "cdc-picky", "aap-choking"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-choking", "cdc-utensils", "cdc-picky", "aap-choking"]
         },
         {
           "id": "for-you",
@@ -698,8 +671,7 @@
             "If you formula feed, a healthy, varied diet supports your recovery too.",
             "Ask your doctor whether a multivitamin makes sense for you."
           ],
-          "sources": ["cdc-maternal-diet", "owh-challenges"],
-          "reviewer": "registered dietitian"
+          "sources": ["cdc-maternal-diet", "owh-challenges"]
         },
         {
           "id": "when-to-call",
@@ -720,8 +692,7 @@
             "cdc-iron",
             "cdc-bf-expect",
             "cdc-ppd"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -750,8 +721,7 @@
             "Introduce one single-ingredient food at a time so you can spot any reaction.",
             "Babies may need many tries before they like a new food. Keep offering."
           ],
-          "sources": ["cdc-solids", "cdc-howmuch-food", "aap-solids", "aap-bf-solids", "cdc-picky"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-solids", "cdc-howmuch-food", "aap-solids", "aap-bf-solids", "cdc-picky"]
         },
         {
           "id": "textures",
@@ -766,8 +736,7 @@
             "Ripe banana can be mashed raw; most other fruits and vegetables are usually cooked until soft.",
             "Use a spoon for purees and cereal, never a bottle."
           ],
-          "sources": ["cdc-textures", "cdc-solids", "aap-solids", "cdc-utensils"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-textures", "cdc-solids", "aap-solids", "cdc-utensils"]
         },
         {
           "id": "allergens",
@@ -783,7 +752,6 @@
             "If your baby has severe, persistent eczema or has had an allergic reaction to a food like egg, talk to your pediatrician first. For these higher-risk babies, peanut may be recommended as early as 4 to 6 months."
           ],
           "sources": ["aap-allergens", "cdc-solids", "aap-solids", "aap-bf-solids"],
-          "reviewer": "pediatric allergist",
           "note": "How long to wait between new foods varies: the CDC and the AAP's starting-solids guide say 3 to 5 days, while the AAP's allergen guide says at least a day. Ask your pediatrician what suits your baby."
         },
         {
@@ -799,8 +767,7 @@
             "No caffeinated drinks, including tea and soda, before age 2.",
             "If your tap water is fluoridated, it also helps protect teeth."
           ],
-          "sources": ["cdc-encourage", "cdc-avoid", "aap-solids"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-encourage", "cdc-avoid", "aap-solids"]
         },
         {
           "id": "vitamins",
@@ -814,8 +781,7 @@
             "Zinc matters too: meat and iron-fortified cereals provide both iron and zinc.",
             "Your pediatrician will likely check for anemia around 12 months."
           ],
-          "sources": ["cdc-iron", "aap-bf-solids", "aap-solids", "cdc-vitd"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-iron", "aap-bf-solids", "aap-solids", "cdc-vitd"]
         },
         {
           "id": "safety",
@@ -832,8 +798,7 @@
             "Choking risks: whole nuts and seeds, spoonfuls or chunks of nut butter, whole grapes, berries, cherries and cherry tomatoes, raw carrot or apple, popcorn, chips, hot dogs, meat sticks and sausages, chunks of meat or cheese, whole corn kernels, and raisins.",
             "Remove skin, bones, seeds and pits. Cut grapes and small round foods into small pieces, and cut hot dogs or string cheese into short, thin strips."
           ],
-          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"]
         },
         {
           "id": "for-you",
@@ -846,8 +811,7 @@
             "Keep up a varied diet for yourself: vegetables, fruit, whole grains, protein and dairy or fortified alternatives.",
             "If you're still breastfeeding, the caffeine and fish advice for breastfeeding moms still applies."
           ],
-          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"],
-          "reviewer": "registered dietitian"
+          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"]
         },
         {
           "id": "when-to-call",
@@ -870,8 +834,7 @@
             "aap-solids",
             "cdc-howmuch-food",
             "cdc-ppd"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -906,7 +869,6 @@
             "cdc-encourage",
             "who-iycf"
           ],
-          "reviewer": "pediatric dietitian",
           "note": "WHO suggests 2 to 3 meals a day for babies aged 6 to 8 months, plus 1 to 2 snacks if needed."
         },
         {
@@ -919,8 +881,7 @@
             "Finger food ideas: small pieces of banana, scrambled egg, well-cooked pasta, finely chopped well-cooked chicken, cooked potatoes or peas, small pieces of bread, and soft-cooked vegetables.",
             "Pediatric guidance suggests foods that are soft, easy to swallow and cut into small pieces."
           ],
-          "sources": ["cdc-textures", "aap-solids", "cdc-utensils"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-textures", "aap-solids", "cdc-utensils"]
         },
         {
           "id": "allergens",
@@ -936,7 +897,6 @@
             "If your baby has severe, persistent eczema or has had an allergic reaction to a food like egg, talk to your pediatrician first. For these higher-risk babies, peanut may be recommended as early as 4 to 6 months."
           ],
           "sources": ["aap-allergens", "cdc-solids", "aap-solids", "aap-bf-solids"],
-          "reviewer": "pediatric allergist",
           "note": "How long to wait between new foods varies: the CDC and the AAP's starting-solids guide say 3 to 5 days, while the AAP's allergen guide says at least a day. Ask your pediatrician what suits your baby."
         },
         {
@@ -951,8 +911,7 @@
             "Zinc matters too: meat and iron-fortified cereals provide both iron and zinc.",
             "Your pediatrician will likely check for anemia around 12 months."
           ],
-          "sources": ["cdc-iron", "aap-bf-solids", "aap-solids", "cdc-vitd"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-iron", "aap-bf-solids", "aap-solids", "cdc-vitd"]
         },
         {
           "id": "safety",
@@ -969,8 +928,7 @@
             "Choking risks: whole nuts and seeds, spoonfuls or chunks of nut butter, whole grapes, berries, cherries and cherry tomatoes, raw carrot or apple, popcorn, chips, hot dogs, meat sticks and sausages, chunks of meat or cheese, whole corn kernels, and raisins.",
             "Remove skin, bones, seeds and pits. Cut grapes and small round foods into small pieces, and cut hot dogs or string cheese into short, thin strips."
           ],
-          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"]
         },
         {
           "id": "for-you",
@@ -983,8 +941,7 @@
             "Keep up a varied diet for yourself: vegetables, fruit, whole grains, protein and dairy or fortified alternatives.",
             "If you're still breastfeeding, the caffeine and fish advice for breastfeeding moms still applies."
           ],
-          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"],
-          "reviewer": "registered dietitian"
+          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"]
         },
         {
           "id": "when-to-call",
@@ -1007,8 +964,7 @@
             "aap-solids",
             "cdc-howmuch-food",
             "cdc-ppd"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -1034,8 +990,7 @@
             "Full signs: pushing food away, closing their mouth, turning their head.",
             "Offer a food again even if it was refused; it can take many tries."
           ],
-          "sources": ["aap-solids", "cdc-hungry", "cdc-picky"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["aap-solids", "cdc-hungry", "cdc-picky"]
         },
         {
           "id": "textures",
@@ -1049,8 +1004,7 @@
             "Cut grapes, berries and cherry tomatoes into small pieces, and hot dogs or sausages into short, thin strips.",
             "Expect spills while your baby learns."
           ],
-          "sources": ["cdc-utensils", "cdc-solids"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-utensils", "cdc-solids"]
         },
         {
           "id": "drinks",
@@ -1065,8 +1019,7 @@
             "No caffeinated drinks, including tea and soda, before age 2.",
             "If your tap water is fluoridated, it also helps protect teeth."
           ],
-          "sources": ["cdc-encourage", "cdc-avoid", "aap-solids"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-encourage", "cdc-avoid", "aap-solids"]
         },
         {
           "id": "safety",
@@ -1083,8 +1036,7 @@
             "Choking risks: whole nuts and seeds, spoonfuls or chunks of nut butter, whole grapes, berries, cherries and cherry tomatoes, raw carrot or apple, popcorn, chips, hot dogs, meat sticks and sausages, chunks of meat or cheese, whole corn kernels, and raisins.",
             "Remove skin, bones, seeds and pits. Cut grapes and small round foods into small pieces, and cut hot dogs or string cheese into short, thin strips."
           ],
-          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"]
         },
         {
           "id": "for-you",
@@ -1097,8 +1049,7 @@
             "Keep up a varied diet for yourself: vegetables, fruit, whole grains, protein and dairy or fortified alternatives.",
             "If you're still breastfeeding, the caffeine and fish advice for breastfeeding moms still applies."
           ],
-          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"],
-          "reviewer": "registered dietitian"
+          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"]
         },
         {
           "id": "when-to-call",
@@ -1121,8 +1072,7 @@
             "aap-solids",
             "cdc-howmuch-food",
             "cdc-ppd"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -1149,7 +1099,6 @@
             "Keep foods free of added salt and sugar."
           ],
           "sources": ["cdc-howmuch-food", "who-iycf"],
-          "reviewer": "pediatric dietitian",
           "note": "WHO suggests 3 to 4 meals a day from 9 months, plus 1 to 2 snacks if needed."
         },
         {
@@ -1163,8 +1112,7 @@
             "Give your baby their own spoon to practice with while you help.",
             "Keep offering soft finger foods."
           ],
-          "sources": ["cdc-textures", "cdc-utensils"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-textures", "cdc-utensils"]
         },
         {
           "id": "vitamins",
@@ -1178,8 +1126,7 @@
             "Zinc matters too: meat and iron-fortified cereals provide both iron and zinc.",
             "Your pediatrician will likely check for anemia around 12 months."
           ],
-          "sources": ["cdc-iron", "aap-bf-solids", "aap-solids", "cdc-vitd"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-iron", "aap-bf-solids", "aap-solids", "cdc-vitd"]
         },
         {
           "id": "safety",
@@ -1196,8 +1143,7 @@
             "Choking risks: whole nuts and seeds, spoonfuls or chunks of nut butter, whole grapes, berries, cherries and cherry tomatoes, raw carrot or apple, popcorn, chips, hot dogs, meat sticks and sausages, chunks of meat or cheese, whole corn kernels, and raisins.",
             "Remove skin, bones, seeds and pits. Cut grapes and small round foods into small pieces, and cut hot dogs or string cheese into short, thin strips."
           ],
-          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"]
         },
         {
           "id": "for-you",
@@ -1210,8 +1156,7 @@
             "Keep up a varied diet for yourself: vegetables, fruit, whole grains, protein and dairy or fortified alternatives.",
             "If you're still breastfeeding, the caffeine and fish advice for breastfeeding moms still applies."
           ],
-          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"],
-          "reviewer": "registered dietitian"
+          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"]
         },
         {
           "id": "when-to-call",
@@ -1234,8 +1179,7 @@
             "aap-solids",
             "cdc-howmuch-food",
             "cdc-ppd"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -1261,8 +1205,7 @@
             "Watch for fullness cues and don't overfeed.",
             "Food isn't a good reward or punishment."
           ],
-          "sources": ["aap-solids", "cdc-hungry"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["aap-solids", "cdc-hungry"]
         },
         {
           "id": "textures",
@@ -1274,8 +1217,7 @@
             "Cut food into pieces no larger than about 1/2 inch.",
             "Your baby is getting more confident with a cup."
           ],
-          "sources": ["aap-choking", "cdc-utensils", "cdc-textures"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["aap-choking", "cdc-utensils", "cdc-textures"]
         },
         {
           "id": "drinks",
@@ -1290,8 +1232,7 @@
             "No caffeinated drinks, including tea and soda, before age 2.",
             "If your tap water is fluoridated, it also helps protect teeth."
           ],
-          "sources": ["cdc-encourage", "cdc-avoid", "aap-solids"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-encourage", "cdc-avoid", "aap-solids"]
         },
         {
           "id": "safety",
@@ -1308,8 +1249,7 @@
             "Choking risks: whole nuts and seeds, spoonfuls or chunks of nut butter, whole grapes, berries, cherries and cherry tomatoes, raw carrot or apple, popcorn, chips, hot dogs, meat sticks and sausages, chunks of meat or cheese, whole corn kernels, and raisins.",
             "Remove skin, bones, seeds and pits. Cut grapes and small round foods into small pieces, and cut hot dogs or string cheese into short, thin strips."
           ],
-          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"]
         },
         {
           "id": "for-you",
@@ -1322,8 +1262,7 @@
             "Keep up a varied diet for yourself: vegetables, fruit, whole grains, protein and dairy or fortified alternatives.",
             "If you're still breastfeeding, the caffeine and fish advice for breastfeeding moms still applies."
           ],
-          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"],
-          "reviewer": "registered dietitian"
+          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"]
         },
         {
           "id": "when-to-call",
@@ -1346,8 +1285,7 @@
             "aap-solids",
             "cdc-howmuch-food",
             "cdc-ppd"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -1381,8 +1319,7 @@
             "aap-bf-solids",
             "aap-solids",
             "cdc-avoid"
-          ],
-          "reviewer": "pediatric dietitian"
+          ]
         },
         {
           "id": "textures",
@@ -1394,8 +1331,7 @@
             "Cut food into pieces no larger than about 1/2 inch.",
             "Your baby is getting more confident with a cup."
           ],
-          "sources": ["aap-choking", "cdc-utensils", "cdc-textures"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["aap-choking", "cdc-utensils", "cdc-textures"]
         },
         {
           "id": "vitamins",
@@ -1409,8 +1345,7 @@
             "Zinc matters too: meat and iron-fortified cereals provide both iron and zinc.",
             "Your pediatrician will likely check for anemia around 12 months."
           ],
-          "sources": ["cdc-iron", "aap-bf-solids", "aap-solids", "cdc-vitd"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-iron", "aap-bf-solids", "aap-solids", "cdc-vitd"]
         },
         {
           "id": "safety",
@@ -1427,8 +1362,7 @@
             "Choking risks: whole nuts and seeds, spoonfuls or chunks of nut butter, whole grapes, berries, cherries and cherry tomatoes, raw carrot or apple, popcorn, chips, hot dogs, meat sticks and sausages, chunks of meat or cheese, whole corn kernels, and raisins.",
             "Remove skin, bones, seeds and pits. Cut grapes and small round foods into small pieces, and cut hot dogs or string cheese into short, thin strips."
           ],
-          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-avoid", "cdc-choking", "cdc-solids", "aap-solids", "aap-choking"]
         },
         {
           "id": "for-you",
@@ -1441,8 +1375,7 @@
             "Keep up a varied diet for yourself: vegetables, fruit, whole grains, protein and dairy or fortified alternatives.",
             "If you're still breastfeeding, the caffeine and fish advice for breastfeeding moms still applies."
           ],
-          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"],
-          "reviewer": "registered dietitian"
+          "sources": ["aap-solids", "cdc-avoid", "cdc-maternal-diet"]
         },
         {
           "id": "when-to-call",
@@ -1465,8 +1398,7 @@
             "aap-solids",
             "cdc-howmuch-food",
             "cdc-ppd"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -1493,8 +1425,7 @@
             "Let your child choose from healthy options you offer.",
             "Test the temperature of food first; toddlers dig right in."
           ],
-          "sources": ["aap-1yo", "cdc-encourage", "fda-fish"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["aap-1yo", "cdc-encourage", "fda-fish"]
         },
         {
           "id": "portions",
@@ -1508,8 +1439,7 @@
             "100% fruit juice isn't needed. If you offer it, keep it to 4 oz a day or less, in a cup.",
             "No added sugars and no caffeine before age 2."
           ],
-          "sources": ["aap-1yo", "cdc-howmuch-food", "cdc-cowsmilk", "cdc-avoid", "aap-solids"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["aap-1yo", "cdc-howmuch-food", "cdc-cowsmilk", "cdc-avoid", "aap-solids"]
         },
         {
           "id": "vitamins",
@@ -1522,8 +1452,7 @@
           "bullets": [
             "Vitamin supplements are rarely needed for toddlers who eat a varied diet, with exceptions like these."
           ],
-          "sources": ["cdc-vitd", "cdc-iron", "aap-2yo", "cdc-cowsmilk"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-vitd", "cdc-iron", "aap-2yo", "cdc-cowsmilk"]
         },
         {
           "id": "safety",
@@ -1539,8 +1468,7 @@
             "Keep high-risk foods away until about age 4 or later, depending on your child.",
             "Consider a child CPR and first-aid class."
           ],
-          "sources": ["aap-1yo", "aap-2yo", "aap-choking", "cdc-choking"],
-          "reviewer": "pediatrician"
+          "sources": ["aap-1yo", "aap-2yo", "aap-choking", "cdc-choking"]
         },
         {
           "id": "picky",
@@ -1556,8 +1484,7 @@
             "Never force your child to eat, and try not to make mealtimes a battle.",
             "Freeze small bites of new foods to try again later without waste."
           ],
-          "sources": ["cdc-picky", "aap-2yo"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-picky", "aap-2yo"]
         },
         {
           "id": "when-to-call",
@@ -1579,8 +1506,7 @@
             "cdc-howmuch-food",
             "aap-2yo",
             "cdc-cowsmilk"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -1608,8 +1534,7 @@
             "Never force your child to eat, and try not to make mealtimes a battle.",
             "Freeze small bites of new foods to try again later without waste."
           ],
-          "sources": ["cdc-picky", "aap-2yo"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-picky", "aap-2yo"]
         },
         {
           "id": "family-meals",
@@ -1624,8 +1549,7 @@
             "Let your child choose from healthy options you offer.",
             "Test the temperature of food first; toddlers dig right in."
           ],
-          "sources": ["aap-1yo", "cdc-encourage", "fda-fish"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["aap-1yo", "cdc-encourage", "fda-fish"]
         },
         {
           "id": "portions",
@@ -1639,8 +1563,7 @@
             "100% fruit juice isn't needed. If you offer it, keep it to 4 oz a day or less, in a cup.",
             "No added sugars and no caffeine before age 2."
           ],
-          "sources": ["aap-1yo", "cdc-howmuch-food", "cdc-cowsmilk", "cdc-avoid", "aap-solids"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["aap-1yo", "cdc-howmuch-food", "cdc-cowsmilk", "cdc-avoid", "aap-solids"]
         },
         {
           "id": "safety",
@@ -1656,8 +1579,7 @@
             "Keep high-risk foods away until about age 4 or later, depending on your child.",
             "Consider a child CPR and first-aid class."
           ],
-          "sources": ["aap-1yo", "aap-2yo", "aap-choking", "cdc-choking"],
-          "reviewer": "pediatrician"
+          "sources": ["aap-1yo", "aap-2yo", "aap-choking", "cdc-choking"]
         },
         {
           "id": "when-to-call",
@@ -1679,8 +1601,7 @@
             "cdc-howmuch-food",
             "aap-2yo",
             "cdc-cowsmilk"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     },
@@ -1706,8 +1627,7 @@
             "Juice: still no more than 4 oz of 100% juice a day, in a cup.",
             "Keep salt and added sugar low for the whole family."
           ],
-          "sources": ["aap-2yo", "cdc-cowsmilk", "cdc-avoid"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["aap-2yo", "cdc-cowsmilk", "cdc-avoid"]
         },
         {
           "id": "picky",
@@ -1723,8 +1643,7 @@
             "Never force your child to eat, and try not to make mealtimes a battle.",
             "Freeze small bites of new foods to try again later without waste."
           ],
-          "sources": ["cdc-picky", "aap-2yo"],
-          "reviewer": "pediatric dietitian"
+          "sources": ["cdc-picky", "aap-2yo"]
         },
         {
           "id": "vitamins",
@@ -1737,8 +1656,7 @@
           "bullets": [
             "Vitamin supplements are rarely needed for toddlers who eat a varied diet, with exceptions like these."
           ],
-          "sources": ["cdc-vitd", "cdc-iron", "aap-2yo", "cdc-cowsmilk"],
-          "reviewer": "pediatrician"
+          "sources": ["cdc-vitd", "cdc-iron", "aap-2yo", "cdc-cowsmilk"]
         },
         {
           "id": "safety",
@@ -1754,8 +1672,7 @@
             "Keep high-risk foods away until about age 4 or later, depending on your child.",
             "Consider a child CPR and first-aid class."
           ],
-          "sources": ["aap-1yo", "aap-2yo", "aap-choking", "cdc-choking"],
-          "reviewer": "pediatrician"
+          "sources": ["aap-1yo", "aap-2yo", "aap-choking", "cdc-choking"]
         },
         {
           "id": "when-to-call",
@@ -1777,8 +1694,7 @@
             "cdc-howmuch-food",
             "aap-2yo",
             "cdc-cowsmilk"
-          ],
-          "reviewer": "pediatrician"
+          ]
         }
       ]
     }

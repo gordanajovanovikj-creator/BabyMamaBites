@@ -2,7 +2,6 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
 import { getLegalDocument } from '@/content/legal';
-import { splitReviewMarker } from '@/content/schemas';
 import { AppText, Button, Screen } from '@/ui';
 
 /** Terms of Use or Privacy Policy, opened from Settings and the subscription screen. */
@@ -27,7 +26,7 @@ export default function LegalScreen() {
         </AppText>
         <AppText variant="caption">Last updated {document.updated}</AppText>
       </View>
-      <AppText>{splitReviewMarker(document.intro).text}</AppText>
+      <AppText>{document.intro}</AppText>
       {document.sections.map((section) => (
         <View key={section.heading} className="gap-2">
           <AppText variant="heading">{section.heading}</AppText>

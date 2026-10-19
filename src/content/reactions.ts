@@ -8,7 +8,6 @@ const reactionAdviceSchema = z.object({
   signs: z.array(z.string().min(1)),
   action: z.string().min(1),
   sources: z.array(z.string().min(1)).min(1),
-  reviewer: z.string().min(1),
 });
 export type ReactionAdvice = z.infer<typeof reactionAdviceSchema>;
 

@@ -1,6 +1,5 @@
 import { View } from 'react-native';
 
-import { splitReviewMarker } from '@/content/schemas';
 import { readiness, solidsSourcesFor } from '@/content/solids-plan';
 import { libraryPhoto } from '@/features/library/library-photos';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
@@ -28,7 +27,7 @@ export default function ReadinessScreen() {
       <DetailHeader
         kicker="Starting solids"
         title="Is your baby ready to start solids?"
-        summary={splitReviewMarker(readiness.intro).text}
+        summary={readiness.intro}
       />
 
       <View className="gap-6 px-5 pt-6">

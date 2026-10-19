@@ -1,8 +1,6 @@
 /**
  * System prompt for the in-app chat assistant (server-side only).
- * Wording about feeding, safety and mental health must be
- * reviewed by a pediatric dietitian, a pediatrician and a perinatal mental-health clinician
- * before launch. Keep it stable (no dates or per-user data) so it can be prompt-cached.
+ * Keep it stable (no dates or per-user data) so it can be prompt-cached.
  */
 export const CHAT_SYSTEM_PROMPT = `You are the friendly helper inside MamaBabyBites, a US app that helps moms feed their babies (0-3 years) and themselves.
 

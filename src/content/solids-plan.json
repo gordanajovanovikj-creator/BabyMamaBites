@@ -49,8 +49,7 @@
         "Thin cereal with breast milk, formula or water, and serve it from a spoon. Never put cereal in a bottle.",
         "If your baby turns away or cries, stop and try again another day."
       ],
-      "sources": ["cdc-solids", "aap-solids", "cdc-howmuch-food"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-solids", "aap-solids", "cdc-howmuch-food"]
     },
     {
       "week": 2,
@@ -66,8 +65,7 @@
         "Remove fat, skin and bones before cooking meat, then puree it until very smooth.",
         "Wait 3 to 5 days between new foods so you can spot any reaction."
       ],
-      "sources": ["cdc-iron", "aap-solids", "cdc-solids"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-iron", "aap-solids", "cdc-solids"]
     },
     {
       "week": 3,
@@ -88,8 +86,7 @@
         "Once egg is tolerated, keep it in the diet regularly.",
         "Most egg allergies are caused by proteins in the egg white, but the yolk can cause reactions too, and the two can't be fully separated. If you're worried about egg allergy, or your baby has severe eczema or has reacted to a food before, talk to your pediatrician about the best way to introduce egg."
       ],
-      "sources": ["cdc-hungry", "aap-allergens", "cdc-solids", "acaai-egg"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-hungry", "aap-allergens", "cdc-solids", "acaai-egg"]
     },
     {
       "week": 4,
@@ -109,8 +106,7 @@
         "Peanut butter is only safe thinned. Chunks or spoonfuls are a choking hazard.",
         "Keep offering egg. A typical portion is about 1/3 of a well-cooked egg."
       ],
-      "sources": ["aap-allergens", "cdc-solids", "cdc-choking"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["aap-allergens", "cdc-solids", "cdc-choking"]
     },
     {
       "week": 5,
@@ -130,8 +126,7 @@
         "Yogurt and cheese are fine before 12 months, but cow's milk as a drink waits until then.",
         "Choose pasteurized dairy with no added sugar."
       ],
-      "sources": ["cdc-textures", "cdc-solids", "aap-allergens", "cdc-cowsmilk"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-textures", "cdc-solids", "aap-allergens", "cdc-cowsmilk"]
     },
     {
       "week": 6,
@@ -151,8 +146,7 @@
         "Expect spills. Practice matters more than how much goes in.",
         "Infant cereal is one easy way to offer wheat; check the label."
       ],
-      "sources": ["cdc-encourage", "cdc-utensils", "aap-solids"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-encourage", "cdc-utensils", "aap-solids"]
     },
     {
       "week": 7,
@@ -172,8 +166,7 @@
         "Freezing small portions makes repeat tries easy and cuts waste.",
         "Eat the food yourself first; babies learn by watching."
       ],
-      "sources": ["cdc-picky", "aap-allergens", "cdc-solids"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-picky", "aap-allergens", "cdc-solids"]
     },
     {
       "week": 8,
@@ -193,8 +186,7 @@
         "Thin tahini well, just like nut butters.",
         "Keep offering the allergens your baby already tolerates."
       ],
-      "sources": ["cdc-solids", "cdc-encourage", "aap-allergens"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-solids", "cdc-encourage", "aap-allergens"]
     },
     {
       "week": 9,
@@ -214,8 +206,7 @@
         "Choose fish low in mercury, such as salmon or cod. Remove every bone.",
         "Always stay with your baby while they eat."
       ],
-      "sources": ["cdc-utensils", "aap-solids", "fda-fish", "cdc-choking"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-utensils", "aap-solids", "fda-fish", "cdc-choking"]
     },
     {
       "week": 10,
@@ -235,8 +226,7 @@
         "Cook shellfish thoroughly and mince it very finely.",
         "Stop any new food that seems to cause a rash, vomiting or diarrhea, and call your pediatrician."
       ],
-      "sources": ["aap-solids", "aap-allergens"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["aap-solids", "aap-allergens"]
     },
     {
       "week": 11,
@@ -256,8 +246,7 @@
         "Use a smooth nut butter, thinned. Whole or chopped nuts are a choking hazard.",
         "Let your baby touch and squish food. Mess is part of learning."
       ],
-      "sources": ["cdc-textures", "cdc-utensils", "aap-solids", "aap-allergens"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-textures", "cdc-utensils", "aap-solids", "aap-allergens"]
     },
     {
       "week": 12,
@@ -273,8 +262,7 @@
         "Typical portions: about 1 teaspoon of a thinned nut or seed butter, or about 1/3 of a well-cooked egg.",
         "Cut cheese into short, thin strips, never chunks."
       ],
-      "sources": ["aap-allergens", "cdc-utensils", "cdc-choking"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["aap-allergens", "cdc-utensils", "cdc-choking"]
     },
     {
       "week": 13,
@@ -294,8 +282,7 @@
         "Cut round foods like blueberries and grapes into small pieces.",
         "Keep watching for reactions whenever you add something new."
       ],
-      "sources": ["cdc-textures", "cdc-solids", "cdc-choking"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-textures", "cdc-solids", "cdc-choking"]
     },
     {
       "week": 14,
@@ -311,8 +298,7 @@
         "Plan snacks as mini-meals: a fruit or vegetable plus a protein or grain.",
         "If you're worried about how much your baby eats, talk to your pediatrician."
       ],
-      "sources": ["cdc-howmuch-food", "aap-solids"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-howmuch-food", "aap-solids"]
     },
     {
       "week": 15,
@@ -332,8 +318,7 @@
         "Set aside your baby's portion before adding salt, sugar or spicy seasoning.",
         "Keep mealtimes unhurried; rushing raises the risk of choking."
       ],
-      "sources": ["aap-solids", "cdc-picky", "cdc-choking"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["aap-solids", "cdc-picky", "cdc-choking"]
     },
     {
       "week": 16,
@@ -349,8 +334,7 @@
         "Pair plant iron with vitamin C: beans with tomatoes, or cereal with berries.",
         "Ask your pediatrician if you have questions about iron drops or supplements."
       ],
-      "sources": ["cdc-iron"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-iron"]
     },
     {
       "week": 17,
@@ -370,8 +354,7 @@
         "Read the Nutrition Facts label for added sugars and sodium.",
         "No honey before 12 months: it can cause infant botulism, a severe food poisoning."
       ],
-      "sources": ["cdc-avoid", "aap-solids"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-avoid", "aap-solids"]
     },
     {
       "week": 18,
@@ -391,8 +374,7 @@
         "Pinching small, soft pieces builds fine motor skills.",
         "Let your baby practice with a spoon or fork, even when it's messy."
       ],
-      "sources": ["cdc-utensils", "cdc-textures"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-utensils", "cdc-textures"]
     },
     {
       "week": 19,
@@ -412,8 +394,7 @@
         "Serve your baby's portion before adding salt or hot spices.",
         "Keep food soft enough to mash with a fork."
       ],
-      "sources": ["aap-choking", "cdc-encourage", "cdc-avoid"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["aap-choking", "cdc-encourage", "cdc-avoid"]
     },
     {
       "week": 20,
@@ -429,8 +410,7 @@
         "Ask your pediatrician what to do if your baby chokes.",
         "No eating in the car, in the stroller or while crawling."
       ],
-      "sources": ["cdc-choking", "aap-choking"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-choking", "aap-choking"]
     },
     {
       "week": 21,
@@ -446,8 +426,7 @@
         "Check carefully for bones, even in fillets.",
         "Fish also provides protein, vitamin B12, vitamin D and selenium."
       ],
-      "sources": ["fda-fish", "cdc-avoid"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["fda-fish", "cdc-avoid"]
     },
     {
       "week": 22,
@@ -463,8 +442,7 @@
         "Pushing food away or turning their head means \"done.\"",
         "Avoid using food as a reward or punishment."
       ],
-      "sources": ["cdc-hungry", "cdc-howmuch-food"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-hungry", "cdc-howmuch-food"]
     },
     {
       "week": 23,
@@ -484,8 +462,7 @@
         "Freeze extra purees in small portions to use later.",
         "Choose cheeses and yogurts labeled pasteurized."
       ],
-      "sources": ["aap-solids", "cdc-avoid"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["aap-solids", "cdc-avoid"]
     },
     {
       "week": 24,
@@ -501,8 +478,7 @@
         "Make it playful: a smiley face on the plate can help.",
         "Model eating the food yourself."
       ],
-      "sources": ["cdc-picky"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-picky"]
     },
     {
       "week": 25,
@@ -522,8 +498,7 @@
         "Talk to your pediatrician about moving from formula or bottles.",
         "No honey until your baby's first birthday."
       ],
-      "sources": ["cdc-cowsmilk", "aap-solids", "cdc-avoid"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-cowsmilk", "aap-solids", "cdc-avoid"]
     },
     {
       "week": 26,
@@ -543,8 +518,7 @@
         "Keep offering all the allergens your baby tolerates.",
         "The monthly guides on the Today tab keep going into the toddler years."
       ],
-      "sources": ["cdc-howmuch-food", "cdc-iron", "aap-allergens"],
-      "reviewer": "pediatric dietitian"
+      "sources": ["cdc-howmuch-food", "cdc-iron", "aap-allergens"]
     }
   ],
   "readiness": {

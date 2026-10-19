@@ -1,5 +1,5 @@
 import { guideSources, monthlyGuides } from '@/content/monthly-guides';
-import { PLACEHOLDER_MARKER, splitReviewMarker } from '@/content/schemas';
+import { PLACEHOLDER_MARKER } from '@/content/schemas';
 
 import { adjacentGuides, guideForMonths } from './monthly-guides';
 
@@ -97,15 +97,5 @@ describe('bundled monthly guides', () => {
       const call = g.sections.at(-1)!;
       expect(JSON.stringify(call)).toMatch(/emergency/i);
     }
-  });
-});
-
-describe('splitReviewMarker', () => {
-  it('removes a leading marker for display and reports it', () => {
-    expect(splitReviewMarker('[PLACEHOLDER - needs expert review] Hello')).toEqual({
-      text: 'Hello',
-      isDraft: true,
-    });
-    expect(splitReviewMarker('Hello')).toEqual({ text: 'Hello', isDraft: false });
   });
 });

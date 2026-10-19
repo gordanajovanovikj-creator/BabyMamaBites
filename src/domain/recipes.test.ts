@@ -36,7 +36,6 @@ function make(id: string, extra: Partial<Recipe> = {}): Recipe {
     ingredients: ['x'],
     steps: ['y'],
     tips: [],
-    reviewer: 'test',
     ...extra,
   };
 }
