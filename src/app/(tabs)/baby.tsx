@@ -27,6 +27,26 @@ import { AppText, Button, Card, Notice, Screen, SegmentedTabs } from '@/ui';
 
 const RECENT = 5;
 
+/** A big heading that starts one of the Plan tab's three sections. */
+function SectionHeading({
+  title,
+  subtitle,
+  inset = true,
+}: {
+  title: string;
+  subtitle: string;
+  inset?: boolean;
+}) {
+  return (
+    <View className={inset ? 'gap-1 px-5' : 'gap-1'}>
+      <AppText variant="heading" size="2xl">
+        {title}
+      </AppText>
+      <AppText variant="caption">{subtitle}</AppText>
+    </View>
+  );
+}
+
 type Tab = 'recipes' | 'foods' | 'plan' | 'favorites';
 const tabIds: readonly string[] = ['recipes', 'foods', 'plan', 'favorites'];
 
@@ -101,69 +121,94 @@ export default function BabyScreen() {
         <BabyRecipesView babyName={profile.babyName} ageMonths={ageMonths} />
       ) : (
         <>
-          <View className="gap-2">
-            <AppText variant="heading" size="2xl" className="px-5">
-              Eating solids, week by week
-            </AppText>
+          {/* 1. The solids program: where the baby is this week. */}
+          <View className="gap-4">
+            <SectionHeading
+              title="Eating solids, week by week"
+              subtitle="Your baby's weekly plan, at their own pace."
+            />
             <WeekStrip weeks={planWeeks} current={current} />
-          </View>
-
-          <View className="gap-4 px-5">
-            {showsReadinessPrompt(ageMonths) ? (
-              <Card
-                tone="sky"
-                className="flex-row items-center gap-4"
-                onPress={() => router.push('/solids/readiness')}
-                accessibilityLabel="Is your baby ready to start solids? See the signs to look for."
-              >
-                <View className="flex-1 gap-1">
+            <View className="gap-4 px-5">
+              {showsReadinessPrompt(ageMonths) ? (
+                <Card
+                  tone="sky"
+                  className="flex-row items-center gap-4"
+                  onPress={() => router.push('/solids/readiness')}
+                  accessibilityLabel="Is your baby ready to start solids? See the signs to look for."
+                >
+                  <View className="flex-1 gap-1">
+                    <AppText variant="heading" color="on-sky">
+                      Is your baby ready to start solids?
+                    </AppText>
+                    <AppText variant="caption" color="on-sky">
+                      The signs to look for, all together.
+                    </AppText>
+                  </View>
                   <AppText variant="heading" color="on-sky">
-                    Is your baby ready to start solids?
+                    ›
                   </AppText>
-                  <AppText variant="caption" color="on-sky">
-                    The signs to look for, all together.
+                </Card>
+              ) : null}
+              {finished ? (
+                <Notice
+                  title="You've finished the 26-week plan"
+                  body="Keep offering a variety of foods, including the allergens your baby already tolerates. The monthly guides on Today keep growing with your toddler."
+                />
+              ) : null}
+              {week ? <WeekCard week={week} totalWeeks={planWeeks.length} /> : null}
+              <Card
+                tone="danger"
+                className="flex-row items-center gap-4"
+                onPress={() => router.push('/solids/choking')}
+                accessibilityLabel="Choking and gagging: what to know. Opens the safety guide."
+              >
+                <View className="h-12 w-12 items-center justify-center rounded-full bg-danger-ink">
+                  <AppText variant="title" color="on-deep" className="leading-8">
+                    !
                   </AppText>
                 </View>
-                <AppText variant="heading" color="on-sky">
-                  ›
-                </AppText>
+                <View className="flex-1 gap-1">
+                  <AppText variant="heading" color="danger">
+                    Choking and gagging
+                  </AppText>
+                  <AppText color="danger">
+                    Foods to avoid or change by age, and how to tell gagging from choking. Learn
+                    more ›
+                  </AppText>
+                </View>
               </Card>
-            ) : null}
-
-            <View className="gap-1 pt-2">
-              <AppText variant="heading" size="2xl">
-                Planner
-              </AppText>
-              <AppText variant="caption">
-                Plan {name === 'Your baby' ? "your baby's" : `${name}'s`} meals for the week.
-              </AppText>
             </View>
+          </View>
 
+          {/* 2. Planning: the week's meals and what's in the freezer. */}
+          <View className="gap-4 px-5 pt-4">
+            <SectionHeading
+              inset={false}
+              title="Meal planner"
+              subtitle={`Plan ${name === 'Your baby' ? "your baby's" : `${name}'s`} meals for the week.`}
+            />
             <WeekMenu />
-
             <FreezerCard />
+          </View>
 
-            <AllergenTracker progress={allergenProgress(entries)} />
-
-            {finished ? (
-              <Notice
-                title="You've finished the 26-week plan"
-                body="Keep offering a variety of foods, including the allergens your baby already tolerates. The monthly guides on Today keep growing with your toddler."
-              />
-            ) : null}
-
-            {week ? <WeekCard week={week} totalWeeks={planWeeks.length} /> : null}
-
+          {/* 3. Tracking: log foods; the allergen tracker fills in from the log. */}
+          <View className="gap-4 px-5 pt-4">
+            <SectionHeading
+              inset={false}
+              title="Food log"
+              subtitle="Log each new food to make a reaction easier to spot."
+            />
+            <Button label="Log a food" onPress={() => router.push('/solids/log')} />
             <Card className="gap-1">
               <View className="flex-row items-baseline justify-between">
-                <AppText variant="heading">Food log</AppText>
+                <AppText variant="heading">Recent foods</AppText>
                 <AppText variant="caption">{foodsTriedCount(entries)} foods tried</AppText>
               </View>
               {entries.length ? (
                 entries.slice(0, RECENT).map((e) => <LogEntryRow key={e.id} entry={e} />)
               ) : (
                 <AppText variant="caption" className="py-2">
-                  Nothing logged yet. Logging each new food makes it easier to spot a reaction.
+                  Nothing logged yet.
                 </AppText>
               )}
               {entries.length > RECENT ? (
@@ -179,30 +224,7 @@ export default function BabyScreen() {
                 </AppText>
               ) : null}
             </Card>
-
-            <Button label="Log a food" onPress={() => router.push('/solids/log')} />
-
-            <Card
-              tone="danger"
-              className="flex-row items-center gap-4"
-              onPress={() => router.push('/solids/choking')}
-              accessibilityLabel="Choking and gagging: what to know. Opens the safety guide."
-            >
-              <View className="h-12 w-12 items-center justify-center rounded-full bg-danger-ink">
-                <AppText variant="title" color="on-deep" className="leading-8">
-                  !
-                </AppText>
-              </View>
-              <View className="flex-1 gap-1">
-                <AppText variant="heading" color="danger">
-                  Choking and gagging
-                </AppText>
-                <AppText color="danger">
-                  Foods to avoid or change by age, and how to tell gagging from choking. Learn more
-                  ›
-                </AppText>
-              </View>
-            </Card>
+            <AllergenTracker progress={allergenProgress(entries)} />
           </View>
 
           <View className="px-5">
