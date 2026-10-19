@@ -19,7 +19,7 @@ export type HealthDisclaimerNoteProps = {
  */
 export function HealthDisclaimerNote({ short = false }: HealthDisclaimerNoteProps) {
   return (
-    <View className="gap-2 border-t border-border pt-4">
+    <View className="gap-2">
       {short ? null : (
         <AppText variant="caption" size="sm" className="italic">
           <AppText variant="caption" size="sm" className="font-bold italic">

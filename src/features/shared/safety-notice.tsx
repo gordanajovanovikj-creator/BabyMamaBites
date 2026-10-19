@@ -13,29 +13,15 @@ const urgent: SafetyNoticeId[] = ['choking-emergency', 'allergy-safety'];
 
 /**
  * A safety notice from src/content/copy/safety-notices.json: emergencies in a red card with
- * a 911 button, everything else as pale fine print.
+ * a 911 button, everything else as pale fine print (text only, no title).
  */
-export function SafetyNotice({
-  id,
-  className,
-  hideTitle = false,
-}: {
-  id: SafetyNoticeId;
-  className?: string;
-  /** Show only the text, without the notice's title. */
-  hideTitle?: boolean;
-}) {
+export function SafetyNotice({ id, className }: { id: SafetyNoticeId; className?: string }) {
   const block = safetyNotice(id);
   const body = splitReviewMarker(block.body).text;
   if (!urgent.includes(id)) {
     // Disclaimers read as pale fine print, set apart from the page's actual content.
     return (
       <View className={cn('gap-1', className)}>
-        {hideTitle ? null : (
-          <AppText variant="caption" size="sm" className="font-semibold">
-            {block.title}
-          </AppText>
-        )}
         <AppText variant="caption" size="sm">
           {body}
         </AppText>

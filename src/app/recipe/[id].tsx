@@ -222,7 +222,6 @@ export default function RecipeScreen() {
         {/* Baby recipes get the feeding safety note; grown-up recipes the family one. */}
         <SafetyNotice
           id={recipe.fromMonths !== undefined ? 'feeding-safety' : 'family-nutrition'}
-          hideTitle={recipe.fromMonths === undefined}
           className="pb-2"
         />
         <AppText variant="caption" size="sm">
