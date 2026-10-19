@@ -1,31 +1,36 @@
 import * as WebBrowser from 'expo-web-browser';
-import { Pressable, View } from 'react-native';
+import { Fragment } from 'react';
 
 import type { GuideSource } from '@/content/monthly-guides';
 import { AppText } from '@/ui';
 
-/** "Sources" list: each official page opens in an in-app browser. */
+/**
+ * "Sources" as one compact, wrapping line of fine print (Sources: A · B · C); each
+ * official page opens in an in-app browser.
+ */
 export function SourceLinks({ sources }: { sources: GuideSource[] }) {
   if (!sources.length) return null;
   return (
-    <View className="gap-1 pt-1">
+    <AppText variant="caption" size="sm" className="leading-6">
       <AppText variant="caption" size="sm" className="font-bold">
-        Sources
+        Sources:{' '}
       </AppText>
-      {sources.map((s) => (
-        <Pressable
-          key={s.id}
-          accessibilityRole="link"
-          accessibilityLabel={`${s.publisher}: ${s.title}. Opens the official page.`}
-          onPress={() => WebBrowser.openBrowserAsync(s.url)}
-          hitSlop={6}
-          className="min-h-11 justify-center active:opacity-60"
-        >
-          <AppText variant="caption" size="sm" className="underline">
+      {sources.map((s, i) => (
+        <Fragment key={s.id}>
+          {i > 0 ? ' · ' : null}
+          <AppText
+            variant="caption"
+            size="sm"
+            accessibilityRole="link"
+            accessibilityLabel={`${s.publisher}: ${s.title}. Opens the official page.`}
+            onPress={() => WebBrowser.openBrowserAsync(s.url)}
+            suppressHighlighting={false}
+            className="underline"
+          >
             {s.publisher}: {s.title}
           </AppText>
-        </Pressable>
+        </Fragment>
       ))}
-    </View>
+    </AppText>
   );
 }
