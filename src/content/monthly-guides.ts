@@ -1,7 +1,6 @@
 import { z } from 'zod';
 
 import guidesJson from './monthly-guides.json';
-import { reviewStatusSchema } from './schemas';
 
 export const guideSourceSchema = z.object({
   id: z.string().min(1),
@@ -36,7 +35,6 @@ export const monthlyGuideSchema = z.object({
   summary: z.string().min(1),
   intro: z.string().min(1),
   sections: z.array(guideSectionSchema).min(1),
-  reviewStatus: reviewStatusSchema,
 });
 export type MonthlyGuide = z.infer<typeof monthlyGuideSchema>;
 

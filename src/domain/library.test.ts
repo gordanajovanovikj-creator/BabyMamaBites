@@ -101,7 +101,6 @@ describe('todayRow', () => {
       summary: 's',
       body: ['b'],
       allergens: [],
-      reviewStatus: 'placeholder',
       reviewer: 'x',
     }) as unknown as Parameters<typeof todayRow>[0][number];
   it('puts two tips first, then the picked items, then the other tips', () => {

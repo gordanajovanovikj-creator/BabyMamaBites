@@ -3,9 +3,8 @@
 > Reviewed file: `src/content/recipes.json` (24 recipes, 16 categories). Review date: 2026-10-08.
 >
 > This was an **automated check** against official US source texts (CDC, AAP/HealthyChildren.org,
-> FDA/EPA, with WHO for context). It is **not a professional sign-off**. Every recipe still has
-> `reviewStatus: "placeholder"` and still
-> needs review by a registered dietitian before it ships as reviewed.
+> FDA/EPA, with WHO for context). It is **not a professional sign-off** by a registered
+> dietitian.
 
 ## Sources used
 

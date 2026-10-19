@@ -98,7 +98,7 @@ describe('baby recipes', () => {
   });
 
   it('are marked unreviewed, with no marker in the text', () => {
-    for (const r of babyRecipes.filter((x) => x.reviewStatus === 'placeholder')) {
+    for (const r of babyRecipes) {
       expect(r.summary.includes(PLACEHOLDER_MARKER)).toBe(false);
     }
   });

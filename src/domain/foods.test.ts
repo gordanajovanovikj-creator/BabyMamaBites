@@ -90,7 +90,7 @@ describe('food guide content', () => {
     for (const f of foods) {
       expect({
         id: f.id,
-        ok: f.reviewStatus === 'placeholder' && !f.intro.includes(PLACEHOLDER_MARKER),
+        ok: !f.intro.includes(PLACEHOLDER_MARKER),
       }).toEqual({ id: f.id, ok: true });
     }
   });

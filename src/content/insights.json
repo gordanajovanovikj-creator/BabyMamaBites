@@ -33,7 +33,6 @@
         "Honey is fine for you, but never give honey to a baby under 12 months."
       ],
       "allergens": ["milk", "peanut"],
-      "reviewStatus": "placeholder",
       "reviewer": "dietitian"
     },
     {
@@ -63,7 +62,6 @@
         "When you’re busy growing and feeding a tiny human, taking care of yourself can start with something as simple as a glass of water. What’s your go-to water bottle?"
       ],
       "allergens": [],
-      "reviewStatus": "placeholder",
       "reviewer": "dietitian"
     },
     {
@@ -81,7 +79,6 @@
         "You don't need to fill every quiet moment. If the baby is settled and someone is around, it's okay to put your feet up, even for a few minutes."
       ],
       "allergens": [],
-      "reviewStatus": "placeholder",
       "reviewer": "editorial"
     },
     {
@@ -100,7 +97,6 @@
         "If your baby is choking and cannot breathe, cry or make a sound, call 911 right away."
       ],
       "allergens": [],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatrician"
     },
     {
@@ -118,7 +114,6 @@
         "Serve the family meal in toddler-friendly pieces: soft, bite-size and easy to pick up, with the salt added only to the grown-up portions."
       ],
       "allergens": [],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     }
   ]

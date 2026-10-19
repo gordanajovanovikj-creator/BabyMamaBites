@@ -1,7 +1,6 @@
 import { z } from 'zod';
 
 import legalJson from './copy/legal.json';
-import { reviewStatusSchema } from './schemas';
 
 const sectionSchema = z.object({
   heading: z.string().min(1),
@@ -16,7 +15,6 @@ export const legalDocumentSchema = z.object({
   updated: z.string().min(1),
   intro: z.string().min(1),
   sections: z.array(sectionSchema).min(1),
-  reviewStatus: reviewStatusSchema,
   reviewer: z.string().min(1),
 });
 export type LegalDocument = z.infer<typeof legalDocumentSchema>;

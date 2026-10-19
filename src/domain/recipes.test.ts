@@ -36,7 +36,6 @@ function make(id: string, extra: Partial<Recipe> = {}): Recipe {
     ingredients: ['x'],
     steps: ['y'],
     tips: [],
-    reviewStatus: 'placeholder',
     reviewer: 'test',
     ...extra,
   };
@@ -167,7 +166,7 @@ describe('bundled recipes', () => {
 
   it('are marked for review and have unique ids', () => {
     expect(new Set(bundled.map((r) => r.id)).size).toBe(bundled.length);
-    for (const r of bundled.filter((x) => x.reviewStatus === 'placeholder')) {
+    for (const r of bundled) {
       expect(r.summary.includes(PLACEHOLDER_MARKER)).toBe(false);
     }
   });

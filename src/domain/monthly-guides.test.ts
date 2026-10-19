@@ -42,17 +42,11 @@ describe('adjacentGuides', () => {
 
 describe('bundled monthly guides', () => {
   it('keep review markers out of every section', () => {
-    for (const g of monthlyGuides.filter((x) => x.reviewStatus === 'placeholder')) {
+    for (const g of monthlyGuides) {
       expect(g.intro).not.toContain(PLACEHOLDER_MARKER);
       for (const s of g.sections) {
         expect(s.paragraphs[0].includes(PLACEHOLDER_MARKER)).toBe(false);
       }
-    }
-  });
-
-  it('have no markers left once a guide is marked reviewed', () => {
-    for (const g of monthlyGuides.filter((x) => x.reviewStatus === 'reviewed')) {
-      expect(JSON.stringify(g)).not.toContain('[PLACEHOLDER');
     }
   });
 

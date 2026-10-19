@@ -5,7 +5,6 @@ import { illustrationNames } from './illustration-names';
 import { allergens } from '@/domain/profile';
 
 import insightsJson from './insights.json';
-import { reviewStatusSchema } from './schemas';
 
 export const insightSchema = z.object({
   id: z.string().min(1),
@@ -25,7 +24,6 @@ export const insightSchema = z.object({
   body: z.array(z.string().min(1)).min(1),
   /** Allergens the insight's food contains; hidden for households avoiding them. */
   allergens: z.array(z.enum(allergens)),
-  reviewStatus: reviewStatusSchema,
   reviewer: z.string().min(1),
 });
 export type Insight = z.infer<typeof insightSchema>;

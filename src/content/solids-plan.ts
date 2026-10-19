@@ -4,7 +4,6 @@ import { allergens } from '@/domain/profile';
 
 import { getGuideSource, guideSourceSchema, type GuideSource } from './monthly-guides';
 import plan from './solids-plan.json';
-import { reviewStatusSchema } from './schemas';
 
 export const textureStages = ['smooth', 'thicker', 'lumpy', 'chopped', 'family'] as const;
 export type TextureStage = (typeof textureStages)[number];
@@ -27,7 +26,6 @@ export const planWeekSchema = z.object({
     .nullable(),
   tips: z.array(z.string().min(1)),
   sources: z.array(z.string().min(1)).min(1),
-  reviewStatus: reviewStatusSchema,
   reviewer: z.string().min(1),
 });
 export type PlanWeek = z.infer<typeof planWeekSchema>;

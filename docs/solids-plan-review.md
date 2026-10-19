@@ -2,8 +2,7 @@
 
 This is a line-by-line check of `src/content/solids-plan.json` against the official US
 sources it cites (CDC, AAP/HealthyChildren.org, FDA; pages read 2026-10-08). It is **not**
-a professional sign-off. Every week stays `reviewStatus: "placeholder"` until a
-pediatrician or registered dietitian reviews it.
+a professional sign-off by a pediatrician or registered dietitian.
 
 ## Changes in v2
 

@@ -3,9 +3,8 @@
 A calm, one-handed postpartum and baby-feeding companion for iOS, built with Expo, for families in the US.
 
 > **Health-adjacent content.** All recipes and feeding guidance live in `src/content/` as
-> data files. Anything not yet signed off by a credentialed expert is marked
-> `reviewStatus: "placeholder"`. Text carries no review markers; the app ships with
-> disclaimers that its content is for general information only.
+> data files, summarized from official US sources. The app ships with disclaimers that
+> its content is for general information only.
 
 ## Stack
 

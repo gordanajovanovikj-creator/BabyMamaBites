@@ -50,7 +50,6 @@
         "If your baby turns away or cries, stop and try again another day."
       ],
       "sources": ["cdc-solids", "aap-solids", "cdc-howmuch-food"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -68,7 +67,6 @@
         "Wait 3 to 5 days between new foods so you can spot any reaction."
       ],
       "sources": ["cdc-iron", "aap-solids", "cdc-solids"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -91,7 +89,6 @@
         "Most egg allergies are caused by proteins in the egg white, but the yolk can cause reactions too, and the two can't be fully separated. If you're worried about egg allergy, or your baby has severe eczema or has reacted to a food before, talk to your pediatrician about the best way to introduce egg."
       ],
       "sources": ["cdc-hungry", "aap-allergens", "cdc-solids", "acaai-egg"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -113,7 +110,6 @@
         "Keep offering egg. A typical portion is about 1/3 of a well-cooked egg."
       ],
       "sources": ["aap-allergens", "cdc-solids", "cdc-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -135,7 +131,6 @@
         "Choose pasteurized dairy with no added sugar."
       ],
       "sources": ["cdc-textures", "cdc-solids", "aap-allergens", "cdc-cowsmilk"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -157,7 +152,6 @@
         "Infant cereal is one easy way to offer wheat; check the label."
       ],
       "sources": ["cdc-encourage", "cdc-utensils", "aap-solids"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -179,7 +173,6 @@
         "Eat the food yourself first; babies learn by watching."
       ],
       "sources": ["cdc-picky", "aap-allergens", "cdc-solids"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -201,7 +194,6 @@
         "Keep offering the allergens your baby already tolerates."
       ],
       "sources": ["cdc-solids", "cdc-encourage", "aap-allergens"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -223,7 +215,6 @@
         "Always stay with your baby while they eat."
       ],
       "sources": ["cdc-utensils", "aap-solids", "fda-fish", "cdc-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -245,7 +236,6 @@
         "Stop any new food that seems to cause a rash, vomiting or diarrhea, and call your pediatrician."
       ],
       "sources": ["aap-solids", "aap-allergens"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -267,7 +257,6 @@
         "Let your baby touch and squish food. Mess is part of learning."
       ],
       "sources": ["cdc-textures", "cdc-utensils", "aap-solids", "aap-allergens"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -285,7 +274,6 @@
         "Cut cheese into short, thin strips, never chunks."
       ],
       "sources": ["aap-allergens", "cdc-utensils", "cdc-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -307,7 +295,6 @@
         "Keep watching for reactions whenever you add something new."
       ],
       "sources": ["cdc-textures", "cdc-solids", "cdc-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -325,7 +312,6 @@
         "If you're worried about how much your baby eats, talk to your pediatrician."
       ],
       "sources": ["cdc-howmuch-food", "aap-solids"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -347,7 +333,6 @@
         "Keep mealtimes unhurried; rushing raises the risk of choking."
       ],
       "sources": ["aap-solids", "cdc-picky", "cdc-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -365,7 +350,6 @@
         "Ask your pediatrician if you have questions about iron drops or supplements."
       ],
       "sources": ["cdc-iron"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -387,7 +371,6 @@
         "No honey before 12 months: it can cause infant botulism, a severe food poisoning."
       ],
       "sources": ["cdc-avoid", "aap-solids"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -409,7 +392,6 @@
         "Let your baby practice with a spoon or fork, even when it's messy."
       ],
       "sources": ["cdc-utensils", "cdc-textures"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -431,7 +413,6 @@
         "Keep food soft enough to mash with a fork."
       ],
       "sources": ["aap-choking", "cdc-encourage", "cdc-avoid"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -449,7 +430,6 @@
         "No eating in the car, in the stroller or while crawling."
       ],
       "sources": ["cdc-choking", "aap-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -467,7 +447,6 @@
         "Fish also provides protein, vitamin B12, vitamin D and selenium."
       ],
       "sources": ["fda-fish", "cdc-avoid"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -485,7 +464,6 @@
         "Avoid using food as a reward or punishment."
       ],
       "sources": ["cdc-hungry", "cdc-howmuch-food"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -507,7 +485,6 @@
         "Choose cheeses and yogurts labeled pasteurized."
       ],
       "sources": ["aap-solids", "cdc-avoid"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -525,7 +502,6 @@
         "Model eating the food yourself."
       ],
       "sources": ["cdc-picky"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -547,7 +523,6 @@
         "No honey until your baby's first birthday."
       ],
       "sources": ["cdc-cowsmilk", "aap-solids", "cdc-avoid"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -569,7 +544,6 @@
         "The monthly guides on the Today tab keep going into the toddler years."
       ],
       "sources": ["cdc-howmuch-food", "cdc-iron", "aap-allergens"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     }
   ],

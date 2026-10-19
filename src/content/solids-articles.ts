@@ -3,7 +3,6 @@ import { z } from 'zod';
 import { illustrationNames } from './illustration-names';
 
 import articlesJson from './solids-articles.json';
-import { reviewStatusSchema } from './schemas';
 
 const sectionSchema = z.object({
   heading: z.string().min(1),
@@ -38,7 +37,6 @@ export const articleSchema = z
     readMinutes: z.number().int().positive(),
     sections: z.array(sectionSchema).min(1),
     sources: z.array(z.string().min(1)).min(1),
-    reviewStatus: reviewStatusSchema,
     reviewer: z.string().min(1),
   })
   .refine((a) => a.toMonths >= a.fromMonths, 'toMonths must not be before fromMonths');

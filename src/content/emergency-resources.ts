@@ -1,13 +1,11 @@
 import { z } from 'zod';
 
 import data from './emergency-resources.json';
-import { reviewStatusSchema } from './schemas';
 
 const helpline = z.enum(['911', '988', 'tlc-mama', 'psi', 'poison']);
 
 const fileSchema = z.object({
   version: z.number(),
-  reviewStatus: reviewStatusSchema,
   reviewer: z.string().min(1),
   intro: z.string().min(1),
   groups: z

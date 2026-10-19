@@ -270,8 +270,7 @@
           "sources": ["cdc-bf-newborn", "cdc-bf-howmuch", "cdc-bf-expect", "cdc-ppd"],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "month-2",
@@ -370,8 +369,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "month-3",
@@ -456,8 +454,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "month-4",
@@ -546,8 +543,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "month-5",
@@ -638,8 +634,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "month-6",
@@ -654,9 +649,7 @@
         {
           "id": "readiness",
           "title": "Signs your baby is ready for solids",
-          "paragraphs": [
-            "Look for these signs together, usually at about 6 months:"
-          ],
+          "paragraphs": ["Look for these signs together, usually at about 6 months:"],
           "bullets": [
             "Sits up alone or with support, with good head and neck control.",
             "Opens their mouth when food comes their way, and watches you eat or reaches for your food.",
@@ -681,9 +674,7 @@
         {
           "id": "setup",
           "title": "Getting set up",
-          "paragraphs": [
-            "A little preparation now makes the first weeks of solids easier."
-          ],
+          "paragraphs": ["A little preparation now makes the first weeks of solids easier."],
           "bullets": [
             "A high chair or other safe seat, so your baby sits upright while eating.",
             "Baby spoons, bibs and a bowl. Use a spoon for cereals and purees; never give cereal or other food from a bottle.",
@@ -732,8 +723,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "month-7",
@@ -883,8 +873,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "month-8",
@@ -1021,8 +1010,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "month-9",
@@ -1136,8 +1124,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "month-10",
@@ -1250,8 +1237,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "month-11",
@@ -1363,8 +1349,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "month-12",
@@ -1483,8 +1468,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "months-12-18",
@@ -1598,8 +1582,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "months-18-24",
@@ -1699,8 +1682,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     },
     {
       "id": "months-24-plus",
@@ -1798,8 +1780,7 @@
           ],
           "reviewer": "pediatrician"
         }
-      ],
-      "reviewStatus": "placeholder"
+      ]
     }
   ]
 }

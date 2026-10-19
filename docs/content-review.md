@@ -17,8 +17,7 @@ All health-adjacent text lives in `src/content/` and ships marked as a draft.
 
 1. A qualified reviewer (named in each section's `reviewer` field) checks every section
    against its sources and your target region, and edits the text as needed.
-2. Set the guide's `reviewStatus` to `"reviewed"`.
-3. Run `npm run check`.
+2. Run `npm run check`.
 
 ## Rules
 

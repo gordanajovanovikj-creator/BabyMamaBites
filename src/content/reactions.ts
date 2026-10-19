@@ -1,7 +1,6 @@
 import { z } from 'zod';
 
 import reactionsJson from './reactions.json';
-import { reviewStatusSchema } from './schemas';
 
 const reactionAdviceSchema = z.object({
   title: z.string().min(1),
@@ -9,7 +8,6 @@ const reactionAdviceSchema = z.object({
   signs: z.array(z.string().min(1)),
   action: z.string().min(1),
   sources: z.array(z.string().min(1)).min(1),
-  reviewStatus: reviewStatusSchema,
   reviewer: z.string().min(1),
 });
 export type ReactionAdvice = z.infer<typeof reactionAdviceSchema>;

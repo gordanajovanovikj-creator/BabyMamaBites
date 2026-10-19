@@ -1,11 +1,9 @@
 import { z } from 'zod';
 
 import ageRulesJson from './config/age-rules.json';
-import { reviewStatusSchema } from './schemas';
 
 export const ageRulesSchema = z.object({
   version: z.number().int().positive(),
-  reviewStatus: reviewStatusSchema,
   reviewer: z.string().min(1),
   note: z.string(),
   stageStartMonths: z.object({

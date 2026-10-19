@@ -4,7 +4,6 @@ import { allergens, diets } from '@/domain/profile';
 
 import babyRecipesJson from './baby-recipes.json';
 import recipesJson from './recipes.json';
-import { reviewStatusSchema } from './schemas';
 
 export const recipeTags = [
   'five-minute',
@@ -63,7 +62,6 @@ export const recipeSchema = z.object({
   ingredients: z.array(z.string().min(1)).min(1),
   steps: z.array(z.string().min(1)).min(1),
   tips: z.array(z.string().min(1)),
-  reviewStatus: reviewStatusSchema,
   reviewer: z.string().min(1),
 });
 export type Recipe = z.infer<typeof recipeSchema>;

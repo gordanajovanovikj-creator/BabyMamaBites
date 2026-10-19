@@ -15,7 +15,6 @@ import {
 
 const rules: AgeRules = {
   version: 1,
-  reviewStatus: 'placeholder',
   reviewer: 'test',
   note: '',
   stageStartMonths: { solids: 6, toddler: 12 },

@@ -3,7 +3,6 @@ import { z } from 'zod';
 import { allergens } from '@/domain/profile';
 
 import data from './foods.json';
-import { reviewStatusSchema } from './schemas';
 
 export const foodCategories = ['vegetables', 'fruits', 'proteins', 'grains', 'dairy'] as const;
 export type FoodCategory = (typeof foodCategories)[number];
@@ -36,7 +35,6 @@ const foodSchema = z.object({
   allergenNote: z.string().min(1).nullable(),
   tips: z.array(z.string().min(1)),
   sources: z.array(z.string().min(1)).min(1),
-  reviewStatus: reviewStatusSchema,
   reviewer: z.string().min(1),
 });
 export type Food = z.infer<typeof foodSchema>;

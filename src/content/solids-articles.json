@@ -68,7 +68,6 @@
         }
       ],
       "sources": ["cdc-solids", "aap-solids", "cdc-howmuch-food", "aap-bf-solids"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatrician"
     },
     {
@@ -139,7 +138,6 @@
         }
       ],
       "sources": ["aap-hc", "cpsc-hc", "aap-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "child safety specialist"
     },
     {
@@ -236,7 +234,6 @@
         "cdc-choking",
         "cdc-iron"
       ],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -304,7 +301,6 @@
         }
       ],
       "sources": ["cdc-solids", "aap-solids", "cdc-iron", "cdc-encourage"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -373,7 +369,6 @@
         }
       ],
       "sources": ["aap-allergens", "aap-anaphylaxis", "cdc-solids", "acaai-egg", "cdc-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric allergist"
     },
     {
@@ -467,7 +462,6 @@
         }
       ],
       "sources": ["medline-choking-infant", "aap-choking", "cdc-choking", "cdc-solids"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatrician"
     },
     {
@@ -526,7 +520,6 @@
         }
       ],
       "sources": ["cdc-hungry", "cdc-howmuch-food"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -592,7 +585,6 @@
         }
       ],
       "sources": ["cdc-utensils", "cdc-encourage", "aap-solids", "cdc-cowsmilk"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -634,7 +626,6 @@
         }
       ],
       "sources": ["aap-solids", "cdc-solids", "cdc-picky"],
-      "reviewStatus": "placeholder",
       "reviewer": "food safety"
     },
     {
@@ -703,7 +694,6 @@
         }
       ],
       "sources": ["cdc-avoid", "cdc-cowsmilk", "aap-solids", "cdc-textures"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -770,7 +760,6 @@
         }
       ],
       "sources": ["cdc-picky", "cdc-hungry", "cdc-textures"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -851,7 +840,6 @@
         }
       ],
       "sources": ["cdc-picky", "aap-1yo", "aap-2yo", "cdc-hungry"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -899,7 +887,6 @@
         }
       ],
       "sources": ["cdc-cowsmilk", "aap-1yo"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -1030,7 +1017,6 @@
         "cdc-maternal-diet",
         "fda-fish"
       ],
-      "reviewStatus": "placeholder",
       "reviewer": "women's health professional"
     },
     {
@@ -1158,7 +1144,6 @@
         "aap-safe-sleep",
         "owh-ppd"
       ],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatrician"
     },
     {
@@ -1252,7 +1237,6 @@
         }
       ],
       "sources": ["usda-leftovers", "aap-car-seats", "aap-sun"],
-      "reviewStatus": "placeholder",
       "reviewer": "health professional"
     },
     {
@@ -1333,7 +1317,6 @@
         }
       ],
       "sources": ["cdc-maternal-diet", "usda-leftovers"],
-      "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
     {
@@ -1429,7 +1412,6 @@
         }
       ],
       "sources": ["cdc-maternal-diet", "cdc-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "registered dietitian"
     },
     {
@@ -1554,7 +1536,6 @@
         "aap-tummy-time",
         "aap-fussy-baby"
       ],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatrician"
     },
     {
@@ -1655,7 +1636,6 @@
         "cdc-choking",
         "cdc-hungry"
       ],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -1735,7 +1715,6 @@
         "usda-leftovers",
         "cdc-iron"
       ],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -1784,7 +1763,6 @@
         }
       ],
       "sources": ["cdc-avoid", "aap-allergens", "cdc-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -1827,7 +1805,6 @@
         }
       ],
       "sources": ["cdc-bf-howmuch", "cdc-bf-expect", "aap-fussy-baby"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatrician"
     },
     {
@@ -1873,7 +1850,6 @@
         }
       ],
       "sources": ["cdc-utensils", "cdc-textures"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric occupational therapist"
     },
     {
@@ -1913,7 +1889,6 @@
         }
       ],
       "sources": ["cdc-textures", "cdc-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dietitian"
     },
     {
@@ -1965,7 +1940,6 @@
         }
       ],
       "sources": ["aap-allergens", "aap-anaphylaxis"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric allergist"
     },
     {
@@ -2007,7 +1981,6 @@
         }
       ],
       "sources": ["cdc-textures", "cdc-choking"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric speech-language pathologist"
     },
     {
@@ -2044,7 +2017,6 @@
         }
       ],
       "sources": ["aap-oral-health"],
-      "reviewStatus": "placeholder",
       "reviewer": "pediatric dentist"
     }
   ]

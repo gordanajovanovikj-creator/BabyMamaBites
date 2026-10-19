@@ -55,7 +55,7 @@ describe('solids articles content', () => {
   });
 
   it('keeps review markers out of the text', () => {
-    for (const article of solidsArticles.filter((x) => x.reviewStatus === 'placeholder')) {
+    for (const article of solidsArticles) {
       expect(article.summary.includes(PLACEHOLDER_MARKER)).toBe(false);
     }
   });

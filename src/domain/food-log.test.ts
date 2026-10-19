@@ -144,7 +144,7 @@ describe('solids plan content', () => {
   });
 
   it('keeps review markers out of the text', () => {
-    for (const w of planWeeks.filter((x) => x.reviewStatus === 'placeholder')) {
+    for (const w of planWeeks) {
       expect(w.focus[0].includes(PLACEHOLDER_MARKER)).toBe(false);
     }
   });
@@ -187,9 +187,7 @@ describe('reaction advice', () => {
 
   it('keeps review markers out of the text', () => {
     for (const advice of [reactionAdvice.concerning, reactionAdvice.mild]) {
-      if (advice.reviewStatus === 'placeholder') {
-        expect(advice.intro.includes(PLACEHOLDER_MARKER)).toBe(false);
-      }
+      expect(advice.intro.includes(PLACEHOLDER_MARKER)).toBe(false);
     }
   });
 });

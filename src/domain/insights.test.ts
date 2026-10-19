@@ -21,7 +21,6 @@ function make(id: string, extra: Partial<Insight> = {}): Insight {
     summary: id,
     body: ['[PLACEHOLDER - needs expert review] text'],
     allergens: [],
-    reviewStatus: 'placeholder',
     reviewer: 'test',
     ...extra,
   };
@@ -76,7 +75,7 @@ describe('bundled insights', () => {
   it('have unique ids and no review markers in the text', () => {
     const ids = bundled.map((i) => i.id);
     expect(new Set(ids).size).toBe(ids.length);
-    for (const i of bundled.filter((x) => x.reviewStatus === 'placeholder')) {
+    for (const i of bundled) {
       expect(i.body[0]).not.toContain(PLACEHOLDER_MARKER);
     }
   });
