@@ -16,6 +16,7 @@ import { FamilyMealCard } from '@/features/recipes/family-meal-card';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { recipePhoto } from '@/features/recipes/recipe-photos';
+import { NutritionCard } from '@/features/recipes/nutrition-card';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { SafetyNotice } from '@/features/shared/safety-notice';
 import { TipCard } from '@/features/shared/tip-card';
@@ -188,6 +189,9 @@ export default function RecipeScreen() {
       <AppText variant="caption" size="sm" className="px-5 pt-2">
         Tap an ingredient to tick it off.
       </AppText>
+      <View className="px-5 pt-6">
+        <NutritionCard recipe={recipe} />
+      </View>
 
       <SectionTitle>Method</SectionTitle>
       <View className="gap-4 px-5 pt-2">
@@ -228,7 +232,6 @@ export default function RecipeScreen() {
         </AppText>
         <AppText variant="caption" size="sm">
           This recipe is for general information only and isn&apos;t health or nutrition advice.
-          Nutrition information will be added once it has been calculated and reviewed.
         </AppText>
         <HealthDisclaimerNote short />
       </View>

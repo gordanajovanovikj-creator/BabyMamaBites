@@ -1,0 +1,1653 @@
+{
+  "version": 1,
+  "source": "USDA FoodData Central (SR Legacy)",
+  "recipes": {
+    "almond-butter-chia-pudding": {
+      "kcal": 348,
+      "proteinG": 9.4,
+      "carbsG": 34.8,
+      "fiberG": 13.3,
+      "fatG": 20.5,
+      "sodiumMg": 54,
+      "ironMg": 3.4
+    },
+    "apple-cinnamon-porridge": {
+      "kcal": 402,
+      "proteinG": 9.3,
+      "carbsG": 63.7,
+      "fiberG": 8.4,
+      "fatG": 13.7,
+      "sodiumMg": 145,
+      "ironMg": 2.6
+    },
+    "apple-pb": {
+      "kcal": 236,
+      "proteinG": 5.7,
+      "carbsG": 30.9,
+      "fiberG": 5.7,
+      "fatG": 12.2,
+      "sodiumMg": 116,
+      "ironMg": 0.7
+    },
+    "avocado-egg-toast": {
+      "kcal": 315,
+      "proteinG": 12.3,
+      "carbsG": 23.1,
+      "fiberG": 8.8,
+      "fatG": 20.7,
+      "sodiumMg": 224,
+      "ironMg": 2.2
+    },
+    "baby-apple-cinnamon-oatmeal": {
+      "kcal": 94,
+      "proteinG": 1.8,
+      "carbsG": 15.0,
+      "fiberG": 1.2,
+      "fatG": 3.3,
+      "sodiumMg": 13,
+      "ironMg": 6.3
+    },
+    "baby-apple-oatmeal-fingers": {
+      "kcal": 31,
+      "proteinG": 0.9,
+      "carbsG": 5.9,
+      "fiberG": 0.8,
+      "fatG": 0.5,
+      "sodiumMg": 0,
+      "ironMg": 0.3
+    },
+    "baby-apple-pear-cinnamon": {
+      "kcal": 41,
+      "proteinG": 0.3,
+      "carbsG": 11.0,
+      "fiberG": 1.8,
+      "fatG": 0.1,
+      "sodiumMg": 0,
+      "ironMg": 0.1
+    },
+    "baby-apple-puree": {
+      "kcal": 19,
+      "proteinG": 0.1,
+      "carbsG": 5.1,
+      "fiberG": 0.5,
+      "fatG": 0.1,
+      "sodiumMg": 0,
+      "ironMg": 0.0
+    },
+    "baby-apple-spinach-puree": {
+      "kcal": 23,
+      "proteinG": 0.4,
+      "carbsG": 6.0,
+      "fiberG": 0.8,
+      "fatG": 0.1,
+      "sodiumMg": 8,
+      "ironMg": 0.3
+    },
+    "baby-apple-zucchini-muffins": {
+      "kcal": 21,
+      "proteinG": 1.0,
+      "carbsG": 3.0,
+      "fiberG": 0.4,
+      "fatG": 0.6,
+      "sodiumMg": 6,
+      "ironMg": 0.2
+    },
+    "baby-avocado-banana-mash": {
+      "kcal": 107,
+      "proteinG": 1.3,
+      "carbsG": 11.0,
+      "fiberG": 4.1,
+      "fatG": 7.5,
+      "sodiumMg": 4,
+      "ironMg": 0.4
+    },
+    "baby-avocado-egg-soldiers": {
+      "kcal": 313,
+      "proteinG": 12.3,
+      "carbsG": 22.6,
+      "fiberG": 8.7,
+      "fatG": 20.6,
+      "sodiumMg": 224,
+      "ironMg": 2.2
+    },
+    "baby-avocado-pear-mash": {
+      "kcal": 108,
+      "proteinG": 1.2,
+      "carbsG": 10.9,
+      "fiberG": 4.7,
+      "fatG": 7.4,
+      "sodiumMg": 4,
+      "ironMg": 0.4
+    },
+    "baby-avocado-puree": {
+      "kcal": 83,
+      "proteinG": 1.0,
+      "carbsG": 4.6,
+      "fiberG": 3.4,
+      "fatG": 7.5,
+      "sodiumMg": 4,
+      "ironMg": 0.3
+    },
+    "baby-banana-mash": {
+      "kcal": 116,
+      "proteinG": 1.4,
+      "carbsG": 28.0,
+      "fiberG": 3.1,
+      "fatG": 1.1,
+      "sodiumMg": 4,
+      "ironMg": 0.3
+    },
+    "baby-banana-oat-pancakes": {
+      "kcal": 40,
+      "proteinG": 1.4,
+      "carbsG": 5.7,
+      "fiberG": 0.7,
+      "fatG": 1.5,
+      "sodiumMg": 9,
+      "ironMg": 0.3
+    },
+    "baby-banana-oatmeal": {
+      "kcal": 65,
+      "proteinG": 1.6,
+      "carbsG": 13.6,
+      "fiberG": 1.8,
+      "fatG": 0.8,
+      "sodiumMg": 1,
+      "ironMg": 0.5
+    },
+    "baby-berry-baked-oatmeal": {
+      "kcal": 71,
+      "proteinG": 1.8,
+      "carbsG": 11.5,
+      "fiberG": 1.5,
+      "fatG": 2.2,
+      "sodiumMg": 6,
+      "ironMg": 0.5
+    },
+    "baby-broccoli-potato-mash": {
+      "kcal": 26,
+      "proteinG": 0.9,
+      "carbsG": 5.5,
+      "fiberG": 1.0,
+      "fatG": 0.1,
+      "sodiumMg": 8,
+      "ironMg": 0.3
+    },
+    "baby-broccoli-quinoa-bites": {
+      "kcal": 26,
+      "proteinG": 1.5,
+      "carbsG": 2.0,
+      "fiberG": 0.3,
+      "fatG": 1.3,
+      "sodiumMg": 23,
+      "ironMg": 0.2
+    },
+    "baby-carrot-puree": {
+      "kcal": 7,
+      "proteinG": 0.2,
+      "carbsG": 1.7,
+      "fiberG": 0.5,
+      "fatG": 0.0,
+      "sodiumMg": 12,
+      "ironMg": 0.1
+    },
+    "baby-carrot-squash-puree": {
+      "kcal": 14,
+      "proteinG": 0.3,
+      "carbsG": 3.5,
+      "fiberG": 0.8,
+      "fatG": 0.1,
+      "sodiumMg": 11,
+      "ironMg": 0.2
+    },
+    "baby-carrot-zucchini-fries": {
+      "kcal": 36,
+      "proteinG": 2.3,
+      "carbsG": 5.4,
+      "fiberG": 1.5,
+      "fatG": 1.0,
+      "sodiumMg": 31,
+      "ironMg": 0.3
+    },
+    "baby-cauliflower-bean-mash": {
+      "kcal": 86,
+      "proteinG": 4.3,
+      "carbsG": 7.2,
+      "fiberG": 1.9,
+      "fatG": 4.8,
+      "sodiumMg": 55,
+      "ironMg": 1.0
+    },
+    "baby-chicken-puree": {
+      "kcal": 34,
+      "proteinG": 5.6,
+      "carbsG": 0.0,
+      "fiberG": 0.0,
+      "fatG": 1.2,
+      "sodiumMg": 27,
+      "ironMg": 0.2
+    },
+    "baby-chicken-sweet-potato-bites": {
+      "kcal": 22,
+      "proteinG": 2.2,
+      "carbsG": 1.9,
+      "fiberG": 0.3,
+      "fatG": 0.6,
+      "sodiumMg": 8,
+      "ironMg": 0.2
+    },
+    "baby-egg-mash": {
+      "kcal": 41,
+      "proteinG": 3.2,
+      "carbsG": 0.7,
+      "fiberG": 0.0,
+      "fatG": 2.7,
+      "sodiumMg": 37,
+      "ironMg": 0.4
+    },
+    "baby-homemade-oatmeal": {
+      "kcal": 30,
+      "proteinG": 0.8,
+      "carbsG": 4.5,
+      "fiberG": 0.5,
+      "fatG": 1.0,
+      "sodiumMg": 3,
+      "ironMg": 0.2
+    },
+    "baby-lentil-carrot-mash": {
+      "kcal": 66,
+      "proteinG": 4.0,
+      "carbsG": 12.0,
+      "fiberG": 2.3,
+      "fatG": 0.4,
+      "sodiumMg": 15,
+      "ironMg": 1.2
+    },
+    "baby-lentil-cottage-pie": {
+      "kcal": 79,
+      "proteinG": 3.4,
+      "carbsG": 16.5,
+      "fiberG": 3.2,
+      "fatG": 0.2,
+      "sodiumMg": 10,
+      "ironMg": 1.1
+    },
+    "baby-lentil-pasta": {
+      "kcal": 104,
+      "proteinG": 5.2,
+      "carbsG": 20.1,
+      "fiberG": 2.9,
+      "fatG": 0.6,
+      "sodiumMg": 8,
+      "ironMg": 1.7
+    },
+    "baby-mango-yogurt": {
+      "kcal": 80,
+      "proteinG": 5.5,
+      "carbsG": 8.5,
+      "fiberG": 0.7,
+      "fatG": 3.0,
+      "sodiumMg": 20,
+      "ironMg": 0.1
+    },
+    "baby-oat-cereal": {
+      "kcal": 61,
+      "proteinG": 1.1,
+      "carbsG": 7.7,
+      "fiberG": 0.4,
+      "fatG": 2.9,
+      "sodiumMg": 11,
+      "ironMg": 3.1
+    },
+    "baby-oatmeal-blueberry": {
+      "kcal": 30,
+      "proteinG": 0.8,
+      "carbsG": 6.1,
+      "fiberG": 1.0,
+      "fatG": 0.4,
+      "sodiumMg": 0,
+      "ironMg": 0.3
+    },
+    "baby-one-pot-avocado-bean-salad": {
+      "kcal": 329,
+      "proteinG": 9.8,
+      "carbsG": 29.6,
+      "fiberG": 13.1,
+      "fatG": 21.5,
+      "sodiumMg": 293,
+      "ironMg": 3.5
+    },
+    "baby-one-pot-banana-pancakes": {
+      "kcal": 248,
+      "proteinG": 10.1,
+      "carbsG": 37.8,
+      "fiberG": 4.7,
+      "fatG": 7.7,
+      "sodiumMg": 193,
+      "ironMg": 1.8
+    },
+    "baby-one-pot-beef-meatballs": {
+      "kcal": 266,
+      "proteinG": 20.4,
+      "carbsG": 10.7,
+      "fiberG": 1.3,
+      "fatG": 15.3,
+      "sodiumMg": 159,
+      "ironMg": 3.0
+    },
+    "baby-one-pot-beef-stew": {
+      "kcal": 541,
+      "proteinG": 34.3,
+      "carbsG": 38.3,
+      "fiberG": 6.6,
+      "fatG": 27.7,
+      "sodiumMg": 382,
+      "ironMg": 4.2
+    },
+    "baby-one-pot-berry-oatmeal": {
+      "kcal": 144,
+      "proteinG": 4.5,
+      "carbsG": 24.6,
+      "fiberG": 4.9,
+      "fatG": 3.5,
+      "sodiumMg": 4,
+      "ironMg": 1.6
+    },
+    "baby-one-pot-chicken-noodle-soup": {
+      "kcal": 420,
+      "proteinG": 44.6,
+      "carbsG": 45.1,
+      "fiberG": 3.1,
+      "fatG": 6.6,
+      "sodiumMg": 220,
+      "ironMg": 3.0
+    },
+    "baby-one-pot-coconut-curry": {
+      "kcal": 420,
+      "proteinG": 30.9,
+      "carbsG": 22.5,
+      "fiberG": 3.1,
+      "fatG": 23.8,
+      "sodiumMg": 103,
+      "ironMg": 4.7
+    },
+    "baby-one-pot-egg-scramble": {
+      "kcal": 264,
+      "proteinG": 11.2,
+      "carbsG": 7.3,
+      "fiberG": 4.7,
+      "fatG": 21.9,
+      "sodiumMg": 121,
+      "ironMg": 2.0
+    },
+    "baby-one-pot-lentil-dahl": {
+      "kcal": 374,
+      "proteinG": 13.8,
+      "carbsG": 36.6,
+      "fiberG": 6.2,
+      "fatG": 21.3,
+      "sodiumMg": 37,
+      "ironMg": 7.1
+    },
+    "baby-one-pot-sheet-pan-chicken": {
+      "kcal": 737,
+      "proteinG": 50.1,
+      "carbsG": 8.0,
+      "fiberG": 2.1,
+      "fatG": 55.4,
+      "sodiumMg": 245,
+      "ironMg": 2.9
+    },
+    "baby-one-pot-squash-ricotta-pasta": {
+      "kcal": 411,
+      "proteinG": 14.5,
+      "carbsG": 78.3,
+      "fiberG": 4.9,
+      "fatG": 4.6,
+      "sodiumMg": 44,
+      "ironMg": 3.6
+    },
+    "baby-one-pot-tofu-noodles": {
+      "kcal": 497,
+      "proteinG": 35.1,
+      "carbsG": 54.9,
+      "fiberG": 8.2,
+      "fatG": 18.2,
+      "sodiumMg": 62,
+      "ironMg": 6.7
+    },
+    "baby-one-pot-white-fish": {
+      "kcal": 301,
+      "proteinG": 30.8,
+      "carbsG": 37.5,
+      "fiberG": 5.7,
+      "fatG": 3.3,
+      "sodiumMg": 116,
+      "ironMg": 2.4
+    },
+    "baby-peanut-oatmeal": {
+      "kcal": 78,
+      "proteinG": 2.2,
+      "carbsG": 8.1,
+      "fiberG": 0.8,
+      "fatG": 4.4,
+      "sodiumMg": 32,
+      "ironMg": 4.2
+    },
+    "baby-pear-banana-blend": {
+      "kcal": 77,
+      "proteinG": 0.6,
+      "carbsG": 20.3,
+      "fiberG": 3.5,
+      "fatG": 0.2,
+      "sodiumMg": 1,
+      "ironMg": 0.2
+    },
+    "baby-pear-chia-mash": {
+      "kcal": 109,
+      "proteinG": 0.9,
+      "carbsG": 27.7,
+      "fiberG": 6.0,
+      "fatG": 0.7,
+      "sodiumMg": 2,
+      "ironMg": 0.4
+    },
+    "baby-pear-cottage-cheese": {
+      "kcal": 157,
+      "proteinG": 6.9,
+      "carbsG": 29.2,
+      "fiberG": 5.6,
+      "fatG": 2.7,
+      "sodiumMg": 178,
+      "ironMg": 0.4
+    },
+    "baby-pear-puree": {
+      "kcal": 51,
+      "proteinG": 0.3,
+      "carbsG": 13.6,
+      "fiberG": 2.8,
+      "fatG": 0.1,
+      "sodiumMg": 1,
+      "ironMg": 0.2
+    },
+    "baby-pumpkin-oatmeal": {
+      "kcal": 41,
+      "proteinG": 1.4,
+      "carbsG": 8.7,
+      "fiberG": 2.5,
+      "fatG": 0.5,
+      "sodiumMg": 3,
+      "ironMg": 1.1
+    },
+    "baby-pumpkin-puree": {
+      "kcal": 8,
+      "proteinG": 0.3,
+      "carbsG": 1.9,
+      "fiberG": 0.1,
+      "fatG": 0.0,
+      "sodiumMg": 0,
+      "ironMg": 0.2
+    },
+    "baby-salmon-potato-mash": {
+      "kcal": 167,
+      "proteinG": 10.9,
+      "carbsG": 12.9,
+      "fiberG": 1.1,
+      "fatG": 7.8,
+      "sodiumMg": 52,
+      "ironMg": 0.3
+    },
+    "baby-salmon-sweet-potato": {
+      "kcal": 87,
+      "proteinG": 6.3,
+      "carbsG": 6.5,
+      "fiberG": 1.0,
+      "fatG": 3.8,
+      "sodiumMg": 35,
+      "ironMg": 0.3
+    },
+    "baby-soft-veg-fingers": {
+      "kcal": 23,
+      "proteinG": 1.0,
+      "carbsG": 4.8,
+      "fiberG": 1.4,
+      "fatG": 0.3,
+      "sodiumMg": 26,
+      "ironMg": 0.3
+    },
+    "baby-spinach-ricotta-shells": {
+      "kcal": 75,
+      "proteinG": 2.5,
+      "carbsG": 7.5,
+      "fiberG": 0.5,
+      "fatG": 4.0,
+      "sodiumMg": 25,
+      "ironMg": 0.7
+    },
+    "baby-squash-apple-puree": {
+      "kcal": 32,
+      "proteinG": 0.4,
+      "carbsG": 8.3,
+      "fiberG": 1.1,
+      "fatG": 0.1,
+      "sodiumMg": 1,
+      "ironMg": 0.3
+    },
+    "baby-squash-chicken-puree": {
+      "kcal": 30,
+      "proteinG": 3.1,
+      "carbsG": 4.1,
+      "fiberG": 0.7,
+      "fatG": 0.3,
+      "sodiumMg": 8,
+      "ironMg": 0.3
+    },
+    "baby-squash-chicken-risotto": {
+      "kcal": 116,
+      "proteinG": 6.9,
+      "carbsG": 18.3,
+      "fiberG": 2.4,
+      "fatG": 1.8,
+      "sodiumMg": 19,
+      "ironMg": 0.8
+    },
+    "baby-squash-puree": {
+      "kcal": 16,
+      "proteinG": 0.3,
+      "carbsG": 4.1,
+      "fiberG": 0.7,
+      "fatG": 0.0,
+      "sodiumMg": 1,
+      "ironMg": 0.2
+    },
+    "baby-sweet-potato-apple-mash": {
+      "kcal": 24,
+      "proteinG": 0.3,
+      "carbsG": 5.8,
+      "fiberG": 0.7,
+      "fatG": 0.0,
+      "sodiumMg": 9,
+      "ironMg": 0.1
+    },
+    "baby-sweet-potato-bean-quesadilla": {
+      "kcal": 127,
+      "proteinG": 4.3,
+      "carbsG": 13.3,
+      "fiberG": 2.9,
+      "fatG": 6.4,
+      "sodiumMg": 144,
+      "ironMg": 0.8
+    },
+    "baby-sweet-potato-carrot-mash": {
+      "kcal": 33,
+      "proteinG": 0.5,
+      "carbsG": 6.5,
+      "fiberG": 1.2,
+      "fatG": 0.6,
+      "sodiumMg": 24,
+      "ironMg": 0.2
+    },
+    "baby-sweet-potato-peach-mash": {
+      "kcal": 34,
+      "proteinG": 0.7,
+      "carbsG": 8.1,
+      "fiberG": 1.2,
+      "fatG": 0.1,
+      "sodiumMg": 9,
+      "ironMg": 0.2
+    },
+    "baby-sweet-potato-puree": {
+      "kcal": 31,
+      "proteinG": 0.5,
+      "carbsG": 6.8,
+      "fiberG": 1.0,
+      "fatG": 0.2,
+      "sodiumMg": 19,
+      "ironMg": 0.2
+    },
+    "baby-two-textures-chili": {
+      "kcal": 378,
+      "proteinG": 36.1,
+      "carbsG": 39.2,
+      "fiberG": 9.5,
+      "fatG": 9.9,
+      "sodiumMg": 91,
+      "ironMg": 6.0
+    },
+    "baby-two-textures-salmon": {
+      "kcal": 416,
+      "proteinG": 33.1,
+      "carbsG": 24.1,
+      "fiberG": 5.2,
+      "fatG": 20.9,
+      "sodiumMg": 164,
+      "ironMg": 1.7
+    },
+    "baby-yogurt-berry-swirl": {
+      "kcal": 48,
+      "proteinG": 2.3,
+      "carbsG": 5.5,
+      "fiberG": 0.4,
+      "fatG": 2.1,
+      "sodiumMg": 28,
+      "ironMg": 0.1
+    },
+    "baby-zucchini-egg-strips": {
+      "kcal": 129,
+      "proteinG": 6.6,
+      "carbsG": 1.9,
+      "fiberG": 0.2,
+      "fatG": 10.5,
+      "sodiumMg": 75,
+      "ironMg": 1.0
+    },
+    "baby-zucchini-potato-mash": {
+      "kcal": 28,
+      "proteinG": 1.0,
+      "carbsG": 6.1,
+      "fiberG": 1.1,
+      "fatG": 0.2,
+      "sodiumMg": 8,
+      "ironMg": 0.4
+    },
+    "baby-zucchini-puree": {
+      "kcal": 7,
+      "proteinG": 0.5,
+      "carbsG": 1.2,
+      "fiberG": 0.4,
+      "fatG": 0.1,
+      "sodiumMg": 3,
+      "ironMg": 0.1
+    },
+    "baby-zucchini-sweet-potato-puree": {
+      "kcal": 13,
+      "proteinG": 0.4,
+      "carbsG": 3.0,
+      "fiberG": 0.5,
+      "fatG": 0.1,
+      "sodiumMg": 8,
+      "ironMg": 0.1
+    },
+    "baby-zucchini-white-bean-mash": {
+      "kcal": 48,
+      "proteinG": 3.4,
+      "carbsG": 8.7,
+      "fiberG": 2.3,
+      "fatG": 0.2,
+      "sodiumMg": 5,
+      "ironMg": 1.2
+    },
+    "baked-oatmeal": {
+      "kcal": 147,
+      "proteinG": 5.7,
+      "carbsG": 23.3,
+      "fiberG": 3.0,
+      "fatG": 3.9,
+      "sodiumMg": 78,
+      "ironMg": 1.2
+    },
+    "banana-oat-smoothie": {
+      "kcal": 369,
+      "proteinG": 13.8,
+      "carbsG": 55.5,
+      "fiberG": 5.3,
+      "fatG": 11.6,
+      "sodiumMg": 136,
+      "ironMg": 1.3
+    },
+    "bbq-chicken-flatbread": {
+      "kcal": 445,
+      "proteinG": 25.7,
+      "carbsG": 52.3,
+      "fiberG": 2.2,
+      "fatG": 14.6,
+      "sodiumMg": 979,
+      "ironMg": 2.9
+    },
+    "beef-broccoli-stir-fry": {
+      "kcal": 264,
+      "proteinG": 26.4,
+      "carbsG": 11.0,
+      "fiberG": 1.5,
+      "fatG": 12.7,
+      "sodiumMg": 855,
+      "ironMg": 3.4
+    },
+    "black-bean-quesadilla": {
+      "kcal": 537,
+      "proteinG": 24.4,
+      "carbsG": 58.6,
+      "fiberG": 14.4,
+      "fatG": 23.9,
+      "sodiumMg": 1172,
+      "ironMg": 3.8
+    },
+    "black-bean-sweet-potato-chili": {
+      "kcal": 284,
+      "proteinG": 14.1,
+      "carbsG": 48.9,
+      "fiberG": 16.4,
+      "fatG": 5.1,
+      "sodiumMg": 584,
+      "ironMg": 4.7
+    },
+    "breakfast-burritos": {
+      "kcal": 437,
+      "proteinG": 20.4,
+      "carbsG": 47.1,
+      "fiberG": 6.2,
+      "fatG": 18.4,
+      "sodiumMg": 942,
+      "ironMg": 4.6
+    },
+    "chicken-quinoa-jars": {
+      "kcal": 460,
+      "proteinG": 32.6,
+      "carbsG": 44.5,
+      "fiberG": 7.3,
+      "fatG": 16.9,
+      "sodiumMg": 190,
+      "ironMg": 3.5
+    },
+    "chicken-salad-lettuce-wraps": {
+      "kcal": 222,
+      "proteinG": 24.8,
+      "carbsG": 11.6,
+      "fiberG": 2.2,
+      "fatG": 8.8,
+      "sodiumMg": 152,
+      "ironMg": 1.4
+    },
+    "chicken-stir-fry": {
+      "kcal": 391,
+      "proteinG": 32.4,
+      "carbsG": 46.2,
+      "fiberG": 4.1,
+      "fatG": 7.3,
+      "sodiumMg": 350,
+      "ironMg": 2.8
+    },
+    "chickpea-curry": {
+      "kcal": 439,
+      "proteinG": 12.8,
+      "carbsG": 39.8,
+      "fiberG": 11.6,
+      "fatG": 28.4,
+      "sodiumMg": 410,
+      "ironMg": 5.9
+    },
+    "coconut-curry-chickpea-soup": {
+      "kcal": 418,
+      "proteinG": 12.8,
+      "carbsG": 39.0,
+      "fiberG": 10.7,
+      "fatG": 26.2,
+      "sodiumMg": 630,
+      "ironMg": 5.9
+    },
+    "cold-soba-peanut-edamame": {
+      "kcal": 342,
+      "proteinG": 16.1,
+      "carbsG": 53.6,
+      "fiberG": 3.1,
+      "fatG": 9.8,
+      "sodiumMg": 795,
+      "ironMg": 2.8
+    },
+    "creamy-mushroom-pasta": {
+      "kcal": 404,
+      "proteinG": 11.9,
+      "carbsG": 46.5,
+      "fiberG": 2.4,
+      "fatG": 19.3,
+      "sodiumMg": 173,
+      "ironMg": 2.3
+    },
+    "egg-muffin-cups": {
+      "kcal": 88,
+      "proteinG": 6.6,
+      "carbsG": 1.3,
+      "fiberG": 0.2,
+      "fatG": 6.1,
+      "sodiumMg": 92,
+      "ironMg": 0.8
+    },
+    "energy-bites": {
+      "kcal": 108,
+      "proteinG": 2.8,
+      "carbsG": 15.0,
+      "fiberG": 2.1,
+      "fatG": 4.9,
+      "sodiumMg": 39,
+      "ironMg": 0.6
+    },
+    "garlic-butter-shrimp-pasta": {
+      "kcal": 390,
+      "proteinG": 30.7,
+      "carbsG": 43.8,
+      "fiberG": 2.0,
+      "fatG": 10.1,
+      "sodiumMg": 266,
+      "ironMg": 2.6
+    },
+    "greek-chicken-salad-jars": {
+      "kcal": 349,
+      "proteinG": 44.3,
+      "carbsG": 7.7,
+      "fiberG": 2.3,
+      "fatG": 15.4,
+      "sodiumMg": 401,
+      "ironMg": 4.9
+    },
+    "high-protein-bento-box": {
+      "kcal": 476,
+      "proteinG": 26.2,
+      "carbsG": 29.9,
+      "fiberG": 8.9,
+      "fatG": 29.7,
+      "sodiumMg": 1060,
+      "ironMg": 4.1
+    },
+    "honey-mustard-chicken-green-beans": {
+      "kcal": 268,
+      "proteinG": 33.2,
+      "carbsG": 17.5,
+      "fiberG": 3.6,
+      "fatG": 7.6,
+      "sodiumMg": 198,
+      "ironMg": 1.9
+    },
+    "huevos-rancheros-bowls": {
+      "kcal": 319,
+      "proteinG": 15.4,
+      "carbsG": 35.0,
+      "fiberG": 11.7,
+      "fatG": 14.5,
+      "sodiumMg": 547,
+      "ironMg": 3.1
+    },
+    "hummus-wrap": {
+      "kcal": 362,
+      "proteinG": 12.1,
+      "carbsG": 47.5,
+      "fiberG": 11.8,
+      "fatG": 15.2,
+      "sodiumMg": 683,
+      "ironMg": 4.2
+    },
+    "lemon-herb-chicken-asparagus": {
+      "kcal": 246,
+      "proteinG": 32.7,
+      "carbsG": 5.0,
+      "fiberG": 1.9,
+      "fatG": 10.5,
+      "sodiumMg": 112,
+      "ironMg": 2.5
+    },
+    "lemon-herb-quinoa-chickpea-salad": {
+      "kcal": 306,
+      "proteinG": 9.7,
+      "carbsG": 34.7,
+      "fiberG": 6.8,
+      "fatG": 15.2,
+      "sodiumMg": 298,
+      "ironMg": 2.1
+    },
+    "lentil-soup": {
+      "kcal": 232,
+      "proteinG": 13.0,
+      "carbsG": 38.8,
+      "fiberG": 7.4,
+      "fatG": 3.8,
+      "sodiumMg": 749,
+      "ironMg": 4.4
+    },
+    "mediterranean-tuna-pita": {
+      "kcal": 480,
+      "proteinG": 35.1,
+      "carbsG": 44.4,
+      "fiberG": 5.1,
+      "fatG": 20.1,
+      "sodiumMg": 874,
+      "ironMg": 4.5
+    },
+    "naan-margherita-pizzas": {
+      "kcal": 469,
+      "proteinG": 23.4,
+      "carbsG": 54.9,
+      "fiberG": 3.6,
+      "fatG": 17.4,
+      "sodiumMg": 1085,
+      "ironMg": 3.7
+    },
+    "nursing-almond-butter-shake": {
+      "kcal": 378,
+      "proteinG": 10.3,
+      "carbsG": 52.2,
+      "fiberG": 11.4,
+      "fatG": 16.8,
+      "sodiumMg": 194,
+      "ironMg": 3.4
+    },
+    "nursing-avocado-toast": {
+      "kcal": 498,
+      "proteinG": 13.7,
+      "carbsG": 46.5,
+      "fiberG": 18.5,
+      "fatG": 32.1,
+      "sodiumMg": 462,
+      "ironMg": 2.8
+    },
+    "nursing-barley-milk-soup": {
+      "kcal": 255,
+      "proteinG": 9.8,
+      "carbsG": 39.8,
+      "fiberG": 8.0,
+      "fatG": 6.9,
+      "sodiumMg": 111,
+      "ironMg": 1.8
+    },
+    "nursing-bone-broth-soup": {
+      "kcal": 246,
+      "proteinG": 27.0,
+      "carbsG": 14.7,
+      "fiberG": 1.5,
+      "fatG": 8.2,
+      "sodiumMg": 482,
+      "ironMg": 1.5
+    },
+    "nursing-brown-sugar-oats": {
+      "kcal": 396,
+      "proteinG": 8.0,
+      "carbsG": 72.1,
+      "fiberG": 8.1,
+      "fatG": 9.3,
+      "sodiumMg": 101,
+      "ironMg": 3.5
+    },
+    "nursing-chia-pudding": {
+      "kcal": 257,
+      "proteinG": 6.0,
+      "carbsG": 34.9,
+      "fiberG": 13.3,
+      "fatG": 11.2,
+      "sodiumMg": 54,
+      "ironMg": 2.9
+    },
+    "nursing-chocolate-chip-bites": {
+      "kcal": 91,
+      "proteinG": 2.5,
+      "carbsG": 11.2,
+      "fiberG": 1.3,
+      "fatG": 4.8,
+      "sodiumMg": 2,
+      "ironMg": 0.5
+    },
+    "nursing-chocolate-pb-shake": {
+      "kcal": 454,
+      "proteinG": 12.4,
+      "carbsG": 64.3,
+      "fiberG": 9.0,
+      "fatG": 20.5,
+      "sodiumMg": 104,
+      "ironMg": 2.4
+    },
+    "nursing-flax-blueberry-yogurt-bowl": {
+      "kcal": 376,
+      "proteinG": 25.2,
+      "carbsG": 30.3,
+      "fiberG": 5.6,
+      "fatG": 18.4,
+      "sodiumMg": 91,
+      "ironMg": 1.0
+    },
+    "nursing-green-mango-smoothie": {
+      "kcal": 261,
+      "proteinG": 4.1,
+      "carbsG": 32.4,
+      "fiberG": 8.7,
+      "fatG": 15.2,
+      "sodiumMg": 95,
+      "ironMg": 1.6
+    },
+    "nursing-methi-chicken-curry": {
+      "kcal": 232,
+      "proteinG": 25.9,
+      "carbsG": 7.4,
+      "fiberG": 1.9,
+      "fatG": 10.9,
+      "sodiumMg": 105,
+      "ironMg": 2.5
+    },
+    "nursing-no-bake-granola-bars": {
+      "kcal": 171,
+      "proteinG": 4.6,
+      "carbsG": 18.9,
+      "fiberG": 4.0,
+      "fatG": 9.3,
+      "sodiumMg": 4,
+      "ironMg": 1.5
+    },
+    "nursing-oatmeal-chocolate-chip-cookies": {
+      "kcal": 142,
+      "proteinG": 2.4,
+      "carbsG": 17.5,
+      "fiberG": 1.4,
+      "fatG": 7.5,
+      "sodiumMg": 81,
+      "ironMg": 0.8
+    },
+    "nursing-salmon-quinoa-bowl": {
+      "kcal": 792,
+      "proteinG": 45.9,
+      "carbsG": 49.8,
+      "fiberG": 12.6,
+      "fatG": 46.4,
+      "sodiumMg": 131,
+      "ironMg": 4.5
+    },
+    "nursing-spinach-pear-quinoa-salad": {
+      "kcal": 278,
+      "proteinG": 5.2,
+      "carbsG": 40.0,
+      "fiberG": 6.7,
+      "fatG": 12.9,
+      "sodiumMg": 41,
+      "ironMg": 2.4
+    },
+    "nursing-strawberry-banana-oat-smoothie": {
+      "kcal": 369,
+      "proteinG": 10.5,
+      "carbsG": 74.2,
+      "fiberG": 8.7,
+      "fatG": 5.6,
+      "sodiumMg": 65,
+      "ironMg": 2.2
+    },
+    "nursing-sweet-potato-coconut-stew": {
+      "kcal": 282,
+      "proteinG": 4.2,
+      "carbsG": 21.2,
+      "fiberG": 2.8,
+      "fatG": 21.9,
+      "sodiumMg": 552,
+      "ironMg": 4.2
+    },
+    "nut-butter-porridge": {
+      "kcal": 450,
+      "proteinG": 17.2,
+      "carbsG": 56.7,
+      "fiberG": 6.7,
+      "fatG": 18.7,
+      "sodiumMg": 184,
+      "ironMg": 2.3
+    },
+    "one-pot-pasta": {
+      "kcal": 469,
+      "proteinG": 18.6,
+      "carbsG": 81.0,
+      "fiberG": 7.0,
+      "fatG": 8.8,
+      "sodiumMg": 618,
+      "ironMg": 6.1
+    },
+    "overnight-oats": {
+      "kcal": 381,
+      "proteinG": 16.6,
+      "carbsG": 49.2,
+      "fiberG": 9.2,
+      "fatG": 13.3,
+      "sodiumMg": 78,
+      "ironMg": 2.9
+    },
+    "pb-banana-baked-oatmeal-cups": {
+      "kcal": 168,
+      "proteinG": 5.9,
+      "carbsG": 23.1,
+      "fiberG": 2.7,
+      "fatG": 6.5,
+      "sodiumMg": 30,
+      "ironMg": 1.0
+    },
+    "pb-banana-shake": {
+      "kcal": 352,
+      "proteinG": 12.8,
+      "carbsG": 43.5,
+      "fiberG": 4.6,
+      "fatG": 16.5,
+      "sodiumMg": 183,
+      "ironMg": 1.0
+    },
+    "pesto-chicken-pasta-salad": {
+      "kcal": 466,
+      "proteinG": 32.0,
+      "carbsG": 47.1,
+      "fiberG": 2.8,
+      "fatG": 15.8,
+      "sodiumMg": 311,
+      "ironMg": 3.2
+    },
+    "pesto-chicken-penne": {
+      "kcal": 470,
+      "proteinG": 36.9,
+      "carbsG": 45.9,
+      "fiberG": 2.6,
+      "fatG": 14.3,
+      "sodiumMg": 383,
+      "ironMg": 3.1
+    },
+    "sheet-pan-chicken-fajita-bowls": {
+      "kcal": 396,
+      "proteinG": 34.6,
+      "carbsG": 36.1,
+      "fiberG": 4.3,
+      "fatG": 11.5,
+      "sodiumMg": 573,
+      "ironMg": 1.9
+    },
+    "sheet-pan-salmon": {
+      "kcal": 607,
+      "proteinG": 39.7,
+      "carbsG": 16.3,
+      "fiberG": 5.7,
+      "fatG": 43.8,
+      "sodiumMg": 246,
+      "ironMg": 2.2
+    },
+    "sheet-pan-sausage-hash": {
+      "kcal": 321,
+      "proteinG": 21.1,
+      "carbsG": 36.4,
+      "fiberG": 4.6,
+      "fatG": 10.9,
+      "sodiumMg": 450,
+      "ironMg": 2.2
+    },
+    "slow-cooker-chicken": {
+      "kcal": 191,
+      "proteinG": 35.0,
+      "carbsG": 1.1,
+      "fiberG": 0.2,
+      "fatG": 4.3,
+      "sodiumMg": 81,
+      "ironMg": 0.9
+    },
+    "smoothie-almond-fig": {
+      "kcal": 351,
+      "proteinG": 13.1,
+      "carbsG": 44.9,
+      "fiberG": 9.9,
+      "fatG": 15.7,
+      "sodiumMg": 160,
+      "ironMg": 2.9
+    },
+    "smoothie-avocado-green": {
+      "kcal": 337,
+      "proteinG": 7.0,
+      "carbsG": 34.8,
+      "fiberG": 15.3,
+      "fatG": 21.6,
+      "sodiumMg": 213,
+      "ironMg": 3.1
+    },
+    "smoothie-blueberry-oatmeal": {
+      "kcal": 307,
+      "proteinG": 8.0,
+      "carbsG": 43.1,
+      "fiberG": 7.8,
+      "fatG": 13.4,
+      "sodiumMg": 192,
+      "ironMg": 2.4
+    },
+    "smoothie-chocolate-hemp": {
+      "kcal": 408,
+      "proteinG": 13.0,
+      "carbsG": 56.5,
+      "fiberG": 8.0,
+      "fatG": 18.5,
+      "sodiumMg": 98,
+      "ironMg": 4.3
+    },
+    "smoothie-citrus-sunshine": {
+      "kcal": 183,
+      "proteinG": 4.2,
+      "carbsG": 36.1,
+      "fiberG": 9.6,
+      "fatG": 4.2,
+      "sodiumMg": 24,
+      "ironMg": 1.6
+    },
+    "smoothie-cucumber-ginger": {
+      "kcal": 75,
+      "proteinG": 1.6,
+      "carbsG": 17.2,
+      "fiberG": 3.7,
+      "fatG": 0.6,
+      "sodiumMg": 14,
+      "ironMg": 0.7
+    },
+    "smoothie-ginger-turmeric": {
+      "kcal": 148,
+      "proteinG": 1.9,
+      "carbsG": 37.0,
+      "fiberG": 3.2,
+      "fatG": 0.4,
+      "sodiumMg": 66,
+      "ironMg": 1.4
+    },
+    "smoothie-golden-tropical": {
+      "kcal": 235,
+      "proteinG": 6.6,
+      "carbsG": 40.2,
+      "fiberG": 3.5,
+      "fatG": 6.8,
+      "sodiumMg": 96,
+      "ironMg": 1.9
+    },
+    "smoothie-greek-yogurt-berry": {
+      "kcal": 216,
+      "proteinG": 18.0,
+      "carbsG": 37.0,
+      "fiberG": 3.2,
+      "fatG": 0.8,
+      "sodiumMg": 65,
+      "ironMg": 1.3
+    },
+    "smoothie-kiwi-lime": {
+      "kcal": 104,
+      "proteinG": 2.9,
+      "carbsG": 25.1,
+      "fiberG": 5.1,
+      "fatG": 0.9,
+      "sodiumMg": 29,
+      "ironMg": 1.4
+    },
+    "smoothie-matcha-green": {
+      "kcal": 254,
+      "proteinG": 12.7,
+      "carbsG": 34.3,
+      "fiberG": 5.5,
+      "fatG": 9.3,
+      "sodiumMg": 117,
+      "ironMg": 3.1
+    },
+    "smoothie-papaya-mint": {
+      "kcal": 170,
+      "proteinG": 3.3,
+      "carbsG": 32.9,
+      "fiberG": 6.7,
+      "fatG": 4.1,
+      "sodiumMg": 78,
+      "ironMg": 1.5
+    },
+    "smoothie-pb-banana-protein": {
+      "kcal": 443,
+      "proteinG": 26.9,
+      "carbsG": 46.2,
+      "fiberG": 5.2,
+      "fatG": 19.7,
+      "sodiumMg": 307,
+      "ironMg": 2.0
+    },
+    "smoothie-pear-cinnamon": {
+      "kcal": 308,
+      "proteinG": 3.3,
+      "carbsG": 70.5,
+      "fiberG": 9.5,
+      "fatG": 3.4,
+      "sodiumMg": 97,
+      "ironMg": 1.5
+    },
+    "smoothie-pomegranate-acai": {
+      "kcal": 195,
+      "proteinG": 3.9,
+      "carbsG": 37.8,
+      "fiberG": 11.1,
+      "fatG": 4.6,
+      "sodiumMg": 16,
+      "ironMg": 2.2
+    },
+    "smoothie-salted-caramel": {
+      "kcal": 385,
+      "proteinG": 20.6,
+      "carbsG": 75.1,
+      "fiberG": 6.8,
+      "fatG": 3.3,
+      "sodiumMg": 457,
+      "ironMg": 1.9
+    },
+    "smoothie-tahini-date": {
+      "kcal": 540,
+      "proteinG": 9.8,
+      "carbsG": 90.6,
+      "fiberG": 9.5,
+      "fatG": 19.8,
+      "sodiumMg": 122,
+      "ironMg": 4.0
+    },
+    "smoothie-triple-berry": {
+      "kcal": 189,
+      "proteinG": 3.5,
+      "carbsG": 40.5,
+      "fiberG": 9.3,
+      "fatG": 3.6,
+      "sodiumMg": 191,
+      "ironMg": 1.8
+    },
+    "smoothie-tropical-green": {
+      "kcal": 194,
+      "proteinG": 3.2,
+      "carbsG": 48.1,
+      "fiberG": 4.7,
+      "fatG": 0.7,
+      "sodiumMg": 90,
+      "ironMg": 1.4
+    },
+    "smoothie-wild-blueberry": {
+      "kcal": 270,
+      "proteinG": 12.6,
+      "carbsG": 30.4,
+      "fiberG": 9.3,
+      "fatG": 11.4,
+      "sodiumMg": 235,
+      "ironMg": 2.1
+    },
+    "snack-plate": {
+      "kcal": 352,
+      "proteinG": 10.8,
+      "carbsG": 51.1,
+      "fiberG": 5.4,
+      "fatG": 13.7,
+      "sodiumMg": 443,
+      "ironMg": 1.9
+    },
+    "spinach-feta-frittata": {
+      "kcal": 183,
+      "proteinG": 12.1,
+      "carbsG": 2.8,
+      "fiberG": 0.4,
+      "fatG": 13.6,
+      "sodiumMg": 311,
+      "ironMg": 1.7
+    },
+    "spinach-tomato-gnocchi": {
+      "kcal": 413,
+      "proteinG": 9.6,
+      "carbsG": 38.1,
+      "fiberG": 1.8,
+      "fatG": 25.3,
+      "sodiumMg": 719,
+      "ironMg": 2.0
+    },
+    "sweet-potato-black-bean-quinoa-bowls": {
+      "kcal": 301,
+      "proteinG": 10.5,
+      "carbsG": 47.3,
+      "fiberG": 9.8,
+      "fatG": 8.8,
+      "sodiumMg": 32,
+      "ironMg": 3.2
+    },
+    "sweet-potato-spinach-hash": {
+      "kcal": 399,
+      "proteinG": 16.6,
+      "carbsG": 31.6,
+      "fiberG": 5.7,
+      "fatG": 23.3,
+      "sodiumMg": 456,
+      "ironMg": 4.3
+    },
+    "teriyaki-chicken-bowls": {
+      "kcal": 372,
+      "proteinG": 36.3,
+      "carbsG": 35.6,
+      "fiberG": 3.4,
+      "fatG": 8.3,
+      "sodiumMg": 513,
+      "ironMg": 1.9
+    },
+    "toddler-apple-oat-pancakes": {
+      "kcal": 49,
+      "proteinG": 1.6,
+      "carbsG": 7.5,
+      "fiberG": 1.1,
+      "fatG": 1.6,
+      "sodiumMg": 9,
+      "ironMg": 0.4
+    },
+    "toddler-baked-apple-slices": {
+      "kcal": 36,
+      "proteinG": 0.2,
+      "carbsG": 9.7,
+      "fiberG": 1.1,
+      "fatG": 0.1,
+      "sodiumMg": 0,
+      "ironMg": 0.1
+    },
+    "toddler-bean-quesadilla": {
+      "kcal": 132,
+      "proteinG": 5.5,
+      "carbsG": 17.4,
+      "fiberG": 2.7,
+      "fatG": 4.4,
+      "sodiumMg": 227,
+      "ironMg": 1.4
+    },
+    "toddler-beef-veggie-meatballs": {
+      "kcal": 35,
+      "proteinG": 3.4,
+      "carbsG": 1.3,
+      "fiberG": 0.1,
+      "fatG": 1.7,
+      "sodiumMg": 25,
+      "ironMg": 0.4
+    },
+    "toddler-broccoli-potato-tots": {
+      "kcal": 31,
+      "proteinG": 1.2,
+      "carbsG": 3.7,
+      "fiberG": 0.5,
+      "fatG": 1.3,
+      "sodiumMg": 71,
+      "ironMg": 0.1
+    },
+    "toddler-cheesy-broccoli-rice": {
+      "kcal": 98,
+      "proteinG": 3.8,
+      "carbsG": 12.8,
+      "fiberG": 0.6,
+      "fatG": 3.4,
+      "sodiumMg": 69,
+      "ironMg": 0.6
+    },
+    "toddler-chicken-avocado-pinwheels": {
+      "kcal": 224,
+      "proteinG": 10.9,
+      "carbsG": 19.0,
+      "fiberG": 6.5,
+      "fatG": 12.2,
+      "sodiumMg": 221,
+      "ironMg": 1.4
+    },
+    "toddler-chicken-coconut-curry": {
+      "kcal": 193,
+      "proteinG": 12.4,
+      "carbsG": 16.3,
+      "fiberG": 0.7,
+      "fatG": 8.8,
+      "sodiumMg": 47,
+      "ironMg": 2.3
+    },
+    "toddler-chickpea-salad-sandwich": {
+      "kcal": 143,
+      "proteinG": 7.5,
+      "carbsG": 22.8,
+      "fiberG": 4.4,
+      "fatG": 2.6,
+      "sodiumMg": 257,
+      "ironMg": 1.2
+    },
+    "toddler-french-toast-sticks": {
+      "kcal": 196,
+      "proteinG": 7.9,
+      "carbsG": 19.7,
+      "fiberG": 2.8,
+      "fatG": 9.8,
+      "sodiumMg": 189,
+      "ironMg": 1.3
+    },
+    "toddler-nut-butter-rice-cake": {
+      "kcal": 109,
+      "proteinG": 2.8,
+      "carbsG": 15.9,
+      "fiberG": 1.5,
+      "fatG": 4.5,
+      "sodiumMg": 4,
+      "ironMg": 0.3
+    },
+    "toddler-overnight-oats": {
+      "kcal": 140,
+      "proteinG": 4.9,
+      "carbsG": 23.4,
+      "fiberG": 2.8,
+      "fatG": 3.4,
+      "sodiumMg": 28,
+      "ironMg": 1.0
+    },
+    "toddler-pb-banana-oat-bites": {
+      "kcal": 59,
+      "proteinG": 2.1,
+      "carbsG": 5.7,
+      "fiberG": 1.1,
+      "fatG": 3.5,
+      "sodiumMg": 2,
+      "ironMg": 0.4
+    },
+    "toddler-salmon-rice-patties": {
+      "kcal": 66,
+      "proteinG": 4.0,
+      "carbsG": 5.2,
+      "fiberG": 0.3,
+      "fatG": 3.1,
+      "sodiumMg": 25,
+      "ironMg": 0.3
+    },
+    "toddler-spinach-cheese-omelets": {
+      "kcal": 55,
+      "proteinG": 4.2,
+      "carbsG": 0.7,
+      "fiberG": 0.0,
+      "fatG": 3.8,
+      "sodiumMg": 63,
+      "ironMg": 0.5
+    },
+    "toddler-sweet-potato-mac": {
+      "kcal": 92,
+      "proteinG": 3.3,
+      "carbsG": 16.4,
+      "fiberG": 1.5,
+      "fatG": 1.5,
+      "sodiumMg": 63,
+      "ironMg": 0.6
+    },
+    "toddler-tuna-cucumber-bites": {
+      "kcal": 31,
+      "proteinG": 5.7,
+      "carbsG": 0.9,
+      "fiberG": 0.2,
+      "fatG": 0.6,
+      "sodiumMg": 66,
+      "ironMg": 0.5
+    },
+    "toddler-turkey-meatballs": {
+      "kcal": 151,
+      "proteinG": 16.9,
+      "carbsG": 5.0,
+      "fiberG": 0.5,
+      "fatG": 7.0,
+      "sodiumMg": 101,
+      "ironMg": 1.3
+    },
+    "toddler-turkey-veggie-quesadilla": {
+      "kcal": 121,
+      "proteinG": 7.7,
+      "carbsG": 10.1,
+      "fiberG": 2.2,
+      "fatG": 5.5,
+      "sodiumMg": 205,
+      "ironMg": 0.7
+    },
+    "toddler-yogurt-berry-bark": {
+      "kcal": 51,
+      "proteinG": 3.8,
+      "carbsG": 4.5,
+      "fiberG": 0.4,
+      "fatG": 2.1,
+      "sodiumMg": 14,
+      "ironMg": 0.0
+    },
+    "tomato-tortellini-soup": {
+      "kcal": 397,
+      "proteinG": 15.1,
+      "carbsG": 49.0,
+      "fiberG": 5.5,
+      "fatG": 17.5,
+      "sodiumMg": 1229,
+      "ironMg": 4.2
+    },
+    "turkey-chili": {
+      "kcal": 286,
+      "proteinG": 24.0,
+      "carbsG": 29.6,
+      "fiberG": 8.3,
+      "fatG": 9.4,
+      "sodiumMg": 482,
+      "ironMg": 4.3
+    },
+    "turkey-meatball-zoodle-box": {
+      "kcal": 273,
+      "proteinG": 28.2,
+      "carbsG": 12.8,
+      "fiberG": 3.3,
+      "fatG": 12.6,
+      "sodiumMg": 623,
+      "ironMg": 2.6
+    },
+    "turkey-taco-skillet": {
+      "kcal": 437,
+      "proteinG": 35.5,
+      "carbsG": 30.8,
+      "fiberG": 9.2,
+      "fatG": 19.7,
+      "sodiumMg": 883,
+      "ironMg": 3.9
+    },
+    "warm-spiced-milk": {
+      "kcal": 171,
+      "proteinG": 7.7,
+      "carbsG": 16.9,
+      "fiberG": 0.3,
+      "fatG": 7.9,
+      "sodiumMg": 106,
+      "ironMg": 0.1
+    },
+    "white-bean-tuna-salad": {
+      "kcal": 377,
+      "proteinG": 25.3,
+      "carbsG": 38.6,
+      "fiberG": 9.7,
+      "fatG": 14.8,
+      "sodiumMg": 165,
+      "ironMg": 6.5
+    },
+    "yogurt-parfait": {
+      "kcal": 226,
+      "proteinG": 16.5,
+      "carbsG": 20.5,
+      "fiberG": 2.0,
+      "fatG": 9.1,
+      "sodiumMg": 61,
+      "ironMg": 0.5
+    }
+  }
+}
