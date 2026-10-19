@@ -7,4 +7,7 @@ export type SettingsStore = {
   /** The date the medical disclaimer was accepted, or null if it hasn't been. */
   loadDisclaimerAccepted(): Promise<string | null>;
   saveDisclaimerAccepted(onDate: string): Promise<void>;
+  /** The date the parent agreed to send Ask questions to the AI provider, or null. */
+  loadChatConsent(): Promise<string | null>;
+  saveChatConsent(onDate: string): Promise<void>;
 };

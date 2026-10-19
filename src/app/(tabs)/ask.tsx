@@ -14,9 +14,10 @@ import { today } from '@/domain/dates';
 import { CHAT_LIMITS, detectUrgent, type ChatTurn, type UrgentKind } from '@/domain/chat';
 import { babyAge } from '@/domain/stage';
 import { sendChat } from '@/features/chat/chat-client';
+import { useChatConsent } from '@/features/chat/use-chat-consent';
 import { UrgentHelp } from '@/features/chat/urgent-help';
 import { useProfile } from '@/features/profile/profile-context';
-import { AppText, Chip, cn } from '@/ui';
+import { AppText, Button, Chip, cn } from '@/ui';
 import { usePalette } from '@/theme/use-palette';
 
 const SUGGESTIONS = [
@@ -38,6 +39,7 @@ export default function AskScreen() {
   const [problem, setProblem] = useState<string | null>(null);
   const [urgent, setUrgent] = useState<UrgentKind | null>(null);
   const scroll = useRef<ScrollView>(null);
+  const { consented, accept } = useChatConsent();
 
   // A prompt passed in from elsewhere (e.g. "Meal idea from your fridge") prefills the box once.
   const [seenQ, setSeenQ] = useState<string | undefined>(undefined);
@@ -48,10 +50,11 @@ export default function AskScreen() {
 
   const ageMonths = profile ? babyAge(profile, today()).months : null;
   const atLimit = turns.length >= CHAT_LIMITS.maxTurns - 1;
+  const locked = !consented || sending || atLimit;
 
   async function send(textToSend: string) {
     const text = textToSend.trim();
-    if (!text || sending || atLimit) return;
+    if (!text || locked) return;
     const found = detectUrgent(text);
     if (found) setUrgent(found);
     const next: ChatTurn[] = [...turns, { role: 'user', text }];
@@ -108,7 +111,22 @@ export default function AskScreen() {
 
         {urgent ? <UrgentHelp kind={urgent} /> : null}
 
-        {turns.length === 0 ? (
+        {consented === false ? (
+          <View className="gap-3 rounded-3xl border border-border bg-surface p-5">
+            <AppText variant="heading">Before you ask</AppText>
+            <AppText>
+              To write an answer, your question and your baby&apos;s age in months are sent to our
+              server and then to Anthropic, the company that makes the AI model. Your baby&apos;s
+              name, birth date and allergies aren&apos;t sent, and the chat isn&apos;t saved.
+            </AppText>
+            <AppText variant="caption" size="sm">
+              Please don&apos;t type names, contact details or other personal information.
+            </AppText>
+            <Button label="I agree, start chatting" onPress={() => accept()} />
+          </View>
+        ) : null}
+
+        {consented && turns.length === 0 ? (
           <View className="gap-2">
             <AppText variant="label">Try asking</AppText>
             <View className="flex-row flex-wrap gap-2">
@@ -169,18 +187,19 @@ export default function AskScreen() {
           placeholder="Ask anything about feeding…"
           placeholderTextColor={palette.inkMuted}
           multiline
+          editable={consented === true}
           maxLength={CHAT_LIMITS.maxChars}
           className="max-h-32 min-h-12 flex-1 rounded-3xl bg-surface-muted px-4 py-3 text-lg text-ink"
         />
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Send"
-          accessibilityState={{ disabled: !input.trim() || sending || atLimit }}
-          disabled={!input.trim() || sending || atLimit}
+          accessibilityState={{ disabled: !input.trim() || locked }}
+          disabled={!input.trim() || locked}
           onPress={() => send(input)}
           className={cn(
             'h-12 w-12 items-center justify-center rounded-full bg-primary active:opacity-80',
-            (!input.trim() || sending || atLimit) && 'opacity-40',
+            (!input.trim() || locked) && 'opacity-40',
           )}
         >
           <AppText variant="heading" color="on-primary">

@@ -97,7 +97,7 @@
     {
       "id": "privacy",
       "title": "Privacy Policy",
-      "updated": "October 12, 2026",
+      "updated": "October 19, 2026",
       "intro": "Your privacy matters, especially when it comes to your family. MamaBabyBites is built so that your information stays on your phone. This policy explains what the app stores, what it sends, and the choices you have.",
       "sections": [
         {
@@ -116,20 +116,21 @@
             "Your baby's name, birth date and due date",
             "How you're feeding, foods your household avoids, and your cooking time",
             "Your food log, allergen tracker, favorites, meal plan, freezer list and calendar",
-            "Your reminder settings"
+            "Your reminder settings and whether you agreed to use the Ask chat"
           ]
         },
         {
           "heading": "Reminders",
           "paragraphs": [
-            "Reminders are scheduled on your phone. They never include your baby's name, and you can turn them off at any time in the app or in your iPhone Settings."
+            "Reminders are scheduled on your phone. They never include your baby's name, and you can turn them off at any time in the app or in your iPhone Settings.",
+            "If you add the app's widget to your Home Screen, it shows today's planned meals and your baby's first name. The widget reads this from the app on your phone; nothing is sent to us."
           ],
           "bullets": []
         },
         {
           "heading": "The Ask chat",
           "paragraphs": [
-            "When you use the Ask tab, the questions you type and your baby's age in months are sent to our server and then to Anthropic, the company that provides the AI model, to write an answer. Your baby's name, birth date, allergies and other details aren't sent.",
+            "The app asks for your OK before your first question. When you use the Ask tab, the questions you type and your baby's age in months are sent to our server and then to Anthropic, the company that provides the AI model, to write an answer. Your baby's name, birth date, allergies and other details aren't sent.",
             "The app doesn't save your chat on your phone or on our server. Anthropic may keep messages for a limited time under its own policies, for example for safety. Please don't type names, contact details or other personal information into the chat."
           ],
           "bullets": []

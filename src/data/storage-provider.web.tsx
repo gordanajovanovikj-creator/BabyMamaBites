@@ -172,6 +172,7 @@ const localPlanner: PlannerStore = {
 
 const REMINDERS_KEY = 'mamababybites.reminders';
 const DISCLAIMER_KEY = 'mamababybites.disclaimer-accepted';
+const CHAT_CONSENT_KEY = 'mamababybites.chat-consent';
 
 const localSettings: SettingsStore = {
   async loadReminders() {
@@ -193,6 +194,16 @@ const localSettings: SettingsStore = {
   },
   async saveDisclaimerAccepted(onDate) {
     globalThis.localStorage?.setItem(DISCLAIMER_KEY, onDate);
+  },
+  async loadChatConsent() {
+    try {
+      return globalThis.localStorage?.getItem(CHAT_CONSENT_KEY) ?? null;
+    } catch {
+      return null;
+    }
+  },
+  async saveChatConsent(onDate) {
+    globalThis.localStorage?.setItem(CHAT_CONSENT_KEY, onDate);
   },
 };
 

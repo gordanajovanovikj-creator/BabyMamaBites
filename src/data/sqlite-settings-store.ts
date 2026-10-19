@@ -10,6 +10,7 @@ import type { SettingsStore } from './settings-store';
 
 const REMINDERS = 'reminders';
 const DISCLAIMER = 'disclaimer-accepted';
+const CHAT_CONSENT = 'chat-consent';
 
 export function parseReminders(raw: string | null | undefined): ReminderSettings {
   if (!raw) return defaultReminderSettings;
@@ -50,6 +51,21 @@ export function createSqliteSettingsStore(db: SQLiteDatabase): SettingsStore {
         `INSERT INTO app_setting (key, value) VALUES (?, ?)
          ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
         DISCLAIMER,
+        onDate,
+      );
+    },
+    async loadChatConsent() {
+      const row = await db.getFirstAsync<{ value: string }>(
+        'SELECT value FROM app_setting WHERE key = ?',
+        CHAT_CONSENT,
+      );
+      return row?.value ?? null;
+    },
+    async saveChatConsent(onDate) {
+      await db.runAsync(
+        `INSERT INTO app_setting (key, value) VALUES (?, ?)
+         ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
+        CHAT_CONSENT,
         onDate,
       );
     },
