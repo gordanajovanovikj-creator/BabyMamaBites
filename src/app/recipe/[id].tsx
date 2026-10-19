@@ -18,6 +18,7 @@ import { DetailHeader } from '@/features/shared/detail-header';
 import { recipePhoto } from '@/features/recipes/recipe-photos';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { SafetyNotice } from '@/features/shared/safety-notice';
+import { TipCard } from '@/features/shared/tip-card';
 import { AppText, Button, cn, haptics, HeartButton, Notice, Screen } from '@/ui';
 
 function SectionTitle({ children }: { children: string }) {
@@ -199,14 +200,9 @@ export default function RecipeScreen() {
       </View>
 
       {recipe.tips.length ? (
-        <>
-          <SectionTitle>Tips</SectionTitle>
-          <View className="gap-2 px-5 pt-2">
-            {recipe.tips.map((t) => (
-              <AppText key={t}>• {t}</AppText>
-            ))}
-          </View>
-        </>
+        <View className="px-5 pt-8">
+          <TipCard tips={recipe.tips} />
+        </View>
       ) : null}
 
       {family ? (

@@ -8,6 +8,7 @@ import { allergenLabels } from '@/domain/profile-labels';
 import { useProfile } from '@/features/profile/profile-context';
 import { SourceLinks } from '@/features/shared/source-links';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { TipCard } from '@/features/shared/tip-card';
 import { AppText, Button, Card, Notice, Screen } from '@/ui';
 
 function Bullets({ items }: { items: string[] }) {
@@ -115,12 +116,7 @@ export default function PlanWeekScreen() {
         />
       ) : null}
 
-      {week.tips.length ? (
-        <Card className="gap-3">
-          <AppText variant="heading">Tips</AppText>
-          <Bullets items={week.tips} />
-        </Card>
-      ) : null}
+      {week.tips.length ? <TipCard tips={week.tips} /> : null}
 
       <Button
         label="Log a food"

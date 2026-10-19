@@ -19,6 +19,7 @@ import { RECIPE_TILE_WIDTH, RecipeTile } from '@/features/recipes/recipe-tile';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
 import { SafetyNotice } from '@/features/shared/safety-notice';
+import { TipCard } from '@/features/shared/tip-card';
 import { SourceLinks } from '@/features/shared/source-links';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { AppText, Button, Card, Chip, HeartButton, Notice, Screen } from '@/ui';
@@ -202,7 +203,7 @@ export default function FoodScreen() {
             <AppText>{food.allergenNote}</AppText>
           </Card>
         ) : null}
-        {section === 'tips' ? food.tips.map((t) => <AppText key={t}>• {t}</AppText>) : null}
+        {section === 'tips' ? <TipCard tips={food.tips} /> : null}
       </View>
 
       {mealIdeas.length ? (
