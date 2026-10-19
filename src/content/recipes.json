@@ -1731,7 +1731,7 @@
       "activeMinutes": 20,
       "totalMinutes": 20,
       "servings": 4,
-      "categories": ["dinner-in-30", "dinner", "one-pot", "family-friendly"],
+      "categories": ["dinner-in-30", "dinner", "family-friendly"],
       "tags": [],
       "energy": "low",
       "allergens": ["milk", "wheat", "egg"],
@@ -1752,11 +1752,7 @@
         "Reduce the heat to low and stir in the cream and spinach until the spinach wilts.",
         "Ladle into bowls and top with parmesan."
       ],
-      "tips": [
-        "For baby: scoop out baby's portion before adding salt or Parmesan, and use low-sodium broth. Egg, dairy and wheat are common allergens; introduce each one on its own first.",
-        "Choking hazards: cut the tortellini into small pieces or mash them.",
-        "Use vegetable broth to keep it vegetarian."
-      ],
+      "tips": ["Use vegetable broth to keep it vegetarian."],
       "reviewer": "registered dietitian"
     },
     {
@@ -1844,7 +1840,7 @@
       "activeMinutes": 10,
       "totalMinutes": 25,
       "servings": 4,
-      "categories": ["dinner-in-30", "dinner", "one-pot", "high-protein-dinner", "family-friendly"],
+      "categories": ["dinner-in-30", "dinner", "high-protein-dinner", "family-friendly"],
       "tags": [],
       "energy": "low",
       "allergens": [],
@@ -1863,11 +1859,7 @@
         "Put the chicken and green beans on a baking sheet, pour over the sauce and toss to coat.",
         "Bake for 15 to 18 minutes, until the chicken is cooked through and the beans are tender-crisp."
       ],
-      "tips": [
-        "For baby: set aside baby's chicken and green beans before adding the honey mustard. Never give honey to a baby under 12 months.",
-        "Choking hazards: shred the chicken finely (tough or large chunks of meat are a choking hazard) and cook the green beans until very soft.",
-        "Cook chicken and turkey to 165°F."
-      ],
+      "tips": ["Cook chicken and turkey to 165°F."],
       "reviewer": "registered dietitian"
     },
     {
@@ -2584,7 +2576,7 @@
       "activeMinutes": 5,
       "totalMinutes": 30,
       "servings": 4,
-      "categories": ["nourish-while-nursing", "breakfast", "one-pot"],
+      "categories": ["nourish-while-nursing", "breakfast"],
       "tags": [],
       "energy": "low",
       "allergens": ["milk"],
@@ -2603,12 +2595,7 @@
         "Bring to a boil, then simmer for about 20 minutes until the barley is soft.",
         "Stir in the milk and simmer gently for 5 more minutes. Season and serve warm."
       ],
-      "tips": [
-        "For baby: set aside baby's portion before adding salt. Cow's milk as a drink waits until 12 months; check with your pediatrician about milk in baby's food.",
-        "Choking hazards: cook the barley until very soft.",
-        "Barley contains gluten.",
-        "Use oat or soy milk to make it dairy-free."
-      ],
+      "tips": ["Barley contains gluten.", "Use oat or soy milk to make it dairy-free."],
       "reviewer": "registered dietitian"
     },
     {
