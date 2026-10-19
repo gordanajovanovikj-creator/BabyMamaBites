@@ -1,12 +1,12 @@
 import { Image } from 'expo-image';
 import { router } from 'expo-router';
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
 
 import type { Food } from '@/content/foods';
 import { allRecipes, getRecipe, recipes } from '@/content/recipes';
 import { addDays, today, type IsoDate } from '@/domain/dates';
-import { familyMealOptions, NO_FAMILY_MEAL, plannedFamilyMeal } from '@/domain/family-meals';
+import { familyMealOptions, plannedFamilyMeal } from '@/domain/family-meals';
 import {
   customMealName,
   dayLabel,
@@ -21,7 +21,7 @@ import {
 } from '@/domain/planner';
 import { foodPhoto } from '@/features/foods/food-photos';
 import { useHousehold } from '@/features/profile/use-household';
-import { FamilyMealCard } from '@/features/recipes/family-meal-card';
+import { RecipeImage } from '@/features/recipes/recipe-image';
 import { AppText, Card, cn } from '@/ui';
 
 import { plannedMeal } from './planned-meal';
@@ -126,7 +126,7 @@ function FoodThumb({ food }: { food: Food }) {
   );
 }
 
-/** A small green text button, such as "Change", inside a meal card. */
+/** A small green text button, such as "Change", beside a meal. */
 function TextAction({
   label,
   accessibilityLabel,
@@ -142,7 +142,7 @@ function TextAction({
       accessibilityLabel={accessibilityLabel}
       onPress={onPress}
       hitSlop={6}
-      className="min-h-11 justify-center active:opacity-60"
+      className="min-h-12 justify-center px-1 active:opacity-60"
     >
       <AppText variant="label" color="primary" className="font-bold">
         {label}
@@ -151,8 +151,62 @@ function TextAction({
   );
 }
 
-function SlotCard({ date, slot }: { date: IsoDate; slot: MealSlot }) {
-  const { plan, family: familyPlan, setFamilyMeal } = usePlanner();
+/** One planned item: a picture, its name and what it is, opening its page when tapped. */
+function MealLine({
+  picture,
+  kicker,
+  title,
+  accessibilityLabel,
+  onPress,
+}: {
+  picture: ReactNode;
+  kicker: string;
+  title: string;
+  accessibilityLabel: string;
+  onPress?: () => void;
+}) {
+  const body = (
+    <>
+      {picture}
+      <View className="flex-1">
+        <AppText variant="caption" size="xs">
+          {kicker}
+        </AppText>
+        <AppText variant="label" className="font-bold leading-5">
+          {title}
+        </AppText>
+      </View>
+    </>
+  );
+  if (!onPress) {
+    return (
+      <View
+        className="min-h-12 flex-1 flex-row items-center gap-3"
+        accessible
+        accessibilityLabel={accessibilityLabel}
+      >
+        {body}
+      </View>
+    );
+  }
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={accessibilityLabel}
+      onPress={onPress}
+      className="min-h-12 flex-1 flex-row items-center gap-3 active:opacity-70"
+    >
+      {body}
+    </Pressable>
+  );
+}
+
+/**
+ * One meal of the day as a flat row: the baby's meal with "Change", and under it the
+ * family meal (or a way to add one).
+ */
+function SlotRow({ date, slot }: { date: IsoDate; slot: MealSlot }) {
+  const { plan, family: familyPlan } = usePlanner();
   const household = useHousehold();
   const id = plan[planKey(date, slot)];
   const recipe = id ? getRecipe(id) : undefined;
@@ -169,133 +223,108 @@ function SlotCard({ date, slot }: { date: IsoDate; slot: MealSlot }) {
   const pickFamily = () => router.push({ pathname: '/planner/family', params: { date, slot } });
   const mealName = mealSlotLabels[slot].toLowerCase();
 
+  let baby: ReactNode = null;
+  if (food) {
+    baby = (
+      <MealLine
+        picture={<FoodThumb food={food} />}
+        kicker="Single food"
+        title={food.name}
+        accessibilityLabel={`Baby's ${mealName}: ${food.name}. Opens the food guide.`}
+        onPress={() => router.push({ pathname: '/food/[id]', params: { id: food.id } })}
+      />
+    );
+  } else if (own) {
+    baby = (
+      <MealLine
+        picture={
+          <View className="h-12 w-12 items-center justify-center rounded-xl bg-surface-muted">
+            <AppText size="2xl">🍽️</AppText>
+          </View>
+        }
+        kicker="Your own food"
+        title={own}
+        accessibilityLabel={`Baby's ${mealName}: ${own}, your own food.`}
+      />
+    );
+  } else if (recipe) {
+    baby = (
+      <MealLine
+        picture={<RecipeImage recipe={recipe} className="h-12 w-12 rounded-xl" iconSize={22} />}
+        kicker="For baby"
+        title={recipe.title}
+        accessibilityLabel={`Baby's ${mealName}: ${recipe.title}. Opens the recipe.`}
+        onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
+      />
+    );
+  }
+
   return (
-    <View className="gap-2 rounded-3xl bg-surface-muted p-4">
+    <View className="gap-1 border-t border-border pt-3">
       <AppText variant="caption" size="xs" className="font-bold uppercase tracking-wider">
         {mealSlotLabels[slot]}
       </AppText>
-      {food ? (
-        <>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={`Baby's ${mealSlotLabels[slot].toLowerCase()}: ${food.name}. Opens the food guide.`}
-            onPress={() => router.push({ pathname: '/food/[id]', params: { id: food.id } })}
-            className="min-h-12 flex-row items-center gap-3 active:opacity-70"
-          >
-            <FoodThumb food={food} />
-            <View className="flex-1">
-              <AppText variant="caption" size="xs">
-                Single food
-              </AppText>
-              <AppText variant="label" size="lg" className="font-bold">
-                {food.name}
-              </AppText>
-            </View>
-          </Pressable>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={`Change ${mealSlotLabels[slot].toLowerCase()}`}
+      {baby ? (
+        <View className="flex-row items-center gap-2">
+          {baby}
+          <TextAction
+            label="Change"
+            accessibilityLabel={`Change baby's ${mealName}`}
             onPress={pick}
-            hitSlop={6}
-            className="min-h-11 justify-center self-start active:opacity-60"
-          >
-            <AppText variant="label" color="primary" className="font-bold">
-              Change
-            </AppText>
-          </Pressable>
-        </>
-      ) : own ? (
-        <>
-          <View className="min-h-12 flex-row items-center gap-3">
-            <AppText size="2xl">🍽️</AppText>
-            <View className="flex-1">
-              <AppText variant="caption" size="xs">
-                Your own food
-              </AppText>
-              <AppText variant="label" size="lg" className="font-bold">
-                {own}
-              </AppText>
-            </View>
-          </View>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={`Change ${mealSlotLabels[slot].toLowerCase()}`}
-            onPress={pick}
-            hitSlop={6}
-            className="min-h-11 justify-center self-start active:opacity-60"
-          >
-            <AppText variant="label" color="primary" className="font-bold">
-              Change
-            </AppText>
-          </Pressable>
-        </>
-      ) : recipe ? (
-        <>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={`Baby's ${mealSlotLabels[slot].toLowerCase()}: ${recipe.title}. Opens the recipe.`}
-            onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } })}
-            className="min-h-12 flex-row items-center gap-3 active:opacity-70"
-          >
-            <AppText size="2xl">{recipe.emoji}</AppText>
-            <View className="flex-1">
-              <AppText variant="caption" size="xs">
-                For baby
-              </AppText>
-              <AppText variant="label" size="lg" className="font-bold">
-                {recipe.title}
-              </AppText>
-            </View>
-          </Pressable>
-          {family ? (
-            <View className="gap-1 rounded-2xl bg-surface p-3">
-              <FamilyMealCard recipe={family.recipe} note={family.note} compact />
-              <View className="flex-row gap-6">
-                <TextAction
-                  label="Choose another"
-                  accessibilityLabel={`Choose another family meal for ${mealName}`}
-                  onPress={pickFamily}
-                />
-                <TextAction
-                  label="Remove"
-                  accessibilityLabel={`Remove the family meal from ${mealName}`}
-                  onPress={() => {
-                    setFamilyMeal(date, slot, NO_FAMILY_MEAL).catch(() => {});
-                  }}
-                />
-              </View>
-            </View>
-          ) : canAddFamily ? (
-            <TextAction
-              label="+ Add a family meal"
-              accessibilityLabel={`Add a family meal to ${mealName}`}
-              onPress={pickFamily}
-            />
-          ) : null}
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={`Change ${mealSlotLabels[slot].toLowerCase()}`}
-            onPress={pick}
-            hitSlop={6}
-            className="min-h-11 justify-center self-start active:opacity-60"
-          >
-            <AppText variant="label" color="primary" className="font-bold">
-              Change
-            </AppText>
-          </Pressable>
-        </>
+          />
+        </View>
       ) : (
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel={`Plan ${mealSlotLabels[slot].toLowerCase()}`}
+          accessibilityLabel={`Plan ${mealName}`}
           onPress={pick}
           className="min-h-12 justify-center active:opacity-60"
         >
           <AppText variant="label" color="primary" className="font-bold">
-            + Plan {mealSlotLabels[slot].toLowerCase()}
+            + Plan {mealName}
           </AppText>
         </Pressable>
       )}
+
+      {family ? (
+        <View className="ml-4 gap-1 border-l-2 border-border pl-3">
+          <View className="flex-row items-center gap-2">
+            <MealLine
+              picture={
+                <RecipeImage
+                  recipe={family.recipe}
+                  className="h-10 w-10 rounded-lg"
+                  iconSize={18}
+                />
+              }
+              kicker="For the family"
+              title={family.recipe.title}
+              accessibilityLabel={`Family meal: ${family.recipe.title}. Opens the recipe.`}
+              onPress={() =>
+                router.push({ pathname: '/recipe/[id]', params: { id: family.recipe.id } })
+              }
+            />
+            <TextAction
+              label="Change"
+              accessibilityLabel={`Change or remove the family meal for ${mealName}`}
+              onPress={pickFamily}
+            />
+          </View>
+          {family.note ? (
+            <AppText variant="caption" size="sm">
+              {family.note}
+            </AppText>
+          ) : null}
+        </View>
+      ) : canAddFamily ? (
+        <View className="ml-4 border-l-2 border-border pl-3">
+          <TextAction
+            label="+ Add a family meal"
+            accessibilityLabel={`Add a family meal to ${mealName}`}
+            onPress={pickFamily}
+          />
+        </View>
+      ) : null}
     </View>
   );
 }
@@ -350,7 +379,7 @@ export function WeekMenu() {
       </ScrollView>
 
       {mealSlots.map((slot) => (
-        <SlotCard key={slot} date={day} slot={slot} />
+        <SlotRow key={slot} date={day} slot={slot} />
       ))}
     </Card>
   );

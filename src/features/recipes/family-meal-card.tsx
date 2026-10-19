@@ -11,12 +11,10 @@ export type FamilyMealCardProps = {
   recipe: Recipe;
   /** How to make the family meal work for the baby too, when the pairing has one. */
   note?: string | null;
-  /** A small thumbnail beside the text, for tight spaces like the planner. */
-  compact?: boolean;
 };
 
 /** The family meal that goes with a baby recipe: a recipe photo with the text underneath. */
-export function FamilyMealCard({ recipe, note, compact = false }: FamilyMealCardProps) {
+export function FamilyMealCard({ recipe, note }: FamilyMealCardProps) {
   const open = () => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } });
   const label = `Family meal: ${recipe.title}. ${note ? `${note} ` : ''}Opens the recipe.`;
   const kicker = (
@@ -29,36 +27,6 @@ export function FamilyMealCard({ recipe, note, compact = false }: FamilyMealCard
       Family meal
     </AppText>
   );
-
-  if (compact) {
-    // Planner: a small square photo beside the text.
-    return (
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel={label}
-        onPress={open}
-        className="gap-2 active:opacity-80"
-      >
-        <View className="flex-row items-center gap-3">
-          <RecipeImage recipe={recipe} className="h-20 w-20 rounded-xl" iconSize={32} />
-          <View className="flex-1 gap-0.5">
-            {kicker}
-            <AppText variant="label" className="font-bold leading-5">
-              {recipe.title}
-            </AppText>
-            <AppText variant="caption" size="sm">
-              {recipeMeta(recipe)}
-            </AppText>
-          </View>
-        </View>
-        {note ? (
-          <AppText variant="caption" size="sm">
-            {note}
-          </AppText>
-        ) : null}
-      </Pressable>
-    );
-  }
 
   return (
     <Pressable
