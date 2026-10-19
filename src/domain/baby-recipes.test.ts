@@ -13,19 +13,14 @@ describe('babyCollectionsFor', () => {
   it('puts the current age group first, then the rest by age', () => {
     const { ordered, current } = babyCollectionsFor(babyRecipeCategories, 9);
     expect(current).toBe('baby-9m');
-    expect(ordered.map((c) => c.id)).toEqual([
-      'baby-9m',
-      'baby-one-pot',
-      'baby-6m',
-      'baby-7m',
-      'baby-12m',
-    ]);
+    expect(ordered.map((c) => c.id)).toEqual(['baby-9m', 'baby-6m', 'baby-7m', 'baby-12m']);
   });
 
   it('never treats a themed collection as the current age group', () => {
-    expect(babyCollectionsFor(babyRecipeCategories, 6).current).toBe('baby-6m');
-    const early = babyCollectionsFor(babyRecipeCategories, 4).ordered.map((c) => c.id);
-    expect(early.at(-1)).toBe('baby-one-pot');
+    const themed = [...babyRecipeCategories, { id: 'themed', fromMonths: 6, theme: true }];
+    expect(babyCollectionsFor(themed, 6).current).toBe('baby-6m');
+    const early = babyCollectionsFor(themed, 4).ordered.map((c) => c.id);
+    expect(early.at(-1)).toBe('themed');
   });
 
   it('has no current group before 6 months', () => {
@@ -55,7 +50,10 @@ describe('baby recipes', () => {
       const group = babyRecipeCategories.find((c) => c.id === r.categories[0]);
       expect(group?.fromMonths).toBe(r.fromMonths);
     }
-    expect(recipes.every((r) => r.fromMonths === undefined)).toBe(true);
+    // On the Mom tab, only the one-pot family meals (with a baby portion) carry a baby age.
+    for (const r of recipes.filter((x) => x.fromMonths !== undefined)) {
+      expect(r.categories).toEqual(['one-pot']);
+    }
     expect(recipeCategories.every((c) => c.fromMonths === undefined)).toBe(true);
   });
 

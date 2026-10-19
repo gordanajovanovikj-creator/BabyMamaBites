@@ -201,8 +201,8 @@ export function familyMealFor(
 }
 
 /**
- * Recipes made just for the baby: leaves out themed collections such as "One pot for
- * family and baby", which are family meals with a baby portion.
+ * Recipes made just for the baby: leaves out themed collections (family meals with a
+ * baby portion). The one-pot family meals now live on the Mom tab instead.
  */
 export function babyOnlyRecipes<C extends { id: string; theme?: boolean }>(
   all: Recipe[],

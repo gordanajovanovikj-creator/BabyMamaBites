@@ -127,7 +127,7 @@ const allergenSignals: Record<(typeof allergens)[number], RegExp> = {
 };
 /** Ingredient phrases that look like an allergen but aren't. */
 const notAllergen =
-  /\b((coconut|oat|plant|almond|soy|rice|hemp) milk|corn tortillas?|peanut-free|dairy-free)\b/i;
+  /\b((coconut|oat|plant|almond|soy|rice|hemp|breast) milk|corn tortillas?|peanut-free|dairy-free)\b/i;
 
 describe('bundled recipes', () => {
   it('declare every allergen their ingredients suggest', () => {

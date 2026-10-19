@@ -47,7 +47,7 @@
       "icon": "frying.pan.fill",
       "emoji": "🍲",
       "tone": "accent",
-      "description": "One pan or pot, fewer dishes."
+      "description": "One pan or pot, fewer dishes. Many let you scoop out a portion for baby before seasoning."
     },
     {
       "id": "top-breakfasts",
@@ -3270,6 +3270,623 @@
         "Zucchini noodles release water as they sit; keep them in a separate container if you prefer them firmer."
       ],
       "reviewer": "registered dietitian"
+    },
+    {
+      "id": "baby-one-pot-egg-scramble",
+      "title": "Golden spinach and egg scramble",
+      "summary": "One pan of eggs and spinach: with feta on sourdough toast for you, as soft egg strips with avocado or a smooth mash for baby.",
+      "icon": "frying.pan.fill",
+      "emoji": "🍳",
+      "tone": "accent",
+      "activeMinutes": 10,
+      "totalMinutes": 10,
+      "servings": 3,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "spinach-feta-frittata",
+        "note": "Mama’s plate: scrambled eggs cooked in olive oil with baby spinach, crumbled feta and black pepper, served on sourdough toast. Take baby’s portion out before adding feta and salt."
+      },
+      "tags": [],
+      "energy": "low",
+      "allergens": ["egg"],
+      "diets": ["vegetarian", "pescatarian", "gluten-free"],
+      "ingredients": [
+        "4 to 5 eggs",
+        "1 handful baby spinach",
+        "1 tbsp extra virgin olive oil",
+        "1 ripe avocado",
+        "Breast milk or formula, to thin the mash"
+      ],
+      "steps": [
+        "Warm the olive oil in a pan and wilt the spinach.",
+        "Add the beaten eggs and stir gently until fully set, with no runny parts.",
+        "Set aside baby’s portion before adding feta, salt or pepper.",
+        "For finger food: cut baby’s egg into soft, wide strips and serve with thick avocado spears.",
+        "For a mash: mash cooked egg yolk with ripe avocado, thinned with a little breast milk or formula.",
+        "Finish the grown-up eggs with feta and black pepper and serve on sourdough toast."
+      ],
+      "tips": [
+        "Egg is a common allergen. Introduce each one on its own first before combining them in family meals.",
+        "Finger-squish test: many parents check that any vegetable or protein served as finger food squishes easily between their thumb and index finger."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-berry-oatmeal",
+      "title": "Cinnamon berry and chia oatmeal",
+      "summary": "One pot of cinnamon oats: with walnuts and maple for you, with mashed blueberries for baby.",
+      "icon": "cup.and.saucer.fill",
+      "emoji": "🫐",
+      "tone": "sky",
+      "activeMinutes": 10,
+      "totalMinutes": 10,
+      "servings": 3,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "apple-cinnamon-porridge",
+        "note": "Mama’s plate: warm rolled oats cooked in milk with cinnamon and chia seeds, finished with a drizzle of maple syrup, toasted walnuts and fresh blueberries. Cook baby’s oats in water, breast milk or formula, and keep maple syrup and honey for the grown-ups."
+      },
+      "tags": [],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "pescatarian"],
+      "ingredients": [
+        "1 cup rolled oats",
+        "2 cups water",
+        "1 tbsp chia seeds",
+        "1/2 tsp ground cinnamon",
+        "1/2 cup blueberries, or 1 stewed apple",
+        "Breast milk or formula, to thin baby’s portion"
+      ],
+      "steps": [
+        "Simmer the oats in the water with the cinnamon for about 5 minutes, until soft.",
+        "Stir in the chia seeds and cook for 1 to 2 minutes more.",
+        "Spoon out baby’s portion and thin it with a little breast milk or formula until smooth and spoonable.",
+        "Mash the blueberries well (or stew the apple until soft) and swirl them through baby’s oats.",
+        "Finish the grown-up bowls with milk, maple, walnuts and whole blueberries."
+      ],
+      "tips": [
+        "Mash blueberries well for babies: whole blueberries are a choking risk.",
+        "Keep honey out of baby’s bowl until after the first birthday."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-banana-pancakes",
+      "title": "Fluffy banana and ricotta pancakes",
+      "summary": "One batter of banana and ricotta pancakes: with berries and almonds for you, as strips or soft soaked bits for baby.",
+      "icon": "circle.grid.2x2.fill",
+      "emoji": "🥞",
+      "tone": "accent",
+      "activeMinutes": 20,
+      "totalMinutes": 25,
+      "servings": 4,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "baked-oatmeal",
+        "note": "Mama’s plate: stack of whole wheat banana ricotta pancakes topped with maple syrup, fresh berries and toasted sliced almonds."
+      },
+      "tags": ["freezer-friendly"],
+      "energy": "medium",
+      "allergens": ["egg", "milk", "wheat"],
+      "diets": ["vegetarian", "pescatarian"],
+      "ingredients": [
+        "2 ripe bananas, mashed",
+        "1/2 cup ricotta",
+        "2 eggs",
+        "1 cup whole wheat flour",
+        "1 tsp baking powder",
+        "A little oil for the pan"
+      ],
+      "steps": [
+        "Whisk the mashed banana, ricotta and eggs, then fold in the flour and baking powder.",
+        "Cook small pancakes in a lightly oiled pan for 2 to 3 minutes a side, until cooked through.",
+        "For finger food: cut baby’s pancake into strips about the size of an adult finger, easy for a palmar grasp.",
+        "For a mash: tear a pancake into small soft bits and soak them in a little warm breast milk or formula.",
+        "Top the grown-up stack with maple, berries and toasted almonds."
+      ],
+      "tips": [
+        "Egg, dairy and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
+        "Pancakes freeze well: cool, stack with parchment and reheat in the toaster."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-two-textures-salmon",
+      "title": "Mediterranean salmon, sweet potato and broccoli",
+      "summary": "One tray of salmon, sweet potato and broccoli: with garlic-lemon broccoli for you, as soft wedges or a flaked salmon mash for baby.",
+      "icon": "fish.fill",
+      "emoji": "🐟",
+      "tone": "sky",
+      "activeMinutes": 15,
+      "totalMinutes": 35,
+      "servings": 3,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "sheet-pan-salmon",
+        "note": "Mama’s plate: flaky oven-roasted salmon with roasted sweet potato wedges and garlic-lemon sautéed broccoli. Set baby’s portion aside before you season."
+      },
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["fish"],
+      "diets": ["pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "2 to 3 skinless salmon fillets (one for baby)",
+        "2 medium sweet potatoes",
+        "1 head broccoli",
+        "1 tsp extra virgin olive oil"
+      ],
+      "steps": [
+        "Cut the sweet potatoes into long, thick wedges.",
+        "Roast the wedges at 400°F for 15 minutes, then add the salmon and bake 12 to 15 minutes more, until it flakes easily and reaches 145°F.",
+        "Steam a few large broccoli florets with a thick stalk to hold until very soft. Sauté the rest with garlic and lemon for the grown-ups.",
+        "For finger food: peel baby’s sweet potato wedges and serve them with the soft broccoli florets.",
+        "For a mash: check baby’s salmon carefully for small bones, flake it and mash it with sweet potato and a drop of olive oil.",
+        "Season the grown-up plates with salt and pepper at the table."
+      ],
+      "tips": [
+        "Always double-check flaked fish for small bones.",
+        "Fish is a common allergen. Introduce each one on its own first before combining them in family meals."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-avocado-bean-salad",
+      "title": "Creamy avocado and cannellini bean salad",
+      "summary": "One bowl of white beans and avocado: a fresh salad with feta for you, as hemp-rolled wedges or a creamy mash for baby.",
+      "icon": "leaf.fill",
+      "emoji": "🥑",
+      "tone": "muted",
+      "activeMinutes": 10,
+      "totalMinutes": 10,
+      "servings": 3,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "white-bean-tuna-salad",
+        "note": "Mama’s plate: white beans tossed with ripe avocado, cherry tomatoes, cucumber, feta, olive oil, lemon juice, salt and pepper."
+      },
+      "tags": ["no-cook"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["vegetarian", "pescatarian", "vegan", "gluten-free"],
+      "ingredients": [
+        "1 can (15 oz) no-salt-added cannellini beans, rinsed",
+        "2 ripe avocados",
+        "1 tbsp hemp seeds",
+        "A squeeze of fresh orange or lemon juice"
+      ],
+      "steps": [
+        "Set aside about 1/2 cup of beans and a quarter of an avocado for baby.",
+        "For finger food: cut ripe avocado into wedges, roll them in hemp seeds for grip and serve with lightly smushed beans.",
+        "For a mash: mash the beans and avocado together with a squeeze of orange or lemon juice.",
+        "Toss the rest with the tomatoes, cucumber, feta, olive oil, lemon, salt and pepper for the grown-ups."
+      ],
+      "tips": [
+        "Flatten each bean between your fingers before serving: whole beans can be hard for new eaters to manage.",
+        "Halve or quarter cherry tomatoes for older kids; keep them off baby’s plate whole."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-lentil-dahl",
+      "title": "Golden lentil and carrot dahl",
+      "summary": "One pot of coconut lentil dahl: with naan and cilantro for you, as a soft spoonable mash for baby.",
+      "icon": "drop.fill",
+      "emoji": "🍛",
+      "tone": "accent",
+      "activeMinutes": 15,
+      "totalMinutes": 35,
+      "servings": 4,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "lentil-soup",
+        "note": "Mama’s plate: red lentils stewed with coconut milk, carrots, ginger, turmeric, garlic and cumin, salted to taste and served with naan and cilantro. Scoop out baby’s portion before adding salt."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["vegetarian", "pescatarian", "vegan", "gluten-free"],
+      "ingredients": [
+        "1 cup red lentils, rinsed",
+        "2 carrots, grated",
+        "1 can (13.5 oz) coconut milk",
+        "2 cups water",
+        "1 tsp grated fresh ginger",
+        "1 clove garlic, crushed",
+        "1/2 tsp ground turmeric",
+        "1/2 tsp ground cumin"
+      ],
+      "steps": [
+        "Soften the garlic and ginger in the pot, then stir in the turmeric and cumin.",
+        "Add the lentils, carrots, coconut milk and water and simmer for 20 to 25 minutes, until the lentils fall apart.",
+        "Scoop out baby’s portion before adding salt and mash it until smooth.",
+        "Serve baby’s dahl warm as a spoonable mash or on a pre-loaded spoon.",
+        "Salt the rest to taste and serve with naan and cilantro."
+      ],
+      "tips": [
+        "Lentils are a plant source of iron.",
+        "Scoop before seasoning: take baby’s portion out before adding salt, soy sauce, hot pepper or other spicy seasoning."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-chicken-noodle-soup",
+      "title": "Gentle chicken and veggie noodle soup",
+      "summary": "One pot of chicken noodle soup: with parsley, salt and pepper for you, as soft finger foods or a chunky blended soup for baby.",
+      "icon": "takeoutbag.and.cup.and.straw.fill",
+      "emoji": "🍜",
+      "tone": "sky",
+      "activeMinutes": 20,
+      "totalMinutes": 40,
+      "servings": 4,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "nursing-bone-broth-soup",
+        "note": "Mama’s plate: shredded chicken breast, carrots, celery and egg noodles simmered in rich chicken broth, finished with fresh parsley, salt and black pepper."
+      },
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["egg", "wheat"],
+      "diets": [],
+      "ingredients": [
+        "2 boneless chicken breasts",
+        "3 carrots, cut into sticks",
+        "2 celery stalks, diced",
+        "6 cups low-sodium or no-salt-added chicken broth",
+        "2 cups rotini or egg noodles"
+      ],
+      "steps": [
+        "Simmer the chicken, carrots and celery in the broth for about 20 minutes, until the chicken reaches 165°F.",
+        "Lift out the chicken and shred it. Cook the noodles in the soup until very soft.",
+        "Scoop out baby’s portion before adding salt or pepper.",
+        "For finger food: serve soft rotini, very soft carrot sticks and juicy shredded chicken.",
+        "For a mash: blend chicken, carrots, noodles and a little broth into a chunky soup.",
+        "Season the grown-up bowls with salt, pepper and parsley."
+      ],
+      "tips": [
+        "Keep celery for the grown-ups or blend it well: its strings can be hard for babies.",
+        "Even low-sodium broth has some salt, so keep baby’s broth to a little for moistening."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-two-textures-chili",
+      "title": "Deconstructed turkey and lentil chili",
+      "summary": "One pot of turkey and lentil chili: spiced and topped for you, mildly seasoned as crumbles or a fork mash for baby.",
+      "icon": "flame.fill",
+      "emoji": "🍲",
+      "tone": "accent",
+      "activeMinutes": 20,
+      "totalMinutes": 45,
+      "servings": 4,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "turkey-chili",
+        "note": "Mama’s plate: chunky chili of ground turkey, lentils, tomatoes and bell peppers, seasoned with chili powder and sea salt and topped with cheddar and cilantro. Take baby’s portion out before adding chili powder and salt."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["gluten-free"],
+      "ingredients": [
+        "1 lb ground turkey",
+        "1 cup dry brown lentils, rinsed",
+        "1 can (28 oz) no-salt-added diced tomatoes",
+        "1 bell pepper, diced",
+        "3 cups water",
+        "1 tsp mild ground cumin",
+        "1/2 tsp garlic powder"
+      ],
+      "steps": [
+        "Brown the turkey in a large pot, breaking it up finely, until cooked through to 165°F.",
+        "Add the lentils, tomatoes, bell pepper, water, cumin and garlic powder. Simmer for 25 to 30 minutes, until the lentils are very soft.",
+        "Spoon out baby’s portion before adding any chili powder or salt.",
+        "For finger food: offer soft turkey crumbles and soft lentils for pincer-grasp practice.",
+        "For a mash: lightly mash turkey, lentils and stewed tomatoes with a fork.",
+        "Season the rest with chili powder and salt and top with cheddar and cilantro."
+      ],
+      "tips": [
+        "Lentils and turkey are sources of iron.",
+        "Cool baby’s portion before serving, and freeze extra in small containers."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-sheet-pan-chicken",
+      "title": "Sheet-pan roasted chicken, zucchini and squash",
+      "summary": "One tray of chicken thighs and summer squash: herby and crisp-skinned for you, as soft spears and shredded chicken for baby.",
+      "icon": "oven.fill",
+      "emoji": "🍗",
+      "tone": "muted",
+      "activeMinutes": 15,
+      "totalMinutes": 45,
+      "servings": 4,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "lemon-herb-chicken-asparagus",
+        "note": "Mama’s plate: skin-on chicken thighs, zucchini and yellow squash roasted with olive oil, Italian seasoning, garlic powder and sea salt. Season baby’s corner of the tray with olive oil and herbs only."
+      },
+      "tags": [],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["gluten-free"],
+      "ingredients": [
+        "6 bone-in chicken thighs",
+        "2 zucchini",
+        "2 yellow squash",
+        "2 tbsp extra virgin olive oil",
+        "1 tsp Italian seasoning",
+        "1/2 tsp garlic powder"
+      ],
+      "steps": [
+        "Cut the zucchini and squash into long spears and toss with olive oil and herbs.",
+        "Keep baby’s chicken and spears on one corner of the tray, unsalted.",
+        "Roast at 425°F for 35 to 40 minutes, until the chicken reaches 165°F and the vegetables are very soft.",
+        "For finger food: peel baby’s spears and serve with shredded tender thigh meat, skin removed.",
+        "For a mash: finely shred chicken thigh and mash it with soft roasted zucchini.",
+        "Season the grown-up portions with sea salt."
+      ],
+      "tips": [
+        "Remove chicken skin and any bones before serving baby.",
+        "Finger-squish test: many parents check that any vegetable or protein served as finger food squishes easily between their thumb and index finger."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-beef-stew",
+      "title": "Slow-cooked beef and root vegetable stew",
+      "summary": "One pot of slow-braised beef with carrots, potatoes and parsnips: seasoned at the table for you, shredded or mashed for baby.",
+      "icon": "flame.fill",
+      "emoji": "🥘",
+      "tone": "deep",
+      "activeMinutes": 20,
+      "totalMinutes": 180,
+      "servings": 6,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "slow-cooker-chicken",
+        "note": "Mama’s plate: tender chuck roast braised with carrots, potatoes, parsnips, rosemary and garlic in beef broth, seasoned to taste at the table."
+      },
+      "tags": ["batch-cook", "freezer-friendly"],
+      "energy": "low",
+      "allergens": [],
+      "diets": ["gluten-free"],
+      "ingredients": [
+        "2 lb beef chuck roast",
+        "4 carrots, cut into chunks",
+        "4 potatoes, cut into chunks",
+        "2 parsnips, cut into chunks",
+        "2 cloves garlic",
+        "1 sprig fresh rosemary",
+        "3 cups low-sodium or no-salt-added beef broth"
+      ],
+      "steps": [
+        "Brown the beef in a heavy pot, then add the garlic, rosemary, vegetables and broth.",
+        "Cover and braise at 325°F (or on low in a slow cooker) for about 3 hours, until the beef shreds easily.",
+        "For finger food: shred baby’s beef very finely with a fork and serve with soft potato and carrot wedges.",
+        "For a mash: mash potato, carrot and shredded beef with a spoonful of warm broth.",
+        "Let the grown-ups season their bowls with salt and pepper at the table."
+      ],
+      "tips": ["Beef is a source of iron.", "Remove the rosemary sprig before serving baby."],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-squash-ricotta-pasta",
+      "title": "Creamy butternut squash and ricotta pasta",
+      "summary": "One pot of squash and ricotta pasta: with parmesan and pepper for you, as sauce-coated rigatoni or a dipping puree for baby.",
+      "icon": "fork.knife",
+      "emoji": "🍝",
+      "tone": "accent",
+      "activeMinutes": 20,
+      "totalMinutes": 35,
+      "servings": 4,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "one-pot-pasta",
+        "note": "Mama’s plate: rigatoni or penne tossed in a sauce of pureed butternut squash, ricotta, nutmeg and garlic, finished with parmesan, salt and black pepper. Set baby’s portion aside before adding salt and parmesan."
+      },
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["milk", "wheat"],
+      "diets": ["vegetarian", "pescatarian"],
+      "ingredients": [
+        "12 oz rigatoni",
+        "3 cups cubed butternut squash",
+        "1/2 cup ricotta",
+        "1 clove garlic",
+        "A pinch of ground nutmeg"
+      ],
+      "steps": [
+        "Steam or roast the squash with the garlic until very soft, then blend with the ricotta and nutmeg.",
+        "Cook the rigatoni until soft, a little past al dente for baby.",
+        "Toss the pasta with the sauce and set baby’s portion aside before adding salt or parmesan.",
+        "For finger food: serve large, well-cooked rigatoni coated in the sauce.",
+        "For a mash: mash the pasta slightly, or serve the sauce as a thick dip on a pre-loaded spoon.",
+        "Finish the grown-up bowls with parmesan, salt and black pepper."
+      ],
+      "tips": [
+        "Dairy and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
+        "Large pasta shapes like rigatoni are easier for little hands than small ones."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-white-fish",
+      "title": "Baked white fish with cauliflower and potato",
+      "summary": "One bake of cod with cauliflower and potato: lemon butter and parmesan mash for you, as soft flakes and florets or a smooth mash for baby.",
+      "icon": "fish.fill",
+      "emoji": "🐟",
+      "tone": "surface",
+      "activeMinutes": 20,
+      "totalMinutes": 35,
+      "servings": 3,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "sheet-pan-salmon",
+        "note": "Mama’s plate: cod or halibut baked with lemon butter and fresh dill, over garlic-parmesan mashed potatoes and steamed cauliflower."
+      },
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["fish"],
+      "diets": ["pescatarian", "halal", "kosher", "gluten-free"],
+      "ingredients": [
+        "2 to 3 boneless cod or halibut fillets",
+        "3 potatoes, peeled and cubed",
+        "1 small head cauliflower, in florets",
+        "1 tsp extra virgin olive oil",
+        "Breast milk or formula, to thin"
+      ],
+      "steps": [
+        "Bake the fish at 400°F for 12 to 15 minutes, until it flakes easily and reaches 145°F. Keep baby’s fillet plain.",
+        "Boil the potatoes and steam the cauliflower until very soft.",
+        "For finger food: flake baby’s fish, checking for bones, and serve with soft cauliflower florets.",
+        "For a mash: mash plain potato and cauliflower with flaked fish and a splash of breast milk, formula or olive oil.",
+        "Make the grown-up mash with garlic, parmesan, butter and salt, and finish the fish with lemon butter and dill."
+      ],
+      "tips": [
+        "Always double-check flaked fish for small bones.",
+        "Fish is a common allergen. Introduce each one on its own first before combining them in family meals."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-coconut-curry",
+      "title": "Mild coconut chicken curry",
+      "summary": "One pot of mild coconut curry: over brown rice for you, as sauce-coated chicken strips or a golden mash for baby.",
+      "icon": "drop.fill",
+      "emoji": "🍛",
+      "tone": "accent",
+      "activeMinutes": 20,
+      "totalMinutes": 35,
+      "servings": 4,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "chickpea-curry",
+        "note": "Mama’s plate: chicken strips simmered in full-fat coconut milk with turmeric, ginger, garlic, sweet peas and bell peppers, over brown rice. Add chili and salt to the grown-up pot after baby’s portion is out."
+      },
+      "tags": [],
+      "energy": "medium",
+      "allergens": [],
+      "diets": ["gluten-free"],
+      "ingredients": [
+        "1 lb chicken breast, cut into strips",
+        "1 can (13.5 oz) full-fat coconut milk",
+        "1 cup frozen peas",
+        "1 red bell pepper, in long strips",
+        "1 tsp grated fresh ginger",
+        "1 clove garlic, crushed",
+        "1/2 tsp ground turmeric",
+        "1 cup cooked brown rice"
+      ],
+      "steps": [
+        "Roast the bell pepper strips at 400°F until very soft.",
+        "Soften the garlic and ginger, stir in the turmeric, then add the chicken and coconut milk and simmer until the chicken reaches 165°F.",
+        "Stir in the peas for the last 5 minutes. Scoop out baby’s portion before adding salt or chili.",
+        "For finger food: serve soft chicken strips coated in sauce with the soft roasted pepper strips.",
+        "For a mash: blend chicken, peas and brown rice with a little sauce into a golden mash.",
+        "Season the rest and serve over brown rice."
+      ],
+      "tips": [
+        "Mash or flatten peas for babies: whole peas can be a choking risk.",
+        "Scoop before seasoning: take baby’s portion out before adding salt, soy sauce, hot pepper or other spicy seasoning."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-beef-meatballs",
+      "title": "Italian beef and zucchini meatballs",
+      "summary": "One batch of baked beef and zucchini meatballs: in marinara over spaghetti for you, as soft strips or a mash for baby.",
+      "icon": "circle.grid.3x3.fill",
+      "emoji": "🍝",
+      "tone": "deep",
+      "activeMinutes": 25,
+      "totalMinutes": 45,
+      "servings": 5,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "turkey-meatball-zoodle-box",
+        "note": "Mama’s plate: baked beef and zucchini meatballs simmered in marinara and served over spaghetti. Mix a little salt into the grown-up batch only."
+      },
+      "tags": ["freezer-friendly"],
+      "energy": "medium",
+      "allergens": ["egg", "wheat"],
+      "diets": [],
+      "ingredients": [
+        "1 lb ground beef",
+        "1 zucchini, finely grated and squeezed dry",
+        "1/2 cup breadcrumbs",
+        "1 egg",
+        "1/2 tsp garlic powder",
+        "1/2 tsp dried oregano",
+        "Low-sodium tomato sauce, to serve"
+      ],
+      "steps": [
+        "Mix the beef, zucchini, breadcrumbs, egg, garlic powder and oregano. Shape baby’s portion first, with no added salt.",
+        "Bake at 400°F for 18 to 20 minutes, until cooked through to 160°F.",
+        "For finger food: cut baby’s meatballs into strips or quarters. Never serve whole round meatballs to a young baby.",
+        "For a mash: mash a meatball with a little low-sodium tomato sauce or warm water.",
+        "Simmer the grown-up meatballs in marinara and serve over spaghetti."
+      ],
+      "tips": [
+        "Egg and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
+        "Shape baby’s portion into small logs instead of balls for easier, safer grabbing."
+      ],
+      "reviewer": "pediatric dietitian"
+    },
+    {
+      "id": "baby-one-pot-tofu-noodles",
+      "title": "Tofu, broccoli and sesame noodle bowl",
+      "summary": "One bowl of tofu, broccoli and noodles: in a sesame-peanut sauce with chili for you, as soft strips or a mash for baby.",
+      "icon": "leaf.fill",
+      "emoji": "🥢",
+      "tone": "muted",
+      "activeMinutes": 20,
+      "totalMinutes": 25,
+      "servings": 3,
+      "categories": ["one-pot"],
+      "fromMonths": 6,
+      "familyMeal": {
+        "recipeId": "cold-soba-peanut-edamame",
+        "note": "Mama’s plate: pan-seared tofu cubes, steamed broccoli and noodles tossed in a sesame-peanut sauce with soy sauce, lime and chili flakes. Add soy sauce and chili to the grown-up portion only."
+      },
+      "tags": [],
+      "energy": "medium",
+      "allergens": ["soy", "peanut", "sesame", "wheat"],
+      "diets": ["vegetarian", "pescatarian", "vegan"],
+      "ingredients": [
+        "1 block (14 oz) firm tofu",
+        "1 head broccoli, in florets",
+        "6 oz wheat noodles",
+        "1 tbsp smooth peanut butter",
+        "1 tbsp tahini (sesame paste)",
+        "Warm water, to thin"
+      ],
+      "steps": [
+        "Bake plain tofu strips at 400°F for 20 minutes, until set but soft. Steam the broccoli until very soft and cook the noodles until soft.",
+        "Thin the peanut butter and tahini with warm water into a smooth, runny sauce.",
+        "For finger food: serve long strips of soft tofu, broccoli florets and soft noodles coated in a little of the thinned sauce.",
+        "For a mash: mash soft tofu and broccoli heads with a drop of warm water or thinned peanut butter.",
+        "Toss the grown-up bowls with the rest of the sauce, soy sauce, lime and chili flakes."
+      ],
+      "tips": [
+        "Peanut, sesame, soy and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
+        "Always thin nut and seed butters: a thick spoonful is a choking risk."
+      ],
+      "reviewer": "pediatric dietitian"
     }
   ]
 }
