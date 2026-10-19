@@ -16,10 +16,8 @@ import { useHousehold } from '@/features/profile/use-household';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { RECIPE_TILE_WIDTH, RecipeTile } from '@/features/recipes/recipe-tile';
 import { DetailHeader } from '@/features/shared/detail-header';
-import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
-import { SafetyNotice } from '@/features/shared/safety-notice';
+import { PageFooter } from '@/features/shared/page-footer';
 import { TipCard } from '@/features/shared/tip-card';
-import { SourceLinks } from '@/features/shared/source-links';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { AppText, Button, Card, Chip, HeartButton, Notice, Screen } from '@/ui';
 
@@ -229,11 +227,11 @@ export default function FoodScreen() {
         </View>
       ) : null}
 
-      <View className="gap-3 px-5 pb-6 pt-8">
-        <SourceLinks sources={solidsSourcesFor(food.sources)} />
-        <SafetyNotice id="food-safety" />
-        <HealthDisclaimerNote short />
-      </View>
+      <PageFooter
+        className="mx-5 mb-6"
+        sources={solidsSourcesFor(food.sources)}
+        notices={['food-safety']}
+      />
     </Screen>
   );
 }

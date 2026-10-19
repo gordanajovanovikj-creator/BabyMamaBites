@@ -5,8 +5,7 @@ import { getPlanWeek, getStageInfo, planWeeks, solidsSourcesFor } from '@/conten
 import { tryFoodsHeading } from '@/domain/food-log';
 import { allergenLabels } from '@/domain/profile-labels';
 import { useProfile } from '@/features/profile/profile-context';
-import { SourceLinks } from '@/features/shared/source-links';
-import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { PageFooter } from '@/features/shared/page-footer';
 import { TipCard } from '@/features/shared/tip-card';
 import { AppText, Button, Card, Notice, Screen } from '@/ui';
 
@@ -127,8 +126,6 @@ export default function PlanWeekScreen() {
         }
       />
 
-      <SourceLinks sources={solidsSourcesFor(week.sources)} />
-
       <View className="flex-row gap-3">
         {previous ? (
           <Button
@@ -154,7 +151,7 @@ export default function PlanWeekScreen() {
         variant="quiet"
         onPress={() => router.push('/solids/choking')}
       />
-      <HealthDisclaimerNote />
+      <PageFooter sources={solidsSourcesFor(week.sources)} />
     </Screen>
   );
 }

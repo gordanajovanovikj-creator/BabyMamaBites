@@ -10,7 +10,7 @@ import { libraryPhoto } from '@/features/library/library-photos';
 import { ReadMore } from '@/features/library/read-more';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
-import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { PageFooter } from '@/features/shared/page-footer';
 import { HelplineButtons } from '@/features/shared/helpline-buttons';
 import { SafetyNotices } from '@/features/shared/safety-notice';
 import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
@@ -103,10 +103,7 @@ export default function InsightScreen() {
       <ReadMore current={insightItem(insight)} />
 
       {/* Fine print and the disclaimer always close the page. */}
-      <View className="gap-4 px-5 pt-6">
-        <SafetyNotices ids={notices.bottom} />
-        <HealthDisclaimerNote short={notices.bottom.length > 0} />
-      </View>
+      <PageFooter className="mx-5" notices={notices.bottom} />
     </Screen>
   );
 }

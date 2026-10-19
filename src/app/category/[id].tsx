@@ -8,7 +8,7 @@ import { recipeTagLabels } from '@/domain/recipe-labels';
 import { findRecipes, fitsCookingTime } from '@/domain/recipes';
 import { useHousehold } from '@/features/profile/use-household';
 import { HouseholdNote } from '@/features/recipes/household-note';
-import { SafetyNotice } from '@/features/shared/safety-notice';
+import { PageFooter } from '@/features/shared/page-footer';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { categoryPhoto } from '@/features/recipes/recipe-photos';
 import { RecipeRow } from '@/features/recipes/recipe-row';
@@ -99,9 +99,7 @@ export default function CategoryScreen() {
       ) : null}
 
       {category.fromMonths !== undefined ? (
-        <View className="px-5 pt-6">
-          <SafetyNotice id="age-guidelines" />
-        </View>
+        <PageFooter className="mx-5" notices={['age-guidelines']} />
       ) : null}
     </Screen>
   );

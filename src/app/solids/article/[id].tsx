@@ -9,12 +9,11 @@ import { articleItem } from '@/domain/library';
 import { noticesFor } from '@/domain/safety-notices';
 import { libraryPhoto } from '@/features/library/library-photos';
 import { ReadMore } from '@/features/library/read-more';
-import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { PageFooter } from '@/features/shared/page-footer';
 import { HelplineButtons } from '@/features/shared/helpline-buttons';
 import { SafetyNotices } from '@/features/shared/safety-notice';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
-import { SourceLinks } from '@/features/shared/source-links';
 import { AppText, Button, Card, Illustration, Screen } from '@/ui';
 
 export default function ArticleScreen() {
@@ -125,17 +124,16 @@ export default function ArticleScreen() {
             </Card>
           );
         })}
-
-        <SourceLinks sources={solidsSourcesFor(article.sources)} />
       </View>
 
       <ReadMore current={articleItem(article)} />
 
-      {/* Fine print and the disclaimer always close the page. */}
-      <View className="gap-4 px-5 pt-6">
-        <SafetyNotices ids={notices.bottom} />
-        <HealthDisclaimerNote short={notices.bottom.length > 0} />
-      </View>
+      {/* Sources, fine print and the disclaimer always close the page. */}
+      <PageFooter
+        className="mx-5"
+        sources={solidsSourcesFor(article.sources)}
+        notices={notices.bottom}
+      />
     </Screen>
   );
 }

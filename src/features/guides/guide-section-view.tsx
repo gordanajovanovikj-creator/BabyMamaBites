@@ -1,7 +1,6 @@
 import { View } from 'react-native';
 
-import { getGuideSource, type GuideSection } from '@/content/monthly-guides';
-import { SourceLinks } from '@/features/shared/source-links';
+import type { GuideSection } from '@/content/monthly-guides';
 import { AppText, Card, Notice } from '@/ui';
 
 function Bullets({ items, urgent }: { items: string[]; urgent: boolean }) {
@@ -21,7 +20,7 @@ function Bullets({ items, urgent }: { items: string[]; urgent: boolean }) {
   );
 }
 
-/** One section of a monthly guide: text, bullets, a "guidance differs" note and its sources. */
+/** One section of a monthly guide: text, bullets and a "guidance differs" note (sources close the page). */
 export function GuideSectionView({ section }: { section: GuideSection }) {
   const urgent = section.id === 'when-to-call';
   const paragraphs = section.paragraphs.map((p) => p);
@@ -36,7 +35,6 @@ export function GuideSectionView({ section }: { section: GuideSection }) {
       ))}
       {section.bullets.length ? <Bullets items={section.bullets} urgent={urgent} /> : null}
       {section.note ? <Notice title="Where guidance differs" body={section.note} /> : null}
-      <SourceLinks sources={section.sources.map(getGuideSource).filter((s) => s !== undefined)} />
     </Card>
   );
 }

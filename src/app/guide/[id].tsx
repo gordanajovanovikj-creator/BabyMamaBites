@@ -1,13 +1,13 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
-import { monthlyGuides } from '@/content/monthly-guides';
+import { getGuideSource, monthlyGuides } from '@/content/monthly-guides';
 import { adjacentGuides } from '@/domain/monthly-guides';
 import { guidePhoto } from '@/features/guides/guide-photos';
 import { GuideSectionView } from '@/features/guides/guide-section-view';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
-import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { PageFooter } from '@/features/shared/page-footer';
 import { AppText, Button, Screen } from '@/ui';
 
 export default function GuideScreen() {
@@ -64,8 +64,15 @@ export default function GuideScreen() {
           ) : null}
         </View>
         <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
-        <HealthDisclaimerNote />
       </View>
+
+      <PageFooter
+        className="mx-5"
+        sources={guide.sections
+          .flatMap((s) => s.sources)
+          .map(getGuideSource)
+          .filter((s) => s !== undefined)}
+      />
     </Screen>
   );
 }

@@ -3,8 +3,7 @@ import { Linking, View } from 'react-native';
 
 import { chokingDisclaimer, safetyNotice } from '@/content/copy';
 import { chokingGuide, solidsSourcesFor } from '@/content/solids-plan';
-import { SourceLinks } from '@/features/shared/source-links';
-import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { PageFooter } from '@/features/shared/page-footer';
 import { AppText, Button, Card, Screen } from '@/ui';
 
 function Bullets({ items, color }: { items: string[]; color?: 'danger' }) {
@@ -63,19 +62,21 @@ export default function ChokingScreen() {
         <Card key={g.id} className="gap-3">
           <AppText variant="heading">{g.title}</AppText>
           <Bullets items={g.items} />
-          <SourceLinks sources={solidsSourcesFor(g.sources)} />
         </Card>
       ))}
 
-      <View className="gap-2 pt-2">
-        <AppText variant="heading">{chokingDisclaimer.title}</AppText>
-        {chokingDisclaimer.body.split('\n\n').map((p) => (
-          <AppText key={p} variant="caption">
-            {p}
+      <PageFooter sources={solidsSourcesFor(chokingGuide.groups.flatMap((g) => g.sources))}>
+        <View className="gap-2">
+          <AppText variant="caption" size="sm" className="font-bold">
+            {chokingDisclaimer.title}
           </AppText>
-        ))}
-      </View>
-      <HealthDisclaimerNote />
+          {chokingDisclaimer.body.split('\n\n').map((p) => (
+            <AppText key={p} variant="caption" size="sm">
+              {p}
+            </AppText>
+          ))}
+        </View>
+      </PageFooter>
     </Screen>
   );
 }

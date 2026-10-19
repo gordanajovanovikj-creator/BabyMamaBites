@@ -16,8 +16,7 @@ import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { recipePhoto } from '@/features/recipes/recipe-photos';
 import { NutritionCard } from '@/features/recipes/nutrition-card';
-import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
-import { SafetyNotice } from '@/features/shared/safety-notice';
+import { PageFooter } from '@/features/shared/page-footer';
 import { TipCard } from '@/features/shared/tip-card';
 import { AppText, Button, cn, haptics, HeartButton, Notice, Screen } from '@/ui';
 
@@ -217,17 +216,15 @@ export default function RecipeScreen() {
         </>
       ) : null}
 
-      <View className="gap-2 px-5 pb-6 pt-8">
-        {/* Baby recipes get the feeding safety note; grown-up recipes the family one. */}
-        <SafetyNotice
-          id={recipe.fromMonths !== undefined ? 'feeding-safety' : 'family-nutrition'}
-          className="pb-2"
-        />
+      {/* Baby recipes get the feeding safety note; grown-up recipes the family one. */}
+      <PageFooter
+        className="mx-5 mb-6"
+        notices={[recipe.fromMonths !== undefined ? 'feeding-safety' : 'family-nutrition']}
+      >
         <AppText variant="caption" size="sm">
           This recipe is for general information only and isn&apos;t health or nutrition advice.
         </AppText>
-        <HealthDisclaimerNote short />
-      </View>
+      </PageFooter>
     </Screen>
   );
 }

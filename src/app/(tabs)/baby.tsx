@@ -22,7 +22,7 @@ import { useFoodLog } from '@/features/solids/food-log-context';
 import { LogEntryRow } from '@/features/solids/log-entry-row';
 import { WeekCard } from '@/features/solids/week-card';
 import { WeekStrip } from '@/features/solids/week-strip';
-import { HealthDisclaimerNote } from '@/features/shared/health-disclaimer-note';
+import { PageFooter } from '@/features/shared/page-footer';
 import { AppText, Button, Card, Notice, Screen, SegmentedTabs } from '@/ui';
 
 const RECENT = 5;
@@ -227,9 +227,7 @@ export default function BabyScreen() {
             <AllergenTracker progress={allergenProgress(entries)} />
           </View>
 
-          <View className="px-5">
-            <HealthDisclaimerNote />
-          </View>
+          <PageFooter className="mx-5" />
         </>
       )}
     </Screen>
