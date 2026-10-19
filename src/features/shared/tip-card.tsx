@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 
+import { splitTips } from '@/domain/tips';
 import { AppText, haptics, SymbolIcon } from '@/ui';
 
 function Arrow({ label, glyph, onPress }: { label: string; glyph: string; onPress?: () => void }) {
@@ -28,11 +29,44 @@ function Arrow({ label, glyph, onPress }: { label: string; glyph: string; onPres
   );
 }
 
+/** Choking and allergen tips: always shown in full, never in the carousel or skippable. */
+function SafetyTips({ tips }: { tips: string[] }) {
+  return (
+    <View className="gap-2 rounded-3xl bg-caution-bg px-5 py-4" accessibilityRole="summary">
+      <View className="flex-row items-center gap-2" accessibilityRole="header">
+        <AppText size="lg">⚠️</AppText>
+        <AppText variant="label" color="caution" className="font-bold">
+          Safety tip
+        </AppText>
+      </View>
+      {tips.map((t) => (
+        <AppText key={t} color="caution">
+          {t}
+        </AppText>
+      ))}
+    </View>
+  );
+}
+
+/**
+ * Tips for a recipe, food or week: choking and allergen tips always show in their own
+ * card; the rest go in the carousel below.
+ */
+export function TipCard({ tips }: { tips: string[] }) {
+  const { safety, other } = splitTips(tips);
+  return (
+    <View className="gap-3">
+      {safety.length ? <SafetyTips tips={safety} /> : null}
+      <TipCarousel tips={other} />
+    </View>
+  );
+}
+
 /**
  * Tips one at a time on a soft sage card: a "Tip!" label with a count (2/3), the
  * tip, and ‹ › to move between them. "Skip" tucks the card away for this visit.
  */
-export function TipCard({ tips }: { tips: string[] }) {
+function TipCarousel({ tips }: { tips: string[] }) {
   const [index, setIndex] = useState(0);
   const [skipped, setSkipped] = useState(false);
   if (!tips.length || skipped) return null;
