@@ -92,7 +92,6 @@ export default function InsightScreen() {
           )}
         </View>
 
-        <SafetyNotices ids={notices.bottom} />
         {insight.kind === 'when-to-call' ? (
           <Notice
             tone="urgent"
@@ -106,8 +105,9 @@ export default function InsightScreen() {
 
       <ReadMore current={insightItem(insight)} />
 
-      {/* The disclaimer always closes the page. */}
-      <View className="px-5 pt-6">
+      {/* Fine print and the disclaimer always close the page. */}
+      <View className="gap-4 px-5 pt-6">
+        <SafetyNotices ids={notices.bottom} />
         <HealthDisclaimerNote short={notices.bottom.length > 0} />
       </View>
     </Screen>

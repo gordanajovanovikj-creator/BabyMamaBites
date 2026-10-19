@@ -231,8 +231,8 @@ export default function FoodScreen() {
       ) : null}
 
       <View className="gap-3 px-5 pb-6 pt-8">
-        <SafetyNotice id="food-safety" />
         <SourceLinks sources={solidsSourcesFor(food.sources)} />
+        <SafetyNotice id="food-safety" />
         <HealthDisclaimerNote short />
       </View>
     </Screen>

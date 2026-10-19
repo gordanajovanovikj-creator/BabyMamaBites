@@ -79,12 +79,6 @@ export default function CategoryScreen() {
         ))}
       </ScrollView>
 
-      {category.fromMonths !== undefined ? (
-        <View className="px-5 pb-3">
-          <SafetyNotice id="age-guidelines" />
-        </View>
-      ) : null}
-
       <View className="px-5 pb-2">
         <HouseholdNote household={household} hidden={results.hiddenForSafety} />
       </View>
@@ -101,6 +95,12 @@ export default function CategoryScreen() {
             title="Nothing matches just yet"
             body="Try removing a filter. More recipes are on the way."
           />
+        </View>
+      ) : null}
+
+      {category.fromMonths !== undefined ? (
+        <View className="px-5 pt-6">
+          <SafetyNotice id="age-guidelines" />
         </View>
       ) : null}
     </Screen>

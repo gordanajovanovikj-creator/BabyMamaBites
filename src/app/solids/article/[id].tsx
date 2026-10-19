@@ -127,14 +127,14 @@ export default function ArticleScreen() {
           );
         })}
 
-        <SafetyNotices ids={notices.bottom} />
         <SourceLinks sources={solidsSourcesFor(article.sources)} />
       </View>
 
       <ReadMore current={articleItem(article)} />
 
-      {/* The disclaimer always closes the page. */}
-      <View className="px-5 pt-6">
+      {/* Fine print and the disclaimer always close the page. */}
+      <View className="gap-4 px-5 pt-6">
+        <SafetyNotices ids={notices.bottom} />
         <HealthDisclaimerNote short={notices.bottom.length > 0} />
       </View>
     </Screen>
