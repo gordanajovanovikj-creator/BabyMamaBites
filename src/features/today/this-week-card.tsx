@@ -38,8 +38,11 @@ function monthDay(date: IsoDate): string {
   return fromIsoDate(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 }
 
-/** One meal of the selected day: its photo and name, or "+ Plan" when empty. */
-function MealTile({ date, slot }: { date: IsoDate; slot: MealSlot }) {
+/**
+ * One meal of the selected day: its photo and name, or "+ Plan" when empty. `wide` lays
+ * it out as a short row, for days that show a single meal.
+ */
+function MealTile({ date, slot, wide = false }: { date: IsoDate; slot: MealSlot; wide?: boolean }) {
   const { plan } = usePlanner();
   const meal = plannedMeal(plan[planKey(date, slot)]);
   const label = mealSlotLabels[slot];
@@ -51,12 +54,15 @@ function MealTile({ date, slot }: { date: IsoDate; slot: MealSlot }) {
         accessibilityRole="button"
         accessibilityLabel={`Plan ${label.toLowerCase()}`}
         onPress={pick}
-        className="min-h-36 flex-1 gap-1 rounded-2xl border border-dashed border-border bg-surface p-2 active:opacity-70"
+        className={cn(
+          'flex-1 gap-1 rounded-2xl border border-dashed border-border bg-surface p-2 active:opacity-70',
+          wide ? 'min-h-16 flex-row items-center justify-between px-4' : 'min-h-36',
+        )}
       >
         <AppText variant="label" size="xs" color="on-accent" className="font-bold uppercase">
           {label}
         </AppText>
-        <View className="flex-1 items-center justify-center">
+        <View className={wide ? undefined : 'flex-1 items-center justify-center'}>
           <AppText variant="label" color="primary" className="font-bold">
             + Plan
           </AppText>
@@ -81,16 +87,37 @@ function MealTile({ date, slot }: { date: IsoDate; slot: MealSlot }) {
       accessibilityRole="button"
       accessibilityLabel={`${label}: ${meal.title}`}
       onPress={open}
-      className="min-h-36 flex-1 gap-1 rounded-2xl bg-surface-muted p-2 active:opacity-70"
+      className={cn(
+        'flex-1 gap-1 rounded-2xl bg-surface-muted p-2 active:opacity-70',
+        wide ? 'flex-row-reverse items-center justify-end gap-3' : 'min-h-36',
+      )}
     >
-      <AppText variant="label" size="xs" color="on-accent" className="font-bold uppercase">
-        {label}
-      </AppText>
+      {wide ? (
+        <View className="flex-1 gap-0.5">
+          <AppText variant="label" size="xs" color="on-accent" className="font-bold uppercase">
+            {label}
+          </AppText>
+          <AppText variant="label" className="font-bold leading-5" numberOfLines={2}>
+            {meal.title}
+          </AppText>
+        </View>
+      ) : (
+        <AppText variant="label" size="xs" color="on-accent" className="font-bold uppercase">
+          {label}
+        </AppText>
+      )}
       {meal.kind === 'recipe' ? (
-        <RecipeImage recipe={meal.recipe} className="h-16 rounded-xl" iconSize={28} />
+        <RecipeImage
+          recipe={meal.recipe}
+          className={wide ? 'h-16 w-16 rounded-xl' : 'h-16 rounded-xl'}
+          iconSize={28}
+        />
       ) : (
         <View
-          className="h-16 items-center justify-center overflow-hidden rounded-xl bg-surface"
+          className={cn(
+            'h-16 items-center justify-center overflow-hidden rounded-xl bg-surface',
+            wide && 'w-16',
+          )}
           importantForAccessibility="no-hide-descendants"
           accessibilityElementsHidden
         >
@@ -105,9 +132,11 @@ function MealTile({ date, slot }: { date: IsoDate; slot: MealSlot }) {
           )}
         </View>
       )}
-      <AppText variant="label" size="sm" className="font-bold leading-5" numberOfLines={2}>
-        {meal.title}
-      </AppText>
+      {wide ? null : (
+        <AppText variant="label" size="sm" className="font-bold leading-5" numberOfLines={2}>
+          {meal.title}
+        </AppText>
+      )}
     </Pressable>
   );
 }
@@ -166,6 +195,7 @@ export function ThisWeekCard({ now }: ThisWeekCardProps) {
   const day = days.includes(selected) ? selected : now;
   const planned = days.reduce((n, d) => n + mealsPlanned(plan, d), 0);
   const perDay = useMealsPerDay(day);
+  const slots = visibleMealSlots(plan, day, perDay);
   const event = nextEvent(entries, now, EVENT_DAYS);
   const freezerItem = useSoonItems(freezer, now)[0];
   const openPlanner = () =>
@@ -212,8 +242,8 @@ export function ThisWeekCard({ now }: ThisWeekCardProps) {
           ))}
         </View>
         <View className="flex-row gap-2">
-          {visibleMealSlots(plan, day, perDay).map((slot) => (
-            <MealTile key={slot} date={day} slot={slot} />
+          {slots.map((slot) => (
+            <MealTile key={slot} date={day} slot={slot} wide={slots.length === 1} />
           ))}
         </View>
         {event ? (
