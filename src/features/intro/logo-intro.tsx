@@ -30,6 +30,8 @@ export function LogoIntro({ appReady, onDone }: { appReady: boolean; onDone(): v
     p.muted = true;
     p.loop = false;
     p.audioMixingMode = 'mixWithOthers';
+    // Start right away: a local clip can be ready before any listener is attached.
+    p.play();
   });
 
   const hideSplash = () => {
@@ -47,6 +49,11 @@ export function LogoIntro({ appReady, onDone }: { appReady: boolean; onDone(): v
       setFinished(true);
     }
   });
+
+  // Backup: if the clip became ready before we were listening and isn't playing, start it.
+  useEffect(() => {
+    if (!reduceMotion && player.status === 'readyToPlay' && !player.playing) player.play();
+  }, [player, reduceMotion]);
 
   useEffect(() => {
     // Reduce Motion: no animation, just the still logo for a moment.
@@ -73,7 +80,8 @@ export function LogoIntro({ appReady, onDone }: { appReady: boolean; onDone(): v
       accessible
       accessibilityRole="image"
       accessibilityLabel="Mama & Baby Bites"
-      style={{ pointerEvents: 'none' }}
+      // Above the native screen stack while the app loads underneath.
+      style={{ pointerEvents: 'none', zIndex: 100, elevation: 100 }}
     >
       <View style={{ width: LOGO_SIZE, height: LOGO_SIZE }}>
         {reduceMotion ? (
