@@ -183,25 +183,6 @@ export default function BabyScreen() {
             <Button label="Log a food" onPress={() => router.push('/solids/log')} />
 
             <Card
-              tone="accent"
-              className="gap-1"
-              onPress={() =>
-                router.push({
-                  pathname: '/solids/article/[id]',
-                  params: { id: 'solids-freezer-cubes' },
-                })
-              }
-              accessibilityLabel="Make-ahead baby food: 3 months of baby food in 3 hours with freezer cubes. Opens the guide."
-            >
-              <AppText variant="heading" color="on-accent">
-                Make-ahead baby food
-              </AppText>
-              <AppText color="on-accent">
-                Freezer cube magic: 3 months of baby food in 3 hours. See how ›
-              </AppText>
-            </Card>
-
-            <Card
               tone="danger"
               className="flex-row items-center gap-4"
               onPress={() => router.push('/solids/choking')}

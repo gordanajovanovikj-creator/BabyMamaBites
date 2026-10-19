@@ -104,13 +104,13 @@ export function AllergenTracker({
   const offered = allergens.filter((a) => progress[a] !== 'not-tried').length;
   return (
     <View className={padded ? 'px-5' : undefined}>
-      <View className="gap-4 rounded-3xl bg-accent p-5">
+      <View className="gap-4 rounded-3xl border border-border bg-surface p-5">
         <View className="flex-row items-start justify-between gap-3">
           <View className="flex-1 gap-0.5">
-            <AppText variant="heading" size="2xl" color="on-accent">
+            <AppText variant="heading" size="2xl">
               Allergen tracker
             </AppText>
-            <AppText variant="caption" size="sm" color="on-accent">
+            <AppText variant="caption" size="sm">
               {offered === 0
                 ? 'Tap one when your baby tries it.'
                 : `${offered} of ${allergens.length} offered · tap one to log it`}
@@ -129,7 +129,7 @@ export function AllergenTracker({
               hitSlop={8}
               className="min-h-11 justify-center active:opacity-60"
             >
-              <AppText variant="label" color="on-accent" className="font-bold">
+              <AppText variant="label" color="primary" className="font-bold">
                 Plan ›
               </AppText>
             </Pressable>
@@ -144,7 +144,10 @@ export function AllergenTracker({
           {allergens.map((a, i) => (
             <View
               key={a}
-              className={cn('h-2 flex-1 rounded-full', i < offered ? 'bg-primary' : 'bg-surface')}
+              className={cn(
+                'h-2 flex-1 rounded-full',
+                i < offered ? 'bg-primary' : 'bg-surface-muted',
+              )}
             />
           ))}
         </View>
@@ -164,7 +167,7 @@ export function AllergenTracker({
             ))}
           </ScrollView>
         ) : (
-          <View className="flex-row flex-wrap rounded-2xl bg-surface px-1 py-3">
+          <View className="flex-row flex-wrap rounded-2xl bg-surface-muted px-1 py-3">
             {allergens.map((a) => (
               <AllergenTile key={a} allergen={a} status={progress[a]} width="fifth" />
             ))}

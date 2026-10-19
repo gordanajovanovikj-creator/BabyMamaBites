@@ -18,7 +18,6 @@ export function WeekCard({ week, totalWeeks }: WeekCardProps) {
 
   return (
     <Card
-      tone="accent"
       className="gap-3"
       onPress={() =>
         router.push({ pathname: '/solids/week/[n]', params: { n: String(week.week) } })
@@ -27,38 +26,35 @@ export function WeekCard({ week, totalWeeks }: WeekCardProps) {
     >
       <AppText
         variant="caption"
-        color="on-accent"
+        color="primary"
         size="xs"
         className="font-bold uppercase tracking-wider"
       >
         This week · Week {week.week} of {totalWeeks}
       </AppText>
-      <AppText variant="title" color="on-accent" size="2xl">
+      <AppText variant="title" size="2xl">
         {week.title}
       </AppText>
       {stage ? (
-        <View className="self-start rounded-full bg-surface px-3 py-1">
-          <AppText variant="label" size="sm" className="font-bold">
+        <View className="self-start rounded-full bg-sky px-3 py-1">
+          <AppText variant="label" size="sm" color="on-sky" className="font-bold">
             {stage.label}
           </AppText>
         </View>
       ) : null}
-      <AppText color="on-accent">{focus}</AppText>
+      <AppText>{focus}</AppText>
       <View className="gap-1">
-        <AppText variant="label" color="on-accent" className="font-bold">
+        <AppText variant="label" className="font-bold">
           {tryFoodsHeading(week.week).title}
         </AppText>
-        <AppText color="on-accent">{week.tryFoods.join(' · ')}</AppText>
+        <AppText>{week.tryFoods.join(' · ')}</AppText>
       </View>
       {week.allergen ? (
-        <AppText variant="label" color="on-accent">
-          New allergen this week:{' '}
-          <AppText className="font-bold" color="on-accent">
-            {week.allergen.label}
-          </AppText>
+        <AppText variant="label">
+          New allergen this week: <AppText className="font-bold">{week.allergen.label}</AppText>
         </AppText>
       ) : null}
-      <View className="flex-row items-center justify-between rounded-full bg-surface px-5 py-3">
+      <View className="flex-row items-center justify-between rounded-full bg-surface-muted px-5 py-3">
         <AppText variant="label" color="primary" className="font-bold">
           See the full week
         </AppText>

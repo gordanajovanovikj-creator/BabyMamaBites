@@ -114,7 +114,15 @@ export function FreezerCard() {
         className="mt-3"
         onPress={() => router.push('/planner/freezer-add')}
       />
-      <AppText variant="caption" size="sm" className="pt-1">
+      <Button
+        variant="quiet"
+        label="How to make freezer cubes ›"
+        accessibilityLabel="Make-ahead baby food: how to make freezer cubes. Opens the guide."
+        onPress={() =>
+          router.push({ pathname: '/solids/article/[id]', params: { id: 'solids-freezer-cubes' } })
+        }
+      />
+      <AppText variant="caption" size="sm">
         Saved on this phone only.
       </AppText>
     </Card>
