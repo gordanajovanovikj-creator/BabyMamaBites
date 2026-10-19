@@ -630,6 +630,7 @@
       "totalMinutes": 40,
       "servings": 6,
       "categories": ["one-pot", "nourished", "lunch", "family-friendly", "dinner"],
+      "fromMonths": 6,
       "tags": ["batch-cook", "freezer-friendly"],
       "energy": "medium",
       "allergens": [],
@@ -668,6 +669,7 @@
       "totalMinutes": 50,
       "servings": 6,
       "categories": ["one-pot", "high-protein-dinner", "high-protein", "family-friendly", "dinner"],
+      "fromMonths": 6,
       "tags": ["batch-cook", "freezer-friendly"],
       "energy": "medium",
       "allergens": [],
@@ -785,6 +787,7 @@
       "totalMinutes": 25,
       "servings": 4,
       "categories": ["one-pot", "dinner-in-30", "family-friendly", "busy-moms", "dinner"],
+      "fromMonths": 6,
       "tags": [],
       "energy": "low",
       "allergens": ["wheat", "milk"],
@@ -821,6 +824,7 @@
       "totalMinutes": 35,
       "servings": 4,
       "categories": ["one-pot", "nourished", "family-friendly", "dinner"],
+      "fromMonths": 6,
       "tags": ["batch-cook", "freezer-friendly"],
       "energy": "medium",
       "allergens": [],
@@ -1589,6 +1593,7 @@
       "totalMinutes": 20,
       "servings": 4,
       "categories": ["dinner-in-30", "dinner", "one-pot", "high-protein-dinner", "family-friendly"],
+      "fromMonths": 6,
       "tags": [],
       "energy": "medium",
       "allergens": ["milk"],
@@ -1766,6 +1771,7 @@
       "totalMinutes": 25,
       "servings": 4,
       "categories": ["dinner-in-30", "dinner", "one-pot", "family-friendly"],
+      "fromMonths": 6,
       "tags": ["freezer-friendly", "batch-cook"],
       "energy": "low",
       "allergens": [],
@@ -1803,6 +1809,7 @@
       "totalMinutes": 20,
       "servings": 4,
       "categories": ["dinner-in-30", "dinner", "one-pot"],
+      "fromMonths": 6,
       "tags": ["freezer-friendly"],
       "energy": "low",
       "allergens": [],
@@ -2539,6 +2546,7 @@
       "totalMinutes": 25,
       "servings": 4,
       "categories": ["nourish-while-nursing", "one-pot", "dinner", "nourished"],
+      "fromMonths": 6,
       "tags": ["batch-cook", "freezer-friendly"],
       "energy": "medium",
       "allergens": [],
@@ -2609,6 +2617,7 @@
       "totalMinutes": 30,
       "servings": 4,
       "categories": ["nourish-while-nursing", "one-pot", "lunch", "dinner"],
+      "fromMonths": 6,
       "tags": ["batch-cook", "freezer-friendly"],
       "energy": "low",
       "allergens": [],
@@ -2843,6 +2852,7 @@
         "one-pot",
         "high-protein"
       ],
+      "fromMonths": 6,
       "tags": [],
       "energy": "medium",
       "allergens": ["egg"],
@@ -3243,9 +3253,10 @@
         "Finish the grown-up eggs with feta and black pepper and serve on sourdough toast."
       ],
       "tips": [
+        "For baby: set aside baby's portion before adding feta, salt or pepper. Serve soft, wide egg strips with avocado spears, or mash the yolk with ripe avocado.",
+        "Choking hazards: serve baby's egg in soft, wide strips rather than small, firm chunks.",
         "Egg is a common allergen. Introduce each one on its own first before combining them in family meals.",
-        "Finger-squish test: many parents check that any vegetable or protein served as finger food squishes easily between their thumb and index finger.",
-        "Choking hazards: serve baby's egg in soft, wide strips rather than small, firm chunks."
+        "Finger-squish test: many parents check that any vegetable or protein served as finger food squishes easily between their thumb and index finger."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3285,6 +3296,7 @@
         "Finish the grown-up bowls with milk, maple, walnuts and whole blueberries."
       ],
       "tips": [
+        "For baby: spoon out baby's portion and thin it with a little breast milk or formula until smooth and spoonable.",
         "Choking hazards: mash blueberries well for babies; whole blueberries are a choking risk.",
         "Keep honey out of baby’s bowl until after the first birthday."
       ],
@@ -3326,9 +3338,10 @@
         "Top the grown-up stack with maple, berries and toasted almonds."
       ],
       "tips": [
+        "For baby: cut baby's pancake into strips about the size of an adult finger, or soak small soft bits in a little warm breast milk or formula for a mash.",
+        "Choking hazards: serve pancake in soft strips, not small dry chunks, and skip nut toppings on baby's plate.",
         "Egg, dairy and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
-        "Pancakes freeze well: cool, stack with parchment and reheat in the toaster.",
-        "Choking hazards: serve pancake in soft strips, not small dry chunks, and skip nut toppings on baby's plate."
+        "Pancakes freeze well: cool, stack with parchment and reheat in the toaster."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3367,6 +3380,7 @@
         "Season the grown-up plates with salt and pepper at the table."
       ],
       "tips": [
+        "For baby: serve peeled sweet potato wedges with soft broccoli florets, or flake the salmon and mash it with sweet potato and a drop of olive oil.",
         "Choking hazards: always double-check flaked fish for small bones, and cook the broccoli until soft.",
         "Fish is a common allergen. Introduce each one on its own first before combining them in family meals."
       ],
@@ -3405,6 +3419,7 @@
         "Toss the rest with the tomatoes, cucumber, feta, olive oil, lemon, salt and pepper for the grown-ups."
       ],
       "tips": [
+        "For baby: set aside about 1/2 cup of beans and a quarter of an avocado before you dress the salad, then serve avocado wedges with smushed beans or mash them together.",
         "Choking hazards: flatten each bean between your fingers before serving; whole beans are a choking hazard.",
         "Halve or quarter cherry tomatoes for older kids; keep them off baby’s plate whole."
       ],
@@ -3448,9 +3463,9 @@
         "Salt the rest to taste and serve with naan and cilantro."
       ],
       "tips": [
-        "Lentils are a plant source of iron.",
-        "Scoop before seasoning: take baby’s portion out before adding salt, soy sauce, hot pepper or other spicy seasoning.",
-        "Choking hazards: cook the carrots until very soft and mash them with the lentils."
+        "For baby: take baby’s portion out before adding salt, soy sauce, hot pepper or other spicy seasoning.",
+        "Choking hazards: cook the carrots until very soft and mash them with the lentils.",
+        "Lentils are a plant source of iron."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3490,6 +3505,7 @@
         "Season the grown-up bowls with salt, pepper and parsley."
       ],
       "tips": [
+        "For baby: scoop out baby's portion before adding salt or pepper, and blend the chicken, carrots and noodles with a little broth if needed.",
         "Choking hazards: keep celery for the grown-ups or blend it well (its strings can be hard for babies), and shred the chicken finely.",
         "Even low-sodium broth has some salt, so keep baby’s broth to a little for moistening."
       ],
@@ -3533,9 +3549,10 @@
         "Season the rest with chili powder and salt and top with cheddar and cilantro."
       ],
       "tips": [
+        "For baby: spoon out baby's portion before adding any chili powder or salt.",
+        "Choking hazards: break the turkey into fine crumbles; tough or large chunks of meat are a choking hazard.",
         "Lentils and turkey are sources of iron.",
-        "Cool baby’s portion before serving, and freeze extra in small containers.",
-        "Choking hazards: break the turkey into fine crumbles; tough or large chunks of meat are a choking hazard."
+        "Cool baby’s portion before serving, and freeze extra in small containers."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3576,6 +3593,7 @@
         "Season the grown-up portions with sea salt."
       ],
       "tips": [
+        "For baby: keep baby's chicken and spears unsalted on one corner of the tray, then peel the spears and shred tender thigh meat.",
         "Choking hazards: remove chicken skin and any bones, and shred the meat finely before serving baby.",
         "Finger-squish test: many parents check that any vegetable or protein served as finger food squishes easily between their thumb and index finger."
       ],
@@ -3618,9 +3636,10 @@
         "Let the grown-ups season their bowls with salt and pepper at the table."
       ],
       "tips": [
+        "For baby: shred baby's beef very finely and serve it with soft potato and carrot wedges.",
+        "Choking hazards: shred the beef very finely; tough or large chunks of meat are a choking hazard.",
         "Beef is a source of iron.",
-        "Remove the rosemary sprig before serving baby.",
-        "Choking hazards: shred the beef very finely; tough or large chunks of meat are a choking hazard."
+        "Remove the rosemary sprig before serving baby."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3660,8 +3679,9 @@
         "Finish the grown-up bowls with parmesan, salt and black pepper."
       ],
       "tips": [
-        "Dairy and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
-        "Choking hazards: cook the pasta until soft; large shapes like rigatoni are easier for little hands than small ones."
+        "For baby: cook the pasta a little past al dente and set baby's portion aside before adding salt or parmesan.",
+        "Choking hazards: cook the pasta until soft; large shapes like rigatoni are easier for little hands than small ones.",
+        "Dairy and wheat are common allergens. Introduce each one on its own first before combining them in family meals."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3700,6 +3720,7 @@
         "Make the grown-up mash with garlic, parmesan, butter and salt, and finish the fish with lemon butter and dill."
       ],
       "tips": [
+        "For baby: keep baby's fillet plain, then flake it and serve with soft cauliflower florets.",
         "Choking hazards: always double-check flaked fish for small bones.",
         "Fish is a common allergen. Introduce each one on its own first before combining them in family meals."
       ],
@@ -3744,8 +3765,8 @@
         "Season the rest and serve over brown rice."
       ],
       "tips": [
-        "Choking hazards: mash or flatten peas for babies; whole peas can be a choking risk.",
-        "Scoop before seasoning: take baby’s portion out before adding salt, soy sauce, hot pepper or other spicy seasoning."
+        "For baby: take baby’s portion out before adding salt, soy sauce, hot pepper or other spicy seasoning.",
+        "Choking hazards: mash or flatten peas for babies; whole peas can be a choking risk."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3786,8 +3807,9 @@
         "Simmer the grown-up meatballs in marinara and serve over spaghetti."
       ],
       "tips": [
-        "Egg and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
-        "Choking hazards: never serve whole round meatballs to a young baby; shape baby's portion into small logs or cut meatballs into strips."
+        "For baby: shape baby's portion first, with no added salt, then cut the cooked meatballs into strips or quarters, or mash one with a little low-sodium tomato sauce.",
+        "Choking hazards: never serve whole round meatballs to a young baby; shape baby's portion into small logs or cut meatballs into strips.",
+        "Egg and wheat are common allergens. Introduce each one on its own first before combining them in family meals."
       ],
       "reviewer": "pediatric dietitian"
     },
@@ -3827,8 +3849,9 @@
         "Toss the grown-up bowls with the rest of the sauce, soy sauce, lime and chili flakes."
       ],
       "tips": [
-        "Peanut, sesame, soy and wheat are common allergens. Introduce each one on its own first before combining them in family meals.",
-        "Choking hazards: always thin nut and seed butters; a thick spoonful is a choking risk."
+        "For baby: serve long strips of soft tofu, broccoli florets and soft noodles coated in a little of the thinned sauce.",
+        "Choking hazards: always thin nut and seed butters; a thick spoonful is a choking risk.",
+        "Peanut, sesame, soy and wheat are common allergens. Introduce each one on its own first before combining them in family meals."
       ],
       "reviewer": "pediatric dietitian"
     }

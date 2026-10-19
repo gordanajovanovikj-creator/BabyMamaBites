@@ -52,7 +52,10 @@ describe('baby recipes', () => {
     }
     // On the Mom tab, only the one-pot family meals (with a baby portion) carry a baby age.
     for (const r of recipes.filter((x) => x.fromMonths !== undefined)) {
-      expect(r.categories).toEqual(['one-pot']);
+      expect(r.categories).toContain('one-pot');
+    }
+    for (const r of recipes.filter((x) => x.categories.includes('one-pot'))) {
+      expect(r.fromMonths).toBe(6);
     }
     expect(recipeCategories.every((c) => c.fromMonths === undefined)).toBe(true);
   });
