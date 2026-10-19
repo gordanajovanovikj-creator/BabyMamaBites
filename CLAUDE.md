@@ -8,8 +8,8 @@
   US emergency/crisis numbers (911, 988, 1-833-TLC-MAMA). A test blocks common UK terms.
 
 - **Content safety.** Never invent medical, nutrition or infant-feeding guidance. New
-  health-adjacent text goes in `src/content/` with `reviewStatus: "placeholder"` and the
-  `[PLACEHOLDER - needs expert review]` marker. Never claim a food increases milk supply.
+  health-adjacent text goes in `src/content/` with `reviewStatus: "placeholder"` (no marker
+  in the text itself; the app relies on its disclaimers). Never claim a food increases milk supply.
 - **Escalate red flags** (feeding difficulties, signs of postpartum depression, a sick baby)
   to a professional instead of answering them.
 - **Privacy first.** User data stays on-device (`expo-sqlite`). Flag anything that would

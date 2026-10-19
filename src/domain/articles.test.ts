@@ -54,9 +54,9 @@ describe('solids articles content', () => {
     }
   });
 
-  it('marks drafts visibly', () => {
+  it('keeps review markers out of the text', () => {
     for (const article of solidsArticles.filter((x) => x.reviewStatus === 'placeholder')) {
-      expect(article.summary.startsWith(PLACEHOLDER_MARKER)).toBe(true);
+      expect(article.summary.includes(PLACEHOLDER_MARKER)).toBe(false);
     }
   });
 

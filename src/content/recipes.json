@@ -142,7 +142,7 @@
     {
       "id": "overnight-oats",
       "title": "Creamy berry vanilla overnight oats",
-      "summary": "[PLACEHOLDER - needs expert review] Oats, chia and Greek yogurt for lasting energy, fiber and protein. Stir it tonight; breakfast is waiting tomorrow.",
+      "summary": "Oats, chia and Greek yogurt for lasting energy, fiber and protein. Stir it tonight; breakfast is waiting tomorrow.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🥣",
       "tone": "sky",
@@ -189,7 +189,7 @@
     {
       "id": "banana-oat-smoothie",
       "title": "Banana oat smoothie",
-      "summary": "[PLACEHOLDER - needs expert review] A thick, filling drink you can sip during a feed.",
+      "summary": "A thick, filling drink you can sip during a feed.",
       "icon": "mug.fill",
       "emoji": "🍌",
       "tone": "accent",
@@ -223,7 +223,7 @@
     {
       "id": "pb-banana-shake",
       "title": "Peanut butter banana milkshake",
-      "summary": "[PLACEHOLDER - needs expert review] Creamy, chocolatey and ready in two minutes.",
+      "summary": "Creamy, chocolatey and ready in two minutes.",
       "icon": "mug.fill",
       "emoji": "🥤",
       "tone": "muted",
@@ -256,7 +256,7 @@
     {
       "id": "warm-spiced-milk",
       "title": "Warm cinnamon vanilla milk",
-      "summary": "[PLACEHOLDER - needs expert review] A cozy, caffeine-free warm drink for night feeds.",
+      "summary": "A cozy, caffeine-free warm drink for night feeds.",
       "icon": "mug.fill",
       "emoji": "🍵",
       "tone": "accent",
@@ -289,7 +289,7 @@
     {
       "id": "nut-butter-porridge",
       "title": "Creamy oat porridge with peanut butter",
-      "summary": "[PLACEHOLDER - needs expert review] Warm, comforting oats with banana and a swirl of peanut butter.",
+      "summary": "Warm, comforting oats with banana and a swirl of peanut butter.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🥣",
       "tone": "sky",
@@ -322,7 +322,7 @@
     {
       "id": "egg-muffin-cups",
       "title": "Veggie egg muffin cups",
-      "summary": "[PLACEHOLDER - needs expert review] Make a dozen on Sunday and reheat all week.",
+      "summary": "Make a dozen on Sunday and reheat all week.",
       "icon": "sun.max.fill",
       "emoji": "🧁",
       "tone": "muted",
@@ -366,7 +366,7 @@
     {
       "id": "yogurt-parfait",
       "title": "Berry yogurt parfait",
-      "summary": "[PLACEHOLDER - needs expert review] Layers of yogurt, fruit and crunchy oats in five minutes.",
+      "summary": "Layers of yogurt, fruit and crunchy oats in five minutes.",
       "icon": "sun.max.fill",
       "emoji": "🍓",
       "tone": "accent",
@@ -396,7 +396,7 @@
     {
       "id": "avocado-egg-toast",
       "title": "Avocado toast with egg",
-      "summary": "[PLACEHOLDER - needs expert review] A quick, satisfying breakfast with a fully cooked egg.",
+      "summary": "A quick, satisfying breakfast with a fully cooked egg.",
       "icon": "sun.max.fill",
       "emoji": "🥑",
       "tone": "sky",
@@ -428,7 +428,7 @@
     {
       "id": "breakfast-burritos",
       "title": "Freezer breakfast burritos",
-      "summary": "[PLACEHOLDER - needs expert review] Wrap, freeze and microwave on busy mornings.",
+      "summary": "Wrap, freeze and microwave on busy mornings.",
       "icon": "alarm.fill",
       "emoji": "🌯",
       "tone": "muted",
@@ -465,7 +465,7 @@
     {
       "id": "baked-oatmeal",
       "title": "Baked oatmeal squares",
-      "summary": "[PLACEHOLDER - needs expert review] A family-size breakfast that slices into grab-and-go squares.",
+      "summary": "A family-size breakfast that slices into grab-and-go squares.",
       "icon": "alarm.fill",
       "emoji": "🍰",
       "tone": "accent",
@@ -505,7 +505,7 @@
     {
       "id": "hummus-wrap",
       "title": "Hummus veggie wrap",
-      "summary": "[PLACEHOLDER - needs expert review] Roll it up in five minutes and eat with one hand.",
+      "summary": "Roll it up in five minutes and eat with one hand.",
       "icon": "hand.raised.fill",
       "emoji": "🌯",
       "tone": "sky",
@@ -536,7 +536,7 @@
     {
       "id": "chicken-quinoa-jars",
       "title": "Chicken and quinoa salad",
-      "summary": "[PLACEHOLDER - needs expert review] Four lunches made at once, ready to grab from the fridge.",
+      "summary": "Four lunches made at once, ready to grab from the fridge.",
       "icon": "takeoutbag.and.cup.and.straw.fill",
       "emoji": "🥗",
       "tone": "accent",
@@ -570,7 +570,7 @@
     {
       "id": "white-bean-tuna-salad",
       "title": "White bean and tuna salad",
-      "summary": "[PLACEHOLDER - needs expert review] A no-cook, protein-packed lunch in ten minutes.",
+      "summary": "A no-cook, protein-packed lunch in ten minutes.",
       "icon": "takeoutbag.and.cup.and.straw.fill",
       "emoji": "🐟",
       "tone": "muted",
@@ -607,7 +607,7 @@
     {
       "id": "black-bean-quesadilla",
       "title": "Black bean and corn quesadillas",
-      "summary": "[PLACEHOLDER - needs expert review] A super-fast weeknight lifesaver: crispy, cheesy and ready in about 10 minutes.",
+      "summary": "A super-fast weeknight lifesaver: crispy, cheesy and ready in about 10 minutes.",
       "icon": "fork.knife",
       "emoji": "🫓",
       "tone": "sky",
@@ -642,7 +642,7 @@
     {
       "id": "lentil-soup",
       "title": "One-pot red lentil soup",
-      "summary": "[PLACEHOLDER - needs expert review] A big pot of warming soup that freezes beautifully.",
+      "summary": "A big pot of warming soup that freezes beautifully.",
       "icon": "frying.pan.fill",
       "emoji": "🍲",
       "tone": "accent",
@@ -680,7 +680,7 @@
     {
       "id": "turkey-chili",
       "title": "One-pot turkey chili",
-      "summary": "[PLACEHOLDER - needs expert review] A mild, family-friendly chili for batch cooking.",
+      "summary": "A mild, family-friendly chili for batch cooking.",
       "icon": "flame.fill",
       "emoji": "🌶️",
       "tone": "muted",
@@ -718,7 +718,7 @@
     {
       "id": "sheet-pan-salmon",
       "title": "Sheet-pan lemon garlic salmon and broccoli",
-      "summary": "[PLACEHOLDER - needs expert review] Salmon, broccoli and peppers roasted on one pan with lemon and garlic. Zero messy pots.",
+      "summary": "Salmon, broccoli and peppers roasted on one pan with lemon and garlic. Zero messy pots.",
       "icon": "fish.fill",
       "emoji": "🐟",
       "tone": "sky",
@@ -763,7 +763,7 @@
     {
       "id": "chicken-stir-fry",
       "title": "Chicken and vegetable stir-fry",
-      "summary": "[PLACEHOLDER - needs expert review] Fast, colorful and easy to adapt.",
+      "summary": "Fast, colorful and easy to adapt.",
       "icon": "flame.fill",
       "emoji": "🥢",
       "tone": "accent",
@@ -800,7 +800,7 @@
     {
       "id": "one-pot-pasta",
       "title": "One-pot tomato and spinach pasta",
-      "summary": "[PLACEHOLDER - needs expert review] Pasta and sauce cook together in one pot.",
+      "summary": "Pasta and sauce cook together in one pot.",
       "icon": "frying.pan.fill",
       "emoji": "🍝",
       "tone": "muted",
@@ -835,7 +835,7 @@
     {
       "id": "chickpea-curry",
       "title": "Coconut chickpea curry",
-      "summary": "[PLACEHOLDER - needs expert review] A gentle, creamy curry that freezes well.",
+      "summary": "A gentle, creamy curry that freezes well.",
       "icon": "frying.pan.fill",
       "emoji": "🍛",
       "tone": "sky",
@@ -872,7 +872,7 @@
     {
       "id": "slow-cooker-chicken",
       "title": "Slow-cooker shredded chicken",
-      "summary": "[PLACEHOLDER - needs expert review] Ten minutes in the morning, dinner ready by evening.",
+      "summary": "Ten minutes in the morning, dinner ready by evening.",
       "icon": "bolt.heart.fill",
       "emoji": "🍗",
       "tone": "accent",
@@ -912,7 +912,7 @@
     {
       "id": "energy-bites",
       "title": "No-bake oat energy bites",
-      "summary": "[PLACEHOLDER - needs expert review] Grab-and-go bites, sweetened with dates.",
+      "summary": "Grab-and-go bites, sweetened with dates.",
       "icon": "carrot.fill",
       "emoji": "🍪",
       "tone": "muted",
@@ -951,7 +951,7 @@
     {
       "id": "apple-pb",
       "title": "Apple slices with peanut butter",
-      "summary": "[PLACEHOLDER - needs expert review] The fastest snack with some staying power.",
+      "summary": "The fastest snack with some staying power.",
       "icon": "carrot.fill",
       "emoji": "🍏",
       "tone": "accent",
@@ -974,7 +974,7 @@
     {
       "id": "snack-plate",
       "title": "Cheese, crackers and fruit plate",
-      "summary": "[PLACEHOLDER - needs expert review] A no-cook mini meal you can graze on.",
+      "summary": "A no-cook mini meal you can graze on.",
       "icon": "carrot.fill",
       "emoji": "🧀",
       "tone": "sky",
@@ -1002,7 +1002,7 @@
     {
       "id": "smoothie-tropical-green",
       "title": "Classic tropical green",
-      "summary": "[PLACEHOLDER - needs expert review] A bright, fruity green smoothie with spinach, mango and pineapple.",
+      "summary": "A bright, fruity green smoothie with spinach, mango and pineapple.",
       "icon": "mug.fill",
       "emoji": "🥬",
       "tone": "sky",
@@ -1034,7 +1034,7 @@
     {
       "id": "smoothie-avocado-green",
       "title": "Creamy avocado green",
-      "summary": "[PLACEHOLDER - needs expert review] Creamy and thick, with avocado, greens and chia to keep you full.",
+      "summary": "Creamy and thick, with avocado, greens and chia to keep you full.",
       "icon": "mug.fill",
       "emoji": "🥑",
       "tone": "accent",
@@ -1067,7 +1067,7 @@
     {
       "id": "smoothie-cucumber-ginger",
       "title": "Cucumber ginger green",
-      "summary": "[PLACEHOLDER - needs expert review] A light, refreshing green smoothie with lemon, cucumber and fresh ginger.",
+      "summary": "A light, refreshing green smoothie with lemon, cucumber and fresh ginger.",
       "icon": "mug.fill",
       "emoji": "🥒",
       "tone": "sky",
@@ -1099,7 +1099,7 @@
     {
       "id": "smoothie-matcha-green",
       "title": "Matcha green tea smoothie",
-      "summary": "[PLACEHOLDER - needs expert review] A bright green, gently energizing smoothie with matcha, banana and hemp seeds.",
+      "summary": "A bright green, gently energizing smoothie with matcha, banana and hemp seeds.",
       "icon": "mug.fill",
       "emoji": "🍵",
       "tone": "accent",
@@ -1132,7 +1132,7 @@
     {
       "id": "smoothie-triple-berry",
       "title": "Triple berry",
-      "summary": "[PLACEHOLDER - needs expert review] Sweet-tart strawberries, blueberries and raspberries, blended until smooth.",
+      "summary": "Sweet-tart strawberries, blueberries and raspberries, blended until smooth.",
       "icon": "mug.fill",
       "emoji": "🍓",
       "tone": "accent",
@@ -1163,7 +1163,7 @@
     {
       "id": "smoothie-wild-blueberry",
       "title": "Wild blueberry flax",
-      "summary": "[PLACEHOLDER - needs expert review] Thick and velvety, with wild blueberries, Greek yogurt, flaxseed and cinnamon.",
+      "summary": "Thick and velvety, with wild blueberries, Greek yogurt, flaxseed and cinnamon.",
       "icon": "mug.fill",
       "emoji": "🫐",
       "tone": "sky",
@@ -1194,7 +1194,7 @@
     {
       "id": "smoothie-pomegranate-acai",
       "title": "Pomegranate acai",
-      "summary": "[PLACEHOLDER - needs expert review] A deep purple smoothie with acai, pomegranate juice and strawberries.",
+      "summary": "A deep purple smoothie with acai, pomegranate juice and strawberries.",
       "icon": "mug.fill",
       "emoji": "🍇",
       "tone": "accent",
@@ -1226,7 +1226,7 @@
     {
       "id": "smoothie-pb-banana-protein",
       "title": "Peanut butter banana protein shake",
-      "summary": "[PLACEHOLDER - needs expert review] Thick and creamy, with peanut butter, banana and protein powder.",
+      "summary": "Thick and creamy, with peanut butter, banana and protein powder.",
       "icon": "mug.fill",
       "emoji": "🥜",
       "tone": "accent",
@@ -1258,7 +1258,7 @@
     {
       "id": "smoothie-chocolate-hemp",
       "title": "Chocolate hemp seed shake",
-      "summary": "[PLACEHOLDER - needs expert review] A chocolatey plant-based shake with hemp seeds, cacao and banana.",
+      "summary": "A chocolatey plant-based shake with hemp seeds, cacao and banana.",
       "icon": "mug.fill",
       "emoji": "🍫",
       "tone": "muted",
@@ -1289,7 +1289,7 @@
     {
       "id": "smoothie-greek-yogurt-berry",
       "title": "Greek yogurt berry",
-      "summary": "[PLACEHOLDER - needs expert review] Rich and smooth, with Greek yogurt and mixed berries.",
+      "summary": "Rich and smooth, with Greek yogurt and mixed berries.",
       "icon": "mug.fill",
       "emoji": "🍒",
       "tone": "sky",
@@ -1319,7 +1319,7 @@
     {
       "id": "smoothie-salted-caramel",
       "title": "Salted caramel date shake",
-      "summary": "[PLACEHOLDER - needs expert review] A sweet treat with dates, banana and a pinch of sea salt.",
+      "summary": "A sweet treat with dates, banana and a pinch of sea salt.",
       "icon": "mug.fill",
       "emoji": "🍯",
       "tone": "muted",
@@ -1351,7 +1351,7 @@
     {
       "id": "smoothie-citrus-sunshine",
       "title": "Citrus sunshine",
-      "summary": "[PLACEHOLDER - needs expert review] A sunny orange smoothie with orange, mango, carrot and turmeric.",
+      "summary": "A sunny orange smoothie with orange, mango, carrot and turmeric.",
       "icon": "mug.fill",
       "emoji": "🍊",
       "tone": "accent",
@@ -1384,7 +1384,7 @@
     {
       "id": "smoothie-ginger-turmeric",
       "title": "Ginger turmeric pineapple",
-      "summary": "[PLACEHOLDER - needs expert review] Bright yellow and silky, with pineapple, banana, ginger and turmeric.",
+      "summary": "Bright yellow and silky, with pineapple, banana, ginger and turmeric.",
       "icon": "mug.fill",
       "emoji": "🍍",
       "tone": "sky",
@@ -1416,7 +1416,7 @@
     {
       "id": "smoothie-golden-tropical",
       "title": "Golden milk tropical",
-      "summary": "[PLACEHOLDER - needs expert review] Rich and creamy, with mango, turmeric, cinnamon and kefir.",
+      "summary": "Rich and creamy, with mango, turmeric, cinnamon and kefir.",
       "icon": "mug.fill",
       "emoji": "🥭",
       "tone": "accent",
@@ -1448,7 +1448,7 @@
     {
       "id": "smoothie-papaya-mint",
       "title": "Papaya mint",
-      "summary": "[PLACEHOLDER - needs expert review] Light and refreshing, with papaya, fresh mint and lemon.",
+      "summary": "Light and refreshing, with papaya, fresh mint and lemon.",
       "icon": "mug.fill",
       "emoji": "🌿",
       "tone": "sky",
@@ -1479,7 +1479,7 @@
     {
       "id": "smoothie-pear-cinnamon",
       "title": "Pear cinnamon oat",
-      "summary": "[PLACEHOLDER - needs expert review] Thick and cozy, with pear, oats and cinnamon.",
+      "summary": "Thick and cozy, with pear, oats and cinnamon.",
       "icon": "mug.fill",
       "emoji": "🍐",
       "tone": "muted",
@@ -1510,7 +1510,7 @@
     {
       "id": "smoothie-kiwi-lime",
       "title": "Kiwi lime green",
-      "summary": "[PLACEHOLDER - needs expert review] Zingy and green, with kiwi, cucumber, spinach and lime.",
+      "summary": "Zingy and green, with kiwi, cucumber, spinach and lime.",
       "icon": "mug.fill",
       "emoji": "🥝",
       "tone": "sky",
@@ -1541,7 +1541,7 @@
     {
       "id": "smoothie-blueberry-oatmeal",
       "title": "Blueberry oatmeal breakfast",
-      "summary": "[PLACEHOLDER - needs expert review] A thick, filling breakfast in a cup, with oats, blueberries and almond butter.",
+      "summary": "A thick, filling breakfast in a cup, with oats, blueberries and almond butter.",
       "icon": "mug.fill",
       "emoji": "🥣",
       "tone": "accent",
@@ -1572,7 +1572,7 @@
     {
       "id": "smoothie-almond-fig",
       "title": "Creamy almond fig",
-      "summary": "[PLACEHOLDER - needs expert review] Naturally sweet and creamy, with figs, almond butter and flaxseed.",
+      "summary": "Naturally sweet and creamy, with figs, almond butter and flaxseed.",
       "icon": "mug.fill",
       "emoji": "🍯",
       "tone": "muted",
@@ -1604,7 +1604,7 @@
     {
       "id": "smoothie-tahini-date",
       "title": "Tahini date",
-      "summary": "[PLACEHOLDER - needs expert review] Rich and nutty, with tahini, dates and banana.",
+      "summary": "Rich and nutty, with tahini, dates and banana.",
       "icon": "mug.fill",
       "emoji": "🌰",
       "tone": "muted",
@@ -1636,7 +1636,7 @@
     {
       "id": "turkey-taco-skillet",
       "title": "Turkey taco skillet",
-      "summary": "[PLACEHOLDER - needs expert review] Taco night flavor in one pan, with turkey, black beans and corn.",
+      "summary": "Taco night flavor in one pan, with turkey, black beans and corn.",
       "icon": "frying.pan.fill",
       "emoji": "🌮",
       "tone": "accent",
@@ -1675,7 +1675,7 @@
     {
       "id": "lemon-herb-chicken-asparagus",
       "title": "Lemon herb chicken and asparagus",
-      "summary": "[PLACEHOLDER - needs expert review] Golden chicken and tender-crisp asparagus in a bright lemon-garlic pan sauce.",
+      "summary": "Golden chicken and tender-crisp asparagus in a bright lemon-garlic pan sauce.",
       "icon": "frying.pan.fill",
       "emoji": "🍋",
       "tone": "sky",
@@ -1710,7 +1710,7 @@
     {
       "id": "spinach-tomato-gnocchi",
       "title": "Creamy spinach and tomato gnocchi",
-      "summary": "[PLACEHOLDER - needs expert review] Comfort food made fast: soft gnocchi in a creamy garlic, tomato and spinach sauce.",
+      "summary": "Comfort food made fast: soft gnocchi in a creamy garlic, tomato and spinach sauce.",
       "icon": "frying.pan.fill",
       "emoji": "🍅",
       "tone": "accent",
@@ -1747,7 +1747,7 @@
     {
       "id": "beef-broccoli-stir-fry",
       "title": "Ground beef and broccoli stir-fry",
-      "summary": "[PLACEHOLDER - needs expert review] Better than takeout: savory ground beef and broccoli in a glossy ginger-soy sauce.",
+      "summary": "Better than takeout: savory ground beef and broccoli in a glossy ginger-soy sauce.",
       "icon": "frying.pan.fill",
       "emoji": "🥦",
       "tone": "muted",
@@ -1786,7 +1786,7 @@
     {
       "id": "tomato-tortellini-soup",
       "title": "Creamy tomato tortellini soup",
-      "summary": "[PLACEHOLDER - needs expert review] A cozy, creamy tomato soup with cheese tortellini and spinach that kids tend to love.",
+      "summary": "A cozy, creamy tomato soup with cheese tortellini and spinach that kids tend to love.",
       "icon": "fork.knife",
       "emoji": "🥣",
       "tone": "accent",
@@ -1821,7 +1821,7 @@
     {
       "id": "black-bean-sweet-potato-chili",
       "title": "Black bean and sweet potato chili",
-      "summary": "[PLACEHOLDER - needs expert review] A cozy plant-based chili with black beans, sweet potato and warm spices.",
+      "summary": "A cozy plant-based chili with black beans, sweet potato and warm spices.",
       "icon": "flame.fill",
       "emoji": "🍠",
       "tone": "muted",
@@ -1855,7 +1855,7 @@
     {
       "id": "coconut-curry-chickpea-soup",
       "title": "Coconut curry chickpea soup",
-      "summary": "[PLACEHOLDER - needs expert review] A fragrant, creamy chickpea soup with coconut milk, curry and spinach.",
+      "summary": "A fragrant, creamy chickpea soup with coconut milk, curry and spinach.",
       "icon": "flame.fill",
       "emoji": "🍛",
       "tone": "accent",
@@ -1891,7 +1891,7 @@
     {
       "id": "sheet-pan-sausage-hash",
       "title": "Sheet-pan sausage and pepper hash",
-      "summary": "[PLACEHOLDER - needs expert review] A hearty, low-prep dinner of crispy potatoes, sausage and peppers on one pan.",
+      "summary": "A hearty, low-prep dinner of crispy potatoes, sausage and peppers on one pan.",
       "icon": "flame.fill",
       "emoji": "🫑",
       "tone": "muted",
@@ -1928,7 +1928,7 @@
     {
       "id": "honey-mustard-chicken-green-beans",
       "title": "Sheet-pan honey mustard chicken",
-      "summary": "[PLACEHOLDER - needs expert review] Sweet and savory chicken tenders and green beans, all on one pan.",
+      "summary": "Sweet and savory chicken tenders and green beans, all on one pan.",
       "icon": "flame.fill",
       "emoji": "🍯",
       "tone": "accent",
@@ -1964,7 +1964,7 @@
     {
       "id": "mediterranean-tuna-pita",
       "title": "Mediterranean tuna pita pockets",
-      "summary": "[PLACEHOLDER - needs expert review] No-cook tuna salad with yogurt, cucumber, tomato and feta, stuffed into pitas.",
+      "summary": "No-cook tuna salad with yogurt, cucumber, tomato and feta, stuffed into pitas.",
       "icon": "fork.knife",
       "emoji": "🥙",
       "tone": "sky",
@@ -2001,7 +2001,7 @@
     {
       "id": "teriyaki-chicken-bowls",
       "title": "Teriyaki chicken rice bowls",
-      "summary": "[PLACEHOLDER - needs expert review] Chicken, vegetables and brown rice in a glossy teriyaki sauce.",
+      "summary": "Chicken, vegetables and brown rice in a glossy teriyaki sauce.",
       "icon": "fork.knife",
       "emoji": "🍚",
       "tone": "accent",
@@ -2042,7 +2042,7 @@
     {
       "id": "garlic-butter-shrimp-pasta",
       "title": "Garlic butter shrimp pasta",
-      "summary": "[PLACEHOLDER - needs expert review] Feel fancy with minimal effort: shrimp and pasta in a lemony garlic butter sauce.",
+      "summary": "Feel fancy with minimal effort: shrimp and pasta in a lemony garlic butter sauce.",
       "icon": "fork.knife",
       "emoji": "🍤",
       "tone": "sky",
@@ -2076,7 +2076,7 @@
     {
       "id": "creamy-mushroom-pasta",
       "title": "Creamy mushroom pasta",
-      "summary": "[PLACEHOLDER - needs expert review] Vegetarian comfort in a flash: golden mushrooms in a creamy parmesan sauce.",
+      "summary": "Vegetarian comfort in a flash: golden mushrooms in a creamy parmesan sauce.",
       "icon": "fork.knife",
       "emoji": "🍄",
       "tone": "muted",
@@ -2111,7 +2111,7 @@
     {
       "id": "pesto-chicken-penne",
       "title": "Pesto chicken and tomato penne",
-      "summary": "[PLACEHOLDER - needs expert review] A pantry-shortcut dinner with jarred pesto, rotisserie chicken and cherry tomatoes.",
+      "summary": "A pantry-shortcut dinner with jarred pesto, rotisserie chicken and cherry tomatoes.",
       "icon": "fork.knife",
       "emoji": "🌿",
       "tone": "sky",
@@ -2142,7 +2142,7 @@
     {
       "id": "spinach-feta-frittata",
       "title": "Spinach, tomato and feta frittata",
-      "summary": "[PLACEHOLDER - needs expert review] A protein-packed, low-prep frittata with spinach, tomatoes and feta.",
+      "summary": "A protein-packed, low-prep frittata with spinach, tomatoes and feta.",
       "icon": "frying.pan.fill",
       "emoji": "🍳",
       "tone": "accent",
@@ -2177,7 +2177,7 @@
     {
       "id": "huevos-rancheros-bowls",
       "title": "Huevos rancheros bowls",
-      "summary": "[PLACEHOLDER - needs expert review] Bold flavors from pantry staples: eggs, black beans, salsa and avocado on warm tortillas.",
+      "summary": "Bold flavors from pantry staples: eggs, black beans, salsa and avocado on warm tortillas.",
       "icon": "frying.pan.fill",
       "emoji": "🥑",
       "tone": "accent",
@@ -2211,7 +2211,7 @@
     {
       "id": "naan-margherita-pizzas",
       "title": "Naan margherita pizzas",
-      "summary": "[PLACEHOLDER - needs expert review] Friday-night pizza made fast on store-bought naan.",
+      "summary": "Friday-night pizza made fast on store-bought naan.",
       "icon": "flame.fill",
       "emoji": "🍕",
       "tone": "sky",
@@ -2243,7 +2243,7 @@
     {
       "id": "bbq-chicken-flatbread",
       "title": "BBQ chicken flatbread",
-      "summary": "[PLACEHOLDER - needs expert review] Sweet, savory and effortless, with rotisserie chicken, red onion and melty cheese.",
+      "summary": "Sweet, savory and effortless, with rotisserie chicken, red onion and melty cheese.",
       "icon": "flame.fill",
       "emoji": "🍗",
       "tone": "muted",
@@ -2276,7 +2276,7 @@
     {
       "id": "nursing-strawberry-banana-oat-smoothie",
       "title": "Strawberry banana oat smoothie",
-      "summary": "[PLACEHOLDER - needs expert review] Oats, flax and fruit blended thick and creamy.",
+      "summary": "Oats, flax and fruit blended thick and creamy.",
       "icon": "takeoutbag.and.cup.and.straw.fill",
       "emoji": "🍓",
       "tone": "sky",
@@ -2313,7 +2313,7 @@
     {
       "id": "nursing-almond-butter-shake",
       "title": "Almond butter power shake",
-      "summary": "[PLACEHOLDER - needs expert review] Almond butter, chia and oats for a filling, frothy shake.",
+      "summary": "Almond butter, chia and oats for a filling, frothy shake.",
       "icon": "mug.fill",
       "emoji": "🥜",
       "tone": "muted",
@@ -2346,7 +2346,7 @@
     {
       "id": "nursing-green-mango-smoothie",
       "title": "Mango avocado smoothie",
-      "summary": "[PLACEHOLDER - needs expert review] Mango and avocado blended silky smooth, with spinach if you like.",
+      "summary": "Mango and avocado blended silky smooth, with spinach if you like.",
       "icon": "leaf.fill",
       "emoji": "🥭",
       "tone": "sky",
@@ -2376,7 +2376,7 @@
     {
       "id": "nursing-chocolate-pb-shake",
       "title": "Chocolate peanut butter shake",
-      "summary": "[PLACEHOLDER - needs expert review] Rich and milkshake-like, made with oat milk and a frozen banana.",
+      "summary": "Rich and milkshake-like, made with oat milk and a frozen banana.",
       "icon": "mug.fill",
       "emoji": "🍫",
       "tone": "muted",
@@ -2410,7 +2410,7 @@
     {
       "id": "nursing-chocolate-chip-bites",
       "title": "Chocolate chip oat bites",
-      "summary": "[PLACEHOLDER - needs expert review] No-bake bites to keep in the fridge for one-handed snacking.",
+      "summary": "No-bake bites to keep in the fridge for one-handed snacking.",
       "icon": "carrot.fill",
       "emoji": "🍪",
       "tone": "muted",
@@ -2447,7 +2447,7 @@
     {
       "id": "nursing-no-bake-granola-bars",
       "title": "No-bake oat granola bars",
-      "summary": "[PLACEHOLDER - needs expert review] Press, chill and slice. Snack bars ready for the week.",
+      "summary": "Press, chill and slice. Snack bars ready for the week.",
       "icon": "carrot.fill",
       "emoji": "🍫",
       "tone": "accent",
@@ -2490,7 +2490,7 @@
     {
       "id": "nursing-oatmeal-chocolate-chip-cookies",
       "title": "Oatmeal chocolate chip cookies",
-      "summary": "[PLACEHOLDER - needs expert review] A big batch of classic chewy oat cookies with flax and brewer's yeast.",
+      "summary": "A big batch of classic chewy oat cookies with flax and brewer's yeast.",
       "icon": "carrot.fill",
       "emoji": "🍪",
       "tone": "accent",
@@ -2530,7 +2530,7 @@
     {
       "id": "nursing-brown-sugar-oats",
       "title": "Brown sugar oats with banana",
-      "summary": "[PLACEHOLDER - needs expert review] Warm, creamy oats cooked in oat milk with a caramel-like finish.",
+      "summary": "Warm, creamy oats cooked in oat milk with a caramel-like finish.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🥣",
       "tone": "muted",
@@ -2563,7 +2563,7 @@
     {
       "id": "nursing-flax-blueberry-yogurt-bowl",
       "title": "Blueberry flax yogurt bowl",
-      "summary": "[PLACEHOLDER - needs expert review] Greek yogurt, blueberries and flax with a drizzle of honey.",
+      "summary": "Greek yogurt, blueberries and flax with a drizzle of honey.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🫐",
       "tone": "sky",
@@ -2593,7 +2593,7 @@
     {
       "id": "nursing-chia-pudding",
       "title": "Overnight oat milk chia pudding",
-      "summary": "[PLACEHOLDER - needs expert review] Stir it tonight and wake up to a thick, creamy pudding.",
+      "summary": "Stir it tonight and wake up to a thick, creamy pudding.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🍮",
       "tone": "accent",
@@ -2627,7 +2627,7 @@
     {
       "id": "nursing-avocado-toast",
       "title": "Avocado toast with brewer's yeast",
-      "summary": "[PLACEHOLDER - needs expert review] Crisp sourdough, thick smashed avocado and a savory sprinkle.",
+      "summary": "Crisp sourdough, thick smashed avocado and a savory sprinkle.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🥑",
       "tone": "muted",
@@ -2659,7 +2659,7 @@
     {
       "id": "nursing-sweet-potato-coconut-stew",
       "title": "Sweet potato coconut stew",
-      "summary": "[PLACEHOLDER - needs expert review] A warm, gently spiced one-pot stew with spinach.",
+      "summary": "A warm, gently spiced one-pot stew with spinach.",
       "icon": "frying.pan.fill",
       "emoji": "🍠",
       "tone": "accent",
@@ -2697,7 +2697,7 @@
     {
       "id": "nursing-barley-milk-soup",
       "title": "Moroccan barley milk soup (hssoua)",
-      "summary": "[PLACEHOLDER - needs expert review] A traditional warm, creamy barley soup scented with anise.",
+      "summary": "A traditional warm, creamy barley soup scented with anise.",
       "icon": "mug.fill",
       "emoji": "🥣",
       "tone": "muted",
@@ -2730,7 +2730,7 @@
     {
       "id": "nursing-bone-broth-soup",
       "title": "Chicken and vegetable bone broth soup",
-      "summary": "[PLACEHOLDER - needs expert review] A simple, warming broth soup with carrots, ginger and chicken.",
+      "summary": "A simple, warming broth soup with carrots, ginger and chicken.",
       "icon": "mug.fill",
       "emoji": "🍲",
       "tone": "sky",
@@ -2766,7 +2766,7 @@
     {
       "id": "nursing-salmon-quinoa-bowl",
       "title": "Salmon, arugula and quinoa bowl",
-      "summary": "[PLACEHOLDER - needs expert review] Baked salmon on quinoa and peppery greens with lemon.",
+      "summary": "Baked salmon on quinoa and peppery greens with lemon.",
       "icon": "fork.knife",
       "emoji": "🐟",
       "tone": "sky",
@@ -2806,7 +2806,7 @@
     {
       "id": "nursing-methi-chicken-curry",
       "title": "Chicken curry with fenugreek leaves (methi murgh)",
-      "summary": "[PLACEHOLDER - needs expert review] A fragrant home-style curry with fresh or dried methi leaves.",
+      "summary": "A fragrant home-style curry with fresh or dried methi leaves.",
       "icon": "flame.fill",
       "emoji": "🍛",
       "tone": "accent",
@@ -2844,7 +2844,7 @@
     {
       "id": "nursing-spinach-pear-quinoa-salad",
       "title": "Spinach, pear and quinoa salad",
-      "summary": "[PLACEHOLDER - needs expert review] Sweet pear, crunchy seeds and greens with balsamic dressing.",
+      "summary": "Sweet pear, crunchy seeds and greens with balsamic dressing.",
       "icon": "leaf.fill",
       "emoji": "🍐",
       "tone": "sky",
@@ -2876,7 +2876,7 @@
     {
       "id": "pb-banana-baked-oatmeal-cups",
       "title": "Peanut butter banana baked oatmeal cups",
-      "summary": "[PLACEHOLDER - needs expert review] Grab-and-go oatmeal cups to bake once and eat all week.",
+      "summary": "Grab-and-go oatmeal cups to bake once and eat all week.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🧁",
       "tone": "muted",
@@ -2923,7 +2923,7 @@
     {
       "id": "almond-butter-chia-pudding",
       "title": "Almond butter chia pudding",
-      "summary": "[PLACEHOLDER - needs expert review] Creamy, nutty chia pudding that sets overnight in the fridge.",
+      "summary": "Creamy, nutty chia pudding that sets overnight in the fridge.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🍮",
       "tone": "sky",
@@ -2964,7 +2964,7 @@
     {
       "id": "sweet-potato-spinach-hash",
       "title": "Sweet potato and spinach breakfast hash",
-      "summary": "[PLACEHOLDER - needs expert review] A one-pan hash with tender sweet potato, greens and eggs.",
+      "summary": "A one-pan hash with tender sweet potato, greens and eggs.",
       "icon": "frying.pan.fill",
       "emoji": "🍳",
       "tone": "accent",
@@ -3007,7 +3007,7 @@
     {
       "id": "apple-cinnamon-porridge",
       "title": "Warm apple cinnamon porridge",
-      "summary": "[PLACEHOLDER - needs expert review] Soft cooked apples and cinnamon stirred into creamy oats.",
+      "summary": "Soft cooked apples and cinnamon stirred into creamy oats.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🍎",
       "tone": "muted",
@@ -3045,7 +3045,7 @@
     {
       "id": "lemon-herb-quinoa-chickpea-salad",
       "title": "Lemon herb quinoa and chickpea salad",
-      "summary": "[PLACEHOLDER - needs expert review] High in protein and fiber, and it stays fresh for days without getting soggy.",
+      "summary": "High in protein and fiber, and it stays fresh for days without getting soggy.",
       "icon": "leaf.fill",
       "emoji": "🥗",
       "tone": "sky",
@@ -3082,7 +3082,7 @@
     {
       "id": "greek-chicken-salad-jars",
       "title": "Greek chicken salad jars",
-      "summary": "[PLACEHOLDER - needs expert review] Layered so the greens stay crisp until you shake it into a bowl.",
+      "summary": "Layered so the greens stay crisp until you shake it into a bowl.",
       "icon": "takeoutbag.and.cup.and.straw.fill",
       "emoji": "🫙",
       "tone": "accent",
@@ -3118,7 +3118,7 @@
     {
       "id": "chicken-salad-lettuce-wraps",
       "title": "Creamy chicken salad lettuce wraps",
-      "summary": "[PLACEHOLDER - needs expert review] A light, crunchy chicken salad you scoop into crisp lettuce leaves.",
+      "summary": "A light, crunchy chicken salad you scoop into crisp lettuce leaves.",
       "icon": "leaf.fill",
       "emoji": "🥬",
       "tone": "muted",
@@ -3155,7 +3155,7 @@
     {
       "id": "high-protein-bento-box",
       "title": "High-protein bento box",
-      "summary": "[PLACEHOLDER - needs expert review] No cooking, just packing: turkey, eggs, hummus, veggies and crunch.",
+      "summary": "No cooking, just packing: turkey, eggs, hummus, veggies and crunch.",
       "icon": "takeoutbag.and.cup.and.straw.fill",
       "emoji": "🍱",
       "tone": "sky",
@@ -3190,7 +3190,7 @@
     {
       "id": "cold-soba-peanut-edamame",
       "title": "Cold soba noodles with peanut sauce and edamame",
-      "summary": "[PLACEHOLDER - needs expert review] Plant-based protein and cold noodles that taste even better the next day.",
+      "summary": "Plant-based protein and cold noodles that taste even better the next day.",
       "icon": "takeoutbag.and.cup.and.straw.fill",
       "emoji": "🍜",
       "tone": "accent",
@@ -3227,7 +3227,7 @@
     {
       "id": "sheet-pan-chicken-fajita-bowls",
       "title": "Sheet-pan chicken fajita bowls",
-      "summary": "[PLACEHOLDER - needs expert review] Spiced chicken and peppers roasted on one pan, over rice or quinoa.",
+      "summary": "Spiced chicken and peppers roasted on one pan, over rice or quinoa.",
       "icon": "flame.fill",
       "emoji": "🌶️",
       "tone": "accent",
@@ -3263,7 +3263,7 @@
     {
       "id": "pesto-chicken-pasta-salad",
       "title": "Pesto chicken and veggie pasta salad",
-      "summary": "[PLACEHOLDER - needs expert review] A cold pasta salad that packs well and keeps you full.",
+      "summary": "A cold pasta salad that packs well and keeps you full.",
       "icon": "fork.knife",
       "emoji": "🍝",
       "tone": "muted",
@@ -3298,7 +3298,7 @@
     {
       "id": "sweet-potato-black-bean-quinoa-bowls",
       "title": "Sweet potato and black bean quinoa bowls",
-      "summary": "[PLACEHOLDER - needs expert review] Fiber-rich vegetarian bowls that hold up all week.",
+      "summary": "Fiber-rich vegetarian bowls that hold up all week.",
       "icon": "leaf.fill",
       "emoji": "🍠",
       "tone": "sky",
@@ -3333,7 +3333,7 @@
     {
       "id": "turkey-meatball-zoodle-box",
       "title": "Turkey meatball and zucchini noodle box",
-      "summary": "[PLACEHOLDER - needs expert review] Comfort food that reheats in two minutes.",
+      "summary": "Comfort food that reheats in two minutes.",
       "icon": "frying.pan.fill",
       "emoji": "🍝",
       "tone": "accent",

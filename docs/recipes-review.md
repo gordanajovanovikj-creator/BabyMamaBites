@@ -4,7 +4,7 @@
 >
 > This was an **automated check** against official US source texts (CDC, AAP/HealthyChildren.org,
 > FDA/EPA, with WHO for context). It is **not a professional sign-off**. Every recipe still has
-> `reviewStatus: "placeholder"` and the `[PLACEHOLDER - needs expert review]` marker, and still
+> `reviewStatus: "placeholder"` and still
 > needs review by a registered dietitian before it ships as reviewed.
 
 ## Sources used

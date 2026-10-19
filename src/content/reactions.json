@@ -3,7 +3,7 @@
   "region": "US",
   "concerning": {
     "title": "Call 911 now for signs of a severe reaction",
-    "intro": "[PLACEHOLDER - needs expert review] Severe allergic reactions (anaphylaxis) are emergencies. They can start within minutes or a few hours after eating.",
+    "intro": "Severe allergic reactions (anaphylaxis) are emergencies. They can start within minutes or a few hours after eating.",
     "signs": [
       "Trouble breathing, wheezing or coughing",
       "Swelling of the lips or tongue",
@@ -18,7 +18,7 @@
   },
   "mild": {
     "title": "Stop this food and call your pediatrician",
-    "intro": "[PLACEHOLDER - needs expert review] For milder signs such as a rash, diarrhea or vomiting, stop offering the new food and call your pediatrician before you try it again. Call 911 if any severe signs appear.",
+    "intro": "For milder signs such as a rash, diarrhea or vomiting, stop offering the new food and call your pediatrician before you try it again. Call 911 if any severe signs appear.",
     "signs": [],
     "action": "Your pediatrician can tell you whether and when to offer this food again.",
     "sources": ["aap-allergens", "aap-anaphylaxis"],

@@ -1,6 +1,6 @@
 /**
  * System prompt for the in-app chat assistant (server-side only).
- * [PLACEHOLDER - needs expert review] Wording about feeding, safety and mental health must be
+ * Wording about feeding, safety and mental health must be
  * reviewed by a pediatric dietitian, a pediatrician and a perinatal mental-health clinician
  * before launch. Keep it stable (no dates or per-user data) so it can be prompt-cached.
  */

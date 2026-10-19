@@ -3,6 +3,7 @@ import { join } from 'path';
 
 import type { Insight } from '@/content/insights';
 import { insights as bundled } from '@/content/insights';
+import { PLACEHOLDER_MARKER } from '@/content/schemas';
 
 import { insightBlocks, pickDailyInsights } from './insights';
 
@@ -72,11 +73,11 @@ describe('pickDailyInsights', () => {
 });
 
 describe('bundled insights', () => {
-  it('have unique ids and visible placeholder markers', () => {
+  it('have unique ids and no review markers in the text', () => {
     const ids = bundled.map((i) => i.id);
     expect(new Set(ids).size).toBe(ids.length);
     for (const i of bundled.filter((x) => x.reviewStatus === 'placeholder')) {
-      expect(i.body[0]).toContain('[PLACEHOLDER - needs expert review]');
+      expect(i.body[0]).not.toContain(PLACEHOLDER_MARKER);
     }
   });
 

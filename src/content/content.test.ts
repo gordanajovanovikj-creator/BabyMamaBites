@@ -20,10 +20,9 @@ describe('bundled content', () => {
     expect(new Set(ids).size).toBe(ids.length);
   });
 
-  it('marks unreviewed text visibly so it cannot ship by accident', () => {
+  it('keeps review markers out of the text', () => {
     for (const block of disclaimers) {
-      const hasMarker = block.body.includes(PLACEHOLDER_MARKER);
-      expect(hasMarker).toBe(block.reviewStatus === 'placeholder');
+      expect(block.body.includes(PLACEHOLDER_MARKER)).toBe(false);
     }
   });
 
@@ -42,7 +41,7 @@ describe('bundled content', () => {
       'emergency',
     ]);
     for (const block of [...medicalDisclaimer, articleDisclaimerNote]) {
-      expect(block.body.includes(PLACEHOLDER_MARKER)).toBe(block.reviewStatus === 'placeholder');
+      expect(block.body.includes(PLACEHOLDER_MARKER)).toBe(false);
     }
     expect(articleDisclaimerNote.body).toMatch(/911/);
     expect(chokingDisclaimer.body).toMatch(/911/);
@@ -52,7 +51,7 @@ describe('bundled content', () => {
     for (const id of ['terms', 'privacy']) {
       const doc = getLegalDocument(id);
       expect(doc).toBeDefined();
-      expect(doc!.intro.includes(PLACEHOLDER_MARKER)).toBe(doc!.reviewStatus === 'placeholder');
+      expect(doc!.intro.includes(PLACEHOLDER_MARKER)).toBe(false);
     }
   });
 });

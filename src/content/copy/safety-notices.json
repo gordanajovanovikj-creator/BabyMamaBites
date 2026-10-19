@@ -4,91 +4,91 @@
     {
       "id": "onboarding",
       "title": "Medical and nutritional disclaimer",
-      "body": "[PLACEHOLDER - needs expert review] MamaBabyBites is an informational app designed for educational purposes only. The content, recipes, articles and suggestions in this app are not a substitute for professional medical advice, diagnosis or treatment. Always seek the advice of your pediatrician, OB-GYN, family doctor or other qualified health provider with any questions about a medical condition, your baby's development or changes to your family's diet. Never ignore professional medical advice or delay seeking it because of something you read or tried in MamaBabyBites.",
+      "body": "MamaBabyBites is an informational app designed for educational purposes only. The content, recipes, articles and suggestions in this app are not a substitute for professional medical advice, diagnosis or treatment. Always seek the advice of your pediatrician, OB-GYN, family doctor or other qualified health provider with any questions about a medical condition, your baby's development or changes to your family's diet. Never ignore professional medical advice or delay seeking it because of something you read or tried in MamaBabyBites.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "feeding-safety",
       "title": "Feeding safety",
-      "body": "[PLACEHOLDER - needs expert review] This recipe is general inspiration, not a prescription. Every baby develops at their own pace. Always stay with your baby while they eat, test the temperature before serving, make sure the texture and size suit your baby's chewing and swallowing skills, and talk to your pediatrician before introducing major allergens.",
+      "body": "This recipe is general inspiration, not a prescription. Every baby develops at their own pace. Always stay with your baby while they eat, test the temperature before serving, make sure the texture and size suit your baby's chewing and swallowing skills, and talk to your pediatrician before introducing major allergens.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "age-guidelines",
       "title": "Ages are a guide",
-      "body": "[PLACEHOLDER - needs expert review] Ages like 6, 7 or 9 months are general guidelines, not deadlines. Every baby gets there at their own pace. Before starting solids, look for signs of readiness, such as sitting up with little support and good head control, and talk to your pediatrician about your baby's needs.",
+      "body": "Ages like 6, 7 or 9 months are general guidelines, not deadlines. Every baby gets there at their own pace. Before starting solids, look for signs of readiness, such as sitting up with little support and good head control, and talk to your pediatrician about your baby's needs.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "food-safety",
       "title": "Safety and allergen reminder",
-      "body": "[PLACEHOLDER - needs expert review] Serve foods in shapes, sizes and textures that suit your baby's age and chewing skills, such as thin slices, mashed or pureed, rather than whole round pieces. When offering a common allergen, watch your baby closely for signs of a reaction, and ask your pediatrician about timing and how often to offer it.",
+      "body": "Serve foods in shapes, sizes and textures that suit your baby's age and chewing skills, such as thin slices, mashed or pureed, rather than whole round pieces. When offering a common allergen, watch your baby closely for signs of a reaction, and ask your pediatrician about timing and how often to offer it.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "family-nutrition",
       "title": "For general family meals",
-      "body": "[PLACEHOLDER - needs expert review] These recipes and articles are general meal inspiration. They aren't tailored to medical conditions, food allergies or special diets. Always check ingredient labels for allergens before serving.",
+      "body": "These recipes and articles are general meal inspiration. They aren't tailored to medical conditions, food allergies or special diets. Always check ingredient labels for allergens before serving.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "maternal-health",
       "title": "Caring for you",
-      "body": "[PLACEHOLDER - needs expert review] Articles and self-care tips about postpartum recovery and well-being are for general information and support. They aren't therapy or medical treatment. If you have signs of postpartum depression or anxiety, or physical problems after birth, reach out to your doctor, midwife or a licensed mental health professional right away. In a crisis, call or text 988, or call 911.",
+      "body": "Articles and self-care tips about postpartum recovery and well-being are for general information and support. They aren't therapy or medical treatment. If you have signs of postpartum depression or anxiety, or physical problems after birth, reach out to your doctor, midwife or a licensed mental health professional right away. In a crisis, call or text 988, or call 911.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "allergy-safety",
       "title": "Allergy safety",
-      "body": "[PLACEHOLDER - needs expert review] Food allergies can be severe and life-threatening. This article shares general US pediatric guidance for education; it doesn't replace medical advice or allergy testing. If your baby has severe eczema, a known food allergy or a family history of allergies, talk to your pediatrician or an allergist before offering major allergens. For signs of a severe reaction, like swelling of the lips or tongue, trouble breathing or hives all over, give epinephrine if it has been prescribed and call 911.",
+      "body": "Food allergies can be severe and life-threatening. This article shares general US pediatric guidance for education; it doesn't replace medical advice or allergy testing. If your baby has severe eczema, a known food allergy or a family history of allergies, talk to your pediatrician or an allergist before offering major allergens. For signs of a severe reaction, like swelling of the lips or tongue, trouble breathing or hives all over, give epinephrine if it has been prescribed and call 911.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "choking-emergency",
       "title": "Emergency",
-      "body": "[PLACEHOLDER - needs expert review] If your baby is choking (silent, turning blue, can't breathe, cough or cry), call 911 right away and start back blows and chest thrusts.",
+      "body": "If your baby is choking (silent, turning blue, can't breathe, cough or cry), call 911 right away and start back blows and chest thrusts.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "dental-care",
       "title": "Dental care note",
-      "body": "[PLACEHOLDER - needs expert review] This guide shares general tips based on pediatric dental guidance. For advice about your baby's teeth, fluoride or when to book the first dental visit, ask a pediatric dentist or your pediatrician.",
+      "body": "This guide shares general tips based on pediatric dental guidance. For advice about your baby's teeth, fluoride or when to book the first dental visit, ask a pediatric dentist or your pediatrician.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "feeding-behavior",
       "title": "Every child is different",
-      "body": "[PLACEHOLDER - needs expert review] Every child's relationship with food develops in its own way. These are supportive ideas, not clinical solutions. If your child strongly refuses food, is losing weight or has trouble swallowing, talk to your pediatrician or a pediatric feeding specialist.",
+      "body": "Every child's relationship with food develops in its own way. These are supportive ideas, not clinical solutions. If your child strongly refuses food, is losing weight or has trouble swallowing, talk to your pediatrician or a pediatric feeding specialist.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "milk-juice",
       "title": "About drinks",
-      "body": "[PLACEHOLDER - needs expert review] When to offer drinks like cow's milk and juice depends on your baby's age and development. Check with your pediatrician before offering cow's milk as a main drink or any juice, as every child's needs are different.",
+      "body": "When to offer drinks like cow's milk and juice depends on your baby's age and development. Check with your pediatrician before offering cow's milk as a main drink or any juice, as every child's needs are different.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "development",
       "title": "At your baby's own pace",
-      "body": "[PLACEHOLDER - needs expert review] Every baby builds chewing skills and iron stores at their own rate. If you're worried about your baby's iron, signs of anemia, or ongoing trouble chewing or swallowing, talk to your pediatrician or a pediatric feeding or speech therapist.",
+      "body": "Every baby builds chewing skills and iron stores at their own rate. If you're worried about your baby's iron, signs of anemia, or ongoing trouble chewing or swallowing, talk to your pediatrician or a pediatric feeding or speech therapist.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     },
     {
       "id": "our-guidance",
       "title": "Where our guidance comes from",
-      "body": "[PLACEHOLDER - needs expert review] Our feeding timelines and safety tips are summarized from public health recommendations, mainly the American Academy of Pediatrics (AAP and HealthyChildren.org), the CDC, the FDA and the USDA Dietary Guidelines, with the World Health Organization (WHO) for global context. Each article links to its sources. We share general information; we don't give individual medical advice.",
+      "body": "Our feeding timelines and safety tips are summarized from public health recommendations, mainly the American Academy of Pediatrics (AAP and HealthyChildren.org), the CDC, the FDA and the USDA Dietary Guidelines, with the World Health Organization (WHO) for global context. Each article links to its sources. We share general information; we don't give individual medical advice.",
       "reviewStatus": "placeholder",
       "reviewer": "legal"
     }

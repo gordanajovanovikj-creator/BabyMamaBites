@@ -143,9 +143,9 @@ describe('solids plan content', () => {
     expect(text).not.toContain('glass of milk');
   });
 
-  it('marks drafts visibly', () => {
+  it('keeps review markers out of the text', () => {
     for (const w of planWeeks.filter((x) => x.reviewStatus === 'placeholder')) {
-      expect(w.focus[0].startsWith('[PLACEHOLDER - needs expert review]')).toBe(true);
+      expect(w.focus[0].includes(PLACEHOLDER_MARKER)).toBe(false);
     }
   });
 
@@ -185,10 +185,10 @@ describe('reaction advice', () => {
     expect(reactionAdvice.mild.title.toLowerCase()).toContain('pediatrician');
   });
 
-  it('is marked as a draft until reviewed', () => {
+  it('keeps review markers out of the text', () => {
     for (const advice of [reactionAdvice.concerning, reactionAdvice.mild]) {
       if (advice.reviewStatus === 'placeholder') {
-        expect(advice.intro.startsWith(PLACEHOLDER_MARKER)).toBe(true);
+        expect(advice.intro.includes(PLACEHOLDER_MARKER)).toBe(false);
       }
     }
   });

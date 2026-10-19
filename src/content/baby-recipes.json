@@ -52,7 +52,7 @@
     {
       "id": "baby-oat-cereal",
       "title": "Iron-fortified oat cereal",
-      "summary": "[PLACEHOLDER - needs expert review] A smooth, iron-rich first food ready in two minutes.",
+      "summary": "A smooth, iron-rich first food ready in two minutes.",
       "icon": "drop.fill",
       "emoji": "🥣",
       "tone": "accent",
@@ -88,7 +88,7 @@
     {
       "id": "baby-sweet-potato-puree",
       "title": "Sweet potato puree",
-      "summary": "[PLACEHOLDER - needs expert review] Naturally sweet and silky; freezes in handy cubes.",
+      "summary": "Naturally sweet and silky; freezes in handy cubes.",
       "icon": "leaf.fill",
       "emoji": "🍠",
       "tone": "muted",
@@ -122,7 +122,7 @@
     {
       "id": "baby-chicken-puree",
       "title": "Smooth chicken puree",
-      "summary": "[PLACEHOLDER - needs expert review] An easy way to offer iron and zinc from the very start.",
+      "summary": "An easy way to offer iron and zinc from the very start.",
       "icon": "fork.knife",
       "emoji": "🍗",
       "tone": "sky",
@@ -159,7 +159,7 @@
     {
       "id": "baby-pear-puree",
       "title": "Ripe pear puree",
-      "summary": "[PLACEHOLDER - needs expert review] A gentle, sweet first fruit.",
+      "summary": "A gentle, sweet first fruit.",
       "icon": "leaf.fill",
       "emoji": "🍐",
       "tone": "accent",
@@ -192,7 +192,7 @@
     {
       "id": "baby-avocado-pear-mash",
       "title": "Smooth avocado and pear mash",
-      "summary": "[PLACEHOLDER - needs expert review] Creamy avocado with naturally sweet pear, blended silky smooth.",
+      "summary": "Creamy avocado with naturally sweet pear, blended silky smooth.",
       "icon": "leaf.fill",
       "emoji": "🥑",
       "tone": "sky",
@@ -231,7 +231,7 @@
     {
       "id": "baby-sweet-potato-apple-mash",
       "title": "Roasted sweet potato and apple mash",
-      "summary": "[PLACEHOLDER - needs expert review] Roasting brings out the natural sweetness of sweet potato and apple.",
+      "summary": "Roasting brings out the natural sweetness of sweet potato and apple.",
       "icon": "drop.fill",
       "emoji": "🍠",
       "tone": "accent",
@@ -270,7 +270,7 @@
     {
       "id": "baby-squash-chicken-puree",
       "title": "Butternut squash and chicken puree",
-      "summary": "[PLACEHOLDER - needs expert review] Tender squash and chicken, blended velvety smooth, for iron and protein.",
+      "summary": "Tender squash and chicken, blended velvety smooth, for iron and protein.",
       "icon": "fork.knife",
       "emoji": "🎃",
       "tone": "sky",
@@ -310,7 +310,7 @@
     {
       "id": "baby-apple-cinnamon-oatmeal",
       "title": "Creamy apple-cinnamon baby oatmeal",
-      "summary": "[PLACEHOLDER - needs expert review] Iron-fortified oatmeal with smooth applesauce and a tiny pinch of cinnamon.",
+      "summary": "Iron-fortified oatmeal with smooth applesauce and a tiny pinch of cinnamon.",
       "icon": "drop.fill",
       "emoji": "🍎",
       "tone": "accent",
@@ -349,7 +349,7 @@
     {
       "id": "baby-avocado-puree",
       "title": "Smooth avocado puree",
-      "summary": "[PLACEHOLDER - needs expert review] Creamy, no-cook avocado, full of healthy fats.",
+      "summary": "Creamy, no-cook avocado, full of healthy fats.",
       "icon": "leaf.fill",
       "emoji": "🥑",
       "tone": "sky",
@@ -380,7 +380,7 @@
     {
       "id": "baby-carrot-puree",
       "title": "Steamed carrot puree",
-      "summary": "[PLACEHOLDER - needs expert review] A smooth, naturally sweet first vegetable.",
+      "summary": "A smooth, naturally sweet first vegetable.",
       "icon": "carrot.fill",
       "emoji": "🥕",
       "tone": "accent",
@@ -410,7 +410,7 @@
     {
       "id": "baby-banana-mash",
       "title": "Smooth banana mash",
-      "summary": "[PLACEHOLDER - needs expert review] No cooking needed: ripe banana mashed until smooth.",
+      "summary": "No cooking needed: ripe banana mashed until smooth.",
       "icon": "drop.fill",
       "emoji": "🍌",
       "tone": "accent",
@@ -442,7 +442,7 @@
     {
       "id": "baby-apple-puree",
       "title": "Steamed apple puree",
-      "summary": "[PLACEHOLDER - needs expert review] Sweet apple, steamed soft and blended smooth.",
+      "summary": "Sweet apple, steamed soft and blended smooth.",
       "icon": "drop.fill",
       "emoji": "🍎",
       "tone": "accent",
@@ -472,7 +472,7 @@
     {
       "id": "baby-squash-puree",
       "title": "Steamed butternut squash puree",
-      "summary": "[PLACEHOLDER - needs expert review] Velvety squash, rich in vitamins A and C.",
+      "summary": "Velvety squash, rich in vitamins A and C.",
       "icon": "drop.fill",
       "emoji": "🎃",
       "tone": "accent",
@@ -504,7 +504,7 @@
     {
       "id": "baby-pumpkin-puree",
       "title": "Steamed pumpkin puree",
-      "summary": "[PLACEHOLDER - needs expert review] Smooth, comforting pumpkin, fresh or from a can.",
+      "summary": "Smooth, comforting pumpkin, fresh or from a can.",
       "icon": "drop.fill",
       "emoji": "🎃",
       "tone": "accent",
@@ -536,7 +536,7 @@
     {
       "id": "baby-zucchini-puree",
       "title": "Steamed zucchini puree",
-      "summary": "[PLACEHOLDER - needs expert review] A very mild first green vegetable.",
+      "summary": "A very mild first green vegetable.",
       "icon": "leaf.fill",
       "emoji": "🥒",
       "tone": "sky",
@@ -569,7 +569,7 @@
     {
       "id": "baby-homemade-oatmeal",
       "title": "Homemade oatmeal puree",
-      "summary": "[PLACEHOLDER - needs expert review] Finely ground oats cooked into a smooth, creamy first grain.",
+      "summary": "Finely ground oats cooked into a smooth, creamy first grain.",
       "icon": "drop.fill",
       "emoji": "🥣",
       "tone": "accent",
@@ -607,7 +607,7 @@
     {
       "id": "baby-pear-banana-blend",
       "title": "Pear and banana blend",
-      "summary": "[PLACEHOLDER - needs expert review] Soft pear and banana, blended silky smooth.",
+      "summary": "Soft pear and banana, blended silky smooth.",
       "icon": "drop.fill",
       "emoji": "🍐",
       "tone": "sky",
@@ -639,7 +639,7 @@
     {
       "id": "baby-carrot-squash-puree",
       "title": "Carrot and butternut squash puree",
-      "summary": "[PLACEHOLDER - needs expert review] A bright orange blend of carrot and squash.",
+      "summary": "A bright orange blend of carrot and squash.",
       "icon": "carrot.fill",
       "emoji": "🥕",
       "tone": "accent",
@@ -676,7 +676,7 @@
     {
       "id": "baby-zucchini-sweet-potato-puree",
       "title": "Zucchini and sweet potato puree",
-      "summary": "[PLACEHOLDER - needs expert review] Mild zucchini balanced with naturally sweet sweet potato.",
+      "summary": "Mild zucchini balanced with naturally sweet sweet potato.",
       "icon": "leaf.fill",
       "emoji": "🍠",
       "tone": "sky",
@@ -709,7 +709,7 @@
     {
       "id": "baby-avocado-banana-mash",
       "title": "Avocado and banana mash",
-      "summary": "[PLACEHOLDER - needs expert review] No cooking, just a fork and two ripe fruits.",
+      "summary": "No cooking, just a fork and two ripe fruits.",
       "icon": "leaf.fill",
       "emoji": "🥑",
       "tone": "sky",
@@ -741,7 +741,7 @@
     {
       "id": "baby-lentil-carrot-mash",
       "title": "Red lentil and carrot mash",
-      "summary": "[PLACEHOLDER - needs expert review] Plant iron plus vitamin C in one pot.",
+      "summary": "Plant iron plus vitamin C in one pot.",
       "icon": "carrot.fill",
       "emoji": "🥕",
       "tone": "muted",
@@ -777,7 +777,7 @@
     {
       "id": "baby-egg-mash",
       "title": "Soft egg mash",
-      "summary": "[PLACEHOLDER - needs expert review] A simple way to introduce egg, fully cooked.",
+      "summary": "A simple way to introduce egg, fully cooked.",
       "icon": "sun.max.fill",
       "emoji": "🥚",
       "tone": "accent",
@@ -810,7 +810,7 @@
     {
       "id": "baby-peanut-oatmeal",
       "title": "Peanut oat cereal",
-      "summary": "[PLACEHOLDER - needs expert review] Thinned peanut butter stirred into cereal, the safe way to offer peanut.",
+      "summary": "Thinned peanut butter stirred into cereal, the safe way to offer peanut.",
       "icon": "drop.fill",
       "emoji": "🥜",
       "tone": "sky",
@@ -847,7 +847,7 @@
     {
       "id": "baby-yogurt-berry-swirl",
       "title": "Yogurt and blueberry swirl",
-      "summary": "[PLACEHOLDER - needs expert review] Plain whole-milk yogurt with a fruity swirl and no added sugar.",
+      "summary": "Plain whole-milk yogurt with a fruity swirl and no added sugar.",
       "icon": "drop.fill",
       "emoji": "🫐",
       "tone": "muted",
@@ -882,7 +882,7 @@
     {
       "id": "baby-apple-pear-cinnamon",
       "title": "Steamed apple and pear with cinnamon",
-      "summary": "[PLACEHOLDER - needs expert review] Naturally sweet and gentle, with a tiny pinch of cinnamon.",
+      "summary": "Naturally sweet and gentle, with a tiny pinch of cinnamon.",
       "icon": "drop.fill",
       "emoji": "🍐",
       "tone": "accent",
@@ -917,7 +917,7 @@
     {
       "id": "baby-sweet-potato-carrot-mash",
       "title": "Sweet potato and carrot mash with olive oil",
-      "summary": "[PLACEHOLDER - needs expert review] A thick, creamy mash full of beta-carotene, with a little olive oil.",
+      "summary": "A thick, creamy mash full of beta-carotene, with a little olive oil.",
       "icon": "carrot.fill",
       "emoji": "🥕",
       "tone": "accent",
@@ -954,7 +954,7 @@
     {
       "id": "baby-oatmeal-blueberry",
       "title": "Oatmeal and blueberry porridge",
-      "summary": "[PLACEHOLDER - needs expert review] Soft oats with warm mashed blueberries.",
+      "summary": "Soft oats with warm mashed blueberries.",
       "icon": "drop.fill",
       "emoji": "🫐",
       "tone": "sky",
@@ -993,7 +993,7 @@
     {
       "id": "baby-zucchini-potato-mash",
       "title": "Zucchini and potato mash",
-      "summary": "[PLACEHOLDER - needs expert review] A soft, mild first green vegetable, mashed with potato.",
+      "summary": "A soft, mild first green vegetable, mashed with potato.",
       "icon": "leaf.fill",
       "emoji": "🥒",
       "tone": "sky",
@@ -1027,7 +1027,7 @@
     {
       "id": "baby-squash-apple-puree",
       "title": "Butternut squash and apple puree",
-      "summary": "[PLACEHOLDER - needs expert review] Squash and sweet apple, steamed and blended smooth or mashed.",
+      "summary": "Squash and sweet apple, steamed and blended smooth or mashed.",
       "icon": "drop.fill",
       "emoji": "🎃",
       "tone": "accent",
@@ -1060,7 +1060,7 @@
     {
       "id": "baby-broccoli-potato-mash",
       "title": "Steamed broccoli and potato mash",
-      "summary": "[PLACEHOLDER - needs expert review] A gentle introduction to green vegetables, mashed until creamy.",
+      "summary": "A gentle introduction to green vegetables, mashed until creamy.",
       "icon": "leaf.fill",
       "emoji": "🥦",
       "tone": "sky",
@@ -1097,7 +1097,7 @@
     {
       "id": "baby-pumpkin-oatmeal",
       "title": "Creamy pumpkin and cinnamon oatmeal",
-      "summary": "[PLACEHOLDER - needs expert review] Soft oats with pumpkin and a tiny pinch of cinnamon.",
+      "summary": "Soft oats with pumpkin and a tiny pinch of cinnamon.",
       "icon": "drop.fill",
       "emoji": "🎃",
       "tone": "accent",
@@ -1135,7 +1135,7 @@
     {
       "id": "baby-pear-chia-mash",
       "title": "Ripe pear and chia mash",
-      "summary": "[PLACEHOLDER - needs expert review] Soft pear with a little soaked chia for healthy fats.",
+      "summary": "Soft pear with a little soaked chia for healthy fats.",
       "icon": "drop.fill",
       "emoji": "🍐",
       "tone": "sky",
@@ -1168,7 +1168,7 @@
     {
       "id": "baby-mango-yogurt",
       "title": "Mango and Greek yogurt bowl",
-      "summary": "[PLACEHOLDER - needs expert review] Creamy yogurt swirled with smooth mango.",
+      "summary": "Creamy yogurt swirled with smooth mango.",
       "icon": "drop.fill",
       "emoji": "🥭",
       "tone": "accent",
@@ -1203,7 +1203,7 @@
     {
       "id": "baby-banana-oatmeal",
       "title": "Mashed banana and oatmeal",
-      "summary": "[PLACEHOLDER - needs expert review] Soft oats sweetened only with ripe banana.",
+      "summary": "Soft oats sweetened only with ripe banana.",
       "icon": "drop.fill",
       "emoji": "🍌",
       "tone": "accent",
@@ -1239,7 +1239,7 @@
     {
       "id": "baby-zucchini-white-bean-mash",
       "title": "Zucchini and white bean mash",
-      "summary": "[PLACEHOLDER - needs expert review] Creamy white beans and soft zucchini for plant protein and fiber.",
+      "summary": "Creamy white beans and soft zucchini for plant protein and fiber.",
       "icon": "leaf.fill",
       "emoji": "🫘",
       "tone": "sky",
@@ -1276,7 +1276,7 @@
     {
       "id": "baby-apple-spinach-puree",
       "title": "Steamed apple and spinach puree",
-      "summary": "[PLACEHOLDER - needs expert review] Spinach blended with sweet apple into a smooth green puree.",
+      "summary": "Spinach blended with sweet apple into a smooth green puree.",
       "icon": "leaf.fill",
       "emoji": "🍏",
       "tone": "sky",
@@ -1312,7 +1312,7 @@
     {
       "id": "baby-sweet-potato-peach-mash",
       "title": "Sweet potato and peach mash",
-      "summary": "[PLACEHOLDER - needs expert review] Sweet potato and ripe peach, mashed together until smooth.",
+      "summary": "Sweet potato and ripe peach, mashed together until smooth.",
       "icon": "drop.fill",
       "emoji": "🍑",
       "tone": "accent",
@@ -1347,7 +1347,7 @@
     {
       "id": "baby-salmon-sweet-potato",
       "title": "Salmon and sweet potato mash",
-      "summary": "[PLACEHOLDER - needs expert review] Flaked salmon folded into a lumpy mash.",
+      "summary": "Flaked salmon folded into a lumpy mash.",
       "icon": "fish.fill",
       "emoji": "🐟",
       "tone": "sky",
@@ -1380,7 +1380,7 @@
     {
       "id": "baby-soft-veg-fingers",
       "title": "Soft veggie fingers",
-      "summary": "[PLACEHOLDER - needs expert review] Steamed carrot and zucchini sticks for little hands.",
+      "summary": "Steamed carrot and zucchini sticks for little hands.",
       "icon": "carrot.fill",
       "emoji": "🥒",
       "tone": "muted",
@@ -1413,7 +1413,7 @@
     {
       "id": "baby-banana-oat-pancakes",
       "title": "Banana oat pancakes",
-      "summary": "[PLACEHOLDER - needs expert review] Three ingredients, cut into soft strips.",
+      "summary": "Three ingredients, cut into soft strips.",
       "icon": "frying.pan.fill",
       "emoji": "🥞",
       "tone": "accent",
@@ -1446,7 +1446,7 @@
     {
       "id": "baby-lentil-pasta",
       "title": "Tiny pasta with lentil tomato sauce",
-      "summary": "[PLACEHOLDER - needs expert review] Soft pasta in a smooth, no-salt-added sauce.",
+      "summary": "Soft pasta in a smooth, no-salt-added sauce.",
       "icon": "fork.knife",
       "emoji": "🍝",
       "tone": "sky",
@@ -1484,7 +1484,7 @@
     {
       "id": "baby-salmon-potato-mash",
       "title": "Flaked salmon and cream cheese mash",
-      "summary": "[PLACEHOLDER - needs expert review] Soft salmon folded into creamy potato, with gentle chunks to explore.",
+      "summary": "Soft salmon folded into creamy potato, with gentle chunks to explore.",
       "icon": "fork.knife",
       "emoji": "🐟",
       "tone": "sky",
@@ -1521,7 +1521,7 @@
     {
       "id": "baby-carrot-zucchini-fries",
       "title": "Steamed carrot and zucchini \"fries\" with yogurt dip",
-      "summary": "[PLACEHOLDER - needs expert review] Soft veggie sticks for self-feeding, with a creamy yogurt dip.",
+      "summary": "Soft veggie sticks for self-feeding, with a creamy yogurt dip.",
       "icon": "carrot.fill",
       "emoji": "🥕",
       "tone": "accent",
@@ -1560,7 +1560,7 @@
     {
       "id": "baby-broccoli-quinoa-bites",
       "title": "Cheesy broccoli and quinoa bites",
-      "summary": "[PLACEHOLDER - needs expert review] Soft mini muffins with quinoa, broccoli, cheese and egg.",
+      "summary": "Soft mini muffins with quinoa, broccoli, cheese and egg.",
       "icon": "leaf.fill",
       "emoji": "🥦",
       "tone": "sky",
@@ -1599,7 +1599,7 @@
     {
       "id": "baby-avocado-egg-soldiers",
       "title": "Avocado toast soldiers with egg",
-      "summary": "[PLACEHOLDER - needs expert review] Toast strips spread with avocado, served with soft-cooked egg.",
+      "summary": "Toast strips spread with avocado, served with soft-cooked egg.",
       "icon": "drop.fill",
       "emoji": "🥑",
       "tone": "accent",
@@ -1634,7 +1634,7 @@
     {
       "id": "baby-squash-chicken-risotto",
       "title": "Creamy butternut squash and chicken risotto",
-      "summary": "[PLACEHOLDER - needs expert review] A soft, chunky spoon meal with rice, squash and chicken.",
+      "summary": "A soft, chunky spoon meal with rice, squash and chicken.",
       "icon": "fork.knife",
       "emoji": "🎃",
       "tone": "accent",
@@ -1672,7 +1672,7 @@
     {
       "id": "baby-sweet-potato-bean-quesadilla",
       "title": "Sweet potato and black bean quesadilla wedges",
-      "summary": "[PLACEHOLDER - needs expert review] Soft tortilla wedges filled with sweet potato, beans and melted cheese.",
+      "summary": "Soft tortilla wedges filled with sweet potato, beans and melted cheese.",
       "icon": "fork.knife",
       "emoji": "🌮",
       "tone": "sky",
@@ -1712,7 +1712,7 @@
     {
       "id": "baby-berry-baked-oatmeal",
       "title": "Berry and chia baked oatmeal squares",
-      "summary": "[PLACEHOLDER - needs expert review] Soft baked oatmeal squares with banana and blueberry.",
+      "summary": "Soft baked oatmeal squares with banana and blueberry.",
       "icon": "drop.fill",
       "emoji": "🫐",
       "tone": "accent",
@@ -1752,7 +1752,7 @@
     {
       "id": "baby-lentil-cottage-pie",
       "title": "Lentil and vegetable cottage pie",
-      "summary": "[PLACEHOLDER - needs expert review] Soft lentils and vegetables under a mashed potato topping.",
+      "summary": "Soft lentils and vegetables under a mashed potato topping.",
       "icon": "carrot.fill",
       "emoji": "🥧",
       "tone": "muted",
@@ -1789,7 +1789,7 @@
     {
       "id": "baby-apple-oatmeal-fingers",
       "title": "Apple and cinnamon oatmeal fingers",
-      "summary": "[PLACEHOLDER - needs expert review] Thick, chilled oatmeal cut into soft fingers for little hands.",
+      "summary": "Thick, chilled oatmeal cut into soft fingers for little hands.",
       "icon": "drop.fill",
       "emoji": "🍎",
       "tone": "accent",
@@ -1827,7 +1827,7 @@
     {
       "id": "baby-apple-zucchini-muffins",
       "title": "Apple and zucchini mini muffins",
-      "summary": "[PLACEHOLDER - needs expert review] Soft mini muffins with oats, applesauce and grated zucchini.",
+      "summary": "Soft mini muffins with oats, applesauce and grated zucchini.",
       "icon": "drop.fill",
       "emoji": "🧁",
       "tone": "sky",
@@ -1867,7 +1867,7 @@
     {
       "id": "baby-spinach-ricotta-shells",
       "title": "Creamy spinach and ricotta pasta shells",
-      "summary": "[PLACEHOLDER - needs expert review] Soft pasta shells in a creamy ricotta and spinach coating.",
+      "summary": "Soft pasta shells in a creamy ricotta and spinach coating.",
       "icon": "fork.knife",
       "emoji": "🍝",
       "tone": "sky",
@@ -1902,7 +1902,7 @@
     {
       "id": "baby-chicken-sweet-potato-bites",
       "title": "Chicken and sweet potato polpette",
-      "summary": "[PLACEHOLDER - needs expert review] Soft, finger-shaped chicken and sweet potato bites.",
+      "summary": "Soft, finger-shaped chicken and sweet potato bites.",
       "icon": "fork.knife",
       "emoji": "🍗",
       "tone": "muted",
@@ -1942,7 +1942,7 @@
     {
       "id": "baby-cauliflower-bean-mash",
       "title": "Cheesy cauliflower and white bean mash",
-      "summary": "[PLACEHOLDER - needs expert review] Soft cauliflower and beans mashed with a little melted cheese.",
+      "summary": "Soft cauliflower and beans mashed with a little melted cheese.",
       "icon": "leaf.fill",
       "emoji": "🫘",
       "tone": "accent",
@@ -1980,7 +1980,7 @@
     {
       "id": "baby-pear-cottage-cheese",
       "title": "Warm cinnamon pear and cottage cheese",
-      "summary": "[PLACEHOLDER - needs expert review] Soft, warm pear folded into creamy cottage cheese.",
+      "summary": "Soft, warm pear folded into creamy cottage cheese.",
       "icon": "drop.fill",
       "emoji": "🍐",
       "tone": "sky",
@@ -2018,7 +2018,7 @@
     {
       "id": "baby-zucchini-egg-strips",
       "title": "Zucchini and egg breakfast strips",
-      "summary": "[PLACEHOLDER - needs expert review] A thin, soft omelet sliced into strips for self-feeding.",
+      "summary": "A thin, soft omelet sliced into strips for self-feeding.",
       "icon": "drop.fill",
       "emoji": "🍳",
       "tone": "accent",
@@ -2057,7 +2057,7 @@
     {
       "id": "toddler-turkey-meatballs",
       "title": "Mini turkey and zucchini meatballs",
-      "summary": "[PLACEHOLDER - needs expert review] Soft baked meatballs for the whole family.",
+      "summary": "Soft baked meatballs for the whole family.",
       "icon": "fork.knife",
       "emoji": "🧆",
       "tone": "deep",
@@ -2096,7 +2096,7 @@
     {
       "id": "toddler-cheesy-broccoli-rice",
       "title": "Cheesy broccoli rice",
-      "summary": "[PLACEHOLDER - needs expert review] Soft rice, tender broccoli and melted cheese.",
+      "summary": "Soft rice, tender broccoli and melted cheese.",
       "icon": "leaf.fill",
       "emoji": "🥦",
       "tone": "muted",
@@ -2133,7 +2133,7 @@
     {
       "id": "toddler-bean-quesadilla",
       "title": "Bean and cheese quesadilla strips",
-      "summary": "[PLACEHOLDER - needs expert review] Crispy outside, soft inside, cut into easy strips.",
+      "summary": "Crispy outside, soft inside, cut into easy strips.",
       "icon": "flame.fill",
       "emoji": "🌮",
       "tone": "accent",
@@ -2168,7 +2168,7 @@
     {
       "id": "toddler-overnight-oats",
       "title": "Toddler overnight oats",
-      "summary": "[PLACEHOLDER - needs expert review] Oats soaked in whole milk with mashed fruit.",
+      "summary": "Oats soaked in whole milk with mashed fruit.",
       "icon": "sun.max.fill",
       "emoji": "🥛",
       "tone": "sky",
@@ -2204,7 +2204,7 @@
     {
       "id": "toddler-french-toast-sticks",
       "title": "Banana berry French toast sticks",
-      "summary": "[PLACEHOLDER - needs expert review] Soft, cinnamon French toast strips for dipping, with banana and berries.",
+      "summary": "Soft, cinnamon French toast strips for dipping, with banana and berries.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🍞",
       "tone": "accent",
@@ -2245,7 +2245,7 @@
     {
       "id": "toddler-apple-oat-pancakes",
       "title": "Apple cinnamon oat pancakes",
-      "summary": "[PLACEHOLDER - needs expert review] Soft blender pancakes with oats, banana, apple and egg.",
+      "summary": "Soft blender pancakes with oats, banana, apple and egg.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🥞",
       "tone": "accent",
@@ -2286,7 +2286,7 @@
     {
       "id": "toddler-spinach-cheese-omelets",
       "title": "Spinach and cheese mini omelets",
-      "summary": "[PLACEHOLDER - needs expert review] Baked mini omelets with spinach and cheese, easy to grab.",
+      "summary": "Baked mini omelets with spinach and cheese, easy to grab.",
       "icon": "leaf.fill",
       "emoji": "🧀",
       "tone": "sky",
@@ -2325,7 +2325,7 @@
     {
       "id": "toddler-nut-butter-rice-cake",
       "title": "Nut butter and banana rice cake",
-      "summary": "[PLACEHOLDER - needs expert review] A thin layer of nut butter and soft banana on a plain rice cake.",
+      "summary": "A thin layer of nut butter and soft banana on a plain rice cake.",
       "icon": "carrot.fill",
       "emoji": "🍌",
       "tone": "muted",
@@ -2364,7 +2364,7 @@
     {
       "id": "toddler-chicken-avocado-pinwheels",
       "title": "Avocado and chicken pinwheels",
-      "summary": "[PLACEHOLDER - needs expert review] Soft tortilla roll-ups with avocado and shredded chicken.",
+      "summary": "Soft tortilla roll-ups with avocado and shredded chicken.",
       "icon": "fork.knife",
       "emoji": "🌯",
       "tone": "sky",
@@ -2401,7 +2401,7 @@
     {
       "id": "toddler-turkey-veggie-quesadilla",
       "title": "Cheesy turkey and veggie quesadilla wedges",
-      "summary": "[PLACEHOLDER - needs expert review] A warm, melty quesadilla with turkey and soft vegetables.",
+      "summary": "A warm, melty quesadilla with turkey and soft vegetables.",
       "icon": "fork.knife",
       "emoji": "🫓",
       "tone": "accent",
@@ -2439,7 +2439,7 @@
     {
       "id": "toddler-tuna-cucumber-bites",
       "title": "Tuna salad on cucumber",
-      "summary": "[PLACEHOLDER - needs expert review] Creamy tuna salad served on thin, peeled cucumber slices.",
+      "summary": "Creamy tuna salad served on thin, peeled cucumber slices.",
       "icon": "fork.knife",
       "emoji": "🥒",
       "tone": "sky",
@@ -2476,7 +2476,7 @@
     {
       "id": "toddler-chickpea-salad-sandwich",
       "title": "Chickpea salad sandwich squares",
-      "summary": "[PLACEHOLDER - needs expert review] Mashed chickpea salad on soft bread, cut into small squares.",
+      "summary": "Mashed chickpea salad on soft bread, cut into small squares.",
       "icon": "fork.knife",
       "emoji": "🥪",
       "tone": "muted",
@@ -2514,7 +2514,7 @@
     {
       "id": "toddler-beef-veggie-meatballs",
       "title": "Beef and veggie meatballs",
-      "summary": "[PLACEHOLDER - needs expert review] Tender beef meatballs with hidden zucchini, for iron and zinc.",
+      "summary": "Tender beef meatballs with hidden zucchini, for iron and zinc.",
       "icon": "fork.knife",
       "emoji": "🍖",
       "tone": "muted",
@@ -2554,7 +2554,7 @@
     {
       "id": "toddler-sweet-potato-mac",
       "title": "Creamy sweet potato macaroni shells",
-      "summary": "[PLACEHOLDER - needs expert review] Pasta shells in a creamy sweet potato and parmesan sauce.",
+      "summary": "Pasta shells in a creamy sweet potato and parmesan sauce.",
       "icon": "fork.knife",
       "emoji": "🍝",
       "tone": "accent",
@@ -2589,7 +2589,7 @@
     {
       "id": "toddler-salmon-rice-patties",
       "title": "Salmon and brown rice patties",
-      "summary": "[PLACEHOLDER - needs expert review] Soft little fish cakes with salmon and brown rice.",
+      "summary": "Soft little fish cakes with salmon and brown rice.",
       "icon": "fork.knife",
       "emoji": "🐟",
       "tone": "sky",
@@ -2629,7 +2629,7 @@
     {
       "id": "toddler-chicken-coconut-curry",
       "title": "Mild chicken and vegetable coconut curry",
-      "summary": "[PLACEHOLDER - needs expert review] A gentle, creamy curry with chicken, carrots and peas, served with soft rice.",
+      "summary": "A gentle, creamy curry with chicken, carrots and peas, served with soft rice.",
       "icon": "flame.fill",
       "emoji": "🍛",
       "tone": "accent",
@@ -2668,7 +2668,7 @@
     {
       "id": "toddler-yogurt-berry-bark",
       "title": "Frozen berry yogurt bark",
-      "summary": "[PLACEHOLDER - needs expert review] Plain yogurt and chopped berries, frozen and broken into pieces.",
+      "summary": "Plain yogurt and chopped berries, frozen and broken into pieces.",
       "icon": "snowflake",
       "emoji": "🍓",
       "tone": "accent",
@@ -2706,7 +2706,7 @@
     {
       "id": "toddler-baked-apple-slices",
       "title": "Soft baked cinnamon apple slices",
-      "summary": "[PLACEHOLDER - needs expert review] Thin apple slices baked until soft and tender, with cinnamon.",
+      "summary": "Thin apple slices baked until soft and tender, with cinnamon.",
       "icon": "carrot.fill",
       "emoji": "🍎",
       "tone": "muted",
@@ -2739,7 +2739,7 @@
     {
       "id": "toddler-pb-banana-oat-bites",
       "title": "Peanut butter banana oat bites",
-      "summary": "[PLACEHOLDER - needs expert review] Soft, flattened no-bake oat bites with peanut butter and banana.",
+      "summary": "Soft, flattened no-bake oat bites with peanut butter and banana.",
       "icon": "carrot.fill",
       "emoji": "🥜",
       "tone": "muted",
@@ -2779,7 +2779,7 @@
     {
       "id": "toddler-broccoli-potato-tots",
       "title": "Cheesy broccoli and potato tots",
-      "summary": "[PLACEHOLDER - needs expert review] Baked veggie tots with potato, broccoli and cheese.",
+      "summary": "Baked veggie tots with potato, broccoli and cheese.",
       "icon": "leaf.fill",
       "emoji": "🥦",
       "tone": "sky",
@@ -2818,7 +2818,7 @@
     {
       "id": "baby-one-pot-egg-scramble",
       "title": "Golden spinach and egg scramble",
-      "summary": "[PLACEHOLDER - needs expert review] One pan of eggs and spinach: with feta on sourdough toast for you, as soft egg strips with avocado or a smooth mash for baby.",
+      "summary": "One pan of eggs and spinach: with feta on sourdough toast for you, as soft egg strips with avocado or a smooth mash for baby.",
       "icon": "frying.pan.fill",
       "emoji": "🍳",
       "tone": "accent",
@@ -2860,7 +2860,7 @@
     {
       "id": "baby-one-pot-berry-oatmeal",
       "title": "Cinnamon berry and chia oatmeal",
-      "summary": "[PLACEHOLDER - needs expert review] One pot of cinnamon oats: with walnuts and maple for you, with mashed blueberries for baby.",
+      "summary": "One pot of cinnamon oats: with walnuts and maple for you, with mashed blueberries for baby.",
       "icon": "cup.and.saucer.fill",
       "emoji": "🫐",
       "tone": "sky",
@@ -2902,7 +2902,7 @@
     {
       "id": "baby-one-pot-banana-pancakes",
       "title": "Fluffy banana and ricotta pancakes",
-      "summary": "[PLACEHOLDER - needs expert review] One batter of banana and ricotta pancakes: with berries and almonds for you, as strips or soft soaked bits for baby.",
+      "summary": "One batter of banana and ricotta pancakes: with berries and almonds for you, as strips or soft soaked bits for baby.",
       "icon": "circle.grid.2x2.fill",
       "emoji": "🥞",
       "tone": "accent",
@@ -2944,7 +2944,7 @@
     {
       "id": "baby-two-textures-salmon",
       "title": "Mediterranean salmon, sweet potato and broccoli",
-      "summary": "[PLACEHOLDER - needs expert review] One tray of salmon, sweet potato and broccoli: with garlic-lemon broccoli for you, as soft wedges or a flaked salmon mash for baby.",
+      "summary": "One tray of salmon, sweet potato and broccoli: with garlic-lemon broccoli for you, as soft wedges or a flaked salmon mash for baby.",
       "icon": "fish.fill",
       "emoji": "🐟",
       "tone": "sky",
@@ -2985,7 +2985,7 @@
     {
       "id": "baby-one-pot-avocado-bean-salad",
       "title": "Creamy avocado and cannellini bean salad",
-      "summary": "[PLACEHOLDER - needs expert review] One bowl of white beans and avocado: a fresh salad with feta for you, as hemp-rolled wedges or a creamy mash for baby.",
+      "summary": "One bowl of white beans and avocado: a fresh salad with feta for you, as hemp-rolled wedges or a creamy mash for baby.",
       "icon": "leaf.fill",
       "emoji": "🥑",
       "tone": "muted",
@@ -3024,7 +3024,7 @@
     {
       "id": "baby-one-pot-lentil-dahl",
       "title": "Golden lentil and carrot dahl",
-      "summary": "[PLACEHOLDER - needs expert review] One pot of coconut lentil dahl: with naan and cilantro for you, as a soft spoonable mash for baby.",
+      "summary": "One pot of coconut lentil dahl: with naan and cilantro for you, as a soft spoonable mash for baby.",
       "icon": "drop.fill",
       "emoji": "🍛",
       "tone": "accent",
@@ -3068,7 +3068,7 @@
     {
       "id": "baby-one-pot-chicken-noodle-soup",
       "title": "Gentle chicken and veggie noodle soup",
-      "summary": "[PLACEHOLDER - needs expert review] One pot of chicken noodle soup: with parsley, salt and pepper for you, as soft finger foods or a chunky blended soup for baby.",
+      "summary": "One pot of chicken noodle soup: with parsley, salt and pepper for you, as soft finger foods or a chunky blended soup for baby.",
       "icon": "takeoutbag.and.cup.and.straw.fill",
       "emoji": "🍜",
       "tone": "sky",
@@ -3110,7 +3110,7 @@
     {
       "id": "baby-two-textures-chili",
       "title": "Deconstructed turkey and lentil chili",
-      "summary": "[PLACEHOLDER - needs expert review] One pot of turkey and lentil chili: spiced and topped for you, mildly seasoned as crumbles or a fork mash for baby.",
+      "summary": "One pot of turkey and lentil chili: spiced and topped for you, mildly seasoned as crumbles or a fork mash for baby.",
       "icon": "flame.fill",
       "emoji": "🍲",
       "tone": "accent",
@@ -3154,7 +3154,7 @@
     {
       "id": "baby-one-pot-sheet-pan-chicken",
       "title": "Sheet-pan roasted chicken, zucchini and squash",
-      "summary": "[PLACEHOLDER - needs expert review] One tray of chicken thighs and summer squash: herby and crisp-skinned for you, as soft spears and shredded chicken for baby.",
+      "summary": "One tray of chicken thighs and summer squash: herby and crisp-skinned for you, as soft spears and shredded chicken for baby.",
       "icon": "oven.fill",
       "emoji": "🍗",
       "tone": "muted",
@@ -3197,7 +3197,7 @@
     {
       "id": "baby-one-pot-beef-stew",
       "title": "Slow-cooked beef and root vegetable stew",
-      "summary": "[PLACEHOLDER - needs expert review] One pot of slow-braised beef with carrots, potatoes and parsnips: seasoned at the table for you, shredded or mashed for baby.",
+      "summary": "One pot of slow-braised beef with carrots, potatoes and parsnips: seasoned at the table for you, shredded or mashed for baby.",
       "icon": "flame.fill",
       "emoji": "🥘",
       "tone": "deep",
@@ -3237,7 +3237,7 @@
     {
       "id": "baby-one-pot-squash-ricotta-pasta",
       "title": "Creamy butternut squash and ricotta pasta",
-      "summary": "[PLACEHOLDER - needs expert review] One pot of squash and ricotta pasta: with parmesan and pepper for you, as sauce-coated rigatoni or a dipping puree for baby.",
+      "summary": "One pot of squash and ricotta pasta: with parmesan and pepper for you, as sauce-coated rigatoni or a dipping puree for baby.",
       "icon": "fork.knife",
       "emoji": "🍝",
       "tone": "accent",
@@ -3279,7 +3279,7 @@
     {
       "id": "baby-one-pot-white-fish",
       "title": "Baked white fish with cauliflower and potato",
-      "summary": "[PLACEHOLDER - needs expert review] One bake of cod with cauliflower and potato: lemon butter and parmesan mash for you, as soft flakes and florets or a smooth mash for baby.",
+      "summary": "One bake of cod with cauliflower and potato: lemon butter and parmesan mash for you, as soft flakes and florets or a smooth mash for baby.",
       "icon": "fish.fill",
       "emoji": "🐟",
       "tone": "surface",
@@ -3320,7 +3320,7 @@
     {
       "id": "baby-one-pot-coconut-curry",
       "title": "Mild coconut chicken curry",
-      "summary": "[PLACEHOLDER - needs expert review] One pot of mild coconut curry: over brown rice for you, as sauce-coated chicken strips or a golden mash for baby.",
+      "summary": "One pot of mild coconut curry: over brown rice for you, as sauce-coated chicken strips or a golden mash for baby.",
       "icon": "drop.fill",
       "emoji": "🍛",
       "tone": "accent",
@@ -3365,7 +3365,7 @@
     {
       "id": "baby-one-pot-beef-meatballs",
       "title": "Italian beef and zucchini meatballs",
-      "summary": "[PLACEHOLDER - needs expert review] One batch of baked beef and zucchini meatballs: in marinara over spaghetti for you, as soft strips or a mash for baby.",
+      "summary": "One batch of baked beef and zucchini meatballs: in marinara over spaghetti for you, as soft strips or a mash for baby.",
       "icon": "circle.grid.3x3.fill",
       "emoji": "🍝",
       "tone": "deep",
@@ -3408,7 +3408,7 @@
     {
       "id": "baby-one-pot-tofu-noodles",
       "title": "Tofu, broccoli and sesame noodle bowl",
-      "summary": "[PLACEHOLDER - needs expert review] One bowl of tofu, broccoli and noodles: in a sesame-peanut sauce with chili for you, as soft strips or a mash for baby.",
+      "summary": "One bowl of tofu, broccoli and noodles: in a sesame-peanut sauce with chili for you, as soft strips or a mash for baby.",
       "icon": "leaf.fill",
       "emoji": "🥢",
       "tone": "muted",

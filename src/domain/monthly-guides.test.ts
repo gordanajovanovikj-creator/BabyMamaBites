@@ -1,5 +1,5 @@
 import { guideSources, monthlyGuides } from '@/content/monthly-guides';
-import { splitReviewMarker } from '@/content/schemas';
+import { PLACEHOLDER_MARKER, splitReviewMarker } from '@/content/schemas';
 
 import { adjacentGuides, guideForMonths } from './monthly-guides';
 
@@ -41,11 +41,11 @@ describe('adjacentGuides', () => {
 });
 
 describe('bundled monthly guides', () => {
-  it('mark every unreviewed section visibly', () => {
+  it('keep review markers out of every section', () => {
     for (const g of monthlyGuides.filter((x) => x.reviewStatus === 'placeholder')) {
-      expect(g.intro).toContain('[PLACEHOLDER - needs expert review]');
+      expect(g.intro).not.toContain(PLACEHOLDER_MARKER);
       for (const s of g.sections) {
-        expect(s.paragraphs[0].startsWith('[PLACEHOLDER - needs expert review]')).toBe(true);
+        expect(s.paragraphs[0].includes(PLACEHOLDER_MARKER)).toBe(false);
       }
     }
   });

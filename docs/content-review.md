@@ -17,11 +17,8 @@ All health-adjacent text lives in `src/content/` and ships marked as a draft.
 
 1. A qualified reviewer (named in each section's `reviewer` field) checks every section
    against its sources and your target region, and edits the text as needed.
-2. Remove `[PLACEHOLDER - needs expert review]` from the start of the intro and every
-   section's first paragraph.
-3. Set the guide's `reviewStatus` to `"reviewed"`.
-4. Run `npm run check`. Tests fail if a guide is marked reviewed but still has markers,
-   or if markers are missing on a draft.
+2. Set the guide's `reviewStatus` to `"reviewed"`.
+3. Run `npm run check`.
 
 ## Rules
 

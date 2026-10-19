@@ -5,13 +5,13 @@
 
 ## Month 1 (0 to 1 months old)
 
-_[PLACEHOLDER - needs expert review] The first weeks are about feeding, rest and getting to know each other. Here's what official guidance says to expect._
+_The first weeks are about feeding, rest and getting to know each other. Here's what official guidance says to expect._
 
 ### Feeding your baby
 
 Reviewer: **IBCLC lactation consultant**
 
-[PLACEHOLDER - needs expert review] Breast milk or infant formula is all your baby needs now. No water, juice or solid food.
+Breast milk or infant formula is all your baby needs now. No water, juice or solid food.
 
 Breastfeeding: in the first days your breasts make colostrum, a small amount of thick, yellowish milk full of nutrients and immune support. Thinner, whiter milk usually comes in about 3 days after birth (sometimes later for first-time moms). Expect to feed 8 to 12 times in 24 hours, as often as every 1 to 3 hours, including at night.
 
@@ -30,7 +30,7 @@ Sources: [CDC: Newborn Breastfeeding Basics](https://www.cdc.gov/infant-toddler-
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Breast milk usually doesn't provide all the vitamin D a baby needs. Babies who are breastfed, or who get less than about 32 oz of formula a day, need 400 IU of vitamin D every day from shortly after birth, usually as over-the-counter drops.
+Breast milk usually doesn't provide all the vitamin D a baby needs. Babies who are breastfed, or who get less than about 32 oz of formula a day, need 400 IU of vitamin D every day from shortly after birth, usually as over-the-counter drops.
 
 Babies who drink 32 oz or more of formula a day don't need extra vitamin D, because formula is fortified.
 
@@ -42,7 +42,7 @@ Sources: [CDC: Vitamin D](https://www.cdc.gov/infant-toddler-nutrition/vitamins-
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] You don't need to avoid specific foods while breastfeeding. A healthy, varied diet is what's recommended: vegetables and fruit, whole grains, protein foods, and dairy or fortified alternatives.
+You don't need to avoid specific foods while breastfeeding. A healthy, varied diet is what's recommended: vegetables and fruit, whole grains, protein foods, and dairy or fortified alternatives.
 
 Breastfeeding uses extra energy. Well-nourished breastfeeding moms generally need about 330 to 400 extra calories a day, though this varies with your body, activity and how much you breastfeed.
 
@@ -58,7 +58,7 @@ Sources: [CDC: Maternal Diet and Breastfeeding](https://www.cdc.gov/breastfeedin
 
 Reviewer: **perinatal mental health clinician**
 
-[PLACEHOLDER - needs expert review] Feeling worried, sad and tired in the first days after birth is very common. These "baby blues" usually pass on their own within a few days.
+Feeling worried, sad and tired in the first days after birth is very common. These "baby blues" usually pass on their own within a few days.
 
 Postpartum depression is different: the feelings are stronger and last longer. It's common (about 1 in 8 new moms report symptoms), it's not your fault, and it's treatable.
 
@@ -72,7 +72,7 @@ Sources: [CDC: Symptoms of Depression Among Women](https://www.cdc.gov/reproduct
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Call your baby's pediatrician right away if you notice any of these, or if anything worries you.
+Call your baby's pediatrician right away if you notice any of these, or if anything worries you.
 
 - Your baby breastfeeds fewer than 8 times in 24 hours most days, or you can't see or hear swallowing.
 - Your baby is still losing weight after day 5, or has fewer than 6 wet and 3 dirty diapers a day by day 5.
@@ -87,13 +87,13 @@ Sources: [CDC: Newborn Breastfeeding Basics](https://www.cdc.gov/infant-toddler-
 
 ## Month 2 (1 to 2 months old)
 
-_[PLACEHOLDER - needs expert review] Feeds start to settle into more of a rhythm, though every baby is different._
+_Feeds start to settle into more of a rhythm, though every baby is different._
 
 ### Feeding your baby
 
 Reviewer: **IBCLC lactation consultant**
 
-[PLACEHOLDER - needs expert review] Breast milk or formula is still everything your baby needs.
+Breast milk or formula is still everything your baby needs.
 
 As your baby's tummy grows, they'll take more at each feed and the gaps between feeds get longer. Most breastfed babies feed every 2 to 4 hours; some cluster-feed (feed very often for a while) or have a longer 4 to 5 hour stretch. Most formula-fed babies feed every 3 to 4 hours.
 
@@ -110,7 +110,7 @@ Sources: [CDC: How Much and How Often to Breastfeed](https://www.cdc.gov/infant-
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Breast milk usually doesn't provide all the vitamin D a baby needs. Babies who are breastfed, or who get less than about 32 oz of formula a day, need 400 IU of vitamin D every day from shortly after birth, usually as over-the-counter drops.
+Breast milk usually doesn't provide all the vitamin D a baby needs. Babies who are breastfed, or who get less than about 32 oz of formula a day, need 400 IU of vitamin D every day from shortly after birth, usually as over-the-counter drops.
 
 Babies who drink 32 oz or more of formula a day don't need extra vitamin D, because formula is fortified.
 
@@ -122,7 +122,7 @@ Sources: [CDC: Vitamin D](https://www.cdc.gov/infant-toddler-nutrition/vitamins-
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] While breastfeeding, your needs for some nutrients go up, including iodine (290 micrograms a day), choline (550 milligrams a day), folate and vitamins A, B12 and D. Dairy, eggs, meat, low-mercury seafood, beans, dark leafy greens and orange vegetables all help.
+While breastfeeding, your needs for some nutrients go up, including iodine (290 micrograms a day), choline (550 milligrams a day), folate and vitamins A, B12 and D. Dairy, eggs, meat, low-mercury seafood, beans, dark leafy greens and orange vegetables all help.
 
 Fish gives you and your baby protein, omega-3s, iodine, iron and more. The FDA advises 2 to 3 servings (8 to 12 oz) a week from its "Best Choices" list while breastfeeding, or 1 serving from the "Good Choices" list.
 
@@ -137,7 +137,7 @@ Sources: [CDC: Maternal Diet and Breastfeeding](https://www.cdc.gov/breastfeedin
 
 Reviewer: **perinatal mental health clinician**
 
-[PLACEHOLDER - needs expert review] Postpartum depression can start any time in the first year, not just in the early weeks. It's common, it's not your fault, and most people get better with treatment.
+Postpartum depression can start any time in the first year, not just in the early weeks. It's common, it's not your fault, and most people get better with treatment.
 
 - Signs to notice: a lasting sad, anxious or "empty" mood, crying more than usual, feeling angry, losing interest in things you enjoy, low energy, feeling distant from your baby, or doubting you can care for them.
 - The first step is to talk to your doctor, who can refer you to a mental health professional.
@@ -149,7 +149,7 @@ Sources: [CDC: Symptoms of Depression Among Women](https://www.cdc.gov/reproduct
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Call your baby's pediatrician if anything worries you about feeding, growth or how your baby or you are doing.
+Call your baby's pediatrician if anything worries you about feeding, growth or how your baby or you are doing.
 
 - You're worried about how much or how often your baby is eating, or about their growth.
 - Your baby was born early: ask about iron and when to start solid foods.
@@ -161,13 +161,13 @@ Sources: [CDC: How Much and How Often To Feed](https://www.cdc.gov/infant-toddle
 
 ## Month 3 (2 to 3 months old)
 
-_[PLACEHOLDER - needs expert review] Your baby is more alert and feeds may get quicker. Milk is still everything they need._
+_Your baby is more alert and feeds may get quicker. Milk is still everything they need._
 
 ### Feeding your baby
 
 Reviewer: **IBCLC lactation consultant**
 
-[PLACEHOLDER - needs expert review] Breast milk or formula is still everything your baby needs.
+Breast milk or formula is still everything your baby needs.
 
 As your baby's tummy grows, they'll take more at each feed and the gaps between feeds get longer. Most breastfed babies feed every 2 to 4 hours; some cluster-feed (feed very often for a while) or have a longer 4 to 5 hour stretch. Most formula-fed babies feed every 3 to 4 hours.
 
@@ -184,7 +184,7 @@ Sources: [CDC: How Much and How Often to Breastfeed](https://www.cdc.gov/infant-
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] If you eat few or no animal foods, your breast milk may be low in vitamin B12, which babies need for healthy nerve development. Iron from plants is also absorbed less easily than iron from meat.
+If you eat few or no animal foods, your breast milk may be low in vitamin B12, which babies need for healthy nerve development. Iron from plants is also absorbed less easily than iron from meat.
 
 Talk to your doctor or a registered dietitian about supplements. Nutrients often reviewed include vitamin B12, vitamin D, iron, iodine, calcium, zinc, choline and omega-3 fats (EPA/DHA).
 
@@ -197,7 +197,7 @@ Sources: [CDC: Maternal Diet and Breastfeeding](https://www.cdc.gov/breastfeedin
 
 Reviewer: **perinatal mental health clinician**
 
-[PLACEHOLDER - needs expert review] Postpartum depression can start any time in the first year, not just in the early weeks. It's common, it's not your fault, and most people get better with treatment.
+Postpartum depression can start any time in the first year, not just in the early weeks. It's common, it's not your fault, and most people get better with treatment.
 
 - Signs to notice: a lasting sad, anxious or "empty" mood, crying more than usual, feeling angry, losing interest in things you enjoy, low energy, feeling distant from your baby, or doubting you can care for them.
 - The first step is to talk to your doctor, who can refer you to a mental health professional.
@@ -209,7 +209,7 @@ Sources: [CDC: Symptoms of Depression Among Women](https://www.cdc.gov/reproduct
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Call your baby's pediatrician if anything worries you about feeding, growth or how your baby or you are doing.
+Call your baby's pediatrician if anything worries you about feeding, growth or how your baby or you are doing.
 
 - You're worried about how much or how often your baby is eating, or about their growth.
 - Your baby was born early: ask about iron and when to start solid foods.
@@ -221,13 +221,13 @@ Sources: [CDC: How Much and How Often To Feed](https://www.cdc.gov/infant-toddle
 
 ## Month 4 (3 to 4 months old)
 
-_[PLACEHOLDER - needs expert review] Your baby is noticing everything around them, which can make feeds busier._
+_Your baby is noticing everything around them, which can make feeds busier._
 
 ### Feeding your baby
 
 Reviewer: **IBCLC lactation consultant**
 
-[PLACEHOLDER - needs expert review] Breast milk or formula is still your baby's only food and drink. Healthy babies don't need extra water.
+Breast milk or formula is still your baby's only food and drink. Healthy babies don't need extra water.
 
 Your baby may get more easily distracted during feeds as they notice the world. Feeding in a quiet, dim room can help.
 
@@ -242,7 +242,7 @@ Sources: [CDC: What to Expect While Breastfeeding](https://www.cdc.gov/infant-to
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Breast milk usually doesn't provide all the vitamin D a baby needs. Babies who are breastfed, or who get less than about 32 oz of formula a day, need 400 IU of vitamin D every day from shortly after birth, usually as over-the-counter drops.
+Breast milk usually doesn't provide all the vitamin D a baby needs. Babies who are breastfed, or who get less than about 32 oz of formula a day, need 400 IU of vitamin D every day from shortly after birth, usually as over-the-counter drops.
 
 Babies who drink 32 oz or more of formula a day don't need extra vitamin D, because formula is fortified.
 
@@ -254,7 +254,7 @@ Sources: [CDC: Vitamin D](https://www.cdc.gov/infant-toddler-nutrition/vitamins-
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] Small amounts of caffeine pass into breast milk. Up to about 300 mg a day (roughly 2 to 3 cups of coffee) is considered low to moderate and usually doesn't affect babies.
+Small amounts of caffeine pass into breast milk. Up to about 300 mg a day (roughly 2 to 3 cups of coffee) is considered low to moderate and usually doesn't affect babies.
 
 Very high intakes (around 10 cups of coffee a day) have been linked to babies who are fussy, jittery or sleep poorly. Newborns and premature babies clear caffeine more slowly, so you might choose to have less.
 
@@ -267,7 +267,7 @@ Sources: [CDC: Maternal Diet and Breastfeeding](https://www.cdc.gov/breastfeedin
 
 Reviewer: **perinatal mental health clinician**
 
-[PLACEHOLDER - needs expert review] Postpartum depression can start any time in the first year, not just in the early weeks. It's common, it's not your fault, and most people get better with treatment.
+Postpartum depression can start any time in the first year, not just in the early weeks. It's common, it's not your fault, and most people get better with treatment.
 
 - Signs to notice: a lasting sad, anxious or "empty" mood, crying more than usual, feeling angry, losing interest in things you enjoy, low energy, feeling distant from your baby, or doubting you can care for them.
 - The first step is to talk to your doctor, who can refer you to a mental health professional.
@@ -279,7 +279,7 @@ Sources: [CDC: Symptoms of Depression Among Women](https://www.cdc.gov/reproduct
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Call your baby's pediatrician if anything worries you about feeding, growth or how your baby or you are doing.
+Call your baby's pediatrician if anything worries you about feeding, growth or how your baby or you are doing.
 
 - You're worried about how much or how often your baby is eating, or about their growth.
 - Your baby was born early: ask about iron and when to start solid foods.
@@ -291,13 +291,13 @@ Sources: [CDC: How Much and How Often To Feed](https://www.cdc.gov/infant-toddle
 
 ## Month 5 (4 to 5 months old)
 
-_[PLACEHOLDER - needs expert review] Solids are getting closer, but there's no need to rush. Milk is still your baby's main food._
+_Solids are getting closer, but there's no need to rush. Milk is still your baby's main food._
 
 ### Feeding your baby
 
 Reviewer: **IBCLC lactation consultant**
 
-[PLACEHOLDER - needs expert review] Breast milk or formula is still your baby's only food and drink. Healthy babies don't need extra water.
+Breast milk or formula is still your baby's only food and drink. Healthy babies don't need extra water.
 
 Your baby may get more easily distracted during feeds as they notice the world. Feeding in a quiet, dim room can help.
 
@@ -312,7 +312,7 @@ Sources: [CDC: What to Expect While Breastfeeding](https://www.cdc.gov/infant-to
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] The AAP and the Dietary Guidelines for Americans recommend starting foods other than breast milk or formula at about 6 months. Starting before 4 months isn't recommended.
+The AAP and the Dietary Guidelines for Americans recommend starting foods other than breast milk or formula at about 6 months. Starting before 4 months isn't recommended.
 
 Until then, breast milk, formula or both give your baby the nutrition they need. Every baby develops at their own pace, so readiness matters more than the date.
 
@@ -324,7 +324,7 @@ Sources: [CDC: When, What, and How to Introduce Solid Foods](https://www.cdc.gov
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] While breastfeeding, your needs for some nutrients go up, including iodine (290 micrograms a day), choline (550 milligrams a day), folate and vitamins A, B12 and D. Dairy, eggs, meat, low-mercury seafood, beans, dark leafy greens and orange vegetables all help.
+While breastfeeding, your needs for some nutrients go up, including iodine (290 micrograms a day), choline (550 milligrams a day), folate and vitamins A, B12 and D. Dairy, eggs, meat, low-mercury seafood, beans, dark leafy greens and orange vegetables all help.
 
 Fish gives you and your baby protein, omega-3s, iodine, iron and more. The FDA advises 2 to 3 servings (8 to 12 oz) a week from its "Best Choices" list while breastfeeding, or 1 serving from the "Good Choices" list.
 
@@ -339,7 +339,7 @@ Sources: [CDC: Maternal Diet and Breastfeeding](https://www.cdc.gov/breastfeedin
 
 Reviewer: **perinatal mental health clinician**
 
-[PLACEHOLDER - needs expert review] Postpartum depression can start any time in the first year, not just in the early weeks. It's common, it's not your fault, and most people get better with treatment.
+Postpartum depression can start any time in the first year, not just in the early weeks. It's common, it's not your fault, and most people get better with treatment.
 
 - Signs to notice: a lasting sad, anxious or "empty" mood, crying more than usual, feeling angry, losing interest in things you enjoy, low energy, feeling distant from your baby, or doubting you can care for them.
 - The first step is to talk to your doctor, who can refer you to a mental health professional.
@@ -351,7 +351,7 @@ Sources: [CDC: Symptoms of Depression Among Women](https://www.cdc.gov/reproduct
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Call your baby's pediatrician if anything worries you about feeding, growth or how your baby or you are doing.
+Call your baby's pediatrician if anything worries you about feeding, growth or how your baby or you are doing.
 
 - You're worried about how much or how often your baby is eating, or about their growth.
 - Your baby was born early: ask about iron and when to start solid foods.
@@ -363,13 +363,13 @@ Sources: [CDC: How Much and How Often To Feed](https://www.cdc.gov/infant-toddle
 
 ## Month 6 (5 to 6 months old)
 
-_[PLACEHOLDER - needs expert review] Most babies start solid foods at about 6 months. This month is about spotting the signs and getting ready._
+_Most babies start solid foods at about 6 months. This month is about spotting the signs and getting ready._
 
 ### Signs your baby is ready for solids
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Look for these signs together, usually at about 6 months:
+Look for these signs together, usually at about 6 months:
 
 - Sits up alone or with support, with good head and neck control.
 - Opens their mouth when food comes their way, and watches you eat or reaches for your food.
@@ -382,7 +382,7 @@ Sources: [CDC: When, What, and How to Introduce Solid Foods](https://www.cdc.gov
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] The AAP and the Dietary Guidelines for Americans recommend starting foods other than breast milk or formula at about 6 months. Starting before 4 months isn't recommended.
+The AAP and the Dietary Guidelines for Americans recommend starting foods other than breast milk or formula at about 6 months. Starting before 4 months isn't recommended.
 
 Until then, breast milk, formula or both give your baby the nutrition they need. Every baby develops at their own pace, so readiness matters more than the date.
 
@@ -394,7 +394,7 @@ Sources: [CDC: When, What, and How to Introduce Solid Foods](https://www.cdc.gov
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] A little preparation now makes the first weeks of solids easier.
+A little preparation now makes the first weeks of solids easier.
 
 - A high chair or other safe seat, so your baby sits upright while eating.
 - Baby spoons, bibs and a bowl. Use a spoon for cereals and purees; never give cereal or other food from a bottle.
@@ -408,7 +408,7 @@ Sources: [CDC: Choking Hazards](https://www.cdc.gov/infant-toddler-nutrition/foo
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] You don't need to avoid specific foods while breastfeeding. A healthy, varied diet is what's recommended: vegetables and fruit, whole grains, protein foods, and dairy or fortified alternatives.
+You don't need to avoid specific foods while breastfeeding. A healthy, varied diet is what's recommended: vegetables and fruit, whole grains, protein foods, and dairy or fortified alternatives.
 
 Breastfeeding uses extra energy. Well-nourished breastfeeding moms generally need about 330 to 400 extra calories a day, though this varies with your body, activity and how much you breastfeed.
 
@@ -424,7 +424,7 @@ Sources: [CDC: Maternal Diet and Breastfeeding](https://www.cdc.gov/breastfeedin
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Call your baby's pediatrician if anything worries you about feeding, growth or how your baby or you are doing.
+Call your baby's pediatrician if anything worries you about feeding, growth or how your baby or you are doing.
 
 - You're worried about how much or how often your baby is eating, or about their growth.
 - Your baby was born early: ask about iron and when to start solid foods.
@@ -436,13 +436,13 @@ Sources: [CDC: How Much and How Often To Feed](https://www.cdc.gov/infant-toddle
 
 ## Month 7 (6 to 7 months old)
 
-_[PLACEHOLDER - needs expert review] Time for first tastes. Start small and go at your baby's pace; milk is still their main food._
+_Time for first tastes. Start small and go at your baby's pace; milk is still their main food._
 
 ### Starting solid foods
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Around now most babies are ready to start. At first, solids are practice: breast milk or formula is still the main source of nutrition from 6 to 12 months.
+Around now most babies are ready to start. At first, solids are practice: breast milk or formula is still the main source of nutrition from 6 to 12 months.
 
 Start small: half a spoonful to a teaspoon or two at first, building up to 1 or 2 tablespoons. Some parents give a little breast milk or formula first so their baby isn't frustrated.
 
@@ -460,7 +460,7 @@ Sources: [CDC: When, What, and How to Introduce Solid Foods](https://www.cdc.gov
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] At around 6 months, smooth purees, strained foods and very soft mashed foods are easiest. Thicker and lumpier foods come later, as your baby's skills grow.
+At around 6 months, smooth purees, strained foods and very soft mashed foods are easiest. Thicker and lumpier foods come later, as your baby's skills grow.
 
 Coughing, gagging or spitting up is normal while your baby gets used to new textures.
 
@@ -475,7 +475,7 @@ Sources: [CDC: Tastes and Textures](https://www.cdc.gov/infant-toddler-nutrition
 
 Reviewer: **pediatric allergist**
 
-[PLACEHOLDER - needs expert review] Holding back allergenic foods doesn't prevent allergies, and waiting may make them more likely. Once your baby has had a few first foods, you can introduce common allergens alongside other foods.
+Holding back allergenic foods doesn't prevent allergies, and waiting may make them more likely. Once your baby has had a few first foods, you can introduce common allergens alongside other foods.
 
 Start with a small taste of one new food at a time. If there's no reaction, you can slowly increase the amount, then keep it in your baby's diet regularly.
 
@@ -492,7 +492,7 @@ Sources: [AAP (HealthyChildren.org): When to Introduce Egg, Peanut Butter & Othe
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Breast milk or infant formula stays your baby's main drink for the whole first year.
+Breast milk or infant formula stays your baby's main drink for the whole first year.
 
 Once solids start, you can offer a little water in an open, sippy or straw cup: about 4 to 8 oz a day, and no more than 8 oz.
 
@@ -507,7 +507,7 @@ Sources: [CDC: Foods and Drinks to Encourage](https://www.cdc.gov/infant-toddler
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Breastfed babies' iron stores start to run low around 6 months, so iron-rich foods matter for every baby now: meat, poultry, fish, eggs, iron-fortified infant cereal, beans, lentils, tofu and dark leafy greens.
+Breastfed babies' iron stores start to run low around 6 months, so iron-rich foods matter for every baby now: meat, poultry, fish, eggs, iron-fortified infant cereal, beans, lentils, tofu and dark leafy greens.
 
 Iron from plant foods is absorbed less easily. Serving it with vitamin C foods such as oranges, berries, broccoli, tomatoes or sweet potatoes helps.
 
@@ -522,7 +522,7 @@ Sources: [CDC: Iron](https://www.cdc.gov/infant-toddler-nutrition/vitamins-miner
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
+Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
 
 - No honey before 12 months: it can cause infant botulism.
 - No added sugars or low- or no-calorie sweeteners, and avoid salty foods like processed meats and some canned and packaged foods.
@@ -538,7 +538,7 @@ Sources: [CDC: Foods and Drinks to Avoid or Limit](https://www.cdc.gov/infant-to
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] Now that your baby is eating, you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
+Now that your baby is eating, you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
 
 Eating together, when you can, helps your baby learn by watching you, and makes sure you eat too.
 
@@ -551,7 +551,7 @@ Sources: [AAP (HealthyChildren.org): When Can Babies Start Solid Foods?](https:/
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
+Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
 
 - Call 911 for signs of a severe reaction (anaphylaxis), especially if they appear suddenly: trouble breathing, wheezing or coughing; swelling of the lips or tongue; hives or pale or bluish skin; repeated vomiting; or, in babies, sudden drooling, inconsolable crying or unusual sleepiness. If your child has prescribed epinephrine, give it first.
 - Call 911 if your baby is choking and can't breathe, cry or make a sound, turns blue, or goes limp.
@@ -564,13 +564,13 @@ Sources: [AAP (HealthyChildren.org): Anaphylaxis in Infants & Children](https://
 
 ## Month 8 (7 to 8 months old)
 
-_[PLACEHOLDER - needs expert review] Your baby is moving toward more meals and more textures._
+_Your baby is moving toward more meals and more textures._
 
 ### Feeding your baby
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] By 7 or 8 months, many babies are eating foods from all the food groups: vegetables, fruits, meat and other proteins, dairy without added sugar like yogurt and cheese, and whole grains like infant cereal.
+By 7 or 8 months, many babies are eating foods from all the food groups: vegetables, fruits, meat and other proteins, dairy without added sugar like yogurt and cheese, and whole grains like infant cereal.
 
 Babies' tummies are small. Offering something to eat or drink every 2 to 3 hours works out to about 3 meals and 2 to 3 snacks a day as your baby eats more.
 
@@ -588,7 +588,7 @@ Sources: [CDC: When, What, and How to Introduce Solid Foods](https://www.cdc.gov
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] As your baby's skills grow, move from smooth purees to thicker, lumpier and mashed foods. Once your baby can sit up and bring things to their mouth, soft finger foods help them learn to feed themselves.
+As your baby's skills grow, move from smooth purees to thicker, lumpier and mashed foods. Once your baby can sit up and bring things to their mouth, soft finger foods help them learn to feed themselves.
 
 - Finger food ideas: small pieces of banana, scrambled egg, well-cooked pasta, finely chopped well-cooked chicken, cooked potatoes or peas, small pieces of bread, and soft-cooked vegetables.
 - Everything should be soft, easy to swallow and cut into small pieces.
@@ -599,7 +599,7 @@ Sources: [CDC: Tastes and Textures](https://www.cdc.gov/infant-toddler-nutrition
 
 Reviewer: **pediatric allergist**
 
-[PLACEHOLDER - needs expert review] Holding back allergenic foods doesn't prevent allergies, and waiting may make them more likely. Once your baby has had a few first foods, you can introduce common allergens alongside other foods.
+Holding back allergenic foods doesn't prevent allergies, and waiting may make them more likely. Once your baby has had a few first foods, you can introduce common allergens alongside other foods.
 
 Start with a small taste of one new food at a time. If there's no reaction, you can slowly increase the amount, then keep it in your baby's diet regularly.
 
@@ -616,7 +616,7 @@ Sources: [AAP (HealthyChildren.org): When to Introduce Egg, Peanut Butter & Othe
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Breastfed babies' iron stores start to run low around 6 months, so iron-rich foods matter for every baby now: meat, poultry, fish, eggs, iron-fortified infant cereal, beans, lentils, tofu and dark leafy greens.
+Breastfed babies' iron stores start to run low around 6 months, so iron-rich foods matter for every baby now: meat, poultry, fish, eggs, iron-fortified infant cereal, beans, lentils, tofu and dark leafy greens.
 
 Iron from plant foods is absorbed less easily. Serving it with vitamin C foods such as oranges, berries, broccoli, tomatoes or sweet potatoes helps.
 
@@ -631,7 +631,7 @@ Sources: [CDC: Iron](https://www.cdc.gov/infant-toddler-nutrition/vitamins-miner
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
+Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
 
 - No honey before 12 months: it can cause infant botulism.
 - No added sugars or low- or no-calorie sweeteners, and avoid salty foods like processed meats and some canned and packaged foods.
@@ -647,7 +647,7 @@ Sources: [CDC: Foods and Drinks to Avoid or Limit](https://www.cdc.gov/infant-to
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] As meals grow, you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
+As meals grow, you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
 
 Eating together, when you can, helps your baby learn by watching you, and makes sure you eat too.
 
@@ -660,7 +660,7 @@ Sources: [AAP (HealthyChildren.org): When Can Babies Start Solid Foods?](https:/
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
+Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
 
 - Call 911 for signs of a severe reaction (anaphylaxis), especially if they appear suddenly: trouble breathing, wheezing or coughing; swelling of the lips or tongue; hives or pale or bluish skin; repeated vomiting; or, in babies, sudden drooling, inconsolable crying or unusual sleepiness. If your child has prescribed epinephrine, give it first.
 - Call 911 if your baby is choking and can't breathe, cry or make a sound, turns blue, or goes limp.
@@ -673,13 +673,13 @@ Sources: [AAP (HealthyChildren.org): Anaphylaxis in Infants & Children](https://
 
 ## Month 9 (8 to 9 months old)
 
-_[PLACEHOLDER - needs expert review] Lots of new foods, more finger food and learning to use a cup._
+_Lots of new foods, more finger food and learning to use a cup._
 
 ### Feeding your baby
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Within a few months of starting solids, your baby's daily diet can include a variety of foods: breast milk or formula, meats, cereal, vegetables, fruits, eggs and fish.
+Within a few months of starting solids, your baby's daily diet can include a variety of foods: breast milk or formula, meats, cereal, vegetables, fruits, eggs and fish.
 
 Let your baby decide how much to eat. They don't need to finish the jar or the plate, and food shouldn't be used as a reward or punishment.
 
@@ -693,7 +693,7 @@ Sources: [AAP (HealthyChildren.org): When Can Babies Start Solid Foods?](https:/
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Mashed, lumpy and finely chopped foods are good now, with plenty of soft finger foods.
+Mashed, lumpy and finely chopped foods are good now, with plenty of soft finger foods.
 
 Around 9 months, babies can start learning to drink from a cup without a lid.
 
@@ -707,7 +707,7 @@ Sources: [CDC: Fingers, Spoons, Forks, and Cups](https://www.cdc.gov/infant-todd
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Breast milk or infant formula stays your baby's main drink for the whole first year.
+Breast milk or infant formula stays your baby's main drink for the whole first year.
 
 Once solids start, you can offer a little water in an open, sippy or straw cup: about 4 to 8 oz a day, and no more than 8 oz.
 
@@ -722,7 +722,7 @@ Sources: [CDC: Foods and Drinks to Encourage](https://www.cdc.gov/infant-toddler
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
+Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
 
 - No honey before 12 months: it can cause infant botulism.
 - No added sugars or low- or no-calorie sweeteners, and avoid salty foods like processed meats and some canned and packaged foods.
@@ -738,7 +738,7 @@ Sources: [CDC: Foods and Drinks to Avoid or Limit](https://www.cdc.gov/infant-to
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] With more family foods on the menu, you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
+With more family foods on the menu, you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
 
 Eating together, when you can, helps your baby learn by watching you, and makes sure you eat too.
 
@@ -751,7 +751,7 @@ Sources: [AAP (HealthyChildren.org): When Can Babies Start Solid Foods?](https:/
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
+Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
 
 - Call 911 for signs of a severe reaction (anaphylaxis), especially if they appear suddenly: trouble breathing, wheezing or coughing; swelling of the lips or tongue; hives or pale or bluish skin; repeated vomiting; or, in babies, sudden drooling, inconsolable crying or unusual sleepiness. If your child has prescribed epinephrine, give it first.
 - Call 911 if your baby is choking and can't breathe, cry or make a sound, turns blue, or goes limp.
@@ -764,13 +764,13 @@ Sources: [AAP (HealthyChildren.org): Anaphylaxis in Infants & Children](https://
 
 ## Month 10 (9 to 10 months old)
 
-_[PLACEHOLDER - needs expert review] Many babies are settling into a routine of meals and snacks alongside their milk._
+_Many babies are settling into a routine of meals and snacks alongside their milk._
 
 ### Feeding your baby
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Many babies are now settling into a routine of about 3 meals and 2 to 3 snacks a day, alongside breast milk or formula.
+Many babies are now settling into a routine of about 3 meals and 2 to 3 snacks a day, alongside breast milk or formula.
 
 Regular meal and snack times help. Try not to let your baby graze or sip all day long.
 
@@ -787,7 +787,7 @@ Sources: [CDC: How Much and How Often To Feed](https://www.cdc.gov/infant-toddle
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Your baby can begin eating finely chopped or ground foods as they're ready.
+Your baby can begin eating finely chopped or ground foods as they're ready.
 
 Between about 10 and 12 months, babies start using a spoon themselves. It's messy, and that's part of learning.
 
@@ -800,7 +800,7 @@ Sources: [CDC: Tastes and Textures](https://www.cdc.gov/infant-toddler-nutrition
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Breastfed babies' iron stores start to run low around 6 months, so iron-rich foods matter for every baby now: meat, poultry, fish, eggs, iron-fortified infant cereal, beans, lentils, tofu and dark leafy greens.
+Breastfed babies' iron stores start to run low around 6 months, so iron-rich foods matter for every baby now: meat, poultry, fish, eggs, iron-fortified infant cereal, beans, lentils, tofu and dark leafy greens.
 
 Iron from plant foods is absorbed less easily. Serving it with vitamin C foods such as oranges, berries, broccoli, tomatoes or sweet potatoes helps.
 
@@ -815,7 +815,7 @@ Sources: [CDC: Iron](https://www.cdc.gov/infant-toddler-nutrition/vitamins-miner
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
+Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
 
 - No honey before 12 months: it can cause infant botulism.
 - No added sugars or low- or no-calorie sweeteners, and avoid salty foods like processed meats and some canned and packaged foods.
@@ -831,7 +831,7 @@ Sources: [CDC: Foods and Drinks to Avoid or Limit](https://www.cdc.gov/infant-to
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] By now you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
+By now you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
 
 Eating together, when you can, helps your baby learn by watching you, and makes sure you eat too.
 
@@ -844,7 +844,7 @@ Sources: [AAP (HealthyChildren.org): When Can Babies Start Solid Foods?](https:/
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
+Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
 
 - Call 911 for signs of a severe reaction (anaphylaxis), especially if they appear suddenly: trouble breathing, wheezing or coughing; swelling of the lips or tongue; hives or pale or bluish skin; repeated vomiting; or, in babies, sudden drooling, inconsolable crying or unusual sleepiness. If your child has prescribed epinephrine, give it first.
 - Call 911 if your baby is choking and can't breathe, cry or make a sound, turns blue, or goes limp.
@@ -857,13 +857,13 @@ Sources: [AAP (HealthyChildren.org): Anaphylaxis in Infants & Children](https://
 
 ## Month 11 (10 to 11 months old)
 
-_[PLACEHOLDER - needs expert review] Meals are starting to look like family meals._
+_Meals are starting to look like family meals._
 
 ### Feeding your baby
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Meals can look more and more like family meals. Eating together regularly is good for your child's development and eating habits.
+Meals can look more and more like family meals. Eating together regularly is good for your child's development and eating habits.
 
 Limit processed foods made for adults, which are often high in salt.
 
@@ -877,7 +877,7 @@ Sources: [AAP (HealthyChildren.org): When Can Babies Start Solid Foods?](https:/
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Most babies can now manage chopped, soft family foods and a wider range of finger foods.
+Most babies can now manage chopped, soft family foods and a wider range of finger foods.
 
 - Cut food into pieces no larger than about 1/2 inch.
 - Your baby is getting more confident with a cup.
@@ -888,7 +888,7 @@ Sources: [AAP (HealthyChildren.org): Choking Prevention for Babies & Children](h
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Breast milk or infant formula stays your baby's main drink for the whole first year.
+Breast milk or infant formula stays your baby's main drink for the whole first year.
 
 Once solids start, you can offer a little water in an open, sippy or straw cup: about 4 to 8 oz a day, and no more than 8 oz.
 
@@ -903,7 +903,7 @@ Sources: [CDC: Foods and Drinks to Encourage](https://www.cdc.gov/infant-toddler
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
+Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
 
 - No honey before 12 months: it can cause infant botulism.
 - No added sugars or low- or no-calorie sweeteners, and avoid salty foods like processed meats and some canned and packaged foods.
@@ -919,7 +919,7 @@ Sources: [CDC: Foods and Drinks to Avoid or Limit](https://www.cdc.gov/infant-to
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] With family-style meals, you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
+With family-style meals, you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
 
 Eating together, when you can, helps your baby learn by watching you, and makes sure you eat too.
 
@@ -932,7 +932,7 @@ Sources: [AAP (HealthyChildren.org): When Can Babies Start Solid Foods?](https:/
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
+Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
 
 - Call 911 for signs of a severe reaction (anaphylaxis), especially if they appear suddenly: trouble breathing, wheezing or coughing; swelling of the lips or tongue; hives or pale or bluish skin; repeated vomiting; or, in babies, sudden drooling, inconsolable crying or unusual sleepiness. If your child has prescribed epinephrine, give it first.
 - Call 911 if your baby is choking and can't breathe, cry or make a sound, turns blue, or goes limp.
@@ -945,13 +945,13 @@ Sources: [AAP (HealthyChildren.org): Anaphylaxis in Infants & Children](https://
 
 ## Month 12 (11 to 12 months old)
 
-_[PLACEHOLDER - needs expert review] The first birthday is close. Here's what changes as your baby becomes a toddler._
+_The first birthday is close. Here's what changes as your baby becomes a toddler._
 
 ### Getting ready for the toddler months
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] By 12 months, most babies can feed themselves with their fingers and drink from a cup without a lid while you hold it.
+By 12 months, most babies can feed themselves with their fingers and drink from a cup without a lid while you hold it.
 
 At 12 months (not before), you can start offering pasteurized, plain whole cow's milk or an unsweetened dairy alternative fortified with calcium and vitamin D. Switching gradually helps, for example by replacing one formula feeding at a time.
 
@@ -967,7 +967,7 @@ Sources: [CDC: Fingers, Spoons, Forks, and Cups](https://www.cdc.gov/infant-todd
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Most babies can now manage chopped, soft family foods and a wider range of finger foods.
+Most babies can now manage chopped, soft family foods and a wider range of finger foods.
 
 - Cut food into pieces no larger than about 1/2 inch.
 - Your baby is getting more confident with a cup.
@@ -978,7 +978,7 @@ Sources: [AAP (HealthyChildren.org): Choking Prevention for Babies & Children](h
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Breastfed babies' iron stores start to run low around 6 months, so iron-rich foods matter for every baby now: meat, poultry, fish, eggs, iron-fortified infant cereal, beans, lentils, tofu and dark leafy greens.
+Breastfed babies' iron stores start to run low around 6 months, so iron-rich foods matter for every baby now: meat, poultry, fish, eggs, iron-fortified infant cereal, beans, lentils, tofu and dark leafy greens.
 
 Iron from plant foods is absorbed less easily. Serving it with vitamin C foods such as oranges, berries, broccoli, tomatoes or sweet potatoes helps.
 
@@ -993,7 +993,7 @@ Sources: [CDC: Iron](https://www.cdc.gov/infant-toddler-nutrition/vitamins-miner
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
+Always watch your baby while they eat, sitting upright in a high chair or other safe seat (not in the car or stroller). Keep mealtimes calm. Coughing and gagging are normal while learning; choking is silent and serious.
 
 - No honey before 12 months: it can cause infant botulism.
 - No added sugars or low- or no-calorie sweeteners, and avoid salty foods like processed meats and some canned and packaged foods.
@@ -1009,7 +1009,7 @@ Sources: [CDC: Foods and Drinks to Avoid or Limit](https://www.cdc.gov/infant-to
 
 Reviewer: **registered dietitian**
 
-[PLACEHOLDER - needs expert review] As your baby turns one, you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
+As your baby turns one, you can start cooking once for everyone. Make the family meal, set aside your baby's portion before adding salt, seasoning or sugar, then season the rest.
 
 Eating together, when you can, helps your baby learn by watching you, and makes sure you eat too.
 
@@ -1022,7 +1022,7 @@ Sources: [AAP (HealthyChildren.org): When Can Babies Start Solid Foods?](https:/
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
+Most reactions to new foods are mild, but some are emergencies. Reactions can start within minutes or several hours after eating.
 
 - Call 911 for signs of a severe reaction (anaphylaxis), especially if they appear suddenly: trouble breathing, wheezing or coughing; swelling of the lips or tongue; hives or pale or bluish skin; repeated vomiting; or, in babies, sudden drooling, inconsolable crying or unusual sleepiness. If your child has prescribed epinephrine, give it first.
 - Call 911 if your baby is choking and can't breathe, cry or make a sound, turns blue, or goes limp.
@@ -1035,13 +1035,13 @@ Sources: [AAP (HealthyChildren.org): Anaphylaxis in Infants & Children](https://
 
 ## 12 to 18 months (1 year to 18 months old)
 
-_[PLACEHOLDER - needs expert review] Your toddler can now share most family food. Appetites change, and that's normal._
+_Your toddler can now share most family food. Appetites change, and that's normal._
 
 ### Family meals
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Your toddler can eat more of what the family eats, in toddler-sized portions and without heavy salt, butter, spice or sugar.
+Your toddler can eat more of what the family eats, in toddler-sized portions and without heavy salt, butter, spice or sugar.
 
 Plan on about 3 meals and 2 snacks a day, with foods from all the groups: vegetables, fruits, whole grains, protein and dairy.
 
@@ -1057,7 +1057,7 @@ Sources: [AAP (HealthyChildren.org): Feeding & Nutrition Tips: Your 1-Year-Old](
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] After the first birthday, growth slows down and so does appetite. Eating a lot one day and very little the next is normal; it usually balances out over several days.
+After the first birthday, growth slows down and so does appetite. Eating a lot one day and very little the next is normal; it usually balances out over several days.
 
 Children 12 to 23 months need about 2 servings of dairy a day, such as whole milk, full-fat yogurt or cheese. Milk shouldn't replace food.
 
@@ -1071,7 +1071,7 @@ Sources: [AAP (HealthyChildren.org): Feeding & Nutrition Tips: Your 1-Year-Old](
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Children 12 to 24 months need 600 IU of vitamin D a day. Whole cow's milk (most is fortified), salmon, eggs and fortified cereals and yogurt all help. If your child gets little vitamin D from food or sunlight, ask your pediatrician about a supplement.
+Children 12 to 24 months need 600 IU of vitamin D a day. Whole cow's milk (most is fortified), salmon, eggs and fortified cereals and yogurt all help. If your child gets little vitamin D from food or sunlight, ask your pediatrician about a supplement.
 
 Iron supports growth, attention and learning. Children who eat little meat, fortified cereal or iron-rich vegetables may need a supplement.
 
@@ -1085,7 +1085,7 @@ Sources: [CDC: Vitamin D](https://www.cdc.gov/infant-toddler-nutrition/vitamins-
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Children don't chew with a grinding motion until about age 4, so choking risk is still high. Make sure your child eats sitting down and supervised, never while walking, playing or riding in the car.
+Children don't chew with a grinding motion until about age 4, so choking risk is still high. Make sure your child eats sitting down and supervised, never while walking, playing or riding in the car.
 
 - Cut food into pieces no larger than about 1/2 inch.
 - Quarter grapes and cherry tomatoes; cut hot dogs lengthwise, then into small pieces.
@@ -1100,7 +1100,7 @@ Sources: [AAP (HealthyChildren.org): Feeding & Nutrition Tips: Your 1-Year-Old](
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Refusing new foods, liking only a few, or not wanting foods to touch are normal toddler behaviors and often fade by about age 5.
+Refusing new foods, liking only a few, or not wanting foods to touch are normal toddler behaviors and often fade by about age 5.
 
 It may take 8 to 10 tries before a child is willing to try a new food. Keep offering it calmly, and wait about a week before trying again.
 
@@ -1116,7 +1116,7 @@ Sources: [CDC: Picky Eaters and What to Do](https://www.cdc.gov/infant-toddler-n
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Toddlers' appetites go up and down, and that's usually normal. Call the pediatrician if something doesn't feel right.
+Toddlers' appetites go up and down, and that's usually normal. Call the pediatrician if something doesn't feel right.
 
 - Call 911 if your child is choking and can't breathe, cry or talk, turns blue, or goes limp.
 - Call 911 for signs of a severe reaction (anaphylaxis), especially if they appear suddenly: trouble breathing, wheezing or coughing; swelling of the lips or tongue; hives or pale or bluish skin; repeated vomiting; or, in babies, sudden drooling, inconsolable crying or unusual sleepiness. If your child has prescribed epinephrine, give it first.
@@ -1129,13 +1129,13 @@ Sources: [AAP (HealthyChildren.org): Choking Prevention for Babies & Children](h
 
 ## 18 to 24 months (18 months to 2 years old)
 
-_[PLACEHOLDER - needs expert review] Toddlers have strong opinions about food. Patience and routine help._
+_Toddlers have strong opinions about food. Patience and routine help._
 
 ### Picky phases
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Refusing new foods, liking only a few, or not wanting foods to touch are normal toddler behaviors and often fade by about age 5.
+Refusing new foods, liking only a few, or not wanting foods to touch are normal toddler behaviors and often fade by about age 5.
 
 It may take 8 to 10 tries before a child is willing to try a new food. Keep offering it calmly, and wait about a week before trying again.
 
@@ -1151,7 +1151,7 @@ Sources: [CDC: Picky Eaters and What to Do](https://www.cdc.gov/infant-toddler-n
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Your toddler can eat more of what the family eats, in toddler-sized portions and without heavy salt, butter, spice or sugar.
+Your toddler can eat more of what the family eats, in toddler-sized portions and without heavy salt, butter, spice or sugar.
 
 Plan on about 3 meals and 2 snacks a day, with foods from all the groups: vegetables, fruits, whole grains, protein and dairy.
 
@@ -1167,7 +1167,7 @@ Sources: [AAP (HealthyChildren.org): Feeding & Nutrition Tips: Your 1-Year-Old](
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] After the first birthday, growth slows down and so does appetite. Eating a lot one day and very little the next is normal; it usually balances out over several days.
+After the first birthday, growth slows down and so does appetite. Eating a lot one day and very little the next is normal; it usually balances out over several days.
 
 Children 12 to 23 months need about 2 servings of dairy a day, such as whole milk, full-fat yogurt or cheese. Milk shouldn't replace food.
 
@@ -1181,7 +1181,7 @@ Sources: [AAP (HealthyChildren.org): Feeding & Nutrition Tips: Your 1-Year-Old](
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Children don't chew with a grinding motion until about age 4, so choking risk is still high. Make sure your child eats sitting down and supervised, never while walking, playing or riding in the car.
+Children don't chew with a grinding motion until about age 4, so choking risk is still high. Make sure your child eats sitting down and supervised, never while walking, playing or riding in the car.
 
 - Cut food into pieces no larger than about 1/2 inch.
 - Quarter grapes and cherry tomatoes; cut hot dogs lengthwise, then into small pieces.
@@ -1196,7 +1196,7 @@ Sources: [AAP (HealthyChildren.org): Feeding & Nutrition Tips: Your 1-Year-Old](
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Toddlers' appetites go up and down, and that's usually normal. Call the pediatrician if something doesn't feel right.
+Toddlers' appetites go up and down, and that's usually normal. Call the pediatrician if something doesn't feel right.
 
 - Call 911 if your child is choking and can't breathe, cry or talk, turns blue, or goes limp.
 - Call 911 for signs of a severe reaction (anaphylaxis), especially if they appear suddenly: trouble breathing, wheezing or coughing; swelling of the lips or tongue; hives or pale or bluish skin; repeated vomiting; or, in babies, sudden drooling, inconsolable crying or unusual sleepiness. If your child has prescribed epinephrine, give it first.
@@ -1209,13 +1209,13 @@ Sources: [AAP (HealthyChildren.org): Choking Prevention for Babies & Children](h
 
 ## 2 years and up (2 years old and up)
 
-_[PLACEHOLDER - needs expert review] Your child can eat the same food as the family and join in at mealtimes._
+_Your child can eat the same food as the family and join in at mealtimes._
 
 ### Meals, milk and portions
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Two-year-olds can eat the same food as the rest of the family: 3 meals a day plus 1 or 2 snacks. They should no longer be drinking from a bottle.
+Two-year-olds can eat the same food as the rest of the family: 3 meals a day plus 1 or 2 snacks. They should no longer be drinking from a bottle.
 
 Try not to focus on amounts. Offering a variety of healthy foods lets your child balance their diet over time.
 
@@ -1230,7 +1230,7 @@ Sources: [AAP (HealthyChildren.org): Feeding & Nutrition Tips: Your 2-Year-Old](
 
 Reviewer: **pediatric dietitian**
 
-[PLACEHOLDER - needs expert review] Refusing new foods, liking only a few, or not wanting foods to touch are normal toddler behaviors and often fade by about age 5.
+Refusing new foods, liking only a few, or not wanting foods to touch are normal toddler behaviors and often fade by about age 5.
 
 It may take 8 to 10 tries before a child is willing to try a new food. Keep offering it calmly, and wait about a week before trying again.
 
@@ -1246,7 +1246,7 @@ Sources: [CDC: Picky Eaters and What to Do](https://www.cdc.gov/infant-toddler-n
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Children 12 to 24 months need 600 IU of vitamin D a day. Whole cow's milk (most is fortified), salmon, eggs and fortified cereals and yogurt all help. If your child gets little vitamin D from food or sunlight, ask your pediatrician about a supplement.
+Children 12 to 24 months need 600 IU of vitamin D a day. Whole cow's milk (most is fortified), salmon, eggs and fortified cereals and yogurt all help. If your child gets little vitamin D from food or sunlight, ask your pediatrician about a supplement.
 
 Iron supports growth, attention and learning. Children who eat little meat, fortified cereal or iron-rich vegetables may need a supplement.
 
@@ -1260,7 +1260,7 @@ Sources: [CDC: Vitamin D](https://www.cdc.gov/infant-toddler-nutrition/vitamins-
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Children don't chew with a grinding motion until about age 4, so choking risk is still high. Make sure your child eats sitting down and supervised, never while walking, playing or riding in the car.
+Children don't chew with a grinding motion until about age 4, so choking risk is still high. Make sure your child eats sitting down and supervised, never while walking, playing or riding in the car.
 
 - Cut food into pieces no larger than about 1/2 inch.
 - Quarter grapes and cherry tomatoes; cut hot dogs lengthwise, then into small pieces.
@@ -1275,7 +1275,7 @@ Sources: [AAP (HealthyChildren.org): Feeding & Nutrition Tips: Your 1-Year-Old](
 
 Reviewer: **pediatrician**
 
-[PLACEHOLDER - needs expert review] Toddlers' appetites go up and down, and that's usually normal. Call the pediatrician if something doesn't feel right.
+Toddlers' appetites go up and down, and that's usually normal. Call the pediatrician if something doesn't feel right.
 
 - Call 911 if your child is choking and can't breathe, cry or talk, turns blue, or goes limp.
 - Call 911 for signs of a severe reaction (anaphylaxis), especially if they appear suddenly: trouble breathing, wheezing or coughing; swelling of the lips or tongue; hives or pale or bluish skin; repeated vomiting; or, in babies, sudden drooling, inconsolable crying or unusual sleepiness. If your child has prescribed epinephrine, give it first.

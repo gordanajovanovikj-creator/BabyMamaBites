@@ -97,9 +97,9 @@ describe('baby recipes', () => {
     }
   });
 
-  it('are marked as drafts until reviewed', () => {
+  it('are marked unreviewed, with no marker in the text', () => {
     for (const r of babyRecipes.filter((x) => x.reviewStatus === 'placeholder')) {
-      expect(r.summary.startsWith(PLACEHOLDER_MARKER)).toBe(true);
+      expect(r.summary.includes(PLACEHOLDER_MARKER)).toBe(false);
     }
   });
 

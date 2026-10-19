@@ -2,7 +2,7 @@
   "version": 1,
   "reviewStatus": "placeholder",
   "reviewer": "legal",
-  "intro": "[PLACEHOLDER - needs expert review] Help is one tap away. These are free US services. If you think it's an emergency, don't wait: call 911.",
+  "intro": "Help is one tap away. These are free US services. If you think it's an emergency, don't wait: call 911.",
   "groups": [
     {
       "id": "baby",

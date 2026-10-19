@@ -1,4 +1,5 @@
 import { recipeCategories, recipes as bundled, type Recipe } from '@/content/recipes';
+import { PLACEHOLDER_MARKER } from '@/content/schemas';
 
 import { allergens } from './profile';
 import {
@@ -167,7 +168,7 @@ describe('bundled recipes', () => {
   it('are marked for review and have unique ids', () => {
     expect(new Set(bundled.map((r) => r.id)).size).toBe(bundled.length);
     for (const r of bundled.filter((x) => x.reviewStatus === 'placeholder')) {
-      expect(r.summary.startsWith('[PLACEHOLDER - needs expert review]')).toBe(true);
+      expect(r.summary.includes(PLACEHOLDER_MARKER)).toBe(false);
     }
   });
 
