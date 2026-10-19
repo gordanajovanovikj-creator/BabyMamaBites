@@ -1,7 +1,11 @@
 import disclaimers from './copy/disclaimers.json';
 import legal from './copy/legal.json';
 import medicalDisclaimer from './copy/medical-disclaimer.json';
+import safetyNotices from './copy/safety-notices.json';
 import ageRules from './config/age-rules.json';
+import emergencyResources from './emergency-resources.json';
+import foods from './foods.json';
+import insightCategories from './insight-categories.json';
 import insights from './insights.json';
 import guides from './monthly-guides.json';
 import reactions from './reactions.json';
@@ -44,6 +48,10 @@ const bundles = {
   recipes,
   babyRecipes,
   solidsArticles,
+  safetyNotices,
+  emergencyResources,
+  foods,
+  insightCategories,
 };
 
 describe('US English content', () => {
