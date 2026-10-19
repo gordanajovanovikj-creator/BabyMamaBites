@@ -73,7 +73,6 @@ const photos: Record<string, ImageSource> = {
   'tomato-tortellini-soup': require('@/assets/images/recipes/tomato-tortellini-soup.jpg'),
   'black-bean-sweet-potato-chili': require('@/assets/images/recipes/black-bean-sweet-potato-chili.jpg'),
   'coconut-curry-chickpea-soup': require('@/assets/images/recipes/coconut-curry-chickpea-soup.jpg'),
-  'sheet-pan-sausage-hash': require('@/assets/images/recipes/sheet-pan-sausage-hash.jpg'),
   'honey-mustard-chicken-green-beans': require('@/assets/images/recipes/honey-mustard-chicken-green-beans.jpg'),
   'mediterranean-tuna-pita': require('@/assets/images/recipes/mediterranean-tuna-pita.jpg'),
   'teriyaki-chicken-bowls': require('@/assets/images/recipes/teriyaki-chicken-bowls.jpg'),

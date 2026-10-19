@@ -1838,42 +1838,6 @@
       "reviewer": "registered dietitian"
     },
     {
-      "id": "sheet-pan-sausage-hash",
-      "title": "Sheet-pan sausage and pepper hash",
-      "summary": "A hearty, low-prep dinner of crispy potatoes, sausage and peppers on one pan.",
-      "icon": "flame.fill",
-      "emoji": "🫑",
-      "tone": "muted",
-      "activeMinutes": 10,
-      "totalMinutes": 30,
-      "servings": 4,
-      "categories": ["dinner-in-30", "dinner", "one-pot", "family-friendly"],
-      "tags": [],
-      "energy": "low",
-      "allergens": [],
-      "diets": [],
-      "ingredients": [
-        "4 chicken or turkey sausage links, sliced into rounds",
-        "2 bell peppers, sliced",
-        "1 red onion, sliced",
-        "1 lb baby gold potatoes, halved",
-        "2 tbsp olive oil",
-        "1 tsp smoked paprika",
-        "Salt and pepper"
-      ],
-      "steps": [
-        "Heat the oven to 400°F.",
-        "Toss the potatoes with 1 tbsp oil, salt and pepper on a baking sheet and roast for 10 minutes.",
-        "Add the sausage, peppers and onion. Drizzle with the rest of the oil and sprinkle with paprika.",
-        "Toss and roast for another 15 minutes, until the potatoes are crispy and the sausage is browned."
-      ],
-      "tips": [
-        "Cook chicken or turkey sausage to 165°F, unless the package says it's fully cooked.",
-        "Check sausage labels for allergens and gluten."
-      ],
-      "reviewer": "registered dietitian"
-    },
-    {
       "id": "honey-mustard-chicken-green-beans",
       "title": "Sheet-pan honey mustard chicken",
       "summary": "Sweet and savory chicken tenders and green beans, all on one pan.",
