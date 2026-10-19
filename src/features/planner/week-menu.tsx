@@ -5,6 +5,8 @@ import { Pressable, ScrollView, View } from 'react-native';
 
 import type { Food } from '@/content/foods';
 import { allRecipes, getRecipe, recipes } from '@/content/recipes';
+import { splitReviewMarker } from '@/content/schemas';
+import { mealsPerDayGuide } from '@/content/solids-plan';
 import { addDays, today, type IsoDate } from '@/domain/dates';
 import { familyMealOptions, plannedFamilyMeal } from '@/domain/family-meals';
 import {
@@ -14,12 +16,16 @@ import {
   mealSlots,
   mealsPlanned,
   planKey,
+  suggestedMealsPerDay,
+  visibleMealSlots,
   weekDates,
   weekRangeLabel,
   weekStart,
   type MealSlot,
 } from '@/domain/planner';
 import { foodPhoto } from '@/features/foods/food-photos';
+import { babyAge, solidsWeek } from '@/domain/stage';
+import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
 import { RecipeImage } from '@/features/recipes/recipe-image';
 import { AppText, Card, cn } from '@/ui';
@@ -48,6 +54,7 @@ export function DayPill({
   selected,
   isToday,
   planned,
+  total = 3,
   onPress,
   compact = false,
 }: {
@@ -55,16 +62,19 @@ export function DayPill({
   selected: boolean;
   isToday: boolean;
   planned: number;
+  /** Meals a day to show dots for (more if more are planned). */
+  total?: number;
   onPress(): void;
   /** Shares a fixed-width row (Home) instead of scrolling. */
   compact?: boolean;
 }) {
   const { weekday, day } = dayLabel(date);
+  const dots = Math.max(total, planned);
   return (
     <Pressable
       accessibilityRole="tab"
       accessibilityState={{ selected }}
-      accessibilityLabel={`${weekday} ${day}${isToday ? ', today' : ''}, ${planned} of 3 meals planned`}
+      accessibilityLabel={`${weekday} ${day}${isToday ? ', today' : ''}, ${planned} of ${dots} meals planned`}
       onPress={onPress}
       className={cn(
         'min-h-16 items-center justify-center gap-0.5 rounded-2xl active:opacity-80',
@@ -84,7 +94,7 @@ export function DayPill({
         {day}
       </AppText>
       <View className="flex-row gap-0.5">
-        {[0, 1, 2].map((i) => (
+        {Array.from({ length: dots }, (_, i) => (
           <View
             key={i}
             className={cn(
@@ -329,16 +339,26 @@ function SlotRow({ date, slot }: { date: IsoDate; slot: MealSlot }) {
   );
 }
 
-/** The baby's menu for the week: pick a day, then breakfast, lunch and dinner with family meals. */
+/**
+ * The baby's menu for the week: pick a day, then its meals with family meals. Shows as
+ * many meals a day as suit the baby's stage (1, then 2, then 3), plus any planned.
+ */
 export function WeekMenu() {
   const { plan } = usePlanner();
+  const { profile } = useProfile();
   const now = today();
   const [offset, setOffset] = useState(0);
   const [selected, setSelected] = useState<IsoDate>(now);
+  const [extra, setExtra] = useState(0);
   const monday = addDays(weekStart(now), offset * 7);
   const days = weekDates(monday);
   const day = days.includes(selected) ? selected : days[0];
   const planned = days.reduce((n, d) => n + mealsPlanned(plan, d), 0);
+  const perDay = profile
+    ? suggestedMealsPerDay(mealsPerDayGuide, solidsWeek(profile, day), babyAge(profile, day).months)
+    : mealSlots.length;
+  const slots = visibleMealSlots(plan, day, Math.min(mealSlots.length, perDay + extra));
+  const mealsWord = planned === 1 ? 'meal' : 'meals';
 
   const moveWeek = (delta: number) => {
     setOffset((o) => o + delta);
@@ -353,7 +373,7 @@ export function WeekMenu() {
             {offset === 0 ? "This week's menu" : offset === 1 ? "Next week's menu" : 'Menu'}
           </AppText>
           <AppText variant="caption" size="sm">
-            {weekRangeLabel(monday)} · {planned} of 21 meals planned
+            {`${weekRangeLabel(monday)} · ${planned} ${mealsWord} planned`}
           </AppText>
         </View>
         <RoundButton label="Previous week" glyph="‹" onPress={() => moveWeek(-1)} />
@@ -373,14 +393,28 @@ export function WeekMenu() {
             selected={d === day}
             isToday={d === now}
             planned={mealsPlanned(plan, d)}
+            total={Math.min(mealSlots.length, perDay + extra)}
             onPress={() => setSelected(d)}
           />
         ))}
       </ScrollView>
 
-      {mealSlots.map((slot) => (
+      {slots.map((slot) => (
         <SlotRow key={slot} date={day} slot={slot} />
       ))}
+
+      <View className="gap-1 border-t border-border pt-3">
+        {slots.length < mealSlots.length ? (
+          <TextAction
+            label="+ Add another meal"
+            accessibilityLabel="Add another meal to each day"
+            onPress={() => setExtra((e) => e + 1)}
+          />
+        ) : null}
+        <AppText variant="caption" size="sm">
+          {splitReviewMarker(mealsPerDayGuide.note).text}
+        </AppText>
+      </View>
     </Card>
   );
 }

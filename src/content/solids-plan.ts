@@ -51,6 +51,13 @@ const fileSchema = z.object({
     signs: z.array(z.string().min(1)).min(1),
     sources: z.array(z.string()).min(1),
   }),
+  /** How many meals a day the planner shows by default as solids go on. */
+  mealsPerDay: z.object({
+    note: z.string().min(1),
+    oneMealWeeks: z.number().int().positive(),
+    threeMealsFromMonths: z.number().int().positive(),
+    sources: z.array(z.string()).min(1),
+  }),
   choking: z.object({
     intro: z.string().min(1),
     signs: z.array(z.string().min(1)).min(1),
@@ -74,6 +81,7 @@ const file = fileSchema.parse(plan);
 export const planWeeks: PlanWeek[] = file.weeks;
 export const textureStageInfo = file.stages;
 export const readiness = file.readiness;
+export const mealsPerDayGuide = file.mealsPerDay;
 export const chokingGuide = file.choking;
 export const quickFoods: QuickFood[] = file.quickFoods;
 export const solidsSources: GuideSource[] = file.sources;

@@ -97,6 +97,35 @@ export function firstOpenSlot(plan: MealPlan, date: IsoDate): MealSlot {
   return mealSlots.find((slot) => !plan[planKey(date, slot)]) ?? 'dinner';
 }
 
+/**
+ * How many meals a day the planner shows by default: one in the first weeks of solids
+ * (or before they start), two after that, and three from about 9 months.
+ */
+export function suggestedMealsPerDay(
+  rules: { oneMealWeeks: number; threeMealsFromMonths: number },
+  solidsWeek: number | null,
+  ageMonths: number,
+): number {
+  if (solidsWeek === null || solidsWeek <= rules.oneMealWeeks) return 1;
+  return ageMonths >= rules.threeMealsFromMonths ? 3 : 2;
+}
+
+/**
+ * The meals to show on a day: every planned one, plus the earliest open ones until
+ * there are `count`, in breakfast-to-dinner order. Planned meals are never hidden.
+ */
+export function visibleMealSlots(plan: MealPlan, date: IsoDate, count: number): MealSlot[] {
+  let open = Math.max(0, count - mealsPlanned(plan, date));
+  return mealSlots.filter((slot) => {
+    if (plan[planKey(date, slot)]) return true;
+    if (open > 0) {
+      open -= 1;
+      return true;
+    }
+    return false;
+  });
+}
+
 /** How many meals are planned on a day (0 to 3). */
 export function mealsPlanned(plan: MealPlan, date: IsoDate): number {
   return mealSlots.filter((slot) => plan[planKey(date, slot)]).length;

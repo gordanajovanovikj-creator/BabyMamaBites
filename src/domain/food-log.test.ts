@@ -3,6 +3,7 @@ import { PLACEHOLDER_MARKER } from '@/content/schemas';
 import {
   chokingGuide,
   getSolidsSource,
+  mealsPerDayGuide,
   planWeeks,
   quickFoods,
   readiness,
@@ -169,6 +170,7 @@ describe('solids plan content', () => {
     const ids = [
       ...planWeeks.flatMap((w) => w.sources),
       ...readiness.sources,
+      ...mealsPerDayGuide.sources,
       ...chokingGuide.groups.flatMap((g) => g.sources),
       ...reactionAdvice.concerning.sources,
       ...reactionAdvice.mild.sources,

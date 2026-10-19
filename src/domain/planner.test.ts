@@ -10,6 +10,8 @@ import {
   plannedMeals,
   normalizePlan,
   planKey,
+  suggestedMealsPerDay,
+  visibleMealSlots,
   freezerStatus,
   makeFreezerItem,
   sortFreezer,
@@ -175,5 +177,26 @@ describe('useSoonItems', () => {
       item('old', '2026-05-01'),
     ];
     expect(useSoonItems(items, '2026-10-13').map((i) => i.name)).toEqual(['apple', 'pear']);
+  });
+});
+
+describe('meals a day', () => {
+  const rules = { oneMealWeeks: 4, threeMealsFromMonths: 9 };
+
+  it('starts with one meal, then two, then three from about 9 months', () => {
+    expect(suggestedMealsPerDay(rules, null, 5)).toBe(1);
+    expect(suggestedMealsPerDay(rules, 1, 6)).toBe(1);
+    expect(suggestedMealsPerDay(rules, 4, 7)).toBe(1);
+    expect(suggestedMealsPerDay(rules, 5, 7)).toBe(2);
+    expect(suggestedMealsPerDay(rules, 14, 9)).toBe(3);
+  });
+
+  it('shows the earliest open meals, and never hides a planned one', () => {
+    const day = '2026-10-19';
+    expect(visibleMealSlots({}, day, 1)).toEqual(['breakfast']);
+    expect(visibleMealSlots({}, day, 2)).toEqual(['breakfast', 'lunch']);
+    const dinnerOnly = { [planKey(day, 'dinner')]: 'baby-oat-cereal' };
+    expect(visibleMealSlots(dinnerOnly, day, 1)).toEqual(['dinner']);
+    expect(visibleMealSlots(dinnerOnly, day, 2)).toEqual(['breakfast', 'dinner']);
   });
 });

@@ -585,6 +585,12 @@
     ],
     "sources": ["cdc-solids", "aap-solids"]
   },
+  "mealsPerDay": {
+    "note": "[PLACEHOLDER - needs expert review] Most babies start with one meal a day and slowly add more, reaching about 3 meals a day by around 9 months. Follow your baby's hunger and fullness cues, and add a meal whenever you like.",
+    "oneMealWeeks": 4,
+    "threeMealsFromMonths": 9,
+    "sources": ["cdc-howmuch-food", "aap-solids"]
+  },
   "choking": {
     "intro": "[PLACEHOLDER - needs expert review] Choking is silent and serious. Gagging (coughing, sputtering, pushing food forward) is a normal part of learning to eat. Know the difference, and consider an infant CPR and first-aid class.",
     "signs": [
