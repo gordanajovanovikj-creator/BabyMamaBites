@@ -14,7 +14,7 @@ import { useSettingsStore } from '@/data/stores-context';
 import { calendarReminders } from '@/domain/calendar';
 import { today } from '@/domain/dates';
 import {
-  anyReminderOn,
+  turnsOnReminder,
   MAX_REMINDERS,
   defaultReminderSettings,
   planReminders,
@@ -86,12 +86,14 @@ export function RemindersProvider({ children }: { children: ReactNode }) {
 
   const update = useCallback(
     async (next: ReminderSettings) => {
-      if (anyReminderOn(next) && !(await ensurePermission())) return false;
+      // Only ask when switching a reminder on, so one can always be turned off, even after
+      // notifications were turned off in iOS Settings.
+      if (turnsOnReminder(settings, next) && !(await ensurePermission())) return false;
       await store.saveReminders(next);
       setSettings(next);
       return true;
     },
-    [store],
+    [store, settings],
   );
 
   const value = useMemo(() => ({ settings, update }), [settings, update]);

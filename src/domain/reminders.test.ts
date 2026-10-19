@@ -1,6 +1,7 @@
 import { makeFreezerItem } from './planner';
 import {
   anyReminderOn,
+  turnsOnReminder,
   defaultReminderSettings,
   MAX_REMINDERS,
   planReminders,
@@ -27,6 +28,12 @@ const ctx = {
 };
 
 describe('reminders', () => {
+  it('only count switching a reminder on as needing permission', () => {
+    expect(turnsOnReminder(defaultReminderSettings, on)).toBe(true);
+    expect(turnsOnReminder(on, defaultReminderSettings)).toBe(false);
+    expect(turnsOnReminder(on, { ...on, freezer: { enabled: false } })).toBe(false);
+  });
+
   it('are all off by default and plan nothing', () => {
     expect(anyReminderOn(defaultReminderSettings)).toBe(false);
     expect(planReminders(defaultReminderSettings, ctx)).toEqual([]);

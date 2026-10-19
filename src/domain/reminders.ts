@@ -35,6 +35,12 @@ export function anyReminderOn(s: ReminderSettings): boolean {
   return s.foodLog.enabled || s.weeklyPlan.enabled || s.freezer.enabled || s.solidsWeek.enabled;
 }
 
+/** Whether a change switches on a reminder that was off (the only time to ask for permission). */
+export function turnsOnReminder(prev: ReminderSettings, next: ReminderSettings): boolean {
+  const keys = ['foodLog', 'weeklyPlan', 'freezer', 'solidsWeek'] as const;
+  return keys.some((k) => next[k].enabled && !prev[k].enabled);
+}
+
 export type ReminderTrigger =
   | { kind: 'daily'; hour: number; minute: number }
   /** weekday: 1 = Sunday … 7 = Saturday (as iOS and expo-notifications count). */
