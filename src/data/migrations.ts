@@ -67,4 +67,11 @@ export const migrations: string[] = [
    );
    CREATE INDEX IF NOT EXISTS calendar_entry_date ON calendar_entry (date);`,
   `ALTER TABLE calendar_entry ADD COLUMN remind INTEGER NOT NULL DEFAULT 0;`,
+  `CREATE TABLE IF NOT EXISTS family_slot (
+     date TEXT NOT NULL,
+     slot TEXT NOT NULL,
+     choice TEXT NOT NULL,
+     updated_at TEXT NOT NULL,
+     PRIMARY KEY (date, slot)
+   );`,
 ];

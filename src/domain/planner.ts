@@ -44,6 +44,12 @@ export const mealSlotLabels: Record<MealSlot, string> = {
 /** Planned baby meals keyed by `planKey(date, slot)`, one recipe per slot. */
 export type MealPlan = Record<string, string>;
 
+/**
+ * The parent's family meal choice next to a planned baby recipe, keyed like `MealPlan`:
+ * a grown-up recipe id, or `NO_FAMILY_MEAL`. No entry means the recipe's suggestion.
+ */
+export type FamilyPlan = Record<string, string>;
+
 export function planKey(date: IsoDate, slot: MealSlot): string {
   return `${date}|${slot}`;
 }

@@ -10,11 +10,21 @@ import {
 
 import { usePlannerStore } from '@/data/stores-context';
 import type { IsoDate } from '@/domain/dates';
-import { planKey, type FreezerItem, type MealPlan, type MealSlot } from '@/domain/planner';
+import {
+  planKey,
+  type FamilyPlan,
+  type FreezerItem,
+  type MealPlan,
+  type MealSlot,
+} from '@/domain/planner';
 
 type PlannerState = {
   plan: MealPlan;
+  /** Also resets that slot's family meal to the new recipe's suggestion. */
   setMeal(date: IsoDate, slot: MealSlot, recipeId: string | null): Promise<void>;
+  family: FamilyPlan;
+  /** A grown-up recipe id, `NO_FAMILY_MEAL`, or null for the suggested family meal. */
+  setFamilyMeal(date: IsoDate, slot: MealSlot, choice: string | null): Promise<void>;
   freezer: FreezerItem[];
   saveFreezerItem(item: FreezerItem): Promise<void>;
   removeFreezerItem(id: string): Promise<void>;
@@ -22,37 +32,51 @@ type PlannerState = {
 
 const PlannerContext = createContext<PlannerState | null>(null);
 
+function withEntry(map: Record<string, string>, key: string, value: string | null) {
+  const next = { ...map };
+  if (value === null) delete next[key];
+  else next[key] = value;
+  return next;
+}
+
 export function PlannerProvider({ children }: { children: ReactNode }) {
   const store = usePlannerStore();
   const [plan, setPlan] = useState<MealPlan>({});
+  const [family, setFamily] = useState<FamilyPlan>({});
   const [freezer, setFreezer] = useState<FreezerItem[]>([]);
 
   useEffect(() => {
     let cancelled = false;
-    Promise.all([store.loadPlan().catch(() => ({})), store.listFreezer().catch(() => [])]).then(
-      ([loadedPlan, loadedFreezer]) => {
-        if (cancelled) return;
-        setPlan(loadedPlan);
-        setFreezer(loadedFreezer);
-      },
-    );
+    Promise.all([
+      store.loadPlan().catch(() => ({})),
+      store.loadFamilyPlan().catch(() => ({})),
+      store.listFreezer().catch(() => []),
+    ]).then(([loadedPlan, loadedFamily, loadedFreezer]) => {
+      if (cancelled) return;
+      setPlan(loadedPlan);
+      setFamily(loadedFamily);
+      setFreezer(loadedFreezer);
+    });
     return () => {
       cancelled = true;
     };
   }, [store]);
 
+  const setFamilyMeal = useCallback(
+    async (date: IsoDate, slot: MealSlot, choice: string | null) => {
+      await store.setFamilyMeal(date, slot, choice);
+      setFamily((current) => withEntry(current, planKey(date, slot), choice));
+    },
+    [store],
+  );
+
   const setMeal = useCallback(
     async (date: IsoDate, slot: MealSlot, recipeId: string | null) => {
       await store.setMeal(date, slot, recipeId);
-      const key = planKey(date, slot);
-      setPlan((current) => {
-        const next = { ...current };
-        if (recipeId === null) delete next[key];
-        else next[key] = recipeId;
-        return next;
-      });
+      setPlan((current) => withEntry(current, planKey(date, slot), recipeId));
+      if (family[planKey(date, slot)] !== undefined) await setFamilyMeal(date, slot, null);
     },
-    [store],
+    [store, family, setFamilyMeal],
   );
 
   const saveFreezerItem = useCallback(
@@ -72,8 +96,8 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
   );
 
   const value = useMemo(
-    () => ({ plan, setMeal, freezer, saveFreezerItem, removeFreezerItem }),
-    [plan, setMeal, freezer, saveFreezerItem, removeFreezerItem],
+    () => ({ plan, setMeal, family, setFamilyMeal, freezer, saveFreezerItem, removeFreezerItem }),
+    [plan, setMeal, family, setFamilyMeal, freezer, saveFreezerItem, removeFreezerItem],
   );
   return <PlannerContext.Provider value={value}>{children}</PlannerContext.Provider>;
 }

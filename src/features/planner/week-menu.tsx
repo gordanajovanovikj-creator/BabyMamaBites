@@ -4,8 +4,9 @@ import { useState } from 'react';
 import { Pressable, ScrollView, View } from 'react-native';
 
 import type { Food } from '@/content/foods';
-import { allRecipes, getRecipe } from '@/content/recipes';
+import { allRecipes, getRecipe, recipes } from '@/content/recipes';
 import { addDays, today, type IsoDate } from '@/domain/dates';
+import { familyMealOptions, NO_FAMILY_MEAL, plannedFamilyMeal } from '@/domain/family-meals';
 import {
   customMealName,
   dayLabel,
@@ -18,7 +19,6 @@ import {
   weekStart,
   type MealSlot,
 } from '@/domain/planner';
-import { familyMealFor } from '@/domain/recipes';
 import { foodPhoto } from '@/features/foods/food-photos';
 import { useHousehold } from '@/features/profile/use-household';
 import { FamilyMealCard } from '@/features/recipes/family-meal-card';
@@ -126,16 +126,48 @@ function FoodThumb({ food }: { food: Food }) {
   );
 }
 
+/** A small green text button, such as "Change", inside a meal card. */
+function TextAction({
+  label,
+  accessibilityLabel,
+  onPress,
+}: {
+  label: string;
+  accessibilityLabel: string;
+  onPress(): void;
+}) {
+  return (
+    <Pressable
+      accessibilityRole="button"
+      accessibilityLabel={accessibilityLabel}
+      onPress={onPress}
+      hitSlop={6}
+      className="min-h-11 justify-center active:opacity-60"
+    >
+      <AppText variant="label" color="primary" className="font-bold">
+        {label}
+      </AppText>
+    </Pressable>
+  );
+}
+
 function SlotCard({ date, slot }: { date: IsoDate; slot: MealSlot }) {
-  const { plan } = usePlanner();
+  const { plan, family: familyPlan, setFamilyMeal } = usePlanner();
   const household = useHousehold();
   const id = plan[planKey(date, slot)];
   const recipe = id ? getRecipe(id) : undefined;
   const own = id ? customMealName(id) : null;
   const meal = plannedMeal(id);
   const food = meal?.kind === 'food' ? meal.food : null;
-  const family = recipe ? familyMealFor(recipe, allRecipes, household) : null;
+  const choice = familyPlan[planKey(date, slot)];
+  const family = recipe ? plannedFamilyMeal(recipe, choice, allRecipes, household) : null;
+  const canAddFamily =
+    !!recipe &&
+    !family &&
+    (!!recipe.familyMeal || familyMealOptions(recipe, recipes, household, slot).length > 0);
   const pick = () => router.push({ pathname: '/planner/pick', params: { date, slot } });
+  const pickFamily = () => router.push({ pathname: '/planner/family', params: { date, slot } });
+  const mealName = mealSlotLabels[slot].toLowerCase();
 
   return (
     <View className="gap-2 rounded-3xl bg-surface-muted p-4">
@@ -216,9 +248,29 @@ function SlotCard({ date, slot }: { date: IsoDate; slot: MealSlot }) {
             </View>
           </Pressable>
           {family ? (
-            <View className="rounded-2xl bg-surface p-3">
+            <View className="gap-1 rounded-2xl bg-surface p-3">
               <FamilyMealCard recipe={family.recipe} note={family.note} compact />
+              <View className="flex-row gap-6">
+                <TextAction
+                  label="Choose another"
+                  accessibilityLabel={`Choose another family meal for ${mealName}`}
+                  onPress={pickFamily}
+                />
+                <TextAction
+                  label="Remove"
+                  accessibilityLabel={`Remove the family meal from ${mealName}`}
+                  onPress={() => {
+                    setFamilyMeal(date, slot, NO_FAMILY_MEAL).catch(() => {});
+                  }}
+                />
+              </View>
             </View>
+          ) : canAddFamily ? (
+            <TextAction
+              label="+ Add a family meal"
+              accessibilityLabel={`Add a family meal to ${mealName}`}
+              onPress={pickFamily}
+            />
           ) : null}
           <Pressable
             accessibilityRole="button"

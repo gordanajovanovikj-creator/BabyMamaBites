@@ -70,6 +70,10 @@ function RootStack() {
           options={{ presentation: 'modal', headerShown: true, title: 'Choose a meal' }}
         />
         <Stack.Screen
+          name="planner/family"
+          options={{ presentation: 'modal', headerShown: true, title: 'Family meal' }}
+        />
+        <Stack.Screen
           name="planner/add"
           options={{
             // A bottom sheet over the food or recipe, so you never lose your place.

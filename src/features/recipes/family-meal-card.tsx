@@ -9,8 +9,8 @@ import { RecipeImage } from './recipe-image';
 
 export type FamilyMealCardProps = {
   recipe: Recipe;
-  /** How to make the family meal work for the baby too. */
-  note: string;
+  /** How to make the family meal work for the baby too, when the pairing has one. */
+  note?: string | null;
   /** A small thumbnail beside the text, for tight spaces like the planner. */
   compact?: boolean;
 };
@@ -18,7 +18,7 @@ export type FamilyMealCardProps = {
 /** The family meal that goes with a baby recipe: a recipe photo with the text underneath. */
 export function FamilyMealCard({ recipe, note, compact = false }: FamilyMealCardProps) {
   const open = () => router.push({ pathname: '/recipe/[id]', params: { id: recipe.id } });
-  const label = `Family meal: ${recipe.title}. ${note} Opens the recipe.`;
+  const label = `Family meal: ${recipe.title}. ${note ? `${note} ` : ''}Opens the recipe.`;
   const kicker = (
     <AppText
       variant="label"
@@ -51,9 +51,11 @@ export function FamilyMealCard({ recipe, note, compact = false }: FamilyMealCard
             </AppText>
           </View>
         </View>
-        <AppText variant="caption" size="sm">
-          {note}
-        </AppText>
+        {note ? (
+          <AppText variant="caption" size="sm">
+            {note}
+          </AppText>
+        ) : null}
       </Pressable>
     );
   }
@@ -74,7 +76,7 @@ export function FamilyMealCard({ recipe, note, compact = false }: FamilyMealCard
         <AppText variant="caption" size="sm">
           {recipeMeta(recipe)}
         </AppText>
-        <AppText className="pt-1">{note}</AppText>
+        {note ? <AppText className="pt-1">{note}</AppText> : null}
       </View>
     </Pressable>
   );

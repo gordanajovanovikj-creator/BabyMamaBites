@@ -65,6 +65,13 @@ export default function PickMealScreen() {
       .catch(() => {});
   };
 
+  // A baby recipe goes straight on to its family meal: keep it, swap it or skip it.
+  const chooseRecipe = (recipeId: string) => {
+    setMeal(date, slot, recipeId)
+      .then(() => router.replace({ pathname: '/planner/family', params: { date, slot } }))
+      .catch(() => {});
+  };
+
   return (
     <Screen>
       <View className="gap-1">
@@ -200,7 +207,7 @@ export default function PickMealScreen() {
                     accessibilityRole="radio"
                     accessibilityState={{ selected }}
                     accessibilityLabel={`${r.title}${ahead ? ', for an older baby' : ''}`}
-                    onPress={() => choose(r.id)}
+                    onPress={() => chooseRecipe(r.id)}
                     className={cn(
                       'min-h-16 flex-row items-center gap-3 border-b border-border py-2 active:opacity-70',
                       ahead && 'opacity-60',

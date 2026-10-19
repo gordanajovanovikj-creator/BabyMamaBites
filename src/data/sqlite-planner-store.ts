@@ -30,6 +30,26 @@ export function createSqlitePlannerStore(db: SQLiteDatabase): PlannerStore {
         new Date().toISOString(),
       );
     },
+    async loadFamilyPlan() {
+      const rows = await db.getAllAsync<{ date: string; slot: string; choice: string }>(
+        'SELECT date, slot, choice FROM family_slot',
+      );
+      return normalizePlan(Object.fromEntries(rows.map((r) => [`${r.date}|${r.slot}`, r.choice])));
+    },
+    async setFamilyMeal(date, slot, choice) {
+      if (choice === null) {
+        await db.runAsync('DELETE FROM family_slot WHERE date = ? AND slot = ?', date, slot);
+        return;
+      }
+      await db.runAsync(
+        `INSERT INTO family_slot (date, slot, choice, updated_at) VALUES (?, ?, ?, ?)
+         ON CONFLICT(date, slot) DO UPDATE SET choice = excluded.choice, updated_at = excluded.updated_at`,
+        date,
+        slot,
+        choice,
+        new Date().toISOString(),
+      );
+    },
     async listFreezer() {
       const rows = await db.getAllAsync<FreezerRow>(
         'SELECT id, name, cubes, frozen_on FROM freezer_item',

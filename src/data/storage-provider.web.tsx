@@ -109,6 +109,7 @@ const localFoodLog: FoodLogStore = {
 };
 
 const PLAN_KEY = 'mamababybites.mealPlan';
+const FAMILY_PLAN_KEY = 'mamababybites.familyPlan';
 const FREEZER_KEY = 'mamababybites.freezer';
 
 function readJson(key: string): unknown {
@@ -120,8 +121,8 @@ function readJson(key: string): unknown {
   }
 }
 
-function readPlan(): MealPlan {
-  const value = readJson(PLAN_KEY);
+function readPlan(key = PLAN_KEY): MealPlan {
+  const value = readJson(key);
   if (!value || typeof value !== 'object') return {};
   return normalizePlan(value as Record<string, unknown>);
 }
@@ -145,6 +146,16 @@ const localPlanner: PlannerStore = {
     if (recipeId === null) delete plan[key];
     else plan[key] = recipeId;
     globalThis.localStorage?.setItem(PLAN_KEY, JSON.stringify(plan));
+  },
+  async loadFamilyPlan() {
+    return readPlan(FAMILY_PLAN_KEY);
+  },
+  async setFamilyMeal(date, slot, choice) {
+    const plan = readPlan(FAMILY_PLAN_KEY);
+    const key = planKey(date, slot);
+    if (choice === null) delete plan[key];
+    else plan[key] = choice;
+    globalThis.localStorage?.setItem(FAMILY_PLAN_KEY, JSON.stringify(plan));
   },
   async listFreezer() {
     return readFreezer();
