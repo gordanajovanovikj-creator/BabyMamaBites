@@ -36,7 +36,8 @@ export function SegmentedTabs<T extends string>({
           >
             <AppText
               variant="label"
-              size="lg"
+              // Four tabs share a narrow phone width, so they use a slightly smaller label.
+              size={tabs.length > 3 ? 'base' : 'lg'}
               color={active ? 'ink' : 'muted'}
               className="px-1 font-bold"
               // With very large text, shrink the label to fit its tab instead of colliding.

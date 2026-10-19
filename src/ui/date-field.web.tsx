@@ -2,6 +2,8 @@ import { View } from 'react-native';
 
 import type { IsoDate } from '@/domain/dates';
 
+import { colors } from '@/theme/colors';
+
 import { AppText } from './app-text';
 
 export type DateFieldProps = {
@@ -26,7 +28,12 @@ export function DateField({ label, value, onChange, minimumDate, maximumDate }: 
         min={minimumDate}
         max={maximumDate}
         onChange={(e) => e.target.value && onChange(e.target.value)}
-        style={{ fontSize: 18, padding: 14, borderRadius: 16, border: '2px solid #E9E3D8' }}
+        style={{
+          fontSize: 18,
+          padding: 14,
+          borderRadius: 16,
+          border: `2px solid ${colors.light.border}`,
+        }}
       />
     </View>
   );

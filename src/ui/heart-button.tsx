@@ -21,11 +21,13 @@ export type HeartButtonProps = {
   onPress(): void;
   /** Name of the thing being saved, for VoiceOver. */
   label: string;
+  /** No round white backing or shadow, for photos that already give it contrast. */
+  bare?: boolean;
   className?: string;
 };
 
-/** Round 44pt save/unsave button. Saving gives a soft tap and a little "pop". */
-export function HeartButton({ saved, onPress, label, className }: HeartButtonProps) {
+/** Round 48pt save/unsave button. Saving gives a soft tap and a little "pop". */
+export function HeartButton({ saved, onPress, label, bare = false, className }: HeartButtonProps) {
   const palette = usePalette();
   const flat = useFlatButtons();
   const reduceMotion = useReducedMotion();
@@ -55,10 +57,11 @@ export function HeartButton({ saved, onPress, label, className }: HeartButtonPro
       onPress={press}
       hitSlop={8}
       className={cn(
-        'h-12 w-12 items-center justify-center rounded-full bg-surface active:opacity-70',
+        'h-12 w-12 items-center justify-center rounded-full active:opacity-70',
+        bare ? undefined : 'bg-surface',
         className,
       )}
-      style={flat ? undefined : { boxShadow: shadows.floatTight }}
+      style={flat || bare ? undefined : { boxShadow: shadows.floatTight }}
     >
       <Animated.View style={heartStyle}>
         <SymbolView

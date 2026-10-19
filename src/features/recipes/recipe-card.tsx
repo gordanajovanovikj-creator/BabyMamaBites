@@ -62,7 +62,8 @@ export function RecipeCard({ recipe, fitsTime }: RecipeCardProps) {
         saved={isFavorite(recipe.id)}
         onPress={() => toggle(recipe.id)}
         label={recipe.title}
-        className="absolute right-2 top-2 bg-transparent"
+        bare
+        className="absolute right-2 top-2"
       />
     </View>
   );

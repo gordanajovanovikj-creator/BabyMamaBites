@@ -22,7 +22,7 @@ function CreditRow({ credit }: { credit: PhotoCredit }) {
       accessibilityRole="link"
       accessibilityLabel={`${credit.usedOn}. Photo: ${line}. Opens the photo page.`}
       onPress={() => WebBrowser.openBrowserAsync(url)}
-      className="min-h-11 justify-center py-1 active:opacity-60"
+      className="min-h-12 justify-center py-1 active:opacity-60"
     >
       {body}
     </Pressable>
@@ -50,7 +50,7 @@ export default function CreditsScreen() {
               accessibilityRole="link"
               accessibilityLabel={`${info.note}. Opens ${info.name}.`}
               onPress={() => WebBrowser.openBrowserAsync(info.url)}
-              className="min-h-11 justify-center active:opacity-60"
+              className="min-h-12 justify-center active:opacity-60"
             >
               <AppText color="primary" className="font-bold underline">
                 {info.note}

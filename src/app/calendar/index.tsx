@@ -197,7 +197,7 @@ export default function CalendarScreen() {
                 accessibilityLabel={`Delete ${calendarKindLabels[e.kind].toLowerCase()}: ${e.text}`}
                 onPress={() => remove(e.id).catch(() => {})}
                 hitSlop={8}
-                className="h-11 w-11 items-center justify-center rounded-full active:opacity-70"
+                className="h-12 w-12 items-center justify-center rounded-full active:opacity-70"
               >
                 <AppText variant="label" color="muted" size="lg">
                   ✕

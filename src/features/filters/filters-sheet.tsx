@@ -171,9 +171,18 @@ export function FiltersSheet({ visible, value, config, onApply, onClose }: Filte
                     }}
                     className="min-h-12 flex-row items-center justify-between active:opacity-70"
                   >
-                    <AppText className={selected ? 'font-bold' : undefined}>{sortLabels[s]}</AppText>
+                    <AppText className={selected ? 'font-bold' : undefined}>
+                      {sortLabels[s]}
+                    </AppText>
                     {selected ? (
-                      <AppText color="primary" size="xl" className="font-bold">
+                      <AppText
+                        color="primary"
+                        size="xl"
+                        className="font-bold"
+                        // The row's selected state already says this to VoiceOver.
+                        importantForAccessibility="no"
+                        accessibilityElementsHidden
+                      >
                         ✓
                       </AppText>
                     ) : null}
