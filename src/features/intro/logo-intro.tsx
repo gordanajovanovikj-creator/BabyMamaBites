@@ -3,7 +3,7 @@ import { Image } from 'expo-image';
 import * as SplashScreen from 'expo-splash-screen';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { useEffect, useRef, useState } from 'react';
-import { View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import Animated, { FadeOut, useReducedMotion } from 'react-native-reanimated';
 
 /** Same size as the native splash image (`imageWidth` in app.json), so the hand-off is seamless. */
@@ -74,33 +74,38 @@ export function LogoIntro({ appReady, onDone }: { appReady: boolean; onDone(): v
   }, [finished, appReady, onDone]);
 
   return (
+    // Plain styles on the animated wrapper: class names on Reanimated views only apply on
+    // the web, so on iPhone the overlay would have no position or background.
     <Animated.View
       exiting={FadeOut.duration(300)}
-      className="absolute inset-0 items-center justify-center bg-accent"
-      accessible
-      accessibilityRole="image"
-      accessibilityLabel="Mama & Baby Bites"
       // Above the native screen stack while the app loads underneath.
-      style={{ pointerEvents: 'none', zIndex: 100, elevation: 100 }}
+      style={[StyleSheet.absoluteFill, { pointerEvents: 'none', zIndex: 100, elevation: 100 }]}
     >
-      <View style={{ width: LOGO_SIZE, height: LOGO_SIZE }}>
-        {reduceMotion ? (
-          <Image
-            source={stillLogo}
-            contentFit="contain"
-            style={{ width: LOGO_SIZE, height: LOGO_SIZE }}
-          />
-        ) : (
-          <VideoView
-            player={player}
-            nativeControls={false}
-            contentFit="contain"
-            allowsPictureInPicture={false}
-            style={{ width: LOGO_SIZE, height: LOGO_SIZE }}
-            // The first frame matches the native splash, so the swap is seamless.
-            onFirstFrameRender={hideSplash}
-          />
-        )}
+      <View
+        className="flex-1 items-center justify-center bg-accent"
+        accessible
+        accessibilityRole="image"
+        accessibilityLabel="Mama & Baby Bites"
+      >
+        <View style={{ width: LOGO_SIZE, height: LOGO_SIZE }}>
+          {reduceMotion ? (
+            <Image
+              source={stillLogo}
+              contentFit="contain"
+              style={{ width: LOGO_SIZE, height: LOGO_SIZE }}
+            />
+          ) : (
+            <VideoView
+              player={player}
+              nativeControls={false}
+              contentFit="contain"
+              allowsPictureInPicture={false}
+              style={{ width: LOGO_SIZE, height: LOGO_SIZE }}
+              // The first frame matches the native splash, so the swap is seamless.
+              onFirstFrameRender={hideSplash}
+            />
+          )}
+        </View>
       </View>
     </Animated.View>
   );
