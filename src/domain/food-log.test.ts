@@ -2,6 +2,7 @@ import { reactionAdvice } from '@/content/reactions';
 import { PLACEHOLDER_MARKER } from '@/content/schemas';
 import {
   chokingGuide,
+  allergenFocusCopy,
   getSolidsSource,
   mealsPerDayGuide,
   planWeeks,
@@ -16,6 +17,7 @@ import {
   ONE_AT_A_TIME_WEEKS,
   planWeekFor,
   sortEntries,
+  todayFocusState,
   type FoodLogEntry,
 } from './food-log';
 import { allergens } from './profile';
@@ -171,6 +173,7 @@ describe('solids plan content', () => {
       ...planWeeks.flatMap((w) => w.sources),
       ...readiness.sources,
       ...mealsPerDayGuide.sources,
+      ...allergenFocusCopy.sources,
       ...chokingGuide.groups.flatMap((g) => g.sources),
       ...reactionAdvice.concerning.sources,
       ...reactionAdvice.mild.sources,
@@ -189,5 +192,58 @@ describe('reaction advice', () => {
     for (const advice of [reactionAdvice.concerning, reactionAdvice.mild]) {
       expect(advice.intro.includes(PLACEHOLDER_MARKER)).toBe(false);
     }
+  });
+});
+
+describe('todayFocusState', () => {
+  const week = (n: number) => planWeeks.find((w) => w.week === n)!;
+  const dairyWeek = week(5); // egg is week 3, peanut week 4, dairy week 5
+  const day = '2026-10-19';
+  const tried = (id: string, allergen: FoodLogEntry['allergen'], date: string, reaction = 'none') =>
+    entry(id, { allergen, date, reaction: reaction as FoodLogEntry['reaction'] });
+  const earlier = [tried('e', 'egg', '2026-10-01'), tried('p', 'peanut', '2026-10-08')];
+
+  it("asks to try this week's allergen until it is logged", () => {
+    expect(todayFocusState(dairyWeek, planWeeks, earlier, day)).toMatchObject({
+      kind: 'try',
+      catchUp: false,
+      allergen: { id: 'milk' },
+    });
+  });
+
+  it('shows it as done once logged with no reaction', () => {
+    const log = [...earlier, tried('d', 'milk', '2026-10-15')];
+    expect(todayFocusState(dairyWeek, planWeeks, log, day)).toMatchObject({ kind: 'done' });
+  });
+
+  it('escalates a logged reaction to the pediatrician', () => {
+    const log = [...earlier, tried('d', 'milk', '2026-10-18', 'mild')];
+    expect(todayFocusState(dairyWeek, planWeeks, log, day)).toMatchObject({ kind: 'reaction' });
+  });
+
+  it('catches up on a missed allergen a few days after the last new one', () => {
+    const skippedEgg = [tried('p', 'peanut', '2026-10-08'), tried('d', 'milk', '2026-10-15')];
+    expect(todayFocusState(dairyWeek, planWeeks, skippedEgg, day)).toMatchObject({
+      kind: 'try',
+      catchUp: true,
+      allergen: { id: 'egg' },
+    });
+    const justHadDairy = [tried('p', 'peanut', '2026-10-08'), tried('d', 'milk', '2026-10-18')];
+    expect(todayFocusState(dairyWeek, planWeeks, justHadDairy, day)).toMatchObject({
+      kind: 'done',
+    });
+  });
+
+  it('waits a few days when another allergen was just tried', () => {
+    const log = [tried('e', 'egg', '2026-10-01'), tried('p', 'peanut', '2026-10-18')];
+    expect(todayFocusState(dairyWeek, planWeeks, log, day)).toMatchObject({
+      kind: 'wait',
+      days: 2,
+      allergen: { id: 'milk' },
+    });
+  });
+
+  it('shows the week itself when there is no allergen to offer', () => {
+    expect(todayFocusState(week(1), planWeeks, [], day)).toEqual({ kind: 'week' });
   });
 });

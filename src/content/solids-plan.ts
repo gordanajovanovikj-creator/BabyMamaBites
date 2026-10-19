@@ -56,6 +56,13 @@ const fileSchema = z.object({
     threeMealsFromMonths: z.number().int().positive(),
     sources: z.array(z.string()).min(1),
   }),
+  /** Short lines for Home's allergen focus card once the food log changes it. */
+  allergenFocus: z.object({
+    wait: z.string().min(1),
+    done: z.string().min(1),
+    reaction: z.string().min(1),
+    sources: z.array(z.string()).min(1),
+  }),
   choking: z.object({
     intro: z.string().min(1),
     signs: z.array(z.string().min(1)).min(1),
@@ -80,6 +87,7 @@ export const planWeeks: PlanWeek[] = file.weeks;
 export const textureStageInfo = file.stages;
 export const readiness = file.readiness;
 export const mealsPerDayGuide = file.mealsPerDay;
+export const allergenFocusCopy = file.allergenFocus;
 export const chokingGuide = file.choking;
 export const quickFoods: QuickFood[] = file.quickFoods;
 export const solidsSources: GuideSource[] = file.sources;

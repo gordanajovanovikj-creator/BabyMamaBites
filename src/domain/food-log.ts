@@ -1,6 +1,8 @@
 import { z } from 'zod';
 
-import { isIsoDate, type IsoDate } from './dates';
+import type { PlanWeek } from '@/content/solids-plan';
+
+import { daysBetween, isIsoDate, type IsoDate } from './dates';
 import { allergens, type Allergen } from './profile';
 
 export const reactions = ['none', 'mild', 'concerning'] as const;
@@ -82,4 +84,62 @@ export function makeEntry(input: NewEntryInput, id = newEntryId()): FoodLogEntry
     food: input.food.trim(),
     notes: input.notes?.trim() ? input.notes.trim() : null,
   });
+}
+
+/** New allergens go at least this many days apart (the plan says 3 to 5, per the CDC). */
+export const NEW_ALLERGEN_GAP_DAYS = 3;
+
+export type PlanAllergen = NonNullable<PlanWeek['allergen']>;
+
+/**
+ * Home's "today's focus" for a plan week:
+ * - `try`: offer this allergen today (this week's, or a missed one to catch up on),
+ * - `wait`: this week's allergen, but another new allergen was tried in the last few days,
+ * - `done`: this week's allergen is logged with no reaction,
+ * - `reaction`: a reaction was logged for this week's allergen,
+ * - `week`: no allergen to offer; show the week's title.
+ */
+export type TodayFocusState =
+  | { kind: 'try'; allergen: PlanAllergen; catchUp: boolean }
+  | { kind: 'wait'; allergen: PlanAllergen; days: number }
+  | { kind: 'done'; allergen: PlanAllergen }
+  | { kind: 'reaction'; allergen: PlanAllergen }
+  | { kind: 'week' };
+
+/** Days since an allergen was first logged for the most recent time, or null if none. */
+function daysSinceNewAllergen(entries: FoodLogEntry[], onDate: IsoDate): number | null {
+  const firstTried = new Map<Allergen, IsoDate>();
+  for (const e of entries) {
+    if (!e.allergen) continue;
+    const seen = firstTried.get(e.allergen);
+    if (!seen || e.date < seen) firstTried.set(e.allergen, e.date);
+  }
+  const latest = [...firstTried.values()].sort().pop();
+  return latest ? daysBetween(latest, onDate) : null;
+}
+
+export function todayFocusState(
+  week: PlanWeek,
+  weeks: PlanWeek[],
+  entries: FoodLogEntry[],
+  onDate: IsoDate,
+): TodayFocusState {
+  const status = allergenProgress(entries);
+  const since = daysSinceNewAllergen(entries, onDate);
+  const rested = since === null || since >= NEW_ALLERGEN_GAP_DAYS;
+  const own = week.allergen;
+
+  if (own && status[own.id] === 'reaction') return { kind: 'reaction', allergen: own };
+  if (own && status[own.id] === 'not-tried') {
+    return rested
+      ? { kind: 'try', allergen: own, catchUp: false }
+      : { kind: 'wait', allergen: own, days: NEW_ALLERGEN_GAP_DAYS - (since ?? 0) };
+  }
+  // This week's allergen is done (or there isn't one): catch up on one missed in an
+  // earlier week, once a few days have passed since the last new allergen.
+  const missed = weeks.find(
+    (w) => w.week < week.week && w.allergen && status[w.allergen.id] === 'not-tried',
+  )?.allergen;
+  if (missed && rested) return { kind: 'try', allergen: missed, catchUp: true };
+  return own ? { kind: 'done', allergen: own } : { kind: 'week' };
 }

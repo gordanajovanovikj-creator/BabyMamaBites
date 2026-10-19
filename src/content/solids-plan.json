@@ -565,6 +565,12 @@
     "threeMealsFromMonths": 9,
     "sources": ["cdc-howmuch-food", "aap-solids"]
   },
+  "allergenFocus": {
+    "wait": "New foods go 3 to 5 days apart, so wait a few more days.",
+    "done": "Keep offering it regularly, in portions suited to your baby.",
+    "reaction": "Call 911 if any severe signs appear.",
+    "sources": ["cdc-solids", "aap-allergens"]
+  },
   "choking": {
     "intro": "Choking is silent and serious. Gagging (coughing, sputtering, pushing food forward) is a normal part of learning to eat. Know the difference, and consider an infant CPR and first-aid class.",
     "signs": [
