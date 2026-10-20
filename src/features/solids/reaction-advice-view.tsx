@@ -3,7 +3,7 @@ import { Linking, View } from 'react-native';
 import type { ReactionAdvice } from '@/content/reactions';
 import { solidsSourcesFor } from '@/content/solids-plan';
 import { SourceLinks } from '@/features/shared/source-links';
-import { AppText, Button, cn } from '@/ui';
+import { AppText, BulletList, Button, cn } from '@/ui';
 
 export type ReactionAdviceViewProps = {
   advice: ReactionAdvice;
@@ -22,16 +22,7 @@ export function ReactionAdviceView({ advice, urgent }: ReactionAdviceViewProps) 
         {advice.title}
       </AppText>
       <AppText color={color}>{advice.intro}</AppText>
-      {advice.signs.map((sign) => (
-        <View key={sign} className="flex-row gap-3">
-          <AppText color={color} className="font-bold">
-            •
-          </AppText>
-          <AppText color={color} className="flex-1">
-            {sign}
-          </AppText>
-        </View>
-      ))}
+      <BulletList items={advice.signs} color={color} />
       <AppText color={color} className="font-bold">
         {advice.action}
       </AppText>

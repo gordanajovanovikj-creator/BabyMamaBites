@@ -4,32 +4,15 @@ import { Linking, View } from 'react-native';
 import { chokingDisclaimer, safetyNotice } from '@/content/copy';
 import { chokingGuide, solidsSourcesFor } from '@/content/solids-plan';
 import { PageFooter } from '@/features/shared/page-footer';
-import { AppText, Button, Card, Screen } from '@/ui';
-
-function Bullets({ items, color }: { items: string[]; color?: 'danger' }) {
-  return (
-    <View className="gap-2">
-      {items.map((item) => (
-        <View key={item} className="flex-row gap-3">
-          <AppText color={color ?? 'primary'} className="font-bold">
-            •
-          </AppText>
-          <AppText color={color} className="flex-1">
-            {item}
-          </AppText>
-        </View>
-      ))}
-    </View>
-  );
-}
+import { AppText, BulletList, Button, Card, Screen } from '@/ui';
 
 export default function ChokingScreen() {
   const emergency = safetyNotice('choking-emergency');
   return (
     <Screen>
       {/* The emergency comes first, before anything to read. */}
-      <View accessibilityRole="alert" className="gap-3 rounded-3xl bg-danger-bg p-5">
-        <AppText variant="heading" color="danger">
+      <Card tone="danger" accessibilityRole="alert" className="gap-3">
+        <AppText variant="heading" size="2xl" color="danger">
           {`⚠️ ${emergency.title}`}
         </AppText>
         <AppText color="danger" className="font-semibold">
@@ -38,14 +21,14 @@ export default function ChokingScreen() {
         <AppText variant="label" color="danger">
           Call 911 if your baby is choking and:
         </AppText>
-        <Bullets items={chokingGuide.signs} color="danger" />
+        <BulletList items={chokingGuide.signs} color="danger" />
         <Button label="Call 911" onPress={() => Linking.openURL('tel:911').catch(() => {})} />
         <Button
           label="Emergency & resources"
           variant="quiet"
           onPress={() => router.push('/emergency')}
         />
-      </View>
+      </Card>
 
       <AppText color="muted">{chokingGuide.intro}</AppText>
 
@@ -61,7 +44,7 @@ export default function ChokingScreen() {
       {chokingGuide.groups.map((g) => (
         <Card key={g.id} className="gap-3">
           <AppText variant="heading">{g.title}</AppText>
-          <Bullets items={g.items} />
+          <BulletList items={g.items} />
         </Card>
       ))}
 

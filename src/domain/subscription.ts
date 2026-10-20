@@ -134,11 +134,6 @@ export function isFreeLibraryCategory(category: string): boolean {
 /** The App Store product ids of our plans. */
 export const planProductIds: string[] = planIds.map((id) => plans[id].productId);
 
-/** The plan with this App Store product id, if it's one of ours. */
-export function planForProduct(productId: string): Plan | undefined {
-  return planIds.map((id) => plans[id]).find((p) => p.productId === productId);
-}
-
 /** The bits of an App Store subscription we use to decide access. */
 export type ActiveSubscriptionInfo = {
   productId: string;

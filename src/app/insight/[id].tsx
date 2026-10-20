@@ -14,7 +14,7 @@ import { DetailHeader } from '@/features/shared/detail-header';
 import { PageFooter } from '@/features/shared/page-footer';
 import { SafetyNotices } from '@/features/shared/safety-notice';
 import { PremiumGate } from '@/features/subscription/premium-gate';
-import { AppText, Button, Illustration, Screen } from '@/ui';
+import { AppText, BulletList, Button, Illustration, Screen } from '@/ui';
 
 /** One line of an insight: a heading, a bullet, a numbered step or a paragraph. */
 function BodyBlock({ block, first }: { block: InsightBlock; first: boolean }) {
@@ -26,14 +26,7 @@ function BodyBlock({ block, first }: { block: InsightBlock; first: boolean }) {
         </AppText>
       );
     case 'bullet':
-      return (
-        <View className="flex-row gap-3">
-          <AppText color="primary" className="font-bold">
-            •
-          </AppText>
-          <AppText className="flex-1">{block.text}</AppText>
-        </View>
-      );
+      return <BulletList items={[block.text]} />;
     case 'step':
       return (
         <View className="flex-row gap-3">

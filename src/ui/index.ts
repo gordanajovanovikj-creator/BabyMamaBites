@@ -1,4 +1,5 @@
 export { AppText } from './app-text';
+export { BulletList } from './bullet-list';
 export { Button } from './button';
 export { Card, toneBackground, type CardTone } from './card';
 export { Chip } from './chip';

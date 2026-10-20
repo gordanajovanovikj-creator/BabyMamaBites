@@ -36,6 +36,8 @@ export type StoreProduct = {
   productId: string;
   /** Localized, e.g. "$79.99". */
   displayPrice: string;
+  /** ISO currency code of that price, e.g. "USD". */
+  currency: string;
   /** Free-trial days set up in App Store Connect (0 if none). */
   trialDays: number;
   /** Subscription group, for checking free-trial eligibility. */
@@ -46,6 +48,8 @@ export type PurchaseResult =
   | { status: 'subscribed' }
   | { status: 'cancelled' }
   | { status: 'failed' }
+  /** Ask to Buy: waiting for a parent or guardian to approve. */
+  | { status: 'pending' }
   | { status: 'unavailable' };
 
 export async function connect(): Promise<boolean> {
@@ -64,6 +68,7 @@ export async function loadProducts(productIds: string[]): Promise<StoreProduct[]
           {
             productId: p.id,
             displayPrice: p.displayPrice,
+            currency: p.currency,
             trialDays: freeTrialDays(p),
             groupId: p.subscriptionGroupIdIOS ?? null,
           },
@@ -110,6 +115,9 @@ export function buy(productId: string): Promise<PurchaseResult> {
   const s = store();
   if (!s) return Promise.resolve({ status: 'unavailable' });
   return new Promise((resolve) => {
+    // Older transactions for the same plan can replay at any time; only this purchase counts.
+    // (A little slack for the clock difference between the App Store and the phone.)
+    const startedAt = Date.now() - 60_000;
     let settled = false;
     const done = (result: PurchaseResult) => {
       if (settled) return;
@@ -119,13 +127,14 @@ export function buy(productId: string): Promise<PurchaseResult> {
       resolve(result);
     };
     const ok = s.purchaseUpdatedListener((purchase) => {
-      if (purchase.productId !== productId) return;
+      if (purchase.productId !== productId || purchase.transactionDate < startedAt) return;
       s.finishTransaction({ purchase, isConsumable: false })
         .catch(() => {})
         .finally(() => done({ status: 'subscribed' }));
     });
     const failed = s.purchaseErrorListener((error) => {
-      done({ status: s.isUserCancelledError(error) ? 'cancelled' : 'failed' });
+      if (error.code === s.ErrorCode.DeferredPayment) done({ status: 'pending' });
+      else done({ status: s.isUserCancelledError(error) ? 'cancelled' : 'failed' });
     });
     s.requestPurchase({ request: { apple: { sku: productId } }, type: 'subs' }).catch(
       (error: unknown) => done({ status: s.isUserCancelledError(error) ? 'cancelled' : 'failed' }),

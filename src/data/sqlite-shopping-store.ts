@@ -32,9 +32,10 @@ export function createSqliteShoppingStore(db: SQLiteDatabase): ShoppingStore {
       });
     },
     async save(items: ShoppingItem[]) {
-      await db.withTransactionAsync(async () => {
+      // Exclusive, so quick taps in a row queue up instead of clashing over one transaction.
+      await db.withExclusiveTransactionAsync(async (txn) => {
         for (const item of items) {
-          await db.runAsync(
+          await txn.runAsync(
             `INSERT INTO shopping_item (id, text, checked, aisle, recipe_title, added_at) VALUES (?, ?, ?, ?, ?, ?)
              ON CONFLICT(id) DO UPDATE SET text = excluded.text, checked = excluded.checked, aisle = excluded.aisle`,
             item.id,

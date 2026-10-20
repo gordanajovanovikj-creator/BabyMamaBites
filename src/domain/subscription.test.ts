@@ -3,7 +3,6 @@ import {
   formatUsd,
   freeTrialDays,
   isFreeLibraryCategory,
-  planForProduct,
   premiumFromSubscriptions,
   monthlyEquivalentCents,
   plans,
@@ -95,10 +94,5 @@ describe('premium access', () => {
     expect(isFreeLibraryCategory('safety')).toBe(true);
     expect(isFreeLibraryCategory('your-wellbeing')).toBe(true);
     expect(isFreeLibraryCategory('cooking-for-baby')).toBe(false);
-  });
-
-  it('knows our product ids', () => {
-    expect(planForProduct('mamababybites.premium.yearly')?.id).toBe('yearly');
-    expect(planForProduct('nope')).toBeUndefined();
   });
 });

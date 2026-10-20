@@ -13,7 +13,7 @@ export type TextFieldProps = Omit<TextInputProps, 'onChange' | 'value'> & {
 
 const inputText = { fontSize: 18 };
 
-/** Labelled single-line text input, 56pt tall. */
+/** Labeled single-line text input, 56pt tall. */
 export function TextField({ label, hint, value, onChangeText, ...rest }: TextFieldProps) {
   const palette = usePalette();
   return (

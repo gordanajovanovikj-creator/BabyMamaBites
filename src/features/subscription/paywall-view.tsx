@@ -61,6 +61,8 @@ export function PaywallView({
   const storeTrial = sub.products[selected]?.trialDays ?? 0;
   // Without the App Store (development preview) show the trial as it's set up for launch.
   const trialDays = sub.canPurchase ? (sub.trialEligible ? storeTrial : 0) : plan.trialDays;
+  // The "per month" and "save" math uses our US prices, so it only shows next to US prices.
+  const usdPrices = Object.values(sub.products).every((p) => p.currency === 'USD');
   const billed = `${priceOf(selected)} per ${plan.period}`;
   const disabled = busy || working;
 
@@ -78,7 +80,12 @@ export function PaywallView({
     const result = await sub.subscribe(selected).catch(() => ({ status: 'failed' as const }));
     setWorking(false);
     if (result.status === 'subscribed') onSubscribed();
-    else if (result.status === 'failed') {
+    else if (result.status === 'pending') {
+      say(
+        'Waiting for approval',
+        'Your request was sent for approval. Premium unlocks as soon as it’s approved.',
+      );
+    } else if (result.status === 'failed') {
       say("That didn't go through", "You haven't been charged. Please try again in a moment.");
     }
   };
@@ -127,8 +134,10 @@ export function PaywallView({
         <PlanCard
           name="Yearly"
           price={`${priceOf('yearly')}/year`}
-          detail={`Just ${formatUsd(monthlyEquivalentCents(yearly))}/month`}
-          highlight={`Save ${savings}%`}
+          detail={
+            usdPrices ? `Just ${formatUsd(monthlyEquivalentCents(yearly))}/month` : 'Billed yearly'
+          }
+          highlight={usdPrices ? `Save ${savings}%` : undefined}
           badge="Most popular"
           selected={selected === 'yearly'}
           onPress={() => setSelected('yearly')}

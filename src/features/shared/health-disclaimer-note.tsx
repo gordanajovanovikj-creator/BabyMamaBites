@@ -30,7 +30,7 @@ export function HealthDisclaimerNote({ short = false }: HealthDisclaimerNoteProp
         accessibilityLabel="Read the full medical disclaimer"
         onPress={() => router.push('/disclaimer')}
         hitSlop={8}
-        className="min-h-11 justify-center self-start active:opacity-60"
+        className="min-h-12 justify-center self-start active:opacity-60"
       >
         <AppText variant="label" size="sm" color="primary" className="font-bold">
           Read the full disclaimer ›

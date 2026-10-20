@@ -62,7 +62,7 @@ function ShoppingListScreen() {
     ));
 
   return (
-    <Screen className="gap-4">
+    <Screen>
       <ShoppingHeader left={left} total={total} />
       <AddItemField onAdd={addItem} />
 

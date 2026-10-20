@@ -2,18 +2,17 @@ import { router } from 'expo-router';
 import type { ComponentType, ReactNode } from 'react';
 import { View } from 'react-native';
 
-import { premiumFeatureCopy, TRIAL_DAYS, type PremiumFeature } from '@/domain/subscription';
+import { premiumFeatureCopy, type PremiumFeature } from '@/domain/subscription';
 import { AppText, Button, Card, IconBadge, Screen } from '@/ui';
 
 import { useSubscription } from './subscription-context';
 
 function LockedScreen({ feature }: { feature: PremiumFeature }) {
-  const { canPurchase, trialEligible } = useSubscription();
+  const { trialDays } = useSubscription();
   const copy = premiumFeatureCopy[feature];
-  const offerTrial = trialEligible || !canPurchase;
   return (
     <Screen className="flex-grow justify-center">
-      <Card className="items-center gap-3 py-8">
+      <Card className="items-center gap-3 px-5 py-8">
         <IconBadge icon={copy.icon} emoji={copy.emoji} size={72} />
         <AppText variant="label" size="sm" color="primary" className="font-bold uppercase">
           Premium
@@ -27,7 +26,7 @@ function LockedScreen({ feature }: { feature: PremiumFeature }) {
       </Card>
       <View className="gap-2">
         <Button
-          label={offerTrial ? `Start ${TRIAL_DAYS}-day free trial` : 'See plans'}
+          label={trialDays ? `Start ${trialDays}-day free trial` : 'See plans'}
           onPress={() => router.push('/paywall')}
         />
         <AppText variant="caption" size="sm" className="text-center">

@@ -28,7 +28,9 @@ const limiter = createRateLimiter(CHAT_RATE_RULES);
 
 /** POST /api/chat: { turns, ageMonths } → { reply } */
 export async function POST(request: Request) {
-  const allowed = limiter.check(clientKey(request.headers));
+  const key = clientKey(request.headers);
+  // Without a client address every visitor would share one count, so don't limit then.
+  const allowed = key === 'unknown' ? ({ ok: true } as const) : limiter.check(key);
   if (!allowed.ok) {
     return Response.json(
       { error: 'too_many' },

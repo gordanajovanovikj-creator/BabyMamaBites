@@ -81,7 +81,14 @@ export function Screen({
     <ScrollView
       className="flex-1 bg-canvas"
       contentInsetAdjustmentBehavior={edgeToEdgeTop ? 'never' : 'automatic'}
-      contentContainerClassName={cn('gap-4 pb-12', padded && 'px-5 pt-4', className)}
+      // Defaults only where the screen doesn't set its own (`cn` doesn't merge classes).
+      contentContainerClassName={cn(
+        !/(^|\s)gap-/.test(className ?? '') && 'gap-4',
+        'pb-12',
+        padded && 'px-5',
+        padded && !/(^|\s)pt-/.test(className ?? '') && 'pt-4',
+        className,
+      )}
       stickyHeaderIndices={stickyHeader ? [0] : undefined}
       onScroll={tracksScroll ? onScroll : undefined}
       scrollEventThrottle={tracksScroll ? 16 : undefined}

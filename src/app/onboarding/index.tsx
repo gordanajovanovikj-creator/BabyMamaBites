@@ -35,7 +35,7 @@ export default function WelcomeScreen() {
       >
         <View className="gap-3">
           <AppText variant="display" className="text-center" accessibilityRole="header">
-            {isNew ? 'Good Food for Mama and Baby' : 'Update your details'}
+            {isNew ? 'Good food for mama and baby' : 'Update your details'}
           </AppText>
           <AppText variant="body" color="muted" className="text-center">
             {isNew

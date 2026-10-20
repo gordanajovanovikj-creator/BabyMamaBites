@@ -51,7 +51,6 @@ const file = fileSchema.parse(guidesJson);
 
 export const monthlyGuides: MonthlyGuide[] = file.guides;
 export const guideSources: GuideSource[] = file.sources;
-export const guideSourcesAccessed: string = file.accessed;
 
 export function getGuideSource(id: string): GuideSource | undefined {
   return guideSources.find((s) => s.id === id);

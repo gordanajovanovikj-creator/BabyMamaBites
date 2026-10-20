@@ -1,7 +1,7 @@
-# Recipe photo credits
+# Photo credits
 
-Photos bundled in `assets/images/recipes/` and registered in
-`src/features/recipes/recipe-photos.ts`. Pixabay photos are used under the
+Photos bundled in `assets/images/` (recipes, foods, Insights and onboarding) and registered in
+the `*-photos.ts` files under `src/features/`; the in-app list is `src/content/photo-credits.json`. Pixabay photos are used under the
 [Pixabay Content License](https://pixabay.com/service/license-summary/)
 (free for commercial use, no attribution required); we credit them here anyway.
 

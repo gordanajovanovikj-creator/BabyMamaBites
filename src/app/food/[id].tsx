@@ -186,7 +186,7 @@ export default function FoodScreen() {
               Always stay with your baby while they eat, and have them sit upright.
             </AppText>
             <Button
-              label="Read the choking guide"
+              label="Read: Choking and gagging"
               variant="secondary"
               onPress={() => router.push('/solids/choking')}
             />

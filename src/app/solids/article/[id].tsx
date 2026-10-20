@@ -16,7 +16,7 @@ import { SafetyNotices } from '@/features/shared/safety-notice';
 import { PremiumGate } from '@/features/subscription/premium-gate';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
-import { AppText, Button, Card, Illustration, Screen } from '@/ui';
+import { AppText, BulletList, Button, Card, Illustration, Screen } from '@/ui';
 
 function ArticleScreenBody() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -90,16 +90,9 @@ function ArticleScreenBody() {
                   {p}
                 </AppText>
               ))}
-              {section.bullets.map((b) => (
-                <View key={b} className="flex-row gap-3">
-                  <AppText color={urgent ? 'danger' : 'primary'} className="font-bold">
-                    •
-                  </AppText>
-                  <AppText className="flex-1" color={textColor}>
-                    {b}
-                  </AppText>
-                </View>
-              ))}
+              {section.bullets.length ? (
+                <BulletList items={section.bullets} color={textColor} />
+              ) : null}
             </>
           );
           if (!section.callout) {

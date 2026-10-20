@@ -12,8 +12,10 @@ import { AppState } from 'react-native';
 import { useSettingsStore } from '@/data/stores-context';
 import {
   cachedPremiumValid,
+  featuredPlan,
   planProductIds,
   plans,
+  TRIAL_DAYS,
   premiumFromSubscriptions,
   type PlanId,
 } from '@/domain/subscription';
@@ -42,6 +44,11 @@ type SubscriptionState = {
   products: Partial<Record<PlanId, StoreProduct>>;
   /** Whether this Apple account can still start the free trial. */
   trialEligible: boolean;
+  /**
+   * Free-trial days this person is actually offered (0 if they've used it), for headings and
+   * buttons. Without the App Store (development preview) it's the trial planned for launch.
+   */
+  trialDays: number;
   subscribe(plan: PlanId): Promise<PurchaseResult>;
   /** Resolves to whether a subscription was found. */
   restore(): Promise<boolean>;
@@ -143,6 +150,11 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
       canPurchase: storeAvailable(),
       products,
       trialEligible: eligible,
+      trialDays: storeAvailable()
+        ? eligible
+          ? (products[featuredPlan]?.trialDays ?? 0)
+          : 0
+        : TRIAL_DAYS,
       subscribe,
       restore: restoreAndCheck,
       manage,

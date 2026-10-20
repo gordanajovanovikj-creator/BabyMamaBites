@@ -22,7 +22,7 @@ export default function AboutScreen() {
       ))}
       <Button label="Emergency & resources" onPress={() => router.push('/emergency')} />
       <Button
-        label="Disclaimers & Terms"
+        label="Disclaimers & terms"
         variant="secondary"
         onPress={() => router.push('/disclaimer')}
       />

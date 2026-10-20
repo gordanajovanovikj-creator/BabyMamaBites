@@ -30,8 +30,9 @@ export function PageFooter({ sources = [], notices = [], children, className }: 
       <SourceLinks sources={unique} />
       <SafetyNotices ids={notices} />
       {children}
-      {/* A page with its own notice keeps only the link, so it never shows two disclaimers. */}
-      <HealthDisclaimerNote short={notices.length > 0} />
+      {/* A page with its own notice or fine print keeps only the link, so it never shows two
+          disclaimers. */}
+      <HealthDisclaimerNote short={notices.length > 0 || children != null} />
     </View>
   );
 }

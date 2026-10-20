@@ -1,6 +1,7 @@
 # Recipes: safety and content review
 
-> Reviewed file: `src/content/recipes.json` (24 recipes, 16 categories). Review date: 2026-10-08.
+> Reviewed file: `src/content/recipes.json` as it was on 2026-10-08 (24 recipes, 16 categories).
+> A dated snapshot: the app now has many more recipes, which weren't part of this check.
 >
 > This was an **automated check** against official US source texts (CDC, AAP/HealthyChildren.org,
 > FDA/EPA, with WHO for context). It is **not a professional sign-off** by a registered

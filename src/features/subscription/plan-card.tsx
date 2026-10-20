@@ -27,7 +27,7 @@ export function PlanCard({
   return (
     <Pressable
       accessibilityRole="radio"
-      accessibilityState={{ selected }}
+      accessibilityState={{ checked: selected }}
       accessibilityLabel={[badge, name, price, detail, highlight].filter(Boolean).join('. ')}
       onPress={onPress}
       className={cn(

@@ -24,7 +24,7 @@ import {
 import { foodPhoto } from '@/features/foods/food-photos';
 import { useHousehold } from '@/features/profile/use-household';
 import { RecipeImage } from '@/features/recipes/recipe-image';
-import { AppText, Card, cn } from '@/ui';
+import { AppText, Card, cn, IconBadge } from '@/ui';
 
 import { plannedMeal } from './planned-meal';
 import { useMealsPerDay } from './use-meals-per-day';
@@ -244,11 +244,7 @@ function SlotRow({ date, slot }: { date: IsoDate; slot: MealSlot }) {
   } else if (own) {
     baby = (
       <MealLine
-        picture={
-          <View className="h-12 w-12 items-center justify-center rounded-xl bg-surface-muted">
-            <AppText size="2xl">🍽️</AppText>
-          </View>
-        }
+        picture={<IconBadge icon="fork.knife" emoji="🍽️" size={48} />}
         kicker="Your own food"
         title={own}
         accessibilityLabel={`Baby's ${mealName}: ${own}, your own food.`}

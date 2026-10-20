@@ -55,11 +55,21 @@ function SubscriptionSection() {
         Subscription
       </AppText>
       {sub.premium ? (
-        <LinkRow
-          label="Premium"
-          detail={sub.canPurchase ? 'Manage or cancel in the App Store' : 'Unlocked'}
-          onPress={() => (sub.canPurchase ? sub.manage().catch(() => {}) : undefined)}
-        />
+        sub.canPurchase ? (
+          <LinkRow
+            label="Premium"
+            detail="Manage or cancel in the App Store"
+            onPress={() => sub.manage().catch(() => {})}
+          />
+        ) : (
+          // Nothing to manage without the App Store (development preview).
+          <Card className="gap-0.5">
+            <AppText variant="label" size="lg">
+              Premium
+            </AppText>
+            <AppText variant="caption">Unlocked</AppText>
+          </Card>
+        )
       ) : (
         <LinkRow
           label="Free version"
@@ -187,7 +197,7 @@ export default function SettingsScreen() {
         onPress={() => router.push('/emergency')}
       />
       <LinkRow
-        label="Disclaimers & Terms"
+        label="Disclaimers & terms"
         detail="Educational information only, not medical advice"
         onPress={() => router.push('/disclaimer')}
       />

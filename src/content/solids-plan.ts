@@ -90,7 +90,6 @@ export const allergenFocusCopy = file.allergenFocus;
 export const chokingGuide = file.choking;
 export const quickFoods: QuickFood[] = file.quickFoods;
 export const solidsSources: GuideSource[] = file.sources;
-export const solidsAccessed = file.accessed;
 
 export function getPlanWeek(week: number): PlanWeek | undefined {
   return planWeeks.find((w) => w.week === week);

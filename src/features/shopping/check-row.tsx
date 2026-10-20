@@ -34,7 +34,7 @@ export function CheckRow({
     <Pressable
       accessibilityRole="checkbox"
       accessibilityState={{ checked }}
-      accessibilityLabel={detail ? `${text}, for ${detail}` : text}
+      accessibilityLabel={detail ? `${text}. ${detail}` : text}
       accessibilityHint={accessibilityHint}
       onPress={onPress}
       onLongPress={onLongPress}

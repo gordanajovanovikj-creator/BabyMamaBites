@@ -4,6 +4,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode,
 } from 'react';
@@ -25,7 +26,14 @@ const ShoppingContext = createContext<ShoppingState | null>(null);
 /** The shopping list, kept on this phone only. */
 export function ShoppingProvider({ children }: { children: ReactNode }) {
   const store = useShoppingStore();
-  const [items, setItems] = useState<ShoppingItem[]>([]);
+  const [items, setItemsState] = useState<ShoppingItem[]>([]);
+  // The latest list, so taps in quick succession (or Done and + together) never act on an
+  // old copy: two adds of the same item, or a double tap that only toggles once.
+  const latest = useRef<ShoppingItem[]>([]);
+  const setItems = useCallback((next: (current: ShoppingItem[]) => ShoppingItem[]) => {
+    latest.current = next(latest.current);
+    setItemsState(latest.current);
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -33,33 +41,45 @@ export function ShoppingProvider({ children }: { children: ReactNode }) {
       .list()
       .catch(() => [])
       .then((loaded) => {
-        if (!cancelled) setItems(sortShopping(loaded));
+        if (!cancelled) setItems(() => sortShopping(loaded));
       });
     return () => {
       cancelled = true;
     };
-  }, [store]);
+  }, [setItems, store]);
 
   const add = useCallback(
     async (lines: ShoppingLine[]) => {
-      const added = itemsToAdd(items, lines);
+      const added = itemsToAdd(latest.current, lines);
       if (!added.length) return 0;
-      await store.save(added);
       setItems((current) => [...current, ...added]);
+      try {
+        await store.save(added);
+      } catch (error) {
+        const ids = new Set(added.map((i) => i.id));
+        setItems((current) => current.filter((i) => !ids.has(i.id)));
+        throw error;
+      }
       return added.length;
     },
-    [items, store],
+    [setItems, store],
   );
 
   const toggle = useCallback(
     async (id: string) => {
-      const item = items.find((i) => i.id === id);
+      const item = latest.current.find((i) => i.id === id);
       if (!item) return;
       const next = { ...item, checked: !item.checked };
       setItems((current) => current.map((i) => (i.id === id ? next : i)));
-      await store.save([next]);
+      try {
+        await store.save([next]);
+      } catch (error) {
+        // Put it back, so the screen never shows a change that wasn't saved.
+        setItems((current) => current.map((i) => (i.id === id ? item : i)));
+        throw error;
+      }
     },
-    [items, store],
+    [setItems, store],
   );
 
   const remove = useCallback(
@@ -67,14 +87,14 @@ export function ShoppingProvider({ children }: { children: ReactNode }) {
       setItems((current) => current.filter((i) => i.id !== id));
       await store.remove([id]);
     },
-    [store],
+    [setItems, store],
   );
 
   const clearChecked = useCallback(async () => {
-    const ids = items.filter((i) => i.checked).map((i) => i.id);
+    const ids = latest.current.filter((i) => i.checked).map((i) => i.id);
     setItems((current) => current.filter((i) => !i.checked));
     await store.remove(ids);
-  }, [items, store]);
+  }, [setItems, store]);
 
   const value = useMemo(
     () => ({ items, add, toggle, remove, clearChecked }),

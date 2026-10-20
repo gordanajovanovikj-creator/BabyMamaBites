@@ -24,5 +24,4 @@ Each recipe page shows estimated nutrition per serving, from `src/content/recipe
 - Brands, produce sizes and portions vary, so the numbers are estimates for general
   information only. They are not reviewed by a dietitian.
 
-To change a mapping, edit the batch file in the scratch workflow or `ingredient-mapping.json`
-and recompute the totals.
+To change a mapping, edit `ingredient-mapping.json` and recompute the totals.

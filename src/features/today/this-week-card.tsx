@@ -127,8 +127,11 @@ function MealTile({ date, slot, wide = false }: { date: IsoDate; slot: MealSlot;
               contentFit="cover"
               style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
             />
+          ) : // A food's own emoji stands in for its photo; anything else gets the meal icon.
+          meal.kind === 'food' ? (
+            <AppText size="2xl">{meal.food.emoji}</AppText>
           ) : (
-            <AppText size="2xl">{meal.kind === 'food' ? meal.food.emoji : '🍽️'}</AppText>
+            <IconBadge icon="fork.knife" emoji="🍽️" size={40} tone="surface" />
           )}
         </View>
       )}

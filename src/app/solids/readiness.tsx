@@ -5,7 +5,7 @@ import { libraryPhoto } from '@/features/library/library-photos';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { PageFooter } from '@/features/shared/page-footer';
-import { AppText, Notice, Screen } from '@/ui';
+import { BulletList, Notice, Screen } from '@/ui';
 
 /** "Is your baby ready to start solids?": the readiness signs, opened from the Plan tab. */
 export default function ReadinessScreen() {
@@ -30,16 +30,7 @@ export default function ReadinessScreen() {
       />
 
       <View className="gap-6 px-5 pt-6">
-        <View className="gap-3">
-          {readiness.signs.map((sign) => (
-            <View key={sign} className="flex-row gap-3">
-              <AppText color="primary" className="font-bold">
-                •
-              </AppText>
-              <AppText className="flex-1">{sign}</AppText>
-            </View>
-          ))}
-        </View>
+        <BulletList items={readiness.signs} />
 
         <Notice
           tone="caution"

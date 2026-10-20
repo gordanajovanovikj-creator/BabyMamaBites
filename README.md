@@ -8,14 +8,14 @@ A calm, one-handed postpartum and baby-feeding companion for iOS, built with Exp
 
 ## Stack
 
-| Concern       | Choice                                                                |
-| ------------- | --------------------------------------------------------------------- |
-| App framework | Expo SDK 57, TypeScript, Expo Router (routes in `src/app/`)           |
-| Styling       | NativeWind 5 (RC) + Tailwind CSS 4, colour tokens in `src/global.css` |
-| Storage       | `expo-sqlite` (user data, on-device only); content is bundled JSON    |
-| Reminders     | `expo-notifications` (local only)                                     |
-| Tests         | Jest (`jest-expo`)                                                    |
-| Builds        | EAS Build (`eas.json`: development, preview, production)              |
+| Concern       | Choice                                                               |
+| ------------- | -------------------------------------------------------------------- |
+| App framework | Expo SDK 57, TypeScript, Expo Router (routes in `src/app/`)          |
+| Styling       | NativeWind 5 (RC) + Tailwind CSS 4, color tokens in `src/global.css` |
+| Storage       | `expo-sqlite` (user data, on-device only); content is bundled JSON   |
+| Reminders     | `expo-notifications` (local only)                                    |
+| Tests         | Jest (`jest-expo`)                                                   |
+| Builds        | EAS Build (`eas.json`: development, preview, production)             |
 
 ## Getting started
 
@@ -39,13 +39,14 @@ npm run web             # quick browser preview (not a target platform)
 ```
 src/
   app/        Expo Router screens only (thin)
-  content/    bundled, expert-editable JSON + zod schemas
+  app/api/    server routes (the Ask chat), hosted on EAS Hosting
+  content/    bundled JSON content + zod schemas
   domain/     pure TypeScript logic (unit-tested)
-  data/       SQLite client, migrations, repositories
-  services/   notifications, AI, entitlements (paywall seam)
-  features/   feature components and hooks
-  ui/         shared primitives (AppText, Button, Card, Chip, Notice, Screen)
-  theme/      raw colour values for native props
+  data/       SQLite stores, migrations (localStorage in the web preview)
+  features/   feature components and hooks (reminders, chat, subscription, shopping…)
+  ui/         shared primitives (AppText, Button, Card, IconBadge, BulletList, Screen…)
+  theme/      raw color values for native props
+  widgets/    the iOS home screen widget
 ```
 
 ## Privacy

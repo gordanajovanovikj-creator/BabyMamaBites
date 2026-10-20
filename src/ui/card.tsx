@@ -36,7 +36,10 @@ export function Card({
   accessibilityLabel,
   ...rest
 }: CardProps) {
-  const classes = cn('rounded-3xl p-5', toneClasses[tone], className);
+  // `cn` doesn't merge Tailwind classes, so the default padding only applies when the caller
+  // doesn't set its own (two padding classes on one view resolve unpredictably).
+  const ownPadding = /(^|\s)p[xytblr]?-/.test(className ?? '');
+  const classes = cn('rounded-3xl', !ownPadding && 'p-5', toneClasses[tone], className);
   if (onPress) {
     return (
       <Pressable

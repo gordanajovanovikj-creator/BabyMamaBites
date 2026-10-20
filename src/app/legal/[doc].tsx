@@ -2,7 +2,7 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { View } from 'react-native';
 
 import { getLegalDocument } from '@/content/legal';
-import { AppText, Button, Screen } from '@/ui';
+import { AppText, BulletList, Button, Screen } from '@/ui';
 
 /** Terms of Use or Privacy Policy, opened from Settings and the subscription screen. */
 export default function LegalScreen() {
@@ -33,14 +33,7 @@ export default function LegalScreen() {
           {section.paragraphs.map((p) => (
             <AppText key={p}>{p}</AppText>
           ))}
-          {section.bullets.map((b) => (
-            <View key={b} className="flex-row gap-3">
-              <AppText color="primary" className="font-bold">
-                •
-              </AppText>
-              <AppText className="flex-1">{b}</AppText>
-            </View>
-          ))}
+          {section.bullets.length ? <BulletList items={section.bullets} /> : null}
         </View>
       ))}
     </Screen>

@@ -19,10 +19,9 @@ const light = {
   dangerInk: '#9A3A1F',
 } as const;
 
-/** Light-only by design: "dark" mirrors light so older call sites keep working. */
-export const colors = { light, dark: light } as const;
+/** Light-only by design. */
+export const colors = { light } as const;
 
-export type ColorScheme = keyof typeof colors;
 export type Palette = typeof light;
 
 /**

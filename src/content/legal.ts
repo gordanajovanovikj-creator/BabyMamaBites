@@ -17,7 +17,6 @@ export const legalDocumentSchema = z.object({
   sections: z.array(sectionSchema).min(1),
 });
 export type LegalDocument = z.infer<typeof legalDocumentSchema>;
-export type LegalDocumentId = LegalDocument['id'];
 
 const file = z
   .object({ version: z.number(), documents: z.array(legalDocumentSchema).min(1) })

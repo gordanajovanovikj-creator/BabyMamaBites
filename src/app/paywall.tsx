@@ -6,7 +6,7 @@ import { AppText, Screen } from '@/ui';
 /** Opened from a locked screen or Settings. */
 export default function PaywallScreen() {
   return (
-    <Screen className="pt-4">
+    <Screen>
       <PaywallView
         header={
           <AppText variant="title" accessibilityRole="header">

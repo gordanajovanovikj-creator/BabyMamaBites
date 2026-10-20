@@ -7,23 +7,8 @@ import { allergenLabels } from '@/domain/profile-labels';
 import { useProfile } from '@/features/profile/profile-context';
 import { PageFooter } from '@/features/shared/page-footer';
 import { TipCard } from '@/features/shared/tip-card';
-import { AppText, Button, Card, Notice, Screen } from '@/ui';
+import { AppText, BulletList, Button, Card, Notice, Screen } from '@/ui';
 import { withPremium } from '@/features/subscription/premium-gate';
-
-function Bullets({ items }: { items: string[] }) {
-  return (
-    <View className="gap-2">
-      {items.map((item) => (
-        <View key={item} className="flex-row gap-3">
-          <AppText color="primary" className="font-bold">
-            •
-          </AppText>
-          <AppText className="flex-1">{item}</AppText>
-        </View>
-      ))}
-    </View>
-  );
-}
 
 function PlanWeekScreen() {
   const { n } = useLocalSearchParams<{ n: string }>();
@@ -82,7 +67,7 @@ function PlanWeekScreen() {
           <AppText variant="heading">{foodsHeading.title}</AppText>
           {foodsHeading.detail ? <AppText variant="caption">{foodsHeading.detail}</AppText> : null}
         </View>
-        <Bullets items={week.tryFoods} />
+        <BulletList items={week.tryFoods} />
         {week.allergen ? (
           <AppText variant="caption">
             Plus this week&apos;s allergen, below, on its own day.

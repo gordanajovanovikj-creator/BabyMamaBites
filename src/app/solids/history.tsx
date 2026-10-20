@@ -18,7 +18,7 @@ function FoodHistoryScreen() {
   return (
     <Screen>
       <AppText variant="caption">Saved on this phone only. Newest first.</AppText>
-      <Card className="gap-0 py-2">
+      <Card className="gap-0 px-5 py-2">
         {entries.length ? (
           entries.map((e) => (
             <LogEntryRow

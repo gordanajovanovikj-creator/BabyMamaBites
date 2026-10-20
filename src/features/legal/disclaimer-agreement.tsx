@@ -61,6 +61,7 @@ export function DisclaimerAgreement({ onAccepted }: { onAccepted(): void }) {
           <Pressable
             key={l.label}
             accessibilityRole="link"
+            accessibilityLabel={l.label}
             onPress={l.go}
             className="min-h-12 justify-center active:opacity-60"
           >

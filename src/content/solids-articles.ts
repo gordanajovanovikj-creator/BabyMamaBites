@@ -52,7 +52,6 @@ const file = z
 
 /** Starting-solids articles ("Insights" on the Plan tab). */
 export const solidsArticles: Article[] = file.articles;
-export const articlesAccessed = file.accessed;
 
 export function getArticle(id: string): Article | undefined {
   return solidsArticles.find((a) => a.id === id);

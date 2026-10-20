@@ -8,7 +8,7 @@ import { AppText, Button, Screen } from '@/ui';
 const extraNotes = ['feeding-safety', 'maternal-health', 'family-nutrition', 'our-guidance'];
 
 /**
- * Disclaimers & Terms: the full Medical and Health Information Disclaimer, the safety
+ * Disclaimers & terms: the full Medical and Health Information Disclaimer, the safety
  * notes shown on content pages, and links to the Terms, Privacy Policy and emergency help.
  * Linked from Settings, About and every health page.
  */

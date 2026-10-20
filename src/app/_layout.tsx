@@ -139,7 +139,7 @@ function RootStack() {
           />
           <Stack.Screen
             name="disclaimer"
-            options={{ presentation: 'modal', headerShown: true, title: 'Disclaimers & Terms' }}
+            options={{ presentation: 'modal', headerShown: true, title: 'Disclaimers & terms' }}
           />
           <Stack.Screen
             name="emergency"
