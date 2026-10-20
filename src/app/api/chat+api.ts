@@ -2,6 +2,7 @@ import Anthropic from '@anthropic-ai/sdk';
 
 import { CHAT_SYSTEM_PROMPT } from '@/content/chat-prompt';
 import { parseChatRequest } from '@/domain/chat';
+import { CHAT_RATE_RULES, clientKey, createRateLimiter } from '@/domain/rate-limit';
 
 /** Server-only. Reads ANTHROPIC_API_KEY from the host's environment (never bundled in the app). */
 let client: Anthropic | null = null;
@@ -18,8 +19,22 @@ function getClient(): Anthropic | null {
  */
 const wantsOpus = () => process.env.CHAT_MODEL === 'opus';
 
+/**
+ * Per-connection limits, so one person or a script can't run up the bill. In memory, so
+ * each server instance counts on its own: a guard, not a hard cap (the Anthropic spend
+ * limit is the hard cap).
+ */
+const limiter = createRateLimiter(CHAT_RATE_RULES);
+
 /** POST /api/chat: { turns, ageMonths } → { reply } */
 export async function POST(request: Request) {
+  const allowed = limiter.check(clientKey(request.headers));
+  if (!allowed.ok) {
+    return Response.json(
+      { error: 'too_many' },
+      { status: 429, headers: { 'Retry-After': String(allowed.retryAfterSeconds) } },
+    );
+  }
   const body: unknown = await request.json().catch(() => null);
   const chat = parseChatRequest(body);
   if (!chat) return Response.json({ error: 'invalid_request' }, { status: 400 });

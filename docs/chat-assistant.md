@@ -12,8 +12,15 @@ route, `src/app/api/chat+api.ts`, which holds the secret API key and calls the m
   allergies or other profile data is sent.
 - **Urgent messages:** before sending, `detectUrgent` (`src/domain/chat.ts`) looks for emergency
   or crisis wording and immediately shows 911, or 988 and 1-833-TLC-MAMA, in the app.
+- **Consent:** the first time, Ask shows a card explaining what is sent and to whom; nothing
+  is sent until the mom agrees (saved on the phone).
+- **Rate limit:** each connection can send 20 questions per 10 minutes and 100 per day
+  (`src/domain/rate-limit.ts`). Over the limit, the app asks her to take a break and try
+  later. The limit counts by IP address in the server's memory only (never logged or
+  stored), and each server instance counts on its own, so it's a guard against scripts and
+  runaway use, not a hard cap. The Anthropic spend limit is the hard cap.
 - **Server:** validates the request (max 20 messages, 2,000 characters each), adds a fixed
-  safety system prompt (`src/content/chat-prompt.ts`, marked for expert review), and calls the
+  safety system prompt (`src/content/chat-prompt.ts`), and calls the
   model at low effort (Opus also gets server-side refusal fallbacks; Haiku has none, so a
   declined question shows a gentle "talk to your pediatrician" message). The system prompt is
   prompt-cached.
@@ -55,14 +62,17 @@ Suggested test questions: a recipe from 3 ingredients, finger foods for 9 months
 
 ## Before launch
 
-- **Expert review** of `src/content/chat-prompt.ts` (pediatric dietitian, pediatrician,
-  perinatal mental-health clinician).
-- **Privacy policy:** say that questions typed into Ask are sent to our server and to
-  Anthropic to generate an answer, are not stored by the app, and that the baby's age in
-  months is included. Check Anthropic's data-retention terms for your account.
-- **App Store privacy label:** add "User Content → Other User Content", used for "App
-  Functionality", not linked to identity, not used for tracking.
-- **Abuse protection:** consider rate limiting (per device) on the server route, and keep an
-  Anthropic spend limit in place.
+Already done in the app: the privacy policy explains what Ask sends (questions and the baby's
+age in months, to our server and Anthropic, not saved by the app), the one-time consent card,
+per-connection rate limiting, and the "not medical advice" notice with 911 / 988 /
+1-833-TLC-MAMA escalation.
+
+Still to do when you switch it on:
+
+- **Anthropic spend limit:** set a monthly limit in the Anthropic Console (the real cost cap).
+- **Data retention:** check Anthropic's data-retention terms for your account and that the
+  privacy policy still matches them.
+- **App Store privacy label:** "User Content → Other User Content", used for "App
+  Functionality", not linked to identity, not used for tracking (see the README).
 - **App Store guideline 1.4.1** (medical apps): keep the "not medical advice" notice and the
   911 / 988 escalation visible.

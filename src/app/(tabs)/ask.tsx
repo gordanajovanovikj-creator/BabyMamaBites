@@ -73,9 +73,11 @@ export default function AskScreen() {
       setProblem(
         result.reason === 'busy'
           ? 'Lots of moms are asking right now. Please try again in a minute.'
-          : result.reason === 'not-ready'
-            ? "The chat helper isn't switched on yet. Please check back soon."
-            : "We couldn't reach the helper. Check your connection and try again.",
+          : result.reason === 'too-many'
+            ? "You've asked a lot of questions in a short time. Please take a little break and try again later."
+            : result.reason === 'not-ready'
+              ? "The chat helper isn't switched on yet. Please check back soon."
+              : "We couldn't reach the helper. Check your connection and try again.",
       );
     }
     requestAnimationFrame(() => scroll.current?.scrollToEnd({ animated: true }));

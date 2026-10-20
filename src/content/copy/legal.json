@@ -131,7 +131,8 @@
           "heading": "The Ask chat",
           "paragraphs": [
             "The app asks for your OK before your first question. When you use the Ask tab, the questions you type and your baby's age in months are sent to our server and then to Anthropic, the company that provides the AI model, to write an answer. Your baby's name, birth date, allergies and other details aren't sent.",
-            "The app doesn't save your chat on your phone or on our server. Anthropic may keep messages for a limited time under its own policies, for example for safety. Please don't type names, contact details or other personal information into the chat."
+            "The app doesn't save your chat on your phone or on our server. Anthropic may keep messages for a limited time under its own policies, for example for safety. Please don't type names, contact details or other personal information into the chat.",
+            "To keep the chat fair and running, our server briefly uses your connection's IP address to limit how many questions can be sent in a short time. It isn't saved or logged."
           ],
           "bullets": []
         },
