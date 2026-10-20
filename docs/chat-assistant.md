@@ -30,16 +30,20 @@ route, `src/app/api/chat+api.ts`, which holds the secret API key and calls the m
 1. **Anthropic account and API key.** Create a key at console.anthropic.com. Set a monthly
    spend limit there.
 2. **Expo / EAS account** to host the server route (EAS Hosting).
-3. **Store the key on the server only**, never in the app or in git:
-   `npx eas-cli@latest env:create --name ANTHROPIC_API_KEY --value <key> --environment production --visibility secret`
-   (or add it in the EAS dashboard under Environment variables).
+3. **Store the key on EAS, never in the app or in git.** In the expo.dev dashboard open the
+   project, then **Project settings → Environment variables → Add Variables**: name
+   `ANTHROPIC_API_KEY`, environment **Production**, visibility **Sensitive**. (EAS Hosting
+   can't use **Secret** variables, so Sensitive is required.)
 4. **Deploy the server:**
-   `npx expo export --platform web` then `npx eas-cli@latest deploy --prod`.
-   Note the URL it prints (for example `https://mamababybites.expo.app`).
+   `npx expo export --platform web` then
+   `npx eas-cli@latest deploy --prod --environment production`.
+   The first deploy asks you to link an EAS project and pick a subdomain; it prints the
+   production URL (for example `https://mamababybites.expo.app`). Variables are copied into
+   each deployment, so after changing the key, export and deploy again.
 5. **Point the iPhone app at it:** in `app.json`, change the `expo-router` plugin entry to
    `["expo-router", { "origin": "https://<your-url>/" }]`, then make a new build.
-6. **Local testing:** `ANTHROPIC_API_KEY=<key> npx expo start` makes the chat work in
-   development.
+6. **Local testing:** put `ANTHROPIC_API_KEY=...` in a file named `.env.local` at the
+   project root (git ignores it), then `npx expo start --go --clear`.
 
 ## Choosing the model
 
