@@ -187,7 +187,12 @@ function AskScreen() {
 
       {/* Keeps the message box above the floating tab bar. With the keyboard up the tab bar
           is hidden behind it, so the box sits right on the keyboard instead. */}
-      <SafeAreaView edges={{ bottom: !keyboardVisible }} className="bg-canvas">
+      <SafeAreaView
+        edges={{ bottom: !keyboardVisible }}
+        // It fills the screen by default; here it only wraps the message box.
+        style={{ flex: 0 }}
+        className="bg-canvas"
+      >
         <View className="flex-row items-end gap-2 border-t border-border bg-canvas px-4 py-3">
           <TextInput
             accessibilityLabel="Your question"
