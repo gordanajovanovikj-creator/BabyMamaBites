@@ -7,7 +7,7 @@ import { StyleSheet, View } from 'react-native';
 import Animated, { FadeOut, useReducedMotion } from 'react-native-reanimated';
 
 /** Same size as the native splash image (`imageWidth` in app.json), so the hand-off is seamless. */
-const LOGO_SIZE = 320;
+const LOGO_SIZE = 340;
 /** If the video can't play for any reason, the app still opens. */
 const SAFETY_MS = 4000;
 /** With Reduce Motion, the still logo shows briefly instead of the animation. */
