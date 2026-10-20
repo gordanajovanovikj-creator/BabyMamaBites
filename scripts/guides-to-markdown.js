@@ -1,4 +1,4 @@
-// Renders src/content/monthly-guides.json as a readable Markdown file for reviewers.
+// Renders src/content/monthly-guides.json as a readable Markdown file.
 // Usage: npm run content:guides-doc
 const fs = require('fs');
 const path = require('path');
@@ -10,17 +10,17 @@ const data = JSON.parse(
 const sources = Object.fromEntries(data.sources.map((s) => [s.id, s]));
 
 const lines = [
-  '# Monthly guides: review copy',
+  '# Monthly guides: readable copy',
   '',
   '> Generated from `src/content/monthly-guides.json`. Edit the JSON file, not this one.',
-  `> ${data.region} edition. Drafted from official sources read on ${data.accessed}. Every section still needs expert review.`,
+  `> ${data.region} edition. Summarized from official sources read on ${data.accessed}.`,
   '',
 ];
 
 for (const g of data.guides) {
   lines.push(`## ${g.title} (${g.ageLabel})`, '', `_${g.intro}_`, '');
   for (const s of g.sections) {
-    lines.push(`### ${s.title}`, '', `Reviewer: **${s.reviewer}**`, '');
+    lines.push(`### ${s.title}`, '');
     for (const p of s.paragraphs) lines.push(p, '');
     for (const b of s.bullets) lines.push(`- ${b}`);
     if (s.bullets.length) lines.push('');
