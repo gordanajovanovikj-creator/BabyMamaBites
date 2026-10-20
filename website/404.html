@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found · Mama &amp; Baby Bites</title>
+    <meta name="description" content="This page could not be found." />
+    <meta name="theme-color" content="#f7eedc" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="wrap nav" aria-label="Main">
+        <a class="brand" href="/" aria-label="Mama &amp; Baby Bites home">
+          <img src="assets/img/logo-mark.webp" alt="" width="40" height="40" />
+          <span>Mama &amp; Baby Bites</span>
+        </a>
+        <ul class="nav-links">
+          <li class="optional"><a href="/#features">Features</a></li>
+          <li class="optional"><a href="/#pricing">Pricing</a></li>
+          <li class="optional"><a href="/#faq">FAQ</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a class="btn btn-primary btn-sm" href="/#get">Get the app</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="doc">
+      <h1>We couldn't find that page</h1>
+      <p class="intro">It may have moved. Let's get you back to something tasty.</p>
+      <a class="btn btn-primary" href="/">Go to the home page</a>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <a class="brand" href="/"><img src="assets/img/logo-mark.webp" alt="" width="40" height="40" /> Mama &amp; Baby Bites</a>
+            <p>
+              Mama &amp; Baby Bites shares general information, not medical advice. Always talk to
+              your pediatrician or doctor about your family's health. In an emergency, call 911.
+            </p>
+          </div>
+          <div>
+            <h4>App</h4>
+            <ul>
+              <li><a href="/#features">Features</a></li>
+              <li><a href="/#pricing">Pricing</a></li>
+              <li><a href="/#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Help &amp; legal</h4>
+            <ul>
+              <li><a href="support.html">Support</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Use</a></li>
+              <li><a href="credits.html">Photo credits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Culman Brothers LLC. All rights reserved.</span>
+          <a href="mailto:support@mamababybites.com">support@mamababybites.com</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const header = document.querySelector('.site-header');
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    </script>
+  </body>
+</html>
