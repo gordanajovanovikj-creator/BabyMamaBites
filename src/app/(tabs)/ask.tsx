@@ -9,12 +9,14 @@ import {
   View,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { SafeAreaView } from 'react-native-screens/experimental';
 
 import { today } from '@/domain/dates';
 import { CHAT_LIMITS, detectUrgent, type ChatTurn, type UrgentKind } from '@/domain/chat';
 import { babyAge } from '@/domain/stage';
 import { sendChat } from '@/features/chat/chat-client';
 import { useChatConsent } from '@/features/chat/use-chat-consent';
+import { useKeyboardVisible } from '@/features/chat/use-keyboard-visible';
 import { UrgentHelp } from '@/features/chat/urgent-help';
 import { useProfile } from '@/features/profile/profile-context';
 import { AppText, Button, Chip, cn } from '@/ui';
@@ -31,6 +33,7 @@ const SUGGESTIONS = [
 /** Ask: a simple chat with the app's helper. Conversations stay in memory and are not saved. */
 function AskScreen() {
   const insets = useSafeAreaInsets();
+  const keyboardVisible = useKeyboardVisible();
   const palette = usePalette();
   const { profile } = useProfile();
   const params = useLocalSearchParams<{ q?: string }>();
@@ -182,34 +185,38 @@ function AskScreen() {
         ) : null}
       </ScrollView>
 
-      <View className="flex-row items-end gap-2 border-t border-border bg-canvas px-4 py-3">
-        <TextInput
-          accessibilityLabel="Your question"
-          value={input}
-          onChangeText={setInput}
-          placeholder="Ask anything about feeding…"
-          placeholderTextColor={palette.inkMuted}
-          multiline
-          editable={consented === true}
-          maxLength={CHAT_LIMITS.maxChars}
-          className="max-h-32 min-h-12 flex-1 rounded-3xl bg-surface-muted px-4 py-3 text-lg text-ink"
-        />
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel="Send"
-          accessibilityState={{ disabled: !input.trim() || locked }}
-          disabled={!input.trim() || locked}
-          onPress={() => send(input)}
-          className={cn(
-            'h-12 w-12 items-center justify-center rounded-full bg-primary active:opacity-80',
-            (!input.trim() || locked) && 'opacity-40',
-          )}
-        >
-          <AppText variant="heading" color="on-primary">
-            ↑
-          </AppText>
-        </Pressable>
-      </View>
+      {/* Keeps the message box above the floating tab bar. With the keyboard up the tab bar
+          is hidden behind it, so the box sits right on the keyboard instead. */}
+      <SafeAreaView edges={{ bottom: !keyboardVisible }} className="bg-canvas">
+        <View className="flex-row items-end gap-2 border-t border-border bg-canvas px-4 py-3">
+          <TextInput
+            accessibilityLabel="Your question"
+            value={input}
+            onChangeText={setInput}
+            placeholder="Ask anything about feeding…"
+            placeholderTextColor={palette.inkMuted}
+            multiline
+            editable={consented === true}
+            maxLength={CHAT_LIMITS.maxChars}
+            className="max-h-32 min-h-12 flex-1 rounded-3xl bg-surface-muted px-4 py-3 text-lg text-ink"
+          />
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Send"
+            accessibilityState={{ disabled: !input.trim() || locked }}
+            disabled={!input.trim() || locked}
+            onPress={() => send(input)}
+            className={cn(
+              'h-12 w-12 items-center justify-center rounded-full bg-primary active:opacity-80',
+              (!input.trim() || locked) && 'opacity-40',
+            )}
+          >
+            <AppText variant="heading" color="on-primary">
+              ↑
+            </AppText>
+          </Pressable>
+        </View>
+      </SafeAreaView>
     </KeyboardAvoidingView>
   );
 }
