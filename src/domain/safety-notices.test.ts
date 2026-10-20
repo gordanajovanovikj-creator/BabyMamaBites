@@ -14,8 +14,8 @@ describe('noticesFor', () => {
     expect(article.afterBody).toEqual([]);
   });
 
-  it('puts the allergy notice after allergy articles', () => {
-    const allergy = noticesFor({ id: 'allergens', category: 'starting-solids' });
+  it('puts the allergy notice after the reaction signs article', () => {
+    const allergy = noticesFor({ id: 'allergic-reaction-signs', category: 'safety' });
     expect(allergy.top).toEqual([]);
     expect(allergy.bottom).toEqual(['allergy-safety']);
   });
