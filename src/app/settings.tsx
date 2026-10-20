@@ -1,6 +1,7 @@
 import { router } from 'expo-router';
 import { Alert, Linking, Pressable, View } from 'react-native';
 
+import { SUPPORT_EMAIL } from '@/content/contact';
 import { logTimes, type ReminderSettings } from '@/domain/reminders';
 import { notificationsSupported } from '@/features/reminders/notifications';
 import { useReminders } from '@/features/reminders/reminders-context';
@@ -149,6 +150,11 @@ export default function SettingsScreen() {
         label="Privacy Policy"
         detail="Your details stay on this phone"
         onPress={() => router.push({ pathname: '/legal/[doc]', params: { doc: 'privacy' } })}
+      />
+      <LinkRow
+        label="Contact us"
+        detail={SUPPORT_EMAIL}
+        onPress={() => Linking.openURL(`mailto:${SUPPORT_EMAIL}`).catch(() => {})}
       />
     </Screen>
   );
