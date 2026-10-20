@@ -1,13 +1,24 @@
 import { useEventListener } from 'expo';
 import { Image } from 'expo-image';
+import { LinearGradient } from 'expo-linear-gradient';
 import * as SplashScreen from 'expo-splash-screen';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { useEffect, useRef, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Animated, { FadeOut, useReducedMotion } from 'react-native-reanimated';
 
-/** Same size as the native splash image (`imageWidth` in app.json), so the hand-off is seamless. */
-const LOGO_SIZE = 340;
+import { usePalette } from '@/theme/use-palette';
+
+/**
+ * The clip and the still logo are framed with extra cream around the logo so their edges can
+ * fade into the screen (video colors never match the screen exactly). At this size the mark
+ * lines up with the native splash image (340pt in app.json, a tighter crop of the same frame),
+ * so the hand-off is seamless. Wider than small phones; the overflow is just cream.
+ */
+const LOGO_SIZE = 440;
+/** How far in from each edge the clip fades into the background (the logo is wider than tall). */
+const FADE_SIDES = 56;
+const FADE_TOP_BOTTOM = 100;
 /** If the video can't play for any reason, the app still opens. */
 const SAFETY_MS = 4000;
 /** With Reduce Motion, the still logo shows briefly instead of the animation. */
@@ -21,6 +32,39 @@ const stillLogo = require('@/assets/images/logo-full.png');
  * (about 2 seconds) and fades into the app. It waits for the app to be ready, never plays
  * sound, and doesn't interrupt music or podcasts.
  */
+/** Soft cream fades over all four edges, so the clip never shows a box. */
+function EdgeFades() {
+  const { accent } = usePalette();
+  const colors = [accent, `${accent}00`] as const;
+  const edge = { position: 'absolute', pointerEvents: 'none' } as const;
+  return (
+    <>
+      <LinearGradient
+        colors={colors}
+        style={[edge, { top: 0, left: 0, right: 0, height: FADE_TOP_BOTTOM }]}
+      />
+      <LinearGradient
+        colors={colors}
+        start={{ x: 0, y: 1 }}
+        end={{ x: 0, y: 0 }}
+        style={[edge, { bottom: 0, left: 0, right: 0, height: FADE_TOP_BOTTOM }]}
+      />
+      <LinearGradient
+        colors={colors}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 0 }}
+        style={[edge, { top: 0, bottom: 0, left: 0, width: FADE_SIDES }]}
+      />
+      <LinearGradient
+        colors={colors}
+        start={{ x: 1, y: 0 }}
+        end={{ x: 0, y: 0 }}
+        style={[edge, { top: 0, bottom: 0, right: 0, width: FADE_SIDES }]}
+      />
+    </>
+  );
+}
+
 export function LogoIntro({ appReady, onDone }: { appReady: boolean; onDone(): void }) {
   const reduceMotion = useReducedMotion();
   const [finished, setFinished] = useState(false);
@@ -105,6 +149,7 @@ export function LogoIntro({ appReady, onDone }: { appReady: boolean; onDone(): v
               onFirstFrameRender={hideSplash}
             />
           )}
+          <EdgeFades />
         </View>
       </View>
     </Animated.View>

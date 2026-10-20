@@ -13,6 +13,8 @@ const light = {
   /** Lighter sage for the top of primary gradients (white bold text still reads on it). */
   primaryLight: '#6E9A6D',
   border: '#E9E3D8',
+  /** Warm cream (the accent token): the logo intro's background, for its edge fades. */
+  accent: '#F7EEDC',
   /** Matches the danger-ink token, for SVG drawings that can't take a className. */
   dangerInk: '#9A3A1F',
 } as const;
