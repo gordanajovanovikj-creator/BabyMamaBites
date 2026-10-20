@@ -1,6 +1,6 @@
 @AGENTS.md
 
-## MamaBabyBites project rules
+## Mama & Baby Bites project rules
 
 - **US-based app.** Health content follows US guidance (CDC, AAP/HealthyChildren.org, FDA,
   USDA Dietary Guidelines, HHS Office on Women's Health; WHO for global context). Write US

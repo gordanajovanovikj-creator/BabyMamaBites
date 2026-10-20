@@ -1,4 +1,4 @@
-# MamaBabyBites
+# Mama & Baby Bites
 
 A calm, one-handed postpartum and baby-feeding companion for iOS, built with Expo, for families in the US.
 

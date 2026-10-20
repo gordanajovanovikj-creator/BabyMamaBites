@@ -40,7 +40,7 @@ export default function SettingsScreen() {
     if (!ok) {
       Alert.alert(
         'Notifications are turned off',
-        'To get reminders, allow notifications for MamaBabyBites in your iPhone Settings.',
+        'To get reminders, allow notifications for Mama & Baby Bites in your iPhone Settings.',
         [
           { text: 'Not now', style: 'cancel' },
           { text: 'Open Settings', onPress: () => Linking.openSettings().catch(() => {}) },

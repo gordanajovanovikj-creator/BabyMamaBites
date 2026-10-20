@@ -37,7 +37,7 @@ export default function AddCalendarEntryScreen() {
       setSaving(false);
       Alert.alert(
         'Notifications are turned off',
-        'To get event reminders, allow notifications for MamaBabyBites in your iPhone Settings. You can still save the event without one.',
+        'To get event reminders, allow notifications for Mama & Baby Bites in your iPhone Settings. You can still save the event without one.',
       );
       return;
     }

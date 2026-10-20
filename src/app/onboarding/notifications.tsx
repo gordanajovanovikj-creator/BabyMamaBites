@@ -52,7 +52,7 @@ export default function NotificationsScreen() {
       {blocked ? (
         <Notice
           tone="caution"
-          body="Notifications are turned off for MamaBabyBites. You can allow them later in your iPhone Settings."
+          body="Notifications are turned off for Mama & Baby Bites. You can allow them later in your iPhone Settings."
         />
       ) : null}
       <View className="gap-2">

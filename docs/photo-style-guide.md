@@ -1,6 +1,6 @@
 # Photo style guide
 
-How every photo in MamaBabyBites should look, so the app feels like one calm, premium
+How every photo in Mama & Baby Bites should look, so the app feels like one calm, premium
 place and real food stays the focal point. Use this when picking stock photos
 (Magnific, Pexels, Pixabay) or briefing a photographer.
 

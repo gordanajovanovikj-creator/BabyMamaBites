@@ -81,7 +81,7 @@ export default function PaywallScreen() {
   return (
     <Screen className="flex-grow pt-8">
       <QuestionHeader
-        title={`Try MamaBabyBites free for ${TRIAL_DAYS} days`}
+        title={`Try Mama & Baby Bites free for ${TRIAL_DAYS} days`}
         subtitle="Everything you need to feed your baby and yourself well, in one calm place."
       />
       <Card tone="muted" className="gap-5">
