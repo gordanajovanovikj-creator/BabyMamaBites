@@ -126,6 +126,7 @@ function ArticleScreenBody() {
             </Card>
           );
         })}
+        <SafetyNotices ids={notices.afterBody} />
       </View>
 
       <ReadMore current={articleItem(article)} />

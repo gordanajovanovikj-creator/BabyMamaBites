@@ -410,17 +410,6 @@
           "bullets": []
         },
         {
-          "heading": "Choking is an emergency",
-          "paragraphs": [
-            "Choking happens when food or an object blocks the airway. A choking baby is often silent."
-          ],
-          "bullets": [
-            "What it looks like: your baby can’t cry, cough, breathe or make a sound; may be gasping or wheezing; may look panicked; or their skin, lips or face turn pale, blue or dusky.",
-            "What to do: act right away and call 911. This is a medical emergency."
-          ],
-          "callout": "urgent"
-        },
-        {
           "heading": "Lower the risk",
           "paragraphs": [
             "You can’t remove every risk, but safe food preparation and good mealtime habits lower the chance of choking a lot."
@@ -433,9 +422,17 @@
           ]
         },
         {
-          "heading": "If your baby under 1 is choking",
+          "heading": "Be ready before you need it",
           "paragraphs": [
-            "If your baby can’t breathe, cough, cry or make a sound, act right away. These are the basic steps taught in infant first aid classes. They don’t replace hands-on training."
+            "We strongly encourage every parent and caregiver to take an in-person infant CPR and first aid class. The American Red Cross and the American Heart Association offer them. Preparation turns fear into confidence, so your baby can explore food with freedom and joy."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Choking is an emergency",
+          "paragraphs": [
+            "Choking happens when food or an object blocks the airway. A choking baby is often silent: they can’t cry, cough, breathe or make a sound; may be gasping or wheezing; may look panicked; or their skin, lips or face turn pale, blue or dusky.",
+            "Act right away and call 911. This is a medical emergency. If your baby is under 1, these are the basic steps taught in infant first aid classes. They don’t replace hands-on training."
           ],
           "bullets": [
             "Get help: if someone is with you, have them call 911 right away. If you’re alone, shout for help, and if you can, call 911 on speaker so you can keep your hands free.",
@@ -447,13 +444,6 @@
             "Even if your baby seems fine afterward, call your pediatrician to get them checked."
           ],
           "callout": "urgent"
-        },
-        {
-          "heading": "Be ready before you need it",
-          "paragraphs": [
-            "We strongly encourage every parent and caregiver to take an in-person infant CPR and first aid class. The American Red Cross and the American Heart Association offer them. Preparation turns fear into confidence, so your baby can explore food with freedom and joy."
-          ],
-          "bullets": []
         }
       ],
       "sources": ["medline-choking-infant", "aap-choking", "cdc-choking", "cdc-solids"]

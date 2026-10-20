@@ -4,10 +4,17 @@ import { solidsArticles } from '@/content/solids-articles';
 import { noticesFor } from './safety-notices';
 
 describe('noticesFor', () => {
-  it('puts the emergency notice first on choking articles, the allergy one after allergy articles', () => {
-    expect(noticesFor({ id: 'gagging-vs-choking', category: 'safety' }).top).toEqual([
-      'choking-emergency',
-    ]);
+  it('puts one emergency card after the text, never a second one above it', () => {
+    const tip = noticesFor({ id: 'solids-choking', category: 'safety' });
+    expect(tip.top).toEqual([]);
+    expect(tip.afterBody).toEqual(['choking-emergency']);
+    // The choking article's own text ends with its emergency card.
+    const article = noticesFor({ id: 'gagging-vs-choking', category: 'safety' });
+    expect(article.top).toEqual([]);
+    expect(article.afterBody).toEqual([]);
+  });
+
+  it('puts the allergy notice after allergy articles', () => {
     const allergy = noticesFor({ id: 'allergens', category: 'starting-solids' });
     expect(allergy.top).toEqual([]);
     expect(allergy.bottom).toEqual(['allergy-safety']);
@@ -41,6 +48,6 @@ describe('noticesFor', () => {
   });
 
   it('shows nothing extra on an ordinary article', () => {
-    expect(noticesFor({ id: 'high-chair', category: 'safety' })).toEqual({ top: [], bottom: [] });
+    expect(noticesFor({ id: 'high-chair', category: 'safety' })).toEqual({ top: [], afterBody: [], bottom: [] });
   });
 });

@@ -12,10 +12,9 @@ import { ReadMore } from '@/features/library/read-more';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { PageFooter } from '@/features/shared/page-footer';
-import { HelplineButtons } from '@/features/shared/helpline-buttons';
 import { SafetyNotices } from '@/features/shared/safety-notice';
 import { PremiumGate } from '@/features/subscription/premium-gate';
-import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
+import { AppText, Button, Illustration, Screen } from '@/ui';
 
 /** One line of an insight: a heading, a bullet, a numbered step or a paragraph. */
 function BodyBlock({ block, first }: { block: InsightBlock; first: boolean }) {
@@ -91,14 +90,8 @@ function InsightScreenBody() {
           ))}
         </View>
 
-        {insight.kind === 'when-to-call' ? (
-          <Notice
-            tone="urgent"
-            title="If you're worried, reach out"
-            body="Your doctor, OB-GYN or midwife is there to help. In an emergency, call 911."
-          />
-        ) : null}
-        {insight.kind === 'when-to-call' ? <HelplineButtons lines={['911']} /> : null}
+        {/* The emergency this tip is about: one red card with its call button. */}
+        <SafetyNotices ids={notices.afterBody} />
         <Button label="About & safety" variant="quiet" onPress={() => router.push('/about')} />
       </View>
 

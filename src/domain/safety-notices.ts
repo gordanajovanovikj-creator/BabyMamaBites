@@ -12,14 +12,24 @@ export type SafetyNoticeId =
   | 'milk-juice'
   | 'development';
 
-export type NoticePlacement = { top: SafetyNoticeId[]; bottom: SafetyNoticeId[] };
+export type NoticePlacement = {
+  top: SafetyNoticeId[];
+  afterBody: SafetyNoticeId[];
+  bottom: SafetyNoticeId[];
+};
 
 /** Shown before the article body: things a worried parent must see first. */
 const topById: Record<string, SafetyNoticeId[]> = {
-  'gagging-vs-choking': ['choking-emergency'],
-  'solids-choking': ['choking-emergency'],
   'cows-milk': ['milk-juice'],
   'cups-and-drinks': ['milk-juice'],
+};
+
+/**
+ * Shown right after the text, as one red card with its call button: the emergency the page
+ * is about. (The choking article has its own emergency card in its text, so it isn't here.)
+ */
+const afterBodyById: Record<string, SafetyNoticeId[]> = {
+  'solids-choking': ['choking-emergency'],
 };
 
 /** Shown after the article body: who to ask for advice that fits your child. */
@@ -46,10 +56,11 @@ const bottomByCategory: Record<string, SafetyNoticeId[]> = {
   'nourishing-you': ['maternal-health'],
 };
 
-/** Which safety notices an article or tip shows above and below its content. */
+/** Which safety notices an article or tip shows above, right after and below its content. */
 export function noticesFor(item: { id: string; category: string }): NoticePlacement {
   return {
     top: topById[item.id] ?? [],
+    afterBody: afterBodyById[item.id] ?? [],
     bottom: [...(bottomById[item.id] ?? []), ...(bottomByCategory[item.category] ?? [])],
   };
 }

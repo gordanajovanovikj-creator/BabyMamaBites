@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 import { safetyNotice } from '@/content/copy';
 import type { SafetyNoticeId } from '@/domain/safety-notices';
-import { AppText, Button, cn, Notice } from '@/ui';
+import { AppText, Button, Card, cn } from '@/ui';
 
 import { HelplineButtons } from './helpline-buttons';
 
@@ -11,8 +11,8 @@ import { HelplineButtons } from './helpline-buttons';
 const urgent: SafetyNoticeId[] = ['choking-emergency', 'allergy-safety'];
 
 /**
- * A safety notice from src/content/copy/safety-notices.json: emergencies in a red card with
- * a 911 button, everything else as pale fine print (text only, no title).
+ * A safety notice from src/content/copy/safety-notices.json: emergencies as one red card with
+ * the 911 button inside, everything else as pale fine print (text only, no title).
  */
 export function SafetyNotice({ id, className }: { id: SafetyNoticeId; className?: string }) {
   const block = safetyNotice(id);
@@ -27,16 +27,20 @@ export function SafetyNotice({ id, className }: { id: SafetyNoticeId; className?
       </View>
     );
   }
+  // One red card with its call button inside, like the urgent sections of an article.
   return (
-    <View className={className}>
-      <Notice tone="urgent" title={`⚠️ ${block.title}`} body={body} />
+    <Card tone="danger" className={cn('gap-3', className)} accessibilityRole="alert">
+      <AppText variant="heading" size="2xl" color="danger">
+        {`⚠️ ${block.title}`}
+      </AppText>
+      <AppText color="danger">{body}</AppText>
       <HelplineButtons lines={['911']} />
       <Button
         label="Emergency & resources"
         variant="quiet"
         onPress={() => router.push('/emergency')}
       />
-    </View>
+    </Card>
   );
 }
 
