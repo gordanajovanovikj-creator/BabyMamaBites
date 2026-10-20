@@ -12,7 +12,7 @@ import {
   type PlanId,
   type PremiumFeature,
 } from '@/domain/subscription';
-import { AppText, Button, Card, Notice } from '@/ui';
+import { AppText, Button, Card, IconBadge, Notice } from '@/ui';
 
 import { PlanCard } from './plan-card';
 import { useSubscription } from './subscription-context';
@@ -103,7 +103,7 @@ export function PaywallView({
           const f = premiumFeatureCopy[id];
           return (
             <View key={id} className="flex-row gap-3">
-              <AppText size="2xl">{f.emoji}</AppText>
+              <IconBadge icon={f.icon} emoji={f.emoji} size={40} tone="surface" />
               <View className="flex-1 gap-0.5">
                 <AppText variant="heading" size="lg">
                   {f.title}

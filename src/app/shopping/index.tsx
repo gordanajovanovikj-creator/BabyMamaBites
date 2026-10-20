@@ -4,7 +4,7 @@ import { Alert, Share, View } from 'react-native';
 import {
   groupByAisle,
   listAsText,
-  shoppingAisleEmoji,
+  shoppingAisleIcon,
   shoppingAisleLabels,
   shoppingProgress,
   sortShopping,
@@ -16,7 +16,7 @@ import { CheckRow } from '@/features/shopping/check-row';
 import { useShopping } from '@/features/shopping/shopping-context';
 import { ShoppingHeader } from '@/features/shopping/shopping-header';
 import { withPremium } from '@/features/subscription/premium-gate';
-import { AppText, Button, haptics, Screen } from '@/ui';
+import { AppText, Button, haptics, IconBadge, Screen } from '@/ui';
 
 /** The shopping list: add items, check them off in the store, share it. Saved on this phone. */
 function ShoppingListScreen() {
@@ -68,9 +68,7 @@ function ShoppingListScreen() {
 
       {total === 0 ? (
         <View className="items-center gap-2 rounded-3xl border border-dashed border-border px-6 py-8">
-          <AppText size="4xl" accessibilityElementsHidden importantForAccessibility="no">
-            🧺
-          </AppText>
+          <IconBadge icon="basket.fill" emoji="🧺" size={64} />
           <AppText variant="heading" className="text-center">
             Your list is empty
           </AppText>
@@ -83,7 +81,8 @@ function ShoppingListScreen() {
       {groups.map((g) => (
         <AisleCard
           key={g.aisle}
-          emoji={shoppingAisleEmoji[g.aisle]}
+          icon={shoppingAisleIcon[g.aisle].icon}
+          emoji={shoppingAisleIcon[g.aisle].emoji}
           title={shoppingAisleLabels[g.aisle]}
           count={g.items.length}
         >
@@ -93,6 +92,7 @@ function ShoppingListScreen() {
 
       {checked.length ? (
         <AisleCard
+          icon="checkmark.circle.fill"
           emoji="✅"
           title="In the cart"
           count={checked.length}

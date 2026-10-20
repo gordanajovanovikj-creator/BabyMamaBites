@@ -2,7 +2,7 @@ import { View } from 'react-native';
 
 import { foodCategoryLabels } from '@/content/foods';
 import type { FoodProgress } from '@/domain/foods';
-import { AppText, Card } from '@/ui';
+import { AppText, Card, IconBadge } from '@/ui';
 
 /**
  * Warm, low-pressure progress for the Foods tab: how many foods the baby has
@@ -25,7 +25,11 @@ export function FoodProgressCard({ progress, name }: { progress: FoodProgress; n
         <AppText variant="heading" size="2xl">
           {`${progress.tried} of ${progress.total} foods tried`}
         </AppText>
-        {progress.milestone ? <AppText size="2xl">🎉</AppText> : <AppText size="2xl">🥄</AppText>}
+        {progress.milestone ? (
+          <IconBadge icon="party.popper.fill" emoji="🎉" tone="surface" />
+        ) : (
+          <IconBadge icon="fork.knife" emoji="🥄" tone="surface" />
+        )}
       </View>
       <View
         className="h-2.5 overflow-hidden rounded-full bg-surface"

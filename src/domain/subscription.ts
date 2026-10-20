@@ -69,44 +69,52 @@ export type PremiumFeature = (typeof premiumFeatures)[number];
 /** What a locked screen says about the feature behind it. */
 export const premiumFeatureCopy: Record<
   PremiumFeature,
-  { emoji: string; title: string; detail: string }
+  { icon: string; emoji: string; title: string; detail: string }
 > = {
   recipes: {
+    icon: 'fork.knife',
     emoji: '🍽️',
     title: 'Recipes for baby and you',
     detail: 'Purees, finger foods and family meals, each with textures and safety tips.',
   },
   'solids-plan': {
+    icon: 'safari',
     emoji: '🧭',
     title: 'Your week-by-week solids plan',
     detail: 'What to try each week, with allergens introduced step by step.',
   },
   planner: {
+    icon: 'calendar',
     emoji: '🗓️',
     title: 'Meal planner and freezer',
     detail: "Plan your baby's meals, pair them with family dinners and track freezer cubes.",
   },
   'food-log': {
+    icon: 'list.bullet.clipboard',
     emoji: '📝',
     title: 'Food log and allergen tracker',
     detail: 'Log every new food and see which allergens your baby has tried.',
   },
   library: {
+    icon: 'books.vertical.fill',
     emoji: '📚',
     title: 'The full Insights library',
     detail: 'Articles on feeding, cooking for baby and looking after yourself.',
   },
   ask: {
+    icon: 'bubble.left.and.bubble.right.fill',
     emoji: '💬',
     title: 'Ask, your feeding helper',
     detail: 'Quick answers about meals, textures and recipes from what you have at home.',
   },
   shopping: {
+    icon: 'cart.fill',
     emoji: '🛒',
     title: 'Shopping list',
     detail: 'Add recipe ingredients in a tap and check them off in the store.',
   },
   calendar: {
+    icon: 'calendar.badge.clock',
     emoji: '📅',
     title: 'Your calendar',
     detail: 'Appointments and notes with gentle reminders.',

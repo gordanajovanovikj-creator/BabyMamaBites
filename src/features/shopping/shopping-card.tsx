@@ -2,7 +2,7 @@ import { router } from 'expo-router';
 import { Pressable, View } from 'react-native';
 
 import { groupByAisle, shoppingProgress } from '@/domain/shopping';
-import { AppText, SymbolIcon } from '@/ui';
+import { AppText, IconBadge } from '@/ui';
 
 import { useShopping } from './shopping-context';
 
@@ -49,9 +49,7 @@ export function ShoppingCard() {
         className="min-h-16 gap-2 rounded-3xl border border-border bg-surface p-4 active:opacity-70"
       >
         <View className="flex-row items-center gap-3">
-          <View className="h-11 w-11 items-center justify-center rounded-full bg-accent">
-            <SymbolIcon icon="cart.fill" emoji="🛒" size={22} />
-          </View>
+          <IconBadge icon="cart.fill" emoji="🛒" />
           <AppText variant="label" className="flex-1 font-bold">
             {summary}
           </AppText>

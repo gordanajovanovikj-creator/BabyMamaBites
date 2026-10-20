@@ -31,16 +31,16 @@ export const shoppingAisleLabels: Record<ShoppingAisle, string> = {
   other: 'Other',
 };
 
-/** A small picture for each aisle heading. */
-export const shoppingAisleEmoji: Record<ShoppingAisle, string> = {
-  produce: '🥦',
-  bakery: '🥖',
-  meat: '🍗',
-  dairy: '🥛',
-  frozen: '🧊',
-  pantry: '🫙',
-  baby: '🍼',
-  other: '🛒',
+/** The icon for each aisle heading: an SF Symbol, with an emoji where symbols aren't available. */
+export const shoppingAisleIcon: Record<ShoppingAisle, { icon: string; emoji: string }> = {
+  produce: { icon: 'carrot.fill', emoji: '🥦' },
+  bakery: { icon: 'birthday.cake.fill', emoji: '🥖' },
+  meat: { icon: 'fish.fill', emoji: '🍗' },
+  dairy: { icon: 'cup.and.saucer.fill', emoji: '🥛' },
+  frozen: { icon: 'snowflake', emoji: '🧊' },
+  pantry: { icon: 'shippingbox.fill', emoji: '🫙' },
+  baby: { icon: 'figure.and.child.holdinghands', emoji: '🍼' },
+  other: { icon: 'cart.fill', emoji: '🛒' },
 };
 
 export const SHOPPING_ITEM_MAX_LENGTH = 200;

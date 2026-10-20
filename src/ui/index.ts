@@ -8,6 +8,7 @@ export { FilterButton } from './filter-button';
 export { FlatButtonsContext } from './flat-buttons';
 export { haptics } from './haptics';
 export { HeartButton } from './heart-button';
+export { IconBadge } from './icon-badge';
 export { IconButton } from './icon-button';
 export { Illustration } from './illustrations/illustration';
 export { Notice } from './notice';

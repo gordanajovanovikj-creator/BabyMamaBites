@@ -23,7 +23,7 @@ import { usePlanner } from '@/features/planner/planner-context';
 import { useMealsPerDay } from '@/features/planner/use-meals-per-day';
 import { DayPill } from '@/features/planner/week-menu';
 import { RecipeImage } from '@/features/recipes/recipe-image';
-import { AppText, cn } from '@/ui';
+import { AppText, cn, IconBadge } from '@/ui';
 
 /** How far ahead "coming up" looks for a calendar event. */
 const EVENT_DAYS = 7;
@@ -143,6 +143,7 @@ function MealTile({ date, slot, wide = false }: { date: IsoDate; slot: MealSlot;
 
 /** A soft one-line reminder under the meals (calendar event or freezer item). */
 function ComingUp({
+  icon,
   emoji,
   strong,
   text,
@@ -150,6 +151,7 @@ function ComingUp({
   onPress,
   label,
 }: {
+  icon: string;
   emoji: string;
   strong: string;
   text: string;
@@ -167,7 +169,7 @@ function ComingUp({
         tone === 'sky' ? 'bg-sky' : 'bg-accent',
       )}
     >
-      <AppText size="xl">{emoji}</AppText>
+      <IconBadge icon={icon} emoji={emoji} size={32} tone="surface" />
       <AppText size="sm" className="flex-1" numberOfLines={2}>
         <Text className="font-bold">{strong}</Text>
         {` · ${text}`}
@@ -246,6 +248,7 @@ export function ThisWeekCard({ now }: ThisWeekCardProps) {
         </View>
         {event ? (
           <ComingUp
+            icon="calendar"
             emoji="📅"
             tone="sky"
             strong={shortDay(event.date, now)}
@@ -256,6 +259,7 @@ export function ThisWeekCard({ now }: ThisWeekCardProps) {
         ) : null}
         {freezerItem ? (
           <ComingUp
+            icon="snowflake"
             emoji="🧊"
             tone="accent"
             strong={freezerItem.name}

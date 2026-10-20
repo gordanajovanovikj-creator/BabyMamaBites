@@ -3,7 +3,7 @@ import type { ComponentType, ReactNode } from 'react';
 import { View } from 'react-native';
 
 import { premiumFeatureCopy, TRIAL_DAYS, type PremiumFeature } from '@/domain/subscription';
-import { AppText, Button, Card, Screen } from '@/ui';
+import { AppText, Button, Card, IconBadge, Screen } from '@/ui';
 
 import { useSubscription } from './subscription-context';
 
@@ -14,9 +14,7 @@ function LockedScreen({ feature }: { feature: PremiumFeature }) {
   return (
     <Screen className="flex-grow justify-center">
       <Card className="items-center gap-3 py-8">
-        <AppText size="5xl" accessibilityElementsHidden importantForAccessibility="no">
-          {copy.emoji}
-        </AppText>
+        <IconBadge icon={copy.icon} emoji={copy.emoji} size={72} />
         <AppText variant="label" size="sm" color="primary" className="font-bold uppercase">
           Premium
         </AppText>
