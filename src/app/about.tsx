@@ -1,5 +1,6 @@
 import { router } from 'expo-router';
 
+import { COMPANY_NAME } from '@/content/contact';
 import { disclaimers, safetyNotice } from '@/content/copy';
 import { AppText, Button, Notice, Screen } from '@/ui';
 
@@ -25,6 +26,9 @@ export default function AboutScreen() {
         variant="secondary"
         onPress={() => router.push('/disclaimer')}
       />
+      <AppText variant="caption" size="sm" className="pt-2 text-center">
+        {`Mama & Baby Bites · © ${new Date().getFullYear()} ${COMPANY_NAME}`}
+      </AppText>
     </Screen>
   );
 }
