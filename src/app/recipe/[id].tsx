@@ -187,6 +187,15 @@ export default function RecipeScreen() {
       <AppText variant="caption" size="sm" className="px-5 pt-2">
         Tap an ingredient to tick it off.
       </AppText>
+      <View className="px-5 pt-4">
+        <Button
+          label="Add ingredients to shopping list"
+          variant="secondary"
+          onPress={() =>
+            router.push({ pathname: '/shopping/add', params: { recipe: recipe.id } })
+          }
+        />
+      </View>
       <View className="px-5 pt-6">
         <NutritionCard recipe={recipe} />
       </View>

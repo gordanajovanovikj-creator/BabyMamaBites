@@ -97,7 +97,7 @@
     {
       "id": "privacy",
       "title": "Privacy Policy",
-      "updated": "October 19, 2026",
+      "updated": "October 20, 2026",
       "intro": "Your privacy matters, especially when it comes to your family. MamaBabyBites is built so that your information stays on your phone. This policy explains what the app stores, what it sends, and the choices you have.",
       "sections": [
         {
@@ -115,7 +115,7 @@
           "bullets": [
             "Your baby's name, birth date and due date",
             "How you're feeding, foods your household avoids, and your cooking time",
-            "Your food log, allergen tracker, favorites, meal plan, freezer list and calendar",
+            "Your food log, allergen tracker, favorites, meal plan, freezer list, shopping list and calendar",
             "Your reminder settings and whether you agreed to use the Ask chat"
           ]
         },

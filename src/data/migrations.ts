@@ -74,4 +74,12 @@ export const migrations: string[] = [
      updated_at TEXT NOT NULL,
      PRIMARY KEY (date, slot)
    );`,
+  `CREATE TABLE IF NOT EXISTS shopping_item (
+     id TEXT PRIMARY KEY NOT NULL,
+     text TEXT NOT NULL,
+     checked INTEGER NOT NULL DEFAULT 0,
+     aisle TEXT NOT NULL,
+     recipe_title TEXT,
+     added_at TEXT NOT NULL
+   );`,
 ];

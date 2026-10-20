@@ -7,6 +7,7 @@ import { createSqliteFavoritesStore } from './sqlite-favorites-store';
 import { createSqliteFoodLogStore } from './sqlite-food-log-store';
 import { createSqlitePlannerStore } from './sqlite-planner-store';
 import { createSqliteSettingsStore } from './sqlite-settings-store';
+import { createSqliteShoppingStore } from './sqlite-shopping-store';
 import { createSqliteProfileStore, DATABASE_NAME, migrate } from './sqlite-profile-store';
 import {
   CalendarStoreContext,
@@ -14,6 +15,7 @@ import {
   FoodLogStoreContext,
   PlannerStoreContext,
   SettingsStoreContext,
+  ShoppingStoreContext,
 } from './stores-context';
 
 function SqliteStores({ children }: { children: ReactNode }) {
@@ -24,6 +26,7 @@ function SqliteStores({ children }: { children: ReactNode }) {
   const planner = useMemo(() => createSqlitePlannerStore(db), [db]);
   const settings = useMemo(() => createSqliteSettingsStore(db), [db]);
   const calendar = useMemo(() => createSqliteCalendarStore(db), [db]);
+  const shopping = useMemo(() => createSqliteShoppingStore(db), [db]);
   return (
     <ProfileStoreContext.Provider value={profile}>
       <FavoritesStoreContext.Provider value={favorites}>
@@ -31,7 +34,7 @@ function SqliteStores({ children }: { children: ReactNode }) {
           <PlannerStoreContext.Provider value={planner}>
             <SettingsStoreContext.Provider value={settings}>
               <CalendarStoreContext.Provider value={calendar}>
-                {children}
+                <ShoppingStoreContext.Provider value={shopping}>{children}</ShoppingStoreContext.Provider>
               </CalendarStoreContext.Provider>
             </SettingsStoreContext.Provider>
           </PlannerStoreContext.Provider>

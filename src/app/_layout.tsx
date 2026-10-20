@@ -16,6 +16,7 @@ import { PlannerProvider } from '@/features/planner/planner-context';
 import { useTodayWidgetSync } from '@/features/planner/use-today-widget-sync';
 import { ProfileProvider, useProfile } from '@/features/profile/profile-context';
 import { RemindersProvider } from '@/features/reminders/reminders-context';
+import { ShoppingProvider } from '@/features/shopping/shopping-context';
 import { FoodLogProvider } from '@/features/solids/food-log-context';
 import { colors } from '@/theme/colors';
 
@@ -103,6 +104,14 @@ function RootStack() {
               options={{ presentation: 'modal', headerShown: true, title: '' }}
             />
             <Stack.Screen
+              name="shopping/index"
+              options={{ headerShown: true, title: 'Shopping list' }}
+            />
+            <Stack.Screen
+              name="shopping/add"
+              options={{ presentation: 'modal', headerShown: true, title: 'Add to shopping list' }}
+            />
+            <Stack.Screen
               name="solids/history"
               options={{ headerShown: true, title: 'Food log' }}
             />
@@ -164,9 +173,11 @@ export default function RootLayout() {
               <FoodLogProvider>
                 <PlannerProvider>
                   <CalendarProvider>
-                    <RemindersProvider>
-                      <RootStack />
-                    </RemindersProvider>
+                    <ShoppingProvider>
+                      <RemindersProvider>
+                        <RootStack />
+                      </RemindersProvider>
+                    </ShoppingProvider>
                   </CalendarProvider>
                 </PlannerProvider>
               </FoodLogProvider>

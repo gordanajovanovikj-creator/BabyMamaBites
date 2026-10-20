@@ -5,12 +5,14 @@ import type { FavoritesStore } from './favorites-store';
 import type { FoodLogStore } from './food-log-store';
 import type { PlannerStore } from './planner-store';
 import type { SettingsStore } from './settings-store';
+import type { ShoppingStore } from './shopping-store';
 
 export const CalendarStoreContext = createContext<CalendarStore | null>(null);
 export const FavoritesStoreContext = createContext<FavoritesStore | null>(null);
 export const FoodLogStoreContext = createContext<FoodLogStore | null>(null);
 export const PlannerStoreContext = createContext<PlannerStore | null>(null);
 export const SettingsStoreContext = createContext<SettingsStore | null>(null);
+export const ShoppingStoreContext = createContext<ShoppingStore | null>(null);
 
 export function useFavoritesStore(): FavoritesStore {
   const store = useContext(FavoritesStoreContext);
@@ -39,5 +41,11 @@ export function useSettingsStore(): SettingsStore {
 export function useCalendarStore(): CalendarStore {
   const store = useContext(CalendarStoreContext);
   if (!store) throw new Error('useCalendarStore must be used inside <StorageProvider>');
+  return store;
+}
+
+export function useShoppingStore(): ShoppingStore {
+  const store = useContext(ShoppingStoreContext);
+  if (!store) throw new Error('useShoppingStore must be used inside <StorageProvider>');
   return store;
 }

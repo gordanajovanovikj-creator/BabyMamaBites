@@ -405,6 +405,13 @@ export function WeekMenu() {
             onPress={() => setExtra((e) => e + 1)}
           />
         ) : null}
+        {offset === 0 && planned > 0 ? (
+          <TextAction
+            label="🛒 Add this week's ingredients to shopping list"
+            accessibilityLabel="Add the ingredients for this week's planned meals to your shopping list"
+            onPress={() => router.push({ pathname: '/shopping/add', params: { week: 'this' } })}
+          />
+        ) : null}
         <AppText variant="caption" size="sm">
           {mealsPerDayGuide.note}
         </AppText>

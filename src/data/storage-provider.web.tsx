@@ -11,12 +11,14 @@ import {
   type MealPlan,
 } from '@/domain/planner';
 import { profileSchema } from '@/domain/profile';
+import { shoppingItemSchema, type ShoppingItem } from '@/domain/shopping';
 
 import type { CalendarStore } from './calendar-store';
 import type { FavoritesStore } from './favorites-store';
 import type { FoodLogStore } from './food-log-store';
 import type { PlannerStore } from './planner-store';
 import type { SettingsStore } from './settings-store';
+import type { ShoppingStore } from './shopping-store';
 import { parseReminders } from './sqlite-settings-store';
 import type { ProfileStore } from './profile-store';
 import { ProfileStoreContext } from './profile-store-context';
@@ -26,6 +28,7 @@ import {
   FoodLogStoreContext,
   PlannerStoreContext,
   SettingsStoreContext,
+  ShoppingStoreContext,
 } from './stores-context';
 
 const KEY = 'mamababybites.profile';
@@ -232,6 +235,32 @@ const localCalendar: CalendarStore = {
   },
 };
 
+const SHOPPING_KEY = 'mamababybites.shopping';
+
+function readShopping(): ShoppingItem[] {
+  const value = readJson(SHOPPING_KEY);
+  if (!Array.isArray(value)) return [];
+  return value.flatMap((x) => {
+    const r = shoppingItemSchema.safeParse(x);
+    return r.success ? [r.data] : [];
+  });
+}
+
+const localShopping: ShoppingStore = {
+  async list() {
+    return readShopping();
+  },
+  async save(items) {
+    const ids = new Set(items.map((i) => i.id));
+    const next = [...readShopping().filter((i) => !ids.has(i.id)), ...items];
+    globalThis.localStorage?.setItem(SHOPPING_KEY, JSON.stringify(next));
+  },
+  async remove(ids) {
+    const next = readShopping().filter((i) => !ids.includes(i.id));
+    globalThis.localStorage?.setItem(SHOPPING_KEY, JSON.stringify(next));
+  },
+};
+
 export function StorageProvider({ children }: { children: ReactNode }) {
   return (
     <ProfileStoreContext.Provider value={localStore}>
@@ -240,7 +269,9 @@ export function StorageProvider({ children }: { children: ReactNode }) {
           <PlannerStoreContext.Provider value={localPlanner}>
             <SettingsStoreContext.Provider value={localSettings}>
               <CalendarStoreContext.Provider value={localCalendar}>
-                {children}
+                <ShoppingStoreContext.Provider value={localShopping}>
+                  {children}
+                </ShoppingStoreContext.Provider>
               </CalendarStoreContext.Provider>
             </SettingsStoreContext.Provider>
           </PlannerStoreContext.Provider>

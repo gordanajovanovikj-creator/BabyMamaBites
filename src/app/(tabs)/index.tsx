@@ -21,6 +21,7 @@ import { useFoodLog } from '@/features/solids/food-log-context';
 import { AgeHero } from '@/features/today/age-hero';
 import { FoodsToTry } from '@/features/today/foods-to-try';
 import { HelpCard } from '@/features/today/help-card';
+import { ShoppingCard } from '@/features/shopping/shopping-card';
 import { ThisWeekCard } from '@/features/today/this-week-card';
 import { TodayFocus } from '@/features/today/today-focus';
 import { Screen } from '@/ui';
@@ -73,6 +74,7 @@ export default function TodayScreen() {
       />
       {planWeek ? <TodayFocus planWeek={planWeek} /> : null}
       <ThisWeekCard now={now} />
+      <ShoppingCard />
       {/* Allergens matter once solids start (or once any is logged). */}
       {rawWeek !== null || entries.some((e) => e.allergen) ? (
         <AllergenTracker progress={allergenProgress(entries)} linkToPlan padded compact />
