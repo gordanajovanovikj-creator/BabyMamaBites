@@ -1,56 +1,40 @@
 import { router } from 'expo-router';
-import { useState } from 'react';
 import { Alert, Share, View } from 'react-native';
 
 import {
   groupByAisle,
   listAsText,
-  SHOPPING_ITEM_MAX_LENGTH,
+  shoppingAisleEmoji,
   shoppingAisleLabels,
   shoppingProgress,
   sortShopping,
   type ShoppingItem,
 } from '@/domain/shopping';
+import { AddItemField } from '@/features/shopping/add-item-field';
+import { AisleCard } from '@/features/shopping/aisle-card';
 import { CheckRow } from '@/features/shopping/check-row';
 import { useShopping } from '@/features/shopping/shopping-context';
-import { AppText, Button, haptics, Notice, Screen, TextField } from '@/ui';
+import { ShoppingHeader } from '@/features/shopping/shopping-header';
 import { withPremium } from '@/features/subscription/premium-gate';
-
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <View>
-      <AppText
-        variant="label"
-        size="sm"
-        color="muted"
-        accessibilityRole="header"
-        className="px-5 pb-1 pt-5 font-bold uppercase"
-      >
-        {title}
-      </AppText>
-      {children}
-    </View>
-  );
-}
+import { AppText, Button, haptics, Screen } from '@/ui';
 
 /** The shopping list: add items, check them off in the store, share it. Saved on this phone. */
 function ShoppingListScreen() {
   const { items, add, toggle, remove, clearChecked } = useShopping();
-  const [draft, setDraft] = useState('');
   const groups = groupByAisle(items);
   const checked = sortShopping(items.filter((i) => i.checked));
   const { left, total } = shoppingProgress(items);
 
-  const addDraft = () => {
-    const text = draft.trim();
-    if (!text) return;
+  const addItem = (text: string) =>
     add([{ text, recipeTitle: null }])
       .then(() => {
         haptics.success();
-        setDraft('');
+        return true;
       })
-      .catch(() => Alert.alert('Could not save', 'Please try again.'));
-  };
+      .catch(() => {
+        Alert.alert('Could not save', 'Please try again.');
+        return false;
+      });
 
   const confirmRemove = (item: ShoppingItem) =>
     Alert.alert('Remove from list?', item.text, [
@@ -58,90 +42,94 @@ function ShoppingListScreen() {
       { text: 'Remove', style: 'destructive', onPress: () => remove(item.id).catch(() => {}) },
     ]);
 
-  const row = (item: ShoppingItem) => (
-    <CheckRow
-      key={item.id}
-      text={item.text}
-      detail={item.recipeTitle}
-      checked={item.checked}
-      strike
-      onPress={() => {
-        haptics.select();
-        toggle(item.id).catch(() => {});
-      }}
-      onLongPress={() => confirmRemove(item)}
-      accessibilityHint="Double-tap to check off. Long press to remove."
-    />
-  );
+  const rows = (list: ShoppingItem[]) =>
+    list.map((item, i) => (
+      <CheckRow
+        key={item.id}
+        text={item.text}
+        detail={item.recipeTitle}
+        checked={item.checked}
+        strike
+        inCard
+        last={i === list.length - 1}
+        onPress={() => {
+          haptics.select();
+          toggle(item.id).catch(() => {});
+        }}
+        onLongPress={() => confirmRemove(item)}
+        accessibilityHint="Double-tap to check off. Long press to remove."
+      />
+    ));
 
   return (
-    <Screen padded={false} className="gap-0 pt-4">
-      <View className="gap-3 px-5">
-        <TextField
-          label="Add an item"
-          value={draft}
-          onChangeText={setDraft}
-          maxLength={SHOPPING_ITEM_MAX_LENGTH}
-          placeholder="e.g. Bananas"
-          returnKeyType="done"
-          submitBehavior="submit"
-          onSubmitEditing={addDraft}
-        />
-        <Button
-          label="Add to list"
-          variant="secondary"
-          disabled={!draft.trim()}
-          onPress={addDraft}
-        />
-        <AppText variant="caption" size="sm">
-          {total
-            ? `${left} of ${total} left to buy. Long press an item to remove it.`
-            : 'Your list is saved on this phone only.'}
-        </AppText>
-      </View>
+    <Screen className="gap-4">
+      <ShoppingHeader left={left} total={total} />
+      <AddItemField onAdd={addItem} />
 
       {total === 0 ? (
-        <View className="px-5 pt-6">
-          <Notice
-            title="Your list is empty"
-            body="Add items above, or tap “Add ingredients to shopping list” on any recipe."
-          />
+        <View className="items-center gap-2 rounded-3xl border border-dashed border-border px-6 py-8">
+          <AppText size="4xl" accessibilityElementsHidden importantForAccessibility="no">
+            🧺
+          </AppText>
+          <AppText variant="heading" className="text-center">
+            Your list is empty
+          </AppText>
+          <AppText color="muted" className="text-center">
+            Add items above, or tap “Add ingredients to shopping list” on any recipe.
+          </AppText>
         </View>
       ) : null}
 
       {groups.map((g) => (
-        <Section key={g.aisle} title={shoppingAisleLabels[g.aisle]}>
-          {g.items.map(row)}
-        </Section>
+        <AisleCard
+          key={g.aisle}
+          emoji={shoppingAisleEmoji[g.aisle]}
+          title={shoppingAisleLabels[g.aisle]}
+          count={g.items.length}
+        >
+          {rows(g.items)}
+        </AisleCard>
       ))}
 
       {checked.length ? (
-        <Section title={`In the cart (${checked.length})`}>{checked.map(row)}</Section>
+        <AisleCard
+          emoji="✅"
+          title="In the cart"
+          count={checked.length}
+          muted
+          action={{
+            label: 'Clear',
+            accessibilityLabel: 'Clear the items in the cart',
+            onPress: () => clearChecked().catch(() => {}),
+          }}
+        >
+          {rows(checked)}
+        </AisleCard>
       ) : null}
 
-      <View className="gap-1 px-5 pt-6">
-        {checked.length ? (
-          <Button
-            label="Clear checked items"
-            variant="secondary"
-            onPress={() => clearChecked().catch(() => {})}
-          />
-        ) : null}
+      <View className="flex-row gap-3 pt-2">
         <Button
-          label="Add this week's planned meals"
-          variant="quiet"
+          className="flex-1"
+          label="Meal plan"
+          variant="secondary"
           accessibilityLabel="Add ingredients from this week's meal plan"
           onPress={() => router.push({ pathname: '/shopping/add', params: { week: 'this' } })}
         />
         {left ? (
           <Button
+            className="flex-1"
             label="Share list"
-            variant="quiet"
+            variant="secondary"
             accessibilityLabel="Share the items left to buy as text"
             onPress={() => Share.share({ message: listAsText(items) }).catch(() => {})}
           />
         ) : null}
       </View>
+      {total ? (
+        <AppText variant="caption" size="sm" className="text-center">
+          Tap to check off. Long press an item to remove it.
+        </AppText>
+      ) : null}
     </Screen>
   );
 }

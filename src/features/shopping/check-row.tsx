@@ -12,6 +12,9 @@ export type CheckRowProps = {
   strike?: boolean;
   onLongPress?(): void;
   accessibilityHint?: string;
+  /** Inside a card: tighter side padding, and no rule under the last row. */
+  inCard?: boolean;
+  last?: boolean;
 };
 
 /** A full-width row with a round check on the right, 56pt tall. */
@@ -23,6 +26,8 @@ export function CheckRow({
   strike = false,
   onLongPress,
   accessibilityHint,
+  inCard = false,
+  last = false,
 }: CheckRowProps) {
   const done = strike && checked;
   return (
@@ -33,7 +38,11 @@ export function CheckRow({
       accessibilityHint={accessibilityHint}
       onPress={onPress}
       onLongPress={onLongPress}
-      className="min-h-14 flex-row items-center gap-3 border-b border-border px-5 py-3 active:bg-surface-muted"
+      className={cn(
+        'min-h-14 flex-row items-center gap-3 py-3 active:bg-surface-muted',
+        inCard ? 'px-4' : 'px-5',
+        !last && 'border-b border-border',
+      )}
     >
       <View className="flex-1 gap-0.5">
         <AppText color={done ? 'muted' : 'ink'} className={cn(done && 'line-through')}>

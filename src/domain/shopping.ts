@@ -31,6 +31,18 @@ export const shoppingAisleLabels: Record<ShoppingAisle, string> = {
   other: 'Other',
 };
 
+/** A small picture for each aisle heading. */
+export const shoppingAisleEmoji: Record<ShoppingAisle, string> = {
+  produce: '🥦',
+  bakery: '🥖',
+  meat: '🍗',
+  dairy: '🥛',
+  frozen: '🧊',
+  pantry: '🫙',
+  baby: '🍼',
+  other: '🛒',
+};
+
 export const SHOPPING_ITEM_MAX_LENGTH = 200;
 
 export const shoppingItemSchema = z.object({
@@ -53,7 +65,10 @@ export type ShoppingLine = { text: string; recipeTitle: string | null };
  * first, so "peanut butter" is pantry (not dairy) and "frozen peas" is frozen (not produce).
  */
 const aisleRules: { aisle: ShoppingAisle; pattern: RegExp }[] = [
-  { aisle: 'baby', pattern: /infant (cereal|oatmeal)|diapers?|\bwipes\b|\bformula\b|breast milk|baby food/ },
+  {
+    aisle: 'baby',
+    pattern: /infant (cereal|oatmeal)|diapers?|\bwipes\b|\bformula\b|breast milk|baby food/,
+  },
   { aisle: 'frozen', pattern: /\bfrozen\b|\bice\b/ },
   {
     aisle: 'pantry',
@@ -72,7 +87,8 @@ const aisleRules: { aisle: ShoppingAisle; pattern: RegExp }[] = [
   },
   {
     aisle: 'bakery',
-    pattern: /\bbread\b|tortillas?|\bbuns?\b|bagels?|\bpitas?\b|\bnaan\b|\brolls?\b|english muffins?|flatbreads?|pizza crusts?|breadcrumbs/,
+    pattern:
+      /\bbread\b|tortillas?|\bbuns?\b|bagels?|\bpitas?\b|\bnaan\b|\brolls?\b|english muffins?|flatbreads?|pizza crusts?|breadcrumbs/,
   },
   {
     aisle: 'produce',

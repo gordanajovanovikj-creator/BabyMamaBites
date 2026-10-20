@@ -106,7 +106,8 @@ function RootStack() {
             />
             <Stack.Screen
               name="shopping/index"
-              options={{ headerShown: true, title: 'Shopping list' }}
+              // The page's own header shows the title with the logo.
+              options={{ headerShown: true, title: '' }}
             />
             <Stack.Screen
               name="shopping/add"
