@@ -16,10 +16,11 @@ import { RecipeGrid } from '@/features/recipes/recipe-grid';
 import { NoMatches } from '@/features/filters/no-matches';
 import { RecipeSection } from '@/features/recipes/recipe-section';
 import { AppText, Screen, SegmentedTabs } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 type Tab = 'recipes' | 'favorites';
 
-export default function MomScreen() {
+function MomScreen() {
   const insets = useSafeAreaInsets();
   const household = useHousehold();
   const { ids: favoriteIds } = useFavorites();
@@ -116,3 +117,5 @@ export default function MomScreen() {
     </Screen>
   );
 }
+
+export default withPremium('recipes', MomScreen);

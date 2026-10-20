@@ -11,6 +11,7 @@ import type { SettingsStore } from './settings-store';
 const REMINDERS = 'reminders';
 const DISCLAIMER = 'disclaimer-accepted';
 const CHAT_CONSENT = 'chat-consent';
+const PREMIUM_UNTIL = 'premium-until';
 
 export function parseReminders(raw: string | null | undefined): ReminderSettings {
   if (!raw) return defaultReminderSettings;
@@ -67,6 +68,25 @@ export function createSqliteSettingsStore(db: SQLiteDatabase): SettingsStore {
          ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
         CHAT_CONSENT,
         onDate,
+      );
+    },
+    async loadPremiumUntil() {
+      const row = await db.getFirstAsync<{ value: string }>(
+        'SELECT value FROM app_setting WHERE key = ?',
+        PREMIUM_UNTIL,
+      );
+      return row?.value ?? null;
+    },
+    async savePremiumUntil(until) {
+      if (until === null) {
+        await db.runAsync('DELETE FROM app_setting WHERE key = ?', PREMIUM_UNTIL);
+        return;
+      }
+      await db.runAsync(
+        `INSERT INTO app_setting (key, value) VALUES (?, ?)
+         ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
+        PREMIUM_UNTIL,
+        until,
       );
     },
   };

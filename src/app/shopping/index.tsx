@@ -14,6 +14,7 @@ import {
 import { CheckRow } from '@/features/shopping/check-row';
 import { useShopping } from '@/features/shopping/shopping-context';
 import { AppText, Button, haptics, Notice, Screen, TextField } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -33,7 +34,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 /** The shopping list: add items, check them off in the store, share it. Saved on this phone. */
-export default function ShoppingListScreen() {
+function ShoppingListScreen() {
   const { items, add, toggle, remove, clearChecked } = useShopping();
   const [draft, setDraft] = useState('');
   const groups = groupByAisle(items);
@@ -86,7 +87,12 @@ export default function ShoppingListScreen() {
           submitBehavior="submit"
           onSubmitEditing={addDraft}
         />
-        <Button label="Add to list" variant="secondary" disabled={!draft.trim()} onPress={addDraft} />
+        <Button
+          label="Add to list"
+          variant="secondary"
+          disabled={!draft.trim()}
+          onPress={addDraft}
+        />
         <AppText variant="caption" size="sm">
           {total
             ? `${left} of ${total} left to buy. Long press an item to remove it.`
@@ -139,3 +145,5 @@ export default function ShoppingListScreen() {
     </Screen>
   );
 }
+
+export default withPremium('shopping', ShoppingListScreen);

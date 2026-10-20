@@ -21,6 +21,7 @@ import {
   SwitchRow,
   TextField,
 } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 const reactionOptions: { id: Reaction; title: string; detail: string }[] = [
   { id: 'none', title: 'No reaction', detail: 'All good so far' },
@@ -44,7 +45,7 @@ function isReaction(value: string | undefined): value is Reaction {
   return !!value && (reactions as readonly string[]).includes(value);
 }
 
-export default function LogFoodScreen() {
+function LogFoodScreen() {
   const params = useLocalSearchParams<{ allergen?: string; food?: string; reaction?: string }>();
   const { add } = useFoodLog();
   const preset = isAllergen(params.allergen) ? params.allergen : null;
@@ -164,3 +165,5 @@ export default function LogFoodScreen() {
     </Screen>
   );
 }
+
+export default withPremium('food-log', LogFoodScreen);

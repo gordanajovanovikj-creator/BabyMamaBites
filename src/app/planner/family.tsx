@@ -11,6 +11,7 @@ import { usePlanner } from '@/features/planner/planner-context';
 import { useHousehold } from '@/features/profile/use-household';
 import { RecipeImage } from '@/features/recipes/recipe-image';
 import { AppText, Button, Screen } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 const FIRST_OPTIONS = 8;
 
@@ -55,7 +56,7 @@ function OptionRow({
  * The family meal next to a planned baby recipe: keep the suggestion, pick another
  * grown-up recipe made with the same ingredients, or have no family meal.
  */
-export default function FamilyMealScreen() {
+function FamilyMealScreen() {
   const { date, slot } = useLocalSearchParams<{ date: string; slot: string }>();
   const household = useHousehold();
   const { plan, family, setFamilyMeal } = usePlanner();
@@ -142,3 +143,5 @@ export default function FamilyMealScreen() {
     </Screen>
   );
 }
+
+export default withPremium('planner', FamilyMealScreen);

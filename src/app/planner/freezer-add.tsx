@@ -7,6 +7,7 @@ import { today, type IsoDate } from '@/domain/dates';
 import { makeFreezerItem } from '@/domain/planner';
 import { usePlanner } from '@/features/planner/planner-context';
 import { AppText, Button, Chip, DateField, Screen, TextField } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 const freezable = babyRecipes.filter((r) => r.tags.includes('freezer-friendly'));
 
@@ -26,7 +27,7 @@ function Step({ label, glyph, onPress }: { label: string; glyph: string; onPress
   );
 }
 
-export default function FreezerAddScreen() {
+function FreezerAddScreen() {
   const { saveFreezerItem } = usePlanner();
   const now = today();
   const [name, setName] = useState('');
@@ -102,3 +103,5 @@ export default function FreezerAddScreen() {
     </Screen>
   );
 }
+
+export default withPremium('planner', FreezerAddScreen);

@@ -19,6 +19,7 @@ import { NutritionCard } from '@/features/recipes/nutrition-card';
 import { PageFooter } from '@/features/shared/page-footer';
 import { TipCard } from '@/features/shared/tip-card';
 import { AppText, Button, cn, haptics, HeartButton, Notice, Screen } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 function SectionTitle({ children }: { children: string }) {
   return (
@@ -28,7 +29,7 @@ function SectionTitle({ children }: { children: string }) {
   );
 }
 
-export default function RecipeScreen() {
+function RecipeScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const recipe = getRecipe(id);
   const { profile } = useProfile();
@@ -191,9 +192,7 @@ export default function RecipeScreen() {
         <Button
           label="Add ingredients to shopping list"
           variant="secondary"
-          onPress={() =>
-            router.push({ pathname: '/shopping/add', params: { recipe: recipe.id } })
-          }
+          onPress={() => router.push({ pathname: '/shopping/add', params: { recipe: recipe.id } })}
         />
       </View>
       <View className="px-5 pt-6">
@@ -237,3 +236,5 @@ export default function RecipeScreen() {
     </Screen>
   );
 }
+
+export default withPremium('recipes', RecipeScreen);

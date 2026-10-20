@@ -46,7 +46,6 @@ export default function ReadinessScreen() {
           title="Talk to your pediatrician"
           body="Ask about when to start, especially if your baby was born early. This is a summary of US guidance for general information, not medical advice."
         />
-
       </View>
 
       <PageFooter className="mx-5" sources={solidsSourcesFor(readiness.sources)} />

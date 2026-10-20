@@ -17,6 +17,7 @@ import {
 import { plannedMeal } from '@/features/planner/planned-meal';
 import { usePlanner } from '@/features/planner/planner-context';
 import { AppText, Button, Chip, haptics, Notice, RoundIconButton, Screen } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 const DAYS = 7;
 
@@ -26,7 +27,7 @@ function dayChipLabel(date: IsoDate, now: IsoDate): string {
 }
 
 /** Adds one recipe, or one food from the food guide, to a day and meal of the planner. */
-export default function AddToPlanScreen() {
+function AddToPlanScreen() {
   const params = useLocalSearchParams<{ food?: string; recipe?: string }>();
   const food = params.food ? getFood(params.food) : undefined;
   const recipe = params.recipe ? getRecipe(params.recipe) : undefined;
@@ -142,3 +143,5 @@ export default function AddToPlanScreen() {
     </Screen>
   );
 }
+
+export default withPremium('planner', AddToPlanScreen);

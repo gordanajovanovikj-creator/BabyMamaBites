@@ -13,8 +13,9 @@ import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { categoryPhoto } from '@/features/recipes/recipe-photos';
 import { RecipeRow } from '@/features/recipes/recipe-row';
 import { AppText, Button, Chip, Notice, Screen } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
-export default function CategoryScreen() {
+function CategoryScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const category = getCategory(id);
   const household = useHousehold();
@@ -104,3 +105,5 @@ export default function CategoryScreen() {
     </Screen>
   );
 }
+
+export default withPremium('recipes', CategoryScreen);

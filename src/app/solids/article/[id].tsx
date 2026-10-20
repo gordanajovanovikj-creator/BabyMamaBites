@@ -7,16 +7,18 @@ import { ageRangeLabel } from '@/domain/articles';
 import { helplinesIn } from '@/domain/helplines';
 import { articleItem } from '@/domain/library';
 import { noticesFor } from '@/domain/safety-notices';
+import { isFreeLibraryCategory } from '@/domain/subscription';
 import { libraryPhoto } from '@/features/library/library-photos';
 import { ReadMore } from '@/features/library/read-more';
 import { PageFooter } from '@/features/shared/page-footer';
 import { HelplineButtons } from '@/features/shared/helpline-buttons';
 import { SafetyNotices } from '@/features/shared/safety-notice';
+import { PremiumGate } from '@/features/subscription/premium-gate';
 import { HeroTopBar, PictureHero } from '@/features/recipes/picture-hero';
 import { DetailHeader } from '@/features/shared/detail-header';
 import { AppText, Button, Card, Illustration, Screen } from '@/ui';
 
-export default function ArticleScreen() {
+function ArticleScreenBody() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const article = getArticle(id);
 
@@ -135,5 +137,16 @@ export default function ArticleScreen() {
         notices={notices.bottom}
       />
     </Screen>
+  );
+}
+
+/** Safety and wellbeing articles are free; the rest of the library is part of Premium. */
+export default function ArticleScreen() {
+  const { id } = useLocalSearchParams<{ id: string }>();
+  const item = getArticle(id);
+  return (
+    <PremiumGate feature="library" free={!item || isFreeLibraryCategory(item.category)}>
+      <ArticleScreenBody />
+    </PremiumGate>
   );
 }

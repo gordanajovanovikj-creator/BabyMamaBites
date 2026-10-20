@@ -19,6 +19,7 @@ import { UrgentHelp } from '@/features/chat/urgent-help';
 import { useProfile } from '@/features/profile/profile-context';
 import { AppText, Button, Chip, cn } from '@/ui';
 import { usePalette } from '@/theme/use-palette';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 const SUGGESTIONS = [
   'Ideas with sweet potato and oats',
@@ -28,7 +29,7 @@ const SUGGESTIONS = [
 ];
 
 /** Ask: a simple chat with the app's helper. Conversations stay in memory and are not saved. */
-export default function AskScreen() {
+function AskScreen() {
   const insets = useSafeAreaInsets();
   const palette = usePalette();
   const { profile } = useProfile();
@@ -212,3 +213,5 @@ export default function AskScreen() {
     </KeyboardAvoidingView>
   );
 }
+
+export default withPremium('ask', AskScreen);

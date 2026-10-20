@@ -15,6 +15,7 @@ import { useCalendar } from '@/features/calendar/calendar-context';
 import { plannedMeal } from '@/features/planner/planned-meal';
 import { usePlanner } from '@/features/planner/planner-context';
 import { AppText, Button, Card, cn, Screen } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 const WEEKDAYS = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
@@ -43,7 +44,7 @@ function MonthButton({ label, glyph, onPress }: { label: string; glyph: string; 
 }
 
 /** Mom's calendar: a month view, then the chosen day's baby meals, events and notes. */
-export default function CalendarScreen() {
+function CalendarScreen() {
   const now = today();
   const { entries, remove } = useCalendar();
   const { plan } = usePlanner();
@@ -235,3 +236,5 @@ export default function CalendarScreen() {
     </Screen>
   );
 }
+
+export default withPremium('calendar', CalendarScreen);

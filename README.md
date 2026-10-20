@@ -51,4 +51,4 @@ src/
 ## Privacy
 
 v1 stores everything on the device. There are no accounts and no analytics.
-App Store privacy label: the only data that leaves the phone is what people type into the Ask chat (plus the baby's age in months), sent to our server and Anthropic to write an answer and not linked to an identity: "User Content – Other", used for App Functionality. See `docs/chat-assistant.md`.
+App Store privacy label: the only data that leaves the phone is what people type into the Ask chat (plus the baby's age in months), sent to our server and Anthropic to write an answer and not linked to an identity: "User Content – Other", used for App Functionality. See `docs/chat-assistant.md`. Subscriptions go through Apple's StoreKit with no purchase data kept by us (see `docs/subscriptions.md`).

@@ -26,10 +26,11 @@ import { useProfile } from '@/features/profile/profile-context';
 import { useHousehold } from '@/features/profile/use-household';
 import { RecipeImage } from '@/features/recipes/recipe-image';
 import { AppText, Button, Card, cn, Screen, SegmentedTabs, TextField } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 type PickKind = 'recipes' | 'foods';
 
-export default function PickMealScreen() {
+function PickMealScreen() {
   const { date, slot } = useLocalSearchParams<{ date: string; slot: string }>();
   const { profile } = useProfile();
   const household = useHousehold();
@@ -238,3 +239,5 @@ export default function PickMealScreen() {
     </Screen>
   );
 }
+
+export default withPremium('planner', PickMealScreen);

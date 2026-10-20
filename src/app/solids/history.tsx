@@ -3,8 +3,9 @@ import { Alert, Pressable, View } from 'react-native';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { LogEntryRow } from '@/features/solids/log-entry-row';
 import { AppText, Card, Screen } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
-export default function FoodHistoryScreen() {
+function FoodHistoryScreen() {
   const { entries, remove } = useFoodLog();
 
   function confirmRemove(id: string, food: string) {
@@ -49,3 +50,5 @@ export default function FoodHistoryScreen() {
     </Screen>
   );
 }
+
+export default withPremium('food-log', FoodHistoryScreen);

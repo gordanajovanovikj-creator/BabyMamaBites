@@ -7,13 +7,14 @@ import { isIsoDate, today, type IsoDate } from '@/domain/dates';
 import { useCalendar } from '@/features/calendar/calendar-context';
 import { ensurePermission, notificationsSupported } from '@/features/reminders/notifications';
 import { AppText, Button, DateField, Notice, Screen, SwitchRow, TextField, TimeField } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 function isKind(value: string | undefined): value is CalendarKind {
   return !!value && (calendarKinds as readonly string[]).includes(value);
 }
 
 /** Add or edit an event (with an optional time) or a note on a calendar day. */
-export default function AddCalendarEntryScreen() {
+function AddCalendarEntryScreen() {
   const params = useLocalSearchParams<{ date?: string; kind?: string; id?: string }>();
   const { entries, save, remove } = useCalendar();
   // Editing when opened with the id of an existing entry.
@@ -106,3 +107,5 @@ export default function AddCalendarEntryScreen() {
     </Screen>
   );
 }
+
+export default withPremium('calendar', AddCalendarEntryScreen);

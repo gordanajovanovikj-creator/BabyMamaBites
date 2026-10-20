@@ -18,6 +18,7 @@ import { ProfileProvider, useProfile } from '@/features/profile/profile-context'
 import { RemindersProvider } from '@/features/reminders/reminders-context';
 import { ShoppingProvider } from '@/features/shopping/shopping-context';
 import { FoodLogProvider } from '@/features/solids/food-log-context';
+import { SubscriptionProvider } from '@/features/subscription/subscription-context';
 import { colors } from '@/theme/colors';
 
 SplashScreen.preventAutoHideAsync().catch(() => {});
@@ -128,6 +129,10 @@ function RootStack() {
           {/* Open before setup too: the subscription and disclaimer screens link here.
           Listed after onboarding so a fresh install still starts at the welcome screen. */}
           <Stack.Screen
+            name="paywall"
+            options={{ presentation: 'modal', headerShown: true, title: '' }}
+          />
+          <Stack.Screen
             name="legal/[doc]"
             options={{ presentation: 'modal', headerShown: true, title: '' }}
           />
@@ -174,9 +179,11 @@ export default function RootLayout() {
                 <PlannerProvider>
                   <CalendarProvider>
                     <ShoppingProvider>
-                      <RemindersProvider>
-                        <RootStack />
-                      </RemindersProvider>
+                      <SubscriptionProvider>
+                        <RemindersProvider>
+                          <RootStack />
+                        </RemindersProvider>
+                      </SubscriptionProvider>
                     </ShoppingProvider>
                   </CalendarProvider>
                 </PlannerProvider>

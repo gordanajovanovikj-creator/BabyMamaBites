@@ -10,4 +10,10 @@ export type SettingsStore = {
   /** The date the parent agreed to send Ask questions to the AI provider, or null. */
   loadChatConsent(): Promise<string | null>;
   saveChatConsent(onDate: string): Promise<void>;
+  /**
+   * When the last App Store check said the subscription ends (ISO timestamp), so a
+   * subscriber isn't shown locked screens while the store is asked again. Null if none.
+   */
+  loadPremiumUntil(): Promise<string | null>;
+  savePremiumUntil(until: string | null): Promise<void>;
 };

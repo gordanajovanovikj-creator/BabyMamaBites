@@ -8,6 +8,7 @@ import { useProfile } from '@/features/profile/profile-context';
 import { PageFooter } from '@/features/shared/page-footer';
 import { TipCard } from '@/features/shared/tip-card';
 import { AppText, Button, Card, Notice, Screen } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 function Bullets({ items }: { items: string[] }) {
   return (
@@ -24,7 +25,7 @@ function Bullets({ items }: { items: string[] }) {
   );
 }
 
-export default function PlanWeekScreen() {
+function PlanWeekScreen() {
   const { n } = useLocalSearchParams<{ n: string }>();
   const { profile } = useProfile();
   const week = getPlanWeek(Number(n));
@@ -155,3 +156,5 @@ export default function PlanWeekScreen() {
     </Screen>
   );
 }
+
+export default withPremium('solids-plan', PlanWeekScreen);

@@ -5,6 +5,10 @@ import { SUPPORT_EMAIL } from '@/content/contact';
 import { logTimes, type ReminderSettings } from '@/domain/reminders';
 import { notificationsSupported } from '@/features/reminders/notifications';
 import { useReminders } from '@/features/reminders/reminders-context';
+import {
+  premiumUnlockedForDevelopment,
+  useSubscription,
+} from '@/features/subscription/subscription-context';
 import { AppText, Card, Chip, Notice, Screen, SwitchRow } from '@/ui';
 
 function formatTime({ hour, minute }: { hour: number; minute: number }): string {
@@ -30,6 +34,55 @@ function LinkRow({ label, detail, onPress }: { label: string; detail: string; on
         ›
       </AppText>
     </Pressable>
+  );
+}
+
+/** Plan status, manage and restore; in development builds, a switch to preview the free app. */
+function SubscriptionSection() {
+  const sub = useSubscription();
+  const restore = async () => {
+    const found = await sub.restore().catch(() => false);
+    Alert.alert(
+      found ? 'Subscription restored' : 'No subscription found',
+      found
+        ? 'Welcome back! Everything is unlocked.'
+        : 'We couldn’t find an active subscription for this Apple ID.',
+    );
+  };
+  return (
+    <>
+      <AppText variant="heading" size="2xl" className="pt-4">
+        Subscription
+      </AppText>
+      {sub.premium ? (
+        <LinkRow
+          label="Premium"
+          detail={sub.canPurchase ? 'Manage or cancel in the App Store' : 'Unlocked'}
+          onPress={() => (sub.canPurchase ? sub.manage().catch(() => {}) : undefined)}
+        />
+      ) : (
+        <LinkRow
+          label="Free version"
+          detail="Start a free trial to unlock everything"
+          onPress={() => router.push('/paywall')}
+        />
+      )}
+      {sub.canPurchase && !sub.premium ? (
+        <LinkRow
+          label="Restore purchases"
+          detail="Already subscribed on another phone?"
+          onPress={restore}
+        />
+      ) : null}
+      {premiumUnlockedForDevelopment ? (
+        <SwitchRow
+          label="Preview the free version"
+          detail="Development only: Premium is unlocked without the App Store"
+          value={sub.previewFree}
+          onChange={sub.setPreviewFree}
+        />
+      ) : null}
+    </>
   );
 }
 
@@ -122,6 +175,8 @@ export default function SettingsScreen() {
         detail="The photographers behind our food photos"
         onPress={() => router.push('/credits')}
       />
+
+      <SubscriptionSection />
 
       <AppText variant="heading" size="2xl" className="pt-4">
         Safety and legal

@@ -11,12 +11,13 @@ import { useHousehold } from '@/features/profile/use-household';
 import { CheckRow } from '@/features/shopping/check-row';
 import { useShopping } from '@/features/shopping/shopping-context';
 import { AppText, Button, haptics, Notice, Screen } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 /**
  * Picks ingredients to add to the shopping list, from one recipe or from this week's
  * meal plan. Everything starts ticked except water and what's already on the list.
  */
-export default function AddToShoppingScreen() {
+function AddToShoppingScreen() {
   const params = useLocalSearchParams<{ recipe?: string; week?: string }>();
   const { items, add } = useShopping();
   const { plan, family } = usePlanner();
@@ -42,10 +43,7 @@ export default function AddToShoppingScreen() {
     [recipes],
   );
   const [picked, setPicked] = useState<Set<string>>(
-    () =>
-      new Set(
-        groups.flatMap((g) => g.lines.filter((l) => l.picked).map((l) => l.key)),
-      ),
+    () => new Set(groups.flatMap((g) => g.lines.filter((l) => l.picked).map((l) => l.key))),
   );
 
   const toggle = (key: string) => {
@@ -94,7 +92,9 @@ export default function AddToShoppingScreen() {
       className="gap-0 pt-4"
       footer={
         <Button
-          label={count ? `Add ${count} ${count === 1 ? 'item' : 'items'} to list` : 'Nothing picked'}
+          label={
+            count ? `Add ${count} ${count === 1 ? 'item' : 'items'} to list` : 'Nothing picked'
+          }
           disabled={!count || saving}
           onPress={save}
         />
@@ -124,3 +124,5 @@ export default function AddToShoppingScreen() {
     </Screen>
   );
 }
+
+export default withPremium('shopping', AddToShoppingScreen);

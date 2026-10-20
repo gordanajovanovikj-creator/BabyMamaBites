@@ -24,6 +24,7 @@ import { WeekCard } from '@/features/solids/week-card';
 import { WeekStrip } from '@/features/solids/week-strip';
 import { PageFooter } from '@/features/shared/page-footer';
 import { AppText, Button, Card, Notice, Screen, SegmentedTabs } from '@/ui';
+import { withPremium } from '@/features/subscription/premium-gate';
 
 const RECENT = 5;
 
@@ -50,7 +51,7 @@ function SectionHeading({
 type Tab = 'recipes' | 'foods' | 'plan' | 'favorites';
 const tabIds: readonly string[] = ['recipes', 'foods', 'plan', 'favorites'];
 
-export default function BabyScreen() {
+function BabyScreen() {
   const insets = useSafeAreaInsets();
   const { profile } = useProfile();
   const { entries } = useFoodLog();
@@ -233,3 +234,5 @@ export default function BabyScreen() {
     </Screen>
   );
 }
+
+export default withPremium('solids-plan', BabyScreen);

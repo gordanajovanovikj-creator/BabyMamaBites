@@ -5,6 +5,7 @@ import { getInsight } from '@/content/insights';
 import { insightBlocks, type InsightBlock } from '@/domain/insights';
 import { insightItem } from '@/domain/library';
 import { noticesFor } from '@/domain/safety-notices';
+import { isFreeLibraryCategory } from '@/domain/subscription';
 import { insightKindLabel } from '@/features/insights/insight-style';
 import { libraryPhoto } from '@/features/library/library-photos';
 import { ReadMore } from '@/features/library/read-more';
@@ -13,6 +14,7 @@ import { DetailHeader } from '@/features/shared/detail-header';
 import { PageFooter } from '@/features/shared/page-footer';
 import { HelplineButtons } from '@/features/shared/helpline-buttons';
 import { SafetyNotices } from '@/features/shared/safety-notice';
+import { PremiumGate } from '@/features/subscription/premium-gate';
 import { AppText, Button, Illustration, Notice, Screen } from '@/ui';
 
 /** One line of an insight: a heading, a bullet, a numbered step or a paragraph. */
@@ -45,7 +47,7 @@ function BodyBlock({ block, first }: { block: InsightBlock; first: boolean }) {
   }
 }
 
-export default function InsightScreen() {
+function InsightScreenBody() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const insight = getInsight(id);
 
@@ -105,5 +107,16 @@ export default function InsightScreen() {
       {/* Fine print and the disclaimer always close the page. */}
       <PageFooter className="mx-5" notices={notices.bottom} />
     </Screen>
+  );
+}
+
+/** Safety and wellbeing articles are free; the rest of the library is part of Premium. */
+export default function InsightScreen() {
+  const { id } = useLocalSearchParams<{ id: string }>();
+  const item = getInsight(id);
+  return (
+    <PremiumGate feature="library" free={!item || isFreeLibraryCategory(item.category)}>
+      <InsightScreenBody />
+    </PremiumGate>
   );
 }
