@@ -12,9 +12,16 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { SafeAreaView } from 'react-native-screens/experimental';
 
 import { today } from '@/domain/dates';
-import { CHAT_LIMITS, detectUrgent, type ChatTurn, type UrgentKind } from '@/domain/chat';
+import {
+  CHAT_LIMITS,
+  detectUrgent,
+  type ChatDish,
+  type ChatTurn,
+  type UrgentKind,
+} from '@/domain/chat';
 import { babyAge } from '@/domain/stage';
 import { sendChat } from '@/features/chat/chat-client';
+import { DishCard } from '@/features/chat/dish-card';
 import { useChatConsent } from '@/features/chat/use-chat-consent';
 import { useKeyboardVisible } from '@/features/chat/use-keyboard-visible';
 import { UrgentHelp } from '@/features/chat/urgent-help';
@@ -30,6 +37,9 @@ const SUGGESTIONS = [
   'How do I freeze baby food?',
 ];
 
+/** A message on screen; the helper's answers can carry the dishes they suggested. */
+type ShownTurn = ChatTurn & { dishes?: ChatDish[] };
+
 /** Ask: a simple chat with the app's helper. Conversations stay in memory and are not saved. */
 function AskScreen() {
   const insets = useSafeAreaInsets();
@@ -37,7 +47,7 @@ function AskScreen() {
   const palette = usePalette();
   const { profile } = useProfile();
   const params = useLocalSearchParams<{ q?: string }>();
-  const [turns, setTurns] = useState<ChatTurn[]>([]);
+  const [turns, setTurns] = useState<ShownTurn[]>([]);
   const [input, setInput] = useState('');
   const [sending, setSending] = useState(false);
   const [problem, setProblem] = useState<string | null>(null);
@@ -61,7 +71,7 @@ function AskScreen() {
     if (!text || locked) return;
     const found = detectUrgent(text);
     if (found) setUrgent(found);
-    const next: ChatTurn[] = [...turns, { role: 'user', text }];
+    const next: ShownTurn[] = [...turns, { role: 'user', text }];
     setTurns(next);
     setInput('');
     setProblem(null);
@@ -69,7 +79,7 @@ function AskScreen() {
     const result = await sendChat(next, ageMonths);
     setSending(false);
     if (result.ok) {
-      setTurns([...next, { role: 'assistant', text: result.reply }]);
+      setTurns([...next, { role: 'assistant', text: result.reply, dishes: result.dishes }]);
     } else {
       // Put the question back so it isn't lost.
       setTurns(turns);
@@ -144,16 +154,20 @@ function AskScreen() {
         ) : null}
 
         {turns.map((t, i) => (
-          <View
-            key={i}
-            className={cn(
-              'max-w-[85%] rounded-3xl px-4 py-3',
-              t.role === 'user' ? 'self-end bg-primary' : 'self-start bg-sky',
-            )}
-          >
-            <AppText color={t.role === 'user' ? 'on-primary' : 'on-sky'} selectable>
-              {t.text}
-            </AppText>
+          <View key={i} className="gap-2">
+            <View
+              className={cn(
+                'max-w-[85%] rounded-3xl px-4 py-3',
+                t.role === 'user' ? 'self-end bg-primary' : 'self-start bg-sky',
+              )}
+            >
+              <AppText color={t.role === 'user' ? 'on-primary' : 'on-sky'} selectable>
+                {t.text}
+              </AppText>
+            </View>
+            {t.dishes?.map((dish) => (
+              <DishCard key={dish.name} dish={dish} />
+            ))}
           </View>
         ))}
 

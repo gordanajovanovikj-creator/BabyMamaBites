@@ -1,7 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 
 import { CHAT_SYSTEM_PROMPT } from '@/content/chat-prompt';
-import { parseChatRequest } from '@/domain/chat';
+import { chatOutputJsonSchema, parseChatOutput, parseChatRequest } from '@/domain/chat';
 import { CHAT_RATE_RULES, clientKey, createRateLimiter } from '@/domain/rate-limit';
 
 /** Server-only. Reads ANTHROPIC_API_KEY from the host's environment (never bundled in the app). */
@@ -61,7 +61,12 @@ export async function POST(request: Request) {
       model: wantsOpus() ? 'claude-opus-5-5' : 'claude-haiku-5-5',
       max_tokens: 16000,
       // Chat answers are short and everyday: low effort keeps them quick and inexpensive.
-      output_config: { effort: 'low' },
+      // The answer plus any suggested dishes with their ingredients, so the app can offer
+      // "Add ingredients to shopping list".
+      output_config: {
+        effort: 'low',
+        format: { type: 'json_schema', schema: chatOutputJsonSchema },
+      },
       // Opus only: if a safety classifier declines, the API retries on a suitable model in the
       // same call. Haiku has no server-side fallback; a decline shows the gentle message below.
       ...(wantsOpus()
@@ -77,12 +82,15 @@ export async function POST(request: Request) {
           "I can't help with that one. For health worries, please talk to your pediatrician or doctor, and call 911 in an emergency.",
       });
     }
-    const reply = response.content
+    const text = response.content
       .filter((b): b is Anthropic.Beta.BetaTextBlock => b.type === 'text')
       .map((b) => b.text)
-      .join('\n')
-      .trim();
-    return Response.json({ reply: reply || "Sorry, I didn't catch that. Could you ask again?" });
+      .join('\n');
+    const { reply, dishes } = parseChatOutput(text);
+    return Response.json({
+      reply: reply || "Sorry, I didn't catch that. Could you ask again?",
+      dishes: reply ? dishes : [],
+    });
   } catch (error) {
     if (error instanceof Anthropic.RateLimitError) {
       return Response.json({ error: 'busy' }, { status: 429 });

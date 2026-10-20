@@ -3,6 +3,7 @@ import { useMemo, useState } from 'react';
 import { Alert, View } from 'react-native';
 
 import { allRecipes, getRecipe } from '@/content/recipes';
+import { dishFromParam } from '@/domain/chat';
 import { today } from '@/domain/dates';
 import { weekDates, weekStart } from '@/domain/planner';
 import { ingredientPicks, plannedRecipes } from '@/domain/shopping';
@@ -14,11 +15,12 @@ import { AppText, Button, haptics, Notice, Screen } from '@/ui';
 import { withPremium } from '@/features/subscription/premium-gate';
 
 /**
- * Picks ingredients to add to the shopping list, from one recipe or from this week's
- * meal plan. Everything starts ticked except water and what's already on the list.
+ * Picks ingredients to add to the shopping list, from one recipe, this week's meal plan or
+ * a dish the Ask helper suggested. Everything starts ticked except water and what's already
+ * on the list.
  */
 function AddToShoppingScreen() {
-  const params = useLocalSearchParams<{ recipe?: string; week?: string }>();
+  const params = useLocalSearchParams<{ recipe?: string; week?: string; dish?: string }>();
   const { items, add } = useShopping();
   const { plan, family } = usePlanner();
   const household = useHousehold();
@@ -32,10 +34,13 @@ function AddToShoppingScreen() {
     if (params.week) {
       return plannedRecipes(plan, family, weekDates(weekStart(today())), allRecipes, household);
     }
+    // A dish the Ask helper suggested.
+    const dish = dishFromParam(params.dish);
+    if (dish) return [{ id: 'ask-dish', title: dish.name, ingredients: dish.ingredients }];
     return [];
     // The list is worked out once when the sheet opens, so ticks don't jump around.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [params.recipe, params.week]);
+  }, [params.recipe, params.week, params.dish]);
 
   const groups = useMemo(
     () => ingredientPicks(recipes, items),

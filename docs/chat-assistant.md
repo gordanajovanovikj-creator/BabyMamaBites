@@ -19,6 +19,10 @@ route, `src/app/api/chat+api.ts`, which holds the secret API key and calls the m
   later. The limit counts by IP address in the server's memory only (never logged or
   stored), and each server instance counts on its own, so it's a guard against scripts and
   runaway use, not a hard cap. The Anthropic spend limit is the hard cap.
+- **Dishes to shopping list:** the server asks the model for JSON: the answer (`reply`) plus
+  any dishes it suggested with their ingredients (`dishes`, up to 4). Ask shows each dish as a
+  card with **Add ingredients to shopping list**, which opens the same pick-the-ingredients
+  sheet as recipes. A reply that isn't valid JSON still shows as plain text, with no dishes.
 - **Server:** validates the request (max 20 messages, 2,000 characters each), adds a fixed
   safety system prompt (`src/content/chat-prompt.ts`), and calls the
   model at low effort (Opus also gets server-side refusal fallbacks; Haiku has none, so a

@@ -1,3 +1,5 @@
+import { z } from 'zod';
+
 /** One message in the in-app chat. Kept in memory only: chats are not saved on the phone. */
 export type ChatTurn = { role: 'user' | 'assistant'; text: string };
 
@@ -65,4 +67,86 @@ export function detectUrgent(text: string): UrgentKind | null {
   if (CRISIS.some((r) => r.test(t))) return 'crisis';
   if (EMERGENCY.some((r) => r.test(t))) return 'emergency';
   return null;
+}
+
+/** A dish the helper suggested, with a shopping-style ingredient list. */
+export type ChatDish = { name: string; ingredients: string[] };
+
+export const MAX_CHAT_DISHES = 4;
+
+const dishSchema = z.object({
+  name: z.string().trim().min(1).max(80),
+  ingredients: z.array(z.string().trim().min(1).max(120)).min(1).max(30),
+});
+
+/**
+ * The JSON shape the server asks the model for: the answer itself, plus any dishes it
+ * suggested (empty when the answer isn't about specific dishes).
+ */
+export const chatOutputJsonSchema = {
+  type: 'object',
+  properties: {
+    reply: { type: 'string' },
+    dishes: {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          name: { type: 'string' },
+          ingredients: { type: 'array', items: { type: 'string' } },
+        },
+        required: ['name', 'ingredients'],
+        additionalProperties: false,
+      },
+    },
+  },
+  required: ['reply', 'dishes'],
+  additionalProperties: false,
+} as const;
+
+/**
+ * Reads the model's JSON answer. Anything that isn't valid JSON becomes a plain reply with no
+ * dishes, and dishes that don't fit the shape are dropped, so a bad answer never breaks Ask.
+ */
+export function parseChatOutput(text: string): { reply: string; dishes: ChatDish[] } {
+  let value: unknown;
+  try {
+    value = JSON.parse(text);
+  } catch {
+    return { reply: text.trim(), dishes: [] };
+  }
+  const obj = (value ?? {}) as { reply?: unknown; dishes?: unknown };
+  const reply = typeof obj.reply === 'string' ? obj.reply.trim() : '';
+  const dishes = Array.isArray(obj.dishes)
+    ? obj.dishes.flatMap((d) => {
+        const r = dishSchema.safeParse(d);
+        return r.success ? [r.data] : [];
+      })
+    : [];
+  return { reply, dishes: dishes.slice(0, MAX_CHAT_DISHES) };
+}
+
+/** Checks dishes coming back from the server (or through a link) before showing them. */
+export function parseChatDishes(value: unknown): ChatDish[] {
+  if (!Array.isArray(value)) return [];
+  return value
+    .flatMap((d) => {
+      const r = dishSchema.safeParse(d);
+      return r.success ? [r.data] : [];
+    })
+    .slice(0, MAX_CHAT_DISHES);
+}
+
+/** A dish as one route parameter, for opening the shopping sheet. */
+export function dishToParam(dish: ChatDish): string {
+  return JSON.stringify(dish);
+}
+
+export function dishFromParam(param: string | undefined): ChatDish | null {
+  if (!param) return null;
+  try {
+    return parseChatDishes([JSON.parse(param)])[0] ?? null;
+  } catch {
+    return null;
+  }
 }

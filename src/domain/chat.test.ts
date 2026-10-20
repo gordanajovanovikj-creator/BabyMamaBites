@@ -1,4 +1,13 @@
-import { CHAT_LIMITS, detectUrgent, parseChatRequest } from './chat';
+import {
+  CHAT_LIMITS,
+  detectUrgent,
+  dishFromParam,
+  dishToParam,
+  MAX_CHAT_DISHES,
+  parseChatDishes,
+  parseChatOutput,
+  parseChatRequest,
+} from './chat';
 
 describe('parseChatRequest', () => {
   it('accepts a simple question and trims it', () => {
@@ -47,5 +56,35 @@ describe('detectUrgent', () => {
   });
   it('leaves everyday questions alone', () => {
     expect(detectUrgent('What can I make with sweet potato?')).toBeNull();
+  });
+});
+
+describe('chat dishes', () => {
+  const dish = { name: 'Black bean burgers', ingredients: ['1 can black beans', '1 egg'] };
+
+  it('reads the reply and dishes from the model', () => {
+    expect(parseChatOutput(JSON.stringify({ reply: ' Try these! ', dishes: [dish] }))).toEqual({
+      reply: 'Try these!',
+      dishes: [dish],
+    });
+  });
+
+  it('falls back to plain text and drops dishes that do not fit', () => {
+    expect(parseChatOutput('Just text')).toEqual({ reply: 'Just text', dishes: [] });
+    expect(
+      parseChatOutput(
+        JSON.stringify({ reply: 'Hi', dishes: [{ name: '', ingredients: [] }, dish, 'nope'] }),
+      ).dishes,
+    ).toEqual([dish]);
+  });
+
+  it('keeps at most four dishes', () => {
+    expect(parseChatDishes(Array.from({ length: 6 }, () => dish))).toHaveLength(MAX_CHAT_DISHES);
+  });
+
+  it('round-trips a dish through a route parameter', () => {
+    expect(dishFromParam(dishToParam(dish))).toEqual(dish);
+    expect(dishFromParam('not json')).toBeNull();
+    expect(dishFromParam(undefined)).toBeNull();
   });
 });
