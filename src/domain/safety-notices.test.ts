@@ -14,10 +14,11 @@ describe('noticesFor', () => {
     expect(article.afterBody).toEqual([]);
   });
 
-  it('puts the allergy notice after the reaction signs article', () => {
-    const allergy = noticesFor({ id: 'allergic-reaction-signs', category: 'safety' });
-    expect(allergy.top).toEqual([]);
-    expect(allergy.bottom).toEqual(['allergy-safety']);
+  it('never adds a second red card to the allergy articles', () => {
+    for (const id of ['allergens', 'allergic-reaction-signs']) {
+      const n = noticesFor({ id, category: 'safety' });
+      expect([...n.top, ...n.afterBody, ...n.bottom]).not.toContain('allergy-safety');
+    }
   });
 
   it("gives every mom article and tip the maternal health notice", () => {

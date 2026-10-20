@@ -34,8 +34,7 @@ const afterBodyById: Record<string, SafetyNoticeId[]> = {
 
 /** Shown after the article body: who to ask for advice that fits your child. */
 const bottomById: Record<string, SafetyNoticeId[]> = {
-  // (The allergens article's own red "Watch for reactions" card covers this.)
-  'allergic-reaction-signs': ['allergy-safety'],
+  // The allergy articles (allergens, allergic-reaction-signs) carry this in their own red card.
   'brushing-baby-teeth': ['dental-care'],
   'toddler-picky-phases': ['feeding-behavior'],
   'food-refusal': ['feeding-behavior'],
