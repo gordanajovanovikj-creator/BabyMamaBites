@@ -1049,16 +1049,6 @@ p {
 .site-footer li a:hover {
   color: var(--sage);
 }
-.footer-bottom {
-  margin-top: 48px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 12px;
-  color: var(--muted);
-}
 
 /* Scroll reveal (only when JavaScript runs) */
 .js .reveal {

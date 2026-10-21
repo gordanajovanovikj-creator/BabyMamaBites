@@ -11,7 +11,6 @@ const out = path.join(root, 'website');
 const read = (file) => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 
 const SUPPORT_EMAIL = 'support@mamababybites.com';
-const COMPANY = 'Culman Brothers LLC';
 
 const esc = (s) =>
   String(s)
@@ -81,10 +80,6 @@ const footer = `
               <li><a href="credits.html">Photo credits</a></li>
             </ul>
           </div>
-        </div>
-        <div class="footer-bottom">
-          <span>© ${new Date().getFullYear()} ${COMPANY}. All rights reserved.</span>
-          <a href="mailto:${SUPPORT_EMAIL}">${SUPPORT_EMAIL}</a>
         </div>
       </div>
     </footer>
