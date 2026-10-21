@@ -8,9 +8,10 @@
       name="description"
       content="Recipes for your baby and for you, a week-by-week plan for starting solids, a food guide, a meal planner and shopping list, all in one calm iPhone app. Based on official US guidance."
     />
-    <meta name="theme-color" content="#f7eedc" />
+    <meta name="theme-color" content="#fbf6ec" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="preload" href="assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Mama & Baby Bites" />
     <meta
@@ -21,15 +22,18 @@
     <meta property="og:url" content="https://mamababybites.com/" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="assets/css/site.css" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
 
-    <header class="site-header" id="top">
-      <nav class="wrap nav" aria-label="Main">
-        <a class="brand" href="/" aria-label="Mama & Baby Bites home">
-          <img src="assets/img/logo-mark.webp" alt="" width="40" height="40" />
-          <span>Mama &amp; Baby Bites</span>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main">
+        <a class="brand" href="/" aria-label="Mama &amp; Baby Bites home">
+          <img class="mark" src="assets/img/logo-mark.webp" alt="" width="40" height="40" />
+          <img class="word" src="assets/img/wordmark.webp" alt="" width="640" height="167" />
         </a>
         <ul class="nav-links">
           <li class="optional"><a href="#features">Features</a></li>
@@ -44,71 +48,75 @@
     <main id="main">
       <!-- Hero -->
       <section class="hero">
-        <div class="wrap hero-grid">
-          <div>
-            <span class="kicker">For moms and little eaters, newborn to 3 years</span>
-            <h1>Good food for <em>mama</em> and <em>baby</em></h1>
-            <p class="lead">
-              Recipes for your baby and for you, a week-by-week plan for starting solids, and
-              calm, practical help at every meal. All in one place.
-            </p>
-            <div class="hero-actions" id="get">
-              <span class="btn btn-store" role="img" aria-label="Coming soon on the App Store">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
-                <span><small>Coming soon on the</small><strong>App Store</strong></span>
-              </span>
-              <a class="btn btn-soft" href="#features">See what's inside</a>
+        <div class="hero-card">
+          <div class="wrap hero-grid">
+            <div class="hero-copy">
+              <span class="pill"><b>New</b> Coming soon to iPhone</span>
+              <h1>Good food for <em>mama</em> and <em>baby</em></h1>
+              <p class="lead">
+                Recipes for your baby and for you, a week-by-week plan for starting solids, and
+                calm, practical help at every meal. All in one place.
+              </p>
+              <div class="hero-actions" id="get">
+                <span class="btn btn-store" role="img" aria-label="Coming soon on the App Store">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+                  <span><small>Coming soon on the</small><strong>App Store</strong></span>
+                </span>
+                <a class="btn btn-soft" href="#features">See what's inside</a>
+              </div>
+              <ul class="hero-note">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Free to start</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>7-day free trial of Premium</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>No account needed</li>
+              </ul>
             </div>
-            <p class="hero-note">Free to start · 7-day free trial of Premium · No account needed</p>
-          </div>
-          <div class="hero-art" aria-hidden="true">
-            <div class="blob"></div>
-            <div class="phone phone-a">
-              <img src="assets/screens/today.webp" alt="" width="390" height="844" />
-            </div>
-            <div class="phone phone-b">
-              <img src="assets/screens/baby-recipe.webp" alt="" width="390" height="844" />
-            </div>
-            <div class="floating-card fc-1">
-              <span class="dot">🥄</span>
-              <span>Week 3 of solids<small>Try egg today</small></span>
-            </div>
-            <div class="floating-card fc-2">
-              <span class="dot">🛒</span>
-              <span>Shopping list<small>Added 7 ingredients</small></span>
+            <div class="hero-art" aria-hidden="true">
+              <div class="phone phone-a">
+                <img src="assets/screens/today.webp" alt="" width="390" height="844" />
+              </div>
+              <div class="phone phone-b">
+                <img src="assets/screens/baby-recipe.webp" alt="" width="390" height="844" />
+              </div>
+              <div class="chip chip-1">
+                <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v15H4z"/><path d="M8 3v4M16 3v4M4 10h16"/></svg></span>
+                <span>Week 3 of solids<small>Try egg today</small></span>
+              </div>
+              <div class="chip chip-2">
+                <span class="ic butter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12h11.5l2-8H6.2"/></svg></span>
+                <span>Shopping list<small>Added 7 ingredients</small></span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Trust -->
-      <div class="trust">
-        <div class="wrap trust-inner">
-          <p>Based on official US guidance</p>
-          <ul aria-label="Sources">
-            <li>CDC</li>
-            <li>AAP · HealthyChildren.org</li>
-            <li>FDA</li>
-            <li>USDA Dietary Guidelines</li>
-            <li>HHS Office on Women's Health</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Stats -->
-      <div class="wrap" style="padding-top: 80px">
-        <div class="stats">
-          <div class="stat"><strong>180+</strong><span>recipes for baby and you</span></div>
-          <div class="stat"><strong>26</strong><span>week starting-solids plan</span></div>
-          <div class="stat"><strong>44</strong><span>first foods, how to serve</span></div>
-          <div class="stat"><strong>15</strong><span>monthly guides, 0 to 3 years</span></div>
+      <!-- Sources -->
+      <div class="marquee" aria-label="Based on official US guidance from the CDC, AAP and HealthyChildren.org, FDA, USDA Dietary Guidelines and HHS Office on Women's Health">
+        <p>Based on official US guidance</p>
+        <div class="marquee-mask" aria-hidden="true">
+          <div class="marquee-track">
+            <ul>
+              <li>CDC</li>
+              <li>AAP · HealthyChildren.org</li>
+              <li>FDA</li>
+              <li>USDA Dietary Guidelines</li>
+              <li>HHS Office on Women's Health</li>
+            </ul>
+            <ul>
+              <li>CDC</li>
+              <li>AAP · HealthyChildren.org</li>
+              <li>FDA</li>
+              <li>USDA Dietary Guidelines</li>
+              <li>HHS Office on Women's Health</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <!-- Features -->
       <section class="section" id="features">
         <div class="wrap">
-          <div class="section-head">
+          <div class="section-head reveal">
             <span class="eyebrow">Everything in one calm place</span>
             <h2>Feeding your family, made simpler</h2>
             <p>
@@ -117,201 +125,143 @@
             </p>
           </div>
 
-          <div class="feature">
-            <div class="feature-art">
-              <div class="blob"></div>
-              <div class="phone"><img src="assets/screens/week.webp" alt="The week 3 page of the starting-solids plan, about hunger and fullness cues" width="390" height="844" loading="lazy" /></div>
-            </div>
-            <div class="feature-text">
-              <span class="eyebrow">Starting solids</span>
-              <h2>A guided start, week by week</h2>
-              <p>
-                Know what to try next. A 26-week plan walks you from first tastes to family foods,
-                with textures that match your baby's stage and common allergens introduced one at
-                a time.
-              </p>
-              <ul class="checks">
-                <li>Readiness signs, textures and new foods for each week</li>
-                <li>A food log and allergen tracker to see what your baby has tried</li>
-                <li>Choking and gagging guide, always one tap away</li>
-              </ul>
-            </div>
-          </div>
+          <div class="bento">
+            <article class="tile cream split span-4 reveal">
+              <div class="copy">
+                <span class="eyebrow">Starting solids</span>
+                <h3>A guided start, week by week</h3>
+                <p>
+                  A 26-week plan walks you from first tastes to family foods, with textures that
+                  match your baby's stage and common allergens introduced one at a time.
+                </p>
+                <ul class="mini-list">
+                  <li>Readiness signs, textures and new foods for each week</li>
+                  <li>A food log and allergen tracker</li>
+                  <li>Choking and gagging guide, always one tap away</li>
+                </ul>
+              </div>
+              <div class="phone peek"><img src="assets/screens/week.webp" alt="The week 3 page of the starting-solids plan, about hunger and fullness cues" width="390" height="844" loading="lazy" /></div>
+            </article>
 
-          <div class="feature reverse">
-            <div class="feature-art">
-              <div class="blob blob-sage"></div>
-              <div class="phone"><img src="assets/screens/recipe.webp" alt="A sheet-pan lemon garlic salmon recipe with a large food photo" width="390" height="844" loading="lazy" /></div>
-            </div>
-            <div class="feature-text">
-              <span class="eyebrow">Recipes</span>
-              <h2>Real food for baby, and for you</h2>
-              <p>
-                Purees, finger foods and family meals for your little one, plus quick, nourishing
-                meals for busy moms. Filter by time, energy and what your household avoids.
-              </p>
-              <ul class="checks">
-                <li>180+ recipes with step-by-step cook mode</li>
-                <li>Baby tips and choking-hazard notes on family meals</li>
-                <li>Nutrition details and allergen labels on every recipe</li>
-              </ul>
-            </div>
-          </div>
+            <article class="tile photo span-2 reveal">
+              <img src="assets/img/food-salmon.webp" alt="" width="666" height="1000" loading="lazy" />
+              <div class="copy">
+                <span class="eyebrow">Recipes</span>
+                <h3>Real food for baby, and for you</h3>
+                <p>Purees, finger foods, family meals and quick, nourishing meals for busy moms.</p>
+              </div>
+            </article>
 
-          <div class="feature">
-            <div class="feature-art">
-              <div class="blob"></div>
-              <div class="phone"><img src="assets/screens/shopping.webp" alt="The shopping list, grouped by store section with a progress bar" width="390" height="844" loading="lazy" /></div>
-            </div>
-            <div class="feature-text">
-              <span class="eyebrow">Plan &amp; shop</span>
-              <h2>Plan the week, shop in a tap</h2>
-              <p>
-                Plan your baby's meals and the family dinners next to them, keep track of freezer
-                cubes, and turn any recipe or the whole week's plan into a shopping list.
-              </p>
-              <ul class="checks">
-                <li>Meal planner that grows with your baby: one meal a day, then two, then three</li>
-                <li>Shopping list sorted by store section, ready to share</li>
-                <li>Freezer tracker with use-by reminders</li>
-              </ul>
-            </div>
-          </div>
+            <article class="tile butter span-2 reveal">
+              <div class="big-number">180+</div>
+              <h3>Recipes</h3>
+              <p>Step-by-step cook mode, nutrition details and allergen labels on every recipe.</p>
+            </article>
 
-          <div class="feature reverse">
-            <div class="feature-art">
-              <div class="blob blob-sage"></div>
+            <article class="tile sage split span-4 reveal">
+              <div class="copy">
+                <span class="eyebrow">Plan &amp; shop</span>
+                <h3>Plan the week, shop in a tap</h3>
+                <p>
+                  Plan your baby's meals and the family dinners next to them, and turn any recipe or
+                  the whole week into a shopping list.
+                </p>
+                <ul class="mini-list">
+                  <li>A meal planner that grows with your baby</li>
+                  <li>Shopping list sorted by store section, ready to share</li>
+                  <li>Freezer tracker with use-by reminders</li>
+                </ul>
+              </div>
+              <div class="phone peek"><img src="assets/screens/shopping.webp" alt="The shopping list, grouped by store section with a progress bar" width="390" height="844" loading="lazy" /></div>
+            </article>
+
+            <article class="tile coral span-3 reveal">
+              <span class="eyebrow">Ask</span>
+              <h3>Your feeding helper, any time</h3>
+              <p>
+                Stuck on what to cook, how to freeze it or how to handle picky eating? Get practical
+                ideas, then add a dish's ingredients to your shopping list.
+              </p>
               <div class="chat" aria-label="An example conversation in Ask">
-                <div class="chat-title">Ask</div>
                 <div class="bubble me">Quick dinner ideas with chicken and sweet potato?</div>
                 <div class="bubble helper">
                   Here are two easy ones the whole family can share. Cut baby's portion into soft,
                   finger-sized strips.
                 </div>
                 <div class="dish">
-                  <span class="dot">🍽️</span>
                   <span><strong>Sheet-pan chicken &amp; sweet potato</strong><small>6 ingredients</small></span>
-                  <span class="add">+ Shopping list</span>
-                </div>
-                <div class="dish">
-                  <span class="dot">🍽️</span>
-                  <span><strong>Chicken &amp; sweet potato soup</strong><small>8 ingredients</small></span>
                   <span class="add">+ Shopping list</span>
                 </div>
                 <p class="chat-note">Example only. Answers are general information, not medical advice.</p>
               </div>
-            </div>
-            <div class="feature-text">
-              <span class="eyebrow">Ask</span>
-              <h2>Your feeding helper, any time</h2>
+            </article>
+
+            <article class="tile span-3 reveal">
+              <span class="tile-icon" style="background: var(--sage-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M8 3v4M16 3v4M4 10h16"/></svg></span>
+              <h3>Monthly guides, newborn to 3</h3>
               <p>
-                Stuck on what to cook, how to freeze it or how to handle picky eating? Ask a quick
-                question and get practical ideas, then add a dish's ingredients to your shopping
-                list.
+                Month by month: feeding, safety, food and rest for you, and when to call your
+                doctor.
               </p>
-              <ul class="checks">
-                <li>Meal ideas from what you already have</li>
-                <li>Points you to your pediatrician, 911 or 988 when it matters</li>
-                <li>Your chat isn't saved, and your baby's name is never sent</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+              <div class="big-number" style="margin-top: auto">15</div>
+              <p>guides, from birth to age 3</p>
+            </article>
 
-      <!-- More features -->
-      <section class="section" style="padding-top: 0">
-        <div class="wrap">
-          <div class="section-head">
-            <span class="eyebrow">And so much more</span>
-            <h2>Little helpers for busy days</h2>
-          </div>
-          <div class="grid">
-            <article class="card">
-              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v15H4z"/><path d="M8 3v4M16 3v4M4 10h16"/></svg></div>
-              <h3>Monthly guides</h3>
-              <p>Month by month from newborn days to age 3: feeding, safety, food and rest for you, and when to call your doctor.</p>
+            <article class="tile dark span-2 reveal">
+              <div class="big-number" style="color: #fff">44</div>
+              <h3>First foods</h3>
+              <p>How to serve each one at every age, with choking risk, allergens and iron.</p>
             </article>
-            <article class="card">
-              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div>
-              <h3>Food guide</h3>
-              <p>44 first foods with how to serve them at each age, choking risk, allergens and iron.</p>
-            </article>
-            <article class="card">
-              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v16l-7-4-7 4z"/></svg></div>
-              <h3>Insights library</h3>
-              <p>Short, friendly articles on starting solids, safety, happy eaters and looking after yourself.</p>
-            </article>
-            <article class="card">
-              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10 21h4"/></svg></div>
+
+            <article class="tile span-2 reveal">
+              <span class="tile-icon" style="background: var(--butter)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10 21h4"/></svg></span>
               <h3>Gentle reminders</h3>
-              <p>Optional nudges to plan the week, log a new food or use freezer cubes before they're past their best.</p>
+              <p>Optional nudges to plan the week, log a new food or use freezer cubes in time.</p>
             </article>
-            <article class="card">
-              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="16" height="7" rx="2"/></svg></div>
+
+            <article class="tile span-2 reveal">
+              <span class="tile-icon" style="background: var(--cream)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="16" height="7" rx="2"/></svg></span>
               <h3>Home screen widget</h3>
-              <p>See today's planned meals at a glance, right from your iPhone's home screen.</p>
-            </article>
-            <article class="card">
-              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg></div>
-              <h3>Made for real life</h3>
-              <p>Big buttons for one-handed use, warm words, and support for larger text and VoiceOver.</p>
+              <p>See today's planned meals at a glance. Plus big buttons, larger text and VoiceOver support.</p>
             </article>
           </div>
-        </div>
-      </section>
-
-      <!-- Gallery -->
-      <section class="section" style="padding-top: 0" aria-labelledby="gallery-title">
-        <div class="wrap section-head" style="margin-bottom: 30px">
-          <span class="eyebrow">A peek inside</span>
-          <h2 id="gallery-title">Designed to feel calm</h2>
-        </div>
-        <div class="gallery">
-          <figure><div class="phone"><img src="assets/screens/today.webp" alt="Today: the month's guide, this week's focus and meal plan" width="390" height="844" loading="lazy" /></div><figcaption>Today</figcaption></figure>
-          <figure><div class="phone"><img src="assets/screens/baby.webp" alt="Baby: recipes grouped by stage, like first purees" width="390" height="844" loading="lazy" /></div><figcaption>Baby recipes</figcaption></figure>
-          <figure><div class="phone"><img src="assets/screens/food.webp" alt="The food guide page for avocado" width="390" height="844" loading="lazy" /></div><figcaption>Food guide</figcaption></figure>
-          <figure><div class="phone"><img src="assets/screens/mom.webp" alt="Mom: recipes to keep you nourished" width="390" height="844" loading="lazy" /></div><figcaption>Recipes for you</figcaption></figure>
-          <figure><div class="phone"><img src="assets/screens/insights.webp" alt="Insights: articles on starting solids and safety" width="390" height="844" loading="lazy" /></div><figcaption>Insights</figcaption></figure>
         </div>
       </section>
 
       <!-- Privacy -->
-      <section class="section" style="padding-top: 0">
-        <div class="wrap">
-          <div class="privacy-band">
-            <div>
-              <span class="eyebrow" style="color: #cfe2c9">Private by design</span>
-              <h2>Your family's details stay on your phone</h2>
-              <p>
-                There's no account to create. Your baby's name, birthday, food log and plans are
-                saved only on your iPhone, not on our servers.
-              </p>
-            </div>
-            <ul>
-              <li><span>🔒</span> No account, no sign-up</li>
-              <li><span>🚫</span> No ads and no tracking</li>
-              <li><span>📱</span> Your data stays on your device</li>
-              <li><span>💬</span> Chats aren't saved</li>
-            </ul>
+      <section class="wrap reveal">
+        <div class="privacy-band">
+          <div>
+            <span class="eyebrow">Private by design</span>
+            <h2>Your family's details stay on your phone</h2>
+            <p>
+              There's no account to create. Your baby's name, birthday, food log and plans are
+              saved only on your iPhone, not on our servers.
+            </p>
           </div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>No account, no sign-up</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg>No ads and no tracking</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Your data stays on your device</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Chats aren't saved</li>
+          </ul>
         </div>
       </section>
 
       <!-- Pricing -->
-      <section class="section" id="pricing" style="padding-top: 0">
+      <section class="section" id="pricing">
         <div class="wrap">
-          <div class="section-head">
+          <div class="section-head reveal">
             <span class="eyebrow">Pricing</span>
             <h2>Start free, upgrade when you're ready</h2>
             <p>Safety information is always free. Premium unlocks everything else.</p>
           </div>
-          <div class="pricing">
+          <div class="pricing reveal">
             <div class="plan">
               <h3>Free</h3>
               <div class="price">$0</div>
               <p class="sub">The essentials, for everyone</p>
-              <ul class="checks">
+              <ul class="mini-list">
                 <li>Today, with this month's guide</li>
                 <li>Monthly guides, newborn to 3 years</li>
                 <li>Food guide for 44 first foods</li>
@@ -324,7 +274,7 @@
               <h3>Premium</h3>
               <div class="price">$79.99<small> / year</small></div>
               <p class="sub">That's $6.66 a month, or $12.99 billed monthly</p>
-              <ul class="checks">
+              <ul class="mini-list">
                 <li>Everything in Free</li>
                 <li>180+ recipes for baby and you</li>
                 <li>26-week starting-solids plan</li>
@@ -345,12 +295,16 @@
 
       <!-- FAQ -->
       <section class="section" id="faq" style="padding-top: 0">
-        <div class="wrap">
-          <div class="section-head">
+        <div class="wrap faq-grid">
+          <div class="faq-intro reveal">
             <span class="eyebrow">FAQ</span>
             <h2>Questions, answered</h2>
+            <p>
+              Can't find what you're looking for? Visit <a href="support.html">Support</a> or email
+              <a href="mailto:support@mamababybites.com">support@mamababybites.com</a>.
+            </p>
           </div>
-          <div class="faq">
+          <div class="faq reveal">
             <details>
               <summary>Is Mama &amp; Baby Bites medical advice?</summary>
               <p>
@@ -404,12 +358,14 @@
       </section>
 
       <!-- CTA -->
-      <section class="wrap">
+      <section class="wrap reveal">
         <div class="cta">
-          <img src="assets/img/logo-full.webp" alt="Mama & Baby Bites" width="640" height="449" loading="lazy" />
+          <img class="logo" src="assets/img/logo-full.webp" alt="Mama &amp; Baby Bites" width="640" height="449" loading="lazy" />
           <h2>Feeding your family, made calmer</h2>
           <p>Coming soon to iPhone. Questions in the meantime? We'd love to hear from you.</p>
-          <a class="btn btn-primary" href="mailto:support@mamababybites.com">Email us</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:support@mamababybites.com">Email us</a>
+          </div>
         </div>
       </section>
     </main>
@@ -418,7 +374,10 @@
       <div class="wrap">
         <div class="footer-grid">
           <div class="footer-about">
-            <a class="brand" href="/"><img src="assets/img/logo-mark.webp" alt="" width="40" height="40" /> Mama &amp; Baby Bites</a>
+            <a class="brand" href="/" aria-label="Mama &amp; Baby Bites home">
+              <img class="mark" src="assets/img/logo-mark.webp" alt="" width="40" height="40" />
+              <img class="word" src="assets/img/wordmark.webp" alt="" width="640" height="167" />
+            </a>
             <p>
               Mama &amp; Baby Bites shares general information, not medical advice. Always talk to
               your pediatrician or doctor about your family's health. In an emergency, call 911.
@@ -450,11 +409,29 @@
     </footer>
 
     <script>
-      // A hairline under the header once the page scrolls.
+      // The floating header gets a soft shadow once the page scrolls.
       const header = document.querySelector('.site-header');
       const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
+
+      // Sections fade up as they come into view.
+      const reveal = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(
+          (entries) =>
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add('in');
+                io.unobserve(e.target);
+              }
+            }),
+          { rootMargin: '0px 0px -8% 0px' },
+        );
+        reveal.forEach((el) => io.observe(el));
+      } else {
+        reveal.forEach((el) => el.classList.add('in'));
+      }
     </script>
   </body>
 </html>
