@@ -872,13 +872,6 @@ p {
   margin: 20px 0 28px;
   flex: 1;
 }
-.fine {
-  max-width: 720px;
-  margin: 28px auto 0;
-  text-align: center;
-  font-size: 14px;
-  color: var(--muted);
-}
 
 /* FAQ */
 .faq-grid {
