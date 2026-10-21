@@ -1,8 +1,8 @@
 /* Mama & Baby Bites: the website. Same palette as the app (src/global.css). */
 @font-face {
-  font-family: 'Bricolage Grotesque';
-  src: url('../fonts/bricolage-grotesque.woff2') format('woff2');
-  font-weight: 200 800;
+  font-family: 'Fredoka';
+  src: url('../fonts/fredoka.woff2') format('woff2');
+  font-weight: 300 700;
   font-display: swap;
 }
 @font-face {
@@ -32,7 +32,7 @@
   --shadow: 0 40px 80px -40px rgba(46, 74, 49, 0.4), 0 16px 32px -20px rgba(44, 42, 37, 0.2);
   --shadow-sm: 0 10px 30px -14px rgba(44, 42, 37, 0.22);
   --max: 1200px;
-  --display: 'Bricolage Grotesque', ui-rounded, -apple-system, 'Segoe UI', sans-serif;
+  --display: 'Fredoka', ui-rounded, -apple-system, 'Segoe UI', sans-serif;
   --text: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
   color-scheme: light;
 }
@@ -76,9 +76,9 @@ h3,
 h4 {
   font-family: var(--display);
   line-height: 1.05;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   margin: 0;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2 {
@@ -347,8 +347,8 @@ p {
 
 .hero h1 {
   font-size: clamp(42px, 6vw, 78px);
-  line-height: 0.98;
-  letter-spacing: -0.045em;
+  line-height: 1;
+  letter-spacing: -0.015em;
   margin: 22px 0 22px;
   position: relative;
   z-index: 0;
@@ -704,7 +704,7 @@ p {
   font-weight: 700;
   font-size: clamp(64px, 7vw, 92px);
   line-height: 0.9;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
   color: var(--sage-dark);
 }
 
@@ -895,7 +895,7 @@ p {
   font-family: var(--display);
   font-weight: 700;
   font-size: 56px;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   line-height: 1;
   margin-top: 12px;
 }
@@ -1087,7 +1087,7 @@ p {
 }
 .doc h1 {
   font-size: clamp(40px, 6vw, 64px);
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   margin-bottom: 16px;
 }
 .doc .updated {
