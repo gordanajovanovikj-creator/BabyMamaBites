@@ -167,14 +167,14 @@ p {
 }
 
 .brand .mark {
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
 }
 
 .brand .word {
   width: auto;
-  height: 32px;
+  height: 38px;
 }
 
 .nav-links {
@@ -1655,11 +1655,11 @@ p {
     padding-left: 10px;
   }
   .brand .mark {
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
   }
   .brand .word {
-    height: 24px;
+    height: 30px;
   }
   .nav-links .optional {
     display: none;
@@ -1754,6 +1754,10 @@ p {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .footer-actions,
+  .footer-actions .search-field {
+    width: 100%;
+  }
   .footer-logo .mark {
     width: 64px;
   }
@@ -1785,6 +1789,16 @@ p {
 }
 
 @media (max-width: 380px) {
+  .brand .mark {
+    width: 36px;
+    height: 36px;
+  }
+  .brand .word {
+    height: 25px;
+  }
+}
+
+@media (max-width: 340px) {
   .brand .word {
     display: none;
   }
