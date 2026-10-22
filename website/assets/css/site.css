@@ -985,13 +985,15 @@ p {
   margin-bottom: 48px;
 }
 .footer-logo {
-  display: block;
-  background: #fff;
-  border-radius: 24px;
-  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
-.footer-logo img {
-  width: 130px;
+.footer-logo .mark {
+  width: 84px;
+}
+.footer-logo .word {
+  width: 190px;
 }
 .btn-light {
   background: #fff;
@@ -1751,6 +1753,12 @@ p {
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .footer-logo .mark {
+    width: 64px;
+  }
+  .footer-logo .word {
+    width: 150px;
   }
   .app-banner,
   .app-offer {
