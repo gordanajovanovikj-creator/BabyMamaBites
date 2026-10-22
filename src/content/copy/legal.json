@@ -104,7 +104,7 @@
     {
       "id": "privacy",
       "title": "Privacy Policy",
-      "updated": "October 20, 2026",
+      "updated": "October 22, 2026",
       "intro": "Your privacy matters, especially when it comes to your family. Mama & Baby Bites, made by Culman Brothers LLC, is built so that your information stays on your phone. This policy explains what the app stores, what it sends, and the choices you have.",
       "sections": [
         {
@@ -131,6 +131,13 @@
           "paragraphs": [
             "Reminders are scheduled on your phone. They never include your baby's name, and you can turn them off at any time in the app or in your iPhone Settings.",
             "If you add the app's widget to your Home Screen, it shows today's planned meals and your baby's first name. The widget reads this from the app on your phone; nothing is sent to us."
+          ],
+          "bullets": []
+        },
+        {
+          "heading": "Sharing from the app",
+          "paragraphs": [
+            "You can choose to share your shopping list, or a PDF of your food log for your pediatrician. The PDF is made on your phone and includes your baby's name, birth date, the foods you logged and any reactions or notes you added. It goes only where you send it, for example by email, AirDrop or a printer, and nothing is sent to us."
           ],
           "bullets": []
         },
