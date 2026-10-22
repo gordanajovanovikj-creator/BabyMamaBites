@@ -20,6 +20,7 @@ import { AllergenTracker } from '@/features/solids/allergen-tracker';
 import { BabyRecipesView } from '@/features/solids/baby-recipes-view';
 import { useFoodLog } from '@/features/solids/food-log-context';
 import { LogEntryRow } from '@/features/solids/log-entry-row';
+import { useShareFoodLog } from '@/features/solids/share-food-log';
 import { WeekCard } from '@/features/solids/week-card';
 import { WeekStrip } from '@/features/solids/week-strip';
 import { PageFooter } from '@/features/shared/page-footer';
@@ -55,6 +56,7 @@ function BabyScreen() {
   const insets = useSafeAreaInsets();
   const { profile } = useProfile();
   const { entries } = useFoodLog();
+  const report = useShareFoodLog();
   const { ids: favoriteIds } = useFavorites();
   const params = useLocalSearchParams<{ tab?: string; at?: string }>();
   const [tab, setTab] = useState<Tab>('recipes');
@@ -217,6 +219,15 @@ function BabyScreen() {
                   variant="quiet"
                   label={`See all ${entries.length}`}
                   onPress={() => router.push('/solids/history')}
+                />
+              ) : null}
+              {report.available ? (
+                <Button
+                  variant="quiet"
+                  label={report.label}
+                  disabled={report.sharing}
+                  accessibilityHint="Makes a PDF of the food log to send, print or save"
+                  onPress={report.share}
                 />
               ) : null}
               {entries.length ? (
