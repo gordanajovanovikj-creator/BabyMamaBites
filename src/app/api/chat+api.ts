@@ -62,7 +62,7 @@ export async function POST(request: Request) {
       max_tokens: 16000,
       // Chat answers are short and everyday: low effort keeps them quick and inexpensive.
       // The answer plus any suggested dishes with their ingredients, so the app can offer
-      // "Add ingredients to shopping list".
+      // "Add to shopping list".
       output_config: {
         effort: 'low',
         format: { type: 'json_schema', schema: chatOutputJsonSchema },

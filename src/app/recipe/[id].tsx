@@ -190,8 +190,9 @@ function RecipeScreen() {
       </AppText>
       <View className="px-5 pt-4">
         <Button
-          label="Add ingredients to shopping list"
+          label="Add to shopping list"
           variant="secondary"
+          accessibilityLabel={`Add the ingredients for ${recipe.title} to your shopping list`}
           onPress={() => router.push({ pathname: '/shopping/add', params: { recipe: recipe.id } })}
         />
       </View>

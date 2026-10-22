@@ -73,7 +73,7 @@ function ShoppingListScreen() {
             Your list is empty
           </AppText>
           <AppText color="muted" className="text-center">
-            Add items above, or tap “Add ingredients to shopping list” on any recipe.
+            Add items above, or tap “Add to shopping list” on any recipe.
           </AppText>
         </View>
       ) : null}

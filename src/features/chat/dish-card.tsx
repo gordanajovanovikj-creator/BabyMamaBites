@@ -21,7 +21,7 @@ export function DishCard({ dish }: { dish: ChatDish }) {
         </View>
       </View>
       <Button
-        label="Add ingredients to shopping list"
+        label="Add to shopping list"
         variant="secondary"
         accessibilityLabel={`Add the ingredients for ${dish.name} to your shopping list`}
         onPress={() =>
