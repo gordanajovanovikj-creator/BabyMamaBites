@@ -15,6 +15,7 @@ import { usePalette } from '@/theme/use-palette';
 import { cn } from './cn';
 import { useFlatButtons } from './flat-buttons';
 import { haptics } from './haptics';
+import { symbolName } from './symbol-name';
 
 export type HeartButtonProps = {
   saved: boolean;
@@ -65,7 +66,7 @@ export function HeartButton({ saved, onPress, label, bare = false, className }: 
     >
       <Animated.View style={heartStyle}>
         <SymbolView
-          name={saved ? 'heart.fill' : 'heart'}
+          name={symbolName(saved ? 'heart.fill' : 'heart')}
           size={22}
           tintColor={palette.primary}
           fallback={

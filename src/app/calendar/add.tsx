@@ -8,6 +8,7 @@ import { useCalendar } from '@/features/calendar/calendar-context';
 import { ensurePermission, notificationsSupported } from '@/features/reminders/notifications';
 import { AppText, Button, DateField, Notice, Screen, SwitchRow, TextField, TimeField } from '@/ui';
 import { withPremium } from '@/features/subscription/premium-gate';
+import { platformWords } from '@/features/shared/platform-words';
 
 function isKind(value: string | undefined): value is CalendarKind {
   return !!value && (calendarKinds as readonly string[]).includes(value);
@@ -38,7 +39,7 @@ function AddCalendarEntryScreen() {
       setSaving(false);
       Alert.alert(
         'Notifications are turned off',
-        'To get event reminders, allow notifications for Mama & Baby Bites in your iPhone Settings. You can still save the event without one.',
+        `To get event reminders, allow notifications for Mama & Baby Bites in ${platformWords.settings}. You can still save the event without one.`,
       );
       return;
     }
@@ -87,7 +88,7 @@ function AddCalendarEntryScreen() {
             onChange={setRemind}
           />
           {remind && !notificationsSupported ? (
-            <Notice body="Reminders work on iPhone. In this web preview the event is saved, but no notification is sent." />
+            <Notice body="Reminders work in the app on your phone. In this web preview the event is saved, but no notification is sent." />
           ) : null}
         </>
       ) : null}

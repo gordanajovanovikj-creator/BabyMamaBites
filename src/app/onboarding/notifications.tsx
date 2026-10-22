@@ -5,6 +5,7 @@ import { View } from 'react-native';
 import { QuestionHeader } from '@/features/onboarding/question-header';
 import { useReminders } from '@/features/reminders/reminders-context';
 import { AppText, Button, Card, Notice, Screen, SymbolIcon } from '@/ui';
+import { platformWords } from '@/features/shared/platform-words';
 
 const perks = [
   { icon: 'calendar', emoji: '🗓️', text: "A weekly nudge to plan your baby's meals" },
@@ -52,7 +53,7 @@ export default function NotificationsScreen() {
       {blocked ? (
         <Notice
           tone="caution"
-          body="Notifications are turned off for Mama & Baby Bites. You can allow them later in your iPhone Settings."
+          body={`Notifications are turned off for Mama & Baby Bites. You can allow them later in ${platformWords.settings}.`}
         />
       ) : null}
       <View className="gap-2">

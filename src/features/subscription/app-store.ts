@@ -1,19 +1,23 @@
 import { isRunningInExpoGo } from 'expo';
-import { Platform } from 'react-native';
+import { Linking, Platform } from 'react-native';
 
-import { freeTrialDays, type ActiveSubscriptionInfo } from '@/domain/subscription';
+import {
+  androidTrialDays,
+  freeTrialDays,
+  type ActiveSubscriptionInfo,
+} from '@/domain/subscription';
 
 type ExpoIap = typeof import('expo-iap');
 
 let iap: ExpoIap | null | undefined;
 
 /**
- * expo-iap, loaded only in an iPhone build that includes it. Expo Go and the web preview
- * have no App Store module, so there it's null and the app runs without purchases.
+ * expo-iap, loaded only in an iPhone or Android build that includes it. Expo Go and the web
+ * preview have no store module, so there it's null and the app runs without purchases.
  */
 function store(): ExpoIap | null {
   if (iap !== undefined) return iap;
-  if (Platform.OS !== 'ios' || isRunningInExpoGo()) {
+  if ((Platform.OS !== 'ios' && Platform.OS !== 'android') || isRunningInExpoGo()) {
     iap = null;
     return iap;
   }
@@ -26,23 +30,26 @@ function store(): ExpoIap | null {
   return iap;
 }
 
-/** Whether App Store purchases can work in this build. */
+/** Whether App Store or Google Play purchases can work in this build. */
 export function storeAvailable(): boolean {
   return store() !== null;
 }
 
-/** A plan as the App Store shows it: localized price and the free trial it offers. */
+/** A plan as the store shows it: localized price and the free trial it offers. */
 export type StoreProduct = {
   productId: string;
   /** Localized, e.g. "$79.99". */
   displayPrice: string;
   /** ISO currency code of that price, e.g. "USD". */
   currency: string;
-  /** Free-trial days set up in App Store Connect (0 if none). */
+  /** Free-trial days set up in App Store Connect or the Play Console (0 if none). */
   trialDays: number;
-  /** Subscription group, for checking free-trial eligibility. */
+  /** Apple's subscription group, for checking free-trial eligibility. */
   groupId: string | null;
 };
+
+/** Google Play buys a specific offer of a subscription: the free trial when there is one. */
+const androidOfferTokens = new Map<string, string>();
 
 export type PurchaseResult =
   | { status: 'subscribed' }
@@ -62,19 +69,34 @@ export async function loadProducts(productIds: string[]): Promise<StoreProduct[]
   const s = store();
   if (!s) return [];
   const products = (await s.fetchProducts({ skus: productIds, type: 'subs' })) ?? [];
-  return products.flatMap((p) =>
-    p.platform === 'ios' && p.type === 'subs'
-      ? [
-          {
-            productId: p.id,
-            displayPrice: p.displayPrice,
-            currency: p.currency,
-            trialDays: freeTrialDays(p),
-            groupId: p.subscriptionGroupIdIOS ?? null,
-          },
-        ]
-      : [],
-  );
+  return products.flatMap((p): StoreProduct[] => {
+    if (p.type !== 'subs') return [];
+    if (p.platform === 'ios') {
+      return [
+        {
+          productId: p.id,
+          displayPrice: p.displayPrice,
+          currency: p.currency,
+          trialDays: freeTrialDays(p),
+          groupId: p.subscriptionGroupIdIOS ?? null,
+        },
+      ];
+    }
+    const offers = p.subscriptionOffers ?? [];
+    const trial = offers.find((o) => o.paymentMode === 'free-trial' && o.offerTokenAndroid);
+    const offer = trial ?? offers.find((o) => o.offerTokenAndroid);
+    if (!offer?.offerTokenAndroid) return [];
+    androidOfferTokens.set(p.id, offer.offerTokenAndroid);
+    return [
+      {
+        productId: p.id,
+        displayPrice: p.displayPrice,
+        currency: p.currency,
+        trialDays: androidTrialDays(offers),
+        groupId: null,
+      },
+    ];
+  });
 }
 
 export async function activeSubscriptions(productIds: string[]): Promise<ActiveSubscriptionInfo[]> {
@@ -88,10 +110,16 @@ export async function activeSubscriptions(productIds: string[]): Promise<ActiveS
   }));
 }
 
-/** Whether this Apple account can still get the free trial (it's offered once per group). */
-export async function trialEligible(groupId: string | null): Promise<boolean> {
+/**
+ * Whether this account can still get the free trial. Apple offers it once per subscription
+ * group; Google Play only lists the trial offer to accounts that can still use it.
+ */
+export async function trialEligible(products: StoreProduct[]): Promise<boolean> {
   const s = store();
-  if (!s || !groupId) return false;
+  if (!s) return false;
+  if (Platform.OS === 'android') return products.some((p) => p.trialDays > 0);
+  const groupId = products.find((p) => p.groupId)?.groupId;
+  if (!groupId) return false;
   return s.isEligibleForIntroOfferIOS(groupId).catch(() => false);
 }
 
@@ -103,6 +131,8 @@ export function onPurchaseDelivered(listener: () => void): () => void {
   const s = store();
   if (!s) return () => {};
   const sub = s.purchaseUpdatedListener((purchase) => {
+    // A pending Google Play payment can't be finished yet; it arrives again once it clears.
+    if (purchase.purchaseState === 'pending') return;
     s.finishTransaction({ purchase, isConsumable: false })
       .catch(() => {})
       .finally(listener);
@@ -110,7 +140,7 @@ export function onPurchaseDelivered(listener: () => void): () => void {
   return () => sub.remove();
 }
 
-/** Opens Apple's purchase sheet for a plan and waits for the answer. */
+/** Opens the App Store or Google Play purchase sheet for a plan and waits for the answer. */
 export function buy(productId: string): Promise<PurchaseResult> {
   const s = store();
   if (!s) return Promise.resolve({ status: 'unavailable' });
@@ -128,6 +158,10 @@ export function buy(productId: string): Promise<PurchaseResult> {
     };
     const ok = s.purchaseUpdatedListener((purchase) => {
       if (purchase.productId !== productId || purchase.transactionDate < startedAt) return;
+      if (purchase.purchaseState === 'pending') {
+        done({ status: 'pending' });
+        return;
+      }
       s.finishTransaction({ purchase, isConsumable: false })
         .catch(() => {})
         .finally(() => done({ status: 'subscribed' }));
@@ -136,22 +170,41 @@ export function buy(productId: string): Promise<PurchaseResult> {
       if (error.code === s.ErrorCode.DeferredPayment) done({ status: 'pending' });
       else done({ status: s.isUserCancelledError(error) ? 'cancelled' : 'failed' });
     });
-    s.requestPurchase({ request: { apple: { sku: productId } }, type: 'subs' }).catch(
-      (error: unknown) => done({ status: s.isUserCancelledError(error) ? 'cancelled' : 'failed' }),
+    const offerToken = androidOfferTokens.get(productId);
+    if (Platform.OS === 'android' && !offerToken) {
+      done({ status: 'unavailable' });
+      return;
+    }
+    s.requestPurchase({
+      request: {
+        apple: { sku: productId },
+        google: {
+          skus: [productId],
+          subscriptionOffers: offerToken ? [{ sku: productId, offerToken }] : [],
+        },
+      },
+      type: 'subs',
+    }).catch((error: unknown) =>
+      done({ status: s.isUserCancelledError(error) ? 'cancelled' : 'failed' }),
     );
   });
 }
 
-/** Asks the App Store for this Apple account's earlier purchases. */
+/** Asks the store for this Apple or Google account's earlier purchases. */
 export async function restore(): Promise<void> {
   const s = store();
   if (!s) return;
   await s.restorePurchases();
 }
 
-/** Opens Apple's "Manage subscription" screen. */
+/** Opens the store's "Manage subscription" screen. */
 export async function manage(): Promise<void> {
   const s = store();
   if (!s) return;
+  if (Platform.OS === 'android') {
+    // Google Play's subscriptions page; it lists this app's subscription with the others.
+    await Linking.openURL('https://play.google.com/store/account/subscriptions');
+    return;
+  }
   await s.deepLinkToSubscriptions({});
 }

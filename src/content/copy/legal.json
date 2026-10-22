@@ -4,7 +4,7 @@
     {
       "id": "terms",
       "title": "Terms of Use",
-      "updated": "October 20, 2026",
+      "updated": "October 22, 2026",
       "intro": "These Terms of Use are an agreement between you and Culman Brothers LLC (\"we\" or \"us\"), which makes and runs the Mama & Baby Bites app. They apply when you download or use the app. By using the app, you agree to them. If you don't agree, please don't use the app.",
       "sections": [
         {
@@ -39,15 +39,15 @@
         {
           "heading": "Subscriptions and free trial",
           "paragraphs": [
-            "Some features need a paid subscription, bought through Apple's App Store. New subscribers may get a free trial."
+            "Some features need a paid subscription, bought through Apple's App Store on iPhone or Google Play on Android. New subscribers may get a free trial."
           ],
           "bullets": [
-            "Payment is charged to your Apple account when you confirm the purchase, or when a free trial ends.",
+            "Payment is charged to your Apple or Google account when you confirm the purchase, or when a free trial ends.",
             "Your subscription renews automatically at the same price and length unless you turn off auto-renew at least 24 hours before the end of the current period.",
-            "You can manage or cancel your subscription in your iPhone Settings under your name, then Subscriptions.",
+            "You can manage or cancel your subscription on iPhone in Settings under your name, then Subscriptions, or on Android in the Google Play Store under Payments & subscriptions, then Subscriptions.",
             "Deleting the app doesn't cancel your subscription.",
-            "Refunds are handled by Apple under its own policies.",
-            "If we change prices, Apple will tell you before the new price applies."
+            "Refunds are handled by Apple or Google under their own policies.",
+            "If we change prices, Apple or Google will tell you before the new price applies."
           ]
         },
         {
@@ -86,9 +86,10 @@
           "bullets": []
         },
         {
-          "heading": "Apple",
+          "heading": "Apple and Google",
           "paragraphs": [
-            "These terms are between you and Culman Brothers LLC, not Apple. Apple isn't responsible for the app or its content, and has no obligation to provide support for it. Apple and its subsidiaries are third-party beneficiaries of these terms and may enforce them."
+            "These terms are between you and Culman Brothers LLC, not Apple. Apple isn't responsible for the app or its content, and has no obligation to provide support for it. Apple and its subsidiaries are third-party beneficiaries of these terms and may enforce them.",
+            "If you got the app from Google Play, these terms are between you and Culman Brothers LLC, not Google, and Google Play's own terms also apply to your use of the store."
           ],
           "bullets": []
         },
@@ -129,7 +130,7 @@
         {
           "heading": "Reminders",
           "paragraphs": [
-            "Reminders are scheduled on your phone. They never include your baby's name, and you can turn them off at any time in the app or in your iPhone Settings.",
+            "Reminders are scheduled on your phone. They never include your baby's name, and you can turn them off at any time in the app or in your phone's settings.",
             "If you add the app's widget to your Home Screen, it shows today's planned meals and your baby's first name. The widget reads this from the app on your phone; nothing is sent to us."
           ],
           "bullets": []
@@ -153,7 +154,7 @@
         {
           "heading": "Subscriptions",
           "paragraphs": [
-            "Purchases are handled by Apple. We don't see or store your payment details. Apple tells the app whether you have an active subscription."
+            "Purchases are handled by Apple on iPhone and by Google on Android. We don't see or store your payment details. The store tells the app whether you have an active subscription."
           ],
           "bullets": []
         },

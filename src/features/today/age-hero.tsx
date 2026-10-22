@@ -9,7 +9,7 @@ import { today } from '@/domain/dates';
 import type { Profile } from '@/domain/profile';
 import { babyAge, formatAgeHeadline, monthChoices } from '@/domain/stage';
 import { usePalette } from '@/theme/use-palette';
-import { AppText, cn } from '@/ui';
+import { AppText, cn, symbolName } from '@/ui';
 
 function formatToday(): string {
   return new Date().toLocaleDateString('en-US', {
@@ -69,7 +69,7 @@ function ArrowButton({
       )}
     >
       <SymbolView
-        name={symbol}
+        name={symbolName(symbol)}
         size={16}
         weight="bold"
         tintColor={palette.ink}

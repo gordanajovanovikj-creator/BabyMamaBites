@@ -187,3 +187,15 @@ export function freeTrialDays(product: {
   const unit = PERIOD_DAYS[product.introductoryPriceSubscriptionPeriodIOS ?? ''] ?? 0;
   return count * unit;
 }
+
+/**
+ * Google Play: free-trial days among a subscription's offers. Play only lists offers this
+ * Google account can still use, so a free-trial offer here also means the trial is available.
+ */
+export function androidTrialDays(
+  offers: { paymentMode?: string | null; period?: { unit: string; value: number } | null }[],
+): number {
+  const trial = offers.find((o) => o.paymentMode === 'free-trial' && o.period);
+  if (!trial?.period) return 0;
+  return trial.period.value * (PERIOD_DAYS[trial.period.unit] ?? 0);
+}

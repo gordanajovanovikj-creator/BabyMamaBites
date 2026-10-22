@@ -10,6 +10,7 @@ import {
   useSubscription,
 } from '@/features/subscription/subscription-context';
 import { AppText, Card, Chip, Notice, Screen, SwitchRow } from '@/ui';
+import { platformWords } from '@/features/shared/platform-words';
 
 function formatTime({ hour, minute }: { hour: number; minute: number }): string {
   const d = new Date(2026, 0, 1, hour, minute);
@@ -46,7 +47,7 @@ function SubscriptionSection() {
       found ? 'Subscription restored' : 'No subscription found',
       found
         ? 'Welcome back! Everything is unlocked.'
-        : 'We couldn’t find an active subscription for this Apple ID.',
+        : `We couldn’t find an active subscription for this ${platformWords.account}.`,
     );
   };
   return (
@@ -58,7 +59,7 @@ function SubscriptionSection() {
         sub.canPurchase ? (
           <LinkRow
             label="Premium"
-            detail="Manage or cancel in the App Store"
+            detail={`Manage or cancel in ${platformWords.store}`}
             onPress={() => sub.manage().catch(() => {})}
           />
         ) : (
@@ -87,7 +88,7 @@ function SubscriptionSection() {
       {premiumUnlockedForDevelopment ? (
         <SwitchRow
           label="Preview the free version"
-          detail="Development only: Premium is unlocked without the App Store"
+          detail="Development only: Premium is unlocked without a store"
           value={sub.previewFree}
           onChange={sub.setPreviewFree}
         />
@@ -104,7 +105,7 @@ export default function SettingsScreen() {
     if (!ok) {
       Alert.alert(
         'Notifications are turned off',
-        'To get reminders, allow notifications for Mama & Baby Bites in your iPhone Settings.',
+        `To get reminders, allow notifications for Mama & Baby Bites in ${platformWords.settings}.`,
         [
           { text: 'Not now', style: 'cancel' },
           { text: 'Open Settings', onPress: () => Linking.openSettings().catch(() => {}) },
@@ -126,7 +127,7 @@ export default function SettingsScreen() {
       </View>
 
       {!notificationsSupported ? (
-        <Notice body="Reminders work on iPhone. In this web preview your choices are saved, but no notifications are sent." />
+        <Notice body="Reminders work in the app on your phone. In this web preview your choices are saved, but no notifications are sent." />
       ) : null}
 
       <SwitchRow

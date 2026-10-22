@@ -60,7 +60,7 @@ type SubscriptionState = {
 
 const SubscriptionContext = createContext<SubscriptionState | null>(null);
 
-/** Whether development builds without the App Store (Expo Go, web preview) unlock Premium. */
+/** Whether development builds without a store (Expo Go, web preview) unlock Premium. */
 const devUnlocked = __DEV__ && !storeAvailable();
 
 export function SubscriptionProvider({ children }: { children: ReactNode }) {
@@ -71,7 +71,7 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
   const [eligible, setEligible] = useState(false);
   const [previewFree, setPreviewFree] = useState(false);
 
-  /** Asks the App Store which of our plans are active and remembers the answer. */
+  /** Asks the store which of our plans are active and remembers the answer. */
   const check = useCallback(async () => {
     const result = premiumFromSubscriptions(await activeSubscriptions(planProductIds));
     setPremium(result.premium);
@@ -98,8 +98,7 @@ export function SubscriptionProvider({ children }: { children: ReactNode }) {
         if (p) byPlan[id] = p;
       }
       setProducts(byPlan);
-      const groupId = loaded.find((p) => p.groupId)?.groupId ?? null;
-      setEligible(await trialEligible(groupId));
+      setEligible(await trialEligible(loaded));
       await check().catch(() => {});
     })().finally(() => {
       if (!cancelled) setLoading(false);

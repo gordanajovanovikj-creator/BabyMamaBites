@@ -13,6 +13,7 @@ import {
   type PremiumFeature,
 } from '@/domain/subscription';
 import { AppText, Button, Card, IconBadge, Notice } from '@/ui';
+import { platformWords } from '@/features/shared/platform-words';
 
 import { PlanCard } from './plan-card';
 import { useSubscription } from './subscription-context';
@@ -42,9 +43,9 @@ export type PaywallViewProps = {
 };
 
 /**
- * Plans, free trial and the App Store's required wording. Prices come from the App Store
- * when it's reachable (localized); the free trial is offered only to accounts that can
- * still get it.
+ * Plans, free trial and the stores' required wording. Prices come from the App Store or
+ * Google Play when it's reachable (localized); the free trial is offered only to accounts
+ * that can still get it.
  */
 export function PaywallView({
   header,
@@ -59,7 +60,7 @@ export function PaywallView({
   const priceOf = (id: PlanId) => sub.products[id]?.displayPrice ?? formatUsd(plans[id].priceCents);
   const plan = plans[selected];
   const storeTrial = sub.products[selected]?.trialDays ?? 0;
-  // Without the App Store (development preview) show the trial as it's set up for launch.
+  // Without a store (development preview) show the trial as it's set up for launch.
   const trialDays = sub.canPurchase ? (sub.trialEligible ? storeTrial : 0) : plan.trialDays;
   // The "per month" and "save" math uses our US prices, so it only shows next to US prices.
   const usdPrices = Object.values(sub.products).every((p) => p.currency === 'USD');
@@ -69,10 +70,10 @@ export function PaywallView({
   const purchase = async () => {
     if (!sub.canPurchase) {
       say(
-        'Subscriptions need the App Store',
+        'Subscriptions need the app store',
         Platform.OS === 'web'
-          ? 'Subscriptions are available in the Mama & Baby Bites iPhone app.'
-          : 'Purchases work in a TestFlight or App Store build, not in Expo Go.',
+          ? 'Subscriptions are available in the Mama & Baby Bites app for iPhone and Android.'
+          : `Purchases work in a test or ${platformWords.store} build, not in Expo Go.`,
       );
       return;
     }
@@ -92,14 +93,18 @@ export function PaywallView({
 
   const restore = async () => {
     if (!sub.canPurchase) {
-      say('Nothing to restore here', 'Restore your subscription in the iPhone app.');
+      say('Nothing to restore here', 'Restore your subscription in the app on your phone.');
       return;
     }
     setWorking(true);
     const found = await sub.restore().catch(() => false);
     setWorking(false);
     if (found) onSubscribed();
-    else say('No subscription found', 'We couldn’t find an active subscription for this Apple ID.');
+    else
+      say(
+        'No subscription found',
+        `We couldn’t find an active subscription for this ${platformWords.account}.`,
+      );
   };
 
   return (
@@ -144,7 +149,7 @@ export function PaywallView({
         />
       </View>
       {!sub.canPurchase && Platform.OS === 'web' ? (
-        <Notice body="Subscriptions are available in the Mama & Baby Bites iPhone app." />
+        <Notice body="Subscriptions are available in the Mama & Baby Bites app for iPhone and Android." />
       ) : null}
       <View className="gap-2">
         <Button
@@ -164,7 +169,7 @@ export function PaywallView({
         {trialDays
           ? `No charge today. After ${trialDays} days your subscription renews automatically at ${billed} until you cancel.`
           : `Your subscription renews automatically at ${billed} until you cancel.`}{' '}
-        Cancel any time in your iPhone Settings at least 24 hours before{' '}
+        Cancel any time in {platformWords.cancelIn} at least 24 hours before{' '}
         {trialDays ? 'the trial or a renewal ends.' : 'a renewal.'}
       </AppText>
       <Button label="Restore purchases" variant="quiet" disabled={disabled} onPress={restore} />

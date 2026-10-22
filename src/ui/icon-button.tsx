@@ -5,6 +5,7 @@ import { usePalette } from '@/theme/use-palette';
 
 import { AppText } from './app-text';
 import { cn } from './cn';
+import { symbolName } from './symbol-name';
 
 export type IconButtonProps = {
   /** SF Symbol name (iOS). */
@@ -41,7 +42,7 @@ export function IconButton({
       )}
     >
       <SymbolView
-        name={symbol}
+        name={typeof symbol === 'string' ? symbolName(symbol) : symbol}
         size={22}
         tintColor={palette.primary}
         fallback={

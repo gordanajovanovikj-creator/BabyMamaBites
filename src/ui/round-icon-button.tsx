@@ -6,6 +6,7 @@ import { usePalette } from '@/theme/use-palette';
 
 import { cn } from './cn';
 import { useFlatButtons } from './flat-buttons';
+import { symbolName } from './symbol-name';
 
 export type RoundIconButtonProps = {
   symbol: SymbolViewProps['name'];
@@ -42,7 +43,7 @@ export function RoundIconButton({
       style={flat ? undefined : { boxShadow: shadows.floatTight }}
     >
       <SymbolView
-        name={symbol}
+        name={typeof symbol === 'string' ? symbolName(symbol) : symbol}
         size={18}
         weight="semibold"
         tintColor={palette.ink}

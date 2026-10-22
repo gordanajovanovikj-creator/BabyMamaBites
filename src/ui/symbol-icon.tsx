@@ -1,7 +1,8 @@
-import { SymbolView, type SymbolViewProps } from 'expo-symbols';
+import { SymbolView } from 'expo-symbols';
 import { Text } from 'react-native';
 
 import { usePalette } from '@/theme/use-palette';
+import { symbolName } from './symbol-name';
 
 export type SymbolIconProps = {
   /** SF Symbol name (iOS). */
@@ -16,7 +17,7 @@ export function SymbolIcon({ icon, emoji, size = 28 }: SymbolIconProps) {
   const palette = usePalette();
   return (
     <SymbolView
-      name={icon as SymbolViewProps['name']}
+      name={symbolName(icon)}
       size={size}
       tintColor={palette.primary}
       fallback={<Text style={{ fontSize: size, lineHeight: size * 1.2 }}>{emoji}</Text>}

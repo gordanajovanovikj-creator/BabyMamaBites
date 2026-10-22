@@ -1,4 +1,5 @@
 import {
+  androidTrialDays,
   cachedPremiumValid,
   formatUsd,
   freeTrialDays,
@@ -88,6 +89,19 @@ describe('premium access', () => {
         introductoryPriceSubscriptionPeriodIOS: 'week',
       }),
     ).toBe(0);
+  });
+
+  it('reads the free trial from Google Play offers', () => {
+    const base = { paymentMode: 'pay-as-you-go', period: { unit: 'year', value: 1 } };
+    expect(
+      androidTrialDays([base, { paymentMode: 'free-trial', period: { unit: 'day', value: 7 } }]),
+    ).toBe(7);
+    expect(
+      androidTrialDays([{ paymentMode: 'free-trial', period: { unit: 'week', value: 1 } }]),
+    ).toBe(7);
+    // Play leaves the trial offer out once this account has used it.
+    expect(androidTrialDays([base])).toBe(0);
+    expect(androidTrialDays([])).toBe(0);
   });
 
   it('keeps safety and wellbeing articles free', () => {
