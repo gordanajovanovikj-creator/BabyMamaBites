@@ -49,17 +49,13 @@ const bottomById: Record<string, SafetyNoticeId[]> = {
   'foods-to-avoid': ['food-safety'],
 };
 
-/** Every article and tip in these categories is about mom's own health. */
-const bottomByCategory: Record<string, SafetyNoticeId[]> = {
-  'your-wellbeing': ['maternal-health'],
-  'nourishing-you': ['maternal-health'],
-};
-
 /** Which safety notices an article or tip shows above, right after and below its content. */
 export function noticesFor(item: { id: string; category: string }): NoticePlacement {
   return {
     top: topById[item.id] ?? [],
     afterBody: afterBodyById[item.id] ?? [],
-    bottom: [...(bottomById[item.id] ?? []), ...(bottomByCategory[item.category] ?? [])],
+    // Mom's articles rely on the disclaimer under the sources (which covers postpartum
+    // concerns and 911); the postpartum recovery article gives 988 in its own text.
+    bottom: bottomById[item.id] ?? [],
   };
 }

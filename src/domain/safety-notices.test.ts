@@ -21,12 +21,10 @@ describe('noticesFor', () => {
     }
   });
 
-  it("gives every mom article and tip the maternal health notice", () => {
-    const mom = [...solidsArticles, ...insights].filter(
-      (x) => x.category === 'your-wellbeing' || x.category === 'nourishing-you',
-    );
-    expect(mom.length).toBeGreaterThan(0);
-    for (const item of mom) expect(noticesFor(item).bottom).toContain('maternal-health');
+  it('keeps crisis numbers in the postpartum recovery article itself', () => {
+    const recovery = solidsArticles.find((x) => x.id === 'postpartum-recovery');
+    const text = JSON.stringify(recovery);
+    for (const number of ['988', '911', '1-833-TLC-MAMA']) expect(text).toContain(number);
   });
 
   it('only names articles and tips that exist', () => {
