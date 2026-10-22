@@ -306,20 +306,22 @@ page({
       <h2>Common questions</h2>
       <h3>How do I manage or cancel my subscription?</h3>
       <p>
-        On your iPhone, open Settings, tap your name, then Subscriptions, and choose Mama &amp; Baby
-        Bites. You can also open it from the app: Settings, then Subscription. Cancel at least 24
-        hours before the trial or a renewal ends to avoid being charged. Deleting the app doesn't
-        cancel a subscription.
+        On iPhone, open Settings, tap your name, then Subscriptions, and choose Mama &amp; Baby
+        Bites. On Android, open the Google Play Store, tap your profile picture, then Payments
+        &amp; subscriptions, then Subscriptions. You can also open it from the app: Settings, then
+        Subscription. Cancel at least 24 hours before the trial or a renewal ends to avoid being
+        charged. Deleting the app doesn't cancel a subscription.
       </p>
       <h3>I got a new phone. How do I get Premium back?</h3>
       <p>
-        Sign in with the same Apple ID, open the app, and tap Restore purchases in Settings or on
-        the subscription screen.
+        Sign in with the same Apple ID (iPhone) or Google account (Android), open the app, and tap
+        Restore purchases in Settings or on the subscription screen.
       </p>
       <h3>How do I get a refund?</h3>
       <p>
-        Purchases are handled by Apple, so refunds are too. Request one at
-        <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
+        Purchases are handled by Apple or Google, so refunds are too. On iPhone, request one at
+        <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. On Android, see
+        <a href="https://support.google.com/googleplay/answer/2479637">Google Play's refund help</a>.
       </p>
       <h3>How do I delete my information?</h3>
       <p>
@@ -330,7 +332,7 @@ page({
       <h3>Reminders aren't showing up</h3>
       <p>
         Check that the reminder is turned on in the app's Settings, and that notifications are
-        allowed for Mama &amp; Baby Bites in your iPhone Settings, under Notifications.
+        allowed for Mama &amp; Baby Bites in your phone's settings, under Notifications.
       </p>
 
       <h2>Medical questions and emergencies</h2>
@@ -477,7 +479,7 @@ const appOffer = `      <aside class="app-offer" aria-label="What's in the app">
           </ul>
           <div class="offer-actions">
             <a class="btn btn-primary" href="/#pricing">Try it free for 7 days</a>
-            <span>Coming soon to iPhone</span>
+            <span>Coming soon to iPhone and Android</span>
           </div>
         </div>
         <div class="phone"><img src="/assets/screens/tracker.webp" alt="The food log with a Share with your pediatrician button" width="390" height="844" loading="lazy" /></div>
