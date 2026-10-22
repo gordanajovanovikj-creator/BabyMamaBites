@@ -95,6 +95,11 @@ function RootStack() {
               options={{ presentation: 'modal', headerShown: true, title: 'Add to freezer' }}
             />
             <Stack.Screen name="settings" options={{ headerShown: true, title: 'Settings' }} />
+            <Stack.Screen
+              name="tour"
+              // Its own Skip and Start exploring buttons close it.
+              options={{ presentation: 'fullScreenModal' }}
+            />
             <Stack.Screen name="credits" options={{ headerShown: true, title: 'Photo credits' }} />
             <Stack.Screen
               name="calendar/index"

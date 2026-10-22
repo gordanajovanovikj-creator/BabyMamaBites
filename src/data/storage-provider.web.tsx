@@ -177,6 +177,7 @@ const REMINDERS_KEY = 'mamababybites.reminders';
 const DISCLAIMER_KEY = 'mamababybites.disclaimer-accepted';
 const CHAT_CONSENT_KEY = 'mamababybites.chat-consent';
 const PREMIUM_UNTIL_KEY = 'mamababybites.premium-until';
+const TOUR_SEEN_KEY = 'mamababybites.tour-seen';
 
 const localSettings: SettingsStore = {
   async loadReminders() {
@@ -219,6 +220,16 @@ const localSettings: SettingsStore = {
   async savePremiumUntil(until) {
     if (until === null) globalThis.localStorage?.removeItem(PREMIUM_UNTIL_KEY);
     else globalThis.localStorage?.setItem(PREMIUM_UNTIL_KEY, until);
+  },
+  async loadTourSeen() {
+    try {
+      return globalThis.localStorage?.getItem(TOUR_SEEN_KEY) ?? null;
+    } catch {
+      return null;
+    }
+  },
+  async saveTourSeen(onDate) {
+    globalThis.localStorage?.setItem(TOUR_SEEN_KEY, onDate);
   },
 };
 

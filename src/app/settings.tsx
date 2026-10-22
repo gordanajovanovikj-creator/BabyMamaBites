@@ -182,6 +182,11 @@ export default function SettingsScreen() {
         onPress={() => router.push('/onboarding')}
       />
       <LinkRow
+        label="App tour"
+        detail="A quick look at what's in each tab"
+        onPress={() => router.push('/tour')}
+      />
+      <LinkRow
         label="Photo credits"
         detail="The photographers behind our food photos"
         onPress={() => router.push('/credits')}

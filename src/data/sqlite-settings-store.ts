@@ -12,6 +12,7 @@ const REMINDERS = 'reminders';
 const DISCLAIMER = 'disclaimer-accepted';
 const CHAT_CONSENT = 'chat-consent';
 const PREMIUM_UNTIL = 'premium-until';
+const TOUR_SEEN = 'tour-seen';
 
 export function parseReminders(raw: string | null | undefined): ReminderSettings {
   if (!raw) return defaultReminderSettings;
@@ -87,6 +88,21 @@ export function createSqliteSettingsStore(db: SQLiteDatabase): SettingsStore {
          ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
         PREMIUM_UNTIL,
         until,
+      );
+    },
+    async loadTourSeen() {
+      const row = await db.getFirstAsync<{ value: string }>(
+        'SELECT value FROM app_setting WHERE key = ?',
+        TOUR_SEEN,
+      );
+      return row?.value ?? null;
+    },
+    async saveTourSeen(onDate) {
+      await db.runAsync(
+        `INSERT INTO app_setting (key, value) VALUES (?, ?)
+         ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
+        TOUR_SEEN,
+        onDate,
       );
     },
   };

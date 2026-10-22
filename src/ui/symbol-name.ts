@@ -9,6 +9,8 @@ const material: Record<string, AndroidSymbol> = {
   'basket.fill': 'shopping_basket',
   'birthday.cake.fill': 'cake',
   'bolt.heart.fill': 'ecg_heart',
+  book: 'menu_book',
+  'book.fill': 'menu_book',
   'books.vertical.fill': 'menu_book',
   'bubble.left': 'chat_bubble',
   'bubble.left.fill': 'chat_bubble',

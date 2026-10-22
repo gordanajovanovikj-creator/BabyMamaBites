@@ -16,4 +16,7 @@ export type SettingsStore = {
    */
   loadPremiumUntil(): Promise<string | null>;
   savePremiumUntil(until: string | null): Promise<void>;
+  /** The date the app tour was first shown, or null if it hasn't been. */
+  loadTourSeen(): Promise<string | null>;
+  saveTourSeen(onDate: string): Promise<void>;
 };
