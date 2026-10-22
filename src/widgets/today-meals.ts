@@ -1,8 +1,8 @@
 import type { TodayWidgetProps } from '@/domain/widget';
 
 /**
- * Home screen widgets are iOS-only (see today-meals.ios.tsx). On Android and web
- * this stand-in keeps the same shape and does nothing.
+ * The iPhone widget lives in today-meals.ios.tsx and Android's in today-meals-android.tsx.
+ * Elsewhere this stand-in keeps the same shape and does nothing.
  */
 export const todayMealsWidget = {
   updateTimeline(_entries: { date: Date; props: TodayWidgetProps }[]): void {},

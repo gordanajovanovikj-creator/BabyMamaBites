@@ -1,4 +1,4 @@
-import { addDays, fromIsoDate, type IsoDate } from './dates';
+import { addDays, fromIsoDate, isIsoDate, type IsoDate } from './dates';
 import { mealSlots, planKey, type MealPlan } from './planner';
 
 /** What the "Today's meals" home screen widget shows. Flat strings only: widgets get plain props. */
@@ -34,3 +34,41 @@ export function todayWidgetEntries(
     };
   });
 }
+
+/** One day of the Android widget, saved on the phone so the widget can update by itself. */
+export type StoredWidgetDay = { date: IsoDate; props: TodayWidgetProps };
+
+/** The next week of widget days, from today. */
+export function storedWidgetDays(
+  plan: MealPlan,
+  now: IsoDate,
+  babyName: string | null,
+  titleFor: (mealId: string) => string | null,
+): StoredWidgetDay[] {
+  return todayWidgetEntries(plan, now, babyName, titleFor, 7).map((entry, i) => ({
+    date: addDays(now, i),
+    props: entry.props,
+  }));
+}
+
+/**
+ * What the Android widget shows on a given day: that day's saved meals, or a nudge to open
+ * the app when nothing is saved for it (the app hasn't been opened in a week).
+ */
+export function widgetPropsFor(
+  saved: string | null | undefined,
+  onDate: IsoDate,
+): TodayWidgetProps {
+  let days: StoredWidgetDay[] = [];
+  try {
+    const parsed: unknown = saved ? JSON.parse(saved) : [];
+    if (Array.isArray(parsed)) days = parsed as StoredWidgetDay[];
+  } catch {
+    days = [];
+  }
+  const day = days.find((d) => d && isIsoDate(d.date) && d.date === onDate);
+  if (day?.props && typeof day.props.heading === 'string') return day.props;
+  return { heading: 'Today', breakfast: OPEN_APP, lunch: OPEN_APP, dinner: OPEN_APP };
+}
+
+export const OPEN_APP = 'Open the app to update';

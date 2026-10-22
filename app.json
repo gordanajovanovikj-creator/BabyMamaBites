@@ -88,7 +88,24 @@
         }
       ],
       "expo-video",
-      "expo-iap"
+      "expo-iap",
+      [
+        "react-native-android-widget",
+        {
+          "widgets": [
+            {
+              "name": "TodayMeals",
+              "label": "Today's meals",
+              "description": "Your baby's breakfast, lunch and dinner from the meal plan.",
+              "minWidth": "180dp",
+              "minHeight": "110dp",
+              "targetCellWidth": 3,
+              "targetCellHeight": 2,
+              "updatePeriodMillis": 1800000
+            }
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
