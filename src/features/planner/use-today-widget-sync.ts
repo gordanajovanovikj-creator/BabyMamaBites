@@ -24,7 +24,7 @@ export function useTodayWidgetSync() {
       // Loaded lazily, like the iPhone widget below: Expo Go has no widget module.
       const { syncAndroidWidget } =
         // eslint-disable-next-line @typescript-eslint/no-require-imports
-        require('@/widgets/today-meals-android-sync') as typeof import('@/widgets/today-meals-android-sync');
+        require('@/widgets/android-widget-sync') as typeof import('@/widgets/android-widget-sync');
       syncAndroidWidget(storedWidgetDays(plan, today(), name, titleFor)).catch(() => {});
       return;
     }
