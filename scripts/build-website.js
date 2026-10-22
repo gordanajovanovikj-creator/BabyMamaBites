@@ -779,3 +779,33 @@ page({
       <p class="intro">It may have moved. Let's get you back to something tasty.</p>
       <a class="btn btn-primary" href="/">Go to the home page</a>`,
 });
+
+// For search engines and other crawlers: everything may be crawled, and the sitemap lists
+// every public page (not the thank-you or not-found pages).
+const SITE = 'https://mamababybites.com';
+const sitemapPaths = [
+  '/',
+  '/learn/',
+  ...articles.map((a) => `/learn/${a.id}.html`),
+  '/support.html',
+  '/privacy.html',
+  '/terms.html',
+  '/credits.html',
+];
+fs.writeFileSync(
+  path.join(out, 'sitemap.xml'),
+  `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapPaths.map((p) => `  <url><loc>${SITE}${p}</loc></url>`).join('\n')}
+</urlset>
+`,
+);
+fs.writeFileSync(
+  path.join(out, 'robots.txt'),
+  `User-agent: *
+Allow: /
+
+Sitemap: ${SITE}/sitemap.xml
+`,
+);
+console.log('Wrote website/sitemap.xml and website/robots.txt');
