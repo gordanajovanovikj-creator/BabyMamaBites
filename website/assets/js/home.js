@@ -22,6 +22,26 @@
     });
   });
 
+  // Demo clips play only while on screen. With reduced motion they stay still and get
+  // controls, so playing them is the visitor's choice.
+  const videos = document.querySelectorAll('.demo video');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+    videos.forEach((v) => {
+      v.controls = true;
+      v.preload = 'metadata';
+    });
+  } else {
+    const seen = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((e) => {
+          if (e.isIntersecting) e.target.play().catch(() => {});
+          else e.target.pause();
+        }),
+      { threshold: 0.4 },
+    );
+    videos.forEach((v) => seen.observe(v));
+  }
+
   // Food lookup.
   const input = document.getElementById('food-q');
   const answer = document.querySelector('.food-answer');
