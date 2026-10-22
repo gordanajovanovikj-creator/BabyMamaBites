@@ -114,6 +114,9 @@
       const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
+      // On phones the table of contents starts closed so the article comes first.
+      if (window.matchMedia('(max-width: 1020px)').matches)
+        document.querySelectorAll('.toc details').forEach((d) => (d.open = false));
     </script>
   </body>
 </html>

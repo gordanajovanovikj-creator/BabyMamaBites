@@ -28,13 +28,28 @@
       </nav>
     </header>
     <main id="main" class="doc article">
-      <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="/learn/">Articles</a> <span aria-hidden="true">›</span>
-        <a href="/learn/#happy-eaters">Happy eaters</a>
-      </nav>
-      <h1>Moving to cow's milk</h1>
-      <p class="intro">What changes at 12 months, and how much is enough.</p>
-      <p class="updated">3 min read</p>
+      <header class="article-head">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="/learn/">Articles</a> <span aria-hidden="true">›</span>
+          <a href="/learn/#happy-eaters">Happy eaters</a>
+        </nav>
+        <h1>Moving to cow's milk</h1>
+        <p class="intro">What changes at 12 months, and how much is enough.</p>
+        <p class="updated">3 min read</p>
+        <img class="hero-photo" src="/assets/learn/cows-milk.webp" alt="" width="1200" height="800" />
+      </header>
+      <div class="article-layout">
+        <aside class="toc">
+          <details open>
+            <summary>In this article</summary>
+            <ol>
+          <li><a href="#why-wait-until-12-months">Why wait until 12 months</a></li>
+          <li><a href="#what-to-offer">What to offer</a></li>
+          <li><a href="#not-too-much">Not too much</a></li>
+            </ol>
+          </details>
+        </aside>
+        <div class="article-body">
       <div class="panel">
         <h2>About drinks</h2>
         <p>When to offer drinks like cow's milk and juice depends on your baby's age and development. Check with your pediatrician before offering cow's milk as a main drink or any juice, as every child's needs are different.</p>
@@ -48,7 +63,7 @@
         </ul>
       </div>
       <section class="section-block">
-        <h2>Why wait until 12 months</h2>
+        <h2 id="why-wait-until-12-months">Why wait until 12 months</h2>
         <p>Before 12 months, plain cow’s milk shouldn’t replace breast milk or formula.</p>
         <ul>
           <li>Hard on young kidneys: cow’s milk has more protein, sodium and potassium than babies’ kidneys can easily handle.</li>
@@ -57,20 +72,30 @@
         </ul>
       </section>
       <section class="section-block">
-        <h2>What to offer</h2>
+        <h2 id="what-to-offer">What to offer</h2>
         <p>From 12 months, offer plain, pasteurized whole cow's milk, or a plant milk fortified with calcium and vitamin D, unflavored and unsweetened. Children 12 to 23 months need about 2 servings of dairy a day, which can include milk, full-fat yogurt and cheese.</p>
       </section>
+      <aside class="app-banner" aria-label="The Mama &amp; Baby Bites app">
+        <div class="copy">
+          <span class="eyebrow">Mama &amp; Baby Bites app</span>
+          <h2>There’s even more in the app</h2>
+          <p>Week-by-week plans, 180+ recipes, a step-by-step allergen tracker and a food log you can share with your pediatrician.</p>
+          <a class="btn btn-primary" href="/#get">Get the app</a>
+        </div>
+        <div class="phone"><img src="/assets/screens/baby-recipe.webp" alt="A baby recipe with serving tips" width="390" height="844" loading="lazy" /></div>
+      </aside>
       <section class="section-block">
-        <h2>Not too much</h2>
+        <h2 id="not-too-much">Not too much</h2>
         <p>Milk is a drink, not a replacement for food. Too much can leave your child less hungry for other foods, and some experts say it can make it harder to absorb iron. Ask your pediatrician if you're unsure how much is right.</p>
       </section>
 
-      <div class="article-cta">
-        <img src="/assets/img/logo-mark.webp" alt="" width="56" height="56" />
-        <div>
-          <h2>Plan it, cook it, track it</h2>
-          <p>Week-by-week plans, recipes and a food log in the Mama &amp; Baby Bites app. Coming soon to iPhone.</p>
-        </div>
+      <div class="food-gallery">
+        <h2>Foods in this article</h2>
+        <ul>
+          <li><img src="/assets/foods/yogurt.webp" alt="" width="480" height="480" loading="lazy" /><span>Yogurt</span></li>
+          <li><img src="/assets/foods/cheese.webp" alt="" width="480" height="480" loading="lazy" /><span>Cheese</span></li>
+        </ul>
+        <p>How to serve each one at every age is in the app's food guide.</p>
       </div>
 
       <div class="article-foot">
@@ -81,27 +106,55 @@
         </ul>
         <p class="disclaimer">All articles, recipes, guides, tips and chat answers in Mama &amp; Baby Bites are for general information and education only. They are not medical, pediatric or nutritional advice, and they don't replace care from a qualified professional. In an emergency, call <a href="tel:911">911</a>.</p>
       </div>
-      <h2 class="related-title">Keep reading</h2>
-      <div class="article-grid">
-        <a class="article-card tone-happy-eaters" href="/learn/hunger-cues.html">
-          <span class="eyebrow">Happy eaters</span>
-          <h3>Hungry or full?</h3>
-          <p>How babies tell you they want more, or they're done.</p>
-          <span class="read">3 min read</span>
-        </a>
-        <a class="article-card tone-happy-eaters" href="/learn/cups-and-drinks.html">
-          <span class="eyebrow">Happy eaters</span>
-          <h3>Cups, water and juice</h3>
-          <p>When to offer a cup, how much water, and why juice can wait.</p>
-          <span class="read">4 min read</span>
-        </a>
-        <a class="article-card tone-happy-eaters" href="/learn/food-refusal.html">
-          <span class="eyebrow">Happy eaters</span>
-          <h3>When your baby refuses food</h3>
-          <p>Refusing new foods is normal. Here's how to keep offering.</p>
-          <span class="read">3 min read</span>
-        </a>
+        </div>
       </div>
+      <aside class="app-offer" aria-label="What's in the app">
+        <div class="copy">
+          <h2>Start solids with confidence</h2>
+          <ul class="mini-list">
+            <li>A week-by-week plan from first tastes to family meals</li>
+            <li>Step-by-step allergen introduction tracker</li>
+            <li>A food log you can export for your pediatrician</li>
+            <li>180+ recipes for your baby and for you</li>
+            <li>A food guide for 44 first foods</li>
+          </ul>
+          <div class="offer-actions">
+            <a class="btn btn-primary" href="/#pricing">Try it free for 7 days</a>
+            <span>Coming soon to iPhone</span>
+          </div>
+        </div>
+        <div class="phone"><img src="/assets/screens/tracker.webp" alt="The food log with a Share with your pediatrician button" width="390" height="844" loading="lazy" /></div>
+      </aside>
+      <section class="read-more">
+        <h2>Read more articles</h2>
+        <div class="article-grid">
+        <a class="article-card tone-happy-eaters has-photo" href="/learn/hunger-cues.html">
+          <img src="/assets/learn/hunger-cues.webp" alt="" width="1200" height="800" loading="lazy" />
+          <span class="body">
+            <span class="eyebrow">Happy eaters</span>
+            <h3>Hungry or full?</h3>
+            <span class="read">3 min read</span>
+          </span>
+        </a>
+        <a class="article-card tone-happy-eaters has-photo" href="/learn/cups-and-drinks.html">
+          <img src="/assets/learn/cups-and-drinks.webp" alt="" width="1200" height="800" loading="lazy" />
+          <span class="body">
+            <span class="eyebrow">Happy eaters</span>
+            <h3>Cups, water and juice</h3>
+            <span class="read">4 min read</span>
+          </span>
+        </a>
+        <a class="article-card tone-happy-eaters has-photo" href="/learn/food-refusal.html">
+          <img src="/assets/learn/food-refusal.webp" alt="" width="1200" height="800" loading="lazy" />
+          <span class="body">
+            <span class="eyebrow">Happy eaters</span>
+            <h3>When your baby refuses food</h3>
+            <span class="read">3 min read</span>
+          </span>
+        </a>
+        </div>
+        <a class="btn btn-soft" href="/learn/">View all articles</a>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="wrap">
@@ -185,6 +238,9 @@
       const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
+      // On phones the table of contents starts closed so the article comes first.
+      if (window.matchMedia('(max-width: 1020px)').matches)
+        document.querySelectorAll('.toc details').forEach((d) => (d.open = false));
     </script>
   </body>
 </html>

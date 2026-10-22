@@ -162,6 +162,9 @@ const scripts = `
       const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
+      // On phones the table of contents starts closed so the article comes first.
+      if (window.matchMedia('(max-width: 1020px)').matches)
+        document.querySelectorAll('.toc details').forEach((d) => (d.open = false));
     </script>`;
 
 // The app's starting-solids and wellbeing articles, the source registries they cite, and
@@ -370,55 +373,147 @@ const noticeBlock = (id) => {
         <p>${text(n.body)}</p>
       </div>`;
 };
-const articleCard = (
-  a,
-) => `        <a class="article-card tone-${esc(a.category)}" href="/learn/${a.id}.html">
-          <span class="eyebrow">${esc(categoryLabel(a.category))}</span>
-          <h3>${esc(a.title)}</h3>
-          <p>${esc(a.summary)}</p>
-          <span class="read">${a.readMinutes} min read</span>
+const photoFor = (id) =>
+  fs.existsSync(path.join(out, 'assets/learn', `${id}.webp`)) ? `/assets/learn/${id}.webp` : null;
+const articleCard = (a) => {
+  const photo = photoFor(a.id);
+  return `        <a class="article-card tone-${esc(a.category)}${photo ? ' has-photo' : ''}" href="/learn/${a.id}.html">
+${photo ? `          <img src="${photo}" alt="" width="1200" height="800" loading="lazy" />\n` : ''}          <span class="body">
+            <span class="eyebrow">${esc(categoryLabel(a.category))}</span>
+            <h3>${esc(a.title)}</h3>
+            <span class="read">${a.readMinutes} min read</span>
+          </span>
         </a>`;
+};
+const slug = (s) =>
+  s
+    .toLowerCase()
+    .replace(/[’']/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+
+// Foods the article names that have a photo in the app's food guide, for a small gallery.
+const foods = read('src/content/foods.json').foods;
+const foodsIn = (a) => {
+  const body = JSON.stringify(a.sections).toLowerCase();
+  return foods
+    .filter((f) => fs.existsSync(path.join(out, 'assets/foods', `${f.id}.webp`)))
+    .filter((f) =>
+      new RegExp(`\\b${f.name.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}s?\\b`).test(
+        body,
+      ),
+    )
+    .slice(0, 4);
+};
+
+// The app screen that fits each category best, for the "more in the app" banner.
+const screenFor = {
+  'starting-solids': ['week', 'A week of the starting-solids plan'],
+  safety: ['tracker', 'The food log and allergen tracker'],
+  'happy-eaters': ['baby-recipe', 'A baby recipe with serving tips'],
+  'cooking-for-baby': ['baby-recipe', 'A baby recipe with serving tips'],
+  'newborn-days': ['today', 'Today, with this month’s guide'],
+  'nourishing-you': ['mom', 'Recipes to keep mom nourished'],
+  'your-wellbeing': ['mom', 'Recipes to keep mom nourished'],
+};
+const forMom = (a) => ['nourishing-you', 'your-wellbeing', 'newborn-days'].includes(a.category);
+
+const appBanner = (a) => {
+  const [screen, alt] = screenFor[a.category] ?? ['today', 'The Mama & Baby Bites app'];
+  const pitch = forMom(a)
+    ? 'Quick, nourishing recipes for you, monthly guides from newborn to age 3, and gentle reminders, all in one calm app.'
+    : 'Week-by-week plans, 180+ recipes, a step-by-step allergen tracker and a food log you can share with your pediatrician.';
+  return `      <aside class="app-banner" aria-label="The Mama &amp; Baby Bites app">
+        <div class="copy">
+          <span class="eyebrow">Mama &amp; Baby Bites app</span>
+          <h2>There’s even more in the app</h2>
+          <p>${pitch}</p>
+          <a class="btn btn-primary" href="/#get">Get the app</a>
+        </div>
+        <div class="phone"><img src="/assets/screens/${screen}.webp" alt="${esc(alt)}" width="390" height="844" loading="lazy" /></div>
+      </aside>`;
+};
+
+const appOffer = `      <aside class="app-offer" aria-label="What's in the app">
+        <div class="copy">
+          <h2>Start solids with confidence</h2>
+          <ul class="mini-list">
+            <li>A week-by-week plan from first tastes to family meals</li>
+            <li>Step-by-step allergen introduction tracker</li>
+            <li>A food log you can export for your pediatrician</li>
+            <li>180+ recipes for your baby and for you</li>
+            <li>A food guide for 44 first foods</li>
+          </ul>
+          <div class="offer-actions">
+            <a class="btn btn-primary" href="/#pricing">Try it free for 7 days</a>
+            <span>Coming soon to iPhone</span>
+          </div>
+        </div>
+        <div class="phone"><img src="/assets/screens/tracker.webp" alt="The food log with a Share with your pediatrician button" width="390" height="844" loading="lazy" /></div>
+      </aside>`;
 
 for (const a of articles) {
   const notices = noticesFor(a);
-  const sections = a.sections
-    .map((sec) => {
-      const inner = [
-        `        <h2>${esc(sec.heading)}</h2>`,
-        ...sec.paragraphs.map((p) => `        <p>${text(p)}</p>`),
-        sec.bullets.length
-          ? `        <ul>\n${sec.bullets.map((b) => `          <li>${text(b)}</li>`).join('\n')}\n        </ul>`
-          : '',
-      ]
-        .filter(Boolean)
-        .join('\n');
-      const cls =
-        sec.callout === 'urgent'
-          ? 'panel danger'
-          : sec.callout === 'support'
-            ? 'panel support'
-            : 'section-block';
-      return `      <section class="${cls}">\n${inner}\n      </section>`;
-    })
+  const blocks = a.sections.map((sec) => {
+    const inner = [
+      `        <h2 id="${slug(sec.heading)}">${esc(sec.heading)}</h2>`,
+      ...sec.paragraphs.map((p) => `        <p>${text(p)}</p>`),
+      sec.bullets.length
+        ? `        <ul>\n${sec.bullets.map((b) => `          <li>${text(b)}</li>`).join('\n')}\n        </ul>`
+        : '',
+    ]
+      .filter(Boolean)
+      .join('\n');
+    const cls =
+      sec.callout === 'urgent'
+        ? 'panel danger'
+        : sec.callout === 'support'
+          ? 'panel support'
+          : 'section-block';
+    return `      <section class="${cls}">\n${inner}\n      </section>`;
+  });
+  // The app banner goes about halfway through, between two sections.
+  const mid = Math.max(1, Math.ceil(blocks.length / 2));
+  const sections = [...blocks.slice(0, mid), appBanner(a), ...blocks.slice(mid)].join('\n');
+  const toc = a.sections
+    .map((sec) => `          <li><a href="#${slug(sec.heading)}">${esc(sec.heading)}</a></li>`)
     .join('\n');
+  const gallery = foodsIn(a);
   const sources = a.sources.map((id) => {
     const src = sourceList.find((x) => x.id === id);
     if (!src) throw new Error(`Article ${a.id} cites a missing source: ${id}`);
     return `          <li><a href="${esc(src.url)}" rel="noopener">${esc(src.title)}</a> · ${esc(src.publisher)}</li>`;
   });
-  const related = articles.filter((x) => x.category === a.category && x.id !== a.id).slice(0, 3);
+  const related = [
+    ...articles.filter((x) => x.category === a.category && x.id !== a.id),
+    ...articles.filter((x) => x.category !== a.category),
+  ].slice(0, 3);
+  const photo = photoFor(a.id);
   page({
     file: `learn/${a.id}.html`,
     title: a.title,
     description: a.summary,
     mainClass: 'doc article',
-    body: `      <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="/learn/">Articles</a> <span aria-hidden="true">›</span>
-        <a href="/learn/#${esc(a.category)}">${esc(categoryLabel(a.category))}</a>
-      </nav>
-      <h1>${esc(a.title)}</h1>
-      <p class="intro">${esc(a.summary)}</p>
-      <p class="updated">${a.readMinutes} min read</p>
+    body: `      <header class="article-head">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="/learn/">Articles</a> <span aria-hidden="true">›</span>
+          <a href="/learn/#${esc(a.category)}">${esc(categoryLabel(a.category))}</a>
+        </nav>
+        <h1>${esc(a.title)}</h1>
+        <p class="intro">${esc(a.summary)}</p>
+        <p class="updated">${a.readMinutes} min read</p>
+${photo ? `        <img class="hero-photo" src="${photo}" alt="" width="1200" height="800" />` : ''}
+      </header>
+      <div class="article-layout">
+        <aside class="toc">
+          <details open>
+            <summary>In this article</summary>
+            <ol>
+${toc}
+            </ol>
+          </details>
+        </aside>
+        <div class="article-body">
 ${notices.top.map(noticeBlock).join('\n')}
 ${
   a.keyPoints
@@ -432,13 +527,22 @@ ${a.keyPoints.map((k) => `          <li>${text(k)}</li>`).join('\n')}
 }
 ${sections}
 ${notices.afterBody.map(noticeBlock).join('\n')}
-      <div class="article-cta">
-        <img src="/assets/img/logo-mark.webp" alt="" width="56" height="56" />
-        <div>
-          <h2>Plan it, cook it, track it</h2>
-          <p>Week-by-week plans, recipes and a food log in the Mama &amp; Baby Bites app. Coming soon to iPhone.</p>
-        </div>
-      </div>
+${
+  gallery.length >= 2 && !['safety', 'newborn-days', 'your-wellbeing'].includes(a.category)
+    ? `      <div class="food-gallery">
+        <h2>Foods in this article</h2>
+        <ul>
+${gallery
+  .map(
+    (f) =>
+      `          <li><img src="/assets/foods/${f.id}.webp" alt="" width="480" height="480" loading="lazy" /><span>${esc(f.name)}</span></li>`,
+  )
+  .join('\n')}
+        </ul>
+        <p>How to serve each one at every age is in the app's food guide.</p>
+      </div>`
+    : ''
+}
 ${notices.bottom.map(noticeBlock).join('\n')}
       <div class="article-foot">
         <h2>Sources</h2>
@@ -447,14 +551,16 @@ ${sources.join('\n')}
         </ul>
         <p class="disclaimer">${esc(medicalDisclaimer.find((b) => b.id === 'educational').body)} In an emergency, call <a href="tel:911">911</a>.</p>
       </div>
-${
-  related.length
-    ? `      <h2 class="related-title">Keep reading</h2>
-      <div class="article-grid">
+        </div>
+      </div>
+${forMom(a) ? '' : appOffer}
+      <section class="read-more">
+        <h2>Read more articles</h2>
+        <div class="article-grid">
 ${related.map(articleCard).join('\n')}
-      </div>`
-    : ''
-}`,
+        </div>
+        <a class="btn btn-soft" href="/learn/">View all articles</a>
+      </section>`,
   });
 }
 

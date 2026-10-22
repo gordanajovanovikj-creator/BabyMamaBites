@@ -17,11 +17,15 @@ website/
   assets/fonts/     Fredoka (headings) and Inter (text), with their licenses
   assets/img/       logo, favicon, social preview image
   assets/screens/   app screenshots
+  assets/learn/     article photos, resized from assets/images/insights (webp, 1200px wide)
+  assets/foods/     food photos, resized from assets/images/foods (webp, 480px wide)
 ```
 
 After changing the Terms, the Privacy Policy, photo credits, emergency numbers or articles in
 the app, run `npm run website:build` (Node 22.18 or newer) and deploy again so the site matches.
 The footer's article links are chosen in `footerColumns` in `scripts/build-website.js`.
+When an article gets a new photo in the app, add a resized webp copy to `assets/learn/` (named
+after the article id); pages without one simply skip the photo.
 
 ## Preview on your computer
 
