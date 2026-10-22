@@ -161,34 +161,46 @@
             <h2>A few taps, and dinner's sorted</h2>
             <p>Short clips from the app, recorded on a phone-sized screen.</p>
           </div>
-          <div class="demos reveal">
-            <figure class="demo">
+          <div class="demo-show reveal">
+            <div class="demo-tabs" role="tablist" aria-label="App demos">
+              <button type="button" role="tab" id="demo-tab-planner" aria-controls="demo-planner" aria-selected="true">
+                <span class="demo-tab-title">Meal planner</span>
+                <span class="demo-tab-text">Plan baby's breakfast next to the family meal, then add the week's ingredients to your list.</span>
+                <span class="demo-progress" aria-hidden="true"><i></i></span>
+              </button>
+              <button type="button" role="tab" id="demo-tab-allergy" aria-controls="demo-allergy" aria-selected="false" tabindex="-1">
+                <span class="demo-tab-title">Allergen tracker</span>
+                <span class="demo-tab-text">Log a new food in seconds and watch the top 9 allergens fill in.</span>
+                <span class="demo-progress" aria-hidden="true"><i></i></span>
+              </button>
+              <button type="button" role="tab" id="demo-tab-chat" aria-controls="demo-chat" aria-selected="false" tabindex="-1">
+                <span class="demo-tab-title">Ask for ideas</span>
+                <span class="demo-tab-text">Get dinner ideas the whole family can share, and send the ingredients straight to your list.</span>
+                <span class="demo-progress" aria-hidden="true"><i></i></span>
+              </button>
+            </div>
+            <div class="demo-stage">
               <div class="phone">
-                <video poster="assets/video/planner-poster.jpg" muted loop playsinline preload="none" aria-label="Planning breakfast for baby and family, then adding the week's ingredients to the shopping list">
-                  <source src="assets/video/planner.mp4" type="video/mp4" />
-                  <source src="assets/video/planner.webm" type="video/webm" />
-                </video>
+                <div class="demo-panel" role="tabpanel" id="demo-planner" aria-labelledby="demo-tab-planner">
+                  <video poster="assets/video/planner-poster.jpg" muted playsinline preload="metadata" aria-label="Planning breakfast for baby and family, then adding the week's ingredients to the shopping list">
+                    <source src="assets/video/planner.mp4" type="video/mp4" />
+                    <source src="assets/video/planner.webm" type="video/webm" />
+                  </video>
+                </div>
+                <div class="demo-panel" role="tabpanel" id="demo-allergy" aria-labelledby="demo-tab-allergy" hidden>
+                  <video poster="assets/video/allergy-poster.jpg" muted playsinline preload="none" aria-label="Logging peanut butter as a new food and seeing it checked off in the allergen tracker">
+                    <source src="assets/video/allergy.mp4" type="video/mp4" />
+                    <source src="assets/video/allergy.webm" type="video/webm" />
+                  </video>
+                </div>
+                <div class="demo-panel" role="tabpanel" id="demo-chat" aria-labelledby="demo-tab-chat" hidden>
+                  <video poster="assets/video/chat-poster.jpg" muted playsinline preload="none" aria-label="Asking for family dinner ideas, then adding a suggested dish's ingredients to the shopping list">
+                    <source src="assets/video/chat.mp4" type="video/mp4" />
+                    <source src="assets/video/chat.webm" type="video/webm" />
+                  </video>
+                </div>
               </div>
-              <figcaption><strong>Meal planner</strong> Plan baby's breakfast next to the family meal, then add the week's ingredients to your list.</figcaption>
-            </figure>
-            <figure class="demo">
-              <div class="phone">
-                <video poster="assets/video/allergy-poster.jpg" muted loop playsinline preload="none" aria-label="Logging peanut butter as a new food and seeing it checked off in the allergen tracker">
-                  <source src="assets/video/allergy.mp4" type="video/mp4" />
-                  <source src="assets/video/allergy.webm" type="video/webm" />
-                </video>
-              </div>
-              <figcaption><strong>Allergen tracker</strong> Log a new food in seconds and watch the top 9 allergens fill in.</figcaption>
-            </figure>
-            <figure class="demo">
-              <div class="phone">
-                <video poster="assets/video/chat-poster.jpg" muted loop playsinline preload="none" aria-label="Asking for family dinner ideas, then adding a suggested dish's ingredients to the shopping list">
-                  <source src="assets/video/chat.mp4" type="video/mp4" />
-                  <source src="assets/video/chat.webm" type="video/webm" />
-                </video>
-              </div>
-              <figcaption><strong>Ask for ideas</strong> Get dinner ideas the whole family can share, and send the ingredients straight to your list.</figcaption>
-            </figure>
+            </div>
           </div>
         </div>
       </section>

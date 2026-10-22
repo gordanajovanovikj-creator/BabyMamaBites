@@ -780,8 +780,7 @@ p {
   border-radius: 40px;
   padding: 64px;
   background:
-    radial-gradient(60% 80% at 100% 0%, rgba(72, 117, 73, 0.6), transparent 70%),
-    var(--sage-deep);
+    radial-gradient(60% 80% at 100% 0%, rgba(72, 117, 73, 0.6), transparent 70%), var(--sage-deep);
   color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -947,8 +946,7 @@ p {
   text-align: center;
   background:
     radial-gradient(50% 70% at 0% 100%, rgba(231, 239, 226, 1), transparent 70%),
-    radial-gradient(50% 70% at 100% 0%, rgba(251, 240, 207, 1), transparent 70%),
-    var(--cream-soft);
+    radial-gradient(50% 70% at 100% 0%, rgba(251, 240, 207, 1), transparent 70%), var(--cream-soft);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1295,8 +1293,7 @@ p {
 }
 .app-banner {
   background:
-    radial-gradient(70% 90% at 100% 0%, rgba(251, 240, 207, 1), transparent 70%),
-    var(--cream);
+    radial-gradient(70% 90% at 100% 0%, rgba(251, 240, 207, 1), transparent 70%), var(--cream);
 }
 .app-banner .copy,
 .app-offer .copy {
@@ -1645,49 +1642,82 @@ p {
   color: var(--muted);
 }
 
-/* Demo videos */
+/* Demo videos: one clip at a time, picked from the list beside it */
 .demos-section {
   padding-top: 0;
   padding-bottom: 72px;
 }
-.demos {
+.demo-show {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  max-width: 1000px;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 64px;
+  align-items: center;
+  max-width: 920px;
   margin: 0 auto;
 }
-.demo {
-  margin: 0;
+.demo-tabs {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 12px;
 }
-.demo .phone {
+.demo-tabs button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 48px;
+  padding: 20px 24px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+}
+.demo-tabs button[aria-selected='true'] {
+  background: var(--cream-soft);
+  border-color: var(--sage);
+}
+.demo-tab-title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 21px;
+}
+.demo-tab-text {
+  color: var(--muted);
+}
+.demo-tabs button[aria-selected='false'] .demo-tab-text {
+  display: none;
+}
+.demo-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  display: none;
+}
+.demo-tabs button[aria-selected='true'] .demo-progress {
+  display: block;
+}
+.demo-progress i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--sage);
+}
+.demo-stage .phone {
   width: 100%;
-  max-width: 290px;
-  margin: 0 auto;
 }
-.demo video {
+.demo-panel video {
   display: block;
   width: 100%;
   aspect-ratio: 390 / 844;
   border-radius: 36px;
   background: #fff;
   object-fit: cover;
-}
-.demo figcaption {
-  text-align: center;
-  color: var(--muted);
-  max-width: 300px;
-  margin: 0 auto;
-}
-.demo figcaption strong {
-  display: block;
-  color: var(--ink);
-  font-family: var(--display);
-  font-size: 20px;
-  margin-bottom: 4px;
 }
 
 /* Free vs Premium */
@@ -2096,22 +2126,16 @@ p {
   .steps {
     grid-template-columns: 1fr;
   }
-  .demos {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    margin: 0 -16px;
-    padding: 4px 16px 12px;
-    scrollbar-width: none;
+  .demo-show {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
-  .demos::-webkit-scrollbar {
-    display: none;
-  }
-  .demo {
-    flex: 0 0 78%;
+  .demo-stage .phone {
     max-width: 290px;
-    scroll-snap-align: center;
+    margin: 0 auto;
+  }
+  .demo-tabs button {
+    padding: 14px 18px;
   }
   .try-grid {
     grid-template-columns: 1fr;

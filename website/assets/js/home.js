@@ -22,24 +22,78 @@
     });
   });
 
-  // Demo clips play only while on screen. With reduced motion they stay still and get
-  // controls, so playing them is the visitor's choice.
-  const videos = document.querySelectorAll('.demo video');
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
-    videos.forEach((v) => {
-      v.controls = true;
-      v.preload = 'metadata';
+  // Demo clips: one at a time. Each plays once while on screen, then the next one starts.
+  // With reduced motion nothing plays on its own; the clips get controls instead.
+  const demoTabs = Array.from(document.querySelectorAll('.demo-tabs [role="tab"]'));
+  if (demoTabs.length) {
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const videoOf = (tab) =>
+      document.getElementById(tab.getAttribute('aria-controls')).querySelector('video');
+    let current = 0;
+    let onScreen = false;
+    const play = () => {
+      if (still || !onScreen) return;
+      videoOf(demoTabs[current])
+        .play()
+        .catch(() => {});
+    };
+    const show = (i) => {
+      current = i;
+      demoTabs.forEach((t, j) => {
+        const on = j === i;
+        const video = videoOf(t);
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+        t.querySelector('.demo-progress i').style.width = '0';
+        if (on) {
+          video.preload = 'auto';
+          video.currentTime = 0;
+        } else {
+          video.pause();
+        }
+      });
+      play();
+    };
+    demoTabs.forEach((tab, i) => {
+      const video = videoOf(tab);
+      const bar = tab.querySelector('.demo-progress i');
+      if (still) video.controls = true;
+      tab.addEventListener('click', () => show(i));
+      tab.addEventListener('keydown', (e) => {
+        const step =
+          e.key === 'ArrowDown' || e.key === 'ArrowRight'
+            ? 1
+            : e.key === 'ArrowUp' || e.key === 'ArrowLeft'
+              ? -1
+              : 0;
+        if (!step) return;
+        e.preventDefault();
+        const next = (i + step + demoTabs.length) % demoTabs.length;
+        show(next);
+        demoTabs[next].focus();
+      });
+      video.addEventListener('timeupdate', () => {
+        if (video.duration) bar.style.width = (100 * video.currentTime) / video.duration + '%';
+      });
+      // Hold the finished screen for a moment, unless someone picked another clip meanwhile.
+      video.addEventListener('ended', () => {
+        if (still) return;
+        setTimeout(() => {
+          if (current === i && onScreen) show((i + 1) % demoTabs.length);
+        }, 1500);
+      });
     });
-  } else {
-    const seen = new IntersectionObserver(
-      (entries) =>
-        entries.forEach((e) => {
-          if (e.isIntersecting) e.target.play().catch(() => {});
-          else e.target.pause();
-        }),
-      { threshold: 0.4 },
-    );
-    videos.forEach((v) => seen.observe(v));
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(
+        ([e]) => {
+          onScreen = e.isIntersecting;
+          if (onScreen) play();
+          else videoOf(demoTabs[current]).pause();
+        },
+        { threshold: 0.4 },
+      ).observe(document.querySelector('.demo-stage'));
+    }
   }
 
   // Food lookup.
