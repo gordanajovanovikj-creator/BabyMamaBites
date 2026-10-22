@@ -244,20 +244,107 @@ ${body}
   console.log(`Wrote website/${file}`);
 }
 
-// The home page is written by hand; only its footer comes from here, between two markers.
+// The home page is written by hand. Its footer and its two "try it" tools (a peek at the
+// solids plan and the first-foods lookup) come from here, between markers, from the app's
+// own content.
+const plan = read('src/content/solids-plan.json');
+const stageLabel = (id) => plan.stages.find((st) => st.id === id)?.label ?? id;
+
+function planPreviewHtml() {
+  const weeks = [1, 4, 12, 26].map((n) => plan.weeks.find((w) => w.week === n));
+  const tabs = weeks
+    .map(
+      (w, i) =>
+        `<button type="button" role="tab" id="plan-tab-${w.week}" aria-controls="plan-week-${w.week}" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}">Week ${w.week}</button>`,
+    )
+    .join('\n              ');
+  const panels = weeks
+    .map(
+      (
+        w,
+        i,
+      ) => `            <div class="plan-week" role="tabpanel" id="plan-week-${w.week}" aria-labelledby="plan-tab-${w.week}"${i === 0 ? '' : ' hidden'}>
+              <span class="eyebrow">Week ${w.week} of ${plan.weeks.length} · ${esc(stageLabel(w.stage))}</span>
+              <h3>${esc(w.title)}</h3>
+              <p>${esc(w.focus[0])}</p>
+              <h4>New foods this week</h4>
+              <ul class="mini-list">
+${w.tryFoods.map((f) => `                <li>${esc(f)}</li>`).join('\n')}
+              </ul>
+${
+  w.allergen
+    ? `              <p class="plan-allergen"><strong>Allergen of the week: ${esc(w.allergen.label)}.</strong> ${esc(w.allergen.howTo)}</p>`
+    : ''
+}
+            </div>`,
+    )
+    .join('\n');
+  return `<div class="try-card plan-preview">
+            <span class="eyebrow">Peek at the plan</span>
+            <h3 class="try-title">How meals grow with your baby</h3>
+            <div class="week-tabs" role="tablist" aria-label="Weeks of the solids plan">
+              ${tabs}
+            </div>
+${panels}
+          </div>`;
+}
+
+const allFoods = read('src/content/foods.json').foods;
+const foodLookupHtml = () => `<div class="try-card food-lookup">
+            <span class="eyebrow">Try the food guide</span>
+            <h3 class="try-title">Can my baby eat…?</h3>
+            <form class="search-field" role="search" onsubmit="return false">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg>
+              <input id="food-q" type="search" list="food-names" placeholder="Type a food, like avocado" aria-label="Look up a first food" autocomplete="off" />
+              <datalist id="food-names">
+${allFoods.map((f) => `                <option value="${esc(f.name)}"></option>`).join('\n')}
+              </datalist>
+            </form>
+            <div class="food-chips">
+${['Avocado', 'Egg', 'Peanut butter', 'Blueberries', 'Salmon']
+  .map((n) => `              <button type="button" data-food="${esc(n)}">${esc(n)}</button>`)
+  .join('\n')}
+            </div>
+            <div class="food-answer" aria-live="polite"></div>
+            <p class="disclaimer">From the app's guide to ${allFoods.length} first foods. Every baby is different, so talk to your pediatrician about yours.</p>
+          </div>`;
+
+// The food guide's text for the lookup, read by assets/js/home.js.
+fs.mkdirSync(path.join(out, 'assets/js'), { recursive: true });
+fs.writeFileSync(
+  path.join(out, 'assets/foods-index.json'),
+  JSON.stringify(
+    allFoods.map((f) => ({
+      name: f.name,
+      emoji: f.emoji,
+      fromMonths: f.fromMonths,
+      intro: f.intro,
+      serving: f.serving,
+      choking: f.choking,
+      chokingRisk: f.chokingRisk,
+      allergenNote: f.allergenNote,
+    })),
+  ),
+);
+
 {
   const file = path.join(out, 'index.html');
-  const html = fs.readFileSync(file, 'utf8');
-  const re = /<!-- footer:start -->[\s\S]*<!-- footer:end -->/;
-  if (!re.test(html)) throw new Error('website/index.html is missing its footer markers');
-  fs.writeFileSync(
-    file,
-    html.replace(
+  let html = fs.readFileSync(file, 'utf8');
+  const blocks = {
+    footer: () => relativize(footerHtml(articles), 'index.html'),
+    'plan-preview': planPreviewHtml,
+    'food-lookup': foodLookupHtml,
+  };
+  for (const [name, render] of Object.entries(blocks)) {
+    const re = new RegExp(`<!-- ${name}:start -->[\\s\\S]*<!-- ${name}:end -->`);
+    if (!re.test(html)) throw new Error(`website/index.html is missing its ${name} markers`);
+    html = html.replace(
       re,
-      `<!-- footer:start -->\n    ${relativize(footerHtml(articles), 'index.html')}\n    <!-- footer:end -->`,
-    ),
-  );
-  console.log('Updated the footer in website/index.html');
+      () => `<!-- ${name}:start -->\n    ${render()}\n    <!-- ${name}:end -->`,
+    );
+  }
+  fs.writeFileSync(file, html);
+  console.log('Updated the footer and the try-it tools in website/index.html');
 }
 
 // Privacy Policy and Terms of Use, straight from the app.
@@ -537,7 +624,10 @@ for (const a of articles) {
         </nav>
         <h1>${esc(a.title)}</h1>
         <p class="intro">${esc(a.summary)}</p>
-        <p class="updated">${a.readMinutes} min read</p>
+        <p class="updated">
+          ${a.readMinutes} min read<span class="print-sep"> ·</span>
+          <button type="button" class="print-link" onclick="window.print()">Print or save as PDF</button>
+        </p>
 ${photo ? `        <img class="hero-photo" src="${photo}" alt="" width="1200" height="800" />` : ''}
       </header>
       <div class="article-layout">

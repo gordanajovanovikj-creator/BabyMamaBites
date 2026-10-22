@@ -1503,9 +1503,13 @@ p {
 }
 
 /* Hero: store buttons, launch sign-up */
-.btn-store.primary {
-  background: var(--sage);
-  box-shadow: 0 14px 28px -14px rgba(46, 74, 49, 0.8);
+.btn-store.primary,
+.notify-row .btn-primary {
+  background: var(--terracotta);
+  box-shadow: 0 14px 28px -14px rgba(178, 90, 59, 0.85);
+}
+.notify-row .btn-primary:hover {
+  background: #9a4a2f;
 }
 .btn-store.outline {
   background: transparent;
@@ -1696,6 +1700,203 @@ p {
   color: #b9b2a5;
 }
 
+/* Trust badge and pricing framing */
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 6px 14px 6px 10px;
+  border-radius: 999px;
+  background: var(--sage-soft);
+  color: var(--sage-dark);
+  font-size: 14px;
+  font-weight: 600;
+}
+.per-day {
+  font-weight: 700;
+  color: var(--terracotta);
+}
+.always-free {
+  max-width: 940px;
+  margin: -24px auto 28px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px 22px;
+  border-radius: var(--radius-sm);
+  background: var(--sage-soft);
+  color: var(--ink);
+}
+.always-free svg {
+  flex: none;
+  color: var(--sage);
+  margin-top: 2px;
+}
+
+/* Try it: plan preview and food lookup */
+.try-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.try-card {
+  padding: 30px;
+  border-radius: var(--radius);
+  background: #fff;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.try-card .eyebrow {
+  margin-bottom: 0;
+}
+.try-title {
+  font-size: 26px;
+}
+.week-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.week-tabs button {
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+.week-tabs button[aria-selected='true'] {
+  background: var(--sage);
+  border-color: var(--sage);
+  color: #fff;
+}
+.plan-week {
+  padding: 22px;
+  border-radius: var(--radius-sm);
+  background: var(--cream-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.plan-week h3 {
+  font-size: 22px;
+}
+.plan-week h4 {
+  font-size: 15px;
+  margin-top: 6px;
+}
+.plan-week p {
+  color: var(--muted);
+  font-size: 15px;
+}
+.plan-week .plan-allergen {
+  color: var(--ink);
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+.food-lookup .search-field {
+  box-shadow: none;
+}
+.food-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.food-chips button {
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--oat);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.food-card {
+  padding: 20px;
+  border-radius: var(--radius-sm);
+  background: var(--cream-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+}
+.food-head {
+  font-size: 18px;
+}
+.food-serving {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.food-risk.risk-high {
+  color: #8a2d16;
+}
+.food-allergen,
+.food-none {
+  color: var(--muted);
+}
+.food-lookup .disclaimer {
+  margin-top: 4px;
+}
+
+/* Article: print or save as a PDF cheat sheet */
+.print-link {
+  border: 0;
+  background: none;
+  padding: 0;
+  min-height: 44px;
+  font: inherit;
+  color: var(--sage);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media print {
+  .site-header,
+  .site-footer,
+  .skip,
+  .crumbs,
+  .toc,
+  .app-banner,
+  .app-offer,
+  .read-more,
+  .print-sep,
+  .print-link {
+    display: none !important;
+  }
+  .article-layout {
+    display: block;
+    margin-top: 12px;
+  }
+  .doc {
+    padding-top: 0;
+  }
+  .hero-photo {
+    max-height: 240px;
+  }
+  .doc .panel,
+  .in-short,
+  .section-block {
+    break-inside: avoid;
+  }
+  a {
+    color: inherit;
+  }
+}
+
 /* Scroll reveal (only when JavaScript runs) */
 .js .reveal {
   opacity: 0;
@@ -1848,6 +2049,9 @@ p {
     grid-template-columns: repeat(3, 1fr);
   }
   .steps {
+    grid-template-columns: 1fr;
+  }
+  .try-grid {
     grid-template-columns: 1fr;
   }
   .notify {
@@ -2007,6 +2211,22 @@ p {
   .glance-bar {
     grid-template-columns: repeat(2, 1fr);
     padding: 22px 18px;
+  }
+  .section-head h2 {
+    margin-bottom: 4px;
+  }
+  .section-head p {
+    margin-top: 16px;
+    line-height: 1.55;
+  }
+  .section-head {
+    margin-bottom: 40px;
+  }
+  .try-card {
+    padding: 22px;
+  }
+  .always-free {
+    margin-top: -12px;
   }
   .glance-bar li:last-child {
     grid-column: 1 / -1;

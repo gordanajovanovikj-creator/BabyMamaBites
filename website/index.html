@@ -86,6 +86,7 @@
                 </div>
                 <p class="notify-note">Only launch news, nothing else. See our <a href="privacy.html">Privacy Policy</a>.</p>
               </form>
+              <p class="trust-badge"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Content reviewed by a nutritionist</p>
               <ul class="hero-note">
                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>No account needed</li>
                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Your details stay on your phone</li>
@@ -152,12 +153,146 @@
         </div>
       </section>
 
+      <!-- Try it -->
+      <section class="section try-section" id="try">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">Try it here</span>
+            <h2>See what the app knows</h2>
+            <p>A real peek at the starting-solids plan and the first-foods guide, right from the app.</p>
+          </div>
+          <div class="try-grid reveal">
+    <!-- plan-preview:start -->
+    <div class="try-card plan-preview">
+            <span class="eyebrow">Peek at the plan</span>
+            <h3 class="try-title">How meals grow with your baby</h3>
+            <div class="week-tabs" role="tablist" aria-label="Weeks of the solids plan">
+              <button type="button" role="tab" id="plan-tab-1" aria-controls="plan-week-1" aria-selected="true" tabindex="0">Week 1</button>
+              <button type="button" role="tab" id="plan-tab-4" aria-controls="plan-week-4" aria-selected="false" tabindex="-1">Week 4</button>
+              <button type="button" role="tab" id="plan-tab-12" aria-controls="plan-week-12" aria-selected="false" tabindex="-1">Week 12</button>
+              <button type="button" role="tab" id="plan-tab-26" aria-controls="plan-week-26" aria-selected="false" tabindex="-1">Week 26</button>
+            </div>
+            <div class="plan-week" role="tabpanel" id="plan-week-1" aria-labelledby="plan-tab-1">
+              <span class="eyebrow">Week 1 of 26 · Smooth purees</span>
+              <h3>First tastes</h3>
+              <p>Start with a teaspoon or two of one smooth, single-ingredient food, once a day, at a calm time. Half a spoonful is plenty at first.</p>
+              <h4>New foods this week</h4>
+              <ul class="mini-list">
+                <li>Iron-fortified oat or barley infant cereal</li>
+                <li>Pureed sweet potato</li>
+              </ul>
+
+            </div>
+            <div class="plan-week" role="tabpanel" id="plan-week-4" aria-labelledby="plan-tab-4" hidden>
+              <span class="eyebrow">Week 4 of 26 · Smooth purees</span>
+              <h3>Peanut, the early way</h3>
+              <p>Offering peanut early, then regularly, can help prevent peanut allergy. Studies found this protection lasted.</p>
+              <h4>New foods this week</h4>
+              <ul class="mini-list">
+                <li>Mashed banana</li>
+              </ul>
+              <p class="plan-allergen"><strong>Allergen of the week: Peanut.</strong> A small amount of smooth peanut butter thinned into cereal, fruit puree or yogurt, or dissolved in breast milk or formula. Never whole peanuts.</p>
+            </div>
+            <div class="plan-week" role="tabpanel" id="plan-week-12" aria-labelledby="plan-tab-12" hidden>
+              <span class="eyebrow">Week 12 of 26 · Lumpy and soft finger foods</span>
+              <h3>Keep allergens on the menu</h3>
+              <p>If your baby has now tried all nine common allergens, the next step is keeping them in the diet regularly, in portions suited to your baby.</p>
+              <h4>New foods this week</h4>
+              <ul class="mini-list">
+                <li>Small, thin slices of pasteurized mild cheese</li>
+                <li>Soft ripe melon pieces</li>
+              </ul>
+
+            </div>
+            <div class="plan-week" role="tabpanel" id="plan-week-26" aria-labelledby="plan-tab-26" hidden>
+              <span class="eyebrow">Week 26 of 26 · Chopped family foods</span>
+              <h3>First birthday</h3>
+              <p>Around 12 months, growth slows down and many children eat less than before. Some days they'll hardly eat; over a week, they usually get what they need.</p>
+              <h4>New foods this week</h4>
+              <ul class="mini-list">
+                <li>Chopped family meal (no added salt)</li>
+                <li>Soft-cooked pasta with tomato sauce (no added salt)</li>
+                <li>Small pieces of ripe peach</li>
+              </ul>
+
+            </div>
+          </div>
+    <!-- plan-preview:end -->
+    <!-- food-lookup:start -->
+    <div class="try-card food-lookup">
+            <span class="eyebrow">Try the food guide</span>
+            <h3 class="try-title">Can my baby eat…?</h3>
+            <form class="search-field" role="search" onsubmit="return false">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg>
+              <input id="food-q" type="search" list="food-names" placeholder="Type a food, like avocado" aria-label="Look up a first food" autocomplete="off" />
+              <datalist id="food-names">
+                <option value="Sweet potato"></option>
+                <option value="Carrot"></option>
+                <option value="Broccoli"></option>
+                <option value="Peas"></option>
+                <option value="Spinach"></option>
+                <option value="Zucchini"></option>
+                <option value="Butternut squash"></option>
+                <option value="Green beans"></option>
+                <option value="Cauliflower"></option>
+                <option value="Kale"></option>
+                <option value="Parsnips"></option>
+                <option value="Haricots verts"></option>
+                <option value="Avocado"></option>
+                <option value="Banana"></option>
+                <option value="Apple"></option>
+                <option value="Pear"></option>
+                <option value="Blueberries"></option>
+                <option value="Strawberries"></option>
+                <option value="Mango"></option>
+                <option value="Peach"></option>
+                <option value="Cherries"></option>
+                <option value="Prunes"></option>
+                <option value="Egg"></option>
+                <option value="Chicken"></option>
+                <option value="Beef"></option>
+                <option value="Turkey"></option>
+                <option value="Salmon"></option>
+                <option value="Shrimp"></option>
+                <option value="Lentils"></option>
+                <option value="Black beans"></option>
+                <option value="Tofu"></option>
+                <option value="Peanut butter"></option>
+                <option value="Almond butter"></option>
+                <option value="Tahini"></option>
+                <option value="Red lentils"></option>
+                <option value="Iron-fortified infant cereal"></option>
+                <option value="Oats"></option>
+                <option value="Rice"></option>
+                <option value="Pasta"></option>
+                <option value="Bread"></option>
+                <option value="Brown rice"></option>
+                <option value="Quinoa"></option>
+                <option value="Yogurt"></option>
+                <option value="Cheese"></option>
+              </datalist>
+            </form>
+            <div class="food-chips">
+              <button type="button" data-food="Avocado">Avocado</button>
+              <button type="button" data-food="Egg">Egg</button>
+              <button type="button" data-food="Peanut butter">Peanut butter</button>
+              <button type="button" data-food="Blueberries">Blueberries</button>
+              <button type="button" data-food="Salmon">Salmon</button>
+            </div>
+            <div class="food-answer" aria-live="polite"></div>
+            <p class="disclaimer">From the app's guide to 44 first foods. Every baby is different, so talk to your pediatrician about yours.</p>
+          </div>
+    <!-- food-lookup:end -->
+          </div>
+        </div>
+      </section>
+
       <!-- Features -->
       <section class="section" id="features" style="padding-top: 0">
         <div class="wrap">
           <div class="section-head reveal">
             <span class="eyebrow">Everything in one calm place</span>
-            <h2>Feeding your family, made simpler</h2>
+            <h2>Less guesswork at every meal</h2>
             <p>
               From the first spoonful to family dinners, Mama &amp; Baby Bites helps you plan, cook
               and feel confident, one meal at a time.
@@ -168,8 +303,8 @@
             <article class="tile cream split span-4 reveal">
               <div class="copy">
                 <span class="eyebrow">Starting solids</span>
-                <h3>A guided start, week by week</h3>
-                <p>From first tastes to family foods, at your baby's pace.</p>
+                <h3>Start solids with confidence, one week at a time</h3>
+                <p>A 26-week roadmap from first tastes to family foods, with allergens introduced step by step.</p>
                 <ul class="mini-list">
                   <li>Step-by-step allergen introduction tracker</li>
                   <li>Food logs you can export for your pediatrician</li>
@@ -183,7 +318,7 @@
               <img src="assets/img/food-salmon.webp" alt="" width="666" height="1000" loading="lazy" />
               <div class="copy">
                 <span class="eyebrow">Recipes</span>
-                <h3>Real food for baby, and for you</h3>
+                <h3>Real food your whole family will eat</h3>
                 <p>Purees, finger foods, family meals and quick, nourishing meals for busy moms.</p>
               </div>
             </article>
@@ -203,7 +338,7 @@
             <article class="tile sage split span-4 reveal">
               <div class="copy">
                 <span class="eyebrow">Plan &amp; shop</span>
-                <h3>Plan the week, shop in a tap</h3>
+                <h3>Dinner planned, list done, in minutes</h3>
                 <p>Baby's meals and family dinners side by side, and a list that builds itself.</p>
                 <ul class="mini-list">
                   <li>A meal planner that grows with your baby</li>
@@ -216,7 +351,7 @@
 
             <article class="tile coral span-3 reveal">
               <span class="eyebrow">Ask</span>
-              <h3>Your feeding helper, any time</h3>
+              <h3>Meal ideas when you’re out of ideas</h3>
               <p>Quick meal ideas from what you have, straight to your shopping list.</p>
               <div class="chat" aria-label="An example conversation in Ask">
                 <div class="bubble me">Quick dinner ideas with chicken and sweet potato?</div>
@@ -252,7 +387,7 @@
 
             <article class="tile span-2 reveal">
               <span class="tile-icon" style="background: var(--butter)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span>
-              <h3>Ready for the pediatrician</h3>
+              <h3>Walk into checkups prepared</h3>
               <p>Export your food log as a PDF, with allergens tried and any reactions, to email or print before a visit.</p>
             </article>
 
@@ -293,6 +428,10 @@
             <h2>Start free, upgrade when you're ready</h2>
             <p>Safety information is always free. Premium unlocks everything else.</p>
           </div>
+          <div class="always-free reveal">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/></svg>
+            <p><strong>Always free, for everyone:</strong> the choking and gagging guide, allergic reaction signs, foods to skip in the first year, postpartum warning signs and emergency numbers. Help for a worry is never behind a paywall.</p>
+          </div>
           <div class="pricing reveal">
             <div class="plan">
               <h3>Free</h3>
@@ -304,6 +443,7 @@
               <span class="badge">7-day free trial</span>
               <h3>Premium</h3>
               <div class="price">$79.99<small> / year</small></div>
+              <p class="per-day">About 22¢ a day</p>
               <p class="sub">That's $6.66 a month, or $12.99 billed monthly</p>
               <a class="btn btn-primary" href="#get">Try it free for 7 days</a>
             </div>
@@ -513,6 +653,7 @@
     </footer>
     <!-- footer:end -->
 
+    <script src="assets/js/home.js" defer></script>
     <script>
       // The floating header gets a soft shadow once the page scrolls.
       const header = document.querySelector('.site-header');
