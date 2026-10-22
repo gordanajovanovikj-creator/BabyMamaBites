@@ -199,6 +199,19 @@ try {
 const footer = `
     ${footerHtml(articles)}${scripts}`;
 
+/**
+ * Pages are written with links from the site root ("/learn/", "/assets/…"). This turns them
+ * into relative links for the page's own folder, so the site also works when opened straight
+ * from a folder on disk, and folder links point at their index.html.
+ */
+function relativize(html, file) {
+  const base = '../'.repeat(file.split('/').length - 1);
+  return html.replace(/\b(href|src|action)="\/(?!\/)([^"#?]*)([^"]*)"/g, (_, attr, p, rest) => {
+    const target = p === '' || p.endsWith('/') ? `${p}index.html` : p;
+    return `${attr}="${base}${target}${rest}"`;
+  });
+}
+
 function page({ file, title, description, body, mainClass = 'doc' }) {
   const html = `<!doctype html>
 <html lang="en">
@@ -220,7 +233,8 @@ ${body}
 </html>
 `;
   fs.mkdirSync(path.dirname(path.join(out, file)), { recursive: true });
-  fs.writeFileSync(path.join(out, file), html);
+  // The 404 page is served at any missing address, so it keeps links from the site root.
+  fs.writeFileSync(path.join(out, file), file === '404.html' ? html : relativize(html, file));
   console.log(`Wrote website/${file}`);
 }
 
@@ -232,7 +246,10 @@ ${body}
   if (!re.test(html)) throw new Error('website/index.html is missing its footer markers');
   fs.writeFileSync(
     file,
-    html.replace(re, `<!-- footer:start -->\n    ${footerHtml(articles)}\n    <!-- footer:end -->`),
+    html.replace(
+      re,
+      `<!-- footer:start -->\n    ${relativize(footerHtml(articles), 'index.html')}\n    <!-- footer:end -->`,
+    ),
   );
   console.log('Updated the footer in website/index.html');
 }
@@ -625,12 +642,12 @@ fs.writeFileSync(
   path.join(out, 'assets/search-index.json'),
   JSON.stringify(
     articles.map((a) => ({
-      url: `/learn/${a.id}.html`,
+      url: `learn/${a.id}.html`,
       title: a.title,
       category: categoryLabel(a.category),
       categoryId: a.category,
       minutes: a.readMinutes,
-      photo: photoFor(a.id),
+      photo: photoFor(a.id)?.slice(1) ?? null,
       headings: a.sections.map((sec) => sec.heading).join(' '),
       text: [
         a.summary,

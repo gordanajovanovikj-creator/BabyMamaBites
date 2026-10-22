@@ -9,6 +9,9 @@
   const grid = results.querySelector('.article-grid');
   const browse = document.querySelectorAll('.chips, .learn-group');
   let index = null;
+  // Paths in the index are from the site root, which is two folders up from this script.
+  const root = new URL('../../', document.currentScript.src);
+  const at = (path) => new URL(path, root).href;
 
   const esc = (s) =>
     String(s).replace(
@@ -43,10 +46,12 @@
       esc(item.categoryId) +
       (item.photo ? ' has-photo' : '') +
       '" href="' +
-      esc(item.url) +
+      esc(at(item.url)) +
       '">' +
       (item.photo
-        ? '<img src="' + esc(item.photo) + '" alt="" width="1200" height="800" loading="lazy" />'
+        ? '<img src="' +
+          esc(at(item.photo)) +
+          '" alt="" width="1200" height="800" loading="lazy" />'
         : '') +
       '<span class="body"><span class="eyebrow">' +
       esc(item.category) +
@@ -96,7 +101,7 @@
   });
   input.addEventListener('input', update);
 
-  fetch('/assets/search-index.json')
+  fetch(at('assets/search-index.json'))
     .then((r) => r.json())
     .then((data) => {
       index = data;
