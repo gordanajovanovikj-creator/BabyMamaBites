@@ -417,7 +417,8 @@ p {
 .hero-art {
   position: relative;
   height: 640px;
-  align-self: end;
+  /* Sits beside the headline; the text column is taller than the phones. */
+  align-self: start;
 }
 
 .phone {
