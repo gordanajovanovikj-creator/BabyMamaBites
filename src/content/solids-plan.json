@@ -999,6 +999,24 @@
       "publisher": "AAP (HealthyChildren.org)",
       "title": "Good Oral Health Starts Early: AAP Policy Explained",
       "url": "https://www.healthychildren.org/English/healthy-living/oral-health/Pages/Brushing-Up-on-Oral-Health-Never-Too-Early-to-Start.aspx"
+    },
+    {
+      "id": "niaid-peanut",
+      "publisher": "National Institute of Allergy and Infectious Diseases (NIH)",
+      "title": "Guidelines for Clinicians and Patients for Diagnosis and Management of Food Allergy in the United States",
+      "url": "https://www.niaid.nih.gov/diseases-conditions/guidelines-clinicians-and-patients-food-allergy"
+    },
+    {
+      "id": "redcross-classes",
+      "publisher": "American Red Cross",
+      "title": "Take a Class: CPR and First Aid",
+      "url": "https://www.redcross.org/take-a-class"
+    },
+    {
+      "id": "aha-cpr",
+      "publisher": "American Heart Association",
+      "title": "CPR and First Aid Courses",
+      "url": "https://cpr.heart.org/"
     }
   ]
 }

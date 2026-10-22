@@ -305,7 +305,7 @@
       "title": "Introducing common allergens",
       "summary": "Why offering egg, peanut and other allergens early can help, and how to do it.",
       "keyPoints": [
-        "There's no benefit to delaying common allergens: offer them early, then regularly.",
+        "Offer common allergens early, around the time solids start, then keep them on the menu.",
         "Start with a small taste, one allergen at a time, early in the day.",
         "Call 911 for trouble breathing, lip or tongue swelling, repeated vomiting or unusual sleepiness."
       ],
@@ -321,7 +321,8 @@
           "heading": "Early can help",
           "paragraphs": [
             "In the US, nine foods cause about 90% of food allergy reactions: milk (dairy), egg, peanut, tree nuts, wheat, soy, sesame, fish and shellfish.",
-            "Families used to be told to wait until age 2 or 3. Newer research found no benefit to delaying allergens. The LEAP study found that offering peanut foods early, starting between 4 and 11 months, and then regularly, greatly lowered the chance of peanut allergy in babies at high risk."
+            "Families used to be told to wait until age 2 or 3. Newer research found no benefit to delaying allergens. The LEAP study found that offering peanut foods early, starting between 4 and 11 months, and then regularly, greatly lowered the chance of peanut allergy in babies at high risk.",
+            "That's why US guidance, from the American Academy of Pediatrics (AAP) and the national peanut allergy guidelines, now says to introduce common allergens early, once your baby is ready for solids at about 6 months, rather than waiting."
           ],
           "bullets": []
         },
@@ -335,6 +336,17 @@
             "Offer a new allergen early in the day, like at breakfast or lunch, so you can watch your baby for the rest of the day, and wait 3 to 5 days before the next one.",
             "Once a food is tolerated, keep it in the diet regularly.",
             "Always use a safe form: peanut and nut butters thinned, never chunks or whole nuts; egg fully cooked."
+          ]
+        },
+        {
+          "heading": "Keep them on the menu",
+          "paragraphs": [
+            "Trying an allergen once isn't enough. Once your baby has had it without a reaction, the AAP advises keeping it in their diet routinely, in portions that suit their age: for example, about 2 teaspoons of thinned peanut butter or about a third of a well-cooked egg. In the LEAP study, it was early and continued, regular servings that protected babies."
+          ],
+          "bullets": [
+            "Stir thinned peanut butter or tahini (sesame) into oatmeal or a fruit or vegetable puree.",
+            "Offer well-cooked scrambled egg, mashed or as soft strips.",
+            "Serve plain whole-milk yogurt or soft cheese. Dairy in foods is fine from about 6 months; cow's milk as a drink waits until 12 months."
           ]
         },
         {
@@ -366,7 +378,15 @@
           "callout": "urgent"
         }
       ],
-      "sources": ["aap-allergens", "aap-anaphylaxis", "cdc-solids", "acaai-egg", "cdc-choking"]
+      "sources": [
+        "aap-allergens",
+        "aap-anaphylaxis",
+        "cdc-solids",
+        "acaai-egg",
+        "cdc-choking",
+        "niaid-peanut",
+        "cdc-cowsmilk"
+      ]
     },
     {
       "id": "gagging-vs-choking",
@@ -393,6 +413,16 @@
             "Knowing the difference between gagging and choking, and knowing basic first aid, helps you stay calm at the table and let your baby explore food with confidence."
           ],
           "bullets": []
+        },
+        {
+          "heading": "Gagging or choking? At a glance",
+          "paragraphs": [],
+          "bullets": [
+            "Sound: gagging is noisy, with coughing, sputtering or retching. Choking is quiet, with little or no sound.",
+            "Color: with gagging, the face turns red or pink and the eyes water. With choking, the lips or face may turn pale, blue or dusky.",
+            "Breathing: a gagging baby can still breathe, and may push the tongue forward or lean forward. A choking baby can't cry, cough or breathe, and may look panicked.",
+            "What to do: for gagging, stay calm, keep your baby upright and let them work it out. For choking, act right away and call 911."
+          ]
         },
         {
           "heading": "Gagging is normal",
@@ -426,9 +456,13 @@
         {
           "heading": "Be ready before you need it",
           "paragraphs": [
-            "We strongly encourage every parent and caregiver to take an in-person infant CPR and first aid class. The American Red Cross and the American Heart Association offer them. Preparation turns fear into confidence, so your baby can explore food with freedom and joy."
+            "We strongly encourage every parent and caregiver to take an in-person infant CPR and first aid class. Preparation turns fear into confidence, so your baby can explore food with freedom and joy."
           ],
-          "bullets": []
+          "bullets": [
+            "American Red Cross: find a class at redcross.org/take-a-class.",
+            "American Heart Association: find a class at cpr.heart.org.",
+            "Your pediatrician's office or local hospital may also offer infant CPR classes for parents and grandparents."
+          ]
         },
         {
           "heading": "Choking is an emergency",
@@ -448,7 +482,14 @@
           "callout": "urgent"
         }
       ],
-      "sources": ["medline-choking-infant", "aap-choking", "cdc-choking", "cdc-solids"]
+      "sources": [
+        "medline-choking-infant",
+        "aap-choking",
+        "cdc-choking",
+        "cdc-solids",
+        "redcross-classes",
+        "aha-cpr"
+      ]
     },
     {
       "id": "hunger-cues",
@@ -577,7 +618,7 @@
       "title": "Making and storing baby food",
       "summary": "A few hours of prep can stock your freezer for weeks.",
       "keyPoints": [
-        "Cook until soft, then puree or mash with no added salt or seasoning.",
+        "Cook until soft, then puree or mash, with no added salt, sugar or seasoning.",
         "Homemade food spoils faster: refrigerate leftovers and check before serving.",
         "Freeze purees in ice-cube trays and use within 3 months."
       ],
@@ -595,9 +636,10 @@
             "Pick some fruits, vegetables and grains. Cook them until soft enough to mash easily with a fork; ripe banana and avocado can be mashed raw. Puree or mash, and thin with breast milk, formula or water."
           ],
           "bullets": [
-            "Cook with no added salt or seasoning.",
+            "Cook with no added salt, sugar or seasoning. Babies don't need added sugars (US guidance is none before age 2), and only a little sodium, which food already has.",
             "Remove fat, skin and bones from meat, poultry and fish before cooking.",
-            "Remove seeds and hard pits from fruit."
+            "Remove seeds and hard pits from fruit.",
+            "Never add honey before 12 months, even cooked or baked."
           ]
         },
         {
@@ -609,7 +651,7 @@
           "bullets": []
         }
       ],
-      "sources": ["aap-solids", "cdc-solids", "cdc-picky"]
+      "sources": ["aap-solids", "cdc-solids", "cdc-picky", "cdc-avoid"]
     },
     {
       "id": "foods-to-avoid",
@@ -1333,6 +1375,18 @@
           ]
         },
         {
+          "heading": "Build snacks that keep you going",
+          "paragraphs": [
+            "Aim for nutrient-dense snacks with protein, healthy fats and fiber. They keep you full longer than sugary snacks alone, and steady energy helps while you recover."
+          ],
+          "bullets": [
+            "Protein: nuts, jerky or meat sticks, cheese sticks, Greek yogurt or hard-boiled eggs. Keep chilled foods in a small cooler bag or the fridge.",
+            "Healthy fats: nuts, seeds, nut butter, avocado and olive oil, for example hummus with olive-oil crackers.",
+            "Fiber: whole-grain crackers, oats, fruit and vegetables.",
+            "Water: a full bottle within reach at every feed."
+          ]
+        },
+        {
           "heading": "What to put in it: the checklist",
           "paragraphs": [
             "The key to a great basket is one-handed, low-mess eating: foods that won’t drop crumbs on your baby’s head or need a fork."
@@ -1657,6 +1711,13 @@
           ]
         },
         {
+          "heading": "Keep it plain",
+          "paragraphs": [
+            "Leave out added sugar entirely; babies don't need any, and US guidance is no added sugars before age 2. Keep sodium very low too: no salt, and skip salty broth, bouillon and seasoning blends. Vegetables and fruit bring plenty of flavor on their own, and plain cubes can go into family meals before the grown-ups season theirs."
+          ],
+          "bullets": []
+        },
+        {
           "heading": "Mix and match",
           "paragraphs": [
             "Once your baby has tried each food on its own without a reaction, you can start combining cubes. New flavor combinations help your baby get used to lots of different tastes."
@@ -1680,7 +1741,14 @@
           ]
         }
       ],
-      "sources": ["fda-once-baby-arrives", "cdc-solids", "aap-solids", "usda-leftovers", "cdc-iron"]
+      "sources": [
+        "fda-once-baby-arrives",
+        "cdc-solids",
+        "aap-solids",
+        "usda-leftovers",
+        "cdc-iron",
+        "cdc-avoid"
+      ]
     },
     {
       "id": "solids-two-textures",
@@ -1820,7 +1888,7 @@
       "title": "Safe serving sizes and textures by age",
       "summary": "How to shape and soften foods for 6 to 8 months and 9 to 12 months, and the squish test to check softness.",
       "keyPoints": [
-        "6 to 8 months: soft, finger-length strips your baby can hold in a fist.",
+        "Textures move from smooth purees to mashed, then soft finger foods, then chopped family foods.",
         "9 to 12 months: small soft pieces about the size of a chickpea.",
         "Many parents use the squish test: it squashes easily between your thumb and finger."
       ],
@@ -1832,6 +1900,25 @@
       "tone": "accent",
       "readMinutes": 3,
       "sections": [
+        {
+          "heading": "Four texture stages",
+          "paragraphs": [
+            "Chewing and swallowing skills grow quickly between 6 and 12 months. Move through these stages at your baby's pace:"
+          ],
+          "bullets": [
+            "Smooth purees, around 6 months: thin, completely smooth single foods, like pureed meat, iron-fortified infant cereal or blended vegetables.",
+            "Lumpy and mashed, as your baby gets the hang of it: thicker purees and fork-mashed foods with small soft lumps, like mashed banana, avocado or lentils.",
+            "Soft finger foods, often around 8 to 10 months: soft pieces your baby can pick up and squash with their gums. Babies who start with finger foods begin with finger-length strips (see below).",
+            "Chopped family foods, by around 12 months: most of what the family eats, cut into small pieces, with no added salt."
+          ]
+        },
+        {
+          "heading": "Go at your baby's pace",
+          "paragraphs": [
+            "If your baby isn't ready for the next stage, stay where they're comfortable a little longer and try again in a few days. Practicing new textures is how they learn to chew."
+          ],
+          "bullets": []
+        },
         {
           "heading": "Changing textures as your baby grows",
           "paragraphs": [
@@ -1850,7 +1937,7 @@
           "bullets": []
         }
       ],
-      "sources": ["cdc-textures", "cdc-choking"]
+      "sources": ["cdc-textures", "cdc-choking", "aap-solids"]
     },
     {
       "id": "allergic-reaction-signs",
