@@ -71,3 +71,11 @@ Each push to the branch then updates the site.
 When the app is live, swap the "Coming soon on the App Store" button in `index.html` for the
 official Download on the App Store badge from Apple's marketing site, linked to the app's
 App Store page.
+
+## Launch sign-up form
+
+The "Get an email when we launch" form on the home page uses **Netlify Forms** (no code or
+server of our own). In Netlify, open the site, then **Forms**, and turn on **form detection**
+once; the next deploy picks up the form called `launch`. Sign-ups then appear under Forms →
+launch, where you can export them. The Privacy Policy's "Launch emails from our website"
+section describes this.

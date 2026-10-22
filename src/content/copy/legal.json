@@ -152,6 +152,13 @@
           "bullets": []
         },
         {
+          "heading": "Launch emails from our website",
+          "paragraphs": [
+            "If you sign up on mamababybites.com to hear when the app launches, we keep your email address only to tell you about the launch. It's stored by our website host, Netlify, and we don't share it with anyone else or use it for ads. To have it deleted, email support@mamababybites.com."
+          ],
+          "bullets": []
+        },
+        {
           "heading": "Subscriptions",
           "paragraphs": [
             "Purchases are handled by Apple on iPhone and by Google on Android. We don't see or store your payment details. The store tells the app whether you have an active subscription."

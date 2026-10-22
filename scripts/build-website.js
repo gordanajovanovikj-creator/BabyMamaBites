@@ -118,13 +118,13 @@ function footerHtml(articles) {
           return `              <li><a href="/learn/${a.id}.html">${esc(a.title)}</a></li>`;
         })
         .join('\n');
-      return `          <div>
-            <h4>${esc(col.title)}</h4>
+      return `          <details class="foot-col" open>
+            <summary>${esc(col.title)}</summary>
             <ul>
 ${links}
               <li><a class="more" href="/learn/#${col.category}">See all</a></li>
             </ul>
-          </div>`;
+          </details>`;
     })
     .join('\n');
   return `<footer class="site-footer">
@@ -143,17 +143,17 @@ ${links}
           </div>
         </div>
         <div class="footer-grid">
-          <div>
-            <h4>Mama &amp; Baby Bites</h4>
+          <details class="foot-col" open>
+            <summary>Mama &amp; Baby Bites</summary>
             <ul>
               <li><a href="/#features">About the app</a></li>
               <li><a href="/#pricing">Pricing</a></li>
               <li><a href="/#faq">FAQ</a></li>
             </ul>
-          </div>
+          </details>
 ${columns}
-          <div>
-            <h4>Help &amp; legal</h4>
+          <details class="foot-col" open>
+            <summary>Help &amp; legal</summary>
             <ul>
               <li><a href="/support.html">Support</a></li>
               <li><a href="mailto:${SUPPORT_EMAIL}">Contact us</a></li>
@@ -161,7 +161,7 @@ ${columns}
               <li><a href="/terms.html">Terms of Use</a></li>
               <li><a href="/credits.html">Photo credits</a></li>
             </ul>
-          </div>
+          </details>
         </div>
       </div>
     </footer>`;
@@ -173,9 +173,12 @@ const scripts = `
       const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
-      // On phones the table of contents starts closed so the article comes first.
+      // On phones the table of contents starts closed so the article comes first, and the
+      // footer's link lists fold up so the page doesn't end in a long scroll.
       if (window.matchMedia('(max-width: 1020px)').matches)
         document.querySelectorAll('.toc details').forEach((d) => (d.open = false));
+      if (window.matchMedia('(max-width: 700px)').matches)
+        document.querySelectorAll('.foot-col').forEach((d) => (d.open = false));
     </script>`;
 
 // The app's starting-solids and wellbeing articles, the source registries they cite, and
@@ -663,6 +666,19 @@ fs.writeFileSync(
   ),
 );
 console.log('Wrote website/assets/search-index.json');
+
+// After signing up for launch news on the home page (Netlify Forms posts here).
+page({
+  file: 'thanks.html',
+  title: 'Thank you',
+  description: "You're on the list for Mama & Baby Bites launch news.",
+  body: `      <h1>You're on the list!</h1>
+      <p class="intro">
+        Thank you. We'll send you one email when Mama &amp; Baby Bites is ready to download. In the
+        meantime, our articles are free to read.
+      </p>
+      <a class="btn btn-primary" href="/learn/">Read the articles</a>`,
+});
 
 // Not found.
 page({

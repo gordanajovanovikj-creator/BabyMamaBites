@@ -58,6 +58,8 @@
       <p>The app asks for your OK before your first question. When you use the Ask tab, the questions you type and your baby's age in months are sent to our server and then to Anthropic, the company that provides the AI model, to write an answer. Your baby's name, birth date, allergies and other details aren't sent.</p>
       <p>The app doesn't save your chat on your phone or on our server. Anthropic may keep messages for a limited time under its own policies, for example for safety. Please don't type names, contact details or other personal information into the chat.</p>
       <p>To keep the chat fair and running, our server briefly uses your connection's IP address to limit how many questions can be sent in a short time. It isn't saved or logged.</p>
+      <h2>Launch emails from our website</h2>
+      <p>If you sign up on mamababybites.com to hear when the app launches, we keep your email address only to tell you about the launch. It's stored by our website host, Netlify, and we don't share it with anyone else or use it for ads. To have it deleted, email <a href="mailto:support@mamababybites.com">support@mamababybites.com</a>.</p>
       <h2>Subscriptions</h2>
       <p>Purchases are handled by Apple on iPhone and by Google on Android. We don't see or store your payment details. The store tells the app whether you have an active subscription.</p>
       <h2>Children</h2>
@@ -85,16 +87,16 @@
           </div>
         </div>
         <div class="footer-grid">
-          <div>
-            <h4>Mama &amp; Baby Bites</h4>
+          <details class="foot-col" open>
+            <summary>Mama &amp; Baby Bites</summary>
             <ul>
               <li><a href="index.html#features">About the app</a></li>
               <li><a href="index.html#pricing">Pricing</a></li>
               <li><a href="index.html#faq">FAQ</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Starting solids</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Starting solids</summary>
             <ul>
               <li><a href="learn/ready.html">Is my baby ready for solids?</a></li>
               <li><a href="learn/first-foods.html">What to offer first</a></li>
@@ -104,9 +106,9 @@
               <li><a href="learn/learning-to-chew.html">Oral-motor milestones: helping your baby learn to chew</a></li>
               <li><a class="more" href="learn/index.html#starting-solids">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Safety first</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Safety first</summary>
             <ul>
               <li><a href="learn/gagging-vs-choking.html">Choking vs. gagging: how to be prepared</a></li>
               <li><a href="learn/foods-to-avoid.html">Foods to skip in the first year</a></li>
@@ -115,9 +117,9 @@
               <li><a href="learn/high-chair.html">Choosing and using a high chair</a></li>
               <li><a class="more" href="learn/index.html#safety">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Happy eaters</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Happy eaters</summary>
             <ul>
               <li><a href="learn/hunger-cues.html">Hungry or full?</a></li>
               <li><a href="learn/food-refusal.html">When your baby refuses food</a></li>
@@ -127,9 +129,9 @@
               <li><a href="learn/spoon-skills.html">From messy to skilled: teaching your baby to use a spoon</a></li>
               <li><a class="more" href="learn/index.html#happy-eaters">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>For mama</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>For mama</summary>
             <ul>
               <li><a href="learn/postpartum-recovery.html">Physical healing and postpartum recovery</a></li>
               <li><a href="learn/newborn-meal-help.html">Say yes to meal prep: a lifesaver for new moms</a></li>
@@ -138,9 +140,9 @@
               <li><a href="learn/cluster-feeding.html">Decoding cluster feeding</a></li>
               <li><a class="more" href="learn/index.html#nourishing-you">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Help &amp; legal</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Help &amp; legal</summary>
             <ul>
               <li><a href="support.html">Support</a></li>
               <li><a href="mailto:support@mamababybites.com">Contact us</a></li>
@@ -148,7 +150,7 @@
               <li><a href="terms.html">Terms of Use</a></li>
               <li><a href="credits.html">Photo credits</a></li>
             </ul>
-          </div>
+          </details>
         </div>
       </div>
     </footer>
@@ -157,9 +159,12 @@
       const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
-      // On phones the table of contents starts closed so the article comes first.
+      // On phones the table of contents starts closed so the article comes first, and the
+      // footer's link lists fold up so the page doesn't end in a long scroll.
       if (window.matchMedia('(max-width: 1020px)').matches)
         document.querySelectorAll('.toc details').forEach((d) => (d.open = false));
+      if (window.matchMedia('(max-width: 700px)').matches)
+        document.querySelectorAll('.foot-col').forEach((d) => (d.open = false));
     </script>
   </body>
 </html>

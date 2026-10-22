@@ -62,24 +62,34 @@
               <span class="pill"><b>New</b> Coming soon to iPhone and Android</span>
               <h1>Little <em>bites</em>,<br /> big <em>beginnings</em></h1>
               <p class="lead">
-                Healthy food for mama and baby. Recipes for both of you, a week-by-week plan for
-                starting solids, a shopping list built from your meal plan, and a friendly chat
-                helper for quick meal ideas. All in one place.
+                Healthy food for mama and baby, made simple: a week-by-week solids plan with an
+                allergen tracker, recipes for both of you, and a shopping list that fills itself.
+                Your family's details stay on your phone.
               </p>
               <div class="hero-actions" id="get">
-                <span class="btn btn-store" role="img" aria-label="Coming soon on the App Store">
+                <span class="btn btn-store primary" role="img" aria-label="Coming soon on the App Store">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
                   <span><small>Coming soon on the</small><strong>App Store</strong></span>
                 </span>
-                <span class="btn btn-store" role="img" aria-label="Coming soon on Google Play">
+                <span class="btn btn-store outline" role="img" aria-label="Coming soon on Google Play">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5v17l9.5-8.5z"/><path d="M5 3.5l12 7-2.5 2M5 20.5l12-7-2.5-2"/></svg>
                   <span><small>Coming soon on</small><strong>Google Play</strong></span>
                 </span>
               </div>
+              <form class="notify" name="launch" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="company">
+                <input type="hidden" name="form-name" value="launch" />
+                <p class="hp" aria-hidden="true"><label>Company <input name="company" tabindex="-1" autocomplete="off" /></label></p>
+                <label class="notify-label" for="notify-email">Get an email when we launch</label>
+                <div class="notify-row">
+                  <input id="notify-email" type="email" name="email" required autocomplete="email" placeholder="Your email" />
+                  <button class="btn btn-primary" type="submit">Notify me</button>
+                </div>
+                <p class="notify-note">Only launch news, nothing else. See our <a href="privacy.html">Privacy Policy</a>.</p>
+              </form>
               <ul class="hero-note">
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Free to start</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>7-day free trial of Premium</li>
                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>No account needed</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Your details stay on your phone</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Free to start, 7-day Premium trial</li>
               </ul>
             </div>
             <div class="hero-art" aria-hidden="true">
@@ -102,8 +112,48 @@
         </div>
       </section>
 
+      <!-- At a glance -->
+      <section class="glance" aria-label="At a glance">
+        <div class="wrap">
+          <ul class="glance-bar reveal">
+            <li><strong>180+</strong><span>recipes for baby and you</span></li>
+            <li><strong>26</strong><span>week starting-solids plan</span></li>
+            <li><strong>9</strong><span>common allergens tracked step by step</span></li>
+            <li><strong>44</strong><span>first foods, how to serve each</span></li>
+            <li><strong>15</strong><span>monthly guides, newborn to 3</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="section steps-section">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">How it works</span>
+            <h2>Three steps to calmer mealtimes</h2>
+          </div>
+          <ol class="steps reveal">
+            <li>
+              <span class="step-num">1</span>
+              <h3>Plan the week</h3>
+              <p>Pick meals for your baby and family dinners next to them. The plan tells you what's new to try.</p>
+            </li>
+            <li>
+              <span class="step-num">2</span>
+              <h3>Shop in a tap</h3>
+              <p>Turn the week or any recipe into a shopping list, sorted by store section.</p>
+            </li>
+            <li>
+              <span class="step-num">3</span>
+              <h3>Track and share</h3>
+              <p>Log new foods and allergens, spot reactions, and send a PDF to your pediatrician.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
       <!-- Features -->
-      <section class="section" id="features">
+      <section class="section" id="features" style="padding-top: 0">
         <div class="wrap">
           <div class="section-head reveal">
             <span class="eyebrow">Everything in one calm place</span>
@@ -119,10 +169,7 @@
               <div class="copy">
                 <span class="eyebrow">Starting solids</span>
                 <h3>A guided start, week by week</h3>
-                <p>
-                  A 26-week plan walks you from first tastes to family foods, with textures that
-                  match your baby's stage and common allergens introduced one at a time.
-                </p>
+                <p>From first tastes to family foods, at your baby's pace.</p>
                 <ul class="mini-list">
                   <li>Step-by-step allergen introduction tracker</li>
                   <li>Food logs you can export for your pediatrician</li>
@@ -142,19 +189,22 @@
             </article>
 
             <article class="tile butter span-2 reveal">
-              <div class="big-number">180+</div>
-              <h3>Recipes</h3>
-              <p>Step-by-step cook mode, nutrition details and allergen labels on every recipe.</p>
+              <span class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v8a2 2 0 0 0 4 0V3M9 11v10M17 3c-2 2-2 6 0 8v10"/></svg></span>
+              <h3>Recipes made easy</h3>
+              <p>Every recipe comes with:</p>
+              <ul class="mini-list">
+                <li>Step-by-step cook mode</li>
+                <li>Nutrition details and allergen labels</li>
+                <li>Baby tips on family meals</li>
+                <li>Batch-cook and freezer notes</li>
+              </ul>
             </article>
 
             <article class="tile sage split span-4 reveal">
               <div class="copy">
                 <span class="eyebrow">Plan &amp; shop</span>
                 <h3>Plan the week, shop in a tap</h3>
-                <p>
-                  Plan your baby's meals and the family dinners next to them, and turn any recipe or
-                  the whole week into a shopping list.
-                </p>
+                <p>Baby's meals and family dinners side by side, and a list that builds itself.</p>
                 <ul class="mini-list">
                   <li>A meal planner that grows with your baby</li>
                   <li>Shopping list sorted by store section, ready to share</li>
@@ -167,10 +217,7 @@
             <article class="tile coral span-3 reveal">
               <span class="eyebrow">Ask</span>
               <h3>Your feeding helper, any time</h3>
-              <p>
-                Stuck on what to cook, how to freeze it or how to handle picky eating? Get practical
-                ideas, then add a dish's ingredients to your shopping list.
-              </p>
+              <p>Quick meal ideas from what you have, straight to your shopping list.</p>
               <div class="chat" aria-label="An example conversation in Ask">
                 <div class="bubble me">Quick dinner ideas with chicken and sweet potato?</div>
                 <div class="bubble helper">
@@ -188,17 +235,18 @@
             <article class="tile span-3 reveal">
               <span class="tile-icon" style="background: var(--sage-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v15H4z"/><path d="M8 3v4M16 3v4M4 10h16"/></svg></span>
               <h3>Monthly guides, newborn to 3</h3>
-              <p>
-                Month by month: feeding, safety, food and rest for you, and when to call your
-                doctor.
-              </p>
-              <div class="big-number" style="margin-top: auto">15</div>
-              <p>guides, from birth to age 3</p>
+              <p>One short guide for each month, from birth to age 3:</p>
+              <ul class="mini-list">
+                <li>Feeding and what's normal this month</li>
+                <li>Safety at home and at the table</li>
+                <li>Food and rest for you</li>
+                <li>When to call your doctor</li>
+              </ul>
             </article>
 
             <article class="tile dark span-2 reveal">
-              <div class="big-number" style="color: #fff">44</div>
-              <h3>First foods</h3>
+              <span class="tile-icon" style="background: rgba(255, 255, 255, 0.12); color: #fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c4-2 7-6 7-10a7 7 0 0 0-14 0c0 4 3 8 7 10z"/><path d="M12 7v6"/></svg></span>
+              <h3>First foods guide</h3>
               <p>How to serve each one at every age, with choking risk, allergens and iron.</p>
             </article>
 
@@ -250,12 +298,6 @@
               <h3>Free</h3>
               <div class="price">$0</div>
               <p class="sub">The essentials, for everyone</p>
-              <ul class="mini-list">
-                <li>Today, with this month's guide</li>
-                <li>Monthly guides, newborn to 3 years</li>
-                <li>Food guide for 44 first foods</li>
-                <li>Every safety page, including choking and allergic reactions</li>
-              </ul>
               <a class="btn btn-soft" href="#get">Coming soon</a>
             </div>
             <div class="plan featured">
@@ -263,17 +305,29 @@
               <h3>Premium</h3>
               <div class="price">$79.99<small> / year</small></div>
               <p class="sub">That's $6.66 a month, or $12.99 billed monthly</p>
-              <ul class="mini-list">
-                <li>Everything in Free</li>
-                <li>180+ recipes for baby and you</li>
-                <li>26-week starting-solids plan</li>
-                <li>Meal planner, freezer tracker and shopping list</li>
-                <li>Step-by-step allergen introduction tracker</li>
-                <li>Food log you can export for your pediatrician</li>
-                <li>Ask, your feeding helper</li>
-              </ul>
               <a class="btn btn-primary" href="#get">Try it free for 7 days</a>
             </div>
+          </div>
+          <div class="compare reveal">
+            <table>
+              <caption>What's in Free and Premium</caption>
+              <thead>
+                <tr><th scope="col"></th><th scope="col">Free</th><th scope="col">Premium</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Today, with this month's guide</th><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">Monthly guides, newborn to 3 years</th><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">Food guide for 44 first foods</th><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">Every safety page, like choking and allergic reactions</th><td><span class="yes" aria-label="Included">✓</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">180+ recipes for baby and you, with cook mode</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">26-week starting-solids plan</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">Step-by-step allergen introduction tracker</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">Food log, with a PDF for your pediatrician</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">Meal planner, freezer tracker and shopping list</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">Ask, your feeding helper</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+                <tr><th scope="row">The full articles library and calendar</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included">✓</span></td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
@@ -390,16 +444,16 @@
           </div>
         </div>
         <div class="footer-grid">
-          <div>
-            <h4>Mama &amp; Baby Bites</h4>
+          <details class="foot-col" open>
+            <summary>Mama &amp; Baby Bites</summary>
             <ul>
               <li><a href="index.html#features">About the app</a></li>
               <li><a href="index.html#pricing">Pricing</a></li>
               <li><a href="index.html#faq">FAQ</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Starting solids</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Starting solids</summary>
             <ul>
               <li><a href="learn/ready.html">Is my baby ready for solids?</a></li>
               <li><a href="learn/first-foods.html">What to offer first</a></li>
@@ -409,9 +463,9 @@
               <li><a href="learn/learning-to-chew.html">Oral-motor milestones: helping your baby learn to chew</a></li>
               <li><a class="more" href="learn/index.html#starting-solids">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Safety first</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Safety first</summary>
             <ul>
               <li><a href="learn/gagging-vs-choking.html">Choking vs. gagging: how to be prepared</a></li>
               <li><a href="learn/foods-to-avoid.html">Foods to skip in the first year</a></li>
@@ -420,9 +474,9 @@
               <li><a href="learn/high-chair.html">Choosing and using a high chair</a></li>
               <li><a class="more" href="learn/index.html#safety">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Happy eaters</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Happy eaters</summary>
             <ul>
               <li><a href="learn/hunger-cues.html">Hungry or full?</a></li>
               <li><a href="learn/food-refusal.html">When your baby refuses food</a></li>
@@ -432,9 +486,9 @@
               <li><a href="learn/spoon-skills.html">From messy to skilled: teaching your baby to use a spoon</a></li>
               <li><a class="more" href="learn/index.html#happy-eaters">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>For mama</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>For mama</summary>
             <ul>
               <li><a href="learn/postpartum-recovery.html">Physical healing and postpartum recovery</a></li>
               <li><a href="learn/newborn-meal-help.html">Say yes to meal prep: a lifesaver for new moms</a></li>
@@ -443,9 +497,9 @@
               <li><a href="learn/cluster-feeding.html">Decoding cluster feeding</a></li>
               <li><a class="more" href="learn/index.html#nourishing-you">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Help &amp; legal</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Help &amp; legal</summary>
             <ul>
               <li><a href="support.html">Support</a></li>
               <li><a href="mailto:support@mamababybites.com">Contact us</a></li>
@@ -453,7 +507,7 @@
               <li><a href="terms.html">Terms of Use</a></li>
               <li><a href="credits.html">Photo credits</a></li>
             </ul>
-          </div>
+          </details>
         </div>
       </div>
     </footer>
@@ -465,6 +519,10 @@
       const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
+
+      // On phones the footer's link lists fold up so the page doesn't end in a long scroll.
+      if (window.matchMedia('(max-width: 700px)').matches)
+        document.querySelectorAll('.foot-col').forEach((d) => (d.open = false));
 
       // Sections fade up as they come into view.
       const reveal = document.querySelectorAll('.reveal');

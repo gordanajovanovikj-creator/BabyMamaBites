@@ -180,16 +180,16 @@
           </div>
         </div>
         <div class="footer-grid">
-          <div>
-            <h4>Mama &amp; Baby Bites</h4>
+          <details class="foot-col" open>
+            <summary>Mama &amp; Baby Bites</summary>
             <ul>
               <li><a href="../index.html#features">About the app</a></li>
               <li><a href="../index.html#pricing">Pricing</a></li>
               <li><a href="../index.html#faq">FAQ</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Starting solids</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Starting solids</summary>
             <ul>
               <li><a href="../learn/ready.html">Is my baby ready for solids?</a></li>
               <li><a href="../learn/first-foods.html">What to offer first</a></li>
@@ -199,9 +199,9 @@
               <li><a href="../learn/learning-to-chew.html">Oral-motor milestones: helping your baby learn to chew</a></li>
               <li><a class="more" href="../learn/index.html#starting-solids">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Safety first</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Safety first</summary>
             <ul>
               <li><a href="../learn/gagging-vs-choking.html">Choking vs. gagging: how to be prepared</a></li>
               <li><a href="../learn/foods-to-avoid.html">Foods to skip in the first year</a></li>
@@ -210,9 +210,9 @@
               <li><a href="../learn/high-chair.html">Choosing and using a high chair</a></li>
               <li><a class="more" href="../learn/index.html#safety">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Happy eaters</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Happy eaters</summary>
             <ul>
               <li><a href="../learn/hunger-cues.html">Hungry or full?</a></li>
               <li><a href="../learn/food-refusal.html">When your baby refuses food</a></li>
@@ -222,9 +222,9 @@
               <li><a href="../learn/spoon-skills.html">From messy to skilled: teaching your baby to use a spoon</a></li>
               <li><a class="more" href="../learn/index.html#happy-eaters">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>For mama</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>For mama</summary>
             <ul>
               <li><a href="../learn/postpartum-recovery.html">Physical healing and postpartum recovery</a></li>
               <li><a href="../learn/newborn-meal-help.html">Say yes to meal prep: a lifesaver for new moms</a></li>
@@ -233,9 +233,9 @@
               <li><a href="../learn/cluster-feeding.html">Decoding cluster feeding</a></li>
               <li><a class="more" href="../learn/index.html#nourishing-you">See all</a></li>
             </ul>
-          </div>
-          <div>
-            <h4>Help &amp; legal</h4>
+          </details>
+          <details class="foot-col" open>
+            <summary>Help &amp; legal</summary>
             <ul>
               <li><a href="../support.html">Support</a></li>
               <li><a href="mailto:support@mamababybites.com">Contact us</a></li>
@@ -243,7 +243,7 @@
               <li><a href="../terms.html">Terms of Use</a></li>
               <li><a href="../credits.html">Photo credits</a></li>
             </ul>
-          </div>
+          </details>
         </div>
       </div>
     </footer>
@@ -252,9 +252,12 @@
       const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
-      // On phones the table of contents starts closed so the article comes first.
+      // On phones the table of contents starts closed so the article comes first, and the
+      // footer's link lists fold up so the page doesn't end in a long scroll.
       if (window.matchMedia('(max-width: 1020px)').matches)
         document.querySelectorAll('.toc details').forEach((d) => (d.open = false));
+      if (window.matchMedia('(max-width: 700px)').matches)
+        document.querySelectorAll('.foot-col').forEach((d) => (d.open = false));
     </script>
   </body>
 </html>
