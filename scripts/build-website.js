@@ -96,7 +96,12 @@ const header = `
           <li class="optional"><a href="/#features">Features</a></li>
           <li class="optional"><a href="/learn/">Articles</a></li>
           <li class="optional"><a href="/#pricing">Pricing</a></li>
-          <li><a href="/support.html">Support</a></li>
+          <li class="hide-sm"><a href="/support.html">Support</a></li>
+          <li>
+            <a class="icon-link" href="/learn/#search" aria-label="Search articles">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg>
+            </a>
+          </li>
           <li><a class="btn btn-primary btn-sm" href="/#get">Get the app</a></li>
         </ul>
       </nav>
@@ -128,7 +133,13 @@ ${links}
           <a class="footer-logo" href="/" aria-label="Mama &amp; Baby Bites home">
             <img src="/assets/img/logo-full.webp" alt="" width="640" height="449" loading="lazy" />
           </a>
-          <a class="btn btn-light" href="/learn/">Browse all articles</a>
+          <div class="footer-actions">
+            <form class="search-field" action="/learn/" role="search">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg>
+              <input type="search" name="q" placeholder="Search articles" aria-label="Search articles" />
+            </form>
+            <a class="btn btn-light" href="/learn/">Browse all articles</a>
+          </div>
         </div>
         <div class="footer-grid">
           <div>
@@ -574,6 +585,14 @@ page({
         Practical, friendly reads on starting solids, safety, happy eaters and looking after
         yourself, from the Mama &amp; Baby Bites app.
       </p>
+      <form class="search-field big" id="search" action="/learn/" role="search">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg>
+        <input type="search" name="q" placeholder="Search articles, like allergens or choking" aria-label="Search articles" autocomplete="off" />
+      </form>
+      <section class="search-results" aria-live="polite" hidden>
+        <h2></h2>
+        <div class="article-grid"></div>
+      </section>
       <nav class="chips" aria-label="Categories">
 ${categories
   .filter((c) => articles.some((a) => a.category === c.id))
@@ -595,8 +614,32 @@ ${articles
       </section>`,
   )
   .join('\n')}
-      <p class="disclaimer">${esc(medicalDisclaimer.find((b) => b.id === 'educational').body)} In an emergency, call <a href="tel:911">911</a>.</p>`,
+      <p class="disclaimer">${esc(medicalDisclaimer.find((b) => b.id === 'educational').body)} In an emergency, call <a href="tel:911">911</a>.</p>
+      <script src="/assets/js/search.js" defer></script>`,
 });
+
+// What the Articles page searches, all in the browser: no search service, nothing sent anywhere.
+fs.mkdirSync(path.join(out, 'assets/js'), { recursive: true });
+fs.writeFileSync(
+  path.join(out, 'assets/search-index.json'),
+  JSON.stringify(
+    articles.map((a) => ({
+      url: `/learn/${a.id}.html`,
+      title: a.title,
+      category: categoryLabel(a.category),
+      categoryId: a.category,
+      minutes: a.readMinutes,
+      photo: photoFor(a.id),
+      headings: a.sections.map((sec) => sec.heading).join(' '),
+      text: [
+        a.summary,
+        ...(a.keyPoints ?? []),
+        ...a.sections.flatMap((sec) => [...sec.paragraphs, ...sec.bullets]),
+      ].join(' '),
+    })),
+  ),
+);
+console.log('Wrote website/assets/search-index.json');
 
 // Not found.
 page({

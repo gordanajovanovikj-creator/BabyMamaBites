@@ -17,6 +17,8 @@ website/
   assets/fonts/     Fredoka (headings) and Inter (text), with their licenses
   assets/img/       logo, favicon, social preview image
   assets/screens/   app screenshots
+  assets/js/search.js   article search (runs in the browser, from assets/search-index.json,
+                        which npm run website:build writes)
   assets/learn/     article photos, resized from assets/images/insights (webp, 1200px wide)
   assets/foods/     food photos, resized from assets/images/foods (webp, 480px wide)
 ```
